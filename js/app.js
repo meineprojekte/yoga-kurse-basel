@@ -560,6 +560,11 @@
         state.filteredStudios = results;
         renderStudios();
         updateFilterCount();
+        // Re-render schedule with current filters
+        var activeDay = document.querySelector('#scheduleDays .day-btn.active');
+        if (activeDay) {
+            renderSchedule(activeDay.getAttribute('data-day'));
+        }
     }
 
     function filterByStyle(style) {
@@ -658,12 +663,44 @@
         var info = $('scheduleInfo');
         if (!list) return;
 
-        // Filter classes for this day
+        // Get the set of filtered studio IDs
+        var filteredIds = {};
+        for (var fi = 0; fi < state.filteredStudios.length; fi++) {
+            filteredIds[state.filteredStudios[fi].id] = true;
+        }
+
+        var searchQ = state.searchQuery.toLowerCase().trim();
+        var styleFilter = state.activeStyleFilter;
+        var styleDropdown = $('filterStyle') ? $('filterStyle').value : '';
+
+        // Filter classes for this day + active filters
         var classes = [];
         for (var i = 0; i < scheduleData.length; i++) {
-            if (scheduleData[i].day === day) {
-                classes.push(scheduleData[i]);
+            var c = scheduleData[i];
+            if (c.day !== day) continue;
+
+            // Filter by studio (must be in filtered studios list if district/feature filters active)
+            var districtVal = $('filterDistrict') ? $('filterDistrict').value : '';
+            var featureVal = $('filterFeature') ? $('filterFeature').value : '';
+            if ((districtVal || featureVal) && !filteredIds[c.studio_id]) continue;
+
+            // Filter by style chip
+            if (styleFilter !== 'all') {
+                if (c.class_name.toLowerCase().indexOf(styleFilter.toLowerCase()) === -1) continue;
             }
+
+            // Filter by style dropdown
+            if (styleDropdown) {
+                if (c.class_name.toLowerCase().indexOf(styleDropdown.toLowerCase()) === -1) continue;
+            }
+
+            // Filter by search
+            if (searchQ) {
+                var haystack = [c.class_name, c.studio_name, c.teacher || '', c.level || ''].join(' ').toLowerCase();
+                if (haystack.indexOf(searchQ) === -1) continue;
+            }
+
+            classes.push(c);
         }
 
         // Sort by time
