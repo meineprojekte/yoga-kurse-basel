@@ -1257,7 +1257,7 @@ if ('serviceWorker' in navigator) {
                 // Also send via email link as fallback
                 var subject = 'YogaBasel Feedback: ' + type;
                 var body = 'Typ: ' + type + '\nName: ' + (name || 'Anonym') + '\nNachricht:\n' + message;
-                var mailLink = 'mailto:yogakursebasel@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+                var mailLink = 'mailto:andrea-giovanni@hotmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
 
                 // Open mail client
                 window.open(mailLink, '_blank');
