@@ -1136,7 +1136,7 @@ select {
     inset: 0;
     background: var(--color-overlay);
     z-index: 2000;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     padding: var(--spacing-lg);
@@ -1144,7 +1144,8 @@ select {
     transition: opacity var(--transition-normal);
 }
 
-.modal-overlay:not([hidden]) {
+.modal-overlay.active {
+    display: flex;
     opacity: 1;
 }
 
@@ -1161,7 +1162,7 @@ select {
     transition: transform var(--transition-normal);
 }
 
-.modal-overlay:not([hidden]) .modal {
+.modal-overlay.active .modal {
     transform: translateY(0);
 }
 

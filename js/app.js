@@ -439,13 +439,13 @@
         html += '</div>';
 
         content.innerHTML = html;
-        overlay.hidden = false;
+        overlay.classList.add('active');
         document.body.style.overflow = 'hidden';
     }
 
     function closeModal() {
         var overlay = $('modalOverlay');
-        if (overlay) overlay.hidden = true;
+        if (overlay) overlay.classList.remove('active');
         document.body.style.overflow = '';
     }
 
@@ -879,7 +879,7 @@
         var modalOverlay = $('modalOverlay');
         if (modalOverlay) {
             modalOverlay.addEventListener('click', function (e) {
-                if (e.target === modalOverlay) closeModal();
+                if (e.target === e.currentTarget) closeModal();
             });
         }
         document.addEventListener('keydown', function (e) {
