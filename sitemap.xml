@@ -1,9 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.w3.org/2000/04/sitemaps/sitemap09"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yogakursebasel.ch/</loc>
+    <loc>https://meineprojekte.github.io/yoga-kurse-basel/</loc>
     <lastmod>2026-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://meineprojekte.github.io/yoga-kurse-basel/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://meineprojekte.github.io/yoga-kurse-basel/?lang=en"/>
+  </url>
+  <url>
+    <loc>https://meineprojekte.github.io/yoga-kurse-basel/#stundenplan</loc>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://meineprojekte.github.io/yoga-kurse-basel/#studios</loc>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://meineprojekte.github.io/yoga-kurse-basel/#guide</loc>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meineprojekte.github.io/yoga-kurse-basel/#stile</loc>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meineprojekte.github.io/yoga-kurse-basel/#karte</loc>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://meineprojekte.github.io/yoga-kurse-basel/#faq</loc>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
