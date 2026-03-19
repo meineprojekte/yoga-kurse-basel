@@ -2,6 +2,11 @@
    YOGA KURSE BASEL — Main Application
    ============================================================ */
 
+// Register Service Worker for offline support
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js').catch(function () {});
+}
+
 (function () {
     'use strict';
 

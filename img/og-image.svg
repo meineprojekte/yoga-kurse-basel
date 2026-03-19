@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B5B95"/>
+      <stop offset="100%" stop-color="#D4A373"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle decorative circles -->
+  <circle cx="950" cy="120" r="200" fill="url(#accent)"/>
+  <circle cx="150" cy="500" r="150" fill="url(#accent)"/>
+
+  <!-- Lotus / Meditation figure silhouette -->
+  <g transform="translate(600, 260)" fill="white" fill-opacity="0.92">
+    <!-- Meditating person silhouette -->
+    <!-- Head -->
+    <circle cx="0" cy="-80" r="22"/>
+    <!-- Body -->
+    <path d="M0,-55 C-8,-40 -12,-20 -14,5 C-14,10 -10,14 0,14 C10,14 14,10 14,5 C12,-20 8,-40 0,-55Z"/>
+    <!-- Crossed legs -->
+    <path d="M-14,10 C-20,18 -40,28 -55,25 C-60,24 -62,28 -58,32 C-45,38 -25,35 -10,22Z"/>
+    <path d="M14,10 C20,18 40,28 55,25 C60,24 62,28 58,32 C45,38 25,35 10,22Z"/>
+    <!-- Arms resting on knees -->
+    <path d="M-12,-10 C-22,0 -38,12 -48,18 C-52,20 -50,25 -46,24 C-34,20 -20,10 -12,0Z"/>
+    <path d="M12,-10 C22,0 38,12 48,18 C52,20 50,25 46,24 C34,20 20,10 12,0Z"/>
+
+    <!-- Lotus petals beneath -->
+    <g transform="translate(0, 45)" fill-opacity="0.7">
+      <ellipse cx="-38" cy="0" rx="22" ry="10" transform="rotate(-25 -38 0)"/>
+      <ellipse cx="38" cy="0" rx="22" ry="10" transform="rotate(25 38 0)"/>
+      <ellipse cx="-18" cy="8" rx="22" ry="10" transform="rotate(-8 -18 8)"/>
+      <ellipse cx="18" cy="8" rx="22" ry="10" transform="rotate(8 18 8)"/>
+      <ellipse cx="0" cy="12" rx="20" ry="9"/>
+    </g>
+  </g>
+
+  <!-- Main title -->
+  <text x="600" y="420" text-anchor="middle"
+        font-family="'Playfair Display', Georgia, serif"
+        font-size="72" font-weight="700" fill="white"
+        letter-spacing="2">Yoga in Basel</text>
+
+  <!-- Decorative line -->
+  <rect x="480" y="440" width="240" height="2" rx="1" fill="white" fill-opacity="0.5"/>
+
+  <!-- Subtitle -->
+  <text x="600" y="480" text-anchor="middle"
+        font-family="'Inter', -apple-system, sans-serif"
+        font-size="28" fill="white" fill-opacity="0.85"
+        letter-spacing="3">40+ Studios · 30+ Stile · Stundenplan</text>
+
+  <!-- Bottom branding bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="black" fill-opacity="0.15"/>
+  <text x="600" y="617" text-anchor="middle"
+        font-family="'Inter', -apple-system, sans-serif"
+        font-size="16" fill="white" fill-opacity="0.6"
+        letter-spacing="1">yogakursebasel.ch</text>
+</svg>
