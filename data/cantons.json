@@ -1,8 +1,8 @@
 {
   "cantons": [
-    {"id": "zurich", "name": {"de": "Zürich", "en": "Zurich", "it": "Zurigo", "fr": "Zurich"}, "abbreviation": "ZH", "capital": "Zürich", "studio_count": 0, "status": "coming_soon"},
-    {"id": "bern", "name": {"de": "Bern", "en": "Bern", "it": "Berna", "fr": "Berne"}, "abbreviation": "BE", "capital": "Bern", "studio_count": 0, "status": "coming_soon"},
-    {"id": "luzern", "name": {"de": "Luzern", "en": "Lucerne", "it": "Lucerna", "fr": "Lucerne"}, "abbreviation": "LU", "capital": "Luzern", "studio_count": 0, "status": "coming_soon"},
+    {"id": "zurich", "name": {"de": "Zürich", "en": "Zurich", "it": "Zurigo", "fr": "Zurich"}, "abbreviation": "ZH", "capital": "Zürich", "studio_count": 46, "status": "active"},
+    {"id": "bern", "name": {"de": "Bern", "en": "Bern", "it": "Berna", "fr": "Berne"}, "abbreviation": "BE", "capital": "Bern", "studio_count": 29, "status": "active"},
+    {"id": "luzern", "name": {"de": "Luzern", "en": "Lucerne", "it": "Lucerna", "fr": "Lucerne"}, "abbreviation": "LU", "capital": "Luzern", "studio_count": 16, "status": "active"},
     {"id": "uri", "name": {"de": "Uri", "en": "Uri", "it": "Uri", "fr": "Uri"}, "abbreviation": "UR", "capital": "Altdorf", "studio_count": 0, "status": "coming_soon"},
     {"id": "schwyz", "name": {"de": "Schwyz", "en": "Schwyz", "it": "Svitto", "fr": "Schwyz"}, "abbreviation": "SZ", "capital": "Schwyz", "studio_count": 0, "status": "coming_soon"},
     {"id": "obwalden", "name": {"de": "Obwalden", "en": "Obwalden", "it": "Obvaldo", "fr": "Obwald"}, "abbreviation": "OW", "capital": "Sarnen", "studio_count": 0, "status": "coming_soon"},
@@ -21,10 +21,10 @@
     {"id": "aargau", "name": {"de": "Aargau", "en": "Aargau", "it": "Argovia", "fr": "Argovie"}, "abbreviation": "AG", "capital": "Aarau", "studio_count": 0, "status": "coming_soon"},
     {"id": "thurgau", "name": {"de": "Thurgau", "en": "Thurgau", "it": "Turgovia", "fr": "Thurgovie"}, "abbreviation": "TG", "capital": "Frauenfeld", "studio_count": 0, "status": "coming_soon"},
     {"id": "ticino", "name": {"de": "Tessin", "en": "Ticino", "it": "Ticino", "fr": "Tessin"}, "abbreviation": "TI", "capital": "Bellinzona", "studio_count": 0, "status": "coming_soon"},
-    {"id": "vaud", "name": {"de": "Waadt", "en": "Vaud", "it": "Vaud", "fr": "Vaud"}, "abbreviation": "VD", "capital": "Lausanne", "studio_count": 0, "status": "coming_soon"},
+    {"id": "vaud", "name": {"de": "Waadt", "en": "Vaud", "it": "Vaud", "fr": "Vaud"}, "abbreviation": "VD", "capital": "Lausanne", "studio_count": 16, "status": "active"},
     {"id": "valais", "name": {"de": "Wallis", "en": "Valais", "it": "Vallese", "fr": "Valais"}, "abbreviation": "VS", "capital": "Sion", "studio_count": 0, "status": "coming_soon"},
     {"id": "neuchatel", "name": {"de": "Neuenburg", "en": "Neuchâtel", "it": "Neuchâtel", "fr": "Neuchâtel"}, "abbreviation": "NE", "capital": "Neuchâtel", "studio_count": 0, "status": "coming_soon"},
-    {"id": "geneve", "name": {"de": "Genf", "en": "Geneva", "it": "Ginevra", "fr": "Genève"}, "abbreviation": "GE", "capital": "Genève", "studio_count": 0, "status": "coming_soon"},
+    {"id": "geneve", "name": {"de": "Genf", "en": "Geneva", "it": "Ginevra", "fr": "Genève"}, "abbreviation": "GE", "capital": "Genève", "studio_count": 20, "status": "active"},
     {"id": "jura", "name": {"de": "Jura", "en": "Jura", "it": "Giura", "fr": "Jura"}, "abbreviation": "JU", "capital": "Delémont", "studio_count": 0, "status": "coming_soon"}
   ]
 }

@@ -33,7 +33,9 @@
       "Bash(git --version)",
       "WebFetch(domain:meineprojekte.github.io)",
       "WebFetch(domain:gerbergaesslein-yoga.ch)",
-      "WebFetch(domain:voltayoga.ch)"
+      "WebFetch(domain:voltayoga.ch)",
+      "Bash(ls:*)",
+      "Bash(python3:*)"
     ]
   }
 }

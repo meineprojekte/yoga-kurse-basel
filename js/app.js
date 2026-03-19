@@ -347,7 +347,27 @@ if ('serviceWorker' in navigator) {
         'bern': { studios: 'studios_bern.json', schedule: null },
         'luzern': { studios: 'studios_luzern.json', schedule: null },
         'geneve': { studios: 'studios_geneve.json', schedule: null },
-        'vaud': { studios: 'studios_vaud.json', schedule: null }
+        'vaud': { studios: 'studios_vaud.json', schedule: null },
+        'aargau': { studios: 'studios_aargau.json', schedule: null },
+        'st-gallen': { studios: 'studios_st-gallen.json', schedule: null },
+        'solothurn': { studios: 'studios_solothurn.json', schedule: null },
+        'thurgau': { studios: 'studios_thurgau.json', schedule: null },
+        'basel-landschaft': { studios: 'studios_basel-landschaft.json', schedule: null },
+        'graubuenden': { studios: 'studios_graubuenden.json', schedule: null },
+        'ticino': { studios: 'studios_ticino.json', schedule: null },
+        'valais': { studios: 'studios_valais.json', schedule: null },
+        'fribourg': { studios: 'studios_fribourg.json', schedule: null },
+        'neuchatel': { studios: 'studios_neuchatel.json', schedule: null },
+        'schwyz': { studios: 'studios_schwyz.json', schedule: null },
+        'zug': { studios: 'studios_zug.json', schedule: null },
+        'schaffhausen': { studios: 'studios_schaffhausen.json', schedule: null },
+        'jura': { studios: 'studios_jura.json', schedule: null },
+        'appenzell-ar': { studios: 'studios_appenzell-ar.json', schedule: null },
+        'appenzell-ir': { studios: 'studios_appenzell-ir.json', schedule: null },
+        'glarus': { studios: 'studios_glarus.json', schedule: null },
+        'obwalden': { studios: 'studios_obwalden.json', schedule: null },
+        'nidwalden': { studios: 'studios_nidwalden.json', schedule: null },
+        'uri': { studios: 'studios_uri.json', schedule: null }
     };
 
     // Read saved preferences
