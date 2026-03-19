@@ -1,0 +1,49 @@
+name: Scrape Yoga Studios
+
+on:
+  schedule:
+    # Run 4 times daily: 6:00, 10:00, 14:00, 18:00 UTC (= 7:00, 11:00, 15:00, 19:00 CET)
+    - cron: '0 6 * * *'
+    - cron: '0 10 * * *'
+    - cron: '0 14 * * *'
+    - cron: '0 18 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: scrapers/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r scrapers/requirements.txt
+
+      - name: Run scraper
+        run: python scrapers/scrape_all.py
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet data/studios.json || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "Yoga Basel Bot"
+          git config user.email "bot@yogakursebasel.ch"
+          git add data/studios.json
+          git commit -m "chore: update studio data $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push

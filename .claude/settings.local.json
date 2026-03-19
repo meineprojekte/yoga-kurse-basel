@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.eversports.ch)",
+      "WebFetch(domain:www.byoga.ch)",
+      "WebFetch(domain:thelookingglassbasel.com)",
+      "WebFetch(domain:hanumanyoga.ch)",
+      "WebFetch(domain:www.niyama-yoga.ch)",
+      "WebFetch(domain:www.anjali.ch)",
+      "WebFetch(domain:www.yogabloom.ch)",
+      "WebFetch(domain:www.meyohouse.com)",
+      "WebFetch(domain:bikramyogabasel.ch)",
+      "WebFetch(domain:secretgarden-yoga.ch)",
+      "WebFetch(domain:www.yogaimgaertnerhuus.com)",
+      "WebFetch(domain:www.i-yoga-basel.ch)",
+      "WebFetch(domain:ayalgayoga.ch)",
+      "WebFetch(domain:www.ashtanga-basel.ch)",
+      "WebFetch(domain:mint-loft.ch)",
+      "WebFetch(domain:www.yoganow-basel.ch)",
+      "WebFetch(domain:www.purayoga.ch)",
+      "WebFetch(domain:www.yoga-atelier-basel.ch)",
+      "WebFetch(domain:lotosyoga.ch)",
+      "WebFetch(domain:en.voltayoga.ch)",
+      "Bash(git init:*)",
+      "Bash(git branch:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
