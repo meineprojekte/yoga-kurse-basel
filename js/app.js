@@ -138,6 +138,138 @@
             'schedule.subtitle': 'Select a day to see all yoga classes in Basel with time, location and teacher',
             'schedule.placeholder': 'Select a day above to see all classes.',
             'schedule.note': '* Schedules from 7 studios with available data. Some studios use dynamic booking systems — visit their website for the current schedule.'
+        },
+        it: {
+            'nav.studios': 'Studi',
+            'nav.styles': 'Stili di Yoga',
+            'nav.map': 'Mappa',
+            'nav.faq': 'FAQ',
+            'nav.schedule': 'Orario',
+            'hero.title': 'Tutti i corsi di yoga a Basilea<br><span class="hero-accent">a colpo d\'occhio</span>',
+            'hero.subtitle': '40+ studi &bull; 30+ stili di yoga &bull; Aggiornato ogni giorno',
+            'hero.search_placeholder': 'Cerca studio, stile di yoga o quartiere...',
+            'hero.stat_studios': 'Studi',
+            'hero.stat_styles': 'Stili di yoga',
+            'hero.stat_updates': 'aggiornato ogni giorno',
+            'filters.title': 'Filtri',
+            'filters.button': 'Filtri e ordinamento',
+            'filters.all': 'Tutti',
+            'filters.style': 'Stile di yoga',
+            'filters.all_styles': 'Tutti gli stili',
+            'filters.district': 'Quartiere / Zona',
+            'filters.all_districts': 'Tutti i quartieri',
+            'filters.surrounding': 'Dintorni',
+            'filters.feature': 'Caratteristiche',
+            'filters.all_features': 'Tutte',
+            'filters.sort': 'Ordinamento',
+            'filters.sort_name': 'Nome (A-Z)',
+            'filters.sort_styles': 'Numero di stili',
+            'filters.sort_district': 'Quartiere',
+            'filters.reset': 'Reimposta filtri',
+            'filters.clear_all': 'Cancella tutti i filtri',
+            'results.showing': 'Mostrati',
+            'results.of': 'di',
+            'results.studios': 'Studi',
+            'results.export_pdf': 'Scarica PDF',
+            'results.none_title': 'Nessuno studio trovato',
+            'results.none_text': 'Prova con altri filtri o termini di ricerca.',
+            'studios.title': 'Studi di yoga a Basilea',
+            'styles.title': 'Stili di yoga a Basilea',
+            'styles.subtitle': 'Scopri la variet\u00e0 di stili di yoga offerti a Basilea',
+            'map.title': 'Studi sulla mappa',
+            'map.subtitle': 'Trova studi di yoga vicino a te',
+            'faq.title': 'Domande frequenti',
+            'footer.desc': 'La panoramica completa e indipendente di tutti i corsi e gli studi di yoga a Basilea e dintorni.',
+            'footer.quick_links': 'Link rapidi',
+            'footer.popular_styles': 'Stili popolari',
+            'footer.booking': 'Piattaforme di prenotazione',
+            'footer.disclaimer': 'Questo sito \u00e8 un portale informativo indipendente e non ha alcun legame commerciale con gli studi elencati. Tutte le informazioni provengono da fonti accessibili al pubblico. Per prezzi e orari aggiornati, visita il sito web dello studio corrispondente.',
+            'footer.updated': 'Ultimo aggiornamento:',
+            'modal.website': 'Vai al sito',
+            'modal.schedule': 'Vedi orario',
+            'modal.styles': 'Stili di yoga',
+            'modal.teachers': 'Insegnanti',
+            'modal.features': 'Caratteristiche',
+            'modal.contact': 'Contatto',
+            'modal.hours': 'Orari di apertura',
+            'modal.languages': 'Lingue',
+            'modal.booking': 'Prenota tramite',
+            'card.teachers': 'Insegnanti',
+            'card.more_styles': 'altri',
+            'card.details': 'Dettagli',
+            'styles.studios_count': 'Studi',
+            'pdf.title': 'Studi di yoga a Basilea \u2014 Panoramica',
+            'pdf.generated': 'Creato il',
+            'schedule.title': 'Orario \u2014 Corsi per giorno',
+            'schedule.subtitle': 'Scegli un giorno e scopri tutti i corsi di yoga a Basilea con orario, luogo e insegnante',
+            'schedule.placeholder': 'Scegli un giorno della settimana qui sopra per vedere tutti i corsi.',
+            'schedule.note': '* Orari di 7 studi con dati disponibili. Alcuni studi utilizzano sistemi di prenotazione dinamici \u2014 visita il loro sito per l\'orario aggiornato.'
+        },
+        fr: {
+            'nav.studios': 'Studios',
+            'nav.styles': 'Styles de yoga',
+            'nav.map': 'Carte',
+            'nav.faq': 'FAQ',
+            'nav.schedule': 'Horaire',
+            'hero.title': 'Tous les cours de yoga \u00e0 B\u00e2le<br><span class="hero-accent">en un coup d\'\u0153il</span>',
+            'hero.subtitle': '40+ studios &bull; 30+ styles de yoga &bull; Mis \u00e0 jour quotidiennement',
+            'hero.search_placeholder': 'Chercher un studio, un style de yoga ou un quartier...',
+            'hero.stat_studios': 'Studios',
+            'hero.stat_styles': 'Styles de yoga',
+            'hero.stat_updates': 'mis \u00e0 jour quotidiennement',
+            'filters.title': 'Filtres',
+            'filters.button': 'Filtres et tri',
+            'filters.all': 'Tous',
+            'filters.style': 'Style de yoga',
+            'filters.all_styles': 'Tous les styles',
+            'filters.district': 'Quartier / Zone',
+            'filters.all_districts': 'Tous les quartiers',
+            'filters.surrounding': 'Environs',
+            'filters.feature': 'Particularit\u00e9s',
+            'filters.all_features': 'Toutes',
+            'filters.sort': 'Tri',
+            'filters.sort_name': 'Nom (A-Z)',
+            'filters.sort_styles': 'Nombre de styles',
+            'filters.sort_district': 'Quartier',
+            'filters.reset': 'R\u00e9initialiser les filtres',
+            'filters.clear_all': 'Effacer tous les filtres',
+            'results.showing': 'Affichage de',
+            'results.of': 'sur',
+            'results.studios': 'Studios',
+            'results.export_pdf': 'T\u00e9l\u00e9charger PDF',
+            'results.none_title': 'Aucun studio trouv\u00e9',
+            'results.none_text': 'Essaie d\'autres filtres ou termes de recherche.',
+            'studios.title': 'Studios de yoga \u00e0 B\u00e2le',
+            'styles.title': 'Styles de yoga \u00e0 B\u00e2le',
+            'styles.subtitle': 'D\u00e9couvre la diversit\u00e9 des styles de yoga propos\u00e9s \u00e0 B\u00e2le',
+            'map.title': 'Studios sur la carte',
+            'map.subtitle': 'Trouve des studios de yoga pr\u00e8s de chez toi',
+            'faq.title': 'Questions fr\u00e9quentes',
+            'footer.desc': 'L\'aper\u00e7u complet et ind\u00e9pendant de tous les cours et studios de yoga \u00e0 B\u00e2le et ses environs.',
+            'footer.quick_links': 'Acc\u00e8s rapide',
+            'footer.popular_styles': 'Styles populaires',
+            'footer.booking': 'Plateformes de r\u00e9servation',
+            'footer.disclaimer': 'Ce site est un portail d\'information ind\u00e9pendant et n\'a aucun lien commercial avec les studios r\u00e9pertori\u00e9s. Toutes les informations proviennent de sources accessibles au public. Pour les prix et horaires actuels, consulte le site web du studio concern\u00e9.',
+            'footer.updated': 'Derni\u00e8re mise \u00e0 jour :',
+            'modal.website': 'Vers le site',
+            'modal.schedule': 'Voir l\'horaire',
+            'modal.styles': 'Styles de yoga',
+            'modal.teachers': 'Enseignant(e)s',
+            'modal.features': 'Particularit\u00e9s',
+            'modal.contact': 'Contact',
+            'modal.hours': 'Heures d\'ouverture',
+            'modal.languages': 'Langues',
+            'modal.booking': 'R\u00e9server via',
+            'card.teachers': 'Enseignant(e)s',
+            'card.more_styles': 'autres',
+            'card.details': 'D\u00e9tails',
+            'styles.studios_count': 'Studios',
+            'pdf.title': 'Studios de yoga \u00e0 B\u00e2le \u2014 Aper\u00e7u',
+            'pdf.generated': 'Cr\u00e9\u00e9 le',
+            'schedule.title': 'Horaire \u2014 Cours par jour',
+            'schedule.subtitle': 'Choisis un jour et d\u00e9couvre tous les cours de yoga \u00e0 B\u00e2le avec horaire, lieu et enseignant(e)',
+            'schedule.placeholder': 'Choisis un jour de la semaine ci-dessus pour voir tous les cours.',
+            'schedule.note': '* Horaires de 7 studios avec donn\u00e9es disponibles. Certains studios utilisent des syst\u00e8mes de r\u00e9servation dynamiques \u2014 consulte leur site pour l\'horaire actuel.'
         }
     };
 
@@ -719,7 +851,9 @@
         // Day names for display
         var dayNames = {
             de: { Monday: 'Montag', Tuesday: 'Dienstag', Wednesday: 'Mittwoch', Thursday: 'Donnerstag', Friday: 'Freitag', Saturday: 'Samstag', Sunday: 'Sonntag' },
-            en: { Monday: 'Monday', Tuesday: 'Tuesday', Wednesday: 'Wednesday', Thursday: 'Thursday', Friday: 'Friday', Saturday: 'Saturday', Sunday: 'Sunday' }
+            en: { Monday: 'Monday', Tuesday: 'Tuesday', Wednesday: 'Wednesday', Thursday: 'Thursday', Friday: 'Friday', Saturday: 'Saturday', Sunday: 'Sunday' },
+            it: { Monday: 'Luned\u00ec', Tuesday: 'Marted\u00ec', Wednesday: 'Mercoled\u00ec', Thursday: 'Gioved\u00ec', Friday: 'Venerd\u00ec', Saturday: 'Sabato', Sunday: 'Domenica' },
+            fr: { Monday: 'Lundi', Tuesday: 'Mardi', Wednesday: 'Mercredi', Thursday: 'Jeudi', Friday: 'Vendredi', Saturday: 'Samedi', Sunday: 'Dimanche' }
         };
 
         if (info) {
@@ -889,15 +1023,34 @@
             if (pval && pval !== pkey) placeholders[j].placeholder = pval;
         }
 
+        // Update day button labels
+        var dayShort = {
+            de: { Monday: 'Mo', Tuesday: 'Di', Wednesday: 'Mi', Thursday: 'Do', Friday: 'Fr', Saturday: 'Sa', Sunday: 'So' },
+            en: { Monday: 'Mon', Tuesday: 'Tue', Wednesday: 'Wed', Thursday: 'Thu', Friday: 'Fri', Saturday: 'Sat', Sunday: 'Sun' },
+            it: { Monday: 'Lun', Tuesday: 'Mar', Wednesday: 'Mer', Thursday: 'Gio', Friday: 'Ven', Saturday: 'Sab', Sunday: 'Dom' },
+            fr: { Monday: 'Lun', Tuesday: 'Mar', Wednesday: 'Mer', Thursday: 'Jeu', Friday: 'Ven', Saturday: 'Sam', Sunday: 'Dim' }
+        };
+        var dayBtns = document.querySelectorAll('#scheduleDays .day-btn');
+        var shorts = dayShort[state.lang] || dayShort.de;
+        for (var d = 0; d < dayBtns.length; d++) {
+            var dayKey = dayBtns[d].getAttribute('data-day');
+            if (shorts[dayKey]) dayBtns[d].textContent = shorts[dayKey];
+        }
+
         document.documentElement.lang = state.lang;
     }
 
     function toggleLanguage() {
-        state.lang = state.lang === 'de' ? 'en' : 'de';
+        var langs = ['de', 'en', 'it', 'fr'];
+        var idx = langs.indexOf(state.lang);
+        state.lang = langs[(idx + 1) % langs.length];
         try { localStorage.setItem('yogabasel-lang', state.lang); } catch (e) {}
         applyLanguage();
         renderStudios();
         renderStylesOverview();
+        // Re-render schedule if a day is selected
+        var activeDay = document.querySelector('#scheduleDays .day-btn.active');
+        if (activeDay) renderSchedule(activeDay.getAttribute('data-day'));
     }
 
     // --- Last Updated ---
