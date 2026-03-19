@@ -17,8 +17,8 @@ if ('serviceWorker' in navigator) {
             'nav.styles': 'Yoga-Stile',
             'nav.map': 'Karte',
             'nav.faq': 'FAQ',
-            'hero.title': 'Alle Yoga-Kurse in Basel<br><span class="hero-accent">auf einen Blick</span>',
-            'hero.subtitle': '40+ Studios &bull; 30+ Yoga-Stile &bull; Täglich aktualisiert',
+            'hero.title': 'Yoga in der Schweiz<br><span class="hero-accent">alle Kurse auf einen Blick</span>',
+            'hero.subtitle': '26 Kantone &bull; Hunderte Studios &bull; Täglich aktualisiert',
             'hero.search_placeholder': 'Studio, Yoga-Stil oder Quartier suchen...',
             'hero.stat_studios': 'Studios',
             'hero.stat_styles': 'Yoga-Stile',
@@ -95,8 +95,8 @@ if ('serviceWorker' in navigator) {
             'nav.styles': 'Yoga Styles',
             'nav.map': 'Map',
             'nav.faq': 'FAQ',
-            'hero.title': 'All Yoga Classes in Basel<br><span class="hero-accent">at a Glance</span>',
-            'hero.subtitle': '40+ Studios &bull; 30+ Yoga Styles &bull; Updated Daily',
+            'hero.title': 'Yoga in Switzerland<br><span class="hero-accent">all classes at a glance</span>',
+            'hero.subtitle': '26 Cantons &bull; Hundreds of Studios &bull; Updated Daily',
             'hero.search_placeholder': 'Search studio, yoga style or district...',
             'hero.stat_studios': 'Studios',
             'hero.stat_styles': 'Yoga Styles',
@@ -174,8 +174,8 @@ if ('serviceWorker' in navigator) {
             'nav.map': 'Mappa',
             'nav.faq': 'FAQ',
             'nav.schedule': 'Orario',
-            'hero.title': 'Tutti i corsi di yoga a Basilea<br><span class="hero-accent">a colpo d\'occhio</span>',
-            'hero.subtitle': '40+ studi &bull; 30+ stili di yoga &bull; Aggiornato ogni giorno',
+            'hero.title': 'Yoga in Svizzera<br><span class="hero-accent">tutti i corsi a colpo d\'occhio</span>',
+            'hero.subtitle': '26 Cantoni &bull; Centinaia di studi &bull; Aggiornato ogni giorno',
             'hero.search_placeholder': 'Cerca studio, stile di yoga o quartiere...',
             'hero.stat_studios': 'Studi',
             'hero.stat_styles': 'Stili di yoga',
@@ -252,8 +252,8 @@ if ('serviceWorker' in navigator) {
             'nav.map': 'Carte',
             'nav.faq': 'FAQ',
             'nav.schedule': 'Horaire',
-            'hero.title': 'Tous les cours de yoga \u00e0 B\u00e2le<br><span class="hero-accent">en un coup d\'\u0153il</span>',
-            'hero.subtitle': '40+ studios &bull; 30+ styles de yoga &bull; Mis \u00e0 jour quotidiennement',
+            'hero.title': 'Yoga en Suisse<br><span class="hero-accent">tous les cours en un coup d\'\u0153il</span>',
+            'hero.subtitle': '26 cantons &bull; des centaines de studios &bull; Mis \u00e0 jour quotidiennement',
             'hero.search_placeholder': 'Chercher un studio, un style de yoga ou un quartier...',
             'hero.stat_studios': 'Studios',
             'hero.stat_styles': 'Styles de yoga',
@@ -336,7 +336,18 @@ if ('serviceWorker' in navigator) {
         activeStyleFilter: 'all',
         searchQuery: '',
         map: null,
-        markers: []
+        markers: [],
+        currentCanton: 'basel-stadt'
+    };
+
+    // Canton data file mapping
+    var cantonDataFiles = {
+        'basel-stadt': { studios: 'studios_basel.json', schedule: 'schedule_basel.json' },
+        'zurich': { studios: 'studios_zurich.json', schedule: null },
+        'bern': { studios: 'studios_bern.json', schedule: null },
+        'luzern': { studios: 'studios_luzern.json', schedule: null },
+        'geneve': { studios: 'studios_geneve.json', schedule: null },
+        'vaud': { studios: 'studios_vaud.json', schedule: null }
     };
 
     // Read saved preferences
@@ -365,13 +376,26 @@ if ('serviceWorker' in navigator) {
 
     // --- Init: runs when DOM is ready ---
     function init() {
-        console.log('[YogaBasel] Initializing...');
+        console.log('[YogaSchweiz] Initializing...');
         applyTheme();
         applyLanguage();
         setupEventListeners();
-        loadData();
+
+        // Load saved canton or default to Basel
+        var savedCanton = null;
+        try { savedCanton = localStorage.getItem('yogabasel-canton'); } catch (e) {}
+
+        // Check URL hash for canton
+        var hash = window.location.hash;
+        if (hash && hash.indexOf('#canton/') === 0) {
+            savedCanton = hash.replace('#canton/', '');
+        }
+
+        var cantonToLoad = savedCanton || 'basel-stadt';
+        switchCanton(cantonToLoad);
+
         updateLastUpdated();
-        console.log('[YogaBasel] Init complete.');
+        console.log('[YogaSchweiz] Init complete.');
     }
 
     // Robust DOM ready detection
@@ -382,18 +406,81 @@ if ('serviceWorker' in navigator) {
         init();
     }
 
-    // --- Data Loading ---
-    function loadData() {
-        // Determine base URL for data file
-        var scriptEls = document.querySelectorAll('script[src*="app.js"]');
-        var basePath = './';
-        if (scriptEls.length > 0) {
-            var src = scriptEls[0].getAttribute('src');
-            basePath = src.replace('js/app.js', '').replace('app.js', '') || './';
+    // --- Canton Switching ---
+    function switchCanton(cantonId) {
+        state.currentCanton = cantonId;
+        try { localStorage.setItem('yogabasel-canton', cantonId); } catch (e) {}
+
+        // Update select
+        var sel = $('cantonSelect');
+        if (sel) sel.value = cantonId;
+
+        // Check if we have data for this canton
+        var files = cantonDataFiles[cantonId];
+        if (!files) {
+            // Show coming soon
+            showComingSoon(cantonId);
+            return;
         }
 
-        var dataUrl = basePath + 'data/studios.json';
-        console.log('[YogaBasel] Fetching data from:', dataUrl);
+        // Load canton data
+        loadData(files.studios);
+        if (files.schedule) {
+            loadSchedule(files.schedule);
+        } else {
+            scheduleData = [];
+            var list = $('scheduleList');
+            if (list) list.innerHTML = '<p class="schedule-placeholder">' + t('schedule.placeholder') + '</p>';
+        }
+
+        // Reset map for new canton
+        if (state.map) {
+            state.map.remove();
+            state.map = null;
+        }
+        setTimeout(initMap, 500);
+    }
+
+    function showComingSoon(cantonId) {
+        // Find canton name
+        var cantonNames = {
+            'zurich': 'Zürich', 'bern': 'Bern', 'luzern': 'Luzern', 'geneve': 'Genf',
+            'vaud': 'Waadt', 'aargau': 'Aargau', 'st-gallen': 'St. Gallen', 'solothurn': 'Solothurn',
+            'basel-landschaft': 'Basel-Landschaft', 'thurgau': 'Thurgau', 'graubuenden': 'Graubünden',
+            'ticino': 'Tessin', 'valais': 'Wallis', 'fribourg': 'Freiburg', 'neuchatel': 'Neuenburg',
+            'schwyz': 'Schwyz', 'zug': 'Zug', 'schaffhausen': 'Schaffhausen', 'jura': 'Jura',
+            'appenzell-ar': 'Appenzell A.Rh.', 'appenzell-ir': 'Appenzell I.Rh.', 'glarus': 'Glarus',
+            'obwalden': 'Obwalden', 'nidwalden': 'Nidwalden', 'uri': 'Uri'
+        };
+        var name = cantonNames[cantonId] || cantonId;
+
+        state.studios = [];
+        state.filteredStudios = [];
+        var grid = $('studiosGrid');
+        if (grid) {
+            grid.innerHTML = '<div class="canton-coming-soon" style="grid-column:1/-1">' +
+                '<h3>' + escapeHtml(name) + '</h3>' +
+                '<p>' + (state.lang === 'de' ? 'Daten für diesen Kanton werden gerade gesammelt. Bald verfügbar!' :
+                    state.lang === 'en' ? 'Data for this canton is being collected. Coming soon!' :
+                    state.lang === 'it' ? 'I dati per questo cantone sono in fase di raccolta. Disponibili presto!' :
+                    'Les données pour ce canton sont en cours de collecte. Bientôt disponible !') + '</p>' +
+                '</div>';
+        }
+        if ($('visibleCount')) $('visibleCount').textContent = '0';
+        if ($('totalCount')) $('totalCount').textContent = '0';
+
+        var stylesGrid = $('stylesGrid');
+        if (stylesGrid) stylesGrid.innerHTML = '';
+        scheduleData = [];
+        var schedList = $('scheduleList');
+        if (schedList) schedList.innerHTML = '';
+    }
+
+    // --- Data Loading ---
+    function loadData(fileName) {
+        fileName = fileName || 'studios_basel.json';
+        var dataUrl = './data/' + fileName;
+        console.log('[YogaSchweiz] Fetching data from:', dataUrl);
 
         var xhr = new XMLHttpRequest();
         xhr.open('GET', dataUrl, true);
@@ -808,9 +895,10 @@ if ('serviceWorker' in navigator) {
     // --- Schedule ---
     var scheduleData = [];
 
-    function loadSchedule() {
+    function loadSchedule(fileName) {
+        fileName = fileName || 'schedule_basel.json';
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', './data/schedule.json', true);
+        xhr.open('GET', './data/' + fileName, true);
         xhr.onreadystatechange = function () {
             if (xhr.readyState !== 4) return;
             if (xhr.status === 200) {
@@ -1120,6 +1208,14 @@ if ('serviceWorker' in navigator) {
 
     // --- Event Listeners ---
     function setupEventListeners() {
+        // Canton selector
+        var cantonSel = $('cantonSelect');
+        if (cantonSel) {
+            cantonSel.addEventListener('change', function () {
+                if (cantonSel.value) switchCanton(cantonSel.value);
+            });
+        }
+
         // Theme toggle
         var themeBtn = $('themeToggle');
         if (themeBtn) themeBtn.addEventListener('click', toggleTheme);

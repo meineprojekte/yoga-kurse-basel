@@ -456,6 +456,53 @@ select {
     color: var(--color-text);
 }
 
+/* --- Canton Selector --- */
+.canton-selector {
+    max-width: 400px;
+    margin: 0 auto var(--spacing-xl);
+    text-align: center;
+}
+
+.canton-selector-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+    opacity: 0.9;
+}
+
+.canton-select {
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 60px;
+    font-size: 16px;
+    font-weight: 500;
+    background: var(--color-bg-alt);
+    color: var(--color-text);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    appearance: auto;
+    text-align: center;
+}
+
+.canton-select:focus {
+    outline: none;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2), 0 0 0 3px var(--color-primary-light);
+}
+
+.canton-coming-soon {
+    text-align: center;
+    padding: var(--spacing-3xl);
+    color: var(--color-text-muted);
+}
+
+.canton-coming-soon h3 {
+    font-size: 1.5rem;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+}
+
 .hero-stats {
     display: flex;
     justify-content: center;

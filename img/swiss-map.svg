@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" class="swiss-map-svg">
+  <style>
+    .canton { fill: #E8E0F0; stroke: #fff; stroke-width: 1.5; cursor: pointer; transition: fill 0.2s, transform 0.2s; }
+    .canton:hover { fill: #D4A373; transform: scale(1.02); transform-origin: center; }
+    .canton.active { fill: #6B5B95; }
+    .canton.has-data { fill: #B5A8D5; }
+    .canton-label { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; fill: #4A3D6E; pointer-events: none; text-anchor: middle; }
+    .canton-label.active { fill: #fff; }
+  </style>
+  <!-- Simplified Swiss canton map - approximate shapes -->
+  <!-- GE - Genève -->
+  <path class="canton" data-canton="geneve" d="M95,390 L75,370 L80,350 L100,340 L120,350 L125,370 L115,390 Z"/>
+  <text class="canton-label" x="100" y="368">GE</text>
+  <!-- VD - Vaud -->
+  <path class="canton" data-canton="vaud" d="M120,350 L100,340 L110,310 L130,290 L170,280 L190,300 L185,330 L160,350 L140,360 L125,370 Z"/>
+  <text class="canton-label" x="150" y="325">VD</text>
+  <!-- VS - Valais -->
+  <path class="canton" data-canton="valais" d="M130,290 L170,280 L190,300 L230,310 L280,330 L320,340 L310,370 L270,380 L220,370 L170,360 L140,360 L125,370 L115,390 L95,390 L85,370 L100,340 Z"/>
+  <text class="canton-label" x="210" y="360">VS</text>
+  <!-- FR - Fribourg -->
+  <path class="canton" data-canton="fribourg" d="M190,300 L170,280 L180,260 L210,240 L240,250 L250,270 L240,290 L230,310 Z"/>
+  <text class="canton-label" x="215" y="278">FR</text>
+  <!-- NE - Neuchâtel -->
+  <path class="canton" data-canton="neuchatel" d="M170,280 L130,290 L120,270 L140,250 L160,240 L180,260 Z"/>
+  <text class="canton-label" x="150" y="270">NE</text>
+  <!-- JU - Jura -->
+  <path class="canton" data-canton="jura" d="M140,250 L120,270 L100,260 L90,230 L110,210 L140,200 L160,210 L160,240 Z"/>
+  <text class="canton-label" x="130" y="235">JU</text>
+  <!-- BE - Bern -->
+  <path class="canton" data-canton="bern" d="M210,240 L180,260 L160,240 L160,210 L180,190 L220,170 L260,180 L300,200 L320,230 L310,260 L280,280 L280,330 L230,310 L240,290 L250,270 L240,250 Z"/>
+  <text class="canton-label" x="250" y="240">BE</text>
+  <!-- SO - Solothurn -->
+  <path class="canton" data-canton="solothurn" d="M180,190 L160,210 L140,200 L160,170 L200,160 L220,170 Z"/>
+  <text class="canton-label" x="185" y="190">SO</text>
+  <!-- BS - Basel-Stadt -->
+  <path class="canton" data-canton="basel-stadt" d="M160,140 L150,150 L145,160 L155,165 L168,155 L170,145 Z"/>
+  <text class="canton-label" x="160" y="155">BS</text>
+  <!-- BL - Basel-Landschaft -->
+  <path class="canton" data-canton="basel-landschaft" d="M140,200 L110,210 L120,180 L130,160 L145,160 L150,150 L160,140 L170,145 L168,155 L160,170 Z"/>
+  <text class="canton-label" x="145" y="182">BL</text>
+  <!-- AG - Aargau -->
+  <path class="canton" data-canton="aargau" d="M200,160 L160,170 L168,155 L170,145 L200,130 L230,120 L250,140 L240,160 L220,170 Z"/>
+  <text class="canton-label" x="210" y="150">AG</text>
+  <!-- ZH - Zürich -->
+  <path class="canton" data-canton="zurich" d="M250,140 L230,120 L240,100 L270,85 L310,80 L340,95 L345,120 L330,140 L300,150 L280,155 L260,160 Z"/>
+  <text class="canton-label" x="295" y="120">ZH</text>
+  <!-- LU - Luzern -->
+  <path class="canton" data-canton="luzern" d="M260,180 L240,160 L250,140 L260,160 L280,155 L300,150 L310,170 L320,190 L300,200 Z"/>
+  <text class="canton-label" x="280" y="178">LU</text>
+  <!-- OW - Obwalden -->
+  <path class="canton" data-canton="obwalden" d="M300,200 L320,190 L340,200 L350,220 L330,230 L320,230 Z"/>
+  <text class="canton-label" x="325" y="215">OW</text>
+  <!-- NW - Nidwalden -->
+  <path class="canton" data-canton="nidwalden" d="M320,190 L310,170 L330,165 L345,180 L340,200 Z"/>
+  <text class="canton-label" x="330" y="185">NW</text>
+  <!-- UR - Uri -->
+  <path class="canton" data-canton="uri" d="M340,200 L345,180 L360,175 L380,200 L390,240 L370,270 L350,260 L340,240 L350,220 Z"/>
+  <text class="canton-label" x="365" y="225">UR</text>
+  <!-- SZ - Schwyz -->
+  <path class="canton" data-canton="schwyz" d="M330,165 L345,150 L370,145 L385,160 L380,180 L360,175 L345,180 Z"/>
+  <text class="canton-label" x="358" y="167">SZ</text>
+  <!-- ZG - Zug -->
+  <path class="canton" data-canton="zug" d="M310,170 L300,150 L320,140 L345,150 L330,165 Z"/>
+  <text class="canton-label" x="320" y="157">ZG</text>
+  <!-- GL - Glarus -->
+  <path class="canton" data-canton="glarus" d="M370,145 L385,130 L410,135 L420,160 L405,180 L385,160 Z"/>
+  <text class="canton-label" x="398" y="158">GL</text>
+  <!-- SH - Schaffhausen -->
+  <path class="canton" data-canton="schaffhausen" d="M310,60 L290,55 L280,65 L290,80 L310,80 L325,70 Z"/>
+  <text class="canton-label" x="305" y="72">SH</text>
+  <!-- TG - Thurgau -->
+  <path class="canton" data-canton="thurgau" d="M340,95 L310,80 L325,70 L360,60 L400,65 L420,80 L410,100 L380,105 L345,100 Z"/>
+  <text class="canton-label" x="370" y="85">TG</text>
+  <!-- AR - Appenzell A.Rh. -->
+  <path class="canton" data-canton="appenzell-ar" d="M420,80 L440,75 L460,85 L455,100 L435,105 L420,95 Z"/>
+  <text class="canton-label" x="440" y="92">AR</text>
+  <!-- AI - Appenzell I.Rh. -->
+  <path class="canton" data-canton="appenzell-ir" d="M435,105 L455,100 L460,115 L445,120 L435,115 Z"/>
+  <text class="canton-label" x="448" y="112">AI</text>
+  <!-- SG - St. Gallen -->
+  <path class="canton" data-canton="st-gallen" d="M380,105 L410,100 L420,80 L420,95 L435,105 L435,115 L445,120 L460,115 L480,130 L490,160 L470,170 L440,165 L420,160 L410,135 L385,130 L370,145 L345,150 L320,140 L330,140 L340,120 L345,100 Z"/>
+  <text class="canton-label" x="430" y="140">SG</text>
+  <!-- GR - Graubünden -->
+  <path class="canton" data-canton="graubuenden" d="M420,160 L440,165 L470,170 L490,160 L530,180 L570,210 L590,260 L570,300 L530,320 L490,310 L460,290 L430,260 L400,240 L390,240 L380,200 L405,180 Z"/>
+  <text class="canton-label" x="490" y="240">GR</text>
+  <!-- TI - Ticino -->
+  <path class="canton" data-canton="ticino" d="M370,270 L390,240 L400,240 L430,260 L460,290 L470,320 L460,350 L430,370 L400,360 L380,340 L360,310 Z"/>
+  <text class="canton-label" x="420" y="320">TI</text>
+</svg>
