@@ -76,7 +76,19 @@ if ('serviceWorker' in navigator) {
             'schedule.title': 'Stundenplan — Kurse nach Tag',
             'schedule.subtitle': 'Wähle einen Tag und sieh alle Yoga-Kurse in Basel mit Uhrzeit, Ort und Lehrer/in',
             'schedule.placeholder': 'Wähle einen Wochentag oben, um alle Kurse zu sehen.',
-            'schedule.note': '* Stundenpläne von 7 Studios mit verfügbaren Daten. Einige Studios verwenden dynamische Buchungssysteme — besuche deren Website für den aktuellen Plan.'
+            'schedule.note': '* Stundenpläne von 7 Studios mit verfügbaren Daten. Einige Studios verwenden dynamische Buchungssysteme — besuche deren Website für den aktuellen Plan.',
+            'feedback.title': 'Feedback & Vorschläge',
+            'feedback.subtitle': 'Hilf uns, diese Seite zu verbessern. Fehlt ein Studio? Stimmt ein Stundenplan nicht? Hast du Ideen?',
+            'feedback.type': 'Art des Feedbacks',
+            'feedback.select': 'Bitte wählen...',
+            'feedback.missing': 'Fehlendes Studio melden',
+            'feedback.wrong': 'Falsche Information korrigieren',
+            'feedback.suggestion': 'Verbesserungsvorschlag',
+            'feedback.other': 'Sonstiges',
+            'feedback.name': 'Name (optional)',
+            'feedback.message': 'Deine Nachricht',
+            'feedback.send': 'Feedback senden',
+            'feedback.thanks': 'Vielen Dank für dein Feedback! Wir werden es so schnell wie möglich berücksichtigen.'
         },
         en: {
             'nav.studios': 'Studios',
@@ -142,7 +154,19 @@ if ('serviceWorker' in navigator) {
             'schedule.title': 'Schedule — Classes by Day',
             'schedule.subtitle': 'Select a day to see all yoga classes in Basel with time, location and teacher',
             'schedule.placeholder': 'Select a day above to see all classes.',
-            'schedule.note': '* Schedules from 7 studios with available data. Some studios use dynamic booking systems — visit their website for the current schedule.'
+            'schedule.note': '* Schedules from 7 studios with available data. Some studios use dynamic booking systems — visit their website for the current schedule.',
+            'feedback.title': 'Feedback & Suggestions',
+            'feedback.subtitle': 'Help us improve this site. Is a studio missing? Is a schedule wrong? Got ideas?',
+            'feedback.type': 'Type of feedback',
+            'feedback.select': 'Please select...',
+            'feedback.missing': 'Report missing studio',
+            'feedback.wrong': 'Correct wrong information',
+            'feedback.suggestion': 'Improvement suggestion',
+            'feedback.other': 'Other',
+            'feedback.name': 'Name (optional)',
+            'feedback.message': 'Your message',
+            'feedback.send': 'Send feedback',
+            'feedback.thanks': 'Thank you for your feedback! We will consider it as soon as possible.'
         },
         it: {
             'nav.studios': 'Studi',
@@ -208,7 +232,19 @@ if ('serviceWorker' in navigator) {
             'schedule.title': 'Orario \u2014 Corsi per giorno',
             'schedule.subtitle': 'Scegli un giorno e scopri tutti i corsi di yoga a Basilea con orario, luogo e insegnante',
             'schedule.placeholder': 'Scegli un giorno della settimana qui sopra per vedere tutti i corsi.',
-            'schedule.note': '* Orari di 7 studi con dati disponibili. Alcuni studi utilizzano sistemi di prenotazione dinamici \u2014 visita il loro sito per l\'orario aggiornato.'
+            'schedule.note': '* Orari di 7 studi con dati disponibili. Alcuni studi utilizzano sistemi di prenotazione dinamici \u2014 visita il loro sito per l\'orario aggiornato.',
+            'feedback.title': 'Feedback e suggerimenti',
+            'feedback.subtitle': 'Aiutaci a migliorare questo sito. Manca uno studio? Un orario non \u00e8 corretto? Hai idee?',
+            'feedback.type': 'Tipo di feedback',
+            'feedback.select': 'Seleziona...',
+            'feedback.missing': 'Segnala studio mancante',
+            'feedback.wrong': 'Correggi informazione errata',
+            'feedback.suggestion': 'Suggerimento di miglioramento',
+            'feedback.other': 'Altro',
+            'feedback.name': 'Nome (opzionale)',
+            'feedback.message': 'Il tuo messaggio',
+            'feedback.send': 'Invia feedback',
+            'feedback.thanks': 'Grazie per il tuo feedback! Lo prenderemo in considerazione al pi\u00f9 presto.'
         },
         fr: {
             'nav.studios': 'Studios',
@@ -274,7 +310,19 @@ if ('serviceWorker' in navigator) {
             'schedule.title': 'Horaire \u2014 Cours par jour',
             'schedule.subtitle': 'Choisis un jour et d\u00e9couvre tous les cours de yoga \u00e0 B\u00e2le avec horaire, lieu et enseignant(e)',
             'schedule.placeholder': 'Choisis un jour de la semaine ci-dessus pour voir tous les cours.',
-            'schedule.note': '* Horaires de 7 studios avec donn\u00e9es disponibles. Certains studios utilisent des syst\u00e8mes de r\u00e9servation dynamiques \u2014 consulte leur site pour l\'horaire actuel.'
+            'schedule.note': '* Horaires de 7 studios avec donn\u00e9es disponibles. Certains studios utilisent des syst\u00e8mes de r\u00e9servation dynamiques \u2014 consulte leur site pour l\'horaire actuel.',
+            'feedback.title': 'Feedback et suggestions',
+            'feedback.subtitle': 'Aide-nous \u00e0 am\u00e9liorer ce site. Un studio manque ? Un horaire est incorrect ? Tu as des id\u00e9es ?',
+            'feedback.type': 'Type de feedback',
+            'feedback.select': 'S\u00e9lectionner...',
+            'feedback.missing': 'Signaler un studio manquant',
+            'feedback.wrong': 'Corriger une information erron\u00e9e',
+            'feedback.suggestion': 'Suggestion d\'am\u00e9lioration',
+            'feedback.other': 'Autre',
+            'feedback.name': 'Nom (facultatif)',
+            'feedback.message': 'Ton message',
+            'feedback.send': 'Envoyer le feedback',
+            'feedback.thanks': 'Merci pour ton feedback ! Nous le prendrons en compte d\u00e8s que possible.'
         }
     };
 
@@ -1183,6 +1231,43 @@ if ('serviceWorker' in navigator) {
         // PDF export
         var pdfBtn = $('exportPdf');
         if (pdfBtn) pdfBtn.addEventListener('click', exportPDF);
+
+        // Feedback form
+        var feedbackForm = $('feedbackForm');
+        if (feedbackForm) {
+            feedbackForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var type = $('feedbackType') ? $('feedbackType').value : '';
+                var name = $('feedbackName') ? $('feedbackName').value : '';
+                var message = $('feedbackMessage') ? $('feedbackMessage').value : '';
+                if (!message.trim()) return;
+
+                // Save feedback locally
+                try {
+                    var feedbacks = JSON.parse(localStorage.getItem('yogabasel-feedback') || '[]');
+                    feedbacks.push({
+                        type: type,
+                        name: name,
+                        message: message,
+                        date: new Date().toISOString()
+                    });
+                    localStorage.setItem('yogabasel-feedback', JSON.stringify(feedbacks));
+                } catch (ex) {}
+
+                // Also send via email link as fallback
+                var subject = 'YogaBasel Feedback: ' + type;
+                var body = 'Typ: ' + type + '\nName: ' + (name || 'Anonym') + '\nNachricht:\n' + message;
+                var mailLink = 'mailto:yogakursebasel@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+                // Open mail client
+                window.open(mailLink, '_blank');
+
+                // Show success
+                feedbackForm.style.display = 'none';
+                var success = $('feedbackSuccess');
+                if (success) success.style.display = '';
+            });
+        }
 
         // Modal
         var modalClose = $('modalClose');
