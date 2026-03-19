@@ -66,7 +66,12 @@
             'card.details': 'Details',
             'styles.studios_count': 'Studios',
             'pdf.title': 'Yoga-Studios in Basel — Übersicht',
-            'pdf.generated': 'Erstellt am'
+            'pdf.generated': 'Erstellt am',
+            'nav.schedule': 'Stundenplan',
+            'schedule.title': 'Stundenplan — Kurse nach Tag',
+            'schedule.subtitle': 'Wähle einen Tag und sieh alle Yoga-Kurse in Basel mit Uhrzeit, Ort und Lehrer/in',
+            'schedule.placeholder': 'Wähle einen Wochentag oben, um alle Kurse zu sehen.',
+            'schedule.note': '* Stundenpläne von 7 Studios mit verfügbaren Daten. Einige Studios verwenden dynamische Buchungssysteme — besuche deren Website für den aktuellen Plan.'
         },
         en: {
             'nav.studios': 'Studios',
@@ -127,7 +132,12 @@
             'card.details': 'Details',
             'styles.studios_count': 'Studios',
             'pdf.title': 'Yoga Studios in Basel — Overview',
-            'pdf.generated': 'Generated on'
+            'pdf.generated': 'Generated on',
+            'nav.schedule': 'Schedule',
+            'schedule.title': 'Schedule — Classes by Day',
+            'schedule.subtitle': 'Select a day to see all yoga classes in Basel with time, location and teacher',
+            'schedule.placeholder': 'Select a day above to see all classes.',
+            'schedule.note': '* Schedules from 7 studios with available data. Some studios use dynamic booking systems — visit their website for the current schedule.'
         }
     };
 
@@ -220,6 +230,7 @@
                     console.log('[YogaBasel] Loaded', state.studios.length, 'studios');
                     renderStudios();
                     renderStylesOverview();
+                    loadSchedule();
                     initMap();
                 } catch (e) {
                     console.error('[YogaBasel] Error parsing JSON:', e);
@@ -604,6 +615,111 @@
         count.style.display = active > 0 ? '' : 'none';
     }
 
+    // --- Schedule ---
+    var scheduleData = [];
+
+    function loadSchedule() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', './data/schedule.json', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState !== 4) return;
+            if (xhr.status === 200) {
+                try {
+                    var data = JSON.parse(xhr.responseText);
+                    scheduleData = data.classes || [];
+                    console.log('[YogaBasel] Loaded', scheduleData.length, 'classes');
+                    // Auto-select today's day
+                    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                    var today = days[new Date().getDay()];
+                    selectDay(today);
+                } catch (e) {
+                    console.error('[YogaBasel] Error parsing schedule:', e);
+                }
+            }
+        };
+        xhr.send();
+    }
+
+    function selectDay(day) {
+        // Update buttons
+        var btns = document.querySelectorAll('#scheduleDays .day-btn');
+        for (var i = 0; i < btns.length; i++) {
+            if (btns[i].getAttribute('data-day') === day) {
+                btns[i].classList.add('active');
+            } else {
+                btns[i].classList.remove('active');
+            }
+        }
+        renderSchedule(day);
+    }
+
+    function renderSchedule(day) {
+        var list = $('scheduleList');
+        var info = $('scheduleInfo');
+        if (!list) return;
+
+        // Filter classes for this day
+        var classes = [];
+        for (var i = 0; i < scheduleData.length; i++) {
+            if (scheduleData[i].day === day) {
+                classes.push(scheduleData[i]);
+            }
+        }
+
+        // Sort by time
+        classes.sort(function (a, b) {
+            return a.time_start.localeCompare(b.time_start);
+        });
+
+        if (classes.length === 0) {
+            list.innerHTML = '<p class="schedule-placeholder">' +
+                (state.lang === 'de' ? 'Keine Kurse für diesen Tag in unserer Datenbank.' : 'No classes for this day in our database.') +
+                '</p>';
+            if (info) info.style.display = 'none';
+            return;
+        }
+
+        // Day names for display
+        var dayNames = {
+            de: { Monday: 'Montag', Tuesday: 'Dienstag', Wednesday: 'Mittwoch', Thursday: 'Donnerstag', Friday: 'Freitag', Saturday: 'Samstag', Sunday: 'Sonntag' },
+            en: { Monday: 'Monday', Tuesday: 'Tuesday', Wednesday: 'Wednesday', Thursday: 'Thursday', Friday: 'Friday', Saturday: 'Saturday', Sunday: 'Sunday' }
+        };
+
+        if (info) {
+            info.style.display = '';
+            var countEl = $('scheduleCount');
+            if (countEl) {
+                var dayName = (dayNames[state.lang] || dayNames.de)[day] || day;
+                countEl.textContent = classes.length + ' ' + (state.lang === 'de' ? 'Kurse am' : 'classes on') + ' ' + dayName;
+            }
+        }
+
+        var html = '<div class="schedule-header">' +
+            '<span>' + (state.lang === 'de' ? 'Zeit' : 'Time') + '</span>' +
+            '<span>' + (state.lang === 'de' ? 'Kurs' : 'Class') + '</span>' +
+            '<span>Studio</span>' +
+            '<span>' + (state.lang === 'de' ? 'Lehrer/in' : 'Teacher') + '</span>' +
+            '<span>Level</span>' +
+            '</div>';
+
+        for (var j = 0; j < classes.length; j++) {
+            var c = classes[j];
+            var timeStr = c.time_start + (c.time_end ? ' – ' + c.time_end : '');
+            var levelText = c.level || '';
+            if (levelText === 'all') levelText = state.lang === 'de' ? 'Alle Stufen' : 'All levels';
+
+            html += '<div class="schedule-row">' +
+                '<span class="schedule-time">' + escapeHtml(timeStr) + '</span>' +
+                '<span class="schedule-class">' + escapeHtml(c.class_name) + '</span>' +
+                '<span class="schedule-studio">' + escapeHtml(c.studio_name) + '</span>' +
+                '<span class="schedule-teacher">' + escapeHtml(c.teacher || '—') + '</span>' +
+                '<span class="schedule-level">' + escapeHtml(levelText) + '</span>' +
+                '</div>';
+        }
+
+        list.innerHTML = html;
+    }
+
     // --- Map ---
     function initMap() {
         if (typeof L === 'undefined') {
@@ -904,6 +1020,17 @@
             }, { passive: true });
             backToTop.addEventListener('click', function () {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        // Schedule day buttons
+        var scheduleDays = $('scheduleDays');
+        if (scheduleDays) {
+            scheduleDays.addEventListener('click', function (e) {
+                var btn = e.target;
+                if (!btn.classList.contains('day-btn')) return;
+                var day = btn.getAttribute('data-day');
+                selectDay(day);
             });
         }
 

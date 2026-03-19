@@ -90,6 +90,7 @@
             </a>
             <nav class="nav" id="nav" aria-label="Hauptnavigation">
                 <ul class="nav-list">
+                    <li><a href="#stundenplan" class="nav-link" data-i18n="nav.schedule">Stundenplan</a></li>
                     <li><a href="#studios" class="nav-link" data-i18n="nav.studios">Studios</a></li>
                     <li><a href="#stile" class="nav-link" data-i18n="nav.styles">Yoga-Stile</a></li>
                     <li><a href="#karte" class="nav-link" data-i18n="nav.map">Karte</a></li>
@@ -256,6 +257,30 @@
                         </button>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Schedule / Stundenplan -->
+        <section class="schedule-section" id="stundenplan">
+            <div class="container">
+                <h2 class="section-title" data-i18n="schedule.title">Stundenplan — Kurse nach Tag</h2>
+                <p class="section-subtitle" data-i18n="schedule.subtitle">Wähle einen Tag und sieh alle Yoga-Kurse in Basel mit Uhrzeit, Ort und Lehrer/in</p>
+                <div class="schedule-days" id="scheduleDays">
+                    <button class="day-btn" data-day="Monday">Mo</button>
+                    <button class="day-btn" data-day="Tuesday">Di</button>
+                    <button class="day-btn" data-day="Wednesday">Mi</button>
+                    <button class="day-btn" data-day="Thursday">Do</button>
+                    <button class="day-btn" data-day="Friday">Fr</button>
+                    <button class="day-btn" data-day="Saturday">Sa</button>
+                    <button class="day-btn" data-day="Sunday">So</button>
+                </div>
+                <div class="schedule-info" id="scheduleInfo" style="display:none">
+                    <span id="scheduleCount"></span>
+                </div>
+                <div class="schedule-list" id="scheduleList">
+                    <p class="schedule-placeholder" data-i18n="schedule.placeholder">Wähle einen Wochentag oben, um alle Kurse zu sehen.</p>
+                </div>
+                <p class="schedule-note" data-i18n="schedule.note">* Stundenpläne von 7 Studios mit verfügbaren Daten. Einige Studios verwenden dynamische Buchungssysteme — besuche deren Website für den aktuellen Plan.</p>
             </div>
         </section>
 

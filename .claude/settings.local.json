@@ -24,7 +24,16 @@
       "WebFetch(domain:en.voltayoga.ch)",
       "Bash(git init:*)",
       "Bash(git branch:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(gh auth:*)",
+      "Bash(brew list:*)",
+      "Bash(brew install:*)",
+      "Bash(curl --version)",
+      "Bash(git --version)",
+      "WebFetch(domain:meineprojekte.github.io)",
+      "WebFetch(domain:gerbergaesslein-yoga.ch)",
+      "WebFetch(domain:voltayoga.ch)"
     ]
   }
 }
