@@ -156,10 +156,19 @@
         updateLastUpdated();
     });
 
+    // --- Helpers ---
+    function basePath() {
+        const path = window.location.pathname;
+        // If hosted in subdirectory (e.g. /yoga-kurse-basel/), include it
+        const match = path.match(/^(\/[^/]+\/)/);
+        return match ? match[1] : '/';
+    }
+
     // --- Data Loading ---
     async function loadData() {
         try {
-            const res = await fetch('data/studios.json');
+            const base = basePath();
+            const res = await fetch(base + 'data/studios.json');
             const data = await res.json();
             state.studios = data.studios.filter(s => s.active);
             state.filteredStudios = [...state.studios];
