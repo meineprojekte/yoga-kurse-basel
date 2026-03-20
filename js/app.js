@@ -353,29 +353,29 @@ if ('serviceWorker' in navigator) {
         'basel-stadt': { studios: 'studios_basel.json', schedule: 'schedule_basel.json' },
         'zurich': { studios: 'studios_zurich.json', schedule: 'schedule_zurich.json' },
         'bern': { studios: 'studios_bern.json', schedule: 'schedule_bern.json' },
-        'luzern': { studios: 'studios_luzern.json', schedule: null },
-        'geneve': { studios: 'studios_geneve.json', schedule: null },
-        'vaud': { studios: 'studios_vaud.json', schedule: null },
-        'aargau': { studios: 'studios_aargau.json', schedule: null },
-        'st-gallen': { studios: 'studios_st-gallen.json', schedule: null },
-        'solothurn': { studios: 'studios_solothurn.json', schedule: null },
-        'thurgau': { studios: 'studios_thurgau.json', schedule: null },
-        'basel-landschaft': { studios: 'studios_basel-landschaft.json', schedule: null },
-        'graubuenden': { studios: 'studios_graubuenden.json', schedule: null },
-        'ticino': { studios: 'studios_ticino.json', schedule: null },
-        'valais': { studios: 'studios_valais.json', schedule: null },
-        'fribourg': { studios: 'studios_fribourg.json', schedule: null },
-        'neuchatel': { studios: 'studios_neuchatel.json', schedule: null },
-        'schwyz': { studios: 'studios_schwyz.json', schedule: null },
-        'zug': { studios: 'studios_zug.json', schedule: null },
-        'schaffhausen': { studios: 'studios_schaffhausen.json', schedule: null },
-        'jura': { studios: 'studios_jura.json', schedule: null },
-        'appenzell-ar': { studios: 'studios_appenzell-ar.json', schedule: null },
-        'appenzell-ir': { studios: 'studios_appenzell-ir.json', schedule: null },
-        'glarus': { studios: 'studios_glarus.json', schedule: null },
-        'obwalden': { studios: 'studios_obwalden.json', schedule: null },
-        'nidwalden': { studios: 'studios_nidwalden.json', schedule: null },
-        'uri': { studios: 'studios_uri.json', schedule: null }
+        'luzern': { studios: 'studios_luzern.json', schedule: 'schedule_luzern.json' },
+        'geneve': { studios: 'studios_geneve.json', schedule: 'schedule_geneve.json' },
+        'vaud': { studios: 'studios_vaud.json', schedule: 'schedule_vaud.json' },
+        'aargau': { studios: 'studios_aargau.json', schedule: 'schedule_aargau.json' },
+        'st-gallen': { studios: 'studios_st-gallen.json', schedule: 'schedule_st-gallen.json' },
+        'solothurn': { studios: 'studios_solothurn.json', schedule: 'schedule_solothurn.json' },
+        'thurgau': { studios: 'studios_thurgau.json', schedule: 'schedule_thurgau.json' },
+        'basel-landschaft': { studios: 'studios_basel-landschaft.json', schedule: 'schedule_basel-landschaft.json' },
+        'graubuenden': { studios: 'studios_graubuenden.json', schedule: 'schedule_graubuenden.json' },
+        'ticino': { studios: 'studios_ticino.json', schedule: 'schedule_ticino.json' },
+        'valais': { studios: 'studios_valais.json', schedule: 'schedule_valais.json' },
+        'fribourg': { studios: 'studios_fribourg.json', schedule: 'schedule_fribourg.json' },
+        'neuchatel': { studios: 'studios_neuchatel.json', schedule: 'schedule_neuchatel.json' },
+        'schwyz': { studios: 'studios_schwyz.json', schedule: 'schedule_schwyz.json' },
+        'zug': { studios: 'studios_zug.json', schedule: 'schedule_zug.json' },
+        'schaffhausen': { studios: 'studios_schaffhausen.json', schedule: 'schedule_schaffhausen.json' },
+        'jura': { studios: 'studios_jura.json', schedule: 'schedule_jura.json' },
+        'appenzell-ar': { studios: 'studios_appenzell-ar.json', schedule: 'schedule_appenzell-ar.json' },
+        'appenzell-ir': { studios: 'studios_appenzell-ir.json', schedule: 'schedule_appenzell-ir.json' },
+        'glarus': { studios: 'studios_glarus.json', schedule: 'schedule_glarus.json' },
+        'obwalden': { studios: 'studios_obwalden.json', schedule: 'schedule_obwalden.json' },
+        'nidwalden': { studios: 'studios_nidwalden.json', schedule: 'schedule_nidwalden.json' },
+        'uri': { studios: 'studios_uri.json', schedule: 'schedule_uri.json' }
     };
 
     // Read saved preferences
@@ -1849,41 +1849,13 @@ if ('serviceWorker' in navigator) {
         var pdfBtn = $('exportPdf');
         if (pdfBtn) pdfBtn.addEventListener('click', exportPDF);
 
-        // Feedback form
-        var feedbackForm = $('feedbackForm');
-        if (feedbackForm) {
-            feedbackForm.addEventListener('submit', function (e) {
-                e.preventDefault();
-                var type = $('feedbackType') ? $('feedbackType').value : '';
-                var name = $('feedbackName') ? $('feedbackName').value : '';
-                var message = $('feedbackMessage') ? $('feedbackMessage').value : '';
-                if (!message.trim()) return;
-
-                // Save feedback locally
-                try {
-                    var feedbacks = JSON.parse(localStorage.getItem('yogabasel-feedback') || '[]');
-                    feedbacks.push({
-                        type: type,
-                        name: name,
-                        message: message,
-                        date: new Date().toISOString()
-                    });
-                    localStorage.setItem('yogabasel-feedback', JSON.stringify(feedbacks));
-                } catch (ex) {}
-
-                // Also send via email link as fallback
-                var subject = 'YogaBasel Feedback: ' + type;
-                var body = 'Typ: ' + type + '\nName: ' + (name || 'Anonym') + '\nNachricht:\n' + message;
-                var mailLink = 'mailto:andrea-giovanni@hotmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-
-                // Open mail client
-                window.open(mailLink, '_blank');
-
-                // Show success
-                feedbackForm.style.display = 'none';
-                var success = $('feedbackSuccess');
-                if (success) success.style.display = '';
-            });
+        // Feedback form - handled by Formsubmit.co (no JS needed)
+        // Show success message if returning from submission
+        if (window.location.hash === '#feedback-sent') {
+            var ff = $('feedbackForm');
+            var fs = $('feedbackSuccess');
+            if (ff) ff.style.display = 'none';
+            if (fs) fs.style.display = '';
         }
 
         // Modal

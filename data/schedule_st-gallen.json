@@ -1,0 +1,35 @@
+{
+  "last_updated": "2026-03-21T00:00:00Z",
+  "classes": [
+    {"studio_id": "yoga-altstadt", "studio_name": "Yoga in der Altstadt", "day": "Monday", "time_start": "09:00", "time_end": "10:15", "class_name": "Hatha Yoga", "teacher": "", "level": "all"},
+    {"studio_id": "yoga-altstadt", "studio_name": "Yoga in der Altstadt", "day": "Monday", "time_start": "17:30", "time_end": "18:45", "class_name": "Hatha Yoga", "teacher": "", "level": "all"},
+    {"studio_id": "yoga-altstadt", "studio_name": "Yoga in der Altstadt", "day": "Tuesday", "time_start": "09:00", "time_end": "10:15", "class_name": "Hatha Yoga sanft", "teacher": "", "level": "beginner"},
+    {"studio_id": "yoga-altstadt", "studio_name": "Yoga in der Altstadt", "day": "Tuesday", "time_start": "17:30", "time_end": "18:45", "class_name": "Hatha Yoga", "teacher": "", "level": "all"},
+    {"studio_id": "yoga-altstadt", "studio_name": "Yoga in der Altstadt", "day": "Wednesday", "time_start": "09:00", "time_end": "10:15", "class_name": "Yoga fuer den Ruecken", "teacher": "", "level": "all"},
+    {"studio_id": "yoga-altstadt", "studio_name": "Yoga in der Altstadt", "day": "Wednesday", "time_start": "12:15", "time_end": "13:00", "class_name": "Lunch Yoga", "teacher": "", "level": "all"},
+    {"studio_id": "yoga-altstadt", "studio_name": "Yoga in der Altstadt", "day": "Wednesday", "time_start": "17:30", "time_end": "18:45", "class_name": "Yin Yoga & Klang", "teacher": "", "level": "all"},
+    {"studio_id": "yoga-altstadt", "studio_name": "Yoga in der Altstadt", "day": "Thursday", "time_start": "09:00", "time_end": "10:15", "class_name": "Hatha Yoga", "teacher": "", "level": "all"},
+    {"studio_id": "yoga-altstadt", "studio_name": "Yoga in der Altstadt", "day": "Thursday", "time_start": "17:30", "time_end": "18:45", "class_name": "Pranayama & Meditation", "teacher": "", "level": "all"},
+    {"studio_id": "yoga-altstadt", "studio_name": "Yoga in der Altstadt", "day": "Friday", "time_start": "09:00", "time_end": "10:15", "class_name": "Hatha Yoga", "teacher": "", "level": "all"},
+
+    {"studio_id": "studio-8", "studio_name": "Studio 8", "day": "Monday", "time_start": "09:00", "time_end": "10:15", "class_name": "Hatha Yoga", "teacher": "", "level": "all"},
+    {"studio_id": "studio-8", "studio_name": "Studio 8", "day": "Monday", "time_start": "18:00", "time_end": "19:15", "class_name": "Hatha Yoga", "teacher": "", "level": "all"},
+    {"studio_id": "studio-8", "studio_name": "Studio 8", "day": "Tuesday", "time_start": "09:00", "time_end": "10:15", "class_name": "Hatha Yoga", "teacher": "", "level": "all"},
+    {"studio_id": "studio-8", "studio_name": "Studio 8", "day": "Tuesday", "time_start": "18:00", "time_end": "19:15", "class_name": "Hatha Yoga", "teacher": "", "level": "all"},
+    {"studio_id": "studio-8", "studio_name": "Studio 8", "day": "Wednesday", "time_start": "09:00", "time_end": "10:15", "class_name": "Hatha Yoga", "teacher": "", "level": "all"},
+    {"studio_id": "studio-8", "studio_name": "Studio 8", "day": "Wednesday", "time_start": "18:00", "time_end": "19:15", "class_name": "Hatha Yoga", "teacher": "", "level": "all"},
+    {"studio_id": "studio-8", "studio_name": "Studio 8", "day": "Thursday", "time_start": "09:00", "time_end": "10:15", "class_name": "Pilates", "teacher": "Susanna Koopmann", "level": "all"},
+    {"studio_id": "studio-8", "studio_name": "Studio 8", "day": "Thursday", "time_start": "18:00", "time_end": "19:15", "class_name": "Pilates", "teacher": "Susanna Koopmann", "level": "all"},
+    {"studio_id": "studio-8", "studio_name": "Studio 8", "day": "Friday", "time_start": "09:00", "time_end": "10:15", "class_name": "Pilates", "teacher": "Susanna Koopmann", "level": "all"},
+
+    {"studio_id": "yogaloft-rapperswil", "studio_name": "YOGALOFT Rapperswil", "day": "Monday", "time_start": "09:00", "time_end": "10:15", "class_name": "Hatha Yoga", "teacher": "", "level": "all"},
+    {"studio_id": "yogaloft-rapperswil", "studio_name": "YOGALOFT Rapperswil", "day": "Monday", "time_start": "18:30", "time_end": "19:45", "class_name": "Vinyasa Flow", "teacher": "", "level": "all"},
+    {"studio_id": "yogaloft-rapperswil", "studio_name": "YOGALOFT Rapperswil", "day": "Tuesday", "time_start": "09:00", "time_end": "10:15", "class_name": "Anusara Yoga", "teacher": "", "level": "all"},
+    {"studio_id": "yogaloft-rapperswil", "studio_name": "YOGALOFT Rapperswil", "day": "Tuesday", "time_start": "18:30", "time_end": "19:45", "class_name": "Hatha Yoga", "teacher": "", "level": "all"},
+    {"studio_id": "yogaloft-rapperswil", "studio_name": "YOGALOFT Rapperswil", "day": "Wednesday", "time_start": "09:00", "time_end": "10:15", "class_name": "Vinyasa Flow", "teacher": "", "level": "all"},
+    {"studio_id": "yogaloft-rapperswil", "studio_name": "YOGALOFT Rapperswil", "day": "Wednesday", "time_start": "18:30", "time_end": "19:45", "class_name": "Anusara Yoga", "teacher": "", "level": "all"},
+    {"studio_id": "yogaloft-rapperswil", "studio_name": "YOGALOFT Rapperswil", "day": "Thursday", "time_start": "09:00", "time_end": "10:15", "class_name": "Hatha Yoga", "teacher": "", "level": "all"},
+    {"studio_id": "yogaloft-rapperswil", "studio_name": "YOGALOFT Rapperswil", "day": "Thursday", "time_start": "18:30", "time_end": "19:45", "class_name": "Vinyasa Flow", "teacher": "", "level": "all"},
+    {"studio_id": "yogaloft-rapperswil", "studio_name": "YOGALOFT Rapperswil", "day": "Friday", "time_start": "09:00", "time_end": "10:15", "class_name": "Hatha Yoga", "teacher": "", "level": "all"}
+  ]
+}
