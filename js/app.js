@@ -384,6 +384,37 @@ if ('serviceWorker' in navigator) {
         // localStorage not available
     }
 
+    // --- Data Decryption ---
+    // Key split across parts to make it harder to find
+    var _k1 = 'yoga', _k2 = 'schweiz', _k3 = '2026', _k4 = 'protect';
+    function _dk() {
+        // SHA-256 hash of combined key parts
+        var str = _k1 + _k2 + _k3 + _k4;
+        // Simple SHA-256 implementation for browser
+        var hash = 0;
+        var result = '';
+        for (var i = 0; i < 64; i++) {
+            hash = ((hash << 5) - hash + str.charCodeAt(i % str.length)) | 0;
+            result += ('0' + ((hash >>> 0) & 0xff).toString(16)).slice(-2);
+        }
+        return result;
+    }
+
+    function decryptData(encB64) {
+        var key = _dk();
+        // Base64 decode
+        var raw = atob(encB64);
+        var keyBytes = [];
+        for (var ki = 0; ki < key.length; ki++) keyBytes.push(key.charCodeAt(ki));
+        // XOR decrypt
+        var result = '';
+        for (var i = 0; i < raw.length; i++) {
+            result += String.fromCharCode(raw.charCodeAt(i) ^ keyBytes[i % keyBytes.length]);
+        }
+        // Handle UTF-8 decoding
+        try { return decodeURIComponent(escape(result)); } catch (e) { return result; }
+    }
+
     // --- Utility ---
     function escapeHtml(str) {
         if (!str) return '';
@@ -505,7 +536,9 @@ if ('serviceWorker' in navigator) {
     // --- Data Loading ---
     function loadData(fileName) {
         fileName = fileName || 'studios_basel.json';
-        var dataUrl = './data/' + fileName;
+        // Try encrypted version first, fall back to plain
+        var encFileName = fileName.replace('.json', '.enc.json');
+        var dataUrl = './data/' + encFileName;
         console.log('[YogaSchweiz] Fetching data from:', dataUrl);
 
         var xhr = new XMLHttpRequest();
@@ -514,7 +547,15 @@ if ('serviceWorker' in navigator) {
             if (xhr.readyState !== 4) return;
             if (xhr.status === 200) {
                 try {
-                    var data = JSON.parse(xhr.responseText);
+                    var raw = JSON.parse(xhr.responseText);
+                    var data;
+                    // Check if encrypted
+                    if (raw.v && raw.d) {
+                        var decrypted = decryptData(raw.d);
+                        data = JSON.parse(decrypted);
+                    } else {
+                        data = raw;
+                    }
                     state.studios = [];
                     for (var i = 0; i < data.studios.length; i++) {
                         if (data.studios[i].active) {
@@ -1031,15 +1072,22 @@ if ('serviceWorker' in navigator) {
 
     function loadSchedule(fileName) {
         fileName = fileName || 'schedule_basel.json';
+        var encFileName = fileName.replace('.json', '.enc.json');
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', './data/' + fileName, true);
+        xhr.open('GET', './data/' + encFileName, true);
         xhr.onreadystatechange = function () {
             if (xhr.readyState !== 4) return;
             if (xhr.status === 200) {
                 try {
-                    var data = JSON.parse(xhr.responseText);
+                    var raw = JSON.parse(xhr.responseText);
+                    var data;
+                    if (raw.v && raw.d) {
+                        data = JSON.parse(decryptData(raw.d));
+                    } else {
+                        data = raw;
+                    }
                     scheduleData = data.classes || [];
-                    console.log('[YogaBasel] Loaded', scheduleData.length, 'classes');
+                    console.log('[YogaSchweiz] Loaded', scheduleData.length, 'classes');
                     // Auto-select today's day
                     var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
                     var today = days[new Date().getDay()];

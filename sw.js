@@ -5,8 +5,9 @@ const ASSETS_TO_CACHE = [
   './index.html',
   './css/style.css',
   './js/app.js',
-  './data/studios_basel.json',
-  './data/schedule_basel.json',
+  './js/shield.js',
+  './data/studios_basel.enc.json',
+  './data/schedule_basel.enc.json',
   './data/cantons.json'
 ];
 
