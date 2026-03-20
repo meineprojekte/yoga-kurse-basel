@@ -385,33 +385,18 @@ if ('serviceWorker' in navigator) {
     }
 
     // --- Data Decryption ---
-    // Key split across parts to make it harder to find
-    var _k1 = 'yoga', _k2 = 'schweiz', _k3 = '2026', _k4 = 'protect';
-    function _dk() {
-        // SHA-256 hash of combined key parts
-        var str = _k1 + _k2 + _k3 + _k4;
-        // Simple SHA-256 implementation for browser
-        var hash = 0;
-        var result = '';
-        for (var i = 0; i < 64; i++) {
-            hash = ((hash << 5) - hash + str.charCodeAt(i % str.length)) | 0;
-            result += ('0' + ((hash >>> 0) & 0xff).toString(16)).slice(-2);
-        }
-        return result;
-    }
-
+    var _R = 47; // rotation offset
     function decryptData(encB64) {
-        var key = _dk();
-        // Base64 decode
         var raw = atob(encB64);
-        var keyBytes = [];
-        for (var ki = 0; ki < key.length; ki++) keyBytes.push(key.charCodeAt(ki));
-        // XOR decrypt
-        var result = '';
+        var bytes = [];
         for (var i = 0; i < raw.length; i++) {
-            result += String.fromCharCode(raw.charCodeAt(i) ^ keyBytes[i % keyBytes.length]);
+            bytes.push((raw.charCodeAt(i) - _R + 256) % 256);
         }
-        // Handle UTF-8 decoding
+        // Convert bytes back to UTF-8 string
+        var result = '';
+        for (var j = 0; j < bytes.length; j++) {
+            result += String.fromCharCode(bytes[j]);
+        }
         try { return decodeURIComponent(escape(result)); } catch (e) { return result; }
     }
 
