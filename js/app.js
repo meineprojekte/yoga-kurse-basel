@@ -718,6 +718,9 @@ if ('serviceWorker' in navigator) {
         // Update URL hash for SEO
         updateURLHash();
 
+        // Update title immediately (before data loads)
+        updatePageTitle();
+
         // Update select
         var sel = $('cantonSelect');
         if (sel) sel.value = cantonId;
