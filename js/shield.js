@@ -17,18 +17,24 @@
     // LAYER 1: Deep Bot Detection (50+ signatures)
     // ================================================================
     var ua = navigator.userAgent || '';
+
+    // IMPORTANT: Allow search engine crawlers (Google, Bing, Yandex) and social media previews
+    var allowedBots = /Googlebot|Google-InspectionTool|Bingbot|Storebot-Google|AdsBot-Google|Mediapartners-Google|APIs-Google|bingpreview|YandexBot|facebookexternalhit|Twitterbot|LinkedInBot|WhatsApp|Slackbot|TelegramBot|Discordbot|Applebot/i;
+    if (allowedBots.test(ua)) {
+        // Allow search engines and social previews through - do NOT block them
+        return;
+    }
+
     var botUA = [
-        /bot/i, /crawl/i, /spider/i, /scrape/i, /fetch/i, /wget/i, /curl/i,
-        /python/i, /java\//i, /perl/i, /ruby/i, /php\//i, /go-http/i, /node-fetch/i,
+        /scrape/i, /wget/i, /curl\//i,
+        /python-requests/i, /python-urllib/i, /java\//i, /perl/i, /ruby/i, /php\//i, /go-http/i, /node-fetch/i,
         /okhttp/i, /axios/i, /httpie/i, /postman/i, /insomnia/i, /thunder/i,
         /scrapy/i, /selenium/i, /phantomjs/i, /puppeteer/i, /playwright/i,
-        /headless/i, /lighthouse/i, /httrack/i, /offline/i, /archiver/i,
-        /gptbot/i, /chatgpt/i, /ccbot/i, /anthropic/i, /bytespider/i, /claude/i,
+        /headless/i, /httrack/i, /offline.browser/i,
+        /gptbot/i, /chatgpt/i, /ccbot/i, /anthropic/i, /bytespider/i,
         /semrush/i, /ahrefs/i, /mj12bot/i, /dotbot/i, /dataforseo/i, /megaindex/i,
-        /blexbot/i, /rogerbot/i, /seznambot/i, /sogou/i, /baidu/i, /yandexbot/i,
-        /petal/i, /applebot/i, /facebookexternalhit/i, /twitterbot/i,
-        /slackbot/i, /telegrambot/i, /whatsapp/i, /discord/i,
-        /libwww/i, /apache-http/i, /colly/i, /goutte/i
+        /blexbot/i, /rogerbot/i, /seznambot/i, /sogou/i, /baidu/i,
+        /petal/i, /libwww/i, /apache-http/i, /colly/i, /goutte/i
     ];
     for (var i = 0; i < botUA.length; i++) {
         if (botUA[i].test(ua)) { SHIELD.score += 60; SHIELD.checks.push('ua:' + botUA[i]); break; }
