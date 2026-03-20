@@ -70,6 +70,29 @@
     --color-overlay: rgba(0, 0, 0, 0.7);
 }
 
+/* --- Anti-scraping: prevent text selection on data content --- */
+.studio-card,
+.studio-name,
+.studio-address,
+.studio-description,
+.studio-styles,
+.schedule-row,
+.guide-comparison-table,
+.guide-stats-grid {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Allow selection on interactive elements */
+input, textarea, select, .search-input, .faq-answer, .guide-content p, .guide-content li {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
 /* --- Reset & Base --- */
 *, *::before, *::after {
     box-sizing: border-box;

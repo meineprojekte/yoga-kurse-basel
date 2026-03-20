@@ -1,4 +1,128 @@
+# Allow Google and Bing for SEO
+User-agent: Googlebot
+Allow: /
+Disallow: /data/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /data/
+
+User-agent: Yandex
+Allow: /
+Disallow: /data/
+
+# Block all known scrapers, AI crawlers, and data harvesters
+User-agent: CCBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: Rogerbot
+Disallow: /
+
+User-agent: SeznamBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: serpstatbot
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: Baidu
+Disallow: /
+
+User-agent: MegaIndex
+Disallow: /
+
+User-agent: Screaming Frog
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: wget
+Disallow: /
+
+User-agent: curl
+Disallow: /
+
+User-agent: python-requests
+Disallow: /
+
+User-agent: Scrapy
+Disallow: /
+
+User-agent: node-fetch
+Disallow: /
+
+User-agent: Go-http-client
+Disallow: /
+
+User-agent: Java
+Disallow: /
+
+User-agent: libwww-perl
+Disallow: /
+
+User-agent: PHP
+Disallow: /
+
+User-agent: okhttp
+Disallow: /
+
+User-agent: Apache-HttpClient
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: archive.org_bot
+Disallow: /
+
+User-agent: Applebot
+Disallow: /data/
+
+# Block everything else by default, allow only specific bots above
 User-agent: *
+Disallow: /data/
 Allow: /
 
-Sitemap: https://yogakursebasel.ch/sitemap.xml
+Sitemap: https://meineprojekte.github.io/yoga-kurse-basel/sitemap.xml

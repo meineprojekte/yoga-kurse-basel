@@ -7,7 +7,10 @@
     <meta name="description" content="Die vollständige Übersicht aller Yoga-Studios in der Schweiz, geordnet nach Kanton. Basel, Zürich, Bern, Luzern, Genf, Lausanne und mehr. Stundenplan, Karte, PDF-Export. Täglich aktualisiert.">
     <meta name="keywords" content="Yoga Schweiz, Yoga Basel, Yoga Zürich, Yoga Bern, Yoga Luzern, Yoga Genf, Yoga Lausanne, Yoga Kurse Schweiz, Yoga Studio Schweiz, Vinyasa Yoga Schweiz, Hatha Yoga Schweiz, Yin Yoga Schweiz, Ashtanga Yoga Schweiz, Hot Yoga Schweiz, Yoga Stundenplan, Yoga für Anfänger, cours de yoga Suisse, yoga Suisse, yoga Switzerland">
     <meta name="author" content="YogaSchweiz">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, noarchive">
+    <meta name="googlebot" content="noarchive">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
     <link rel="canonical" href="https://meineprojekte.github.io/yoga-kurse-basel/">
 
     <!-- Hreflang for multilingual SEO -->
@@ -121,6 +124,9 @@
 
     <!-- Main Styles -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Anti-scraping shield (loads first) -->
+    <script defer src="./js/shield.js"></script>
 
     <!-- ALL scripts deferred: they won't block page rendering -->
     <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -749,8 +755,11 @@
                 <p class="footer-disclaimer" data-i18n="footer.disclaimer">
                     Diese Website ist ein unabhängiges Informationsportal und steht in keiner geschäftlichen Verbindung zu den aufgeführten Studios. Alle Informationen stammen aus öffentlich zugänglichen Quellen. Für aktuelle Preise und Stundenpläne besuche bitte die jeweilige Studio-Website.
                 </p>
+                <p class="footer-legal" style="font-size:11px;color:var(--color-text-muted);margin-bottom:8px;">
+                    Automatisiertes Scraping, Kopieren oder Weiterverbreiten der auf dieser Website enthaltenen Daten ist ohne ausdrückliche schriftliche Genehmigung untersagt. Alle Rechte vorbehalten.
+                </p>
                 <p class="footer-copyright">
-                    &copy; <span id="currentYear">2026</span> YogaBasel &mdash;
+                    &copy; <span id="currentYear">2026</span> YogaSchweiz &mdash;
                     <span data-i18n="footer.updated">Letzte Aktualisierung:</span>
                     <time id="lastUpdated" datetime=""></time>
                 </p>
