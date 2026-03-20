@@ -1,0 +1,77 @@
+{
+  "last_updated": "2026-03-20T00:00:00Z",
+  "studios": [
+    {
+      "id": "yogaar-herisau",
+      "name": "YOGAAR",
+      "website": "https://www.yogaar.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Schwänberg 2676",
+          "zip": "9100",
+          "city": "Herisau",
+          "label": ""
+        }
+      ],
+      "phone": "+41 78 634 80 89",
+      "email": "",
+      "styles": [
+        "Hatha",
+        "Vinyasa"
+      ],
+      "teachers": [],
+      "description": "Authentisches, ehrliches Yoga in Herisau und St. Gallen mit Roberta Alder (geb. 1985 in Appenzell). Atmung steht im Zentrum der Praxis.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Auch Studio in St. Gallen"
+      ],
+      "lat": 47.3862,
+      "lng": 9.2790,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "yoga-kinesiologie-herisau",
+      "name": "Yoga & Kinesiologie",
+      "website": "https://www.yoga-kinesiologie.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Schmiedgasse 42",
+          "zip": "9100",
+          "city": "Herisau",
+          "label": ""
+        }
+      ],
+      "phone": "",
+      "email": "",
+      "styles": [
+        "Hatha",
+        "Schwangerschaftsyoga",
+        "Postnatal Yoga"
+      ],
+      "teachers": [],
+      "description": "Yoga und Kinesiologie mit Beatrice Crottogini-Raschle in Herisau. Angebot umfasst Yoga, Schwangerschaftsyoga, Rückbildungsyoga, Babymassage, Klangschalenmassage und Ayurveda-Grundlagen.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Kinesiologie",
+        "Babymassage",
+        "Klangschalenmassage",
+        "Ayurveda"
+      ],
+      "lat": 47.3870,
+      "lng": 9.2770,
+      "active": true,
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "last_updated": "2026-03-20T00:00:00Z",
+  "studios": [
+    {
+      "id": "yoga-in-der-altstadt-st-gallen",
+      "name": "Yoga in der Altstadt",
+      "website": "https://www.yoga-in-der-altstadt.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Bleichestrasse 11",
+          "zip": "9000",
+          "city": "St. Gallen",
+          "label": ""
+        }
+      ],
+      "phone": "+41 79 771 28 86",
+      "email": "info@yoga-in-der-altstadt.ch",
+      "styles": ["Yoga", "Ayurveda", "Yin Yoga"],
+      "teachers": ["Evelyn Gelpi"],
+      "description": "Yoga & Ayurveda Studio in der Altstadt von St. Gallen. Verbindet die Essenz von traditionellem Yoga und Ayurveda mit moderner Medizin. Geführt von erfahrenen Instruktorinnen, zertifizierte Yogatherapie.",
+      "booking_platform": "SportsNow",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Ayurveda", "Yogatherapie", "Yoga-Ferien in der Toskana/Lombardei"],
+      "lat": 47.4245,
+      "lng": 9.3767,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "studio-8-st-gallen",
+      "name": "Studio 8",
+      "website": "https://studio-8.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Teufener Strasse 3",
+          "zip": "9000",
+          "city": "St. Gallen",
+          "label": ""
+        }
+      ],
+      "phone": "+41 78 623 06 43",
+      "email": "",
+      "styles": ["Hatha Yoga", "Pilates"],
+      "teachers": [],
+      "description": "Studio 8 in St. Gallen bietet Hatha Yoga, Pilates, Personal Training, Hypnose und Spiraldynamik an. Ein vielseitiges Angebot für Körper und Geist.",
+      "booking_platform": "SportsNow",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Spiraldynamik", "Hypnose", "Personal Training"],
+      "lat": 47.4215,
+      "lng": 9.3780,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "bubble-yoga-st-gallen",
+      "name": "Bubble Yoga",
+      "website": "https://bubbleyoga.ch/",
+      "schedule_url": "https://bubbleyoga.ch/events/calendar/",
+      "addresses": [
+        {
+          "street": "Kirchgasse 12",
+          "zip": "9000",
+          "city": "St. Gallen",
+          "label": ""
+        }
+      ],
+      "phone": "+41 77 483 58 65",
+      "email": "hello@bubbleyoga.ch",
+      "styles": ["Vinyasa Flow", "Hatha Yoga", "Breathwork", "Yin Yoga", "Myofascial Release", "Meditation"],
+      "teachers": [],
+      "description": "Yoga- und Meditationsstudio, Ausbildungsakademie und Community Hub in St. Gallen und online. Nur wenige Schritte vom Marktplatz entfernt. Ein offener und warmer Raum zum Bewegen, Aufladen und Verbinden.",
+      "booking_platform": "Eversports",
+      "drop_in": true,
+      "languages": ["Deutsch", "English"],
+      "special_features": ["Yoga Ausbildung", "Community Hub", "Online Klassen"],
+      "lat": 47.4250,
+      "lng": 9.3755,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "rach-yoga-st-gallen",
+      "name": "RACH Yoga",
+      "website": "https://www.rach-yoga.com/",
+      "schedule_url": "https://www.momoyoga.com/rachyoga/schedule",
+      "addresses": [
+        {
+          "street": "Vadianstrasse 24",
+          "zip": "9000",
+          "city": "St. Gallen",
+          "label": ""
+        }
+      ],
+      "phone": "+41 76 529 78 36",
+      "email": "rachyogahk@gmail.com",
+      "styles": ["Vinyasa", "Hatha Yoga"],
+      "teachers": ["Rachel Rauchfuss"],
+      "description": "Zentral gelegenes Yogastudio nahe dem Bahnhof St. Gallen. Bietet Gruppen- und Privatyogakurse, Vinyasa-Hatha-basierte Klassen für alle Stufen.",
+      "booking_platform": "Momoyoga",
+      "drop_in": true,
+      "languages": ["Deutsch", "English"],
+      "special_features": ["Privatlektionen", "Semi-Private Klassen"],
+      "lat": 47.4238,
+      "lng": 9.3720,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "lineupyoga-st-gallen",
+      "name": "LINEUPYOGA",
+      "website": "https://www.lineupyoga.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Linsebühlstrasse 94",
+          "zip": "9000",
+          "city": "St. Gallen",
+          "label": ""
+        }
+      ],
+      "phone": "+41 78 718 79 29",
+      "email": "",
+      "styles": ["Yoga"],
+      "teachers": ["Petra Luterbacher"],
+      "description": "Yogastudio im Stadtzentrum von St. Gallen mit modernem, abwechslungsreichem und authentischem Yoga-Angebot.",
+      "booking_platform": "Eversports",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Workshops"],
+      "lat": 47.4270,
+      "lng": 9.3800,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "123-yoga-st-gallen",
+      "name": "123 Yoga",
+      "website": "https://123yoga.ch/",
+      "schedule_url": "https://123yoga.ch/courses/",
+      "addresses": [
+        {
+          "street": "Haldenstrasse 5",
+          "zip": "9000",
+          "city": "St. Gallen",
+          "label": ""
+        }
+      ],
+      "phone": "+41 76 201 97 27",
+      "email": "",
+      "styles": ["Yoga"],
+      "teachers": ["Dimitrij Itten"],
+      "description": "Yogastudio von Dimitrij Itten, zentral gelegen an der Haldenstrasse in St. Gallen.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": [],
+      "lat": 47.4235,
+      "lng": 9.3725,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "power-yoga-st-gallen",
+      "name": "Power Yoga St. Gallen",
+      "website": "https://www.poweryogastgallen.com/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Hintere Bahnhofstrasse 5",
+          "zip": "9000",
+          "city": "St. Gallen",
+          "label": "Moving Studio"
+        }
+      ],
+      "phone": "+41 79 325 97 95",
+      "email": "poweryogastgallen@gmail.com",
+      "styles": ["Power Yoga", "Deep Flow Yoga"],
+      "teachers": ["Katie Hunter", "Tammy Furey"],
+      "description": "Englischsprachiges Power Yoga Studio in St. Gallen. Katie Hunter ist 500h Yoga Alliance zertifizierte Lehrerin mit langjähriger Yoga-Erfahrung aus London.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["English"],
+      "special_features": ["English-speaking classes"],
+      "lat": 47.4220,
+      "lng": 9.3710,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "yogaloft-rapperswil-jona",
+      "name": "YOGALOFT Rapperswil-Jona",
+      "website": "https://www.yogaloft.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Holzwiesstrasse 37",
+          "zip": "8645",
+          "city": "Jona",
+          "label": "Alte Spinnerei Brändlin"
+        }
+      ],
+      "phone": "+41 76 344 50 44",
+      "email": "hello@yogaloft.ch",
+      "styles": ["Anusara Yoga", "Vinyasa Flow", "Hatha Yoga"],
+      "teachers": ["Lina Thurnherr", "Michael Thurnherr"],
+      "description": "Gegründet im April 2009 von Lina und Michael Thurnherr. Verschiedene Yogastile wie Anusara, Vinyasa Flow und traditionelles Hatha Yoga mit professionell ausgebildeten Lehrer:innen. Im Hochparterre der alten Spinnerei Brändlin.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Workshops", "Yoga Retreats"],
+      "lat": 47.2280,
+      "lng": 8.8385,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "hot-yoga-4-u-rapperswil",
+      "name": "HOT YOGA 4 U",
+      "website": "https://hotyoga4u.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Hauptplatz 9, 1. OG",
+          "zip": "8640",
+          "city": "Rapperswil",
+          "label": ""
+        }
+      ],
+      "phone": "",
+      "email": "",
+      "styles": ["Hot Yoga"],
+      "teachers": ["Sabine Jeker"],
+      "description": "Hot Yoga Kurse in Rapperswil in einem beheizten Raum. Kleine Klassen in schönem Altbau-Studio. Gratis Probelektionen verfügbar. Entspannte und persönliche Atmosphäre.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Hot Yoga", "Gratis Probelektion", "Kleine Klassen"],
+      "lat": 47.2267,
+      "lng": 8.8180,
+      "active": true,
+      "classes": []
+    }
+  ]
+}

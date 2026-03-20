@@ -788,58 +788,77 @@ if ('serviceWorker' in navigator) {
     }
 
     // --- Data Loading ---
-    function loadData(fileName) {
-        fileName = fileName || 'studios_basel.json';
-        // Load encrypted version
-        var encFileName = fileName.replace('.json', '.enc.json');
-        var dataUrl = './data/' + encFileName;
-        console.log('[YogaSchweiz] Fetching:', dataUrl);
-
+    function loadJSON(url, callback) {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', dataUrl, true);
+        xhr.open('GET', url, true);
         xhr.onreadystatechange = function () {
             if (xhr.readyState !== 4) return;
             if (xhr.status === 200) {
                 try {
                     var raw = JSON.parse(xhr.responseText);
-                    var data = raw.e ? JSON.parse(decryptData(raw.e)) : raw;
-                    state.studios = [];
-                    for (var i = 0; i < data.studios.length; i++) {
-                        if (data.studios[i].active) {
-                            state.studios.push(data.studios[i]);
-                        }
+                    if (raw.e) {
+                        // Encrypted: decrypt
+                        callback(JSON.parse(decryptData(raw.e)), null);
+                    } else {
+                        callback(raw, null);
                     }
-                    state.filteredStudios = state.studios.slice();
-                    populateStyleFilter(data.styles_index || []);
-                    $('studioCount').textContent = state.studios.length + '+';
-                    $('totalCount').textContent = state.studios.length;
-                    console.log('[YogaSchweiz] Loaded', state.studios.length, 'studios for', state.currentCanton);
-                    renderStudios();
-                    renderStylesOverview();
-                    renderGuideStats();
-                    renderGuideTable();
-                    updateCantonTitles();
-                    updatePageTitle();
-                    updateOpenGraph();
-                    updateSchemaOrg();
-                    renderCantonLinks();
-                    renderCantonIntro();
-                    // Schedule only loaded from switchCanton
-                    initMap();
-                } catch (e) {
-                    console.error('[YogaBasel] Error parsing JSON:', e);
-                    showError('Fehler beim Laden der Daten.');
+                } catch (err) {
+                    callback(null, err);
                 }
             } else {
-                console.error('[YogaBasel] HTTP error:', xhr.status, 'URL:', dataUrl);
-                showError('Daten konnten nicht geladen werden (HTTP ' + xhr.status + ').');
+                callback(null, 'HTTP ' + xhr.status);
             }
         };
-        xhr.onerror = function () {
-            console.error('[YogaBasel] Network error loading data');
-            showError('Netzwerkfehler beim Laden der Daten.');
-        };
+        xhr.onerror = function () { callback(null, 'network error'); };
         xhr.send();
+    }
+
+    function loadData(fileName) {
+        fileName = fileName || 'studios_basel.json';
+        var encUrl = './data/' + fileName.replace('.json', '.enc.json');
+        var plainUrl = './data/' + fileName;
+
+        // Try encrypted first
+        loadJSON(encUrl, function (data, err) {
+            if (data && data.studios) {
+                onStudiosLoaded(data);
+            } else {
+                // Fallback to plain
+                console.log('[YogaSchweiz] Encrypted failed, trying plain...');
+                loadJSON(plainUrl, function (data2, err2) {
+                    if (data2 && data2.studios) {
+                        onStudiosLoaded(data2);
+                    } else {
+                        showError('Daten konnten nicht geladen werden.');
+                    }
+                });
+            }
+        });
+    }
+
+    function onStudiosLoaded(data) {
+        state.studios = [];
+        for (var i = 0; i < data.studios.length; i++) {
+            if (data.studios[i].active !== false) {
+                state.studios.push(data.studios[i]);
+            }
+        }
+        state.filteredStudios = state.studios.slice();
+        populateStyleFilter(data.styles_index || []);
+        if ($('studioCount')) $('studioCount').textContent = state.studios.length + '+';
+        if ($('totalCount')) $('totalCount').textContent = state.studios.length;
+        console.log('[YogaSchweiz] Loaded', state.studios.length, 'studios for', state.currentCanton);
+        renderStudios();
+        renderStylesOverview();
+        renderGuideStats();
+        renderGuideTable();
+        updateCantonTitles();
+        updatePageTitle();
+        updateOpenGraph();
+        updateSchemaOrg();
+        renderCantonLinks();
+        renderCantonIntro();
+        initMap();
     }
 
     function showError(msg) {
@@ -1324,27 +1343,26 @@ if ('serviceWorker' in navigator) {
 
     function loadSchedule(fileName) {
         fileName = fileName || 'schedule_basel.json';
-        var encFileName = fileName.replace('.json', '.enc.json');
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', './data/' + encFileName, true);
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState !== 4) return;
-            if (xhr.status === 200) {
-                try {
-                    var raw = JSON.parse(xhr.responseText);
-                    var data = raw.e ? JSON.parse(decryptData(raw.e)) : raw;
-                    scheduleData = data.classes || [];
-                    console.log('[YogaSchweiz] Loaded', scheduleData.length, 'classes');
-                    // Auto-select today's day
-                    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-                    var today = days[new Date().getDay()];
-                    selectDay(today);
-                } catch (e) {
-                    console.error('[YogaBasel] Error parsing schedule:', e);
-                }
+        var encUrl = './data/' + fileName.replace('.json', '.enc.json');
+        var plainUrl = './data/' + fileName;
+
+        loadJSON(encUrl, function (data, err) {
+            if (data) {
+                onScheduleLoaded(data);
+            } else {
+                loadJSON(plainUrl, function (data2) {
+                    if (data2) onScheduleLoaded(data2);
+                });
             }
-        };
-        xhr.send();
+        });
+    }
+
+    function onScheduleLoaded(data) {
+        scheduleData = data.classes || [];
+        console.log('[YogaSchweiz] Loaded', scheduleData.length, 'classes');
+        var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        var today = days[new Date().getDay()];
+        selectDay(today);
     }
 
     function selectDay(day) {

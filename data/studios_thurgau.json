@@ -1,0 +1,194 @@
+{
+  "last_updated": "2026-03-20T00:00:00Z",
+  "studios": [
+    {
+      "id": "gymayo-frauenfeld",
+      "name": "Gymayo-Studio Yogaschule",
+      "website": "https://gymayo.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Freiestrasse 8, 3. OG",
+          "zip": "8500",
+          "city": "Frauenfeld",
+          "label": "Haus zum Schwert"
+        }
+      ],
+      "phone": "+41 52 721 76 40",
+      "email": "info@gymayo.ch",
+      "styles": ["Hatha Yoga"],
+      "teachers": [],
+      "description": "Traditionsreiche Yogaschule in Frauenfeld, gegründet 1955. Das Studio befindet sich im Haus zum Schwert im 3. Stock. Ca. 5-6 Gehminuten vom Bahnhof entfernt.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Seit 1955", "Traditionsreichste Yogaschule der Schweiz"],
+      "lat": 47.5571,
+      "lng": 8.8980,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "yogaplace-frauenfeld",
+      "name": "YOGAPLACE",
+      "website": "https://www.yoga-place.com/",
+      "schedule_url": "https://www.eversports.ch/s/yogaplace",
+      "addresses": [
+        {
+          "street": "Oststrasse 8A",
+          "zip": "8500",
+          "city": "Frauenfeld",
+          "label": "Frauenfeld Ost"
+        }
+      ],
+      "phone": "+41 76 468 36 68",
+      "email": "info@yoga-place.com",
+      "styles": ["Yoga", "Postnatal Yoga", "Kinder Yoga"],
+      "teachers": [],
+      "description": "Modernes Yogastudio in Frauenfeld Ost mit täglichen Klassen und verschiedenen Lehrer:innen. Direkt hinter dem Tower neben der Pizzeria Little Italy gelegen.",
+      "booking_platform": "Eversports",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Postnatal Yoga", "Kinder Yoga", "Workshops"],
+      "lat": 47.5560,
+      "lng": 8.9040,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "yoga-grenzenlos-kreuzlingen",
+      "name": "yoga grenzenlos",
+      "website": "https://www.yogagrenzenlos.com/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Hauptstrasse 10",
+          "zip": "8280",
+          "city": "Kreuzlingen",
+          "label": ""
+        }
+      ],
+      "phone": "+41 76 742 11 10",
+      "email": "info@yogagrenzenlos.com",
+      "styles": ["Hatha Yoga", "Vinyasa", "Yin Yoga", "Anusara Inspired", "Ashtanga Inspired", "Kundalini", "Senioren Yoga", "Teen Yoga"],
+      "teachers": [],
+      "description": "Yogastudio direkt auf der Grenze Kreuzlingen-Konstanz. 1-4 Yogaklassen pro Tag. Probelektionen jederzeit ohne Voranmeldung möglich. Workshops, Retreats und zertifizierte Yogalehrer-Ausbildungen.",
+      "booking_platform": "Eversports",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Grenzlage CH/DE", "Yogalehrer-Ausbildung", "Senioren Yoga", "Teen Yoga", "Probelektion ohne Anmeldung"],
+      "lat": 47.6505,
+      "lng": 9.1750,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "yoga-asana-kreuzlingen",
+      "name": "Yoga Asana",
+      "website": "https://www.yoga-asana.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Gartenstrasse 1",
+          "zip": "8280",
+          "city": "Kreuzlingen",
+          "label": ""
+        }
+      ],
+      "phone": "+41 79 327 72 59",
+      "email": "info@yoga-asana.ch",
+      "styles": ["Vinyasa Flow", "Spiraldynamik", "Aerial Yoga", "Yin Yoga", "Fuss Yoga"],
+      "teachers": [],
+      "description": "Yoga Studio in Kreuzlingen mit vielfältigem Angebot von Vinyasa Flow über Spiraldynamik bis hin zu Aerial und Yin Yoga.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Aerial Yoga", "Spiraldynamik", "Fuss Yoga"],
+      "lat": 47.6480,
+      "lng": 9.1720,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "soma-yoga-weinfelden",
+      "name": "Soma Yoga",
+      "website": "https://www.soma-yoga.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Bahnhofstrasse 24b",
+          "zip": "8570",
+          "city": "Weinfelden",
+          "label": ""
+        }
+      ],
+      "phone": "+41 79 651 37 62",
+      "email": "rita.schneider@soma-yoga.ch",
+      "styles": ["Yoga"],
+      "teachers": ["Rita Schneider"],
+      "description": "Grosszügiger, freundlicher Raum im Zentrum von Weinfelden mit abwechslungsreichem Angebot für Einsteiger und erfahrene Praktizierende. Wenige Gehminuten vom Bahnhof entfernt.",
+      "booking_platform": "Eversports",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Massage"],
+      "lat": 47.5680,
+      "lng": 9.1065,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "feel-yoga-amriswil",
+      "name": "Feel Yoga & Ayurveda",
+      "website": "https://www.feelyoga.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Buchenhölzlistrasse 4b",
+          "zip": "8580",
+          "city": "Amriswil",
+          "label": ""
+        }
+      ],
+      "phone": "+41 79 811 68 75",
+      "email": "info@feelyoga.ch",
+      "styles": ["Yoga", "Ayurveda"],
+      "teachers": ["Roland Haag", "Anita Haag"],
+      "description": "Yoga & Ayurveda Studio in Amriswil, geführt von Roland und Anita Haag. Gruppenklassen mit Körperhaltungen, Atemtechniken und aktiver Tiefenentspannung. Auch Yoga-Ausbildungszentrum.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Ayurveda", "Yoga Ausbildungszentrum", "Personal Training"],
+      "lat": 47.5470,
+      "lng": 9.2890,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "miyoga-thurgau",
+      "name": "MiYoga",
+      "website": "https://www.miyoga.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "",
+          "zip": "8500",
+          "city": "Frauenfeld",
+          "label": "Standorte in Frauenfeld, Amriswil, Weinfelden"
+        }
+      ],
+      "phone": "",
+      "email": "",
+      "styles": ["Vinyasa", "Hatha Yoga", "Yoga Nidra"],
+      "teachers": ["Michaela Meresi"],
+      "description": "Yoga mit Michaela Meresi in Thurgau und Zürich. Zertifizierte Yogalehrerin (500h) mit Klassen in Frauenfeld, Amriswil und Weinfelden sowie regelmässigen Workshops und Retreats.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Workshops", "Retreats", "Mehrere Standorte"],
+      "lat": 47.5571,
+      "lng": 8.8980,
+      "active": true,
+      "classes": []
+    }
+  ]
+}
