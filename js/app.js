@@ -813,8 +813,10 @@ if ('serviceWorker' in navigator) {
     function loadData(fileName) {
         fileName = fileName || 'studios_basel.json';
         var url = './data/' + fileName;
+        console.log('[YogaSchweiz] loadData:', url);
 
         loadJSON(url, function (data, err) {
+            console.log('[YogaSchweiz] loadData result:', data ? 'OK (' + (data.studios ? data.studios.length : '?') + ' studios)' : 'ERROR: ' + err);
             if (data && data.studios) {
                 onStudiosLoaded(data);
             } else {
@@ -1660,8 +1662,13 @@ if ('serviceWorker' in navigator) {
         var cantonSel = $('cantonSelect');
         if (cantonSel) {
             cantonSel.addEventListener('change', function () {
-                if (cantonSel.value) switchCanton(cantonSel.value);
+                var v = cantonSel.value;
+                console.log('[YogaSchweiz] Canton selected:', v);
+                if (v) switchCanton(v);
             });
+            console.log('[YogaSchweiz] Canton selector initialized OK');
+        } else {
+            console.error('[YogaSchweiz] Canton selector NOT FOUND');
         }
 
         // Theme toggle
