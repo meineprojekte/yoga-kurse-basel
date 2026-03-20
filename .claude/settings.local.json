@@ -35,7 +35,8 @@
       "WebFetch(domain:gerbergaesslein-yoga.ch)",
       "WebFetch(domain:voltayoga.ch)",
       "Bash(ls:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(node:*)"
     ]
   }
 }

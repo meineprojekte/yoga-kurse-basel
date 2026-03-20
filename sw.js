@@ -1,12 +1,13 @@
-const CACHE_NAME = 'yogabasel-v1';
+const CACHE_NAME = 'yogaschweiz-v2';
 
 const ASSETS_TO_CACHE = [
   '/',
   './index.html',
   './css/style.css',
   './js/app.js',
-  './data/studios.json',
-  './data/schedule.json'
+  './data/studios_basel.json',
+  './data/schedule_basel.json',
+  './data/cantons.json'
 ];
 
 // Install: pre-cache core assets

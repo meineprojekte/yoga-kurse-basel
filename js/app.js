@@ -519,10 +519,13 @@ if ('serviceWorker' in navigator) {
                     populateStyleFilter(data.styles_index || []);
                     $('studioCount').textContent = state.studios.length + '+';
                     $('totalCount').textContent = state.studios.length;
-                    console.log('[YogaBasel] Loaded', state.studios.length, 'studios');
+                    console.log('[YogaSchweiz] Loaded', state.studios.length, 'studios for', state.currentCanton);
                     renderStudios();
                     renderStylesOverview();
-                    loadSchedule();
+                    renderGuideStats();
+                    renderGuideTable();
+                    updateCantonTitles();
+                    // Schedule only loaded from switchCanton
                     initMap();
                 } catch (e) {
                     console.error('[YogaBasel] Error parsing JSON:', e);
@@ -912,6 +915,97 @@ if ('serviceWorker' in navigator) {
         count.style.display = active > 0 ? '' : 'none';
     }
 
+    // --- Canton-aware Guide Content ---
+    function getCantonDisplayName() {
+        var names = {
+            'basel-stadt': 'Basel', 'zurich': 'Zürich', 'bern': 'Bern', 'luzern': 'Luzern',
+            'geneve': 'Genf', 'vaud': 'Waadt', 'aargau': 'Aargau', 'st-gallen': 'St. Gallen',
+            'solothurn': 'Solothurn', 'thurgau': 'Thurgau', 'basel-landschaft': 'Basel-Landschaft',
+            'graubuenden': 'Graubünden', 'ticino': 'Tessin', 'valais': 'Wallis',
+            'fribourg': 'Freiburg', 'neuchatel': 'Neuenburg', 'schwyz': 'Schwyz', 'zug': 'Zug',
+            'schaffhausen': 'Schaffhausen', 'jura': 'Jura', 'appenzell-ar': 'Appenzell A.Rh.',
+            'appenzell-ir': 'Appenzell I.Rh.', 'glarus': 'Glarus', 'obwalden': 'Obwalden',
+            'nidwalden': 'Nidwalden', 'uri': 'Uri'
+        };
+        return names[state.currentCanton] || state.currentCanton;
+    }
+
+    function updateCantonTitles() {
+        var name = getCantonDisplayName();
+        var stTitle = $('guideTitle');
+        if (stTitle) stTitle.textContent = 'Yoga Guide ' + name;
+
+        // Update studios section title
+        var studiosTitle = document.querySelector('#studios .section-title');
+        if (studiosTitle) studiosTitle.textContent = (state.lang === 'de' ? 'Yoga-Studios in ' : state.lang === 'en' ? 'Yoga Studios in ' : state.lang === 'it' ? 'Studi di yoga a ' : 'Studios de yoga à ') + name;
+
+        // Update styles section title
+        var stylesTitle = document.querySelector('#stile .section-title');
+        if (stylesTitle) stylesTitle.textContent = (state.lang === 'de' ? 'Yoga-Stile in ' : state.lang === 'en' ? 'Yoga Styles in ' : state.lang === 'it' ? 'Stili di yoga a ' : 'Styles de yoga à ') + name;
+
+        // Update map title
+        var mapTitle = document.querySelector('#karte .section-title');
+        if (mapTitle) mapTitle.textContent = (state.lang === 'de' ? 'Studios auf der Karte — ' : state.lang === 'en' ? 'Studios on the Map — ' : state.lang === 'it' ? 'Studi sulla mappa — ' : 'Studios sur la carte — ') + name;
+    }
+
+    function renderGuideStats() {
+        var el = $('guideStats');
+        if (!el) return;
+        var count = state.studios.length;
+        var name = getCantonDisplayName();
+
+        // Count unique styles
+        var stylesSet = {};
+        var dropInCount = 0;
+        for (var i = 0; i < state.studios.length; i++) {
+            var s = state.studios[i];
+            if (s.drop_in) dropInCount++;
+            for (var j = 0; j < s.styles.length; j++) {
+                stylesSet[s.styles[j]] = true;
+            }
+        }
+        var styleCount = 0;
+        for (var k in stylesSet) { if (stylesSet.hasOwnProperty(k)) styleCount++; }
+
+        el.innerHTML =
+            '<div class="guide-stat-card"><div class="guide-stat-number">' + count + '</div><div class="guide-stat-label">Yoga-Studios in ' + escapeHtml(name) + '</div></div>' +
+            '<div class="guide-stat-card"><div class="guide-stat-number">' + styleCount + '</div><div class="guide-stat-label">' + (state.lang === 'de' ? 'Verschiedene Yoga-Stile' : state.lang === 'en' ? 'Different Yoga Styles' : state.lang === 'it' ? 'Stili di yoga diversi' : 'Styles de yoga différents') + '</div></div>' +
+            '<div class="guide-stat-card"><div class="guide-stat-number">' + dropInCount + '</div><div class="guide-stat-label">Drop-in Studios</div></div>' +
+            '<div class="guide-stat-card"><div class="guide-stat-number">CHF 25</div><div class="guide-stat-label">' + (state.lang === 'de' ? 'Drop-in ab diesem Preis' : state.lang === 'en' ? 'Drop-in from this price' : state.lang === 'it' ? 'Drop-in da questo prezzo' : 'Drop-in à partir de ce prix') + '</div></div>';
+    }
+
+    function renderGuideTable() {
+        var el = $('guideTable');
+        if (!el) return;
+        if (state.studios.length === 0) {
+            el.innerHTML = '';
+            return;
+        }
+
+        // Sort by number of styles descending, take top 10
+        var sorted = state.studios.slice().sort(function (a, b) { return b.styles.length - a.styles.length; });
+        var top = sorted.slice(0, Math.min(10, sorted.length));
+
+        var html = '<table><thead><tr>' +
+            '<th>Studio</th>' +
+            '<th>' + (state.lang === 'de' ? 'Ort' : state.lang === 'en' ? 'Location' : state.lang === 'it' ? 'Luogo' : 'Lieu') + '</th>' +
+            '<th>' + (state.lang === 'de' ? 'Stile' : 'Styles') + '</th>' +
+            '<th>Drop-in</th>' +
+            '<th>' + (state.lang === 'de' ? 'Sprachen' : state.lang === 'en' ? 'Languages' : state.lang === 'it' ? 'Lingue' : 'Langues') + '</th>' +
+            '</tr></thead><tbody>';
+
+        for (var i = 0; i < top.length; i++) {
+            var s = top[i];
+            var city = s.addresses[0] ? s.addresses[0].city : '';
+            var langs = (s.languages || []).join(', ');
+            var dropIn = s.drop_in ? (state.lang === 'de' ? 'Ja' : state.lang === 'en' ? 'Yes' : state.lang === 'it' ? 'Sì' : 'Oui') : (state.lang === 'de' ? 'Nein' : 'No');
+            html += '<tr><td>' + escapeHtml(s.name) + '</td><td>' + escapeHtml(city) + '</td><td>' + s.styles.length + '</td><td>' + dropIn + '</td><td>' + escapeHtml(langs) + '</td></tr>';
+        }
+
+        html += '</tbody></table>';
+        el.innerHTML = html;
+    }
+
     // --- Schedule ---
     var scheduleData = [];
 
@@ -1064,8 +1158,20 @@ if ('serviceWorker' in navigator) {
         var mapEl = $('map');
         if (!mapEl) return;
 
-        console.log('[YogaBasel] Initializing map...');
-        state.map = L.map('map').setView([47.557, 7.588], 13);
+        console.log('[YogaSchweiz] Initializing map...');
+        var cantonCenters = {
+            'basel-stadt': [47.557, 7.588, 13], 'zurich': [47.377, 8.542, 12], 'bern': [46.948, 7.447, 12],
+            'luzern': [47.050, 8.305, 12], 'geneve': [46.204, 6.143, 12], 'vaud': [46.520, 6.633, 10],
+            'aargau': [47.390, 8.045, 11], 'st-gallen': [47.423, 9.376, 11], 'solothurn': [47.208, 7.537, 11],
+            'thurgau': [47.554, 9.085, 11], 'basel-landschaft': [47.484, 7.730, 12], 'graubuenden': [46.850, 9.530, 9],
+            'ticino': [46.200, 8.950, 10], 'valais': [46.232, 7.360, 10], 'fribourg': [46.806, 7.162, 11],
+            'neuchatel': [46.993, 6.931, 11], 'schwyz': [47.020, 8.653, 11], 'zug': [47.172, 8.517, 12],
+            'schaffhausen': [47.696, 8.634, 12], 'jura': [47.365, 7.345, 11], 'appenzell-ar': [47.383, 9.278, 12],
+            'appenzell-ir': [47.332, 9.408, 12], 'glarus': [47.040, 9.068, 11], 'obwalden': [46.896, 8.246, 11],
+            'nidwalden': [46.948, 8.366, 12], 'uri': [46.880, 8.644, 10]
+        };
+        var center = cantonCenters[state.currentCanton] || [46.8, 8.2, 8];
+        state.map = L.map('map').setView([center[0], center[1]], center[2]);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
