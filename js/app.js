@@ -88,7 +88,10 @@ if ('serviceWorker' in navigator) {
             'feedback.name': 'Name (optional)',
             'feedback.message': 'Deine Nachricht',
             'feedback.send': 'Feedback senden',
-            'feedback.thanks': 'Vielen Dank für dein Feedback! Wir werden es so schnell wie möglich berücksichtigen.'
+            'feedback.thanks': 'Vielen Dank für dein Feedback! Wir werden es so schnell wie möglich berücksichtigen.',
+            'geo.nearby': 'In der Nähe',
+            'canton.select': 'Wähle deinen Kanton:',
+            'canton.choose': 'Kanton wählen...'
         },
         en: {
             'nav.studios': 'Studios',
@@ -166,7 +169,10 @@ if ('serviceWorker' in navigator) {
             'feedback.name': 'Name (optional)',
             'feedback.message': 'Your message',
             'feedback.send': 'Send feedback',
-            'feedback.thanks': 'Thank you for your feedback! We will consider it as soon as possible.'
+            'feedback.thanks': 'Thank you for your feedback! We will consider it as soon as possible.',
+            'geo.nearby': 'Nearby',
+            'canton.select': 'Choose your canton:',
+            'canton.choose': 'Select canton...'
         },
         it: {
             'nav.studios': 'Studi',
@@ -623,8 +629,22 @@ if ('serviceWorker' in navigator) {
                 '<span class="studio-teachers">' +
                     (teacherNames ? '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> ' + escapeHtml(teacherNames) + (studio.teachers.length > 3 ? '...' : '') : '') +
                 '</span>' +
+                '<span class="studio-card-actions">' +
+                    '<button class="fav-btn" data-fav="' + escapeHtml(studio.id) + '" title="Favorit">' + (isFavorite(studio.id) ? '\u2605' : '\u2606') + '</button>' +
+                    '<button class="share-btn" data-share="' + escapeHtml(studio.id) + '" title="Teilen">\u21AA</button>' +
+                '</span>' +
                 '<span class="studio-link">' + t('card.details') + ' &rarr;</span>' +
             '</div>';
+
+        // Fav/Share buttons (stop propagation so card click doesn't fire)
+        var favBtn = card.querySelector('.fav-btn');
+        if (favBtn) favBtn.addEventListener('click', (function (s) {
+            return function (ev) { ev.stopPropagation(); toggleFavorite(s.id, ev.target); };
+        })(studio));
+        var shareBtn = card.querySelector('.share-btn');
+        if (shareBtn) shareBtn.addEventListener('click', (function (s) {
+            return function (ev) { ev.stopPropagation(); shareStudio(s); };
+        })(studio));
 
         card.addEventListener('click', (function (s) {
             return function () { openModal(s); };
@@ -1138,12 +1158,21 @@ if ('serviceWorker' in navigator) {
                 '<span class="schedule-time">' + escapeHtml(timeStr) + '</span>' +
                 '<span class="schedule-class">' + escapeHtml(c.class_name) + '</span>' +
                 '<span class="schedule-studio">' + escapeHtml(c.studio_name) + '</span>' +
-                '<span class="schedule-teacher">' + escapeHtml(c.teacher || '—') + '</span>' +
+                '<span class="schedule-teacher">' + escapeHtml(c.teacher || '\u2014') + '</span>' +
                 '<span class="schedule-level">' + escapeHtml(levelText) + '</span>' +
+                '<button class="schedule-cal-btn" data-cal="' + j + '" title="' + (state.lang === 'de' ? 'Zum Kalender hinzufügen' : 'Add to calendar') + '">\uD83D\uDCC5</button>' +
                 '</div>';
         }
 
         list.innerHTML = html;
+
+        // Calendar button handlers
+        var calBtns = list.querySelectorAll('.schedule-cal-btn');
+        for (var cb = 0; cb < calBtns.length; cb++) {
+            calBtns[cb].addEventListener('click', (function (cls, dy) {
+                return function () { addToCalendar(cls.class_name, cls.studio_name, dy, cls.time_start, cls.time_end); };
+            })(classes[parseInt(calBtns[cb].getAttribute('data-cal'), 10)], day));
+        }
     }
 
     // --- Map ---
@@ -1547,6 +1576,108 @@ if ('serviceWorker' in navigator) {
                     if (studios) studios.scrollIntoView({ behavior: 'smooth' });
                 };
             })(styleLinks[sl]));
+        }
+    }
+
+    // --- Geolocation: Find nearest studios ---
+    window.findNearestStudios = findNearestStudios;
+    window.promptInstall = promptInstall;
+
+    function findNearestStudios() {
+        if (!navigator.geolocation) {
+            alert(state.lang === 'de' ? 'Geolocation nicht unterstützt.' : 'Geolocation not supported.');
+            return;
+        }
+        var btn = $('geoBtn');
+        if (btn) { btn.disabled = true; btn.textContent = '...'; }
+
+        navigator.geolocation.getCurrentPosition(function (pos) {
+            var userLat = pos.coords.latitude;
+            var userLng = pos.coords.longitude;
+            var withDist = [];
+            for (var i = 0; i < state.studios.length; i++) {
+                var s = state.studios[i];
+                if (!s.lat || !s.lng) continue;
+                var dist = Math.sqrt(Math.pow(userLat - s.lat, 2) + Math.pow(userLng - s.lng, 2)) * 111;
+                withDist.push({ studio: s, dist: dist });
+            }
+            withDist.sort(function (a, b) { return a.dist - b.dist; });
+            state.filteredStudios = [];
+            for (var j = 0; j < withDist.length; j++) state.filteredStudios.push(withDist[j].studio);
+            renderStudios();
+            if (btn) { btn.disabled = false; btn.textContent = t('geo.nearby'); }
+            if (state.map) {
+                state.map.setView([userLat, userLng], 14);
+                L.circleMarker([userLat, userLng], { radius: 10, color: '#D4A373', fillColor: '#D4A373', fillOpacity: 0.8 })
+                    .addTo(state.map).bindPopup(state.lang === 'de' ? 'Dein Standort' : 'Your location');
+            }
+        }, function () {
+            alert(state.lang === 'de' ? 'Standort konnte nicht ermittelt werden.' : 'Could not get location.');
+            if (btn) { btn.disabled = false; btn.textContent = t('geo.nearby'); }
+        });
+    }
+
+    // --- Favorites ---
+    function getFavorites() {
+        try { return JSON.parse(localStorage.getItem('yogaschweiz-fav') || '[]'); } catch (e) { return []; }
+    }
+    function toggleFavorite(studioId, el) {
+        var favs = getFavorites();
+        var idx = favs.indexOf(studioId);
+        if (idx === -1) { favs.push(studioId); } else { favs.splice(idx, 1); }
+        try { localStorage.setItem('yogaschweiz-fav', JSON.stringify(favs)); } catch (e) {}
+        if (el) el.textContent = idx === -1 ? '\u2605' : '\u2606';
+    }
+    function isFavorite(studioId) { return getFavorites().indexOf(studioId) !== -1; }
+
+    // --- Share ---
+    function shareStudio(studio) {
+        var text = studio.name + ' \u2014 Yoga in ' + getCantonDisplayName();
+        var url = studio.website || window.location.href;
+        if (navigator.share) {
+            navigator.share({ title: studio.name, text: text, url: url }).catch(function () {});
+        } else {
+            var ta = document.createElement('textarea');
+            ta.value = text + '\n' + url;
+            document.body.appendChild(ta); ta.select();
+            document.execCommand('copy');
+            document.body.removeChild(ta);
+            alert(state.lang === 'de' ? 'Link kopiert!' : 'Link copied!');
+        }
+    }
+
+    // --- Calendar ---
+    function addToCalendar(className, studioName, day, timeStart, timeEnd) {
+        var dayMap = { Monday: 1, Tuesday: 2, Wednesday: 3, Thursday: 4, Friday: 5, Saturday: 6, Sunday: 0 };
+        var now = new Date();
+        var diff = (dayMap[day] - now.getDay() + 7) % 7;
+        if (diff === 0) diff = 7;
+        var d = new Date(now.getTime() + diff * 86400000);
+        var sp = timeStart.split(':');
+        d.setHours(parseInt(sp[0], 10), parseInt(sp[1], 10), 0, 0);
+        var e = new Date(d);
+        if (timeEnd) { var ep = timeEnd.split(':'); e.setHours(parseInt(ep[0], 10), parseInt(ep[1], 10), 0, 0); }
+        else { e.setHours(e.getHours() + 1); }
+        var fmt = function (dt) { return dt.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, ''); };
+        window.open('https://calendar.google.com/calendar/r/eventedit?text=' +
+            encodeURIComponent(className + ' @ ' + studioName) +
+            '&dates=' + fmt(d) + '/' + fmt(e) +
+            '&details=' + encodeURIComponent('Yoga: ' + className + '\nStudio: ' + studioName) +
+            '&location=' + encodeURIComponent(studioName), '_blank');
+    }
+
+    // --- PWA Install Prompt ---
+    var deferredInstallPrompt = null;
+    window.addEventListener('beforeinstallprompt', function (evt) {
+        evt.preventDefault();
+        deferredInstallPrompt = evt;
+        var btn = $('installBtn');
+        if (btn) btn.style.display = '';
+    });
+    function promptInstall() {
+        if (deferredInstallPrompt) {
+            deferredInstallPrompt.prompt();
+            deferredInstallPrompt = null;
         }
     }
 

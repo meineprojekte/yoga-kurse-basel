@@ -912,6 +912,52 @@ select {
     color: var(--color-primary-dark);
 }
 
+.studio-card-actions {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.fav-btn, .share-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: var(--color-text-muted);
+    transition: all var(--transition-fast);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.fav-btn:hover {
+    color: #FFB300;
+    background: rgba(255,179,0,0.1);
+}
+
+.share-btn:hover {
+    color: var(--color-primary);
+    background: var(--color-primary-bg);
+}
+
+.schedule-cal-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background var(--transition-fast);
+}
+
+.schedule-cal-btn:hover {
+    background: var(--color-primary-bg);
+}
+
 /* List view card */
 .studios-grid.list-view .studio-card {
     display: grid;
@@ -1007,7 +1053,7 @@ select {
 
 .schedule-row {
     display: grid;
-    grid-template-columns: 110px 1fr 180px 140px 100px;
+    grid-template-columns: 110px 1fr 180px 140px 100px 36px;
     gap: var(--spacing-md);
     padding: 12px var(--spacing-md);
     background: var(--color-bg-card);
@@ -1061,7 +1107,7 @@ select {
 
 .schedule-header {
     display: grid;
-    grid-template-columns: 110px 1fr 180px 140px 100px;
+    grid-template-columns: 110px 1fr 180px 140px 100px 36px;
     gap: var(--spacing-md);
     padding: 8px var(--spacing-md);
     font-size: 11px;
