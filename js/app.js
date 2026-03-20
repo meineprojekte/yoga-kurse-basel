@@ -417,27 +417,129 @@ if ('serviceWorker' in navigator) {
     }
 
     // --- Init: runs when DOM is ready ---
+    // --- Detect canton from Google search referrer or URL ---
+    function detectCantonFromSearch() {
+        var cantonKeywords = {
+            'basel': 'basel-stadt', 'basle': 'basel-stadt', 'bâle': 'basel-stadt', 'basilea': 'basel-stadt',
+            'zürich': 'zurich', 'zurich': 'zurich', 'zurigo': 'zurich',
+            'bern': 'bern', 'berne': 'bern', 'berna': 'bern',
+            'luzern': 'luzern', 'lucerne': 'luzern', 'lucerna': 'luzern',
+            'genf': 'geneve', 'genève': 'geneve', 'geneva': 'geneve', 'ginevra': 'geneve', 'geneve': 'geneve',
+            'lausanne': 'vaud', 'waadt': 'vaud', 'vaud': 'vaud',
+            'aargau': 'aargau', 'aarau': 'aargau', 'baden': 'aargau', 'argovia': 'aargau',
+            'st. gallen': 'st-gallen', 'st.gallen': 'st-gallen', 'san gallo': 'st-gallen',
+            'solothurn': 'solothurn', 'soletta': 'solothurn', 'olten': 'solothurn',
+            'thurgau': 'thurgau', 'frauenfeld': 'thurgau', 'kreuzlingen': 'thurgau',
+            'baselland': 'basel-landschaft', 'liestal': 'basel-landschaft',
+            'graubünden': 'graubuenden', 'graubuenden': 'graubuenden', 'chur': 'graubuenden', 'davos': 'graubuenden', 'grigioni': 'graubuenden',
+            'tessin': 'ticino', 'ticino': 'ticino', 'lugano': 'ticino', 'locarno': 'ticino',
+            'wallis': 'valais', 'valais': 'valais', 'sion': 'valais', 'vallese': 'valais',
+            'freiburg': 'fribourg', 'fribourg': 'fribourg', 'friburgo': 'fribourg',
+            'neuenburg': 'neuchatel', 'neuchâtel': 'neuchatel', 'neuchatel': 'neuchatel',
+            'schwyz': 'schwyz', 'einsiedeln': 'schwyz',
+            'zug': 'zug', 'baar': 'zug', 'zugo': 'zug',
+            'schaffhausen': 'schaffhausen', 'sciaffusa': 'schaffhausen',
+            'jura': 'jura', 'delémont': 'jura', 'giura': 'jura',
+            'appenzell': 'appenzell-ar',
+            'glarus': 'glarus', 'glarona': 'glarus',
+            'sarnen': 'obwalden', 'obwalden': 'obwalden',
+            'stans': 'nidwalden', 'nidwalden': 'nidwalden',
+            'uri': 'uri', 'altdorf': 'uri',
+            'winterthur': 'zurich', 'rapperswil': 'st-gallen',
+            'montreux': 'vaud', 'vevey': 'vaud', 'nyon': 'vaud',
+            'thun': 'bern', 'biel': 'bern', 'bienne': 'bern'
+        };
+
+        // 1. Check URL hash
+        var hash = window.location.hash;
+        if (hash && hash.indexOf('#canton/') === 0) {
+            return hash.replace('#canton/', '');
+        }
+
+        // 2. Check URL query parameter ?q= or ?canton=
+        var params = window.location.search;
+        if (params) {
+            var match = params.match(/[?&]canton=([^&]+)/);
+            if (match) return decodeURIComponent(match[1]);
+            var qMatch = params.match(/[?&]q=([^&]+)/);
+            if (qMatch) {
+                var q = decodeURIComponent(qMatch[1]).toLowerCase();
+                for (var kw in cantonKeywords) {
+                    if (cantonKeywords.hasOwnProperty(kw) && q.indexOf(kw) !== -1) {
+                        return cantonKeywords[kw];
+                    }
+                }
+            }
+        }
+
+        // 3. Check Google referrer for search terms
+        try {
+            var ref = document.referrer.toLowerCase();
+            if (ref.indexOf('google') !== -1 || ref.indexOf('bing') !== -1 || ref.indexOf('search') !== -1) {
+                // Try to extract query from referrer (limited but worth trying)
+                var refMatch = ref.match(/[?&]q=([^&]+)/);
+                if (refMatch) {
+                    var refQ = decodeURIComponent(refMatch[1]).toLowerCase();
+                    for (var rk in cantonKeywords) {
+                        if (cantonKeywords.hasOwnProperty(rk) && refQ.indexOf(rk) !== -1) {
+                            return cantonKeywords[rk];
+                        }
+                    }
+                }
+            }
+        } catch (e) {}
+
+        return null; // No canton detected
+    }
+
+    // --- Dynamic page title ---
+    function updatePageTitle() {
+        var name = getCantonDisplayName();
+        var lang = state.lang;
+        var title;
+        if (lang === 'de') {
+            title = 'Yoga ' + name + ' 2026 — Alle Studios & Kurse | Stundenplan, Karte';
+        } else if (lang === 'en') {
+            title = 'Yoga ' + name + ' 2026 — All Studios & Classes | Schedule, Map';
+        } else if (lang === 'it') {
+            title = 'Yoga ' + name + ' 2026 — Tutti gli studi e corsi | Orario, Mappa';
+        } else {
+            title = 'Yoga ' + name + ' 2026 — Tous les studios et cours | Horaire, Carte';
+        }
+        document.title = title;
+
+        // Update meta description dynamically
+        var metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) {
+            var studioCount = state.studios.length;
+            if (lang === 'de') {
+                metaDesc.content = 'Alle ' + studioCount + ' Yoga-Studios in ' + name + '. Stundenplan, interaktive Karte, PDF-Export. Vinyasa, Hatha, Yin, Ashtanga und mehr. Täglich aktualisiert.';
+            } else if (lang === 'en') {
+                metaDesc.content = 'All ' + studioCount + ' yoga studios in ' + name + '. Schedule, interactive map, PDF export. Vinyasa, Hatha, Yin, Ashtanga and more. Updated daily.';
+            } else if (lang === 'it') {
+                metaDesc.content = 'Tutti i ' + studioCount + ' studi di yoga a ' + name + '. Orario, mappa interattiva, export PDF. Aggiornato ogni giorno.';
+            } else {
+                metaDesc.content = 'Tous les ' + studioCount + ' studios de yoga à ' + name + '. Horaire, carte interactive, export PDF. Mis à jour quotidiennement.';
+            }
+        }
+    }
+
     function init() {
         console.log('[YogaSchweiz] Initializing...');
         applyTheme();
         applyLanguage();
         setupEventListeners();
 
-        // Load saved canton or default to Basel
+        // Detect canton: URL hash > URL params > Google referrer > saved > default
+        var detectedCanton = detectCantonFromSearch();
         var savedCanton = null;
         try { savedCanton = localStorage.getItem('yogabasel-canton'); } catch (e) {}
 
-        // Check URL hash for canton
-        var hash = window.location.hash;
-        if (hash && hash.indexOf('#canton/') === 0) {
-            savedCanton = hash.replace('#canton/', '');
-        }
-
-        var cantonToLoad = savedCanton || 'basel-stadt';
+        var cantonToLoad = detectedCanton || savedCanton || 'basel-stadt';
         switchCanton(cantonToLoad);
 
         updateLastUpdated();
-        console.log('[YogaSchweiz] Init complete.');
+        console.log('[YogaSchweiz] Init complete. Canton:', cantonToLoad);
     }
 
     // Robust DOM ready detection
@@ -516,6 +618,7 @@ if ('serviceWorker' in navigator) {
         scheduleData = [];
         var schedList = $('scheduleList');
         if (schedList) schedList.innerHTML = '';
+        updatePageTitle();
     }
 
     // --- Data Loading ---
@@ -557,6 +660,7 @@ if ('serviceWorker' in navigator) {
                     renderGuideStats();
                     renderGuideTable();
                     updateCantonTitles();
+                    updatePageTitle();
                     // Schedule only loaded from switchCanton
                     initMap();
                 } catch (e) {
@@ -1377,6 +1481,8 @@ if ('serviceWorker' in navigator) {
         applyLanguage();
         renderStudios();
         renderStylesOverview();
+        updatePageTitle();
+        updateCantonTitles();
         // Re-render schedule if a day is selected
         var activeDay = document.querySelector('#scheduleDays .day-btn.active');
         if (activeDay) renderSchedule(activeDay.getAttribute('data-day'));
