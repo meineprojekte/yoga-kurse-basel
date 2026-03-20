@@ -387,19 +387,13 @@ if ('serviceWorker' in navigator) {
     }
 
     // --- Data Decryption ---
-    var _R = 47; // rotation offset
-    function decryptData(encB64) {
-        var raw = atob(encB64);
-        var bytes = [];
-        for (var i = 0; i < raw.length; i++) {
-            bytes.push((raw.charCodeAt(i) - _R + 256) % 256);
-        }
-        // Convert bytes back to UTF-8 string
-        var result = '';
-        for (var j = 0; j < bytes.length; j++) {
-            result += String.fromCharCode(bytes[j]);
-        }
-        try { return decodeURIComponent(escape(result)); } catch (e) { return result; }
+    function decryptData(enc) {
+        // Reverse the string, then base64 decode
+        var reversed = '';
+        for (var i = enc.length - 1; i >= 0; i--) reversed += enc[i];
+        var decoded = atob(reversed);
+        // Handle UTF-8
+        try { return decodeURIComponent(escape(decoded)); } catch (e) { return decoded; }
     }
 
     // --- Utility ---
@@ -796,8 +790,10 @@ if ('serviceWorker' in navigator) {
     // --- Data Loading ---
     function loadData(fileName) {
         fileName = fileName || 'studios_basel.json';
-        var dataUrl = './data/' + fileName;
-        console.log('[YogaSchweiz] Fetching data from:', dataUrl);
+        // Load encrypted version
+        var encFileName = fileName.replace('.json', '.enc.json');
+        var dataUrl = './data/' + encFileName;
+        console.log('[YogaSchweiz] Fetching:', dataUrl);
 
         var xhr = new XMLHttpRequest();
         xhr.open('GET', dataUrl, true);
@@ -805,7 +801,8 @@ if ('serviceWorker' in navigator) {
             if (xhr.readyState !== 4) return;
             if (xhr.status === 200) {
                 try {
-                    var data = JSON.parse(xhr.responseText);
+                    var raw = JSON.parse(xhr.responseText);
+                    var data = raw.e ? JSON.parse(decryptData(raw.e)) : raw;
                     state.studios = [];
                     for (var i = 0; i < data.studios.length; i++) {
                         if (data.studios[i].active) {
@@ -1327,13 +1324,15 @@ if ('serviceWorker' in navigator) {
 
     function loadSchedule(fileName) {
         fileName = fileName || 'schedule_basel.json';
+        var encFileName = fileName.replace('.json', '.enc.json');
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', './data/' + fileName, true);
+        xhr.open('GET', './data/' + encFileName, true);
         xhr.onreadystatechange = function () {
             if (xhr.readyState !== 4) return;
             if (xhr.status === 200) {
                 try {
-                    var data = JSON.parse(xhr.responseText);
+                    var raw = JSON.parse(xhr.responseText);
+                    var data = raw.e ? JSON.parse(decryptData(raw.e)) : raw;
                     scheduleData = data.classes || [];
                     console.log('[YogaSchweiz] Loaded', scheduleData.length, 'classes');
                     // Auto-select today's day

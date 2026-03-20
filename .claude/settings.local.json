@@ -47,7 +47,9 @@
       "WebFetch(domain:www.nic.ch)",
       "Bash(curl -s \"https://rdap.nic.ch/domain/yogaschweiz.ch\")",
       "Bash(for f:*)",
-      "Bash(do if:*)"
+      "Bash(do if:*)",
+      "Bash(then continue:*)",
+      "Bash(fi rm:*)"
     ]
   }
 }
