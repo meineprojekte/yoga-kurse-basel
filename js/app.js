@@ -91,7 +91,8 @@ if ('serviceWorker' in navigator) {
             'feedback.thanks': 'Vielen Dank für dein Feedback! Wir werden es so schnell wie möglich berücksichtigen.',
             'geo.nearby': 'In der Nähe',
             'canton.select': 'Wähle deinen Kanton:',
-            'canton.choose': 'Kanton wählen...'
+            'canton.choose': 'Kanton wählen...',
+            'cantons.other': 'Yoga in anderen Kantonen'
         },
         en: {
             'nav.studios': 'Studios',
@@ -172,7 +173,8 @@ if ('serviceWorker' in navigator) {
             'feedback.thanks': 'Thank you for your feedback! We will consider it as soon as possible.',
             'geo.nearby': 'Nearby',
             'canton.select': 'Choose your canton:',
-            'canton.choose': 'Select canton...'
+            'canton.choose': 'Select canton...',
+            'cantons.other': 'Yoga in other cantons'
         },
         it: {
             'nav.studios': 'Studi',
@@ -550,10 +552,177 @@ if ('serviceWorker' in navigator) {
         init();
     }
 
+    // --- SEO: Dynamic Schema.org per canton ---
+    function updateSchemaOrg() {
+        // Remove old dynamic schema
+        var oldSchema = document.getElementById('dynamic-schema');
+        if (oldSchema) oldSchema.remove();
+
+        var name = getCantonDisplayName();
+        var count = state.studios.length;
+        if (count === 0) return;
+
+        // Generate LocalBusiness schema for top studios
+        var items = [];
+        var top = state.studios.slice(0, 15);
+        for (var i = 0; i < top.length; i++) {
+            var s = top[i];
+            var addr = s.addresses[0] || {};
+            items.push({
+                '@type': 'SportsActivityLocation',
+                'name': s.name,
+                'url': s.website || '',
+                'telephone': s.phone || '',
+                'address': {
+                    '@type': 'PostalAddress',
+                    'streetAddress': addr.street || '',
+                    'postalCode': addr.zip || '',
+                    'addressLocality': addr.city || '',
+                    'addressCountry': 'CH'
+                }
+            });
+        }
+
+        var schema = {
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            'name': 'Yoga Studios in ' + name,
+            'description': count + ' Yoga-Studios in ' + name + ', Schweiz',
+            'numberOfItems': count,
+            'itemListElement': []
+        };
+        for (var j = 0; j < items.length; j++) {
+            schema.itemListElement.push({
+                '@type': 'ListItem',
+                'position': j + 1,
+                'item': items[j]
+            });
+        }
+
+        var script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.id = 'dynamic-schema';
+        script.textContent = JSON.stringify(schema);
+        document.head.appendChild(script);
+    }
+
+    // --- SEO: Update URL hash for canton (each canton = unique URL) ---
+    function updateURLHash() {
+        var hash = '#canton/' + state.currentCanton;
+        if (window.location.hash !== hash) {
+            history.replaceState(null, '', hash);
+        }
+    }
+
+    // --- SEO: Dynamic Open Graph for social sharing ---
+    function updateOpenGraph() {
+        var name = getCantonDisplayName();
+        var count = state.studios.length;
+
+        var ogTitle = document.querySelector('meta[property="og:title"]');
+        if (ogTitle) ogTitle.content = 'Yoga ' + name + ' — ' + count + ' Studios auf einen Blick';
+
+        var ogDesc = document.querySelector('meta[property="og:description"]');
+        if (ogDesc) ogDesc.content = count + ' Yoga-Studios in ' + name + '. Stundenplan, Karte, PDF. Täglich aktualisiert.';
+
+        var twTitle = document.querySelector('meta[name="twitter:title"]');
+        if (twTitle) twTitle.content = 'Yoga ' + name + ' — ' + count + ' Studios';
+
+        var twDesc = document.querySelector('meta[name="twitter:description"]');
+        if (twDesc) twDesc.content = count + ' Yoga-Studios in ' + name + '. Kostenlose Übersicht.';
+    }
+
+    // --- SEO: Canton cross-links (internal linking) ---
+    function renderCantonLinks() {
+        var el = $('cantonCrossLinks');
+        if (!el) return;
+        var cantons = [
+            { id: 'basel-stadt', name: 'Basel' }, { id: 'zurich', name: 'Zürich' },
+            { id: 'bern', name: 'Bern' }, { id: 'luzern', name: 'Luzern' },
+            { id: 'geneve', name: 'Genf' }, { id: 'vaud', name: 'Lausanne' },
+            { id: 'aargau', name: 'Aargau' }, { id: 'st-gallen', name: 'St. Gallen' },
+            { id: 'ticino', name: 'Tessin' }, { id: 'graubuenden', name: 'Graubünden' }
+        ];
+        var html = '';
+        for (var i = 0; i < cantons.length; i++) {
+            if (cantons[i].id === state.currentCanton) continue;
+            html += '<a href="#canton/' + cantons[i].id + '" class="canton-cross-link" data-canton-link="' + cantons[i].id + '">Yoga ' + escapeHtml(cantons[i].name) + '</a>';
+        }
+        el.innerHTML = html;
+
+        // Click handlers
+        var links = el.querySelectorAll('.canton-cross-link');
+        for (var j = 0; j < links.length; j++) {
+            links[j].addEventListener('click', (function (cid) {
+                return function (e) {
+                    e.preventDefault();
+                    switchCanton(cid);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                };
+            })(links[j].getAttribute('data-canton-link')));
+        }
+    }
+
+    // --- SEO: Dynamic keyword-rich paragraph per canton ---
+    function renderCantonIntro() {
+        var el = $('cantonIntro');
+        if (!el) return;
+        var name = getCantonDisplayName();
+        var count = state.studios.length;
+        if (count === 0) { el.innerHTML = ''; return; }
+
+        // Count unique styles and drop-ins
+        var styles = {};
+        var dropIns = 0;
+        for (var i = 0; i < state.studios.length; i++) {
+            if (state.studios[i].drop_in) dropIns++;
+            for (var j = 0; j < state.studios[i].styles.length; j++) {
+                styles[state.studios[i].styles[j]] = true;
+            }
+        }
+        var styleCount = 0;
+        for (var k in styles) { if (styles.hasOwnProperty(k)) styleCount++; }
+
+        // Get top 3 styles
+        var styleCounts = {};
+        for (var si = 0; si < state.studios.length; si++) {
+            for (var sj = 0; sj < state.studios[si].styles.length; sj++) {
+                var st = state.studios[si].styles[sj];
+                styleCounts[st] = (styleCounts[st] || 0) + 1;
+            }
+        }
+        var sorted = [];
+        for (var sk in styleCounts) { if (styleCounts.hasOwnProperty(sk)) sorted.push([sk, styleCounts[sk]]); }
+        sorted.sort(function (a, b) { return b[1] - a[1]; });
+        var topStyles = sorted.slice(0, 3).map(function (s) { return s[0]; }).join(', ');
+
+        if (state.lang === 'de') {
+            el.innerHTML = '<p>In <strong>' + escapeHtml(name) + '</strong> findest du <strong>' + count + ' Yoga-Studios</strong> mit ' + styleCount + ' verschiedenen Stilen. ' +
+                'Die beliebtesten Stile sind ' + escapeHtml(topStyles) + '. ' +
+                dropIns + ' Studios bieten Drop-in-Klassen ohne Voranmeldung an. ' +
+                'Nutze die Filter, den Stundenplan und die Karte, um das perfekte Yoga-Angebot in ' + escapeHtml(name) + ' zu finden.</p>';
+        } else if (state.lang === 'en') {
+            el.innerHTML = '<p><strong>' + escapeHtml(name) + '</strong> has <strong>' + count + ' yoga studios</strong> with ' + styleCount + ' different styles. ' +
+                'Most popular: ' + escapeHtml(topStyles) + '. ' +
+                dropIns + ' studios offer drop-in classes. Use the filters, schedule and map to find your perfect yoga class.</p>';
+        } else if (state.lang === 'it') {
+            el.innerHTML = '<p>A <strong>' + escapeHtml(name) + '</strong> trovi <strong>' + count + ' studi di yoga</strong> con ' + styleCount + ' stili diversi. ' +
+                'I più popolari: ' + escapeHtml(topStyles) + '. ' +
+                dropIns + ' studi offrono lezioni drop-in senza prenotazione.</p>';
+        } else {
+            el.innerHTML = '<p><strong>' + escapeHtml(name) + '</strong> compte <strong>' + count + ' studios de yoga</strong> avec ' + styleCount + ' styles différents. ' +
+                'Les plus populaires : ' + escapeHtml(topStyles) + '. ' +
+                dropIns + ' studios proposent des cours sans réservation.</p>';
+        }
+    }
+
     // --- Canton Switching ---
     function switchCanton(cantonId) {
         state.currentCanton = cantonId;
         try { localStorage.setItem('yogabasel-canton', cantonId); } catch (e) {}
+
+        // Update URL hash for SEO
+        updateURLHash();
 
         // Update select
         var sel = $('cantonSelect');
@@ -619,6 +788,9 @@ if ('serviceWorker' in navigator) {
         var schedList = $('scheduleList');
         if (schedList) schedList.innerHTML = '';
         updatePageTitle();
+        updateOpenGraph();
+        renderCantonLinks();
+        renderCantonIntro();
     }
 
     // --- Data Loading ---
@@ -661,6 +833,10 @@ if ('serviceWorker' in navigator) {
                     renderGuideTable();
                     updateCantonTitles();
                     updatePageTitle();
+                    updateOpenGraph();
+                    updateSchemaOrg();
+                    renderCantonLinks();
+                    renderCantonIntro();
                     // Schedule only loaded from switchCanton
                     initMap();
                 } catch (e) {
