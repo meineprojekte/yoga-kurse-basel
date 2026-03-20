@@ -43,7 +43,9 @@
       "WebFetch(domain:www.hotyogachristophherren.ch)",
       "WebFetch(domain:sanapurna.ch)",
       "WebFetch(domain:svarupayoga.ch)",
-      "WebFetch(domain:www.yamabern.ch)"
+      "WebFetch(domain:www.yamabern.ch)",
+      "WebFetch(domain:www.nic.ch)",
+      "Bash(curl -s \"https://rdap.nic.ch/domain/yogaschweiz.ch\")"
     ]
   }
 }

@@ -1681,4 +1681,126 @@ if ('serviceWorker' in navigator) {
         }
     }
 
+    // --- Anonymous Analytics (no cookies, no personal data, GDPR-compliant) ---
+    var analytics = {
+        startTime: Date.now(),
+        clicks: {},
+        cantonViews: {},
+
+        // Track anonymous click events via GoatCounter
+        trackEvent: function (category, action) {
+            var key = category + '/' + action;
+            this.clicks[key] = (this.clicks[key] || 0) + 1;
+            // Send to GoatCounter as page view event
+            if (window.goatcounter && window.goatcounter.count) {
+                window.goatcounter.count({ path: '/event/' + key, event: true });
+            }
+        },
+
+        // Track canton selection
+        trackCanton: function (cantonId) {
+            this.cantonViews[cantonId] = (this.cantonViews[cantonId] || 0) + 1;
+            if (window.goatcounter && window.goatcounter.count) {
+                window.goatcounter.count({ path: '/canton/' + cantonId, event: true });
+            }
+        },
+
+        // Track time on page (send on unload, aggregated)
+        trackTimeOnPage: function () {
+            var seconds = Math.round((Date.now() - this.startTime) / 1000);
+            var bucket;
+            if (seconds < 30) bucket = 'under-30s';
+            else if (seconds < 60) bucket = '30s-1min';
+            else if (seconds < 180) bucket = '1-3min';
+            else if (seconds < 300) bucket = '3-5min';
+            else if (seconds < 600) bucket = '5-10min';
+            else bucket = 'over-10min';
+            if (window.goatcounter && window.goatcounter.count) {
+                window.goatcounter.count({ path: '/time/' + bucket, event: true });
+            }
+        }
+    };
+
+    // Hook analytics into existing actions
+
+    // Canton switch tracking
+    var origSwitchCanton = switchCanton;
+    switchCanton = function (cantonId) {
+        analytics.trackCanton(cantonId);
+        origSwitchCanton(cantonId);
+    };
+    // Re-expose
+    window.findNearestStudios = findNearestStudios;
+    window.promptInstall = promptInstall;
+
+    // Track clicks on key buttons
+    document.addEventListener('click', function (e) {
+        var el = e.target;
+        // Studio website click in modal
+        if (el.closest && el.closest('.modal-actions .btn-primary')) {
+            analytics.trackEvent('click', 'studio-website');
+        }
+        // Schedule link click in modal
+        if (el.closest && el.closest('.modal-actions .btn-outline')) {
+            analytics.trackEvent('click', 'studio-schedule');
+        }
+        // PDF export
+        if (el.closest && el.closest('#exportPdf')) {
+            analytics.trackEvent('click', 'pdf-export');
+        }
+        // Geolocation
+        if (el.closest && el.closest('#geoBtn')) {
+            analytics.trackEvent('click', 'geolocation');
+        }
+        // Favorite
+        if (el.classList && el.classList.contains('fav-btn')) {
+            analytics.trackEvent('click', 'favorite');
+        }
+        // Share
+        if (el.classList && el.classList.contains('share-btn')) {
+            analytics.trackEvent('click', 'share');
+        }
+        // Calendar
+        if (el.classList && el.classList.contains('schedule-cal-btn')) {
+            analytics.trackEvent('click', 'add-calendar');
+        }
+        // Filter chip
+        if (el.closest && el.closest('.chip')) {
+            analytics.trackEvent('filter', 'style-chip');
+        }
+        // Language toggle
+        if (el.closest && el.closest('#langToggle')) {
+            analytics.trackEvent('click', 'language-' + state.lang);
+        }
+        // Theme toggle
+        if (el.closest && el.closest('#themeToggle')) {
+            analytics.trackEvent('click', 'theme-' + state.theme);
+        }
+    });
+
+    // Track search usage (debounced, only tracks that search was used, not the query)
+    var searchTrackTimeout;
+    var heroSearchEl = $('heroSearch');
+    if (heroSearchEl) {
+        heroSearchEl.addEventListener('input', function () {
+            clearTimeout(searchTrackTimeout);
+            searchTrackTimeout = setTimeout(function () {
+                if (heroSearchEl.value.length > 2) {
+                    analytics.trackEvent('feature', 'search-used');
+                }
+            }, 2000);
+        });
+    }
+
+    // Track time on page when leaving
+    window.addEventListener('beforeunload', function () {
+        analytics.trackTimeOnPage();
+    });
+    // Also track via visibilitychange for mobile
+    document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'hidden') {
+            analytics.trackTimeOnPage();
+        }
+    });
+
 })();
