@@ -818,20 +818,12 @@ if ('serviceWorker' in navigator) {
         var encUrl = './data/' + fileName.replace('.json', '.enc.json');
         var plainUrl = './data/' + fileName;
 
-        // Try encrypted first
-        loadJSON(encUrl, function (data, err) {
+        // Load plain JSON directly
+        loadJSON(plainUrl, function (data, err) {
             if (data && data.studios) {
                 onStudiosLoaded(data);
             } else {
-                // Fallback to plain
-                console.log('[YogaSchweiz] Encrypted failed, trying plain...');
-                loadJSON(plainUrl, function (data2, err2) {
-                    if (data2 && data2.studios) {
-                        onStudiosLoaded(data2);
-                    } else {
-                        showError('Daten konnten nicht geladen werden.');
-                    }
-                });
+                showError('Daten konnten nicht geladen werden.');
             }
         });
     }
@@ -1346,14 +1338,8 @@ if ('serviceWorker' in navigator) {
         var encUrl = './data/' + fileName.replace('.json', '.enc.json');
         var plainUrl = './data/' + fileName;
 
-        loadJSON(encUrl, function (data, err) {
-            if (data) {
-                onScheduleLoaded(data);
-            } else {
-                loadJSON(plainUrl, function (data2) {
-                    if (data2) onScheduleLoaded(data2);
-                });
-            }
+        loadJSON(plainUrl, function (data) {
+            if (data) onScheduleLoaded(data);
         });
     }
 
