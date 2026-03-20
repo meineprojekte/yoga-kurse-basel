@@ -1,0 +1,166 @@
+{
+  "last_updated": "2026-03-20T00:00:00Z",
+  "studios": [
+    {
+      "id": "yoga-fabrik-neuchatel",
+      "name": "Yoga Fabrik",
+      "website": "https://yoga-fabrik.ch/",
+      "schedule_url": "https://yogafabrik.zenitoo.ch/fr/",
+      "addresses": [
+        {
+          "street": "Chemin des Grands-Pins 6",
+          "zip": "2000",
+          "city": "Neuchâtel",
+          "label": "Studio Côte"
+        },
+        {
+          "street": "Rue du Seyon 9",
+          "zip": "2000",
+          "city": "Neuchâtel",
+          "label": "Studio Seyon"
+        }
+      ],
+      "phone": "+41 79 405 14 15",
+      "email": "info@yoga-fabrik.ch",
+      "styles": [
+        "Hatha",
+        "Ashtanga",
+        "Yin",
+        "Vinyasa",
+        "Pilates",
+        "Yogalates",
+        "Jivamukti"
+      ],
+      "teachers": [],
+      "description": "Studio de yoga à Neuchâtel avec deux emplacements et une trentaine de cours par semaine. Styles variés dans un environnement serein, lumineux et chaleureux.",
+      "booking_platform": "Zenitoo",
+      "drop_in": true,
+      "languages": [
+        "Français"
+      ],
+      "special_features": [
+        "Deux studios",
+        "30 cours par semaine"
+      ],
+      "lat": 46.9900,
+      "lng": 6.9293,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "yoga-shashin-neuchatel",
+      "name": "Yoga Shashin",
+      "website": "https://www.yogashashin.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Faubourg de l'Hôpital 31",
+          "zip": "2000",
+          "city": "Neuchâtel",
+          "label": ""
+        }
+      ],
+      "phone": "+41 78 691 80 67",
+      "email": "",
+      "styles": [
+        "Hatha",
+        "Vinyasa Flow",
+        "Yin",
+        "Méditation"
+      ],
+      "teachers": [],
+      "description": "Studio de yoga à Neuchâtel offrant des cours de Hatha, Vinyasa, Yin et méditation. Contact par SMS ou WhatsApp.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": [
+        "Français"
+      ],
+      "special_features": [],
+      "lat": 46.9920,
+      "lng": 6.9310,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "parvata-la-chaux-de-fonds",
+      "name": "Parvata - Yoga, Coaching et Doula",
+      "website": "https://www.parvata.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Rue des Musées 60, 2ème étage",
+          "zip": "2300",
+          "city": "La Chaux-de-Fonds",
+          "label": "Code d'entrée: 2983#"
+        }
+      ],
+      "phone": "+41 32 913 18 13",
+      "email": "info@parvata.ch",
+      "styles": [
+        "Hatha",
+        "Raja Yoga"
+      ],
+      "teachers": [],
+      "description": "Cours de Hatha et Raja Yoga à La Chaux-de-Fonds et en ligne. Coaching de vie et professionnel, services de doula, hypnose, massages et développement personnel.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": [
+        "Français"
+      ],
+      "special_features": [
+        "Coaching",
+        "Doula",
+        "Hypnose",
+        "Massages",
+        "Cours en ligne"
+      ],
+      "lat": 47.1035,
+      "lng": 6.8322,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "banyann-yoga",
+      "name": "Banyann Yoga",
+      "website": "https://www.banyann.ch/",
+      "schedule_url": "https://www.banyann.ch/prestations",
+      "addresses": [
+        {
+          "street": "Rue du Grenier 24",
+          "zip": "2300",
+          "city": "La Chaux-de-Fonds",
+          "label": ""
+        },
+        {
+          "street": "Avenue des Alpes 18",
+          "zip": "2000",
+          "city": "Neuchâtel",
+          "label": "Temple des Valangines"
+        }
+      ],
+      "phone": "+41 79 382 83 29",
+      "email": "celine.heimo@banyann.ch",
+      "styles": [
+        "Hatha",
+        "Méditation",
+        "Yoga-thérapie"
+      ],
+      "teachers": [],
+      "description": "Ecole de yoga proposant des cours collectifs et privés à La Chaux-de-Fonds et Neuchâtel. Cours pour enfants et yoga-thérapie.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": [
+        "Français"
+      ],
+      "special_features": [
+        "Yoga enfants",
+        "Yoga-thérapie",
+        "Cours privés"
+      ],
+      "lat": 47.1028,
+      "lng": 6.8296,
+      "active": true,
+      "classes": []
+    }
+  ]
+}
