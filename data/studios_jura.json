@@ -1,0 +1,113 @@
+{
+  "last_updated": "2026-03-20T00:00:00Z",
+  "studios": [
+    {
+      "id": "pilatesyogajura",
+      "name": "PilatesYogaJura",
+      "website": "https://www.pilatesyogajura.com/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Rue Emile-Boéchat 5",
+          "zip": "2800",
+          "city": "Delémont",
+          "label": ""
+        }
+      ],
+      "phone": "+41 78 615 09 24",
+      "email": "pilatesyogajura@gmail.com",
+      "styles": [
+        "Yoga",
+        "Ashtanga",
+        "Pilates"
+      ],
+      "teachers": [],
+      "description": "Studio de Yoga et Pilates à Delémont et Porrentruy, fondé en 2009 par Angela Willemin-Monaco. 14 cours par semaine. Professeur multidisciplinaire certifié en Pilates, Yoga Ashtanga et Fitness.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": [
+        "Français"
+      ],
+      "special_features": [
+        "Nutrition",
+        "Ayurveda",
+        "Personal Training",
+        "Deux sites (Delémont et Porrentruy)"
+      ],
+      "lat": 47.3659,
+      "lng": 7.3440,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "yogajura",
+      "name": "YogaJura.ch",
+      "website": "https://www.yogajura.ch/",
+      "schedule_url": "https://www.yogajura.ch/pratique",
+      "addresses": [
+        {
+          "street": "",
+          "zip": "2800",
+          "city": "Delémont",
+          "label": ""
+        },
+        {
+          "street": "",
+          "zip": "2900",
+          "city": "Porrentruy",
+          "label": ""
+        }
+      ],
+      "phone": "+41 32 422 55 18",
+      "email": "",
+      "styles": [
+        "Hatha"
+      ],
+      "teachers": [],
+      "description": "Cours de Hatha Yoga dans le Jura suisse depuis 2008, à Delémont et Porrentruy. Discipline combinant postures, exercices de respiration, relaxation, méditation et travail sur les énergies. Diplômé de l'Ecole Supérieure de Yoga de Lausanne.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": [
+        "Français"
+      ],
+      "special_features": [
+        "Reconnu par Yoga Suisse"
+      ],
+      "lat": 47.3659,
+      "lng": 7.3440,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "elevea-yoga-delemont",
+      "name": "Elevea Yoga",
+      "website": "https://eleveayoga.com/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "",
+          "zip": "2827",
+          "city": "Mervelier",
+          "label": "Vallée de Delémont"
+        }
+      ],
+      "phone": "",
+      "email": "",
+      "styles": [
+        "Vinyasa"
+      ],
+      "teachers": [],
+      "description": "Studio de Vinyasa Yoga cosy dans la vallée de Delémont, fondé par Noémie. Cours pour ralentir et se reconnecter avec son corps.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": [
+        "Français"
+      ],
+      "special_features": [],
+      "lat": 47.3500,
+      "lng": 7.3900,
+      "active": true,
+      "classes": []
+    }
+  ]
+}

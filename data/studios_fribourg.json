@@ -1,0 +1,187 @@
+{
+  "last_updated": "2026-03-20T00:00:00Z",
+  "studios": [
+    {
+      "id": "yogiface-fribourg",
+      "name": "Yogiface",
+      "website": "https://www.yogiface.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Route de la Fonderie 6",
+          "zip": "1700",
+          "city": "Fribourg",
+          "label": "Proche de la gare"
+        }
+      ],
+      "phone": "",
+      "email": "",
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Ashtanga",
+        "Yin"
+      ],
+      "teachers": [],
+      "description": "Studio de yoga au centre-ville de Fribourg, à proximité de la gare. Cours de yoga dynamique et restaurateur pour débutants et avancés.",
+      "booking_platform": "Mindbody",
+      "drop_in": true,
+      "languages": [
+        "Français",
+        "English"
+      ],
+      "special_features": [],
+      "lat": 46.8034,
+      "lng": 7.1474,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "happinez-yoga-fribourg",
+      "name": "Happinez Yoga Fribourg",
+      "website": "https://www.happinez.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Impasse de la Cour Robert 3",
+          "zip": "1700",
+          "city": "Fribourg",
+          "label": ""
+        }
+      ],
+      "phone": "+41 79 419 74 17",
+      "email": "info@happinez.ch",
+      "styles": [
+        "Yoga",
+        "Méditation",
+        "Yoga Nidra"
+      ],
+      "teachers": [],
+      "description": "Ecole de yoga authentique à Fribourg proposant cours de yoga, méditation et yoga nidra en présentiel et en ligne.",
+      "booking_platform": "Eversports",
+      "drop_in": true,
+      "languages": [
+        "Français"
+      ],
+      "special_features": [
+        "Yoga Nidra",
+        "Cours en ligne"
+      ],
+      "lat": 46.8019,
+      "lng": 7.1509,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "sakinayoga-fribourg",
+      "name": "Sakinayoga",
+      "website": "https://www.sakinayoga.com/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "",
+          "zip": "1700",
+          "city": "Fribourg",
+          "label": ""
+        }
+      ],
+      "phone": "",
+      "email": "",
+      "styles": [
+        "Vinyasa",
+        "Hatha"
+      ],
+      "teachers": [],
+      "description": "Cours de yoga, immersions, home yogas et yoga thérapie à Fribourg depuis 2010. Cours en groupe ou privés, FeetUp.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": [
+        "Français"
+      ],
+      "special_features": [
+        "Yoga Thérapie",
+        "Immersions",
+        "Home Yoga",
+        "FeetUp"
+      ],
+      "lat": 46.8065,
+      "lng": 7.1620,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "yoga-nicole-fribourg",
+      "name": "Yoga Nicole - Triyoga",
+      "website": "https://www.yoga-nicole.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Derrière-les-Remparts 12",
+          "zip": "1700",
+          "city": "Fribourg",
+          "label": "Centre d'animations de l'Arsen'Alt"
+        }
+      ],
+      "phone": "+41 78 769 94 15",
+      "email": "yoga.nicole@gmx.ch",
+      "styles": [
+        "Triyoga"
+      ],
+      "teachers": [],
+      "description": "Cours de Triyoga à Fribourg. Entrée possible à tout moment. Cours de yoga en plein air au Murtentor en été.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": [
+        "Deutsch",
+        "Français"
+      ],
+      "special_features": [
+        "Outdoor Yoga"
+      ],
+      "lat": 46.8042,
+      "lng": 7.1560,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "popup-yoga-fribourg",
+      "name": "The Pop-up Yoga Company",
+      "website": "https://www.thepopupyogacompany.com/",
+      "schedule_url": "https://www.thepopupyogacompany.com/schedule",
+      "addresses": [
+        {
+          "street": "Grand Rue 59",
+          "zip": "1700",
+          "city": "Fribourg",
+          "label": "Maison d'Ammann, dernier étage"
+        }
+      ],
+      "phone": "+41 77 970 22 84",
+      "email": "",
+      "styles": [
+        "Hatha",
+        "Vinyasa Flow",
+        "Power Yoga",
+        "Yin",
+        "Restorative",
+        "Myofascial Release"
+      ],
+      "teachers": [],
+      "description": "Boutique yoga studio à Fribourg proposant des cours hebdomadaires en anglais. Hatha, Vinyasa Flow, Power, Yin, Restorative et Myofascial Release.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": [
+        "English"
+      ],
+      "special_features": [
+        "Cours en anglais",
+        "Yoga Teacher Training 200h",
+        "Retreats"
+      ],
+      "lat": 46.8058,
+      "lng": 7.1571,
+      "active": true,
+      "classes": []
+    }
+  ]
+}

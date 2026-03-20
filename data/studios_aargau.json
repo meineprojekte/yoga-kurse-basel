@@ -1,0 +1,302 @@
+{
+  "last_updated": "2026-03-20T00:00:00Z",
+  "studios": [
+    {
+      "id": "aloha-yoga-aarau",
+      "name": "aloha yoga Aarau",
+      "website": "https://www.alohayoga.ch/",
+      "schedule_url": "https://www.eversports.ch/s/aloha-yoga",
+      "addresses": [
+        {
+          "street": "Flösserstrasse 7",
+          "zip": "5000",
+          "city": "Aarau",
+          "label": "Flösserplatz"
+        }
+      ],
+      "phone": "+41 79 638 60 38",
+      "email": "info@alohayoga.ch",
+      "styles": ["Hatha Yoga", "Vinyasa Flow", "Yin Yoga", "Pilates", "Prenatal Yoga", "Kinder Yoga", "Breathwork"],
+      "teachers": [],
+      "description": "Yoga Studio im Herzen von Aarau mit einem vielfältigen Angebot für jeden Stil und jede Altersgruppe. Helles Studio mit Holzboden, Einzel- und Gruppenlektionen. Kernteam aus 6 Yogalehrerinnen mit Fachkompetenz in Ayurveda, Anatomie, Pranayama und Psychologie.",
+      "booking_platform": "Eversports",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Yoga Academy", "Prenatal Yoga", "Kinder Yoga", "Privatlektionen"],
+      "lat": 47.3925,
+      "lng": 8.0444,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "co-yoga-space-aarau",
+      "name": "co yoga space",
+      "website": "https://coyogaspace.ch/",
+      "schedule_url": "https://www.eversports.ch/s/co-yoga-space",
+      "addresses": [
+        {
+          "street": "Buchserstrasse 15",
+          "zip": "5000",
+          "city": "Aarau",
+          "label": "Aeschbachquartier"
+        }
+      ],
+      "phone": "",
+      "email": "namaste@coyogaspace.ch",
+      "styles": ["Yoga"],
+      "teachers": [],
+      "description": "Top ausgestattetes Yoga Studio im urbanen Aeschbachquartier in Aarau, direkt am Oehler Park. 112 m² grosser Raum mit zurückhaltendem und hochwertigem Ambiente. Yogalehrende können den Raum auf selbstständiger Basis mieten.",
+      "booking_platform": "Eversports",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Raumvermietung für Yogalehrende", "Parkhaus Aeschbachhalle"],
+      "lat": 47.3880,
+      "lng": 8.0500,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "my-yoga-garden-suhr",
+      "name": "My Yoga Garden",
+      "website": "https://www.my-yoga-garden.ch",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Bachstrasse 33",
+          "zip": "5034",
+          "city": "Suhr",
+          "label": ""
+        }
+      ],
+      "phone": "",
+      "email": "mail@my-yoga-garden.ch",
+      "styles": ["Hatha Yoga", "Yin Yoga", "Meditation"],
+      "teachers": [],
+      "description": "Helles, stimmungsvolles Yogastudio nur 10 Minuten vom Bahnhof Aarau und 5 Minuten vom Zentrum Suhr entfernt. Gegründet 2018, bietet Hatha Yoga, Yin Yoga, Meditation, Workshops und Retreats für alle Stufen, 7 Tage die Woche.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Workshops", "Yoga Retreats"],
+      "lat": 47.3731,
+      "lng": 8.0789,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "iyengar-yoga-aarau",
+      "name": "Iyengar Yoga Aarau",
+      "website": "https://yogaiyengar.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Laurenzentorgasse 16, 5. OG",
+          "zip": "5000",
+          "city": "Aarau",
+          "label": ""
+        }
+      ],
+      "phone": "",
+      "email": "info@yogaiyengar.ch",
+      "styles": ["Iyengar Yoga"],
+      "teachers": ["Susanne Schüeli"],
+      "description": "Einziges Iyengar Yoga-Studio in Aarau mit Fokus auf Alignment, Asana und Pranayama. Zertifiziertes Iyengar Yoga in schönen Räumlichkeiten.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Zertifiziertes Iyengar Yoga"],
+      "lat": 47.3910,
+      "lng": 8.0466,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "aurum-raum-fuer-yoga-aarau",
+      "name": "AURUM Raum für Yoga",
+      "website": "https://raum-fuer-yoga.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Rain 65",
+          "zip": "5000",
+          "city": "Aarau",
+          "label": ""
+        }
+      ],
+      "phone": "+41 79 703 19 88",
+      "email": "info@raum-fuer-yoga.ch",
+      "styles": ["Kundalini Yoga", "Hatha Yoga", "Gong Meditation"],
+      "teachers": ["Pascale Schmid"],
+      "description": "Erstes Yogastudio in Aarau, 2004 von Pascale Schmid eröffnet. Über 23 Jahre Erfahrung. Bietet Kundalini Yoga, Hatha Yoga und Inspirationen, Yoga-Workshops und Gong-Meditationen.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Gong Meditation", "Workshops", "Retreats"],
+      "lat": 47.3932,
+      "lng": 8.0477,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "yoga-mahameru-aarau",
+      "name": "Yoga Mahameru",
+      "website": "https://mahameru.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Laurenzenvorstadt 69",
+          "zip": "5000",
+          "city": "Aarau",
+          "label": ""
+        }
+      ],
+      "phone": "+41 78 819 86 84",
+      "email": "info@mahameru.ch",
+      "styles": ["Hatha Yoga", "Gentle Yoga", "Yin Yoga", "Yoga Nidra", "Pilates"],
+      "teachers": [],
+      "description": "Seit 2013 fundiertes Yoga-Angebot in Aarau: inspirierende Kurse, Workshops und Retreats mit viel Herz für Jung und Alt. Klassisches Hatha Yoga, sanftes Gentle Yoga, Yin Yoga, Yoga Nidra und Pilates.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Workshops", "Retreats"],
+      "lat": 47.3925,
+      "lng": 8.0490,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "manta-yoga-pilates-rombach",
+      "name": "Manta Yoga & Pilates",
+      "website": "https://manta-yoga-pilates.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Rainstrasse 2",
+          "zip": "5022",
+          "city": "Rombach",
+          "label": "ASS Fitness & Wellness"
+        }
+      ],
+      "phone": "+41 76 569 66 64",
+      "email": "info@manta-yoga-pilates.ch",
+      "styles": ["Yoga", "Pilates"],
+      "teachers": ["Claudia Manta-Prainer"],
+      "description": "Yoga und Pilates Studio in Rombach bei Aarau, geführt von Claudia Manta-Prainer im ASS Fitness & Wellness Center.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": [],
+      "lat": 47.4001,
+      "lng": 8.0660,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "yoga-baden-stefanie-amrein",
+      "name": "YOGA.BADEN - Stefanie Amrein",
+      "website": "https://www.yogabaden.ch/",
+      "schedule_url": "https://www.yogabaden.ch/wochenkurse",
+      "addresses": [
+        {
+          "street": "Bruggerstrasse 37A",
+          "zip": "5400",
+          "city": "Baden",
+          "label": "Merker Areal"
+        }
+      ],
+      "phone": "",
+      "email": "kontakt@yogabaden.ch",
+      "styles": ["Iyengar Yoga"],
+      "teachers": ["Stefanie Amrein"],
+      "description": "Erste Iyengar Yoga-Schule im Kanton Aargau, 2003 persönlich von BKS Iyengar zertifiziert. Nur 3 Gehminuten vom Bahnhof Baden entfernt. Stefanies Unterricht umfasst dank über 30 Jahren kontinuierlichem Studium alle Aspekte des Yoga.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch", "English"],
+      "special_features": ["Zertifizierte Iyengar Yoga Schule", "Über 30 Jahre Erfahrung"],
+      "lat": 47.4733,
+      "lng": 8.3067,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "namaste-yoga-baden",
+      "name": "Namaste Yoga Baden",
+      "website": "https://www.namaste-yoga-baden.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Kronengasse 20F",
+          "zip": "5400",
+          "city": "Baden",
+          "label": "Altstadt"
+        }
+      ],
+      "phone": "",
+      "email": "namasteyoga-baden@outlook.com",
+      "styles": ["Yoga", "Schwangerschaftsyoga", "Rückbildung", "Meditation", "MBSR", "Feldenkrais"],
+      "teachers": [],
+      "description": "Vielfältige Yoga-Schule in der Altstadt von Baden an der Limmat. Bietet verschiedene Yogastile, Schwangerschaftsyoga, Rückbildung, Workshops, Retreats und alternative Therapien. 7 Gehminuten vom Bahnhof, 12 Minuten vom Thermalbad fortyseven.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch", "English"],
+      "special_features": ["Schwangerschaftsyoga", "Rückbildung", "Alternative Therapien", "Raumvermietung"],
+      "lat": 47.4730,
+      "lng": 8.3080,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "hieryoga-baden",
+      "name": "hierYOGA",
+      "website": "https://hieryoga.ch/",
+      "schedule_url": "https://hieryoga.ch/yoga-stile",
+      "addresses": [
+        {
+          "street": "Dynamostrasse 17",
+          "zip": "5400",
+          "city": "Baden",
+          "label": ""
+        }
+      ],
+      "phone": "",
+      "email": "",
+      "styles": ["Hatha Yoga", "Vinyasa", "Yin Yoga", "Yoga Nidra", "Aerial Yoga", "Hormonyoga", "Antara", "Pilates"],
+      "teachers": [],
+      "description": "Modernes Yogastudio in Baden, nur 3 Minuten vom Bahnhof entfernt. 10 erfahrene Yogalehrer:innen bieten täglich verschiedene Klassen an, von Hatha über Vinyasa und Yin bis zu Aerial Yoga und Hormonyoga.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Aerial Yoga", "Hormonyoga", "10 Yogalehrer:innen"],
+      "lat": 47.4726,
+      "lng": 8.3095,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "jetzt-yoga-baden",
+      "name": "jetzt. YOGA Baden",
+      "website": "https://www.jetzt.yoga/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Hahnrainweg 7",
+          "zip": "5400",
+          "city": "Baden",
+          "label": ""
+        }
+      ],
+      "phone": "",
+      "email": "",
+      "styles": ["Yoga"],
+      "teachers": [],
+      "description": "Yogastudio in einer der charmantesten Gassen der Limmatstadt Baden, nur 2 Gehminuten vom Bahnhof entfernt.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": [],
+      "lat": 47.4738,
+      "lng": 8.3060,
+      "active": true,
+      "classes": []
+    }
+  ]
+}

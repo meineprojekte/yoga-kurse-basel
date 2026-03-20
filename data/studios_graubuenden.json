@@ -1,0 +1,248 @@
+{
+  "last_updated": "2026-03-20T00:00:00Z",
+  "studios": [
+    {
+      "id": "yoga-loft-chur",
+      "name": "Yoga Loft Chur",
+      "website": "https://www.yogaloftchur.ch/",
+      "schedule_url": "https://www.yogaloftchur.ch/kontakt",
+      "addresses": [
+        {
+          "street": "Bahnhofplatz 10",
+          "zip": "7001",
+          "city": "Chur",
+          "label": "Zentrumsnah"
+        }
+      ],
+      "phone": "+41 76 731 58 15",
+      "email": "info@yogaloftchur.ch",
+      "styles": ["Yin Yoga", "Vinyasa Flow", "Schwangerschaftsyoga"],
+      "teachers": ["Claudia Cadonau"],
+      "description": "Yoga Loft im Zentrum von Chur nahe dem Bahnhof. Abwechslungsreiches Yogaangebot mit wöchentlichen Lektionen, Kursen, Workshops, Schwangerschaftsyoga und Massagen. Birthlight-zertifiziert.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Schwangerschaftsyoga", "Birthlight zertifiziert", "Naturheilkunde-Massagen", "Workshops"],
+      "lat": 46.8530,
+      "lng": 9.5300,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "yoga-pyramide-chur",
+      "name": "Yoga Pyramide",
+      "website": "https://yogapyramide.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Rabengasse 10",
+          "zip": "7000",
+          "city": "Chur",
+          "label": "Altstadt"
+        }
+      ],
+      "phone": "+41 81 641 36 41",
+      "email": "info@yogapyramide.ch",
+      "styles": ["Yoga"],
+      "teachers": ["Beatrice Loringett"],
+      "description": "Yoga Pyramide mitten in der Altstadt von Chur - ein Ort der Ruhe und Stille. Workshops und regelmässige Kurse.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Workshops", "Altstadt-Lage"],
+      "lat": 46.8498,
+      "lng": 9.5310,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "belude-yoga-chur",
+      "name": "Belude - Yoga & Klang",
+      "website": "https://belude.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Reichsgasse 25",
+          "zip": "7000",
+          "city": "Chur",
+          "label": ""
+        }
+      ],
+      "phone": "+41 77 406 52 30",
+      "email": "lucrezia@belude.ch",
+      "styles": ["Yoga", "Yoga & Klang", "Aerial Yoga", "Taichi", "Qigong"],
+      "teachers": ["Lucrezia Decurtins"],
+      "description": "Fortlaufende Kurse in Yoga, Yoga & Klang, Klangreisen und klangvollem Zentrieren in Chur. Auch Seminarraum-Vermietung.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Klangarbeit", "Klangreisen", "Aerial Yoga", "Seminarraumvermietung"],
+      "lat": 46.8510,
+      "lng": 9.5295,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "raw-yoga-chur",
+      "name": "RAW Yoga",
+      "website": "https://rawstation.ch/yoga-by-raw-station/",
+      "schedule_url": "https://www.eversports.ch/s/raw-yoga",
+      "addresses": [
+        {
+          "street": "Bankstrasse 8",
+          "zip": "7000",
+          "city": "Chur",
+          "label": "RAW Station"
+        }
+      ],
+      "phone": "",
+      "email": "",
+      "styles": ["Yoga"],
+      "teachers": ["Gila Capol"],
+      "description": "RAW Yoga im Herzen der Altstadt Chur, im neuen urbanen Treffpunkt RAW Station. Tägliche Yoga-Angebote in einer Oase für Gemeinschaft und achtsame Begegnung. Kein Abo oder Voranmeldung nötig für die erste Klasse.",
+      "booking_platform": "Eversports",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Drop-in ohne Anmeldung", "Spontan buchbar", "Urban Community Space"],
+      "lat": 46.8500,
+      "lng": 9.5285,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "flux2motus-davos",
+      "name": "flux2motus - Yoga & Massage",
+      "website": "https://www.flux2motus.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Mattastrasse 6",
+          "zip": "7270",
+          "city": "Davos Platz",
+          "label": ""
+        }
+      ],
+      "phone": "",
+      "email": "",
+      "styles": ["Yoga"],
+      "teachers": ["Tajana Adank"],
+      "description": "Yoga und Massage in Davos, Arosa und Chur. Geführt von Tajana Adank, bietet Yoga-Kurse und Massagen in der Region Graubünden.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Massage", "Mehrere Standorte in Graubünden"],
+      "lat": 46.7930,
+      "lng": 9.8350,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "davos-yoga",
+      "name": "Davos Yoga",
+      "website": "https://davosyoga.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "",
+          "zip": "7270",
+          "city": "Davos Platz",
+          "label": ""
+        }
+      ],
+      "phone": "",
+      "email": "",
+      "styles": ["Yoga"],
+      "teachers": [],
+      "description": "Yoga-Oase in Davos Platz. Yoga-Klassen für Anfänger und Fortgeschrittene in Davos.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": [],
+      "lat": 46.7935,
+      "lng": 9.8360,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "yogaplaza-davos",
+      "name": "Yogaplaza Davos",
+      "website": "https://www.yogaplazadavos.ch/",
+      "schedule_url": "https://www.eversports.ch/s/yogaplaza-davos",
+      "addresses": [
+        {
+          "street": "Mattastrasse 6",
+          "zip": "7270",
+          "city": "Davos Platz",
+          "label": ""
+        }
+      ],
+      "phone": "+41 81 415 21 88",
+      "email": "",
+      "styles": ["Yoga"],
+      "teachers": [],
+      "description": "Yogaplaza in Davos Platz bietet Klassen für Einsteiger und Erfahrene. Es gibt eine passende Klasse für jeden. Erreichbar auch via WhatsApp.",
+      "booking_platform": "Eversports",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["WhatsApp Kontakt"],
+      "lat": 46.7930,
+      "lng": 9.8350,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "yoga-loft-engadin-samedan",
+      "name": "Yoga Loft Engadin",
+      "website": "https://yogaloftengadin.ch/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Cho d'Punt 10",
+          "zip": "7503",
+          "city": "Samedan",
+          "label": ""
+        }
+      ],
+      "phone": "+41 76 501 43 42",
+      "email": "sol@yogastrologa.com",
+      "styles": ["Ashtanga Yoga", "Hatha Yoga", "Vinyasa"],
+      "teachers": [],
+      "description": "Holistisches Yoga-Studio in Samedan im Engadin. Bietet fachkundigen Yogaunterricht in Ashtanga, Hatha und Vinyasa sowie Astrologie-Sessions, Reiki, Tarot und Sound Baths.",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch", "English"],
+      "special_features": ["Sound Baths", "Reiki", "Astrologie", "Tarot"],
+      "lat": 46.5330,
+      "lng": 9.8720,
+      "active": true,
+      "classes": []
+    },
+    {
+      "id": "acroyoga-group-chur",
+      "name": "Acroyoga Group Graubünden",
+      "website": "https://acroyoga.group/",
+      "schedule_url": "",
+      "addresses": [
+        {
+          "street": "Masanserstrasse 223",
+          "zip": "7000",
+          "city": "Chur",
+          "label": "Turnhalle Masans (Montag)"
+        }
+      ],
+      "phone": "",
+      "email": "info@acroyoga.group",
+      "styles": ["Acroyoga", "Partnerakrobatik", "Luftakrobatik"],
+      "teachers": [],
+      "description": "Acroyoga und Partnerakrobatik in Chur und Samedan. Montags in der Turnhalle Masans und Donnerstags in der Turnhalle Montalin 2. Im Sommer auch draussen. Auch Sessions in Samedan (Montags 19:30).",
+      "booking_platform": "",
+      "drop_in": true,
+      "languages": ["Deutsch"],
+      "special_features": ["Acroyoga", "Partnerakrobatik", "Outdoor Training im Sommer"],
+      "lat": 46.8550,
+      "lng": 9.5380,
+      "active": true,
+      "classes": []
+    }
+  ]
+}

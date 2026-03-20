@@ -796,9 +796,7 @@ if ('serviceWorker' in navigator) {
     // --- Data Loading ---
     function loadData(fileName) {
         fileName = fileName || 'studios_basel.json';
-        // Try encrypted version first, fall back to plain
-        var encFileName = fileName.replace('.json', '.enc.json');
-        var dataUrl = './data/' + encFileName;
+        var dataUrl = './data/' + fileName;
         console.log('[YogaSchweiz] Fetching data from:', dataUrl);
 
         var xhr = new XMLHttpRequest();
@@ -807,15 +805,7 @@ if ('serviceWorker' in navigator) {
             if (xhr.readyState !== 4) return;
             if (xhr.status === 200) {
                 try {
-                    var raw = JSON.parse(xhr.responseText);
-                    var data;
-                    // Check if encrypted
-                    if (raw.v && raw.d) {
-                        var decrypted = decryptData(raw.d);
-                        data = JSON.parse(decrypted);
-                    } else {
-                        data = raw;
-                    }
+                    var data = JSON.parse(xhr.responseText);
                     state.studios = [];
                     for (var i = 0; i < data.studios.length; i++) {
                         if (data.studios[i].active) {
@@ -1337,20 +1327,13 @@ if ('serviceWorker' in navigator) {
 
     function loadSchedule(fileName) {
         fileName = fileName || 'schedule_basel.json';
-        var encFileName = fileName.replace('.json', '.enc.json');
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', './data/' + encFileName, true);
+        xhr.open('GET', './data/' + fileName, true);
         xhr.onreadystatechange = function () {
             if (xhr.readyState !== 4) return;
             if (xhr.status === 200) {
                 try {
-                    var raw = JSON.parse(xhr.responseText);
-                    var data;
-                    if (raw.v && raw.d) {
-                        data = JSON.parse(decryptData(raw.d));
-                    } else {
-                        data = raw;
-                    }
+                    var data = JSON.parse(xhr.responseText);
                     scheduleData = data.classes || [];
                     console.log('[YogaSchweiz] Loaded', scheduleData.length, 'classes');
                     // Auto-select today's day
