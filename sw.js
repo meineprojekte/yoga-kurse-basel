@@ -1,4 +1,4 @@
-const CACHE_NAME = 'yogaschweiz-v2';
+const CACHE_NAME = 'yogaschweiz-v3';
 
 const ASSETS_TO_CACHE = [
   '/',
@@ -6,8 +6,8 @@ const ASSETS_TO_CACHE = [
   './css/style.css',
   './js/app.js',
   './js/shield.js',
-  './data/studios_basel.enc.json',
-  './data/schedule_basel.enc.json',
+  './data/studios_basel.json',
+  './data/schedule_basel.json',
   './data/cantons.json'
 ];
 

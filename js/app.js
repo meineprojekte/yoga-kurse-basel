@@ -798,13 +798,7 @@ if ('serviceWorker' in navigator) {
             if (xhr.readyState !== 4) return;
             if (xhr.status === 200) {
                 try {
-                    var raw = JSON.parse(xhr.responseText);
-                    if (raw.e) {
-                        // Encrypted: decrypt
-                        callback(JSON.parse(decryptData(raw.e)), null);
-                    } else {
-                        callback(raw, null);
-                    }
+                    callback(JSON.parse(xhr.responseText), null);
                 } catch (err) {
                     callback(null, err);
                 }
@@ -818,11 +812,9 @@ if ('serviceWorker' in navigator) {
 
     function loadData(fileName) {
         fileName = fileName || 'studios_basel.json';
-        var encUrl = './data/' + fileName.replace('.json', '.enc.json');
-        var plainUrl = './data/' + fileName;
+        var url = './data/' + fileName;
 
-        // Load plain JSON directly
-        loadJSON(plainUrl, function (data, err) {
+        loadJSON(url, function (data, err) {
             if (data && data.studios) {
                 onStudiosLoaded(data);
             } else {
@@ -1338,10 +1330,7 @@ if ('serviceWorker' in navigator) {
 
     function loadSchedule(fileName) {
         fileName = fileName || 'schedule_basel.json';
-        var encUrl = './data/' + fileName.replace('.json', '.enc.json');
-        var plainUrl = './data/' + fileName;
-
-        loadJSON(plainUrl, function (data) {
+        loadJSON('./data/' + fileName, function (data) {
             if (data) onScheduleLoaded(data);
         });
     }
