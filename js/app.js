@@ -349,8 +349,8 @@ if ('serviceWorker' in navigator) {
     // Canton data file mapping
     var cantonDataFiles = {
         'basel-stadt': { studios: 'studios_basel.json', schedule: 'schedule_basel.json' },
-        'zurich': { studios: 'studios_zurich.json', schedule: null },
-        'bern': { studios: 'studios_bern.json', schedule: null },
+        'zurich': { studios: 'studios_zurich.json', schedule: 'schedule_zurich.json' },
+        'bern': { studios: 'studios_bern.json', schedule: 'schedule_bern.json' },
         'luzern': { studios: 'studios_luzern.json', schedule: null },
         'geneve': { studios: 'studios_geneve.json', schedule: null },
         'vaud': { studios: 'studios_vaud.json', schedule: null },

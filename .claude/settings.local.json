@@ -36,7 +36,14 @@
       "WebFetch(domain:voltayoga.ch)",
       "Bash(ls:*)",
       "Bash(python3:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(curl -s -X POST \"https://api.indexnow.org/indexnow\" -H \"Content-Type: application/json\" -d '{:*)",
+      "WebFetch(domain:www.athayoga.ch)",
+      "WebFetch(domain:yogamarket.ch)",
+      "WebFetch(domain:www.hotyogachristophherren.ch)",
+      "WebFetch(domain:sanapurna.ch)",
+      "WebFetch(domain:svarupayoga.ch)",
+      "WebFetch(domain:www.yamabern.ch)"
     ]
   }
 }
