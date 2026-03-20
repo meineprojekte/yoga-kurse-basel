@@ -740,7 +740,25 @@ if ('serviceWorker' in navigator) {
         } else {
             scheduleData = [];
             var list = $('scheduleList');
-            if (list) list.innerHTML = '<p class="schedule-placeholder">' + t('schedule.placeholder') + '</p>';
+            var name = getCantonDisplayName();
+            if (list) list.innerHTML = '<div class="schedule-placeholder" style="text-align:center;padding:30px;">' +
+                '<p style="font-size:16px;margin-bottom:8px;">' +
+                (state.lang === 'de' ? 'Stundenplan für ' + name + ' noch nicht verfügbar' :
+                 state.lang === 'en' ? 'Schedule for ' + name + ' not yet available' :
+                 state.lang === 'it' ? 'Orario per ' + name + ' non ancora disponibile' :
+                 'Horaire pour ' + name + ' pas encore disponible') +
+                '</p>' +
+                '<p style="font-size:13px;color:var(--color-text-muted);">' +
+                (state.lang === 'de' ? 'Besuche die Websites der einzelnen Studios für aktuelle Stundenpläne.' :
+                 state.lang === 'en' ? 'Visit individual studio websites for current schedules.' :
+                 state.lang === 'it' ? 'Visita i siti dei singoli studi per gli orari aggiornati.' :
+                 'Consulte les sites des studios pour les horaires actuels.') +
+                '</p></div>';
+            // Deselect day buttons
+            var btns = document.querySelectorAll('#scheduleDays .day-btn');
+            for (var b = 0; b < btns.length; b++) btns[b].classList.remove('active');
+            var info = $('scheduleInfo');
+            if (info) info.style.display = 'none';
         }
 
         // Reset map for new canton
@@ -798,8 +816,16 @@ if ('serviceWorker' in navigator) {
             if (xhr.readyState !== 4) return;
             if (xhr.status === 200) {
                 try {
-                    callback(JSON.parse(xhr.responseText), null);
+                    var parsed = JSON.parse(xhr.responseText);
+                    // If encrypted format, decrypt
+                    if (parsed.e && typeof parsed.e === 'string') {
+                        var decrypted = decryptData(parsed.e);
+                        callback(JSON.parse(decrypted), null);
+                    } else {
+                        callback(parsed, null);
+                    }
                 } catch (err) {
+                    console.error('[YogaSchweiz] JSON parse error for ' + url + ':', err);
                     callback(null, err);
                 }
             } else {
@@ -812,15 +838,23 @@ if ('serviceWorker' in navigator) {
 
     function loadData(fileName) {
         fileName = fileName || 'studios_basel.json';
-        var url = './data/' + fileName;
-        console.log('[YogaSchweiz] loadData:', url);
+        var encUrl = './data/' + fileName.replace('.json', '.enc.json');
+        var plainUrl = './data/' + fileName;
 
-        loadJSON(url, function (data, err) {
-            console.log('[YogaSchweiz] loadData result:', data ? 'OK (' + (data.studios ? data.studios.length : '?') + ' studios)' : 'ERROR: ' + err);
+        // Try encrypted first, fallback to plain
+        loadJSON(encUrl, function (data, err) {
             if (data && data.studios) {
+                console.log('[YogaSchweiz] Loaded encrypted:', fileName);
                 onStudiosLoaded(data);
             } else {
-                showError('Daten konnten nicht geladen werden.');
+                console.log('[YogaSchweiz] Encrypted failed, trying plain:', fileName);
+                loadJSON(plainUrl, function (data2, err2) {
+                    if (data2 && data2.studios) {
+                        onStudiosLoaded(data2);
+                    } else {
+                        showError('Daten konnten nicht geladen werden.');
+                    }
+                });
             }
         });
     }
@@ -1334,17 +1368,47 @@ if ('serviceWorker' in navigator) {
 
     function loadSchedule(fileName) {
         fileName = fileName || 'schedule_basel.json';
-        loadJSON('./data/' + fileName, function (data) {
-            if (data) onScheduleLoaded(data);
+        var encUrl = './data/' + fileName.replace('.json', '.enc.json');
+        var plainUrl = './data/' + fileName;
+        loadJSON(encUrl, function (data) {
+            if (data && data.classes !== undefined) {
+                onScheduleLoaded(data);
+            } else {
+                loadJSON(plainUrl, function (data2) {
+                    if (data2) onScheduleLoaded(data2);
+                });
+            }
         });
     }
 
     function onScheduleLoaded(data) {
         scheduleData = data.classes || [];
         console.log('[YogaSchweiz] Loaded', scheduleData.length, 'classes');
-        var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-        var today = days[new Date().getDay()];
-        selectDay(today);
+        if (scheduleData.length > 0) {
+            var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            var today = days[new Date().getDay()];
+            selectDay(today);
+        } else {
+            var list = $('scheduleList');
+            var name = getCantonDisplayName();
+            if (list) list.innerHTML = '<div class="schedule-placeholder" style="text-align:center;padding:30px;">' +
+                '<p style="font-size:16px;margin-bottom:8px;">' +
+                (state.lang === 'de' ? 'Stundenplan für ' + name + ' noch nicht verfügbar' :
+                 state.lang === 'en' ? 'Schedule for ' + name + ' not yet available' :
+                 state.lang === 'it' ? 'Orario per ' + name + ' non ancora disponibile' :
+                 'Horaire pour ' + name + ' pas encore disponible') +
+                '</p>' +
+                '<p style="font-size:13px;color:var(--color-text-muted);">' +
+                (state.lang === 'de' ? 'Besuche die Websites der einzelnen Studios für aktuelle Stundenpläne.' :
+                 state.lang === 'en' ? 'Visit individual studio websites for current schedules.' :
+                 state.lang === 'it' ? 'Visita i siti dei singoli studi per gli orari aggiornati.' :
+                 'Consulte les sites des studios pour les horaires actuels.') +
+                '</p></div>';
+            var btns = document.querySelectorAll('#scheduleDays .day-btn');
+            for (var b = 0; b < btns.length; b++) btns[b].classList.remove('active');
+            var info = $('scheduleInfo');
+            if (info) info.style.display = 'none';
+        }
     }
 
     function selectDay(day) {
