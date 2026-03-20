@@ -826,28 +826,30 @@ if ('serviceWorker' in navigator) {
     }
 
     function onStudiosLoaded(data) {
-        state.studios = [];
-        for (var i = 0; i < data.studios.length; i++) {
-            if (data.studios[i].active !== false) {
-                state.studios.push(data.studios[i]);
+        try {
+            state.studios = [];
+            for (var i = 0; i < data.studios.length; i++) {
+                if (data.studios[i].active !== false) {
+                    state.studios.push(data.studios[i]);
+                }
             }
-        }
-        state.filteredStudios = state.studios.slice();
-        populateStyleFilter(data.styles_index || []);
-        if ($('studioCount')) $('studioCount').textContent = state.studios.length + '+';
-        if ($('totalCount')) $('totalCount').textContent = state.studios.length;
-        console.log('[YogaSchweiz] Loaded', state.studios.length, 'studios for', state.currentCanton);
-        renderStudios();
-        renderStylesOverview();
-        renderGuideStats();
-        renderGuideTable();
-        updateCantonTitles();
-        updatePageTitle();
-        updateOpenGraph();
-        updateSchemaOrg();
-        renderCantonLinks();
-        renderCantonIntro();
-        initMap();
+            state.filteredStudios = state.studios.slice();
+            populateStyleFilter(data.styles_index || []);
+            if ($('studioCount')) $('studioCount').textContent = state.studios.length + '+';
+            if ($('totalCount')) $('totalCount').textContent = state.studios.length;
+            console.log('[YogaSchweiz] Loaded', state.studios.length, 'studios for', state.currentCanton);
+        } catch (e) { console.error('[YogaSchweiz] Error in data prep:', e); }
+        try { renderStudios(); } catch (e) { console.error('[YogaSchweiz] Error in renderStudios:', e); }
+        try { renderStylesOverview(); } catch (e) { console.error('[YogaSchweiz] Error in renderStylesOverview:', e); }
+        try { renderGuideStats(); } catch (e) { console.error('[YogaSchweiz] Error in renderGuideStats:', e); }
+        try { renderGuideTable(); } catch (e) { console.error('[YogaSchweiz] Error in renderGuideTable:', e); }
+        try { updateCantonTitles(); } catch (e) { console.error('[YogaSchweiz] Error in updateCantonTitles:', e); }
+        try { updatePageTitle(); } catch (e) { console.error('[YogaSchweiz] Error in updatePageTitle:', e); }
+        try { updateOpenGraph(); } catch (e) { console.error('[YogaSchweiz] Error in updateOpenGraph:', e); }
+        try { updateSchemaOrg(); } catch (e) { console.error('[YogaSchweiz] Error in updateSchemaOrg:', e); }
+        try { renderCantonLinks(); } catch (e) { console.error('[YogaSchweiz] Error in renderCantonLinks:', e); }
+        try { renderCantonIntro(); } catch (e) { console.error('[YogaSchweiz] Error in renderCantonIntro:', e); }
+        try { initMap(); } catch (e) { console.error('[YogaSchweiz] Error in initMap:', e); }
     }
 
     function showError(msg) {
