@@ -37,15 +37,7 @@
       "lat": 47.3659,
       "lng": 7.344,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 23,
-        "card_10": 210,
-        "monthly": 138,
-        "trial": 16,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yogajura",
@@ -86,12 +78,10 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 22,
-        "card_10": 210,
-        "monthly": 140,
-        "trial": 15,
+        "trial": 0,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.yogajura.ch/"
       }
     },
     {
@@ -125,12 +115,11 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 27,
-        "card_10": 249,
-        "monthly": 169,
-        "trial": 18,
+        "single": 18,
+        "card_10": 160,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://eleveayoga.com/"
       }
     }
   ]

@@ -40,15 +40,7 @@
       "lat": 47.4844,
       "lng": 7.7352,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 33,
-        "card_10": 296,
-        "monthly": 203,
-        "trial": 23,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-werkstatt-liestal",
@@ -86,15 +78,7 @@
       "lat": 47.485,
       "lng": 7.734,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 29,
-        "card_10": 261,
-        "monthly": 179,
-        "trial": 20,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "balanced-power-studios-liestal",
@@ -130,12 +114,11 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 27,
-        "card_10": 241,
-        "monthly": 166,
-        "trial": 18,
+        "single": 28,
+        "card_10": 260,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.balancedpower.ch/preise"
       }
     },
     {
@@ -169,15 +152,7 @@
       "lat": 47.4848,
       "lng": 7.7345,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 29,
-        "card_10": 257,
-        "monthly": 176,
-        "trial": 20,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "bethsabe-yoga-bottmingen",
@@ -219,12 +194,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 33,
-        "card_10": 302,
-        "monthly": 207,
-        "trial": 23,
+        "single": 35,
+        "card_10": 290,
+        "trial": 30,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.bethsabe.ch/yoga-stundenplan"
       }
     },
     {
@@ -265,12 +240,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 29,
-        "card_10": 261,
-        "monthly": 179,
-        "trial": 19,
+        "single": 32,
+        "card_10": 270,
+        "trial": 0,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.yoga.nordemann.ch/yoga-kurse-oberwil-online-yoga-preise-probelektion"
       }
     },
     {
@@ -304,15 +279,7 @@
       "lat": 47.5155,
       "lng": 7.557,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 23,
-        "card_10": 206,
-        "monthly": 140,
-        "trial": 14,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "ebe-wellness-oberwil",
@@ -351,12 +318,10 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 30,
-        "card_10": 270,
-        "monthly": 185,
-        "trial": 21,
+        "single": 26,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://ebe-wellness.ch/preise-yoga/"
       }
     },
     {
@@ -398,15 +363,7 @@
       "lat": 47.495,
       "lng": 7.619,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 26,
-        "card_10": 233,
-        "monthly": 159,
-        "trial": 16,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "koerpergeheimnis-pratteln",
@@ -446,12 +403,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 34,
-        "card_10": 309,
-        "monthly": 213,
-        "trial": 24,
+        "single": 25,
+        "card_10": 220,
+        "trial": 0,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://koerpergeheimnis.ch/angebot"
       }
     }
   ]

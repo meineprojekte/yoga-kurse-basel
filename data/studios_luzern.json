@@ -40,15 +40,7 @@
       "lat": 47.0453,
       "lng": 8.307,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 41,
-        "card_10": 374,
-        "monthly": 275,
-        "trial": 29,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "liv-lab",
@@ -103,12 +95,13 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 41,
-        "card_10": 370,
-        "monthly": 271,
-        "trial": 29,
+        "single": 33,
+        "card_10": 303,
+        "monthly": 343,
+        "trial": 80,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.livlab.ch/en/prices"
       }
     },
     {
@@ -149,15 +142,7 @@
       "lat": 47.0515,
       "lng": 8.3065,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 32,
-        "card_10": 289,
-        "monthly": 203,
-        "trial": 22,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "original-hot-yoga-luzern",
@@ -196,15 +181,7 @@
       "lat": 47.044,
       "lng": 8.301,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 45,
-        "card_10": 402,
-        "monthly": 290,
-        "trial": 31,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "mii-ruum",
@@ -251,12 +228,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 41,
-        "card_10": 366,
-        "monthly": 264,
-        "trial": 28,
+        "single": 35,
+        "monthly": 240,
+        "trial": 60,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://mii-ruum.ch/kurse1/preise"
       }
     },
     {
@@ -296,15 +273,7 @@
       "lat": 47.051,
       "lng": 8.304,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 38,
-        "card_10": 340,
-        "monthly": 244,
-        "trial": 26,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "studio-fayo",
@@ -344,12 +313,11 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 38,
-        "card_10": 347,
-        "monthly": 250,
-        "trial": 27,
+        "single": 34,
+        "card_10": 300,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://studiofayo.com/"
       }
     },
     {
@@ -390,15 +358,7 @@
       "lat": 47.052,
       "lng": 8.31,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 41,
-        "card_10": 371,
-        "monthly": 272,
-        "trial": 29,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "om-shanti-luzern",
@@ -439,15 +399,7 @@
       "lat": 47.0525,
       "lng": 8.3055,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 39,
-        "card_10": 353,
-        "monthly": 255,
-        "trial": 28,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yogaraum-luzern",
@@ -488,12 +440,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 32,
-        "card_10": 293,
-        "monthly": 200,
-        "trial": 22,
+        "single": 30,
+        "card_10": 250,
+        "trial": 25,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.yogaraum-luzern.ch/"
       }
     },
     {
@@ -540,12 +492,11 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 37,
-        "card_10": 336,
-        "monthly": 247,
-        "trial": 26,
+        "single": 35,
+        "trial": 25,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.yogamitherz.com/Angebot/Preise/"
       }
     },
     {
@@ -586,12 +537,11 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 35,
-        "card_10": 319,
-        "monthly": 230,
-        "trial": 25,
+        "single": 29,
+        "trial": 0,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.derraum.ch/yoga-kurse-mit-verena-naepflin-in-horw/"
       }
     },
     {
@@ -628,15 +578,7 @@
       "lat": 47.077,
       "lng": 8.283,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 33,
-        "card_10": 301,
-        "monthly": 208,
-        "trial": 23,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "pure-you-yoga-horw",
@@ -676,15 +618,7 @@
       "lat": 47.0215,
       "lng": 8.31,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 30,
-        "card_10": 274,
-        "monthly": 184,
-        "trial": 20,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-veda-luzern",
@@ -730,15 +664,7 @@
       "lat": 47.0453,
       "lng": 8.307,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 34,
-        "card_10": 308,
-        "monthly": 215,
-        "trial": 23,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yogakurse-horw",
@@ -778,15 +704,7 @@
       "lat": 47.0215,
       "lng": 8.31,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 30,
-        "card_10": 272,
-        "monthly": 182,
-        "trial": 20,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     }
   ]
 }

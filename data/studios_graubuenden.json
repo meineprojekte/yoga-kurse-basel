@@ -39,15 +39,7 @@
       "lat": 46.853,
       "lng": 9.53,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 31,
-        "card_10": 282,
-        "monthly": 194,
-        "trial": 21,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-pyramide-chur",
@@ -85,12 +77,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 28,
-        "card_10": 248,
-        "monthly": 170,
-        "trial": 19,
+        "single": 35,
+        "card_10": 270,
+        "trial": 22,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://yogapyramide.ch/preise"
       }
     },
     {
@@ -136,11 +128,9 @@
       "classes": [],
       "pricing": {
         "single": 27,
-        "card_10": 243,
-        "monthly": 166,
-        "trial": 17,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://belude.ch/programm.html"
       }
     },
     {
@@ -178,15 +168,7 @@
       "lat": 46.85,
       "lng": 9.5285,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 27,
-        "card_10": 240,
-        "monthly": 165,
-        "trial": 18,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "flux2motus-davos",
@@ -222,15 +204,7 @@
       "lat": 46.793,
       "lng": 9.835,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 22,
-        "card_10": 201,
-        "monthly": 137,
-        "trial": 14,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "davos-yoga",
@@ -261,15 +235,7 @@
       "lat": 46.7935,
       "lng": 9.836,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 22,
-        "card_10": 199,
-        "monthly": 136,
-        "trial": 14,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yogaplaza-davos",
@@ -302,15 +268,7 @@
       "lat": 46.793,
       "lng": 9.835,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 28,
-        "card_10": 252,
-        "monthly": 173,
-        "trial": 19,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-loft-engadin-samedan",
@@ -349,15 +307,7 @@
       "lat": 46.533,
       "lng": 9.872,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 29,
-        "card_10": 261,
-        "monthly": 179,
-        "trial": 19,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "acroyoga-group-chur",
@@ -396,12 +346,10 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 33,
-        "card_10": 302,
-        "monthly": 207,
-        "trial": 23,
+        "single": 5,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://acroyoga.group/"
       }
     }
   ]

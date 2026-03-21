@@ -38,15 +38,7 @@
       "lat": 47.4245,
       "lng": 9.3767,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 31,
-        "card_10": 284,
-        "monthly": 195,
-        "trial": 21,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "studio-8-st-gallen",
@@ -82,15 +74,7 @@
       "lat": 47.4215,
       "lng": 9.378,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 25,
-        "card_10": 229,
-        "monthly": 157,
-        "trial": 16,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "bubble-yoga-st-gallen",
@@ -131,15 +115,7 @@
       "lat": 47.425,
       "lng": 9.3755,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 30,
-        "card_10": 272,
-        "monthly": 186,
-        "trial": 20,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "rach-yoga-st-gallen",
@@ -177,15 +153,7 @@
       "lat": 47.4238,
       "lng": 9.372,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 30,
-        "card_10": 269,
-        "monthly": 184,
-        "trial": 21,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "lineupyoga-st-gallen",
@@ -223,11 +191,11 @@
       "classes": [],
       "pricing": {
         "single": 28,
-        "card_10": 248,
-        "monthly": 170,
-        "trial": 19,
+        "card_10": 250,
+        "trial": 40,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.lineupyoga.ch/yoga-preise-abos"
       }
     },
     {
@@ -263,12 +231,11 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 29,
-        "card_10": 258,
-        "monthly": 177,
-        "trial": 20,
+        "single": 30,
+        "card_10": 200,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://123yoga.ch/courses/"
       }
     },
     {
@@ -306,15 +273,7 @@
       "lat": 47.422,
       "lng": 9.371,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 30,
-        "card_10": 266,
-        "monthly": 183,
-        "trial": 21,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yogaloft-rapperswil-jona",
@@ -355,12 +314,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 31,
-        "card_10": 282,
-        "monthly": 194,
-        "trial": 21,
+        "single": 30,
+        "card_10": 240,
+        "trial": 85,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.yogaloft.ch/angebot2.php"
       }
     },
     {
@@ -400,12 +359,11 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 28,
-        "card_10": 244,
-        "monthly": 166,
-        "trial": 18,
+        "card_10": 275,
+        "trial": 25,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://hotyoga4u.ch/"
       }
     }
   ]

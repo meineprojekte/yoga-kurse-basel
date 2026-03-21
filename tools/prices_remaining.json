@@ -1,0 +1,885 @@
+{
+  "_metadata": {
+    "scraped_date": "2026-03-21",
+    "total_studios": 84,
+    "verified_count": 28,
+    "unverified_count": 56,
+    "notes": "Prices scraped from studio websites. 'verified: true' means prices found on website. 'verified: false' means prices could not be found (site down, dynamic content, no pricing page, etc.)"
+  },
+  "basel-landschaft": {
+    "yoga-lotus-liestal": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://yogalotus-liestal.ch/preise",
+      "verified": false,
+      "notes": "Pricing page exists but prices loaded dynamically. Mentions 30 CHF discount on 10er Abo for students/seniors."
+    },
+    "yoga-werkstatt-liestal": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://yoga-werkstatt.ch/",
+      "verified": false,
+      "notes": "Website access denied during scraping."
+    },
+    "balanced-power-studios-liestal": {
+      "single": 28,
+      "card_10": 260,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.balancedpower.ch/preise",
+      "verified": true,
+      "notes": "Yoga 75min: single 28, 10er 260. Pilates Reformer 60min: single 30, 10er 280. No explicit trial price."
+    },
+    "jyoti-yoga-liestal": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.jyotiyoga.ch/",
+      "verified": false,
+      "notes": "Wix site, content loaded dynamically."
+    },
+    "bethsabe-yoga-bottmingen": {
+      "single": 35,
+      "card_10": 290,
+      "monthly": null,
+      "trial": 30,
+      "currency": "CHF",
+      "source": "https://www.bethsabe.ch/yoga-stundenplan",
+      "verified": true,
+      "notes": "90min: single 35, 10er 290, trial 30. 60min: single 25, 10er 210, trial 25. Annual unlimited 1350 (adults). Private 140/60min."
+    },
+    "yoga-nordemann-oberwil": {
+      "single": 32,
+      "card_10": 270,
+      "monthly": null,
+      "trial": 0,
+      "currency": "CHF",
+      "source": "https://www.yoga.nordemann.ch/yoga-kurse-oberwil-online-yoga-preise-probelektion",
+      "verified": true,
+      "notes": "75min without sub: 32, with sub: 27. 60min Slow Yoga: 27/23. Quarterly subs ~270 for 10 sessions. Trial lesson FREE."
+    },
+    "yoga-shanti-oberwil": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yogashanti.ch/",
+      "verified": false,
+      "notes": "403 error - website blocked scraping."
+    },
+    "ebe-wellness-oberwil": {
+      "single": 26,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://ebe-wellness.ch/preise-yoga/",
+      "verified": true,
+      "notes": "Single 60min: 26 CHF. 10er card available but price not specified. Private: 110 CHF/60min. No monthly sub listed."
+    },
+    "hathayoga-arlesheim": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.hathayoga-basel.ch/",
+      "verified": false,
+      "notes": "403 error - website blocked scraping."
+    },
+    "koerpergeheimnis-pratteln": {
+      "single": 25,
+      "card_10": 220,
+      "monthly": null,
+      "trial": 0,
+      "currency": "CHF",
+      "source": "https://koerpergeheimnis.ch/angebot",
+      "verified": true,
+      "notes": "Single: 25, 10er: 220, 20er: 400, 6-month: 650, annual: 1300. Trial FREE. No monthly sub."
+    }
+  },
+  "solothurn": {
+    "studio-30-solothurn": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.studio-30.ch/",
+      "verified": false,
+      "notes": "Wix site, content loaded dynamically."
+    },
+    "sunshine-yoga-solothurn": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.sunshine-yoga.ch",
+      "verified": false,
+      "notes": "Content loaded dynamically, pricing not extractable."
+    },
+    "diamond-yoga-solothurn": {
+      "single": 23,
+      "card_10": null,
+      "monthly": null,
+      "trial": 0,
+      "currency": "CHF",
+      "source": "https://www.diamond-yoga.ch/",
+      "verified": true,
+      "notes": "Single 75min: 23. First trial lesson FREE. Courses to be health insurance recognized from May 2026. No 10er card or monthly listed."
+    },
+    "flavia-tao-yoga-solothurn": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.flaviayoga.com/",
+      "verified": false,
+      "notes": "Wix site, content loaded dynamically."
+    },
+    "om-yogaroom-solothurn": {
+      "single": 25,
+      "card_10": 250,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.om-yogaroom.ch/",
+      "verified": true,
+      "notes": "90min: 10x250. 60min: 10x200 (20/class). No single or trial listed explicitly."
+    },
+    "yoga-garten-solothurn": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://yogagarten.ch/",
+      "verified": false,
+      "notes": "Pricing on separate Angebot page, not extractable."
+    },
+    "downtown-yoga-olten": {
+      "single": 30,
+      "card_10": 280,
+      "monthly": 215,
+      "trial": 25,
+      "currency": "CHF",
+      "source": "https://downtownyoga.ch/kurse-preise/",
+      "verified": true,
+      "notes": "Single 60min: 30, 11er: 280 (4 months valid), Monthly unlimited: 215, Trial: 25. 5er: 135 (2 months). Student discounts available."
+    },
+    "yoga-pilateszentrale-olten": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.pilateszentrale.ch/",
+      "verified": false,
+      "notes": "403 error - website blocked scraping."
+    }
+  },
+  "thurgau": {
+    "gymayo-frauenfeld": {
+      "single": 25,
+      "card_10": null,
+      "monthly": 100,
+      "trial": 0,
+      "currency": "CHF",
+      "source": "https://gymayo.ch/angebot/preise",
+      "verified": true,
+      "notes": "Single: 25, 1 month (1x/week): 100, 3 months: 285. Trial FREE. No 10er card. Student: single 23, 1 month 90. Since 1955."
+    },
+    "yogaplace-frauenfeld": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yoga-place.com/",
+      "verified": false,
+      "notes": "Wix site, content loaded dynamically."
+    },
+    "yoga-grenzenlos-kreuzlingen": {
+      "single": 26,
+      "card_10": 245,
+      "monthly": 130,
+      "trial": 13,
+      "currency": "CHF",
+      "source": "https://www.yogagrenzenlos.com/preise",
+      "verified": true,
+      "notes": "75min: single 26, 10er 245. 60min: single 24, 10er 220. 90min: single 29, 10er 270. Monthly unlimited from 130/mo. 3 trial classes: 40 (3 weeks). Trial pass: 99 (2 weeks unlimited). Private 60min: 100."
+    },
+    "yoga-asana-kreuzlingen": {
+      "single": 30,
+      "card_10": 270,
+      "monthly": null,
+      "trial": 10,
+      "currency": "CHF",
+      "source": "https://www.yoga-asana.ch/",
+      "verified": true,
+      "notes": "Evening single: 30, morning: 25. 10er evening: 270 (4 months), morning: 220. Aerial: single 32, 10er 300. Trial: 10 one-time. 5er intro: 100. Semester 20x: 450. Unlimited semester: 580. 30% student discount."
+    },
+    "soma-yoga-weinfelden": {
+      "single": 35,
+      "card_10": 270,
+      "monthly": null,
+      "trial": 17,
+      "currency": "CHF",
+      "source": "https://www.soma-yoga.ch/preise",
+      "verified": true,
+      "notes": "90min single: 35, 75min: 30, 60min: 25. 10er standard: 270 (6 months). Specialized 60min 10er: 240. Probeabo: 50 for 3 classes. Annual 1x/week: 1040, unlimited: 1500."
+    },
+    "feel-yoga-amriswil": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.feelyoga.ch/",
+      "verified": false,
+      "notes": "Website does not display pricing on main page. Primarily a yoga training center."
+    },
+    "miyoga-thurgau": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.miyoga.ch/",
+      "verified": false,
+      "notes": "Pricing on separate Booking page, not extractable."
+    }
+  },
+  "graubuenden": {
+    "yoga-loft-chur": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yogaloftchur.ch/",
+      "verified": false,
+      "notes": "Wix site, content loaded dynamically."
+    },
+    "yoga-pyramide-chur": {
+      "single": 35,
+      "card_10": 270,
+      "monthly": null,
+      "trial": 22,
+      "currency": "CHF",
+      "source": "https://yogapyramide.ch/preise",
+      "verified": true,
+      "notes": "Single: 35, 5er: 150 (6 weeks), 10er: 270 (3 months), 21er: 540 (6 months), annual: 1250. Probe-Abo: 5 for 108 (6 weeks)."
+    },
+    "belude-yoga-chur": {
+      "single": 27,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://belude.ch/programm.html",
+      "verified": true,
+      "notes": "60min: 25, 75min: 27, 90min: 29. Private: 100/hour. Block booking 8-12 lessons per block, price not specified. No 10er or monthly listed."
+    },
+    "raw-yoga-chur": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://rawstation.ch/yoga-by-raw-station/",
+      "verified": false,
+      "notes": "No pricing on website. Contact: info@rawstation.ch or +41 78 899 44 57."
+    },
+    "flux2motus-davos": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.flux2motus.ch/",
+      "verified": false,
+      "notes": "Connection refused - website may be down."
+    },
+    "davos-yoga": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://davosyoga.ch/",
+      "verified": false,
+      "notes": "Connection refused - website may be down."
+    },
+    "yogaplaza-davos": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yogaplazadavos.ch/",
+      "verified": false,
+      "notes": "Pricing on separate abos page, not extractable from main page."
+    },
+    "yoga-loft-engadin-samedan": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://yogaloftengadin.ch/",
+      "verified": false,
+      "notes": "Content loaded dynamically, pricing not extractable."
+    },
+    "acroyoga-group-chur": {
+      "single": 5,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://acroyoga.group/",
+      "verified": true,
+      "notes": "Jam sessions: 5 CHF per session per participant. Classes and workshops at fair prices, contact for details."
+    }
+  },
+  "ticino": {
+    "yoga-dinamico-lugano": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yogadinamico.ch/prezzi.html",
+      "verified": false,
+      "notes": "Pricing page exists but content not extractable."
+    },
+    "yogal-lugano": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yogalugano.ch/",
+      "verified": false,
+      "notes": "Wix site, content loaded dynamically."
+    },
+    "slow-move-lugano": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://slow-move.ch/yoga-classes/",
+      "verified": false,
+      "notes": "Prices page exists but content loaded dynamically via Elementor."
+    },
+    "soulsinnature-yoga-loft": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.soulsinnature.net/yogaloft",
+      "verified": false,
+      "notes": "Wix site, content loaded dynamically."
+    },
+    "centro-annapurna-tenero": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://centroannapurna.ch/",
+      "verified": false,
+      "notes": "Pricing on separate Costi page, not extractable."
+    },
+    "yoga-vidya-swiss-locarno": {
+      "single": 35,
+      "card_10": 290,
+      "monthly": null,
+      "trial": 30,
+      "currency": "CHF",
+      "source": "https://www.yogavidyaswiss.ch/Prezzi",
+      "verified": true,
+      "notes": "90min: single 35, 10er consecutive 290, 10er 3-month 320, trial 30. 60min: single 28, 10er consecutive 240, 10er 3-month 260, trial 25. Private: 100-125. Payment: bank, TWINT, cash."
+    },
+    "tanja-iovene-yoga-bellinzona": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.tanjaioveneyoga.com/classes-bellinzona",
+      "verified": false,
+      "notes": "No pricing on class schedule page."
+    }
+  },
+  "fribourg": {
+    "yogiface-fribourg": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": 0,
+      "currency": "CHF",
+      "source": "https://www.yogiface.ch/prix",
+      "verified": true,
+      "notes": "Trial: FREE (1 cours d'essai, new clients). Trial abo: 50 (3 classes/1 month). 3 months: 350, 6 months: 500, 12 months: 900. No single class or 10er listed."
+    },
+    "happinez-yoga-fribourg": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.happinez.ch/",
+      "verified": false,
+      "notes": "Wix site, content loaded dynamically."
+    },
+    "sakinayoga-fribourg": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.sakinayoga.com/",
+      "verified": false,
+      "notes": "Wix site, content loaded dynamically."
+    },
+    "yoga-nicole-fribourg": {
+      "single": 22,
+      "card_10": 200,
+      "monthly": null,
+      "trial": 10,
+      "currency": "CHF",
+      "source": "https://www.yoga-nicole.ch/kurse-cours/preise-tarifs",
+      "verified": true,
+      "notes": "Single: 22. 10er: 200 (4 months). Trial: 3 lessons for 30 (10/class). Students/seniors/disability: 10er 160. 10% loyalty discount if renewed within 3 months. Cash or Twint."
+    },
+    "popup-yoga-fribourg": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.thepopupyogacompany.com/",
+      "verified": false,
+      "notes": "Connection refused - website may be down."
+    }
+  },
+  "zug": {
+    "yogaflowzug": {
+      "single": 30,
+      "card_10": 260,
+      "monthly": 250,
+      "trial": 20,
+      "currency": "CHF",
+      "source": "https://www.sportsnow.ch/go/yogaflowzug/prices?locale=de",
+      "verified": true,
+      "notes": "60min: single 30, 10er 260. 90min: single 39, 10er 350. Monthly unlimited: 250. Trial: 20 (4 weeks valid). Intro 3 classes: 75. Aerial single: 39. Pregnancy: single 32, 10er 280."
+    },
+    "iyengar-yoga-zug": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.iyengar-yoga-zug.ch/",
+      "verified": false,
+      "notes": "Studio CLOSED at end of March 2024 after 15 years. No longer operating."
+    },
+    "zug-yoga-sports": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://zugyogasports.ch/",
+      "verified": false,
+      "notes": "Connection refused - website may be down."
+    },
+    "chinmayi-yoga-baar": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.chinmayi.ch/",
+      "verified": false,
+      "notes": "Content loaded dynamically, pricing not extractable."
+    },
+    "aum-yoga-zug": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.aumyogastudio.ch/",
+      "verified": false,
+      "notes": "Pricing on separate subpage, not extractable from main page."
+    }
+  },
+  "neuchatel": {
+    "yoga-fabrik-neuchatel": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://yoga-fabrik.ch/",
+      "verified": false,
+      "notes": "Pricing on Zenitoo booking platform (yogafabrik.zenitoo.ch/fr/subscriptions), not on main site."
+    },
+    "yoga-shashin-neuchatel": {
+      "single": 30,
+      "card_10": null,
+      "monthly": null,
+      "trial": 25,
+      "currency": "CHF",
+      "source": "https://www.yogashashin.ch/",
+      "verified": true,
+      "notes": "Single: 30. Trial: 25. 5er: 140 (2 months). 12er: 310 (5 months). Semester 23 classes: 540. No standard 10er or monthly."
+    },
+    "parvata-la-chaux-de-fonds": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.parvata.ch/",
+      "verified": false,
+      "notes": "Pricing on separate page via Zenitoo platform. Contact: 032 913 18 13."
+    },
+    "banyann-yoga": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.banyann.ch/",
+      "verified": false,
+      "notes": "Wix site, content loaded dynamically."
+    }
+  },
+  "valais": {
+    "espace-tadasana-sion": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.tadasana-yoga.ch/",
+      "verified": false,
+      "notes": "Wix site, content loaded dynamically."
+    },
+    "happy-om-valais": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://happyom.ch/",
+      "verified": false,
+      "notes": "Content loaded dynamically, pricing not extractable."
+    },
+    "isabella-bumann-yoga": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://isabellayoga.ch/",
+      "verified": false,
+      "notes": "No pricing on homepage. Offers group classes, private instruction, retreats."
+    },
+    "daniela-imboden-yoga-brig": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.daniela-imboden.ch/",
+      "verified": false,
+      "notes": "Connection refused - website may be down."
+    }
+  },
+  "jura": {
+    "pilatesyogajura": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.pilatesyogajura.com/",
+      "verified": false,
+      "notes": "Wix site, content loaded dynamically."
+    },
+    "yogajura": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": 0,
+      "currency": "CHF",
+      "source": "https://www.yogajura.ch/",
+      "verified": true,
+      "notes": "Second class FREE as trial. No explicit pricing listed. Contact: 032 422 55 18."
+    },
+    "elevea-yoga-delemont": {
+      "single": 18,
+      "card_10": 160,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://eleveayoga.com/",
+      "verified": true,
+      "notes": "In-person single: 18, online: 14. 10er in-person: 160. 10% discount for students/apprentices/AVS. Payment: cash or Twint."
+    }
+  },
+  "schaffhausen": {
+    "ayana-yoga-schaffhausen": {
+      "single": 30,
+      "card_10": 280,
+      "monthly": null,
+      "trial": 20,
+      "currency": "CHF",
+      "source": "https://www.ayanayoga.ch/abos-preise/",
+      "verified": true,
+      "notes": "60min: single 30, 5er 140 (8 weeks), 10er 280 (14 weeks). 90min: single 35, 5er 160, 10er 320. Trial: 20 (half donated to animal sanctuary). Private: 100."
+    },
+    "yogalicht-schaffhausen": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://yogalicht.ch/",
+      "verified": false,
+      "notes": "No pricing displayed on website."
+    },
+    "yogaschule-narayana-schaffhausen": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yogaschule-narayana.ch/",
+      "verified": false,
+      "notes": "No pricing on main page."
+    }
+  },
+  "schwyz": {
+    "heyoga-schwyz": {
+      "single": 30,
+      "card_10": 270,
+      "monthly": null,
+      "trial": 0,
+      "currency": "CHF",
+      "source": "https://www.heyoga.ch/preise/",
+      "verified": true,
+      "notes": "60min: single 30, 10er 270 (5 months), 5er 140 (3 months). 75/90min: single 33, 10er 300, 5er 155. Trial FREE. 15% student/apprentice discount."
+    },
+    "yogastudio-ganesha-einsiedeln": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://ganesha-yoga.ch/rund-um-yoga/preise-shop/",
+      "verified": false,
+      "notes": "Pricing page exists but content not extractable. Flexible Abos mentioned."
+    },
+    "yoga8-einsiedeln": {
+      "single": 37,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yoga8.ch/",
+      "verified": true,
+      "notes": "Drop-in: 37 (advance payment). Regular group: 30/lesson (billed semi-annually). Students up to 25: 20/lesson. Private 90min: 180. No 10er card or monthly."
+    }
+  },
+  "glarus": {
+    "yogaamfluss-ennenda": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yoga-am-fluss.ch/",
+      "verified": false,
+      "notes": "403 error - website blocked scraping."
+    },
+    "12yoga-ennenda": {
+      "single": 24,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://12yoga.ch/",
+      "verified": true,
+      "notes": "Hatha single: 24. Pregnancy yoga: 25. Postnatal: 24. No 10er card or monthly listed. Schnupperstunde by arrangement (WhatsApp/SMS). QualiCert certified."
+    },
+    "cgworkout-niederurnen": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.cgworkout.ch/",
+      "verified": false,
+      "notes": "403 error - website blocked scraping."
+    }
+  },
+  "uri": {
+    "anantara-yogastudio-altdorf": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.anantara-yogastudio.ch/",
+      "verified": false,
+      "notes": "Wix site, content loaded dynamically."
+    },
+    "flow-altdorf": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.flow-altdorf.ch/",
+      "verified": false,
+      "notes": "Wix site, content loaded dynamically."
+    },
+    "urvani-yoga-altdorf": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "",
+      "verified": false,
+      "notes": "No website listed for this studio."
+    }
+  },
+  "obwalden": {
+    "goyoga-sarnen": {
+      "single": 29,
+      "card_10": 261,
+      "monthly": null,
+      "trial": 20,
+      "currency": "CHF",
+      "source": "https://goyoga.ch/stundenplan-2.html",
+      "verified": true,
+      "notes": "Single: 29. 10er: 261 (10 weeks, price of 9). 5er: 135 (5 weeks). Trial: 20 (one-time). Private: 130 (1 person), 180 (2+)."
+    },
+    "yoga-ishwari-sarnen": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yoga-ishwari.ch/",
+      "verified": false,
+      "notes": "403 error - website blocked scraping."
+    }
+  },
+  "nidwalden": {
+    "yoga-ayurveda-zentrum-stans": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://vedasudha.ch/",
+      "verified": false,
+      "notes": "Pricing on separate yoga subpage, not extractable."
+    },
+    "gesund-und-munter-stans": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.gesund-und-munter.ch/",
+      "verified": false,
+      "notes": "Wix site, content loaded dynamically."
+    },
+    "sevencolors-stans": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.sevencolors.ch/",
+      "verified": false,
+      "notes": "Wix site, content loaded dynamically."
+    }
+  },
+  "appenzell-ar": {
+    "yogaar-herisau": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yogaar.ch/",
+      "verified": false,
+      "notes": "Domain could not be verified as safe for fetching."
+    },
+    "yoga-kinesiologie-herisau": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yoga-kinesiologie.ch/",
+      "verified": false,
+      "notes": "Connection refused - website may be down."
+    }
+  },
+  "appenzell-ir": {
+    "studio-mond-appenzell": {
+      "single": 30,
+      "card_10": 280,
+      "monthly": null,
+      "trial": 0,
+      "currency": "CHF",
+      "source": "https://studiomond.ch/preise/",
+      "verified": true,
+      "notes": "Drop-in: 30. 10er: 280 (1 year). 20er: 540 (1 year). Trial FREE (1x per person). 3er Probeabo: 65 (2 months). Half-year 1x/week: 590. Annual 1x/week: 1150. Unlimited annual: 1500. 15% student discount. CSS Coins accepted."
+    },
+    "yoga-claudia-appenzell": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yoga-claudia.ch/",
+      "verified": false,
+      "notes": "No pricing on main page. Contact: 071 787 48 20."
+    },
+    "yoga-appenzell-andrea-manser": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yoga-appenzell.ch/",
+      "verified": false,
+      "notes": "TLS certificate error - website may have configuration issues."
+    }
+  }
+}

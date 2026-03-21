@@ -42,12 +42,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 33,
-        "card_10": 297,
-        "monthly": 204,
-        "trial": 23,
+        "single": 30,
+        "card_10": 270,
+        "trial": 0,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.heyoga.ch/preise/"
       }
     },
     {
@@ -88,15 +88,7 @@
       "lat": 47.1275,
       "lng": 8.747,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 30,
-        "card_10": 270,
-        "monthly": 185,
-        "trial": 20,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga8-einsiedeln",
@@ -134,12 +126,10 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 29,
-        "card_10": 259,
-        "monthly": 177,
-        "trial": 20,
+        "single": 37,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.yoga8.ch/"
       }
     }
   ]

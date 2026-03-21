@@ -40,15 +40,7 @@
       "lat": 46.0073,
       "lng": 8.9672,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 28,
-        "card_10": 254,
-        "monthly": 174,
-        "trial": 18,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yogal-lugano",
@@ -82,15 +74,7 @@
       "lat": 46.0095,
       "lng": 8.9268,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 26,
-        "card_10": 238,
-        "monthly": 163,
-        "trial": 17,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "slow-move-lugano",
@@ -127,15 +111,7 @@
       "lat": 46.0037,
       "lng": 8.9511,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 26,
-        "card_10": 231,
-        "monthly": 157,
-        "trial": 16,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "soulsinnature-yoga-loft",
@@ -174,15 +150,7 @@
       "lat": 46.0333,
       "lng": 8.9333,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 35,
-        "card_10": 319,
-        "monthly": 219,
-        "trial": 25,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "centro-annapurna-tenero",
@@ -220,15 +188,7 @@
       "lat": 46.1728,
       "lng": 8.8497,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 28,
-        "card_10": 254,
-        "monthly": 174,
-        "trial": 18,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-vidya-swiss-locarno",
@@ -264,12 +224,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 31,
-        "card_10": 281,
-        "monthly": 193,
-        "trial": 22,
+        "single": 35,
+        "card_10": 290,
+        "trial": 30,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.yogavidyaswiss.ch/Prezzi"
       }
     },
     {
@@ -305,15 +265,7 @@
       "lat": 46.1953,
       "lng": 9.0238,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 31,
-        "card_10": 281,
-        "monthly": 194,
-        "trial": 22,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     }
   ]
 }

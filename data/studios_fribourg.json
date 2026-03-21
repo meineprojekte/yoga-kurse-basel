@@ -36,12 +36,10 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 33,
-        "card_10": 299,
-        "monthly": 206,
-        "trial": 23,
+        "trial": 0,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.yogiface.ch/prix"
       }
     },
     {
@@ -78,15 +76,7 @@
       "lat": 46.8019,
       "lng": 7.1509,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 31,
-        "card_10": 279,
-        "monthly": 191,
-        "trial": 21,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "sakinayoga-fribourg",
@@ -123,15 +113,7 @@
       "lat": 46.8065,
       "lng": 7.162,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 29,
-        "card_10": 261,
-        "monthly": 179,
-        "trial": 20,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-nicole-fribourg",
@@ -167,12 +149,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 31,
-        "card_10": 283,
-        "monthly": 194,
-        "trial": 22,
+        "single": 22,
+        "card_10": 200,
+        "trial": 10,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.yoga-nicole.ch/kurse-cours/preise-tarifs"
       }
     },
     {
@@ -213,15 +195,7 @@
       "lat": 46.8058,
       "lng": 7.1571,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 34,
-        "card_10": 312,
-        "monthly": 214,
-        "trial": 24,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     }
   ]
 }

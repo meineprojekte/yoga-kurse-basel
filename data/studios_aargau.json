@@ -41,15 +41,7 @@
       "lat": 47.3925,
       "lng": 8.0444,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 30,
-        "card_10": 267,
-        "monthly": 183,
-        "trial": 20,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "co-yoga-space-aarau",
@@ -83,15 +75,7 @@
       "lat": 47.388,
       "lng": 8.05,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 22,
-        "card_10": 198,
-        "monthly": 135,
-        "trial": 14,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "my-yoga-garden-suhr",
@@ -127,15 +111,7 @@
       "lat": 47.3731,
       "lng": 8.0789,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 30,
-        "card_10": 267,
-        "monthly": 183,
-        "trial": 20,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "iyengar-yoga-aarau",
@@ -170,15 +146,7 @@
       "lat": 47.391,
       "lng": 8.0466,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 29,
-        "card_10": 261,
-        "monthly": 179,
-        "trial": 20,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "aurum-raum-fuer-yoga-aarau",
@@ -219,12 +187,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 31,
-        "card_10": 277,
-        "monthly": 190,
-        "trial": 21,
+        "single": 40,
+        "card_10": 320,
+        "trial": 35,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://raum-fuer-yoga.ch/preise"
       }
     },
     {
@@ -263,15 +231,7 @@
       "lat": 47.3925,
       "lng": 8.049,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 32,
-        "card_10": 293,
-        "monthly": 201,
-        "trial": 22,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "manta-yoga-pilates-rombach",
@@ -307,12 +267,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 23,
-        "card_10": 207,
-        "monthly": 141,
-        "trial": 14,
+        "single": 25,
+        "card_10": 240,
+        "trial": 0,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://manta-yoga-pilates.ch/"
       }
     },
     {
@@ -350,15 +310,7 @@
       "lat": 47.4733,
       "lng": 8.3067,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 23,
-        "card_10": 207,
-        "monthly": 141,
-        "trial": 14,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "namaste-yoga-baden",
@@ -400,15 +352,7 @@
       "lat": 47.473,
       "lng": 8.308,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 29,
-        "card_10": 265,
-        "monthly": 181,
-        "trial": 19,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "hieryoga-baden",
@@ -452,12 +396,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 27,
-        "card_10": 238,
-        "monthly": 162,
-        "trial": 16,
+        "single": 32,
+        "card_10": 290,
+        "monthly": 139,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://hieryoga.ch/preise"
       }
     },
     {
@@ -489,15 +433,7 @@
       "lat": 47.4738,
       "lng": 8.306,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 24,
-        "card_10": 220,
-        "monthly": 150,
-        "trial": 15,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     }
   ]
 }

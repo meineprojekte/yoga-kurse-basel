@@ -1,0 +1,114 @@
+{
+  "last_updated": "2026-03-21",
+  "notes": "Prices scraped from studio websites. 'verified: true' means prices were found on the website. 'verified: false' means prices could not be confirmed online.",
+
+  "yoga-in-der-altstadt-st-gallen": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.yoga-in-der-altstadt.ch/",
+    "verified": false,
+    "notes": "Website returned 403 Forbidden. Pricing not accessible."
+  },
+
+  "studio-8-st-gallen": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://studio-8.ch/",
+    "verified": false,
+    "notes": "Stundenplan/Preise page referenced but not accessible. Pricing handled via SportsNow."
+  },
+
+  "bubble-yoga-st-gallen": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://bubbleyoga.ch/yoga/pricing/",
+    "verified": false,
+    "notes": "Pricing page exists with drop-in, class packs, monthly memberships (50% off 1st month promo). Prices rendered dynamically, not extractable. Eversports booking."
+  },
+
+  "rach-yoga-st-gallen": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": 20,
+    "currency": "CHF",
+    "source": "https://www.momoyoga.com/rachyoga/schedule",
+    "verified": false,
+    "notes": "Trial class confirmed at 20 CHF. Full pricing on Momoyoga booking platform, not extractable."
+  },
+
+  "lineupyoga-st-gallen": {
+    "single": 28,
+    "single_75min": 35,
+    "card_10": 250,
+    "card_10_75min": 330,
+    "card_20": 460,
+    "card_20_75min": 610,
+    "monthly": null,
+    "trial": 40,
+    "trial_note": "2-class intro package valid 1 month. Also: single trial 60min 18, 75-90min 25",
+    "currency": "CHF",
+    "source": "https://www.lineupyoga.ch/yoga-preise-abos",
+    "verified": true,
+    "notes": "Drop-in 60min 28, 75-90min 35. 10er 60min 250 (4 months), 75-90min 330. 20er 60min 460 (8 months), 75-90min 610. Trial 2-class pack 40 (1 month). Single trial 60min 18, 75-90min 25."
+  },
+
+  "123-yoga-st-gallen": {
+    "single": 30,
+    "card_5": 125,
+    "card_10": 200,
+    "monthly": null,
+    "trial": null,
+    "trial_note": "Trial lesson available, contact via phone 0762019727",
+    "currency": "CHF",
+    "source": "https://123yoga.ch/courses/",
+    "verified": true,
+    "notes": "Single 30. 5er Karte 125. 10er Karte 200. No monthly subscription - card system only."
+  },
+
+  "power-yoga-st-gallen": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.poweryogastgallen.com/",
+    "verified": false,
+    "notes": "Website returned 403 Forbidden. Pricing not accessible."
+  },
+
+  "yogaloft-rapperswil-jona": {
+    "single": 30,
+    "single_90min": 40,
+    "card_10": 240,
+    "card_10_90min": 340,
+    "monthly": null,
+    "trial": 85,
+    "trial_note": "3 classes of choice for 85 CHF",
+    "six_month_unlimited": 850,
+    "currency": "CHF",
+    "source": "https://www.yogaloft.ch/angebot2.php",
+    "verified": true,
+    "notes": "Single 60min 30, 90min 40. 10er 60min 240, 90min 340. 6-month unlimited 850. Trial 3 classes 85. Private/therapy 140/60min. Discounts: -2 single, -20 10er, -50 6-month for students/pensioners/unemployed. First lesson free."
+  },
+
+  "hot-yoga-4-u-rapperswil": {
+    "single": null,
+    "card_10": 275,
+    "monthly": null,
+    "trial": 25,
+    "currency": "CHF",
+    "source": "https://hotyoga4u.ch/",
+    "verified": true,
+    "notes": "10er Karte 275 CHF. Trial class 25 CHF (since Jan 2026, previously free). First 10er card can be bought at 250 if trial cost credited."
+  }
+}

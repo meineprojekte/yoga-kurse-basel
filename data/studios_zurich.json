@@ -47,12 +47,13 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 37,
-        "card_10": 330,
-        "monthly": 235,
-        "trial": 25,
+        "single": 25,
+        "card_10": 290,
+        "monthly": 200,
+        "trial": 75,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://airyoga.ch/de/preise/"
       }
     },
     {
@@ -98,12 +99,13 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 39,
-        "card_10": 347,
-        "monthly": 240,
-        "trial": 26,
+        "single": 30,
+        "card_10": 250,
+        "monthly": 185,
+        "trial": 75,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.sanapurna.ch/yoga-price-packages.php"
       }
     },
     {
@@ -159,12 +161,13 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 43,
-        "card_10": 384,
-        "monthly": 281,
-        "trial": 30,
+        "single": 36,
+        "card_10": 270,
+        "monthly": 169,
+        "trial": 79,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.athayoga.ch/preise/"
       }
     },
     {
@@ -206,15 +209,7 @@
       "lat": 47.3773,
       "lng": 8.5274,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 39,
-        "card_10": 351,
-        "monthly": 252,
-        "trial": 28,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "soasana",
@@ -270,11 +265,12 @@
       "classes": [],
       "pricing": {
         "single": 33,
-        "card_10": 295,
-        "monthly": 201,
-        "trial": 22,
+        "card_10": 270,
+        "monthly": 155,
+        "trial": 65,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://soasana.ch/prices"
       }
     },
     {
@@ -332,15 +328,7 @@
       "lat": 47.372,
       "lng": 8.523,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 33,
-        "card_10": 300,
-        "monthly": 205,
-        "trial": 23,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "bikram-yoga-zuerich",
@@ -376,15 +364,7 @@
       "lat": 47.3736,
       "lng": 8.529,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 33,
-        "card_10": 299,
-        "monthly": 212,
-        "trial": 23,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yogaholics-united",
@@ -422,15 +402,7 @@
       "lat": 47.3904,
       "lng": 8.519,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 36,
-        "card_10": 325,
-        "monthly": 220,
-        "trial": 24,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "ashtanga-yoga-zurich",
@@ -470,12 +442,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 27,
-        "card_10": 244,
-        "monthly": 163,
-        "trial": 18,
+        "single": 30,
+        "card_10": 270,
+        "monthly": 250,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.ashtanga-yoga-zurich.com/schedule"
       }
     },
     {
@@ -515,15 +487,7 @@
       "lat": 47.377,
       "lng": 8.5265,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 31,
-        "card_10": 274,
-        "monthly": 191,
-        "trial": 21,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "bodyart-studio",
@@ -567,12 +531,13 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 36,
-        "card_10": 318,
-        "monthly": 223,
-        "trial": 24,
+        "single": 34,
+        "card_10": 299,
+        "monthly": 239,
+        "trial": 25,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://bodyart.studio/en/pricing/"
       }
     },
     {
@@ -611,12 +576,11 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 42,
-        "card_10": 378,
-        "monthly": 278,
-        "trial": 30,
+        "single": 28,
+        "card_10": 240,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://dasyogahaus.ch/preise/"
       }
     },
     {
@@ -662,12 +626,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 30,
-        "card_10": 274,
-        "monthly": 184,
-        "trial": 20,
+        "single": 29,
+        "card_10": 240,
+        "trial": 75,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.dasyogahaus-dubs.ch/preise"
       }
     },
     {
@@ -715,15 +679,7 @@
       "lat": 47.3655,
       "lng": 8.5515,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 41,
-        "card_10": 372,
-        "monthly": 273,
-        "trial": 29,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "vvoo",
@@ -764,15 +720,7 @@
       "lat": 47.358,
       "lng": 8.553,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 38,
-        "card_10": 345,
-        "monthly": 248,
-        "trial": 27,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-am-zuerichberg",
@@ -812,12 +760,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 40,
-        "card_10": 360,
-        "monthly": 262,
-        "trial": 28,
+        "single": 38,
+        "card_10": 340,
+        "trial": 75,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.xn--yoga-zrichberg-lsb.ch/preise"
       }
     },
     {
@@ -861,12 +809,11 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 37,
-        "card_10": 333,
-        "monthly": 244,
-        "trial": 26,
+        "single": 33,
+        "trial": 20,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.yogaamfluss.ch/"
       }
     },
     {
@@ -903,12 +850,11 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 27,
-        "card_10": 246,
-        "monthly": 165,
-        "trial": 18,
+        "single": 37,
+        "trial": 35,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.iyengar-yoga-zurich.ch/kontakt-preise.html"
       }
     },
     {
@@ -947,15 +893,7 @@
       "lat": 47.376,
       "lng": 8.5305,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 34,
-        "card_10": 310,
-        "monthly": 222,
-        "trial": 24,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "soul-city",
@@ -998,15 +936,7 @@
       "lat": 47.3775,
       "lng": 8.5285,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 33,
-        "card_10": 296,
-        "monthly": 204,
-        "trial": 22,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-nest",
@@ -1055,15 +985,7 @@
       "lat": 47.411,
       "lng": 8.5445,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 39,
-        "card_10": 353,
-        "monthly": 255,
-        "trial": 28,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-culture",
@@ -1110,15 +1032,7 @@
       "lat": 47.4098,
       "lng": 8.5482,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 35,
-        "card_10": 318,
-        "monthly": 223,
-        "trial": 24,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "the-yoga-place",
@@ -1159,15 +1073,7 @@
       "lat": 47.387,
       "lng": 8.5185,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 27,
-        "card_10": 247,
-        "monthly": 166,
-        "trial": 18,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "planet-yoga",
@@ -1206,15 +1112,7 @@
       "lat": 47.3685,
       "lng": 8.5195,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 38,
-        "card_10": 341,
-        "monthly": 245,
-        "trial": 26,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yogalives",
@@ -1257,15 +1155,7 @@
       "lat": 47.365,
       "lng": 8.5235,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 36,
-        "card_10": 330,
-        "monthly": 234,
-        "trial": 25,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "nandalayoga",
@@ -1299,15 +1189,7 @@
       "lat": 47.3872,
       "lng": 8.5235,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 36,
-        "card_10": 324,
-        "monthly": 236,
-        "trial": 25,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "sleepy-yogi",
@@ -1340,15 +1222,7 @@
       "lat": 47.3738,
       "lng": 8.5355,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 32,
-        "card_10": 284,
-        "monthly": 200,
-        "trial": 22,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-in-a-bag-altstetten",
@@ -1387,15 +1261,7 @@
       "lat": 47.385,
       "lng": 8.488,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 34,
-        "card_10": 306,
-        "monthly": 213,
-        "trial": 23,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-in-a-bag-albisrieden",
@@ -1433,15 +1299,7 @@
       "lat": 47.376,
       "lng": 8.485,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 30,
-        "card_10": 274,
-        "monthly": 184,
-        "trial": 20,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "aranya-studio",
@@ -1484,15 +1342,7 @@
       "lat": 47.3555,
       "lng": 8.554,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 37,
-        "card_10": 338,
-        "monthly": 242,
-        "trial": 26,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "elevate-studio",
@@ -1536,15 +1386,7 @@
       "lat": 47.377,
       "lng": 8.527,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 33,
-        "card_10": 290,
-        "monthly": 197,
-        "trial": 21,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "radiant-heart-studio",
@@ -1580,15 +1422,7 @@
       "lat": 47.368,
       "lng": 8.519,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 30,
-        "card_10": 270,
-        "monthly": 187,
-        "trial": 21,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "studio-y3",
@@ -1630,15 +1464,7 @@
       "lat": 47.372,
       "lng": 8.518,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 41,
-        "card_10": 368,
-        "monthly": 269,
-        "trial": 29,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-by-nora",
@@ -1677,12 +1503,10 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 32,
-        "card_10": 283,
-        "monthly": 198,
-        "trial": 22,
+        "single": 27,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://yogabynora.ch/preise"
       }
     },
     {
@@ -1725,11 +1549,11 @@
       "classes": [],
       "pricing": {
         "single": 35,
-        "card_10": 314,
-        "monthly": 220,
-        "trial": 24,
+        "card_10": 300,
+        "trial": 20,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.jiokundaliniyoga.com/anmelden"
       }
     },
     {
@@ -1765,15 +1589,7 @@
       "lat": 47.3672,
       "lng": 8.518,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 36,
-        "card_10": 324,
-        "monthly": 236,
-        "trial": 25,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga2day",
@@ -1814,15 +1630,7 @@
       "lat": 47.4105,
       "lng": 8.545,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 35,
-        "card_10": 316,
-        "monthly": 222,
-        "trial": 24,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yogagold",
@@ -1866,15 +1674,7 @@
       "lat": 47.365,
       "lng": 8.5235,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 37,
-        "card_10": 337,
-        "monthly": 241,
-        "trial": 26,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "project-peace",
@@ -1915,12 +1715,10 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 32,
-        "card_10": 296,
-        "monthly": 211,
-        "trial": 22,
+        "single": 30,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://projectpeace.ch/yoga-bodywork"
       }
     },
     {
@@ -1956,15 +1754,7 @@
       "lat": 47.374,
       "lng": 8.5555,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 41,
-        "card_10": 375,
-        "monthly": 264,
-        "trial": 29,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yogamoves-winterthur",
@@ -2003,12 +1793,13 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 39,
-        "card_10": 351,
-        "monthly": 254,
-        "trial": 27,
+        "single": 28,
+        "card_10": 260,
+        "monthly": 300,
+        "trial": 99,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.yoga-moves.ch/ueber-uns/stundenplan-und-preise"
       }
     },
     {
@@ -2055,15 +1846,7 @@
       "lat": 47.5045,
       "lng": 8.72,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 38,
-        "card_10": 344,
-        "monthly": 244,
-        "trial": 27,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "zanana-living-winterthur",
@@ -2112,15 +1895,7 @@
       "lat": 47.5035,
       "lng": 8.7168,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 40,
-        "card_10": 354,
-        "monthly": 250,
-        "trial": 28,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-in-winterthur",
@@ -2155,12 +1930,11 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 29,
-        "card_10": 259,
-        "monthly": 177,
-        "trial": 20,
+        "single": 35,
+        "card_10": 280,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.yoga-in.ch/preise/"
       }
     },
     {
@@ -2198,15 +1972,7 @@
       "lat": 47.4995,
       "lng": 8.731,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 40,
-        "card_10": 362,
-        "monthly": 264,
-        "trial": 28,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-in-a-bag-winterthur",
@@ -2244,15 +2010,7 @@
       "lat": 47.4998,
       "lng": 8.7262,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 36,
-        "card_10": 322,
-        "monthly": 227,
-        "trial": 25,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     }
   ]
 }

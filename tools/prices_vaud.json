@@ -1,0 +1,213 @@
+{
+  "last_updated": "2026-03-21",
+  "notes": "Prices scraped from studio websites. 'verified: true' means prices were found on the website. 'verified: false' means prices could not be confirmed online.",
+
+  "ooom-lausanne": {
+    "single": 35,
+    "card_5": 150,
+    "card_12": 335,
+    "card_10": null,
+    "monthly_6x": 140,
+    "monthly": 165,
+    "monthly_4": 580,
+    "trial": null,
+    "trial_3_classes": 59,
+    "trial_2_weeks": 75,
+    "currency": "CHF",
+    "source": "https://ooom.ch/tarifs/",
+    "verified": true,
+    "notes": "Single CHF 35. 5-class card CHF 150. 12-class card CHF 335. 6 classes/month CHF 140. Unlimited 1 month CHF 165 (incl. online library). 4 months unlimited CHF 580. 3 intro classes CHF 59. 2-week discovery CHF 75. 10% discount for students/unemployed/seniors (excl. unlimited)."
+  },
+
+  "nueva-luna-yoga": {
+    "single": 30,
+    "card_5": 140,
+    "card_10": 270,
+    "card_20": 480,
+    "monthly": 180,
+    "monthly_3": 450,
+    "monthly_6": 840,
+    "annual": 1500,
+    "trial": 20,
+    "currency": "CHF",
+    "source": "https://www.nuevalunayoga.ch/cours-collectifs-yoga-lausanne/",
+    "verified": true,
+    "notes": "Single CHF 30. Trial CHF 20. 10-class pass CHF 270. Monthly unlimited CHF 180. Annual CHF 1500. Children trial free, single CHF 20."
+  },
+
+  "the-yogarden": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.theyogarden.ch/",
+    "verified": false,
+    "notes": "Wix-based website, pricing not extractable from static HTML."
+  },
+
+  "yogaworks-lausanne": {
+    "single": 30,
+    "card_5": 140,
+    "card_10": 260,
+    "card_20": 480,
+    "card_40": 840,
+    "monthly": 160,
+    "monthly_3": 440,
+    "monthly_6": 780,
+    "annual": 1300,
+    "trial": 30,
+    "trial_note": "First class CHF 30, second class free",
+    "currency": "CHF",
+    "source": "https://yogaworks-lausanne.ch/en/prices/",
+    "verified": true,
+    "notes": "Drop-in CHF 30. 10-class card CHF 260. Monthly unlimited CHF 160. Annual CHF 1300. 15% student/unemployed/AVS discount (excl. unlimited). Pre-paid series valid 2 years. Private 60min CHF 100, 90min CHF 120."
+  },
+
+  "yoga-flame-lausanne": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://yogaflame.ch/studios/studio-lausanne/",
+    "verified": false,
+    "notes": "Pricing loaded via Bsport dynamic widget, not accessible from static HTML scraping. Same brand as Yoga Flame Geneve."
+  },
+
+  "yogavaud": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.yogavaud.ch/",
+    "verified": false,
+    "notes": "Domain appears to be parked/for sale. Studio may have moved to a different website."
+  },
+
+  "myoga-studio-lausanne": {
+    "single": 25,
+    "card_5": 120,
+    "card_10": 230,
+    "monthly": null,
+    "trial": 15,
+    "trial_note": "First 2 classes for CHF 30 total (CHF 15 each)",
+    "currency": "CHF",
+    "source": "https://myogastudio.ch/schedule-of-classes/classes-and-prices/",
+    "verified": true,
+    "notes": "Single CHF 25. 5-class card CHF 120. 10-class card CHF 230. First 2 classes CHF 30. Subscriptions are personal, non-reimbursable, and do not expire. Pricing page may be from 2017."
+  },
+
+  "ashtanga-yoga-lausanne": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.ashtanga-yoga-lausanne.com/",
+    "verified": false,
+    "notes": "Wix-based website, pricing not extractable from static HTML. Schedule page returned 404."
+  },
+
+  "imyoga-lausanne": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://imyoga.ch/",
+    "verified": false,
+    "notes": "Pricing loaded dynamically, not extractable. Schedule/rates pages did not contain pricing in static HTML."
+  },
+
+  "yoga-sadhana-lausanne": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://vivre-le-yoga.ch/",
+    "verified": false,
+    "notes": "Pricing pages returned 404. Pricing mentioned but not displayed on main page."
+  },
+
+  "yoga-moves-nyon": {
+    "single": 38,
+    "single_reduced": 35,
+    "card_10": 350,
+    "card_10_reduced": 300,
+    "monthly": 250,
+    "monthly_reduced": 190,
+    "monthly_new_member": 149,
+    "trial": null,
+    "trial_14_days": 89,
+    "trial_note": "14 days unlimited yoga CHF 89",
+    "currency": "CHF",
+    "source": "https://yogamoves.blueleaf.ch/en/subscriptions/",
+    "verified": true,
+    "notes": "Single CHF 38 (reduced under 25 / over 65: CHF 35). 10-class card CHF 350 valid 6 months (reduced CHF 300). Monthly unlimited CHF 250 (reduced CHF 190, new members CHF 149). 14-day trial CHF 89."
+  },
+
+  "yogacenter-montreux": {
+    "single": 35,
+    "card_12": 350,
+    "card_24": 595,
+    "card_36": 720,
+    "card_10": null,
+    "monthly": null,
+    "trial": 20,
+    "online_single": 15,
+    "online_card_12": 120,
+    "currency": "CHF",
+    "source": "https://yogacenter.ch/prix/",
+    "verified": true,
+    "notes": "Single in-person CHF 35. Trial CHF 20. 12-class pack CHF 350 (4 months). 24-class pack CHF 595 (8 months). 36-class pack CHF 720 (12 months). Online single CHF 15. Private CHF 120/h."
+  },
+
+  "casa-vinyasa-vevey": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://practiceashtangayoga.com/",
+    "verified": false,
+    "notes": "Website returned SSL error (526). Momoyoga booking page showed schedule but no pricing."
+  },
+
+  "terre-du-yoga-vevey": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://terreduyoga.com/",
+    "verified": false,
+    "notes": "Domain redirects to caroledalmas.com (301). Studio may have rebranded or closed."
+  },
+
+  "sundora-shala-pully": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.sundorashala.com/classes",
+    "verified": false,
+    "notes": "Wix-based website, pricing not extractable from static HTML."
+  },
+
+  "yoga-pour-tous-nyon": {
+    "single": 30,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "private": 120,
+    "workshop_3h": 70,
+    "currency": "CHF",
+    "source": "https://www.yogapourtous-nyon.ch/tarifs/",
+    "verified": true,
+    "notes": "Group class CHF 30/hour. Private session at home CHF 120/60min. Monthly themed workshop CHF 70/3h. No 10-class card or monthly subscription listed."
+  }
+}

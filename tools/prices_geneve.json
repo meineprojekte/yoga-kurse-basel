@@ -1,0 +1,248 @@
+{
+  "last_updated": "2026-03-21",
+  "notes": "Prices scraped from studio websites. 'verified: true' means prices were found on the website. 'verified: false' means prices could not be confirmed online.",
+
+  "yoga7-geneve": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://yoga7.com/",
+    "verified": false,
+    "notes": "Website did not expose pricing on accessible pages. Pricing pages returned 404."
+  },
+
+  "innercityoga": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.innercityoga.com/",
+    "verified": false,
+    "notes": "Website connection refused (ECONNREFUSED). Studio may have changed domain or be temporarily offline."
+  },
+
+  "yoga-flame-geneve": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://yogaflame.ch/classes/prices/",
+    "verified": false,
+    "notes": "Pricing loaded via Bsport dynamic widget, not accessible from static HTML scraping."
+  },
+
+  "yoga-lab-geneve": {
+    "single": 30,
+    "single_75_90min": 35,
+    "card_10_60min": 270,
+    "card_10_90min": 300,
+    "card_10": 270,
+    "card_20_60min": 520,
+    "card_20_90min": 570,
+    "monthly": 195,
+    "monthly_3": 550,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.lab.yoga/cours",
+    "verified": true,
+    "notes": "Single 60min CHF 30, 75-90min CHF 35. Cash/TWINT only. Student/unemployed discounts available. Private CHF 130/h. Monthly unlimited CHF 195, trimester CHF 550."
+  },
+
+  "fancy-yoga-geneve": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.fancy.yoga/",
+    "verified": false,
+    "notes": "Wix-based website, pricing not extractable from static HTML."
+  },
+
+  "sakura-yoga-geneve": {
+    "single": 30,
+    "single_online": 20,
+    "card_8": 210,
+    "card_8_online": 140,
+    "card_10": null,
+    "monthly": 180,
+    "annual": 1650,
+    "trial": 30,
+    "trial_note": "First class CHF 30, second class free",
+    "currency": "CHF",
+    "source": "https://www.thesakurayoga.com/fr/tarifs",
+    "verified": true,
+    "notes": "8-class card valid 9 weeks. Monthly unlimited studio+online CHF 180. Private 60min CHF 130 in-person, CHF 60 online. 10%/15% off for 5/10 private packs."
+  },
+
+  "colife-geneve": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": 15,
+    "trial_note": "3 trial classes for CHF 45 (CHF 15 each)",
+    "currency": "CHF",
+    "source": "https://colife.ch/studio-yoga-geneve/",
+    "verified": false,
+    "notes": "Trial offer: 3 cours d'essai 45 CHF found in page title. Full pricing loaded dynamically, not extractable."
+  },
+
+  "sol-studio-geneve": {
+    "single": 35,
+    "single_immersive": 40,
+    "card_5": 165,
+    "card_10": 310,
+    "card_15": 445,
+    "card_20": 540,
+    "monthly": 250,
+    "monthly_combined": 440,
+    "trial": 20,
+    "trial_note": "Trial Sol Yoga CHF 20, expires 14 days after purchase",
+    "currency": "CHF",
+    "source": "https://solstudio.ch/sol-yoga/",
+    "verified": true,
+    "notes": "Drop-in CHF 35 (1 month validity). Sol Immersive drop-in CHF 40. 10-class pack valid 6 months. Unlimited yoga+reformer CHF 440/month."
+  },
+
+  "swiss-pilates-yoga-geneve": {
+    "single": 38,
+    "card_12": 360,
+    "card_10": null,
+    "monthly_1x_week": 140,
+    "monthly": 299,
+    "monthly_student": 220,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://swisspilatesandyoga.com/tarifs/",
+    "verified": true,
+    "notes": "12-class card (3 months) CHF 360 = CHF 30/class. Monthly 1x/week CHF 140 = CHF 32.50/class. Unlimited CHF 299, student/senior CHF 220."
+  },
+
+  "akta-yoga-geneve": {
+    "single": 37,
+    "card_5": 175,
+    "card_10": 328,
+    "card_15": 460,
+    "card_20": 593,
+    "monthly": 245,
+    "monthly_3": 690,
+    "monthly_6": 1058,
+    "annual": 2000,
+    "trial": 22,
+    "currency": "CHF",
+    "source": "https://www.aktayoga.ch/fr/subscriptions/",
+    "verified": true,
+    "notes": "Trial class CHF 22 (new customers only). 10-class card CHF 328. Monthly unlimited CHF 245. Annual unlimited CHF 2000."
+  },
+
+  "yoga-shambala-carouge": {
+    "single": 30,
+    "card_5": 100,
+    "card_10": null,
+    "monthly": 100,
+    "monthly_note": "6 classes per month (CHF 16.50/class)",
+    "monthly_student": 90,
+    "trial": 30,
+    "currency": "CHF",
+    "source": "https://www.yoga-shambala.ch/horaires-tarifs.html",
+    "verified": true,
+    "notes": "5-class card CHF 100 (valid 6 months, CHF 20/class). Monthly CHF 100 for 6 classes. Student/AVS/AI CHF 90 for 6 classes. Payment in advance."
+  },
+
+  "deva-yoga-carouge": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://deva-yoga.ch/tarifs/",
+    "verified": false,
+    "notes": "Divi WordPress site, pricing loaded dynamically. Not extractable from static HTML."
+  },
+
+  "yoga-nest-carouge": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://yoga-nest.com/",
+    "verified": false,
+    "notes": "No pricing page found. /pricing returned 404."
+  },
+
+  "yoginimage-lancy": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": 20,
+    "trial_120min": 30,
+    "currency": "CHF",
+    "source": "https://www.yoginimage.ch/planning-et-tarif",
+    "verified": false,
+    "notes": "Trial class CHF 20 (60/75min), CHF 30 (120min). 10-class card and annual subscriptions mentioned but prices not listed. Contact studio for full pricing."
+  },
+
+  "ka-studio-geneve": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "annual": 5400,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.kastudio.ch/passesandmembership",
+    "verified": false,
+    "notes": "Annual membership CHF 5400/year (12-month commitment). Individual class and pass pricing loaded via Bsport widget, not extractable."
+  },
+
+  "ar-yoga-geneve": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://aryoga.ch/",
+    "verified": false,
+    "notes": "Divi WordPress site, /tarifs returned 404. Pricing not found."
+  },
+
+  "yoga-geneve-studio": {
+    "single": 35,
+    "card_10": 270,
+    "card_20": 490,
+    "monthly": null,
+    "trial": null,
+    "trial_3_classes": 50,
+    "trial_note": "3 discovery classes CHF 50 (new members, valid 21 days)",
+    "currency": "CHF",
+    "source": "https://yogageneve.com/pricing",
+    "verified": true,
+    "notes": "Drop-in CHF 35. 10-class Pass Evolution CHF 270 (valid 120 days). 20-class Pass Serenite CHF 490 (valid 365 days). Discovery 3 classes CHF 50."
+  },
+
+  "yoga-sha-geneve": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://yogasha.ch/",
+    "verified": false,
+    "notes": "Divi WordPress site, pricing not extractable. /tarifs returned 404."
+  },
+
+  "la-perle-de-letre": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.laperledeletre.com/",
+    "verified": false,
+    "notes": "Wix-based website, pricing not extractable from static HTML."
+  }
+}

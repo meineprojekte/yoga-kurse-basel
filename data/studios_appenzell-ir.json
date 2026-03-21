@@ -42,12 +42,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 29,
-        "card_10": 274,
-        "monthly": 186,
-        "trial": 20,
+        "single": 30,
+        "card_10": 280,
+        "trial": 0,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://studiomond.ch/preise/"
       }
     },
     {
@@ -84,15 +84,7 @@
       "lat": 47.3298,
       "lng": 9.4102,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 22,
-        "card_10": 199,
-        "monthly": 131,
-        "trial": 14,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-appenzell-andrea-manser",
@@ -128,15 +120,7 @@
       "lat": 47.3314,
       "lng": 9.409,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 29,
-        "card_10": 274,
-        "monthly": 186,
-        "trial": 20,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     }
   ]
 }

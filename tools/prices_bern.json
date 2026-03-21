@@ -1,0 +1,286 @@
+{
+  "last_scraped": "2026-03-21",
+  "notes": "Real pricing scraped from studio websites. Studios marked verified=true have prices confirmed from their websites. Studios marked verified=false could not have prices confirmed (Wix rendering issues, 404s, connection refused, etc.).",
+  "studios": {
+    "yama-yoga-bern": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yamabern.ch/",
+      "verified": false,
+      "note": "Wix site - pricing not accessible via scraping. Tried /preise, /pricing, /tarife - all 404."
+    },
+    "yoga-carmen-bern": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yoga-carmen.ch/",
+      "verified": false,
+      "note": "Wix site - pricing not rendered in HTML. Tried /preise, /angebot, /preise-1 - all 404."
+    },
+    "yoga-luna-bern": {
+      "single": 30,
+      "card_10": 270,
+      "monthly": 220,
+      "trial": 50,
+      "currency": "CHF",
+      "source": "https://www.yogaluna.ch/preis",
+      "verified": true,
+      "note": "Single 30 CHF (discounted 25), Luna 5 = 140 CHF, Luna 10 = 270 CHF (discounted 220). Probe Abo = 50 CHF for 3 classes. Monthly unlimited = 220 CHF. Discounts for students, IV, single parents, KulturLegi."
+    },
+    "svarupa-yoga-bern": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://svarupa.com/prices/",
+      "verified": false,
+      "note": "Prices page exists but content loaded dynamically via Punchpass - not accessible via scraping."
+    },
+    "yogveda-bern": {
+      "single": 30,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yogveda.ch/",
+      "verified": false,
+      "note": "Only schema.org priceRange '30 CHF' found in metadata. Full pricing not accessible. Tried /preise, /angebot - 404."
+    },
+    "iyengar-yoga-bern": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.iyengar-yoga-bern.ch/",
+      "verified": false,
+      "note": "Wix site - pricing not rendered in HTML. Tried /preise, /tarife - 404."
+    },
+    "yogaalaya-bern": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yoga-bern.ch/",
+      "verified": false,
+      "note": "No pricing found on homepage. Tried /en/index.php/fees/ - 404. Contact studio directly."
+    },
+    "hot-yoga-christoph-herren": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.hotyogachristophherren.ch/",
+      "verified": false,
+      "note": "Wix site - pricing not rendered in HTML. Tried /preise, /angebot - no content accessible."
+    },
+    "hot-yoga-bern": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://hotyogabern.ch/",
+      "verified": false,
+      "note": "Connection refused (ECONNREFUSED). Website may be down or blocking automated requests."
+    },
+    "hothaus-bern": {
+      "single": 38,
+      "card_10": 350,
+      "monthly": 250,
+      "trial": 50,
+      "currency": "CHF",
+      "source": "https://www.hothausyoga.com/pricing",
+      "verified": true,
+      "note": "Single 1h = 38 CHF, 1h+ = 40 CHF. 10-class pack = 350 CHF (valid 3 months). Monthly unlimited = 250 CHF. 3 months = 600 CHF. 1 year = 2000 CHF. Intro: 50 CHF for 10 days unlimited (new students)."
+    },
+    "yogamarket-bern": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://yogamarket.ch/",
+      "verified": false,
+      "note": "Cookie consent overlay blocks content. Tried /preise/, /klassen/preise/ - no pricing data accessible."
+    },
+    "dayayoga-bern": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.jivamuktiyogabern.ch/",
+      "verified": false,
+      "note": "Connection refused (ECONNREFUSED). Website may be down."
+    },
+    "hrdayam-bern": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://hrdayam.ch/",
+      "verified": false,
+      "note": "Non-profit, 'Pay what you can' model. No fixed prices listed on website or Momoyoga schedule page."
+    },
+    "inside-outside-bern": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.insideoutside.ch/",
+      "verified": false,
+      "note": "Wix site - pricing not rendered in HTML. Eversports booking page returned 403. Tried /preise - 404."
+    },
+    "openyoga-bern": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.open-yoga.ch/",
+      "verified": false,
+      "note": "No pricing or Abo links found on website. Books via SportsNow. Tried /de/preise.html, /de/abo-preise.html - 404."
+    },
+    "origin8-bern": {
+      "single": 20,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://origin8.ch/",
+      "verified": false,
+      "note": "Only online class price found: 20 CHF/class. Studio class pricing not displayed. Tried /preise, /angebot - 404."
+    },
+    "grey-rebel-bern": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.grey-rebel.com/",
+      "verified": false,
+      "note": "Wix site - pricing not rendered in HTML. Tried /preise - 404."
+    },
+    "natha-yoga-bern": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.natha-yoga-schweiz.ch/",
+      "verified": false,
+      "note": "Wix site - pricing not rendered in HTML. Tried /preise, /tarife - 404."
+    },
+    "yogabern-iyengar": {
+      "single": 40,
+      "card_10": 250,
+      "monthly": null,
+      "trial": 30,
+      "currency": "CHF",
+      "source": "https://yogabern.ch/de/kurse",
+      "verified": true,
+      "note": "Single class (Einzellektion) = 40 CHF. Trial class (Probelektion) = 30 CHF. Intro 10-class course = 250 CHF. Quarterly (10 weeks, 1x/week) = 350 CHF. Semester (20 weeks, 1x/week) = 665 CHF. Annual (40 weeks, 1x/week) = 1260 CHF. Student quarter (under 29) = 220 CHF."
+    },
+    "vayam-yoga-bern": {
+      "single": 37,
+      "card_10": 270,
+      "monthly": 250,
+      "trial": 20,
+      "currency": "CHF",
+      "source": "https://www.vayamyoga.com/",
+      "verified": true,
+      "note": "Drop-in = 37 CHF. Trial = 20 CHF. 5-class 75min = 145 CHF, 90min = 170 CHF. 10-class 75min = 270 CHF, 90min = 320 CHF. Monthly unlimited = 250 CHF. Access Class = 10-35 CHF sliding scale."
+    },
+    "devi-yoga-bern": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.devi-yoga-health.ch/",
+      "verified": false,
+      "note": "Only workshop pricing found: Yoga Nidra & Atem Workshop = 40 CHF. HypnoBirthing = 195 CHF/4h/couple. Regular class prices not listed on main page."
+    },
+    "yogakaleidoskop-bern": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yogakaleidoskop.ch/",
+      "verified": false,
+      "note": "Domain redirects to innerlightacademy.ch (301). May have rebranded. No pricing found on redirected site."
+    },
+    "yoga-and-more-bern": {
+      "single": 33,
+      "card_10": null,
+      "monthly": null,
+      "trial": 0,
+      "currency": "CHF",
+      "source": "https://www.yoga-and-more.ch/",
+      "verified": true,
+      "note": "Single class = 33 CHF. Free trial class (Schnupperstunde gratis). 6-class coupon = 200 CHF (valid 3 months). Quarterly subscription = 330 CHF. No standard 10-class card. Student discounts available. Yoga coaching 1:1 = 85 CHF/60min."
+    },
+    "energie-yoga-bern": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://energieyoga.ch/",
+      "verified": false,
+      "note": "No pricing found on homepage. Tried /preise, /angebot - 404."
+    },
+    "soulspace-koeniz": {
+      "single": 30,
+      "card_10": 250,
+      "monthly": null,
+      "trial": 20,
+      "currency": "CHF",
+      "source": "https://soulspace-koeniz.ch/preise-abos",
+      "verified": true,
+      "note": "Single 60min = 30 CHF, 75min = 35 CHF. 5-class 60min = 135 CHF, 75min = 145 CHF. 10-class 60min = 250 CHF, 75min = 285 CHF. Trial = 20 CHF. Annual membership = 2160 CHF. Private lesson = 180 CHF/60min."
+    },
+    "yoga-room-koeniz-thun": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yoga-room.ch/",
+      "verified": false,
+      "note": "Domain blocked by security policy. /preise page exists but content loaded dynamically - not accessible."
+    },
+    "yoga-bude-thun": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yogabude.ch/",
+      "verified": false,
+      "note": "Wix site - pricing not rendered in HTML. Eversports returned 403. Tried /preise - 404."
+    },
+    "yoga-club-biel": {
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "currency": "CHF",
+      "source": "https://www.yoga-club.ch/prix/",
+      "verified": false,
+      "note": "Prix page exists but prices are in a PDF flyer/image - not extractable via scraping."
+    }
+  }
+}

@@ -39,15 +39,7 @@
       "lat": 47.2088,
       "lng": 7.5372,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 32,
-        "card_10": 287,
-        "monthly": 197,
-        "trial": 22,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "sunshine-yoga-solothurn",
@@ -86,15 +78,7 @@
       "lat": 47.207,
       "lng": 7.53,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 30,
-        "card_10": 272,
-        "monthly": 187,
-        "trial": 20,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "diamond-yoga-solothurn",
@@ -132,12 +116,11 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 25,
-        "card_10": 222,
-        "monthly": 152,
-        "trial": 16,
+        "single": 23,
+        "trial": 0,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.diamond-yoga.ch/"
       }
     },
     {
@@ -173,15 +156,7 @@
       "lat": 47.2082,
       "lng": 7.534,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 32,
-        "card_10": 285,
-        "monthly": 196,
-        "trial": 22,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "om-yogaroom-solothurn",
@@ -222,12 +197,11 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 29,
-        "card_10": 257,
-        "monthly": 176,
-        "trial": 19,
+        "single": 25,
+        "card_10": 250,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.om-yogaroom.ch/"
       }
     },
     {
@@ -266,15 +240,7 @@
       "lat": 47.2095,
       "lng": 7.535,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 31,
-        "card_10": 276,
-        "monthly": 190,
-        "trial": 22,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "downtown-yoga-olten",
@@ -319,12 +285,13 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 34,
-        "card_10": 302,
-        "monthly": 207,
-        "trial": 23,
+        "single": 30,
+        "card_10": 280,
+        "monthly": 215,
+        "trial": 25,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://downtownyoga.ch/kurse-preise/"
       }
     },
     {
@@ -359,15 +326,7 @@
       "lat": 47.348,
       "lng": 7.899,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 30,
-        "card_10": 268,
-        "monthly": 184,
-        "trial": 21,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     }
   ]
 }

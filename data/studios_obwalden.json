@@ -37,12 +37,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 24,
-        "card_10": 228,
-        "monthly": 152,
-        "trial": 16,
+        "single": 29,
+        "card_10": 261,
+        "trial": 20,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://goyoga.ch/stundenplan-2.html"
       }
     },
     {
@@ -81,15 +81,7 @@
       "lat": 46.885,
       "lng": 8.24,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 26,
-        "card_10": 239,
-        "monthly": 159,
-        "trial": 17,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     }
   ]
 }

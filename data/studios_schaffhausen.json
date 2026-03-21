@@ -38,12 +38,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 28,
-        "card_10": 249,
-        "monthly": 170,
-        "trial": 18,
+        "single": 30,
+        "card_10": 280,
+        "trial": 20,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.ayanayoga.ch/abos-preise/"
       }
     },
     {
@@ -77,15 +77,7 @@
       "lat": 47.6966,
       "lng": 8.6356,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 23,
-        "card_10": 202,
-        "monthly": 139,
-        "trial": 14,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yogaschule-narayana-schaffhausen",
@@ -119,15 +111,7 @@
       "lat": 47.701,
       "lng": 8.636,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 23,
-        "card_10": 203,
-        "monthly": 140,
-        "trial": 14,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     }
   ]
 }

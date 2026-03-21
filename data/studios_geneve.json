@@ -37,15 +37,7 @@
       "lat": 46.202,
       "lng": 6.1565,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 41,
-        "card_10": 374,
-        "monthly": 274,
-        "trial": 29,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "innercityoga",
@@ -87,15 +79,7 @@
       "lat": 46.2025,
       "lng": 6.1555,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 30,
-        "card_10": 273,
-        "monthly": 183,
-        "trial": 20,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-flame-geneve",
@@ -138,15 +122,7 @@
       "lat": 46.204,
       "lng": 6.148,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 41,
-        "card_10": 373,
-        "monthly": 261,
-        "trial": 29,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-lab-geneve",
@@ -186,12 +162,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 38,
-        "card_10": 345,
-        "monthly": 249,
-        "trial": 27,
+        "single": 30,
+        "card_10": 270,
+        "monthly": 195,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.lab.yoga/cours"
       }
     },
     {
@@ -234,15 +210,7 @@
       "lat": 46.201,
       "lng": 6.1495,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 40,
-        "card_10": 362,
-        "monthly": 263,
-        "trial": 28,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "sakura-yoga-geneve",
@@ -282,12 +250,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 31,
-        "card_10": 278,
-        "monthly": 187,
-        "trial": 21,
+        "single": 30,
+        "monthly": 180,
+        "trial": 30,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.thesakurayoga.com/fr/tarifs"
       }
     },
     {
@@ -338,15 +306,7 @@
       "lat": 46.2185,
       "lng": 6.1375,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 33,
-        "card_10": 295,
-        "monthly": 203,
-        "trial": 22,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "sol-studio-geneve",
@@ -388,12 +348,13 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 39,
-        "card_10": 348,
-        "monthly": 251,
-        "trial": 27,
+        "single": 35,
+        "card_10": 310,
+        "monthly": 250,
+        "trial": 20,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://solstudio.ch/sol-yoga/"
       }
     },
     {
@@ -435,12 +396,11 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 33,
-        "card_10": 299,
-        "monthly": 206,
-        "trial": 23,
+        "single": 38,
+        "monthly": 299,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://swisspilatesandyoga.com/tarifs/"
       }
     },
     {
@@ -487,12 +447,13 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 42,
-        "card_10": 382,
-        "monthly": 280,
-        "trial": 31,
+        "single": 37,
+        "card_10": 328,
+        "monthly": 245,
+        "trial": 22,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.aktayoga.ch/fr/subscriptions/"
       }
     },
     {
@@ -532,12 +493,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 33,
-        "card_10": 297,
-        "monthly": 204,
-        "trial": 22,
+        "single": 30,
+        "monthly": 100,
+        "trial": 30,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.yoga-shambala.ch/horaires-tarifs.html"
       }
     },
     {
@@ -577,15 +538,7 @@
       "lat": 46.182,
       "lng": 6.137,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 32,
-        "card_10": 286,
-        "monthly": 195,
-        "trial": 21,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-nest-carouge",
@@ -628,15 +581,7 @@
       "lat": 46.1845,
       "lng": 6.1385,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 39,
-        "card_10": 353,
-        "monthly": 255,
-        "trial": 28,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoginimage-lancy",
@@ -678,15 +623,7 @@
       "lat": 46.177,
       "lng": 6.1285,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 42,
-        "card_10": 378,
-        "monthly": 278,
-        "trial": 30,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "ka-studio-geneve",
@@ -725,15 +662,7 @@
       "lat": 46.202,
       "lng": 6.1605,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 32,
-        "card_10": 291,
-        "monthly": 205,
-        "trial": 22,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "ar-yoga-geneve",
@@ -775,15 +704,7 @@
       "lat": 46.2035,
       "lng": 6.16,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 34,
-        "card_10": 305,
-        "monthly": 211,
-        "trial": 23,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-geneve-studio",
@@ -823,12 +744,11 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 41,
-        "card_10": 375,
-        "monthly": 266,
-        "trial": 29,
+        "single": 35,
+        "card_10": 270,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://yogageneve.com/pricing"
       }
     },
     {
@@ -872,15 +792,7 @@
       "lat": 46.1845,
       "lng": 6.137,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 32,
-        "card_10": 296,
-        "monthly": 211,
-        "trial": 22,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "la-perle-de-letre",
@@ -914,15 +826,7 @@
       "lat": 46.2044,
       "lng": 6.1432,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 27,
-        "card_10": 244,
-        "monthly": 162,
-        "trial": 18,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     }
   ]
 }

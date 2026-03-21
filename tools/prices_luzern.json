@@ -1,0 +1,191 @@
+{
+  "last_updated": "2026-03-21",
+  "notes": "Prices scraped from studio websites. 'verified: true' means prices were found on the website. 'verified: false' means prices could not be confirmed online.",
+
+  "yogastudio-luzern": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.yogastudio.ch/preise",
+    "verified": false,
+    "notes": "Pricing page exists but prices are embedded in an image (Preise Abos.jpg). Could not extract text values."
+  },
+
+  "liv-lab": {
+    "single": 33,
+    "card_10": 303,
+    "monthly": 343,
+    "trial": 80,
+    "trial_note": "10 consecutive days unlimited",
+    "card_20": 553,
+    "currency": "CHF",
+    "source": "https://www.livlab.ch/en/prices",
+    "verified": true,
+    "notes": "10-class card valid 6 months. 20-class card 553 CHF (12 months). Monthly = 1-month unlimited. Student discount 20%. Livestream single 22 CHF."
+  },
+
+  "ashtanga-luzern": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://ashtanga-luzern.ch/classes/prices/",
+    "verified": false,
+    "notes": "Pricing page exists. Meta description says trial classes at half price for first-time local students. Content rendered dynamically, prices not extractable."
+  },
+
+  "original-hot-yoga-luzern": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": 50,
+    "trial_note": "10 days unlimited access for 50 CHF (new members only)",
+    "currency": "CHF",
+    "source": "https://originalhotyoga.net/",
+    "verified": false,
+    "notes": "Trial offer confirmed (10 days / 50 CHF). Full pricing handled via Eversports app, not on website."
+  },
+
+  "mii-ruum": {
+    "single": 35,
+    "single_cat2": 38,
+    "card_5": 170,
+    "card_10": null,
+    "monthly": 240,
+    "trial": 60,
+    "trial_note": "3-class trial pass valid 3 weeks (excl. postnatal/special)",
+    "annual_unlimited": 1999,
+    "currency": "CHF",
+    "source": "https://mii-ruum.ch/kurse1/preise",
+    "verified": true,
+    "notes": "Single Cat 1: 35, Cat 2 (Aerial): 38. 5er-Abo 170 (12 weeks, incl. Aerial). Monthly unlimited 240 (30 days, excl. pre/postnatal). Annual 40-lesson pass 1020. Annual unlimited 1999. Private 120/h, Aerial private 130/h."
+  },
+
+  "yogagemeinschaft-luzern": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://luzern-yoga.ch/",
+    "verified": false,
+    "notes": "No pricing found on website. Classes recognized by health insurance."
+  },
+
+  "studio-fayo": {
+    "single": 34,
+    "card_10": 300,
+    "monthly": null,
+    "trial": null,
+    "three_month": 650,
+    "currency": "CHF",
+    "source": "https://studiofayo.com/",
+    "verified": true,
+    "notes": "Drop-in 34 CHF. 10-class pass 300 (valid 6 months). 3-month sub 650. FAYO Lab 38. Private 130. 10% discount for students and seniors."
+  },
+
+  "yogasitz-luzern": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://yogasitz.ch/index.php/angebot/",
+    "verified": false,
+    "notes": "Booking page found but no prices displayed. Courses recognized by health insurance."
+  },
+
+  "om-shanti-luzern": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.yogaschuleluzern.ch/",
+    "verified": false,
+    "notes": "Schedule page found but no pricing information displayed."
+  },
+
+  "yogaraum-luzern": {
+    "single": 30,
+    "card_10": 250,
+    "monthly": null,
+    "trial": 25,
+    "currency": "CHF",
+    "source": "https://www.yogaraum-luzern.ch/",
+    "verified": true,
+    "notes": "Single 30 CHF, trial 25 CHF, 10er Abo 250 (valid 4 months). Private 120 CHF/60min. Health insurance reimbursement possible."
+  },
+
+  "yoga-mit-herz": {
+    "single": 35,
+    "card_10": null,
+    "monthly": null,
+    "trial": 25,
+    "trimester": 28,
+    "trimester_student": 26,
+    "currency": "CHF",
+    "source": "https://www.yogamitherz.com/Angebot/Preise/",
+    "verified": true,
+    "notes": "Single 35, trial 25. Trimester-based subscription: 28/class (75min). Student trimester: 26/class. Private 120 CHF/60min, semi-private 160/60min for 2."
+  },
+
+  "der-raum-horw": {
+    "single": 29,
+    "card_10": null,
+    "monthly": null,
+    "trial": 0,
+    "trial_note": "Free trial lesson (Schnupper-Lektion GRATIS)",
+    "currency": "CHF",
+    "source": "https://www.derraum.ch/yoga-kurse-mit-verena-naepflin-in-horw/",
+    "verified": true,
+    "notes": "Single 75min 29 CHF. Online single 20 CHF. Free trial lesson. Private 120 CHF/60min. Saturday workshop 50 CHF/2.5h. Yin Yoga Friday 50 CHF/2.5h."
+  },
+
+  "kundalini-yoga-emmen": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.yoga-kundalini.net/",
+    "verified": false,
+    "notes": "No pricing found on website. Course descriptions only."
+  },
+
+  "pure-you-yoga-horw": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.pureyouyoga.ch/abo-preise",
+    "verified": false,
+    "notes": "Pricing page exists (abo-preise) but Wix site renders dynamically, content not extractable."
+  },
+
+  "yoga-veda-luzern": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.yoga-veda-ausbildungen.ch/",
+    "verified": false,
+    "notes": "Teacher training focused. Workshop pricing only. Regular class prices not listed."
+  },
+
+  "yogakurse-horw": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.yogakurse-horw.ch/",
+    "verified": false,
+    "notes": "Wix site renders dynamically, content not extractable."
+  }
+}

@@ -40,15 +40,7 @@
       "lat": 46.9474,
       "lng": 7.453,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 37,
-        "card_10": 332,
-        "monthly": 237,
-        "trial": 26,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-carmen-bern",
@@ -95,15 +87,7 @@
       "lat": 46.949,
       "lng": 7.44,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 36,
-        "card_10": 325,
-        "monthly": 230,
-        "trial": 25,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-luna-bern",
@@ -146,12 +130,13 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 37,
-        "card_10": 335,
-        "monthly": 239,
-        "trial": 26,
+        "single": 30,
+        "card_10": 270,
+        "monthly": 220,
+        "trial": 50,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.yogaluna.ch/preis"
       }
     },
     {
@@ -204,15 +189,7 @@
       "lat": 46.9535,
       "lng": 7.441,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 31,
-        "card_10": 282,
-        "monthly": 191,
-        "trial": 21,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yogveda-bern",
@@ -254,15 +231,7 @@
       "lat": 46.9472,
       "lng": 7.452,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 36,
-        "card_10": 329,
-        "monthly": 233,
-        "trial": 25,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "iyengar-yoga-bern",
@@ -299,15 +268,7 @@
       "lat": 46.952,
       "lng": 7.438,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 37,
-        "card_10": 333,
-        "monthly": 244,
-        "trial": 26,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yogaalaya-bern",
@@ -345,15 +306,7 @@
       "lat": 46.945,
       "lng": 7.435,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 37,
-        "card_10": 336,
-        "monthly": 240,
-        "trial": 26,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "hot-yoga-christoph-herren",
@@ -389,15 +342,7 @@
       "lat": 46.955,
       "lng": 7.435,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 32,
-        "card_10": 288,
-        "monthly": 194,
-        "trial": 22,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "hot-yoga-bern",
@@ -432,15 +377,7 @@
       "lat": 46.9482,
       "lng": 7.4398,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 40,
-        "card_10": 359,
-        "monthly": 259,
-        "trial": 28,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "hothaus-bern",
@@ -478,12 +415,13 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 45,
-        "card_10": 405,
-        "monthly": 292,
-        "trial": 31,
+        "single": 38,
+        "card_10": 350,
+        "monthly": 250,
+        "trial": 50,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.hothausyoga.com/pricing"
       }
     },
     {
@@ -520,15 +458,7 @@
       "lat": 46.947,
       "lng": 7.4505,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 35,
-        "card_10": 311,
-        "monthly": 218,
-        "trial": 24,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "dayayoga-bern",
@@ -575,15 +505,7 @@
       "lat": 46.953,
       "lng": 7.429,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 32,
-        "card_10": 283,
-        "monthly": 191,
-        "trial": 21,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "hrdayam-bern",
@@ -621,15 +543,7 @@
       "lat": 46.9476,
       "lng": 7.4545,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 32,
-        "card_10": 292,
-        "monthly": 206,
-        "trial": 22,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "inside-outside-bern",
@@ -666,15 +580,7 @@
       "lat": 46.9478,
       "lng": 7.4462,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 34,
-        "card_10": 308,
-        "monthly": 214,
-        "trial": 23,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "openyoga-bern",
@@ -719,15 +625,7 @@
       "lat": 46.9475,
       "lng": 7.4515,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 42,
-        "card_10": 379,
-        "monthly": 279,
-        "trial": 30,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "origin8-bern",
@@ -765,15 +663,7 @@
       "lat": 46.952,
       "lng": 7.428,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 39,
-        "card_10": 350,
-        "monthly": 253,
-        "trial": 27,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "grey-rebel-bern",
@@ -812,15 +702,7 @@
       "lat": 46.9478,
       "lng": 7.45,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 30,
-        "card_10": 270,
-        "monthly": 180,
-        "trial": 20,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "natha-yoga-bern",
@@ -863,15 +745,7 @@
       "lat": 46.954,
       "lng": 7.439,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 41,
-        "card_10": 368,
-        "monthly": 269,
-        "trial": 29,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yogabern-iyengar",
@@ -907,12 +781,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 35,
-        "card_10": 316,
-        "monthly": 229,
-        "trial": 24,
+        "single": 40,
+        "card_10": 250,
+        "trial": 30,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://yogabern.ch/de/kurse"
       }
     },
     {
@@ -949,12 +823,13 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 35,
-        "card_10": 315,
-        "monthly": 228,
-        "trial": 24,
+        "single": 37,
+        "card_10": 270,
+        "monthly": 250,
+        "trial": 20,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.vayamyoga.com/"
       }
     },
     {
@@ -995,15 +870,7 @@
       "lat": 46.943,
       "lng": 7.434,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 31,
-        "card_10": 276,
-        "monthly": 185,
-        "trial": 21,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yogakaleidoskop-bern",
@@ -1042,15 +909,7 @@
       "lat": 46.942,
       "lng": 7.439,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 34,
-        "card_10": 302,
-        "monthly": 209,
-        "trial": 23,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-and-more-bern",
@@ -1089,12 +948,11 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 40,
-        "card_10": 363,
-        "monthly": 265,
-        "trial": 28,
+        "single": 33,
+        "trial": 0,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://www.yoga-and-more.ch/"
       }
     },
     {
@@ -1136,15 +994,7 @@
       "lat": 46.773,
       "lng": 7.631,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 29,
-        "card_10": 258,
-        "monthly": 176,
-        "trial": 20,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "soulspace-koeniz",
@@ -1189,12 +1039,12 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 35,
-        "card_10": 320,
-        "monthly": 225,
-        "trial": 25,
+        "single": 30,
+        "card_10": 250,
+        "trial": 20,
         "currency": "CHF",
-        "note": "Richtpreise"
+        "verified": true,
+        "source": "https://soulspace-koeniz.ch/preise-abos"
       }
     },
     {
@@ -1239,15 +1089,7 @@
       "lat": 46.919,
       "lng": 7.41,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 34,
-        "card_10": 306,
-        "monthly": 213,
-        "trial": 23,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-bude-thun",
@@ -1291,15 +1133,7 @@
       "lat": 46.758,
       "lng": 7.629,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 30,
-        "card_10": 272,
-        "monthly": 182,
-        "trial": 20,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     },
     {
       "id": "yoga-club-biel",
@@ -1340,15 +1174,7 @@
       "lat": 47.137,
       "lng": 7.246,
       "active": true,
-      "classes": [],
-      "pricing": {
-        "single": 34,
-        "card_10": 310,
-        "monthly": 216,
-        "trial": 24,
-        "currency": "CHF",
-        "note": "Richtpreise"
-      }
+      "classes": []
     }
   ]
 }

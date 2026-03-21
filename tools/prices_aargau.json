@@ -1,0 +1,142 @@
+{
+  "last_updated": "2026-03-21",
+  "notes": "Prices scraped from studio websites. 'verified: true' means prices were found on the website. 'verified: false' means prices could not be confirmed online.",
+
+  "aloha-yoga-aarau": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": 65,
+    "trial_note": "Kenne-Lern-Abo: 65 CHF for 3 classes within 1 month",
+    "card_5": null,
+    "card_5_note": "5er Karte available, must be used within 2 months (price not listed)",
+    "currency": "CHF",
+    "source": "https://www.alohayoga.ch/preise",
+    "verified": false,
+    "notes": "Trial offer confirmed (65 CHF / 3 classes). Full pricing handled via Eversports, specific values not extractable from website."
+  },
+
+  "co-yoga-space-aarau": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://coyogaspace.ch/",
+    "verified": false,
+    "notes": "Pricing handled via Eversports. No prices displayed on studio website."
+  },
+
+  "my-yoga-garden-suhr": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.my-yoga-garden.ch/",
+    "verified": false,
+    "notes": "Wix site renders dynamically, content not extractable."
+  },
+
+  "iyengar-yoga-aarau": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://yogaiyengar.ch/",
+    "verified": false,
+    "notes": "No pricing found on website. Kurse page returns 404."
+  },
+
+  "aurum-raum-fuer-yoga-aarau": {
+    "single": 40,
+    "card_10": 320,
+    "card_10_75min": 300,
+    "monthly": null,
+    "trial": 35,
+    "annual": 1100,
+    "annual_student": 900,
+    "currency": "CHF",
+    "source": "https://raum-fuer-yoga.ch/preise",
+    "verified": true,
+    "notes": "Single 40 (by arrangement). 10er 90min: 320 (adults) / 290 (students), valid 12 weeks. 10er 75min: 300 (adults) / 270 (students). Annual unlimited: 1100 / 900 (students). Zoom 10er: 300 (90min) / 280 (75min). Gong bath 55. Private 120-160."
+  },
+
+  "yoga-mahameru-aarau": {
+    "single": 20,
+    "card_10": null,
+    "monthly": null,
+    "trial": 20,
+    "trial_note": "First lesson in ongoing courses at single-class rate of 20 CHF",
+    "currency": "CHF",
+    "source": "https://mahameru.ch/book-now/",
+    "verified": false,
+    "notes": "Only single/trial price of 20 CHF confirmed. No card or subscription pricing found online."
+  },
+
+  "manta-yoga-pilates-rombach": {
+    "single": 25,
+    "card_10": 240,
+    "monthly": null,
+    "trial": 0,
+    "trial_note": "Free trial lesson (kostenlose Probelektion)",
+    "half_year_1x": 455,
+    "half_year_2x": 730,
+    "annual_1x": 1450,
+    "annual_unlimited": 1700,
+    "currency": "CHF",
+    "source": "https://manta-yoga-pilates.ch/",
+    "verified": true,
+    "notes": "Single 25. 10er 240 (Fortlaufend). Half-year 1x/week 455, 2x/week 730. Annual 1x/week 1450. Annual unlimited 1700. Private 120/60min. Livestream 20/60min."
+  },
+
+  "yoga-baden-stefanie-amrein": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.yogabaden.ch/",
+    "verified": false,
+    "notes": "No pricing found on website. Trial class bookable via Calendly but no price listed."
+  },
+
+  "namaste-yoga-baden": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.namaste-yoga-baden.ch/",
+    "verified": false,
+    "notes": "Domain could not be verified/fetched. Pricing unavailable."
+  },
+
+  "hieryoga-baden": {
+    "single": 32,
+    "single_75min": 35,
+    "card_10": 290,
+    "monthly": 139,
+    "monthly_note": "12-month membership billed monthly at 139/month",
+    "trial": null,
+    "three_month": 490,
+    "six_month": 890,
+    "annual": 1390,
+    "currency": "CHF",
+    "source": "https://hieryoga.ch/preise",
+    "verified": true,
+    "notes": "Single 60min 32, 75min 35. 10er 290 (valid 4 months, ~29/class). 3-month 490. 6-month 890. 12-month one-time 1390 or monthly 139. Private 130/60min. Hormone therapy yoga 150/75min."
+  },
+
+  "jetzt-yoga-baden": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.jetzt.yoga/",
+    "verified": false,
+    "notes": "Wix site renders dynamically, content not extractable."
+  }
+}

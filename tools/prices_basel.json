@@ -1,0 +1,452 @@
+{
+  "last_updated": "2026-03-21",
+  "notes": "Prices scraped from studio websites. 'verified: true' means prices were found on the website. 'verified: false' means prices could not be confirmed online.",
+
+  "byoga": {
+    "single": 35,
+    "single_60min": 25,
+    "card_5": 165,
+    "card_10": 315,
+    "monthly": 220,
+    "trial": 29.90,
+    "trial_note": "14-day unlimited trial pass",
+    "annual": 2100,
+    "currency": "CHF",
+    "source": "https://www.byoga.ch/pricing-membership",
+    "verified": true,
+    "notes": "Single 75-90min CHF 35, 60min CHF 25. Reduced rates available (students, Kulturlegi). Monthly is 12-month auto-renewal (Tapas Membership). 10-class card valid 6 months."
+  },
+
+  "looking-glass": {
+    "single": 30,
+    "single_60min": 20,
+    "card_5": 140,
+    "card_10": 270,
+    "monthly": 180,
+    "trial": 60,
+    "trial_note": "3x Trial Abo (3 months) CHF 60; Jump In Month unlimited CHF 150",
+    "annual": 1680,
+    "currency": "CHF",
+    "source": "https://thelookingglassbasel.com/pricing",
+    "verified": true,
+    "notes": "Single 75/90min CHF 30, 60min CHF 20. Reduced rates available. 10-class card valid 6 months. Weekly unlimited CHF 65."
+  },
+
+  "niyama": {
+    "single": 25,
+    "single_60min": 23,
+    "card_10": 220,
+    "monthly": 195,
+    "trial": null,
+    "annual": 1650,
+    "currency": "CHF",
+    "source": "https://www.niyama-yoga.ch/en/prices/",
+    "verified": true,
+    "notes": "Single 75min CHF 25, 60min CHF 23. Student single CHF 15-20. 10-class card for 60min classes CHF 220. Monthly unlimited CHF 195 (students CHF 135). Zoom classes CHF 15-25 pay-what-you-can."
+  },
+
+  "anjali": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.anjali.ch/en",
+    "verified": false,
+    "notes": "Wix-based site; pricing not accessible via scraping. Contact studio directly."
+  },
+
+  "yogabloom": {
+    "single": 20,
+    "single_aerial": 30,
+    "card_10": 190,
+    "monthly": 180,
+    "trial": 60,
+    "trial_note": "14-day unlimited for new members CHF 60",
+    "annual": 1485,
+    "currency": "CHF",
+    "source": "https://www.yogabloom.ch/pricing",
+    "verified": true,
+    "notes": "Sliding scale: Supported CHF 10/100/135, Regular CHF 20/190/180, Supporter CHF 30/270/225. Aerial yoga single CHF 25-35. Listed prices are 'Regular' tier."
+  },
+
+  "volta-yoga": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://en.voltayoga.ch/",
+    "verified": false,
+    "notes": "Wix-based site; pricing not accessible via scraping. No pricing page found."
+  },
+
+  "bikram": {
+    "single": 41,
+    "card_10": 355,
+    "monthly": 260,
+    "trial": 55,
+    "trial_note": "Taster Pass: unlimited for first 8 days, one-time only CHF 55",
+    "annual": 1700,
+    "six_month": 1160,
+    "currency": "CHF",
+    "source": "https://bikramyogabasel.ch/",
+    "verified": true,
+    "notes": "10% student discount (under 26, excl. taster pass). 10-class card valid 1 year. Max 18 students, online reservation required."
+  },
+
+  "meyo-house": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.meyohouse.com/",
+    "verified": false,
+    "notes": "Website returned 403 forbidden. Contact studio at 061 556 29 26."
+  },
+
+  "yoga-atelier": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.yoga-atelier-basel.ch/",
+    "verified": false,
+    "notes": "No pricing found on homepage or Angebot page. Contact Orsina at +41 79 829 47 45."
+  },
+
+  "ashtanga-basel": {
+    "single": 30,
+    "single_60min": 20,
+    "card_10": 270,
+    "card_10_60min": 200,
+    "monthly": 180,
+    "three_month": 500,
+    "six_month": 900,
+    "annual": 1500,
+    "trial": 20,
+    "trial_month": 100,
+    "currency": "CHF",
+    "source": "https://www.ashtanga-basel.ch/classes/",
+    "verified": true,
+    "notes": "Discounted rates for students/low-income/AHV: single CHF 20, 10-class CHF 180, monthly CHF 120. Trial class CHF 20, trial month CHF 100. 10-class card valid 1 year. Cash or bank transfer only."
+  },
+
+  "lotos": {
+    "single": null,
+    "single_range": "25-35",
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://lotosyoga.ch/",
+    "verified": false,
+    "notes": "Only price range CHF 25-35 found in structured data. No detailed pricing page accessible. Contact sekretariat@lotosyoga.ch or +41 61 271 40 86."
+  },
+
+  "yoga-gaertnerhuus": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.yogaimgaertnerhuus.com",
+    "verified": false,
+    "notes": "Wix-based site; pricing not accessible via scraping."
+  },
+
+  "secret-garden": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://secretgarden-yoga.ch/en/",
+    "verified": false,
+    "notes": "Wix-based site; pricing not found on homepage or schedule page."
+  },
+
+  "mint": {
+    "single": 30,
+    "single_student": 20,
+    "card_10": 250,
+    "card_10_student": 200,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://mint-loft.ch/preise/",
+    "verified": true,
+    "notes": "Student discount for under 30. Personal training CHF 150/60min. No monthly pass or trial offer listed."
+  },
+
+  "erlenyoga": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://erlenyoga.ch/",
+    "verified": false,
+    "notes": "Site appears private/restricted. Max 8 persons per class."
+  },
+
+  "exhale": {
+    "single": 30,
+    "card_10": 250,
+    "card_20": 500,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://exhale.ch/",
+    "verified": true,
+    "notes": "Drop-in CHF 30. 10 Lektionen CHF 250, 20 Lektionen CHF 500. Valid 12 months. Personal Training CHF 160/session. No monthly pass offered."
+  },
+
+  "iyengar-kreis": {
+    "single": 37,
+    "single_student": 30,
+    "card_10": null,
+    "quarterly": null,
+    "monthly": null,
+    "trial": 20,
+    "currency": "CHF",
+    "source": "https://www.i-yoga-basel.ch/i-yoga-basel-ch/aktuell/",
+    "verified": true,
+    "notes": "Single CHF 37, students CHF 30, trial CHF 20. Quarterly subscription: classes per quarter x CHF 30. 10-class card listed at CHF 1150 (likely an error or special package - valid 12 months). Payment via bank transfer, TWINT, or cash."
+  },
+
+  "iyengar-gerbergaesslein": {
+    "single": 36,
+    "single_student": 30,
+    "card_10": 1150,
+    "quarterly": null,
+    "monthly": null,
+    "trial": 20,
+    "currency": "CHF",
+    "source": "https://gerbergaesslein-yoga.ch/preise/",
+    "verified": true,
+    "notes": "Single CHF 36, students CHF 30, trial CHF 20. Quarterly pass: number of classes x CHF 30. 10-class card CHF 1150 valid 12 months (note: this seems high, may be a quarterly/annual package). New students must register by email."
+  },
+
+  "ayalga": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://ayalgayoga.ch/en/",
+    "verified": false,
+    "notes": "No pricing information found on website."
+  },
+
+  "yoga-now": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.yoganow-basel.ch/",
+    "verified": false,
+    "notes": "Website returned 403 forbidden."
+  },
+
+  "studio-devin": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "http://devinyoga.com/",
+    "verified": false,
+    "notes": "Website connection refused (ECONNREFUSED). Site may be down."
+  },
+
+  "kathrin-mathews": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.kathrinmathews.com/",
+    "verified": false,
+    "notes": "No pricing found on homepage. Contact info@kathrinmathews.com."
+  },
+
+  "mysore-club": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.mysorebasel.ch/",
+    "verified": false,
+    "notes": "No pricing on website. Contact info@mysorebasel.ch."
+  },
+
+  "rin-yoga": {
+    "single": 30,
+    "single_reduced": 25,
+    "card_10": 200,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://rin.yoga/",
+    "verified": true,
+    "notes": "Thursday 90min class CHF 30 (reduced CHF 25). 10-class Abo CHF 200 (includes 1 free class). Sliding scale available. Bring-a-friend: your class free. Payment: cash or TWINT."
+  },
+
+  "alessia-yoga": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": 0,
+    "trial_note": "First trial class free",
+    "currency": "CHF",
+    "source": "https://www.alessiayoga.com/",
+    "verified": false,
+    "notes": "Website returned 403. Description mentions first trial class is free."
+  },
+
+  "food-changes": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.foodchangeseverything.me/",
+    "verified": false,
+    "notes": "No pricing on homepage. Holistic approach (yoga + nutrition). Contact Vanessa at +41 79 245 7417."
+  },
+
+  "claudia-stamm": {
+    "single": 25,
+    "single_note": "Schwangerschaftsyoga CHF 25, Mama Yoga CHF 45",
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.claudia-stamm.com/shop",
+    "verified": true,
+    "notes": "Pregnancy yoga CHF 25/class. Mama Yoga CHF 45. Rückbildungsyoga from CHF 175 (package). Hormon Yoga Workshop CHF 140 (3.5h). Specialized in pregnancy/postnatal."
+  },
+
+  "mignon": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.mignonbaby.com/",
+    "verified": false,
+    "notes": "No pricing on homepage. Specialized in prenatal/postnatal. Check individual course pages."
+  },
+
+  "katerina-wen": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.katerinawen.com/",
+    "verified": false,
+    "notes": "No pricing on homepage. Private sessions and group classes. Book via website booking system."
+  },
+
+  "bethsabe": {
+    "single": 35,
+    "single_60min": 25,
+    "card_10": 290,
+    "card_10_60min": 210,
+    "monthly": null,
+    "annual_limited": 990,
+    "annual_unlimited": 1350,
+    "trial": 30,
+    "trial_note": "Trial 90min CHF 30, trial 60min CHF 25",
+    "currency": "CHF",
+    "source": "https://www.bethsabe.ch/yoga-stundenplan",
+    "verified": true,
+    "notes": "Single 90min CHF 35, 60min CHF 25. 10-class 90min CHF 290 (valid 6 months), 60min CHF 210. Couples 10-class CHF 510. Limited annual (1x/week) CHF 990, unlimited CHF 1350. Seniors discount available. Private CHF 140/60min. Students (under 30) 15% off subscriptions."
+  },
+
+  "fitnesspark": {
+    "single": 39,
+    "card_10": 355,
+    "monthly": 123,
+    "monthly_note": "Monthly payment on annual contract (CHF 1476/year or CHF 1400 upfront)",
+    "trial": null,
+    "annual": 1400,
+    "currency": "CHF",
+    "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/prices/",
+    "verified": true,
+    "notes": "Single entry CHF 39 (refundable within 7 days if yearly sub purchased). 10-visit sub CHF 355. Swiss Fit annual CHF 1400 or CHF 123/month. Fit annual CHF 1270 or CHF 112/month. Monthly payment requires CHF 70 admin fee + CHF 10 chip bracelet. Includes gym, wellness, sauna, pool."
+  },
+
+  "gyym": {
+    "single": null,
+    "card_10": null,
+    "monthly": 55,
+    "monthly_note": "Membership from CHF 55/month (fitness center with yoga included)",
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://gyym.ch/en/",
+    "verified": true,
+    "notes": "Gym membership from CHF 55/month includes 300+ group classes (yoga, pilates, etc.). 24/7 access. Contact for full pricing: +41 61 633 20 60."
+  },
+
+  "klubschule": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.klubschule.ch/",
+    "verified": false,
+    "notes": "Course-based pricing (Migros education system). Individual course prices vary. Check website for current offerings."
+  },
+
+  "unisport": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://universitaetssport.unibas.ch/sportbereiche/body-und-mind-26704/yoga-26707/1",
+    "verified": false,
+    "notes": "University sports program. Only for Uni Basel students/staff. Course prices not displayed on listing page."
+  },
+
+  "sutra-house": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": "https://www.sutra-house.com/",
+    "verified": false,
+    "notes": "Retreat venue, not a regular studio. No class pricing available. Contact conect@sutra-house.com."
+  },
+
+  "yoba": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": null,
+    "verified": false,
+    "notes": "No website URL available. Contact: 078 725 08 15 or yoga@yoba.ch."
+  },
+
+  "cristina-hagman": {
+    "single": null,
+    "card_10": null,
+    "monthly": null,
+    "trial": null,
+    "currency": "CHF",
+    "source": null,
+    "verified": false,
+    "notes": "No website URL available."
+  }
+}
