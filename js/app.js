@@ -510,28 +510,41 @@ if ('serviceWorker' in navigator) {
         var lang = state.lang;
         var title;
         if (lang === 'de') {
-            title = 'Yoga ' + name + ' 2026 — Alle Studios & Kurse | Stundenplan, Karte';
+            title = 'Alle Yoga-Kurse & Studios in ' + name + ' | Yoga Schweiz';
         } else if (lang === 'en') {
-            title = 'Yoga ' + name + ' 2026 — All Studios & Classes | Schedule, Map';
+            title = 'All Yoga Classes & Studios in ' + name + ' | Yoga Schweiz';
         } else if (lang === 'it') {
-            title = 'Yoga ' + name + ' 2026 — Tutti gli studi e corsi | Orario, Mappa';
+            title = 'Tutti i corsi Yoga & Studi a ' + name + ' | Yoga Schweiz';
         } else {
-            title = 'Yoga ' + name + ' 2026 — Tous les studios et cours | Horaire, Carte';
+            title = 'Tous les cours de Yoga & Studios à ' + name + ' | Yoga Schweiz';
         }
         document.title = title;
+
+        // Update hero title (h1) with canton name
+        var heroTitle = document.querySelector('.hero-title');
+        if (heroTitle) {
+            if (lang === 'de') {
+                heroTitle.innerHTML = 'Alle Yoga-Kurse in ' + escapeHtml(name) + '<br><span class="hero-accent">Studios & Stundenplan auf einen Blick</span>';
+            } else if (lang === 'en') {
+                heroTitle.innerHTML = 'All Yoga Classes in ' + escapeHtml(name) + '<br><span class="hero-accent">studios & schedule at a glance</span>';
+            } else if (lang === 'it') {
+                heroTitle.innerHTML = 'Tutti i corsi Yoga a ' + escapeHtml(name) + '<br><span class="hero-accent">studi & orari a colpo d\'occhio</span>';
+            } else {
+                heroTitle.innerHTML = 'Tous les cours de Yoga \u00e0 ' + escapeHtml(name) + '<br><span class="hero-accent">studios & horaires en un coup d\'\u0153il</span>';
+            }
+        }
 
         // Update meta description dynamically
         var metaDesc = document.querySelector('meta[name="description"]');
         if (metaDesc) {
-            var studioCount = state.studios.length;
             if (lang === 'de') {
-                metaDesc.content = 'Alle ' + studioCount + ' Yoga-Studios in ' + name + '. Stundenplan, interaktive Karte, PDF-Export. Vinyasa, Hatha, Yin, Ashtanga und mehr. Täglich aktualisiert.';
+                metaDesc.content = 'Alle Yoga-Studios und Kurse in ' + name + '. Stundenplan, interaktive Karte, PDF-Export. Vinyasa, Hatha, Yin, Ashtanga und mehr. Täglich aktualisiert.';
             } else if (lang === 'en') {
-                metaDesc.content = 'All ' + studioCount + ' yoga studios in ' + name + '. Schedule, interactive map, PDF export. Vinyasa, Hatha, Yin, Ashtanga and more. Updated daily.';
+                metaDesc.content = 'All yoga studios and classes in ' + name + '. Schedule, interactive map, PDF export. Vinyasa, Hatha, Yin, Ashtanga and more. Updated daily.';
             } else if (lang === 'it') {
-                metaDesc.content = 'Tutti i ' + studioCount + ' studi di yoga a ' + name + '. Orario, mappa interattiva, export PDF. Aggiornato ogni giorno.';
+                metaDesc.content = 'Tutti gli studi e i corsi di yoga a ' + name + '. Orario, mappa interattiva, export PDF. Aggiornato ogni giorno.';
             } else {
-                metaDesc.content = 'Tous les ' + studioCount + ' studios de yoga à ' + name + '. Horaire, carte interactive, export PDF. Mis à jour quotidiennement.';
+                metaDesc.content = 'Tous les studios et cours de yoga \u00e0 ' + name + '. Horaire, carte interactive, export PDF. Mis \u00e0 jour quotidiennement.';
             }
         }
     }
