@@ -89,6 +89,8 @@ if ('serviceWorker' in navigator) {
             'feedback.message': 'Deine Nachricht',
             'feedback.send': 'Feedback senden',
             'feedback.thanks': 'Vielen Dank für dein Feedback! Wir werden es so schnell wie möglich berücksichtigen.',
+            'feedback.name_placeholder': 'Dein Name',
+            'feedback.message_placeholder': 'Schreib uns dein Feedback...',
             'geo.nearby': 'In der Nähe',
             'canton.select': 'Wähle deinen Kanton:',
             'canton.choose': 'Kanton wählen...',
@@ -171,6 +173,8 @@ if ('serviceWorker' in navigator) {
             'feedback.message': 'Your message',
             'feedback.send': 'Send feedback',
             'feedback.thanks': 'Thank you for your feedback! We will consider it as soon as possible.',
+            'feedback.name_placeholder': 'Your name',
+            'feedback.message_placeholder': 'Write your feedback...',
             'geo.nearby': 'Nearby',
             'canton.select': 'Choose your canton:',
             'canton.choose': 'Select canton...',
@@ -252,7 +256,13 @@ if ('serviceWorker' in navigator) {
             'feedback.name': 'Nome (opzionale)',
             'feedback.message': 'Il tuo messaggio',
             'feedback.send': 'Invia feedback',
-            'feedback.thanks': 'Grazie per il tuo feedback! Lo prenderemo in considerazione al pi\u00f9 presto.'
+            'feedback.thanks': 'Grazie per il tuo feedback! Lo prenderemo in considerazione al pi\u00f9 presto.',
+            'feedback.name_placeholder': 'Il tuo nome',
+            'feedback.message_placeholder': 'Scrivi il tuo feedback...',
+            'geo.nearby': 'Nelle vicinanze',
+            'canton.select': 'Scegli il tuo cantone:',
+            'canton.choose': 'Seleziona cantone...',
+            'cantons.other': 'Yoga in altri cantoni'
         },
         fr: {
             'nav.studios': 'Studios',
@@ -330,7 +340,13 @@ if ('serviceWorker' in navigator) {
             'feedback.name': 'Nom (facultatif)',
             'feedback.message': 'Ton message',
             'feedback.send': 'Envoyer le feedback',
-            'feedback.thanks': 'Merci pour ton feedback ! Nous le prendrons en compte d\u00e8s que possible.'
+            'feedback.thanks': 'Merci pour ton feedback ! Nous le prendrons en compte d\u00e8s que possible.',
+            'feedback.name_placeholder': 'Ton nom',
+            'feedback.message_placeholder': 'Écris-nous ton feedback...',
+            'geo.nearby': 'À proximité',
+            'canton.select': 'Choisis ton canton :',
+            'canton.choose': 'Sélectionner un canton...',
+            'cantons.other': 'Yoga dans d\'autres cantons'
         }
     };
 
@@ -631,20 +647,28 @@ if ('serviceWorker' in navigator) {
         var el = $('cantonCrossLinks');
         if (!el) return;
         var cantons = [
-            { id: 'basel-stadt', name: 'Basel' }, { id: 'zurich', name: 'Zürich' },
-            { id: 'bern', name: 'Bern' }, { id: 'luzern', name: 'Luzern' },
-            { id: 'geneve', name: 'Genf' }, { id: 'vaud', name: 'Lausanne' },
-            { id: 'aargau', name: 'Aargau' }, { id: 'st-gallen', name: 'St. Gallen' },
-            { id: 'ticino', name: 'Tessin' }, { id: 'graubuenden', name: 'Graubünden' }
+            { id: 'zurich', name: 'Zürich' }, { id: 'bern', name: 'Bern' },
+            { id: 'luzern', name: 'Luzern' }, { id: 'uri', name: 'Uri' },
+            { id: 'schwyz', name: 'Schwyz' }, { id: 'obwalden', name: 'Obwalden' },
+            { id: 'nidwalden', name: 'Nidwalden' }, { id: 'glarus', name: 'Glarus' },
+            { id: 'zug', name: 'Zug' }, { id: 'fribourg', name: 'Freiburg' },
+            { id: 'solothurn', name: 'Solothurn' }, { id: 'basel-stadt', name: 'Basel-Stadt' },
+            { id: 'basel-landschaft', name: 'Basel-Land' }, { id: 'schaffhausen', name: 'Schaffhausen' },
+            { id: 'appenzell-ar', name: 'Appenzell AR' }, { id: 'appenzell-ir', name: 'Appenzell IR' },
+            { id: 'st-gallen', name: 'St. Gallen' }, { id: 'graubuenden', name: 'Graubünden' },
+            { id: 'aargau', name: 'Aargau' }, { id: 'thurgau', name: 'Thurgau' },
+            { id: 'ticino', name: 'Tessin' }, { id: 'vaud', name: 'Waadt' },
+            { id: 'valais', name: 'Wallis' }, { id: 'neuchatel', name: 'Neuenburg' },
+            { id: 'geneve', name: 'Genf' }, { id: 'jura', name: 'Jura' }
         ];
         var html = '';
         for (var i = 0; i < cantons.length; i++) {
             if (cantons[i].id === state.currentCanton) continue;
-            html += '<a href="#canton/' + cantons[i].id + '" class="canton-cross-link" data-canton-link="' + cantons[i].id + '">Yoga ' + escapeHtml(cantons[i].name) + '</a>';
+            html += '<a href="./kanton/' + cantons[i].id + '/" class="canton-cross-link" data-canton-link="' + cantons[i].id + '">Yoga ' + escapeHtml(cantons[i].name) + '</a>';
         }
         el.innerHTML = html;
 
-        // Click handlers
+        // Click handlers — load in SPA, link also works as real page for SEO
         var links = el.querySelectorAll('.canton-cross-link');
         for (var j = 0; j < links.length; j++) {
             links[j].addEventListener('click', (function (cid) {
@@ -761,11 +785,7 @@ if ('serviceWorker' in navigator) {
             if (info) info.style.display = 'none';
         }
 
-        // Reset map for new canton
-        if (state.map) {
-            state.map.remove();
-            state.map = null;
-        }
+        // Reset map for new canton (initMap handles cleanup and lazy-load)
         setTimeout(initMap, 500);
     }
 
@@ -1534,17 +1554,96 @@ if ('serviceWorker' in navigator) {
         }
     }
 
-    // --- Map ---
-    function initMap() {
-        if (typeof L === 'undefined') {
-            console.log('[YogaBasel] Leaflet not available, skipping map. Will retry in 2s...');
-            setTimeout(initMap, 2000);
+    // --- Map (lazy-loaded Leaflet) ---
+    var leafletLoaded = false;
+    var leafletLoading = false;
+    var mapObserver = null;
+
+    function loadLeaflet(callback) {
+        if (leafletLoaded && typeof L !== 'undefined') { callback(); return; }
+        if (leafletLoading) {
+            // Already loading, poll until ready
+            var poll = setInterval(function() {
+                if (typeof L !== 'undefined') { clearInterval(poll); leafletLoaded = true; callback(); }
+            }, 100);
             return;
         }
-        if (state.map) return; // Already initialized
+        leafletLoading = true;
+
+        // Show loading spinner
+        var mapContainer = $('mapContainer');
+        if (mapContainer) {
+            var spinner = document.createElement('div');
+            spinner.id = 'mapSpinner';
+            spinner.style.cssText = 'display:flex;align-items:center;justify-content:center;padding:60px 0;color:#6B5B95;font-size:18px;gap:12px;';
+            spinner.innerHTML = '<div style="width:32px;height:32px;border:3px solid #e0d6f0;border-top-color:#6B5B95;border-radius:50%;animation:spin 0.8s linear infinite;"></div> Karte wird geladen...';
+            var style = document.createElement('style');
+            style.textContent = '@keyframes spin{to{transform:rotate(360deg)}}';
+            document.head.appendChild(style);
+            mapContainer.insertBefore(spinner, mapContainer.firstChild);
+        }
+
+        // Load Leaflet CSS
+        var cssLink = document.createElement('link');
+        cssLink.rel = 'stylesheet';
+        cssLink.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+        document.head.appendChild(cssLink);
+
+        // Load Leaflet JS
+        var script = document.createElement('script');
+        script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+        script.onload = function() {
+            leafletLoaded = true;
+            leafletLoading = false;
+            console.log('[YogaSchweiz] Leaflet loaded lazily');
+            var sp = document.getElementById('mapSpinner');
+            if (sp) sp.remove();
+            callback();
+        };
+        script.onerror = function() {
+            leafletLoading = false;
+            console.error('[YogaSchweiz] Failed to load Leaflet');
+            var sp = document.getElementById('mapSpinner');
+            if (sp) sp.textContent = 'Karte konnte nicht geladen werden.';
+        };
+        document.head.appendChild(script);
+    }
+
+    function setupMapObserver() {
+        var mapSection = document.getElementById('karte');
+        if (!mapSection) return;
+        if (mapObserver) mapObserver.disconnect();
+        mapObserver = new IntersectionObserver(function(entries) {
+            for (var i = 0; i < entries.length; i++) {
+                if (entries[i].isIntersecting) {
+                    mapObserver.disconnect();
+                    loadLeaflet(function() { buildMap(); });
+                    break;
+                }
+            }
+        }, { rootMargin: '200px' });
+        mapObserver.observe(mapSection);
+    }
+
+    function initMap() {
+        // Called by canton switch and initial load — sets up observer for lazy load
+        if (state.map) {
+            state.map.remove();
+            state.map = null;
+        }
+        if (leafletLoaded && typeof L !== 'undefined') {
+            buildMap();
+        } else {
+            setupMapObserver();
+        }
+    }
+
+    function buildMap() {
+        if (state.map) return;
 
         var mapEl = $('map');
         if (!mapEl) return;
+        if (typeof L === 'undefined') { setupMapObserver(); return; }
 
         console.log('[YogaSchweiz] Initializing map...');
         var cantonCenters = {

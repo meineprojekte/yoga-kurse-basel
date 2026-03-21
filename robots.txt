@@ -123,6 +123,8 @@ Disallow: /data/
 # Block everything else by default, allow only specific bots above
 User-agent: *
 Disallow: /data/
+Disallow: /tools/
+Disallow: /scrapers/
 Allow: /
 
 Sitemap: https://meineprojekte.github.io/yoga-kurse-basel/sitemap.xml
