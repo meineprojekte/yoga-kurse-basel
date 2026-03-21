@@ -1,4 +1,13 @@
 {
   "last_updated": "2026-03-21T00:00:00Z",
-  "classes": []
+  "_notes": "Urvani Yoga schedule from sportsnow.ch booking page. Anantara Yogastudio and Flow Altdorf use Wix sites that did not render schedule data; no classes extracted for those studios.",
+  "classes": [
+    {"studio_id": "urvani-yoga-altdorf", "studio_name": "Urvani Yoga & Fitness", "day": "Monday", "time_start": "18:00", "time_end": "19:15", "class_name": "Yoga Klassik", "teacher": "Natalie Nikolska", "level": "all"},
+    {"studio_id": "urvani-yoga-altdorf", "studio_name": "Urvani Yoga & Fitness", "day": "Monday", "time_start": "19:45", "time_end": "20:45", "class_name": "Rhythm Yo!", "teacher": "Natalie Nikolska", "level": "all"},
+    {"studio_id": "urvani-yoga-altdorf", "studio_name": "Urvani Yoga & Fitness", "day": "Tuesday", "time_start": "17:45", "time_end": "19:15", "class_name": "Rücken & Entspannung", "teacher": "Natalie Nikolska", "level": "all"},
+    {"studio_id": "urvani-yoga-altdorf", "studio_name": "Urvani Yoga & Fitness", "day": "Tuesday", "time_start": "19:30", "time_end": "21:00", "class_name": "Yoga Forte", "teacher": "Natalie Nikolska", "level": "intermediate"},
+    {"studio_id": "urvani-yoga-altdorf", "studio_name": "Urvani Yoga & Fitness", "day": "Wednesday", "time_start": "08:00", "time_end": "09:15", "class_name": "Prana Yoga 50+", "teacher": "Natalie Nikolska", "level": "senior"},
+    {"studio_id": "urvani-yoga-altdorf", "studio_name": "Urvani Yoga & Fitness", "day": "Wednesday", "time_start": "19:00", "time_end": "20:00", "class_name": "Bovital", "teacher": "Natalie Nikolska", "level": "all"},
+    {"studio_id": "urvani-yoga-altdorf", "studio_name": "Urvani Yoga & Fitness", "day": "Thursday", "time_start": "18:00", "time_end": "19:30", "class_name": "Yoga Klassik & Relax", "teacher": "Natalie Nikolska", "level": "all"}
+  ]
 }

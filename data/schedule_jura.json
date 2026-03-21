@@ -1,4 +1,12 @@
 {
   "last_updated": "2026-03-21T00:00:00Z",
-  "classes": []
+  "_notes": "YogaJura.ch schedule from yogajura.ch. Elevea Yoga schedule from eleveayoga.com. PilatesYogaJura uses a Wix site that did not render schedule data; no classes extracted.",
+  "classes": [
+    {"studio_id": "yogajura", "studio_name": "YogaJura.ch", "day": "Monday", "time_start": "17:00", "time_end": "18:15", "class_name": "Hatha Yoga", "teacher": "Monique Godinat", "level": "all"},
+    {"studio_id": "yogajura", "studio_name": "YogaJura.ch", "day": "Tuesday", "time_start": "19:15", "time_end": "20:30", "class_name": "Hatha Yoga", "teacher": "Monique Godinat", "level": "all"},
+    {"studio_id": "yogajura", "studio_name": "YogaJura.ch", "day": "Thursday", "time_start": "18:15", "time_end": "19:30", "class_name": "Hatha Yoga", "teacher": "Monique Godinat", "level": "all"},
+    {"studio_id": "elevea-yoga-delemont", "studio_name": "Elevea Yoga", "day": "Monday", "time_start": "18:30", "time_end": "19:30", "class_name": "Vinyasa Yoga", "teacher": "Noémie", "level": "all"},
+    {"studio_id": "elevea-yoga-delemont", "studio_name": "Elevea Yoga", "day": "Wednesday", "time_start": "19:00", "time_end": "20:00", "class_name": "Vinyasa Yoga", "teacher": "Noémie", "level": "all"},
+    {"studio_id": "elevea-yoga-delemont", "studio_name": "Elevea Yoga", "day": "Thursday", "time_start": "19:00", "time_end": "20:00", "class_name": "Vinyasa Yoga", "teacher": "Noémie", "level": "all"}
+  ]
 }

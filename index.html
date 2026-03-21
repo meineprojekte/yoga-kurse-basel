@@ -688,17 +688,11 @@
                 <h2 class="section-title" data-i18n="feedback.title">Feedback & Vorschläge</h2>
                 <p class="section-subtitle" data-i18n="feedback.subtitle">Hilf uns, diese Seite zu verbessern. Fehlt ein Studio? Stimmt ein Stundenplan nicht? Hast du Ideen?</p>
                 <div class="feedback-form-wrapper">
-                    <form class="feedback-form" id="feedbackForm" action="https://formsubmit.co/andrea-giovanni@hotmail.com" method="POST">
-                        <!-- Formsubmit config (hidden from user) -->
-                        <input type="hidden" name="_subject" value="YogaSchweiz Feedback">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_next" value="https://meineprojekte.github.io/yoga-kurse-basel/#feedback-sent">
-                        <input type="text" name="_honey" style="display:none">
+                    <form class="feedback-form" id="feedbackForm">
                         <div class="feedback-row">
                             <div class="feedback-field">
                                 <label for="feedbackType" data-i18n="feedback.type">Art des Feedbacks</label>
-                                <select id="feedbackType" name="Typ" required>
+                                <select id="feedbackType" required>
                                     <option value="" data-i18n="feedback.select">Bitte wählen...</option>
                                     <option value="Fehlendes Studio" data-i18n="feedback.missing">Fehlendes Studio melden</option>
                                     <option value="Falsche Information" data-i18n="feedback.wrong">Falsche Information korrigieren</option>
@@ -708,12 +702,12 @@
                             </div>
                             <div class="feedback-field">
                                 <label for="feedbackName" data-i18n="feedback.name">Name (optional)</label>
-                                <input type="text" id="feedbackName" name="Name" placeholder="Dein Name">
+                                <input type="text" id="feedbackName" placeholder="Dein Name">
                             </div>
                         </div>
                         <div class="feedback-field">
                             <label for="feedbackMessage" data-i18n="feedback.message">Deine Nachricht</label>
-                            <textarea id="feedbackMessage" name="Nachricht" rows="4" required placeholder="Schreib uns dein Feedback..."></textarea>
+                            <textarea id="feedbackMessage" rows="4" required placeholder="Schreib uns dein Feedback..."></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary" data-i18n="feedback.send">Feedback senden</button>
                     </form>

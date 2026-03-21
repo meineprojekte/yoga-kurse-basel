@@ -1,4 +1,9 @@
 {
   "last_updated": "2026-03-21T00:00:00Z",
-  "classes": []
+  "_notes": "Schedule data extracted from yogaar.ch/stundenplan and raumsein.ch. Yoga & Kinesiologie website was unreachable. Some Herisau classes are in St. Gallen locations.",
+  "classes": [
+    {"studio_id": "yogaar-herisau", "studio_name": "YOGAAR", "day": "Monday", "time_start": "08:30", "time_end": "09:30", "class_name": "Golden Age", "teacher": "Roberta Alder", "level": "senior"},
+    {"studio_id": "yogaar-herisau", "studio_name": "YOGAAR", "day": "Tuesday", "time_start": "09:45", "time_end": "11:00", "class_name": "Heart of Yoga", "teacher": "Roberta Alder", "level": "all"},
+    {"studio_id": "yogaar-herisau", "studio_name": "YOGAAR", "day": "Thursday", "time_start": "19:30", "time_end": "21:00", "class_name": "Heart of Yoga", "teacher": "Roberta Alder", "level": "all"}
+  ]
 }
