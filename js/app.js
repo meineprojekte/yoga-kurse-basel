@@ -1849,13 +1849,33 @@ if ('serviceWorker' in navigator) {
         var pdfBtn = $('exportPdf');
         if (pdfBtn) pdfBtn.addEventListener('click', exportPDF);
 
-        // Feedback form - handled by Formsubmit.co (no JS needed)
-        // Show success message if returning from submission
-        if (window.location.hash === '#feedback-sent') {
-            var ff = $('feedbackForm');
-            var fs = $('feedbackSuccess');
-            if (ff) ff.style.display = 'none';
-            if (fs) fs.style.display = '';
+        // Feedback form - sends to Google Sheets
+        var feedbackForm = $('feedbackForm');
+        if (feedbackForm) {
+            feedbackForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var type = $('feedbackType') ? $('feedbackType').value : '';
+                var name = $('feedbackName') ? $('feedbackName').value : '';
+                var message = $('feedbackMessage') ? $('feedbackMessage').value : '';
+                if (!message.trim()) return;
+
+                var btn = feedbackForm.querySelector('button[type="submit"]');
+                if (btn) { btn.disabled = true; btn.textContent = '...'; }
+
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', 'https://script.google.com/macros/s/AKfycbzUqZRewaeoBMLLQHP5TVfVMr8FrwSO-67p6nC-BXvqg-tS-hUWFH7DY7gsrRUhTD4Eag/exec', true);
+                xhr.setRequestHeader('Content-Type', 'text/plain');
+                xhr.onload = function () {
+                    feedbackForm.style.display = 'none';
+                    var success = $('feedbackSuccess');
+                    if (success) success.style.display = '';
+                };
+                xhr.onerror = function () {
+                    if (btn) { btn.disabled = false; btn.textContent = t('feedback.send'); }
+                    alert('Fehler beim Senden. Bitte versuche es nochmal.');
+                };
+                xhr.send(JSON.stringify({ type: type, name: name || 'Anonym', message: message }));
+            });
         }
 
         // Modal
