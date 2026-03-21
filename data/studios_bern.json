@@ -376,7 +376,8 @@
       ],
       "lat": 46.9482,
       "lng": 7.4398,
-      "active": true,
+      "active": false,
+      "closed_note": "Website nicht mehr erreichbar",
       "classes": []
     },
     {
@@ -504,7 +505,8 @@
       ],
       "lat": 46.953,
       "lng": 7.429,
-      "active": true,
+      "active": false,
+      "closed_note": "Website nicht mehr erreichbar",
       "classes": []
     },
     {
@@ -875,8 +877,8 @@
     {
       "id": "yogakaleidoskop-bern",
       "name": "Yogakaleidoskop",
-      "website": "https://www.yogakaleidoskop.ch/",
-      "schedule_url": "https://www.yogakaleidoskop.ch/stundenplan",
+      "website": "https://www.innerlightacademy.ch/",
+      "schedule_url": "https://www.innerlightacademy.ch/stundenplan",
       "addresses": [
         {
           "street": "Belpstrasse 16",

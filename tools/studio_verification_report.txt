@@ -1,0 +1,175 @@
+========================================================================
+STUDIO WEBSITE VERIFICATION REPORT
+Generated: 2026-03-21 22:55:12
+========================================================================
+
+Total studios in database:  266
+Checked (active + has URL): 262
+Skipped (inactive/no URL):  4
+OK:                         234
+Problems found:             28
+
+------------------------------------------------------------------------
+PROBLEMATIC STUDIOS
+------------------------------------------------------------------------
+
+### 404_NOT_FOUND (1 studios)
+
+  Canton:  basel
+  Studio:  Universitätssport Basel
+  URL:     https://universitaetssport.unibas.ch/
+  Detail:  HTTP 404 - page not found
+
+
+### CONNECTION_ERROR (13 studios)
+
+  Canton:  appenzell-ar
+  Studio:  Yoga & Kinesiologie
+  URL:     https://www.yoga-kinesiologie.ch/
+  Detail:  Connection error: HTTPSConnectionPool(host='www.yoga-kinesiologie.ch', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10411fed0>: Failed to resolve 'www.yoga-kinesiologie.ch' ([Errno 8] nodename nor servname provided, or not known)"))
+
+  Canton:  appenzell-ir
+  Studio:  Yoga Appenzell - Andrea Manser
+  URL:     https://www.yoga-appenzell.ch/
+  Detail:  SSL error: HTTPSConnectionPool(host='www.yoga-appenzell.ch', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.yoga-appenzell.ch'. (_ssl.c:1032)")))
+
+  Canton:  basel
+  Studio:  Studio Devin Yoga — Vincent Pezet
+  URL:     http://devinyoga.com/
+  Detail:  Connection error: HTTPConnectionPool(host='devinyoga.com', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x1043f1be0>: Failed to resolve 'devinyoga.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+  Canton:  bern
+  Studio:  Hot Yoga Bern
+  URL:     https://hotyogabern.ch/
+  Detail:  Connection error: HTTPSConnectionPool(host='hotyogabern.ch', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10411fed0>: Failed to resolve 'hotyogabern.ch' ([Errno 8] nodename nor servname provided, or not known)"))
+
+  Canton:  bern
+  Studio:  Dayayoga / Jivamukti Yoga Bern
+  URL:     https://www.jivamuktiyogabern.ch/
+  Detail:  Connection error: HTTPSConnectionPool(host='www.jivamuktiyogabern.ch', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10442c910>: Failed to resolve 'www.jivamuktiyogabern.ch' ([Errno 8] nodename nor servname provided, or not known)"))
+
+  Canton:  fribourg
+  Studio:  The Pop-up Yoga Company
+  URL:     https://www.thepopupyogacompany.com/
+  Detail:  Connection error: HTTPSConnectionPool(host='www.thepopupyogacompany.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10442c050>: Failed to resolve 'www.thepopupyogacompany.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+  Canton:  geneve
+  Studio:  INNERCITYOGA
+  URL:     https://www.innercityoga.com/
+  Detail:  Connection error: HTTPSConnectionPool(host='www.innercityoga.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10442d1d0>: Failed to resolve 'www.innercityoga.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+  Canton:  graubuenden
+  Studio:  flux2motus - Yoga & Massage
+  URL:     https://www.flux2motus.ch/
+  Detail:  Connection error: HTTPSConnectionPool(host='www.flux2motus.ch', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10442c690>: Failed to resolve 'www.flux2motus.ch' ([Errno 8] nodename nor servname provided, or not known)"))
+
+  Canton:  graubuenden
+  Studio:  Davos Yoga
+  URL:     https://davosyoga.ch/
+  Detail:  Connection error: HTTPSConnectionPool(host='davosyoga.ch', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10442c550>: Failed to resolve 'davosyoga.ch' ([Errno 8] nodename nor servname provided, or not known)"))
+
+  Canton:  valais
+  Studio:  Daniela Imboden Yoga & Shiatsu
+  URL:     https://www.daniela-imboden.ch/
+  Detail:  Connection error: HTTPSConnectionPool(host='www.daniela-imboden.ch', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10442d310>: Failed to resolve 'www.daniela-imboden.ch' ([Errno 8] nodename nor servname provided, or not known)"))
+
+  Canton:  zug
+  Studio:  Zug Yoga Sports
+  URL:     https://zugyogasports.ch/
+  Detail:  Connection error: HTTPSConnectionPool(host='zugyogasports.ch', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10442dd10>: Failed to resolve 'zugyogasports.ch' ([Errno 8] nodename nor servname provided, or not known)"))
+
+  Canton:  zurich
+  Studio:  Sleepy Yogi Studio
+  URL:     https://www.sleepyyogi.com/
+  Detail:  Connection error: HTTPSConnectionPool(host='www.sleepyyogi.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10442e490>: Failed to resolve 'www.sleepyyogi.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+  Canton:  zurich
+  Studio:  Yoga am Hottingerplatz
+  URL:     https://yo-am-ho.com/
+  Detail:  Connection error: HTTPSConnectionPool(host='yo-am-ho.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10442e5d0>: Failed to resolve 'yo-am-ho.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+
+### DOMAIN_REDIRECT (1 studios)
+
+  Canton:  vaud
+  Studio:  Terre du Yoga
+  URL:     https://terreduyoga.com/
+  Detail:  Redirects to different domain: https://caroledalmas.com
+
+
+### HTTP_403 (11 studios)
+
+  Canton:  aargau
+  Studio:  Namaste Yoga Baden
+  URL:     https://www.namaste-yoga-baden.ch/
+  Detail:  HTTP 403
+
+  Canton:  basel-landschaft
+  Studio:  yoga shanti
+  URL:     https://www.yogashanti.ch/
+  Detail:  HTTP 403
+
+  Canton:  basel-landschaft
+  Studio:  Hatha Yoga Arlesheim
+  URL:     https://www.hathayoga-basel.ch/
+  Detail:  HTTP 403
+
+  Canton:  basel
+  Studio:  MEYO HOUSE
+  URL:     https://www.meyohouse.com/
+  Detail:  HTTP 403
+
+  Canton:  glarus
+  Studio:  YOGAamFLUSS
+  URL:     https://www.yoga-am-fluss.ch/
+  Detail:  HTTP 403
+
+  Canton:  glarus
+  Studio:  CG workout - Pole & Yoga Studio
+  URL:     https://www.cgworkout.ch/
+  Detail:  HTTP 403
+
+  Canton:  obwalden
+  Studio:  Yoga Ishwari
+  URL:     https://www.yoga-ishwari.ch/
+  Detail:  HTTP 403
+
+  Canton:  solothurn
+  Studio:  Yoga & Pilateszentrale
+  URL:     https://www.pilateszentrale.ch/
+  Detail:  HTTP 403
+
+  Canton:  st-gallen
+  Studio:  Yoga in der Altstadt
+  URL:     https://www.yoga-in-der-altstadt.ch/
+  Detail:  HTTP 403
+
+  Canton:  st-gallen
+  Studio:  Power Yoga St. Gallen
+  URL:     https://www.poweryogastgallen.com/
+  Detail:  HTTP 403
+
+  Canton:  zurich
+  Studio:  Yoga2day
+  URL:     https://www.yoga2day.ch/
+  Detail:  HTTP 403
+
+
+### HTTP_501 (1 studios)
+
+  Canton:  zurich
+  Studio:  yogamoves
+  URL:     https://www.yoga-moves.ch/
+  Detail:  HTTP 501
+
+
+### HTTP_526 (1 studios)
+
+  Canton:  vaud
+  Studio:  Casa Vinyasa - Ashtanga Yoga Vevey
+  URL:     https://practiceashtangayoga.com/
+  Detail:  HTTP 526
+
+========================================================================
+END OF REPORT
+========================================================================

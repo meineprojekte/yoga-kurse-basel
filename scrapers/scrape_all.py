@@ -145,10 +145,154 @@ def scrape_generic_schedule(studio):
     return schedule_data
 
 
+PRICE_PAGE_PATHS = ['/preise', '/prices', '/pricing', '/tarife', '/prix', '/angebot']
+
+# Regex to find CHF amounts
+CHF_PATTERN = re.compile(r'CHF\s*(\d+[\.,]?\d*)', re.IGNORECASE)
+
+# Keywords that help classify a price (German, French, English)
+PRICE_KEYWORDS = {
+    'single': ['einzeleintritt', 'einzellektion', 'drop-in', 'drop in', 'single class',
+               'cours unique', 'einzelstunde', 'einzelkurs'],
+    'card_10': ['10er', '10-er', '10 er', '10 lektionen', '10 classes', '10 cours',
+                '10er-abo', '10er abo', '10er-karte'],
+    'monthly': ['monats', 'monatlich', 'monthly', 'mensuel', 'monatsabo', 'month'],
+    'trial': ['probestunde', 'probelektion', 'schnuppern', 'trial', 'cours d\'essai',
+              'probetraining', 'first class', 'erste stunde'],
+    'abo': ['abo', 'abonnement', 'subscription', 'mitgliedschaft', 'membership'],
+}
+
+
+def scrape_prices(studio):
+    """
+    Attempt to scrape pricing information from a studio's website.
+
+    Tries the main website and common price page paths. Looks for CHF amounts
+    near pricing keywords and returns a structured pricing dict.
+
+    Args:
+        studio: dict with 'website' and optionally 'schedule_url' fields.
+
+    Returns:
+        A pricing dict with verified=True if prices found, None otherwise.
+    """
+    website = studio.get('website', '')
+    if not website:
+        return None
+
+    base_url = website.rstrip('/')
+
+    # Check robots.txt once for the domain
+    domain_url = '/'.join(base_url.split('/')[:3])
+    if not check_robots_txt(domain_url):
+        logger.info(f"  Price scraping blocked by robots.txt: {domain_url}")
+        return None
+
+    # Build list of URLs to try: main site + common price page paths
+    urls_to_try = [base_url]
+    for path in PRICE_PAGE_PATHS:
+        urls_to_try.append(base_url + path)
+
+    all_prices = {}
+    source_url = None
+
+    for url in urls_to_try:
+        html = fetch_page(url, timeout=10)
+        if not html:
+            continue
+
+        soup = BeautifulSoup(html, 'lxml')
+        text_content = soup.get_text(separator=' ', strip=True).lower()
+
+        # Find all CHF amounts on the page
+        chf_matches = CHF_PATTERN.findall(text_content)
+        if not chf_matches:
+            continue
+
+        # For each price keyword category, search for nearby CHF values
+        page_prices = _extract_prices_from_soup(soup)
+        if page_prices:
+            all_prices.update(page_prices)
+            source_url = url
+            logger.info(f"  Found {len(page_prices)} price(s) at {url}")
+            # If we found prices on a dedicated price page, prefer that and stop
+            if any(path in url for path in PRICE_PAGE_PATHS):
+                break
+
+    if not all_prices:
+        return None
+
+    pricing = {
+        'currency': 'CHF',
+        'verified': True,
+        'source': source_url,
+        'last_checked': datetime.now(timezone.utc).isoformat(),
+    }
+    pricing.update(all_prices)
+    return pricing
+
+
+def _extract_prices_from_soup(soup):
+    """
+    Extract categorized prices from a BeautifulSoup document.
+
+    Looks at text blocks containing CHF amounts and checks surrounding text
+    for pricing keywords to classify each price.
+
+    Returns:
+        dict with keys like 'single', 'card_10', 'monthly', 'trial' mapped to float values.
+    """
+    prices = {}
+
+    # Get all text nodes that contain CHF
+    body = soup.find('body')
+    if not body:
+        return prices
+
+    # Walk through elements looking for CHF patterns in context
+    for element in body.find_all(string=CHF_PATTERN):
+        # Get surrounding context: parent and siblings text
+        parent = element.parent
+        if not parent:
+            continue
+
+        # Build context from the parent element and its parent
+        context_parts = []
+        grandparent = parent.parent if parent.parent else parent
+        context_text = grandparent.get_text(separator=' ', strip=True).lower()
+        context_parts.append(context_text)
+        context = ' '.join(context_parts)
+
+        # Find CHF amounts in this element
+        amounts = CHF_PATTERN.findall(element)
+
+        for amount_str in amounts:
+            try:
+                amount = float(amount_str.replace(',', '.'))
+            except ValueError:
+                continue
+
+            # Skip unreasonable prices (< 5 or > 500 CHF)
+            if amount < 5 or amount > 500:
+                continue
+
+            # Classify this price based on nearby keywords
+            for category, keywords in PRICE_KEYWORDS.items():
+                if any(kw in context for kw in keywords):
+                    # For 'abo' category, only store if we don't have more specific ones
+                    if category == 'abo' and any(k in prices for k in ['monthly', 'card_10']):
+                        continue
+                    prices[category] = amount
+                    break
+
+    return prices
+
+
 def update_studio_data(studios_data):
     """Run scrapers for all active studios and update the data."""
     updated_count = 0
     error_count = 0
+    prices_found = 0
 
     for studio in studios_data.get('studios', []):
         if not studio.get('active', True):
@@ -172,6 +316,27 @@ def update_studio_data(studios_data):
             studio['scrape_status'] = 'error'
             error_count += 1
 
+        # --- Price scraping ---
+        try:
+            new_pricing = scrape_prices(studio)
+            existing_pricing = studio.get('pricing', {})
+
+            if new_pricing and new_pricing.get('verified'):
+                # Merge: keep existing fields not in new data, update the rest
+                merged = dict(existing_pricing)
+                merged.update(new_pricing)
+                studio['pricing'] = merged
+                prices_found += 1
+                logger.info(f"  Updated pricing for {studio_name}: {new_pricing}")
+            elif not new_pricing:
+                # No prices found; update last_checked but don't clear existing data
+                if existing_pricing:
+                    existing_pricing['last_checked'] = datetime.now(timezone.utc).isoformat()
+                logger.debug(f"  No pricing found for {studio_name}")
+        except Exception as e:
+            logger.error(f"Error scraping prices for {studio_name}: {e}")
+
+    logger.info(f"Price scraping summary: {prices_found} studios with new/updated prices")
     return updated_count, error_count
 
 

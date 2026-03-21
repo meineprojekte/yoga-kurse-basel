@@ -600,14 +600,15 @@
       ],
       "lat": 46.461,
       "lng": 6.843,
-      "active": true,
+      "active": false,
+      "closed_note": "Website nicht mehr erreichbar (SSL-Fehler)",
       "classes": []
     },
     {
       "id": "terre-du-yoga-vevey",
       "name": "Terre du Yoga",
-      "website": "https://terreduyoga.com/",
-      "schedule_url": "https://terreduyoga.com/",
+      "website": "https://www.caroledalmas.com/",
+      "schedule_url": "https://www.caroledalmas.com/",
       "addresses": [
         {
           "street": "Avenue de Corsier 6",
