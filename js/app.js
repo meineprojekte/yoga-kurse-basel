@@ -102,7 +102,15 @@ if ('serviceWorker' in navigator) {
             'pricing.from': 'ab',
             'pricing.guide_prices': 'Richtpreise',
             'pricing.title': 'Preise',
-            'pricing.disclaimer': 'Richtpreise — aktuelle Preise auf der Studio-Website'
+            'pricing.disclaimer': 'Richtpreise — aktuelle Preise auf der Studio-Website',
+            'sources.title': 'Datenquellen',
+            'sources.website': 'Offizielle Website',
+            'sources.schedule': 'Stundenplan',
+            'sources.pricing': 'Preise verifiziert',
+            'sources.last_checked': 'Zuletzt geprüft',
+            'sources.not_available': 'Nicht verfügbar',
+            'pricing.verified_badge': 'Preise verifiziert',
+            'pricing.prices_from': 'Preise von'
         },
         en: {
             'nav.studios': 'Studios',
@@ -194,7 +202,15 @@ if ('serviceWorker' in navigator) {
             'pricing.from': 'from',
             'pricing.guide_prices': 'Guide prices',
             'pricing.title': 'Prices',
-            'pricing.disclaimer': 'Guide prices — check the studio website for current prices'
+            'pricing.disclaimer': 'Guide prices — check the studio website for current prices',
+            'sources.title': 'Data sources',
+            'sources.website': 'Official website',
+            'sources.schedule': 'Schedule',
+            'sources.pricing': 'Prices verified',
+            'sources.last_checked': 'Last checked',
+            'sources.not_available': 'Not available',
+            'pricing.verified_badge': 'Prices verified',
+            'pricing.prices_from': 'Prices from'
         },
         it: {
             'nav.studios': 'Studi',
@@ -286,7 +302,15 @@ if ('serviceWorker' in navigator) {
             'pricing.from': 'da',
             'pricing.guide_prices': 'Prezzi indicativi',
             'pricing.title': 'Prezzi',
-            'pricing.disclaimer': 'Prezzi indicativi — consulta il sito dello studio per i prezzi aggiornati'
+            'pricing.disclaimer': 'Prezzi indicativi — consulta il sito dello studio per i prezzi aggiornati',
+            'sources.title': 'Fonti dati',
+            'sources.website': 'Sito ufficiale',
+            'sources.schedule': 'Orario',
+            'sources.pricing': 'Prezzi verificati',
+            'sources.last_checked': 'Ultimo controllo',
+            'sources.not_available': 'Non disponibile',
+            'pricing.verified_badge': 'Prezzi verificati',
+            'pricing.prices_from': 'Prezzi da'
         },
         fr: {
             'nav.studios': 'Studios',
@@ -378,7 +402,15 @@ if ('serviceWorker' in navigator) {
             'pricing.from': 'dès',
             'pricing.guide_prices': 'Prix indicatifs',
             'pricing.title': 'Prix',
-            'pricing.disclaimer': 'Prix indicatifs — consulte le site du studio pour les prix actuels'
+            'pricing.disclaimer': 'Prix indicatifs — consulte le site du studio pour les prix actuels',
+            'sources.title': 'Sources',
+            'sources.website': 'Site officiel',
+            'sources.schedule': 'Horaire',
+            'sources.pricing': 'Prix vérifiés',
+            'sources.last_checked': 'Dernière vérification',
+            'sources.not_available': 'Non disponible',
+            'pricing.verified_badge': 'Prix vérifiés',
+            'pricing.prices_from': 'Prix de'
         }
     };
 
@@ -458,6 +490,15 @@ if ('serviceWorker' in navigator) {
 
     function t(key) {
         return (translations[state.lang] || translations.de)[key] || key;
+    }
+
+    function formatDateStr(dateStr) {
+        try {
+            var d = new Date(dateStr);
+            if (isNaN(d.getTime())) return '';
+            var locale = state.lang === 'de' ? 'de-CH' : state.lang === 'fr' ? 'fr-CH' : state.lang === 'it' ? 'it-CH' : 'en-GB';
+            return d.toLocaleDateString(locale, { day: '2-digit', month: '2-digit', year: 'numeric' });
+        } catch (e) { return ''; }
     }
 
     // --- Init: runs when DOM is ready ---
@@ -927,6 +968,7 @@ if ('serviceWorker' in navigator) {
     function onStudiosLoaded(data) {
         try {
             state.studios = [];
+            state.dataLastUpdated = data.last_updated || null;
             for (var i = 0; i < data.studios.length; i++) {
                 if (data.studios[i].active !== false) {
                     state.studios.push(data.studios[i]);
@@ -1020,12 +1062,17 @@ if ('serviceWorker' in navigator) {
         if (studio.pricing && studio.pricing.single) {
             priceBadgeHtml = '<span class="studio-price-badge">' + t('pricing.from') + ' ' + (studio.pricing.currency || 'CHF') + ' ' + studio.pricing.single + '</span>';
         }
+        var verifiedBadgeHtml = '';
+        if (studio.pricing && studio.pricing.verified === true) {
+            verifiedBadgeHtml = '<span class="verified-badge">\u2713 ' + t('pricing.verified_badge') + '</span>';
+        }
 
         card.innerHTML =
             '<div class="studio-card-header">' +
                 '<h3 class="studio-name">' + escapeHtml(studio.name) + '</h3>' +
                 (studio.drop_in ? '<span class="studio-badge drop-in">Drop-in</span>' : '') +
                 priceBadgeHtml +
+                verifiedBadgeHtml +
             '</div>' +
             '<div class="studio-address">' +
                 '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>' +
@@ -1165,16 +1212,66 @@ if ('serviceWorker' in navigator) {
 
         if (studio.pricing && studio.pricing.single) {
             var cur = studio.pricing.currency || 'CHF';
-            html += '<div class="modal-section"><h3>' + t('pricing.title') + '</h3>' +
+            var pricingTitleHtml = t('pricing.title');
+            if (studio.pricing.verified === true) {
+                pricingTitleHtml += ' <span class="verified-badge verified-badge-inline">\u2713</span>';
+            }
+            if (studio.pricing.source) {
+                pricingTitleHtml = '<a href="' + escapeHtml(studio.pricing.source) + '" target="_blank" rel="noopener noreferrer" class="pricing-title-link">' + pricingTitleHtml + '</a>';
+            }
+            var pricingDisclaimerHtml = '';
+            if (studio.pricing.source) {
+                var sourceHost = '';
+                try { sourceHost = new URL(studio.pricing.source).hostname.replace('www.', ''); } catch (e) { sourceHost = studio.pricing.source; }
+                var lastCheckedDate = '';
+                if (studio._meta && studio._meta.last_scraped) {
+                    lastCheckedDate = formatDateStr(studio._meta.last_scraped);
+                } else if (state.dataLastUpdated) {
+                    lastCheckedDate = formatDateStr(state.dataLastUpdated);
+                }
+                pricingDisclaimerHtml = t('pricing.prices_from') + ' <a href="' + escapeHtml(studio.pricing.source) + '" target="_blank" rel="noopener noreferrer" class="data-source-link">' + escapeHtml(sourceHost) + '</a>' +
+                    (lastCheckedDate ? ' \u2014 ' + t('sources.last_checked') + ': ' + lastCheckedDate : '');
+            } else {
+                pricingDisclaimerHtml = t('pricing.disclaimer');
+            }
+            html += '<div class="modal-section"><h3>' + pricingTitleHtml + '</h3>' +
                 '<table class="pricing-table">' +
                 '<tr><td>' + t('pricing.single') + '</td><td>' + cur + ' ' + studio.pricing.single + '</td></tr>' +
                 (studio.pricing.card_10 ? '<tr><td>' + t('pricing.card_10') + '</td><td>' + cur + ' ' + studio.pricing.card_10 + '</td></tr>' : '') +
                 (studio.pricing.monthly ? '<tr><td>' + t('pricing.monthly') + '</td><td>' + cur + ' ' + studio.pricing.monthly + '</td></tr>' : '') +
                 (studio.pricing.trial ? '<tr><td>' + t('pricing.trial') + '</td><td>' + cur + ' ' + studio.pricing.trial + '</td></tr>' : '') +
                 '</table>' +
-                '<p class="pricing-note">' + t('pricing.disclaimer') + '</p>' +
+                '<p class="pricing-note">' + pricingDisclaimerHtml + '</p>' +
                 '</div>';
         }
+
+        // Data sources section
+        html += '<div class="data-sources"><div class="data-sources-title">\ud83d\udccb ' + t('sources.title') + '</div><div class="data-sources-list">';
+        if (studio.website) {
+            var websiteHost = '';
+            try { websiteHost = new URL(studio.website).hostname.replace('www.', ''); } catch (e) { websiteHost = studio.website; }
+            html += '<div class="data-source-item"><span class="data-source-prefix">\u251c</span> ' + t('sources.website') + ': <a href="' + escapeHtml(studio.website) + '" target="_blank" rel="noopener noreferrer" class="data-source-link">' + escapeHtml(websiteHost) + ' \u2197</a></div>';
+        }
+        if (studio.schedule_url && studio.schedule_url !== studio.website) {
+            var schedHost = '';
+            try { schedHost = new URL(studio.schedule_url).hostname.replace('www.', ''); } catch (e) { schedHost = studio.schedule_url; }
+            html += '<div class="data-source-item"><span class="data-source-prefix">\u251c</span> ' + t('sources.schedule') + ': <a href="' + escapeHtml(studio.schedule_url) + '" target="_blank" rel="noopener noreferrer" class="data-source-link">' + escapeHtml(schedHost) + ' \u2197</a></div>';
+        }
+        if (studio.pricing && studio.pricing.verified && studio.pricing.source) {
+            var priceHost = '';
+            try { priceHost = new URL(studio.pricing.source).hostname.replace('www.', ''); } catch (e) { priceHost = studio.pricing.source; }
+            html += '<div class="data-source-item"><span class="data-source-prefix">\u251c</span> ' + t('sources.pricing') + ': <a href="' + escapeHtml(studio.pricing.source) + '" target="_blank" rel="noopener noreferrer" class="data-source-link">' + escapeHtml(priceHost) + ' \u2197</a></div>';
+        }
+        var lastChecked = '';
+        if (studio._meta && studio._meta.last_scraped) {
+            lastChecked = formatDateStr(studio._meta.last_scraped);
+        } else if (state.dataLastUpdated) {
+            lastChecked = formatDateStr(state.dataLastUpdated);
+        }
+        if (lastChecked) {
+            html += '<div class="data-source-item"><span class="data-source-prefix">\u2514</span> ' + t('sources.last_checked') + ': ' + lastChecked + '</div>';
+        }
+        html += '</div></div>';
 
         html += '<div class="modal-actions">';
         if (studio.website) {

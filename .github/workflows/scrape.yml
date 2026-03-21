@@ -11,11 +11,12 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
 
     steps:
       - name: Checkout repository
@@ -31,19 +32,87 @@ jobs:
       - name: Install dependencies
         run: pip install -r scrapers/requirements.txt
 
-      - name: Run scraper
+      - name: Run scraper (all cantons)
         run: python scrapers/scrape_all.py
+
+      - name: Run data validation
+        id: validate
+        run: |
+          if [ -f tools/validate_data.py ]; then
+            python tools/validate_data.py 2>&1 | tee validation_output.txt
+            echo "validation_ran=true" >> $GITHUB_OUTPUT
+          else
+            echo "validate_data.py not found, skipping"
+            echo "validation_ran=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check for high-severity anomalies
+        id: anomalies
+        if: steps.validate.outputs.validation_ran == 'true'
+        run: |
+          REPORT_FILE="tools/validation_report.json"
+          if [ -f "$REPORT_FILE" ]; then
+            HIGH_COUNT=$(python3 -c "
+          import json, sys
+          try:
+              with open('$REPORT_FILE') as f:
+                  report = json.load(f)
+              anomalies = report.get('anomalies', [])
+              high = [a for a in anomalies if a.get('severity') == 'high']
+              print(len(high))
+          except Exception:
+              print(0)
+          ")
+            echo "high_count=$HIGH_COUNT" >> $GITHUB_OUTPUT
+            if [ "$HIGH_COUNT" -gt 0 ]; then
+              echo "has_high_anomalies=true" >> $GITHUB_OUTPUT
+            else
+              echo "has_high_anomalies=false" >> $GITHUB_OUTPUT
+            fi
+          else
+            echo "has_high_anomalies=false" >> $GITHUB_OUTPUT
+            echo "high_count=0" >> $GITHUB_OUTPUT
+          fi
 
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet data/studios.json || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --quiet data/ tools/price_changelog.json tools/validation_report.json 2>/dev/null || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push changes
         if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "Yoga Basel Bot"
           git config user.email "bot@yogakursebasel.ch"
-          git add data/studios.json
+          git add data/studios_*.json
+          git add tools/price_changelog.json || true
+          git add tools/validation_report.json || true
           git commit -m "chore: update studio data $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
+
+      - name: Create issue for high-severity anomalies
+        if: steps.anomalies.outputs.has_high_anomalies == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ANOMALY_DETAILS=$(python3 -c "
+          import json
+          with open('tools/validation_report.json') as f:
+              report = json.load(f)
+          highs = [a for a in report.get('anomalies', []) if a.get('severity') == 'high']
+          for a in highs:
+              print(f\"- **{a.get('type', 'unknown')}** in {a.get('canton', '?')}: {a.get('message', 'no details')}\")
+          ")
+          gh issue create \
+            --title "Data anomaly: ${{ steps.anomalies.outputs.high_count }} high-severity issue(s) detected" \
+            --body "$(cat <<EOF
+          ## High-severity data anomalies detected
+
+          The automated scraper found the following high-severity anomalies during the $(date -u +'%Y-%m-%d %H:%M UTC') run:
+
+          ${ANOMALY_DETAILS}
+
+          Please review the validation report at \`tools/validation_report.json\` and fix the affected data files.
+          EOF
+          )" \
+            --label "bug,data-quality"

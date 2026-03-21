@@ -1,0 +1,737 @@
+======================================================================
+  YOGA KURSE SCHWEIZ - DATA VALIDATION REPORT
+======================================================================
+  Zeitpunkt: 2026-03-21T23:18:58.456136
+
+--- ZUSAMMENFASSUNG ---
+  Studios total:        266
+  Studios aktiv:        249
+  Studios mit Preisen:  91
+  Klassen total:        759
+  Kantone geladen:      26
+
+  ANOMALIEN (hoch):     31
+  WARNUNGEN (mittel+):  111
+  PREISÄNDERUNGEN:      0
+
+======================================================================
+  ANOMALIEN (erfordern Aufmerksamkeit)
+======================================================================
+
+  [1] orphan_schedule_entry | Schweregrad: high
+      Studio: Bikram Yoga College ZH (bikram-yoga-zh)
+      Kanton: zurich
+      studio_id 'bikram-yoga-zh' in Schedule existiert nicht in Studios-Daten (14 Klassen betroffen)
+
+  [2] orphan_schedule_entry | Schweregrad: high
+      Studio: YAMA Yoga & Co (yama-yoga)
+      Kanton: bern
+      studio_id 'yama-yoga' in Schedule existiert nicht in Studios-Daten (10 Klassen betroffen)
+
+  [3] orphan_schedule_entry | Schweregrad: high
+      Studio: Yoga Carmen (yoga-carmen)
+      Kanton: bern
+      studio_id 'yoga-carmen' in Schedule existiert nicht in Studios-Daten (9 Klassen betroffen)
+
+  [4] orphan_schedule_entry | Schweregrad: high
+      Studio: svarupa yoga (svarupa-yoga)
+      Kanton: bern
+      studio_id 'svarupa-yoga' in Schedule existiert nicht in Studios-Daten (13 Klassen betroffen)
+
+  [5] orphan_schedule_entry | Schweregrad: high
+      Studio: yogamarket (yogamarket)
+      Kanton: bern
+      studio_id 'yogamarket' in Schedule existiert nicht in Studios-Daten (11 Klassen betroffen)
+
+  [6] orphan_schedule_entry | Schweregrad: high
+      Studio: Inside Outside yoga (inside-outside)
+      Kanton: bern
+      studio_id 'inside-outside' in Schedule existiert nicht in Studios-Daten (9 Klassen betroffen)
+
+  [7] orphan_schedule_entry | Schweregrad: high
+      Studio: Ashtanga Yoga Luzern (ashtanga-yoga-luzern)
+      Kanton: luzern
+      studio_id 'ashtanga-yoga-luzern' in Schedule existiert nicht in Studios-Daten (8 Klassen betroffen)
+
+  [8] orphan_schedule_entry | Schweregrad: high
+      Studio: Original Hot Yoga Luzern (original-hot-yoga)
+      Kanton: luzern
+      studio_id 'original-hot-yoga' in Schedule existiert nicht in Studios-Daten (11 Klassen betroffen)
+
+  [9] orphan_schedule_entry | Schweregrad: high
+      Studio: Studio 30 (studio-30)
+      Kanton: solothurn
+      studio_id 'studio-30' in Schedule existiert nicht in Studios-Daten (9 Klassen betroffen)
+
+  [10] orphan_schedule_entry | Schweregrad: high
+      Studio: Sunshine Yoga (sunshine-yoga)
+      Kanton: solothurn
+      studio_id 'sunshine-yoga' in Schedule existiert nicht in Studios-Daten (6 Klassen betroffen)
+
+  [11] orphan_schedule_entry | Schweregrad: high
+      Studio: DownTown Yoga Olten (downtown-yoga)
+      Kanton: solothurn
+      studio_id 'downtown-yoga' in Schedule existiert nicht in Studios-Daten (9 Klassen betroffen)
+
+  [12] orphan_schedule_entry | Schweregrad: high
+      Studio: Yoga Lotus Liestal (yoga-lotus)
+      Kanton: basel-landschaft
+      studio_id 'yoga-lotus' in Schedule existiert nicht in Studios-Daten (6 Klassen betroffen)
+
+  [13] orphan_schedule_entry | Schweregrad: high
+      Studio: Yoga in der Altstadt (yoga-altstadt)
+      Kanton: st-gallen
+      studio_id 'yoga-altstadt' in Schedule existiert nicht in Studios-Daten (10 Klassen betroffen)
+
+  [14] orphan_schedule_entry | Schweregrad: high
+      Studio: Studio 8 (studio-8)
+      Kanton: st-gallen
+      studio_id 'studio-8' in Schedule existiert nicht in Studios-Daten (9 Klassen betroffen)
+
+  [15] orphan_schedule_entry | Schweregrad: high
+      Studio: YOGALOFT Rapperswil (yogaloft-rapperswil)
+      Kanton: st-gallen
+      studio_id 'yogaloft-rapperswil' in Schedule existiert nicht in Studios-Daten (9 Klassen betroffen)
+
+  [16] orphan_schedule_entry | Schweregrad: high
+      Studio: Yoga Pyramide Chur (yoga-pyramide)
+      Kanton: graubuenden
+      studio_id 'yoga-pyramide' in Schedule existiert nicht in Studios-Daten (10 Klassen betroffen)
+
+  [17] orphan_schedule_entry | Schweregrad: high
+      Studio: aloha yoga Aarau (aloha-yoga)
+      Kanton: aargau
+      studio_id 'aloha-yoga' in Schedule existiert nicht in Studios-Daten (9 Klassen betroffen)
+
+  [18] orphan_schedule_entry | Schweregrad: high
+      Studio: co yoga space (co-yoga-space)
+      Kanton: aargau
+      studio_id 'co-yoga-space' in Schedule existiert nicht in Studios-Daten (9 Klassen betroffen)
+
+  [19] orphan_schedule_entry | Schweregrad: high
+      Studio: YOGA.BADEN (Iyengar Yoga Baden) (yoga-baden)
+      Kanton: aargau
+      studio_id 'yoga-baden' in Schedule existiert nicht in Studios-Daten (8 Klassen betroffen)
+
+  [20] orphan_schedule_entry | Schweregrad: high
+      Studio: Namaste Yoga Baden (namaste-baden)
+      Kanton: aargau
+      studio_id 'namaste-baden' in Schedule existiert nicht in Studios-Daten (14 Klassen betroffen)
+
+  [21] orphan_schedule_entry | Schweregrad: high
+      Studio: oOom Yoga & Therapie (ooom)
+      Kanton: vaud
+      studio_id 'ooom' in Schedule existiert nicht in Studios-Daten (9 Klassen betroffen)
+
+  [22] orphan_schedule_entry | Schweregrad: high
+      Studio: Nueva Luna Yoga (nueva-luna)
+      Kanton: vaud
+      studio_id 'nueva-luna' in Schedule existiert nicht in Studios-Daten (5 Klassen betroffen)
+
+  [23] orphan_schedule_entry | Schweregrad: high
+      Studio: The Yogarden (yogarden)
+      Kanton: vaud
+      studio_id 'yogarden' in Schedule existiert nicht in Studios-Daten (5 Klassen betroffen)
+
+  [24] orphan_schedule_entry | Schweregrad: high
+      Studio: Yogaworks Lausanne (yogaworks)
+      Kanton: vaud
+      studio_id 'yogaworks' in Schedule existiert nicht in Studios-Daten (16 Klassen betroffen)
+
+  [25] orphan_schedule_entry | Schweregrad: high
+      Studio: Yoga Flame Lausanne (yoga-flame)
+      Kanton: vaud
+      studio_id 'yoga-flame' in Schedule existiert nicht in Studios-Daten (16 Klassen betroffen)
+
+  [26] orphan_schedule_entry | Schweregrad: high
+      Studio: Ashtanga Yoga Lausanne (ashtanga-lausanne)
+      Kanton: vaud
+      studio_id 'ashtanga-lausanne' in Schedule existiert nicht in Studios-Daten (11 Klassen betroffen)
+
+  [27] orphan_schedule_entry | Schweregrad: high
+      Studio: Yoga Flame (yoga-flame)
+      Kanton: geneve
+      studio_id 'yoga-flame' in Schedule existiert nicht in Studios-Daten (15 Klassen betroffen)
+
+  [28] orphan_schedule_entry | Schweregrad: high
+      Studio: COLIFE (colife)
+      Kanton: geneve
+      studio_id 'colife' in Schedule existiert nicht in Studios-Daten (21 Klassen betroffen)
+
+  [29] orphan_schedule_entry | Schweregrad: high
+      Studio: Yoga Lab (yoga-lab)
+      Kanton: geneve
+      studio_id 'yoga-lab' in Schedule existiert nicht in Studios-Daten (10 Klassen betroffen)
+
+  [30] orphan_schedule_entry | Schweregrad: high
+      Studio: Akta Yoga (akta-yoga)
+      Kanton: geneve
+      studio_id 'akta-yoga' in Schedule existiert nicht in Studios-Daten (14 Klassen betroffen)
+
+  [31] orphan_schedule_entry | Schweregrad: high
+      Studio: Yoga7 (yoga7)
+      Kanton: geneve
+      studio_id 'yoga7' in Schedule existiert nicht in Studios-Daten (12 Klassen betroffen)
+
+======================================================================
+  WARNUNGEN (zur Überprüfung)
+======================================================================
+
+  [1] trial_exceeds_single | Schweregrad: medium
+      Studio: AIRYOGA (airyoga)
+      Kanton: zurich
+      Probepreis CHF 75 ist höher als Einzeleintritt CHF 25
+
+  [2] trial_exceeds_single | Schweregrad: medium
+      Studio: Sanapurna Yoga & Ayurveda Centre (sanapurna)
+      Kanton: zurich
+      Probepreis CHF 75 ist höher als Einzeleintritt CHF 30
+
+  [3] trial_exceeds_single | Schweregrad: medium
+      Studio: ATHAYOGA (athayoga)
+      Kanton: zurich
+      Probepreis CHF 79 ist höher als Einzeleintritt CHF 36
+
+  [4] trial_exceeds_single | Schweregrad: medium
+      Studio: Soasana Yoga (soasana)
+      Kanton: zurich
+      Probepreis CHF 65 ist höher als Einzeleintritt CHF 33
+
+  [5] trial_exceeds_single | Schweregrad: medium
+      Studio: Das Yoga Haus Dubs (das-yoga-haus-dubs)
+      Kanton: zurich
+      Probepreis CHF 75 ist höher als Einzeleintritt CHF 29
+
+  [6] trial_exceeds_single | Schweregrad: medium
+      Studio: Yoga am Zürichberg (yoga-am-zuerichberg)
+      Kanton: zurich
+      Probepreis CHF 75 ist höher als Einzeleintritt CHF 38
+
+  [7] price_ratio_unusual | Schweregrad: medium
+      Studio: yogamoves (yogamoves-winterthur)
+      Kanton: zurich
+      Monatsabo/Einzeleintritt Verhältnis 10.7x (erwartet 4-10x)
+
+  [8] trial_exceeds_single | Schweregrad: medium
+      Studio: Yoga Luna (yoga-luna-bern)
+      Kanton: bern
+      Probepreis CHF 50 ist höher als Einzeleintritt CHF 30
+
+  [9] trial_exceeds_single | Schweregrad: medium
+      Studio: HOTHAUS Hot Yoga & Movement Bern (hothaus-bern)
+      Kanton: bern
+      Probepreis CHF 50 ist höher als Einzeleintritt CHF 38
+
+  [10] price_ratio_unusual | Schweregrad: medium
+      Studio: YOGABERN Iyengar-Yoga-Schule (yogabern-iyengar)
+      Kanton: bern
+      10er-Karte/Einzeleintritt Verhältnis 6.2x (erwartet 7-12x)
+
+  [11] price_ratio_unusual | Schweregrad: medium
+      Studio: LIV lab Luzern (liv-lab)
+      Kanton: luzern
+      Monatsabo/Einzeleintritt Verhältnis 10.4x (erwartet 4-10x)
+
+  [12] trial_exceeds_single | Schweregrad: medium
+      Studio: LIV lab Luzern (liv-lab)
+      Kanton: luzern
+      Probepreis CHF 80 ist höher als Einzeleintritt CHF 33
+
+  [13] trial_exceeds_single | Schweregrad: medium
+      Studio: Mii-Ruum Yoga und Pilates (mii-ruum)
+      Kanton: luzern
+      Probepreis CHF 60 ist höher als Einzeleintritt CHF 35
+
+  [14] trial_exceeds_single | Schweregrad: medium
+      Studio: The Looking Glass Basel (looking-glass)
+      Kanton: basel-stadt
+      Probepreis CHF 60 ist höher als Einzeleintritt CHF 30
+
+  [15] trial_exceeds_single | Schweregrad: medium
+      Studio: YOGABLOOM (yogabloom)
+      Kanton: basel-stadt
+      Probepreis CHF 60 ist höher als Einzeleintritt CHF 20
+
+  [16] trial_exceeds_single | Schweregrad: medium
+      Studio: Bikram Yoga Basel (bikram)
+      Kanton: basel-stadt
+      Probepreis CHF 55 ist höher als Einzeleintritt CHF 41
+
+  [17] price_ratio_unusual | Schweregrad: medium
+      Studio: Rin Yoga — Rinny Biberstein (rin-yoga)
+      Kanton: basel-stadt
+      10er-Karte/Einzeleintritt Verhältnis 6.7x (erwartet 7-12x)
+
+  [18] price_ratio_unusual | Schweregrad: medium
+      Studio: Fitnesspark Basel Heuwaage (Migros) (fitnesspark)
+      Kanton: basel-stadt
+      Monatsabo/Einzeleintritt Verhältnis 3.2x (erwartet 4-10x)
+
+  [19] trial_exceeds_single | Schweregrad: medium
+      Studio: LINEUPYOGA (lineupyoga-st-gallen)
+      Kanton: st-gallen
+      Probepreis CHF 40 ist höher als Einzeleintritt CHF 28
+
+  [20] price_ratio_unusual | Schweregrad: medium
+      Studio: 123 Yoga (123-yoga-st-gallen)
+      Kanton: st-gallen
+      10er-Karte/Einzeleintritt Verhältnis 6.7x (erwartet 7-12x)
+
+  [21] price_ratio_unusual | Schweregrad: medium
+      Studio: Centre de Yoga Shambala (yoga-shambala-carouge)
+      Kanton: geneve
+      Monatsabo/Einzeleintritt Verhältnis 3.3x (erwartet 4-10x)
+
+  [22] duplicate_address | Schweregrad: medium
+      Studio: Yoga Culture (yoga-am-hottingerplatz)
+      Kanton: zurich
+      Gleiche Adresse 'hottingerstrasse 35, 8032' bei Studios: yoga-am-hottingerplatz, yoga-culture
+
+  [23] duplicate_address | Schweregrad: medium
+      Studio: Yogalives (yogagold)
+      Kanton: zurich
+      Gleiche Adresse 'giesshübelstrasse 62b, 8045' bei Studios: yogagold, yogalives
+
+  [24] duplicate_coordinates | Schweregrad: low
+      Studio: AIRYOGA (airyoga)
+      Kanton: zurich
+      Sehr nahe Koordinaten: 'AIRYOGA' und 'The Yoga Place' (< 100m Abstand)
+
+  [25] duplicate_coordinates | Schweregrad: low
+      Studio: Sanapurna Yoga & Ayurveda Centre (sanapurna)
+      Kanton: zurich
+      Sehr nahe Koordinaten: 'Sanapurna Yoga & Ayurveda Centre' und 'Das Yoga Haus' (< 100m Abstand)
+
+  [26] duplicate_coordinates | Schweregrad: low
+      Studio: Yoga Studio Zürich (yoga-studio-zuerich)
+      Kanton: zurich
+      Sehr nahe Koordinaten: 'Yoga Studio Zürich' und 'Patanjali Yoga Shala' (< 100m Abstand)
+
+  [27] duplicate_coordinates | Schweregrad: low
+      Studio: Yoga Studio Zürich (yoga-studio-zuerich)
+      Kanton: zurich
+      Sehr nahe Koordinaten: 'Yoga Studio Zürich' und 'Elevate Studio' (< 100m Abstand)
+
+  [28] duplicate_coordinates | Schweregrad: low
+      Studio: Yoga Studio Zürich (yoga-studio-zuerich)
+      Kanton: zurich
+      Sehr nahe Koordinaten: 'Yoga Studio Zürich' und 'Jio Kundalini Yoga' (< 100m Abstand)
+
+  [29] duplicate_coordinates | Schweregrad: low
+      Studio: Patanjali Yoga Shala (patanjali-yoga-shala)
+      Kanton: zurich
+      Sehr nahe Koordinaten: 'Patanjali Yoga Shala' und 'Das Yoga Haus' (< 100m Abstand)
+
+  [30] duplicate_coordinates | Schweregrad: low
+      Studio: Patanjali Yoga Shala (patanjali-yoga-shala)
+      Kanton: zurich
+      Sehr nahe Koordinaten: 'Patanjali Yoga Shala' und 'Elevate Studio' (< 100m Abstand)
+
+  [31] duplicate_coordinates | Schweregrad: low
+      Studio: Patanjali Yoga Shala (patanjali-yoga-shala)
+      Kanton: zurich
+      Sehr nahe Koordinaten: 'Patanjali Yoga Shala' und 'Jio Kundalini Yoga' (< 100m Abstand)
+
+  [32] duplicate_coordinates | Schweregrad: low
+      Studio: Das Yoga Haus (das-yoga-haus)
+      Kanton: zurich
+      Sehr nahe Koordinaten: 'Das Yoga Haus' und 'Elevate Studio' (< 100m Abstand)
+
+  [33] duplicate_coordinates | Schweregrad: low
+      Studio: Das Yoga Haus Dubs (das-yoga-haus-dubs)
+      Kanton: zurich
+      Sehr nahe Koordinaten: 'Das Yoga Haus Dubs' und 'Planet Yoga' (< 100m Abstand)
+
+  [34] duplicate_coordinates | Schweregrad: low
+      Studio: VVOO Yoga Studio & Wellness Shop (vvoo)
+      Kanton: zurich
+      Sehr nahe Koordinaten: 'VVOO Yoga Studio & Wellness Shop' und 'Project Peace (Jivamukti Yoga)' (< 100m Abstand)
+
+  [35] duplicate_coordinates | Schweregrad: low
+      Studio: Yoga Nest (yoga-nest)
+      Kanton: zurich
+      Sehr nahe Koordinaten: 'Yoga Nest' und 'Yoga2day' (< 100m Abstand)
+
+  [36] duplicate_coordinates | Schweregrad: low
+      Studio: Planet Yoga (planet-yoga)
+      Kanton: zurich
+      Sehr nahe Koordinaten: 'Planet Yoga' und 'Radiant Heart Studio' (< 100m Abstand)
+
+  [37] duplicate_coordinates | Schweregrad: low
+      Studio: Yogalives (yogalives)
+      Kanton: zurich
+      Sehr nahe Koordinaten: 'Yogalives' und 'Yogagold' (< 100m Abstand)
+
+  [38] duplicate_coordinates | Schweregrad: low
+      Studio: Elevate Studio (elevate-studio)
+      Kanton: zurich
+      Sehr nahe Koordinaten: 'Elevate Studio' und 'Jio Kundalini Yoga' (< 100m Abstand)
+
+  [39] duplicate_coordinates | Schweregrad: low
+      Studio: Radiant Heart Studio (radiant-heart-studio)
+      Kanton: zurich
+      Sehr nahe Koordinaten: 'Radiant Heart Studio' und 'Templeshape' (< 100m Abstand)
+
+  [40] duplicate_address | Schweregrad: medium
+      Studio: Hot Yoga Bern (hothaus-bern)
+      Kanton: bern
+      Gleiche Adresse 'bubenbergplatz 8, 3011' bei Studios: hothaus-bern, vayam-yoga-bern, hot-yoga-bern
+
+  [41] duplicate_coordinates | Schweregrad: low
+      Studio: Yoga Carmen (yoga-carmen-bern)
+      Kanton: bern
+      Sehr nahe Koordinaten: 'Yoga Carmen' und 'Hot Yoga Bern' (< 100m Abstand)
+
+  [42] duplicate_coordinates | Schweregrad: low
+      Studio: Yoga Carmen (yoga-carmen-bern)
+      Kanton: bern
+      Sehr nahe Koordinaten: 'Yoga Carmen' und 'HOTHAUS Hot Yoga & Movement Bern' (< 100m Abstand)
+
+  [43] duplicate_coordinates | Schweregrad: low
+      Studio: Yoga Carmen (yoga-carmen-bern)
+      Kanton: bern
+      Sehr nahe Koordinaten: 'Yoga Carmen' und 'vayam yoga' (< 100m Abstand)
+
+  [44] duplicate_coordinates | Schweregrad: low
+      Studio: Yoga Luna (yoga-luna-bern)
+      Kanton: bern
+      Sehr nahe Koordinaten: 'Yoga Luna' und 'yogamarket' (< 100m Abstand)
+
+  [45] duplicate_coordinates | Schweregrad: low
+      Studio: Yoga Luna (yoga-luna-bern)
+      Kanton: bern
+      Sehr nahe Koordinaten: 'Yoga Luna' und 'OpenYoga' (< 100m Abstand)
+
+  [46] duplicate_coordinates | Schweregrad: low
+      Studio: Yoga Luna (yoga-luna-bern)
+      Kanton: bern
+      Sehr nahe Koordinaten: 'Yoga Luna' und 'Grey Rebel Yoga & Kinesiologie' (< 100m Abstand)
+
+  [47] duplicate_coordinates | Schweregrad: low
+      Studio: Yogveda Yoga (yogveda-bern)
+      Kanton: bern
+      Sehr nahe Koordinaten: 'Yogveda Yoga' und 'OpenYoga' (< 100m Abstand)
+
+  [48] duplicate_coordinates | Schweregrad: low
+      Studio: Hot Yoga Bern (hot-yoga-bern)
+      Kanton: bern
+      Sehr nahe Koordinaten: 'Hot Yoga Bern' und 'HOTHAUS Hot Yoga & Movement Bern' (< 100m Abstand)
+
+  [49] duplicate_coordinates | Schweregrad: low
+      Studio: Hot Yoga Bern (hot-yoga-bern)
+      Kanton: bern
+      Sehr nahe Koordinaten: 'Hot Yoga Bern' und 'vayam yoga' (< 100m Abstand)
+
+  [50] duplicate_coordinates | Schweregrad: low
+      Studio: HOTHAUS Hot Yoga & Movement Bern (hothaus-bern)
+      Kanton: bern
+      Sehr nahe Koordinaten: 'HOTHAUS Hot Yoga & Movement Bern' und 'vayam yoga' (< 100m Abstand)
+
+  [51] duplicate_coordinates | Schweregrad: low
+      Studio: yogamarket (yogamarket-bern)
+      Kanton: bern
+      Sehr nahe Koordinaten: 'yogamarket' und 'Grey Rebel Yoga & Kinesiologie' (< 100m Abstand)
+
+  [52] duplicate_address | Schweregrad: medium
+      Studio: Yogastudio Luzern (yogastudio-luzern)
+      Kanton: luzern
+      Gleiche Adresse 'werkhofstrasse 18, 6005' bei Studios: yogastudio-luzern, yoga-veda-luzern
+
+  [53] duplicate_address | Schweregrad: medium
+      Studio: Ashtanga Yoga Luzern (yoga-mit-herz)
+      Kanton: luzern
+      Gleiche Adresse 'weggisgasse 31, 6004' bei Studios: yoga-mit-herz, ashtanga-luzern
+
+  [54] duplicate_address | Schweregrad: medium
+      Studio: Yogagemeinschaft Luzern (yoga-mit-herz)
+      Kanton: luzern
+      Gleiche Adresse 'hirschengraben 13a, 6003' bei Studios: yoga-mit-herz, yogagemeinschaft-luzern
+
+  [55] duplicate_address | Schweregrad: medium
+      Studio: Pure You Yoga (yogakurse-horw)
+      Kanton: luzern
+      Gleiche Adresse 'kantonsstrasse 100, 6048' bei Studios: yogakurse-horw, pure-you-yoga-horw
+
+  [56] duplicate_coordinates | Schweregrad: low
+      Studio: Yogastudio Luzern (yogastudio-luzern)
+      Kanton: luzern
+      Sehr nahe Koordinaten: 'Yogastudio Luzern' und 'Yoga Veda Ausbildungen' (< 100m Abstand)
+
+  [57] duplicate_coordinates | Schweregrad: low
+      Studio: Ashtanga Yoga Luzern (ashtanga-luzern)
+      Kanton: luzern
+      Sehr nahe Koordinaten: 'Ashtanga Yoga Luzern' und 'Yoga mit Herz' (< 100m Abstand)
+
+  [58] duplicate_coordinates | Schweregrad: low
+      Studio: Mii-Ruum Yoga und Pilates (mii-ruum)
+      Kanton: luzern
+      Sehr nahe Koordinaten: 'Mii-Ruum Yoga und Pilates' und 'Studio Fayo' (< 100m Abstand)
+
+  [59] duplicate_coordinates | Schweregrad: low
+      Studio: Pure You Yoga (pure-you-yoga-horw)
+      Kanton: luzern
+      Sehr nahe Koordinaten: 'Pure You Yoga' und 'Yogakurse Horw - Myriam Bühler' (< 100m Abstand)
+
+  [60] duplicate_coordinates | Schweregrad: low
+      Studio: Anantara Yogastudio (anantara-yogastudio-altdorf)
+      Kanton: uri
+      Sehr nahe Koordinaten: 'Anantara Yogastudio' und 'Flow Altdorf' (< 100m Abstand)
+
+  [61] duplicate_coordinates | Schweregrad: low
+      Studio: Anantara Yogastudio (anantara-yogastudio-altdorf)
+      Kanton: uri
+      Sehr nahe Koordinaten: 'Anantara Yogastudio' und 'Urvani Yoga & Fitness' (< 100m Abstand)
+
+  [62] duplicate_coordinates | Schweregrad: low
+      Studio: Flow Altdorf (flow-altdorf)
+      Kanton: uri
+      Sehr nahe Koordinaten: 'Flow Altdorf' und 'Urvani Yoga & Fitness' (< 100m Abstand)
+
+  [63] duplicate_coordinates | Schweregrad: low
+      Studio: Yogastudio Ganesha (yogastudio-ganesha-einsiedeln)
+      Kanton: schwyz
+      Sehr nahe Koordinaten: 'Yogastudio Ganesha' und 'yoga8' (< 100m Abstand)
+
+  [64] duplicate_coordinates | Schweregrad: low
+      Studio: Yoga und Ayurveda Zentrum (yoga-ayurveda-zentrum-stans)
+      Kanton: nidwalden
+      Sehr nahe Koordinaten: 'Yoga und Ayurveda Zentrum' und 'Gesund & Munter - Hatha-Yoga und Pilates Studio' (< 100m Abstand)
+
+  [65] duplicate_coordinates | Schweregrad: low
+      Studio: Yoga und Ayurveda Zentrum (yoga-ayurveda-zentrum-stans)
+      Kanton: nidwalden
+      Sehr nahe Koordinaten: 'Yoga und Ayurveda Zentrum' und 'sevencolors' (< 100m Abstand)
+
+  [66] duplicate_coordinates | Schweregrad: low
+      Studio: Gesund & Munter - Hatha-Yoga und Pilates Studio (gesund-und-munter-stans)
+      Kanton: nidwalden
+      Sehr nahe Koordinaten: 'Gesund & Munter - Hatha-Yoga und Pilates Studio' und 'sevencolors' (< 100m Abstand)
+
+  [67] duplicate_coordinates | Schweregrad: low
+      Studio: YOGAamFLUSS (yogaamfluss-ennenda)
+      Kanton: glarus
+      Sehr nahe Koordinaten: 'YOGAamFLUSS' und '12yoga (Eins Zwei Yoga)' (< 100m Abstand)
+
+  [68] duplicate_coordinates | Schweregrad: low
+      Studio: Zug Yoga Sports (zug-yoga-sports)
+      Kanton: zug
+      Sehr nahe Koordinaten: 'Zug Yoga Sports' und 'Aum Yoga Studio' (< 100m Abstand)
+
+  [69] duplicate_address | Schweregrad: medium
+      Studio: YOGABLOOM (food-changes)
+      Kanton: basel-stadt
+      Gleiche Adresse 'pfluggasslein 1, 4001' bei Studios: food-changes, yogabloom
+
+  [70] duplicate_address | Schweregrad: medium
+      Studio: Ayalga Yoga (Iyengar) (yoga-now)
+      Kanton: basel-stadt
+      Gleiche Adresse 'basel, ' bei Studios: yoga-now, ayalga, katerina-wen, mysore-club, klubschule, kathrin-mathews
+
+  [71] duplicate_coordinates | Schweregrad: low
+      Studio: YOGABLOOM (yogabloom)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'YOGABLOOM' und 'Exhale Yoga Training & Coaching' (< 100m Abstand)
+
+  [72] duplicate_coordinates | Schweregrad: low
+      Studio: YOGABLOOM (yogabloom)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'YOGABLOOM' und 'Iyengar Yoga — Gerbergässlein' (< 100m Abstand)
+
+  [73] duplicate_coordinates | Schweregrad: low
+      Studio: YOGABLOOM (yogabloom)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'YOGABLOOM' und 'Rin Yoga — Rinny Biberstein' (< 100m Abstand)
+
+  [74] duplicate_coordinates | Schweregrad: low
+      Studio: YOGABLOOM (yogabloom)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'YOGABLOOM' und 'Food Changes Everything — Vanessa Gatelein' (< 100m Abstand)
+
+  [75] duplicate_coordinates | Schweregrad: low
+      Studio: Yoga Atelier Basel (yoga-atelier)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'Yoga Atelier Basel' und 'Exhale Yoga Training & Coaching' (< 100m Abstand)
+
+  [76] duplicate_coordinates | Schweregrad: low
+      Studio: Exhale Yoga Training & Coaching (exhale)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'Exhale Yoga Training & Coaching' und 'Rin Yoga — Rinny Biberstein' (< 100m Abstand)
+
+  [77] duplicate_coordinates | Schweregrad: low
+      Studio: Exhale Yoga Training & Coaching (exhale)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'Exhale Yoga Training & Coaching' und 'Food Changes Everything — Vanessa Gatelein' (< 100m Abstand)
+
+  [78] duplicate_coordinates | Schweregrad: low
+      Studio: Iyengar Yoga Basel — Caroline Kreis (iyengar-kreis)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'Iyengar Yoga Basel — Caroline Kreis' und 'Mignon — Birth & Parenting Support' (< 100m Abstand)
+
+  [79] duplicate_coordinates | Schweregrad: low
+      Studio: Iyengar Yoga Basel — Caroline Kreis (iyengar-kreis)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'Iyengar Yoga Basel — Caroline Kreis' und 'YOBA Yoga Studio' (< 100m Abstand)
+
+  [80] duplicate_coordinates | Schweregrad: low
+      Studio: Iyengar Yoga — Gerbergässlein (iyengar-gerbergaesslein)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'Iyengar Yoga — Gerbergässlein' und 'Ayalga Yoga (Iyengar)' (< 100m Abstand)
+
+  [81] duplicate_coordinates | Schweregrad: low
+      Studio: Iyengar Yoga — Gerbergässlein (iyengar-gerbergaesslein)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'Iyengar Yoga — Gerbergässlein' und 'Kathrin Mathews Yoga' (< 100m Abstand)
+
+  [82] duplicate_coordinates | Schweregrad: low
+      Studio: Iyengar Yoga — Gerbergässlein (iyengar-gerbergaesslein)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'Iyengar Yoga — Gerbergässlein' und 'Mysore Club Basel' (< 100m Abstand)
+
+  [83] duplicate_coordinates | Schweregrad: low
+      Studio: Iyengar Yoga — Gerbergässlein (iyengar-gerbergaesslein)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'Iyengar Yoga — Gerbergässlein' und 'Rin Yoga — Rinny Biberstein' (< 100m Abstand)
+
+  [84] duplicate_coordinates | Schweregrad: low
+      Studio: Iyengar Yoga — Gerbergässlein (iyengar-gerbergaesslein)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'Iyengar Yoga — Gerbergässlein' und 'Food Changes Everything — Vanessa Gatelein' (< 100m Abstand)
+
+  [85] duplicate_coordinates | Schweregrad: low
+      Studio: Iyengar Yoga — Gerbergässlein (iyengar-gerbergaesslein)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'Iyengar Yoga — Gerbergässlein' und 'Katerina Wen — Infinite Body Yoga' (< 100m Abstand)
+
+  [86] duplicate_coordinates | Schweregrad: low
+      Studio: Ayalga Yoga (Iyengar) (ayalga)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'Ayalga Yoga (Iyengar)' und 'Kathrin Mathews Yoga' (< 100m Abstand)
+
+  [87] duplicate_coordinates | Schweregrad: low
+      Studio: Ayalga Yoga (Iyengar) (ayalga)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'Ayalga Yoga (Iyengar)' und 'Mysore Club Basel' (< 100m Abstand)
+
+  [88] duplicate_coordinates | Schweregrad: low
+      Studio: Ayalga Yoga (Iyengar) (ayalga)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'Ayalga Yoga (Iyengar)' und 'Katerina Wen — Infinite Body Yoga' (< 100m Abstand)
+
+  [89] duplicate_coordinates | Schweregrad: low
+      Studio: Kathrin Mathews Yoga (kathrin-mathews)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'Kathrin Mathews Yoga' und 'Mysore Club Basel' (< 100m Abstand)
+
+  [90] duplicate_coordinates | Schweregrad: low
+      Studio: Kathrin Mathews Yoga (kathrin-mathews)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'Kathrin Mathews Yoga' und 'Katerina Wen — Infinite Body Yoga' (< 100m Abstand)
+
+  [91] duplicate_coordinates | Schweregrad: low
+      Studio: Mysore Club Basel (mysore-club)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'Mysore Club Basel' und 'Katerina Wen — Infinite Body Yoga' (< 100m Abstand)
+
+  [92] duplicate_coordinates | Schweregrad: low
+      Studio: Rin Yoga — Rinny Biberstein (rin-yoga)
+      Kanton: basel-stadt
+      Sehr nahe Koordinaten: 'Rin Yoga — Rinny Biberstein' und 'Food Changes Everything — Vanessa Gatelein' (< 100m Abstand)
+
+  [93] duplicate_coordinates | Schweregrad: low
+      Studio: Yoga Lotus Liestal (yoga-lotus-liestal)
+      Kanton: basel-landschaft
+      Sehr nahe Koordinaten: 'Yoga Lotus Liestal' und 'Jyoti Yoga' (< 100m Abstand)
+
+  [94] duplicate_coordinates | Schweregrad: low
+      Studio: Yoga Werkstatt (yoga-werkstatt-liestal)
+      Kanton: basel-landschaft
+      Sehr nahe Koordinaten: 'Yoga Werkstatt' und 'Jyoti Yoga' (< 100m Abstand)
+
+  [95] duplicate_coordinates | Schweregrad: low
+      Studio: Yoga Nordemann - Zeitgenössisches Yoga (yoga-nordemann-oberwil)
+      Kanton: basel-landschaft
+      Sehr nahe Koordinaten: 'Yoga Nordemann - Zeitgenössisches Yoga' und 'yoga shanti' (< 100m Abstand)
+
+  [96] duplicate_coordinates | Schweregrad: low
+      Studio: studio mond (studio-mond-appenzell)
+      Kanton: appenzell-ir
+      Sehr nahe Koordinaten: 'studio mond' und 'Yoga Appenzell - Andrea Manser' (< 100m Abstand)
+
+  [97] duplicate_coordinates | Schweregrad: low
+      Studio: RACH Yoga (rach-yoga-st-gallen)
+      Kanton: st-gallen
+      Sehr nahe Koordinaten: 'RACH Yoga' und '123 Yoga' (< 100m Abstand)
+
+  [98] duplicate_address | Schweregrad: medium
+      Studio: flux2motus - Yoga & Massage (yogaplaza-davos)
+      Kanton: graubuenden
+      Gleiche Adresse 'mattastrasse 6, 7270' bei Studios: yogaplaza-davos, flux2motus-davos
+
+  [99] duplicate_coordinates | Schweregrad: low
+      Studio: flux2motus - Yoga & Massage (flux2motus-davos)
+      Kanton: graubuenden
+      Sehr nahe Koordinaten: 'flux2motus - Yoga & Massage' und 'Davos Yoga' (< 100m Abstand)
+
+  [100] duplicate_coordinates | Schweregrad: low
+      Studio: flux2motus - Yoga & Massage (flux2motus-davos)
+      Kanton: graubuenden
+      Sehr nahe Koordinaten: 'flux2motus - Yoga & Massage' und 'Yogaplaza Davos' (< 100m Abstand)
+
+  [101] duplicate_coordinates | Schweregrad: low
+      Studio: Davos Yoga (davos-yoga)
+      Kanton: graubuenden
+      Sehr nahe Koordinaten: 'Davos Yoga' und 'Yogaplaza Davos' (< 100m Abstand)
+
+  [102] duplicate_coordinates | Schweregrad: low
+      Studio: YOGA.BADEN - Stefanie Amrein (yoga-baden-stefanie-amrein)
+      Kanton: aargau
+      Sehr nahe Koordinaten: 'YOGA.BADEN - Stefanie Amrein' und 'jetzt. YOGA Baden' (< 100m Abstand)
+
+  [103] duplicate_coordinates | Schweregrad: low
+      Studio: Gymayo-Studio Yogaschule (gymayo-frauenfeld)
+      Kanton: thurgau
+      Sehr nahe Koordinaten: 'Gymayo-Studio Yogaschule' und 'MiYoga' (< 100m Abstand)
+
+  [104] duplicate_address | Schweregrad: medium
+      Studio: Yogaworks (ashtanga-yoga-lausanne)
+      Kanton: vaud
+      Gleiche Adresse 'rue chaucrau 3-5, 1003' bei Studios: ashtanga-yoga-lausanne, yogaworks-lausanne
+
+  [105] duplicate_coordinates | Schweregrad: low
+      Studio: Yogaworks (yogaworks-lausanne)
+      Kanton: vaud
+      Sehr nahe Koordinaten: 'Yogaworks' und 'Ashtanga Yoga Lausanne' (< 100m Abstand)
+
+  [106] duplicate_coordinates | Schweregrad: low
+      Studio: Yoga Moves Nyon (yoga-moves-nyon)
+      Kanton: vaud
+      Sehr nahe Koordinaten: 'Yoga Moves Nyon' und 'Yoga Pour Tous Nyon' (< 100m Abstand)
+
+  [107] duplicate_coordinates | Schweregrad: low
+      Studio: The Sakura Yoga (sakura-yoga-geneve)
+      Kanton: geneve
+      Sehr nahe Koordinaten: 'The Sakura Yoga' und 'ar'Yoga Genève' (< 100m Abstand)
+
+  [108] duplicate_coordinates | Schweregrad: low
+      Studio: Sol Studio (sol-studio-geneve)
+      Kanton: geneve
+      Sehr nahe Koordinaten: 'Sol Studio' und 'Akta Yoga' (< 100m Abstand)
+
+  [109] duplicate_coordinates | Schweregrad: low
+      Studio: Swiss Pilates and Yoga (swiss-pilates-yoga-geneve)
+      Kanton: geneve
+      Sehr nahe Koordinaten: 'Swiss Pilates and Yoga' und 'ka studio' (< 100m Abstand)
+
+  [110] duplicate_coordinates | Schweregrad: low
+      Studio: Centre de Yoga Shambala (yoga-shambala-carouge)
+      Kanton: geneve
+      Sehr nahe Koordinaten: 'Centre de Yoga Shambala' und 'Yoga Nest' (< 100m Abstand)
+
+  [111] duplicate_coordinates | Schweregrad: low
+      Studio: PilatesYogaJura (pilatesyogajura)
+      Kanton: jura
+      Sehr nahe Koordinaten: 'PilatesYogaJura' und 'YogaJura.ch' (< 100m Abstand)
+
+======================================================================
+  Report generiert: 2026-03-21T23:18:58.456136
+======================================================================
