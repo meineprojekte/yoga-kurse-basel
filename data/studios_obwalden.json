@@ -35,7 +35,15 @@
       "lat": 46.8961,
       "lng": 8.2453,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 24,
+        "card_10": 228,
+        "monthly": 152,
+        "trial": 16,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-ishwari-sarnen",
@@ -70,10 +78,18 @@
         "Klangtherapie",
         "Mantrasingen"
       ],
-      "lat": 46.8850,
-      "lng": 8.2400,
+      "lat": 46.885,
+      "lng": 8.24,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 26,
+        "card_10": 239,
+        "monthly": 159,
+        "trial": 17,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ]
 }

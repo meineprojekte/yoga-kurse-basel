@@ -34,9 +34,17 @@
         "Indische Kulturprogramme"
       ],
       "lat": 46.9592,
-      "lng": 8.3660,
+      "lng": 8.366,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 24,
+        "card_10": 223,
+        "monthly": 149,
+        "trial": 16,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "gesund-und-munter-stans",
@@ -73,7 +81,15 @@
       "lat": 46.9583,
       "lng": 8.3654,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 25,
+        "card_10": 228,
+        "monthly": 151,
+        "trial": 17,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "sevencolors-stans",
@@ -107,9 +123,17 @@
         "Life Coaching"
       ],
       "lat": 46.9592,
-      "lng": 8.3660,
+      "lng": 8.366,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 20,
+        "card_10": 184,
+        "monthly": 120,
+        "trial": 14,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ]
 }

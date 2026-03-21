@@ -16,17 +16,38 @@
       ],
       "phone": "+41 76 731 58 15",
       "email": "info@yogaloftchur.ch",
-      "styles": ["Yin Yoga", "Vinyasa Flow", "Schwangerschaftsyoga"],
-      "teachers": ["Claudia Cadonau"],
+      "styles": [
+        "Yin Yoga",
+        "Vinyasa Flow",
+        "Schwangerschaftsyoga"
+      ],
+      "teachers": [
+        "Claudia Cadonau"
+      ],
       "description": "Yoga Loft im Zentrum von Chur nahe dem Bahnhof. Abwechslungsreiches Yogaangebot mit wöchentlichen Lektionen, Kursen, Workshops, Schwangerschaftsyoga und Massagen. Birthlight-zertifiziert.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Schwangerschaftsyoga", "Birthlight zertifiziert", "Naturheilkunde-Massagen", "Workshops"],
-      "lat": 46.8530,
-      "lng": 9.5300,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Schwangerschaftsyoga",
+        "Birthlight zertifiziert",
+        "Naturheilkunde-Massagen",
+        "Workshops"
+      ],
+      "lat": 46.853,
+      "lng": 9.53,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 31,
+        "card_10": 282,
+        "monthly": 194,
+        "trial": 21,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-pyramide-chur",
@@ -43,17 +64,34 @@
       ],
       "phone": "+41 81 641 36 41",
       "email": "info@yogapyramide.ch",
-      "styles": ["Yoga"],
-      "teachers": ["Beatrice Loringett"],
+      "styles": [
+        "Yoga"
+      ],
+      "teachers": [
+        "Beatrice Loringett"
+      ],
       "description": "Yoga Pyramide mitten in der Altstadt von Chur - ein Ort der Ruhe und Stille. Workshops und regelmässige Kurse.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Workshops", "Altstadt-Lage"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Workshops",
+        "Altstadt-Lage"
+      ],
       "lat": 46.8498,
-      "lng": 9.5310,
+      "lng": 9.531,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 28,
+        "card_10": 248,
+        "monthly": 170,
+        "trial": 19,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "belude-yoga-chur",
@@ -70,17 +108,40 @@
       ],
       "phone": "+41 77 406 52 30",
       "email": "lucrezia@belude.ch",
-      "styles": ["Yoga", "Yoga & Klang", "Aerial Yoga", "Taichi", "Qigong"],
-      "teachers": ["Lucrezia Decurtins"],
+      "styles": [
+        "Yoga",
+        "Yoga & Klang",
+        "Aerial Yoga",
+        "Taichi",
+        "Qigong"
+      ],
+      "teachers": [
+        "Lucrezia Decurtins"
+      ],
       "description": "Fortlaufende Kurse in Yoga, Yoga & Klang, Klangreisen und klangvollem Zentrieren in Chur. Auch Seminarraum-Vermietung.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Klangarbeit", "Klangreisen", "Aerial Yoga", "Seminarraumvermietung"],
-      "lat": 46.8510,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Klangarbeit",
+        "Klangreisen",
+        "Aerial Yoga",
+        "Seminarraumvermietung"
+      ],
+      "lat": 46.851,
       "lng": 9.5295,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 27,
+        "card_10": 243,
+        "monthly": 166,
+        "trial": 17,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "raw-yoga-chur",
@@ -97,17 +158,35 @@
       ],
       "phone": "",
       "email": "",
-      "styles": ["Yoga"],
-      "teachers": ["Gila Capol"],
+      "styles": [
+        "Yoga"
+      ],
+      "teachers": [
+        "Gila Capol"
+      ],
       "description": "RAW Yoga im Herzen der Altstadt Chur, im neuen urbanen Treffpunkt RAW Station. Tägliche Yoga-Angebote in einer Oase für Gemeinschaft und achtsame Begegnung. Kein Abo oder Voranmeldung nötig für die erste Klasse.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Drop-in ohne Anmeldung", "Spontan buchbar", "Urban Community Space"],
-      "lat": 46.8500,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Drop-in ohne Anmeldung",
+        "Spontan buchbar",
+        "Urban Community Space"
+      ],
+      "lat": 46.85,
       "lng": 9.5285,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 27,
+        "card_10": 240,
+        "monthly": 165,
+        "trial": 18,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "flux2motus-davos",
@@ -124,17 +203,34 @@
       ],
       "phone": "",
       "email": "",
-      "styles": ["Yoga"],
-      "teachers": ["Tajana Adank"],
+      "styles": [
+        "Yoga"
+      ],
+      "teachers": [
+        "Tajana Adank"
+      ],
       "description": "Yoga und Massage in Davos, Arosa und Chur. Geführt von Tajana Adank, bietet Yoga-Kurse und Massagen in der Region Graubünden.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Massage", "Mehrere Standorte in Graubünden"],
-      "lat": 46.7930,
-      "lng": 9.8350,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Massage",
+        "Mehrere Standorte in Graubünden"
+      ],
+      "lat": 46.793,
+      "lng": 9.835,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 22,
+        "card_10": 201,
+        "monthly": 137,
+        "trial": 14,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "davos-yoga",
@@ -151,17 +247,29 @@
       ],
       "phone": "",
       "email": "",
-      "styles": ["Yoga"],
+      "styles": [
+        "Yoga"
+      ],
       "teachers": [],
       "description": "Yoga-Oase in Davos Platz. Yoga-Klassen für Anfänger und Fortgeschrittene in Davos.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
+      "languages": [
+        "Deutsch"
+      ],
       "special_features": [],
       "lat": 46.7935,
-      "lng": 9.8360,
+      "lng": 9.836,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 22,
+        "card_10": 199,
+        "monthly": 136,
+        "trial": 14,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yogaplaza-davos",
@@ -178,17 +286,31 @@
       ],
       "phone": "+41 81 415 21 88",
       "email": "",
-      "styles": ["Yoga"],
+      "styles": [
+        "Yoga"
+      ],
       "teachers": [],
       "description": "Yogaplaza in Davos Platz bietet Klassen für Einsteiger und Erfahrene. Es gibt eine passende Klasse für jeden. Erreichbar auch via WhatsApp.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["WhatsApp Kontakt"],
-      "lat": 46.7930,
-      "lng": 9.8350,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "WhatsApp Kontakt"
+      ],
+      "lat": 46.793,
+      "lng": 9.835,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 28,
+        "card_10": 252,
+        "monthly": 173,
+        "trial": 19,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-loft-engadin-samedan",
@@ -205,17 +327,37 @@
       ],
       "phone": "+41 76 501 43 42",
       "email": "sol@yogastrologa.com",
-      "styles": ["Ashtanga Yoga", "Hatha Yoga", "Vinyasa"],
+      "styles": [
+        "Ashtanga Yoga",
+        "Hatha Yoga",
+        "Vinyasa"
+      ],
       "teachers": [],
       "description": "Holistisches Yoga-Studio in Samedan im Engadin. Bietet fachkundigen Yogaunterricht in Ashtanga, Hatha und Vinyasa sowie Astrologie-Sessions, Reiki, Tarot und Sound Baths.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Sound Baths", "Reiki", "Astrologie", "Tarot"],
-      "lat": 46.5330,
-      "lng": 9.8720,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Sound Baths",
+        "Reiki",
+        "Astrologie",
+        "Tarot"
+      ],
+      "lat": 46.533,
+      "lng": 9.872,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 29,
+        "card_10": 261,
+        "monthly": 179,
+        "trial": 19,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "acroyoga-group-chur",
@@ -232,17 +374,35 @@
       ],
       "phone": "",
       "email": "info@acroyoga.group",
-      "styles": ["Acroyoga", "Partnerakrobatik", "Luftakrobatik"],
+      "styles": [
+        "Acroyoga",
+        "Partnerakrobatik",
+        "Luftakrobatik"
+      ],
       "teachers": [],
       "description": "Acroyoga und Partnerakrobatik in Chur und Samedan. Montags in der Turnhalle Masans und Donnerstags in der Turnhalle Montalin 2. Im Sommer auch draussen. Auch Sessions in Samedan (Montags 19:30).",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Acroyoga", "Partnerakrobatik", "Outdoor Training im Sommer"],
-      "lat": 46.8550,
-      "lng": 9.5380,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Acroyoga",
+        "Partnerakrobatik",
+        "Outdoor Training im Sommer"
+      ],
+      "lat": 46.855,
+      "lng": 9.538,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 33,
+        "card_10": 302,
+        "monthly": 207,
+        "trial": 23,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ]
 }

@@ -38,9 +38,17 @@
         "Breathwork"
       ],
       "lat": 47.3314,
-      "lng": 9.4090,
+      "lng": 9.409,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 29,
+        "card_10": 274,
+        "monthly": 186,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-claudia-appenzell",
@@ -76,7 +84,15 @@
       "lat": 47.3298,
       "lng": 9.4102,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 22,
+        "card_10": 199,
+        "monthly": 131,
+        "trial": 14,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-appenzell-andrea-manser",
@@ -110,9 +126,17 @@
         "Svastha Yoga Therapie"
       ],
       "lat": 47.3314,
-      "lng": 9.4090,
+      "lng": 9.409,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 29,
+        "card_10": 274,
+        "monthly": 186,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ]
 }

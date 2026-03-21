@@ -38,9 +38,17 @@
         "Psychologische Beratung"
       ],
       "lat": 47.0207,
-      "lng": 8.6530,
+      "lng": 8.653,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 33,
+        "card_10": 297,
+        "monthly": 204,
+        "trial": 23,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yogastudio-ganesha-einsiedeln",
@@ -78,9 +86,17 @@
         "Kartenzahlung"
       ],
       "lat": 47.1275,
-      "lng": 8.7470,
+      "lng": 8.747,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 30,
+        "card_10": 270,
+        "monthly": 185,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga8-einsiedeln",
@@ -116,7 +132,15 @@
       "lat": 47.1281,
       "lng": 8.7478,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 29,
+        "card_10": 259,
+        "monthly": 177,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ]
 }

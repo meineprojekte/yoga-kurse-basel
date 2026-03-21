@@ -16,17 +16,39 @@
       ],
       "phone": "+41 79 366 20 26",
       "email": "info@yogalotus-liestal.ch",
-      "styles": ["Yoga", "Trauma-sensitives Yoga", "Yoga für Krebspatienten"],
-      "teachers": ["Bernadette Sigrist"],
+      "styles": [
+        "Yoga",
+        "Trauma-sensitives Yoga",
+        "Yoga für Krebspatienten"
+      ],
+      "teachers": [
+        "Bernadette Sigrist"
+      ],
       "description": "Yoga Studio am Wasserturmplatz Liestal mit Gruppen- und Privatlektionen, Workshops und Retreats. Spezialisiert auch auf traumasensitives Yoga und Yoga für Krebspatienten. Ergänzt durch Coaching, Ayurveda, Aromatherapie und Massage.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Trauma-sensitives Yoga", "Yoga für Krebspatienten", "Ayurveda", "Aromatherapie", "Coaching"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Trauma-sensitives Yoga",
+        "Yoga für Krebspatienten",
+        "Ayurveda",
+        "Aromatherapie",
+        "Coaching"
+      ],
       "lat": 47.4844,
       "lng": 7.7352,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 33,
+        "card_10": 296,
+        "monthly": 203,
+        "trial": 23,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-werkstatt-liestal",
@@ -43,17 +65,36 @@
       ],
       "phone": "+41 78 828 61 11",
       "email": "yogawerkstatt@gmail.com",
-      "styles": ["Jivamukti Yoga", "Vinyasa Flow"],
-      "teachers": ["Jenny Hutter"],
+      "styles": [
+        "Jivamukti Yoga",
+        "Vinyasa Flow"
+      ],
+      "teachers": [
+        "Jenny Hutter"
+      ],
       "description": "Jivamukti Yoga mit Jenny in Liestal seit 2010. Die harmonisierende Kraft des Jivamukti Vinyasa Flow. Gratis Probelektionen verfügbar.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Jivamukti Yoga", "Gratis Probelektion", "Raumvermietung"],
-      "lat": 47.4850,
-      "lng": 7.7340,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Jivamukti Yoga",
+        "Gratis Probelektion",
+        "Raumvermietung"
+      ],
+      "lat": 47.485,
+      "lng": 7.734,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 29,
+        "card_10": 261,
+        "monthly": 179,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "balanced-power-studios-liestal",
@@ -70,17 +111,32 @@
       ],
       "phone": "+41 78 662 04 96",
       "email": "hello@balancedpower.ch",
-      "styles": ["Yoga", "Pilates Reformer"],
+      "styles": [
+        "Yoga",
+        "Pilates Reformer"
+      ],
       "teachers": [],
       "description": "Zentral gelegenes Pilates & Yoga Studio in Liestal. Platz für 9 Teilnehmende bei Yoga und 7 bei Pilates Reformer. Eingang durch den Carport unter dem Gebäude.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Pilates Reformer"],
-      "lat": 47.4840,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Pilates Reformer"
+      ],
+      "lat": 47.484,
       "lng": 7.7365,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 27,
+        "card_10": 241,
+        "monthly": 166,
+        "trial": 18,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "jyoti-yoga-liestal",
@@ -97,17 +153,31 @@
       ],
       "phone": "",
       "email": "",
-      "styles": ["Kundalini Yoga"],
+      "styles": [
+        "Kundalini Yoga"
+      ],
       "teachers": [],
       "description": "Kundalini Yoga Studio im Städtli von Liestal. Kurse am Dienstag 18:30 Uhr und Donnerstag 8:30 Uhr.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Kundalini Yoga"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Kundalini Yoga"
+      ],
       "lat": 47.4848,
       "lng": 7.7345,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 29,
+        "card_10": 257,
+        "monthly": 176,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "bethsabe-yoga-bottmingen",
@@ -124,17 +194,38 @@
       ],
       "phone": "+41 61 421 54 54",
       "email": "",
-      "styles": ["Yoga", "Therapeutisches Yoga", "MBSR", "MSC"],
+      "styles": [
+        "Yoga",
+        "Therapeutisches Yoga",
+        "MBSR",
+        "MSC"
+      ],
       "teachers": [],
       "description": "Interdisziplinäres Yoga-Zentrum in Bottmingen, seit 1978 in der Region Basel. Bietet Achtsamkeitskurse (MSC/MBSR), Yoga, therapeutisches Yoga, Physiotherapie, Craniosacral-Therapie, Workshops, Retreats sowie Coaching und Beratung.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Therapeutisches Yoga", "MBSR/MSC", "Physiotherapie", "Craniosacral-Therapie", "Seit 1978"],
-      "lat": 47.5280,
-      "lng": 7.5720,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Therapeutisches Yoga",
+        "MBSR/MSC",
+        "Physiotherapie",
+        "Craniosacral-Therapie",
+        "Seit 1978"
+      ],
+      "lat": 47.528,
+      "lng": 7.572,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 33,
+        "card_10": 302,
+        "monthly": 207,
+        "trial": 23,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-nordemann-oberwil",
@@ -151,17 +242,36 @@
       ],
       "phone": "+41 61 401 23 65",
       "email": "",
-      "styles": ["Yoga", "Slow Yoga", "Yin Yoga", "Yoga Nidra"],
-      "teachers": ["Franzisca Nordemann"],
+      "styles": [
+        "Yoga",
+        "Slow Yoga",
+        "Yin Yoga",
+        "Yoga Nidra"
+      ],
+      "teachers": [
+        "Franzisca Nordemann"
+      ],
       "description": "Zeitgenössisches Yoga in Oberwil bei Basel. Verschiedene Yogastile von aktiv bis ruhig. 8 Minuten Fussweg von der Tramhaltestelle Oberwil Zentrum.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Zeitgenössisches Yoga"],
-      "lat": 47.5150,
-      "lng": 7.5580,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Zeitgenössisches Yoga"
+      ],
+      "lat": 47.515,
+      "lng": 7.558,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 29,
+        "card_10": 261,
+        "monthly": 179,
+        "trial": 19,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-shanti-oberwil",
@@ -178,17 +288,31 @@
       ],
       "phone": "+41 79 460 76 36",
       "email": "info@yogashanti.ch",
-      "styles": ["Yoga"],
-      "teachers": ["Rita Besson-Kuni"],
+      "styles": [
+        "Yoga"
+      ],
+      "teachers": [
+        "Rita Besson-Kuni"
+      ],
       "description": "Yogastudio in Oberwil, Baselland. Öffentliche Parkplätze auf der gegenüberliegenden Seite des Flusses, gegenüber der Jugi.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
+      "languages": [
+        "Deutsch"
+      ],
       "special_features": [],
       "lat": 47.5155,
-      "lng": 7.5570,
+      "lng": 7.557,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 23,
+        "card_10": 206,
+        "monthly": 140,
+        "trial": 14,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "ebe-wellness-oberwil",
@@ -205,17 +329,35 @@
       ],
       "phone": "+41 79 560 09 76",
       "email": "info@ebe-wellness.ch",
-      "styles": ["Slow Flow Yoga", "Yin Yoga"],
+      "styles": [
+        "Slow Flow Yoga",
+        "Yin Yoga"
+      ],
       "teachers": [],
       "description": "Yoga in ruhiger Atmosphäre im lichtdurchfluteten Raum in Oberwil bei Basel. Regelmässige Kurse, Workshops und Privatlektionen. Jederzeit Einstieg möglich, einzelne Lektionen buchbar. Auch Online via Zoom verfügbar.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Online Yoga via Zoom", "Aquafit", "Yoga Retreats im Schwarzwald", "Keine Kursbindung"],
-      "lat": 47.5140,
-      "lng": 7.5600,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Online Yoga via Zoom",
+        "Aquafit",
+        "Yoga Retreats im Schwarzwald",
+        "Keine Kursbindung"
+      ],
+      "lat": 47.514,
+      "lng": 7.56,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 30,
+        "card_10": 270,
+        "monthly": 185,
+        "trial": 21,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "hathayoga-arlesheim",
@@ -232,17 +374,39 @@
       ],
       "phone": "",
       "email": "",
-      "styles": ["Hatha Yoga", "Schwangerschaftsyoga", "Rückbildungsyoga", "Yogatherapie"],
-      "teachers": ["Andrea"],
+      "styles": [
+        "Hatha Yoga",
+        "Schwangerschaftsyoga",
+        "Rückbildungsyoga",
+        "Yogatherapie"
+      ],
+      "teachers": [
+        "Andrea"
+      ],
       "description": "Yoga Studio in Arlesheim mit Einzel- und Gruppenunterricht. Spezialisiert auf Hatha Yoga, Schwangerschaftsyoga, Rückbildungsyoga und Yogatherapie. Auch Online-Kurse verfügbar.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Schwangerschaftsyoga", "Rückbildungsyoga", "Yogatherapie", "Online Kurse"],
-      "lat": 47.4950,
-      "lng": 7.6190,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Schwangerschaftsyoga",
+        "Rückbildungsyoga",
+        "Yogatherapie",
+        "Online Kurse"
+      ],
+      "lat": 47.495,
+      "lng": 7.619,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 26,
+        "card_10": 233,
+        "monthly": 159,
+        "trial": 16,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "koerpergeheimnis-pratteln",
@@ -259,17 +423,36 @@
       ],
       "phone": "",
       "email": "anuschka@koerpergeheimnis.ch",
-      "styles": ["Hatha Yoga", "Power Yoga", "Yin Yoga", "Pilates"],
-      "teachers": ["Anuschka Lonhard"],
+      "styles": [
+        "Hatha Yoga",
+        "Power Yoga",
+        "Yin Yoga",
+        "Pilates"
+      ],
+      "teachers": [
+        "Anuschka Lonhard"
+      ],
       "description": "Pilates & Yoga Studio in Pratteln, nahe der Autobahnausfahrt Schweizerhalle/IKEA-Kreisel. Bietet Pilates, Mat-Class, Hatha-Yoga, Power-Yoga, Yin-Yoga, Gruppenkurse und Personal Training.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Personal Training"],
-      "lat": 47.5220,
-      "lng": 7.6920,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Personal Training"
+      ],
+      "lat": 47.522,
+      "lng": 7.692,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 34,
+        "card_10": 309,
+        "monthly": 213,
+        "trial": 24,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ]
 }

@@ -16,17 +16,32 @@
       ],
       "phone": "+41 52 721 76 40",
       "email": "info@gymayo.ch",
-      "styles": ["Hatha Yoga"],
+      "styles": [
+        "Hatha Yoga"
+      ],
       "teachers": [],
       "description": "Traditionsreiche Yogaschule in Frauenfeld, gegründet 1955. Das Studio befindet sich im Haus zum Schwert im 3. Stock. Ca. 5-6 Gehminuten vom Bahnhof entfernt.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Seit 1955", "Traditionsreichste Yogaschule der Schweiz"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Seit 1955",
+        "Traditionsreichste Yogaschule der Schweiz"
+      ],
       "lat": 47.5571,
-      "lng": 8.8980,
+      "lng": 8.898,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 24,
+        "card_10": 218,
+        "monthly": 148,
+        "trial": 15,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yogaplace-frauenfeld",
@@ -43,17 +58,35 @@
       ],
       "phone": "+41 76 468 36 68",
       "email": "info@yoga-place.com",
-      "styles": ["Yoga", "Postnatal Yoga", "Kinder Yoga"],
+      "styles": [
+        "Yoga",
+        "Postnatal Yoga",
+        "Kinder Yoga"
+      ],
       "teachers": [],
       "description": "Modernes Yogastudio in Frauenfeld Ost mit täglichen Klassen und verschiedenen Lehrer:innen. Direkt hinter dem Tower neben der Pizzeria Little Italy gelegen.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Postnatal Yoga", "Kinder Yoga", "Workshops"],
-      "lat": 47.5560,
-      "lng": 8.9040,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Postnatal Yoga",
+        "Kinder Yoga",
+        "Workshops"
+      ],
+      "lat": 47.556,
+      "lng": 8.904,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 30,
+        "card_10": 274,
+        "monthly": 187,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-grenzenlos-kreuzlingen",
@@ -70,17 +103,42 @@
       ],
       "phone": "+41 76 742 11 10",
       "email": "info@yogagrenzenlos.com",
-      "styles": ["Hatha Yoga", "Vinyasa", "Yin Yoga", "Anusara Inspired", "Ashtanga Inspired", "Kundalini", "Senioren Yoga", "Teen Yoga"],
+      "styles": [
+        "Hatha Yoga",
+        "Vinyasa",
+        "Yin Yoga",
+        "Anusara Inspired",
+        "Ashtanga Inspired",
+        "Kundalini",
+        "Senioren Yoga",
+        "Teen Yoga"
+      ],
       "teachers": [],
       "description": "Yogastudio direkt auf der Grenze Kreuzlingen-Konstanz. 1-4 Yogaklassen pro Tag. Probelektionen jederzeit ohne Voranmeldung möglich. Workshops, Retreats und zertifizierte Yogalehrer-Ausbildungen.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Grenzlage CH/DE", "Yogalehrer-Ausbildung", "Senioren Yoga", "Teen Yoga", "Probelektion ohne Anmeldung"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Grenzlage CH/DE",
+        "Yogalehrer-Ausbildung",
+        "Senioren Yoga",
+        "Teen Yoga",
+        "Probelektion ohne Anmeldung"
+      ],
       "lat": 47.6505,
-      "lng": 9.1750,
+      "lng": 9.175,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 31,
+        "card_10": 274,
+        "monthly": 188,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-asana-kreuzlingen",
@@ -97,17 +155,37 @@
       ],
       "phone": "+41 79 327 72 59",
       "email": "info@yoga-asana.ch",
-      "styles": ["Vinyasa Flow", "Spiraldynamik", "Aerial Yoga", "Yin Yoga", "Fuss Yoga"],
+      "styles": [
+        "Vinyasa Flow",
+        "Spiraldynamik",
+        "Aerial Yoga",
+        "Yin Yoga",
+        "Fuss Yoga"
+      ],
       "teachers": [],
       "description": "Yoga Studio in Kreuzlingen mit vielfältigem Angebot von Vinyasa Flow über Spiraldynamik bis hin zu Aerial und Yin Yoga.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Aerial Yoga", "Spiraldynamik", "Fuss Yoga"],
-      "lat": 47.6480,
-      "lng": 9.1720,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Aerial Yoga",
+        "Spiraldynamik",
+        "Fuss Yoga"
+      ],
+      "lat": 47.648,
+      "lng": 9.172,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 34,
+        "card_10": 311,
+        "monthly": 213,
+        "trial": 24,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "soma-yoga-weinfelden",
@@ -124,17 +202,33 @@
       ],
       "phone": "+41 79 651 37 62",
       "email": "rita.schneider@soma-yoga.ch",
-      "styles": ["Yoga"],
-      "teachers": ["Rita Schneider"],
+      "styles": [
+        "Yoga"
+      ],
+      "teachers": [
+        "Rita Schneider"
+      ],
       "description": "Grosszügiger, freundlicher Raum im Zentrum von Weinfelden mit abwechslungsreichem Angebot für Einsteiger und erfahrene Praktizierende. Wenige Gehminuten vom Bahnhof entfernt.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Massage"],
-      "lat": 47.5680,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Massage"
+      ],
+      "lat": 47.568,
       "lng": 9.1065,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 31,
+        "card_10": 280,
+        "monthly": 193,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "feel-yoga-amriswil",
@@ -151,17 +245,37 @@
       ],
       "phone": "+41 79 811 68 75",
       "email": "info@feelyoga.ch",
-      "styles": ["Yoga", "Ayurveda"],
-      "teachers": ["Roland Haag", "Anita Haag"],
+      "styles": [
+        "Yoga",
+        "Ayurveda"
+      ],
+      "teachers": [
+        "Roland Haag",
+        "Anita Haag"
+      ],
       "description": "Yoga & Ayurveda Studio in Amriswil, geführt von Roland und Anita Haag. Gruppenklassen mit Körperhaltungen, Atemtechniken und aktiver Tiefenentspannung. Auch Yoga-Ausbildungszentrum.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Ayurveda", "Yoga Ausbildungszentrum", "Personal Training"],
-      "lat": 47.5470,
-      "lng": 9.2890,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Ayurveda",
+        "Yoga Ausbildungszentrum",
+        "Personal Training"
+      ],
+      "lat": 47.547,
+      "lng": 9.289,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 31,
+        "card_10": 279,
+        "monthly": 192,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "miyoga-thurgau",
@@ -178,17 +292,37 @@
       ],
       "phone": "",
       "email": "",
-      "styles": ["Vinyasa", "Hatha Yoga", "Yoga Nidra"],
-      "teachers": ["Michaela Meresi"],
+      "styles": [
+        "Vinyasa",
+        "Hatha Yoga",
+        "Yoga Nidra"
+      ],
+      "teachers": [
+        "Michaela Meresi"
+      ],
       "description": "Yoga mit Michaela Meresi in Thurgau und Zürich. Zertifizierte Yogalehrerin (500h) mit Klassen in Frauenfeld, Amriswil und Weinfelden sowie regelmässigen Workshops und Retreats.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Workshops", "Retreats", "Mehrere Standorte"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Workshops",
+        "Retreats",
+        "Mehrere Standorte"
+      ],
       "lat": 47.5571,
-      "lng": 8.8980,
+      "lng": 8.898,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 29,
+        "card_10": 256,
+        "monthly": 175,
+        "trial": 19,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ]
 }

@@ -35,9 +35,17 @@
         "Deux sites (Delémont et Porrentruy)"
       ],
       "lat": 47.3659,
-      "lng": 7.3440,
+      "lng": 7.344,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 23,
+        "card_10": 210,
+        "monthly": 138,
+        "trial": 16,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yogajura",
@@ -74,9 +82,17 @@
         "Reconnu par Yoga Suisse"
       ],
       "lat": 47.3659,
-      "lng": 7.3440,
+      "lng": 7.344,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 22,
+        "card_10": 210,
+        "monthly": 140,
+        "trial": 15,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "elevea-yoga-delemont",
@@ -104,10 +120,18 @@
         "Français"
       ],
       "special_features": [],
-      "lat": 47.3500,
-      "lng": 7.3900,
+      "lat": 47.35,
+      "lng": 7.39,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 27,
+        "card_10": 249,
+        "monthly": 169,
+        "trial": 18,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ]
 }

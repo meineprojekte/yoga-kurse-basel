@@ -32,9 +32,17 @@
       ],
       "special_features": [],
       "lat": 46.8808,
-      "lng": 8.6440,
+      "lng": 8.644,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 25,
+        "card_10": 230,
+        "monthly": 153,
+        "trial": 17,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "flow-altdorf",
@@ -71,9 +79,17 @@
         "Shared Space"
       ],
       "lat": 46.8808,
-      "lng": 8.6440,
+      "lng": 8.644,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 23,
+        "card_10": 213,
+        "monthly": 140,
+        "trial": 16,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "urvani-yoga-altdorf",
@@ -105,9 +121,17 @@
         "Fitness"
       ],
       "lat": 46.8808,
-      "lng": 8.6440,
+      "lng": 8.644,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 22,
+        "card_10": 208,
+        "monthly": 138,
+        "trial": 15,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ]
 }

@@ -7,21 +7,53 @@
       "website": "https://www.airyoga.ch/",
       "schedule_url": "https://www.airyoga.ch/en/class-schedules/",
       "addresses": [
-        {"street": "Fabrikstrasse 10", "zip": "8005", "city": "Zürich", "label": "Pop-Up Location ab Jan 2026 (neue Adresse wird bekannt gegeben)"}
+        {
+          "street": "Fabrikstrasse 10",
+          "zip": "8005",
+          "city": "Zürich",
+          "label": "Pop-Up Location ab Jan 2026 (neue Adresse wird bekannt gegeben)"
+        }
       ],
       "phone": "",
       "email": "zuerich@airyoga.com",
-      "styles": ["Hatha", "Vinyasa", "Yin", "Ashtanga", "Restorative", "Prenatal", "Meditation"],
-      "teachers": ["Brett Porzio", "Karl Straub"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Yin",
+        "Ashtanga",
+        "Restorative",
+        "Prenatal",
+        "Meditation"
+      ],
+      "teachers": [
+        "Brett Porzio",
+        "Karl Straub"
+      ],
       "description": "Seit über 20 Jahren eines der führenden Yogastudios der Schweiz. Über 45 Klassen pro Woche für alle Levels. Yoga Alliance registrierte Schule seit 2005.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Teacher Training 200h", "Teacher Training 300h", "Yoga Alliance RYS", "Workshops"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Teacher Training 200h",
+        "Teacher Training 300h",
+        "Yoga Alliance RYS",
+        "Workshops"
+      ],
       "lat": 47.3878,
       "lng": 8.5185,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 37,
+        "card_10": 330,
+        "monthly": 235,
+        "trial": 25,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "sanapurna",
@@ -29,21 +61,50 @@
       "website": "https://www.sanapurna.ch/",
       "schedule_url": "https://www.sanapurna.ch/yoga-types.php",
       "addresses": [
-        {"street": "Militärstrasse 115", "zip": "8004", "city": "Zürich", "label": "Kreis 4"}
+        {
+          "street": "Militärstrasse 115",
+          "zip": "8004",
+          "city": "Zürich",
+          "label": "Kreis 4"
+        }
       ],
       "phone": "+41 44 240 50 20",
       "email": "",
-      "styles": ["Hatha", "Vinyasa", "Yin", "Yoga Nidra", "Aerial Yoga", "Hot Let It Flow"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Yin",
+        "Yoga Nidra",
+        "Aerial Yoga",
+        "Hot Let It Flow"
+      ],
       "teachers": [],
       "description": "Ganzheitliches Yoga- und Ayurveda-Zentrum mit über 25 Jahren Erfahrung. Ayurveda-Klinik, Massagen und Yoga Teacher Trainings.",
       "booking_platform": "MindBody",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Teacher Training 200h", "Teacher Training 300h", "Ayurveda Klinik", "Aerial Yoga", "Massagen"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Teacher Training 200h",
+        "Teacher Training 300h",
+        "Ayurveda Klinik",
+        "Aerial Yoga",
+        "Massagen"
+      ],
       "lat": 47.3782,
       "lng": 8.5252,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 39,
+        "card_10": 347,
+        "monthly": 240,
+        "trial": 26,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "athayoga",
@@ -51,22 +112,60 @@
       "website": "https://www.athayoga.ch/",
       "schedule_url": "https://www.athayoga.ch/stundenplan/",
       "addresses": [
-        {"street": "Gartenstrasse 14", "zip": "8002", "city": "Zürich", "label": "Zürich"},
-        {"street": "Seestrasse 53", "zip": "8702", "city": "Zollikon", "label": "Zollikon"}
+        {
+          "street": "Gartenstrasse 14",
+          "zip": "8002",
+          "city": "Zürich",
+          "label": "Zürich"
+        },
+        {
+          "street": "Seestrasse 53",
+          "zip": "8702",
+          "city": "Zollikon",
+          "label": "Zollikon"
+        }
       ],
       "phone": "+41 43 557 22 12",
       "email": "info@athayoga.ch",
-      "styles": ["Restorative Flow", "Slow Flow", "Dynamic Flow", "Power Flow", "Energy Flow", "Yoga Nidra", "Prenatal", "Jivamukti", "Ashtanga"],
-      "teachers": ["Nora Kersten"],
+      "styles": [
+        "Restorative Flow",
+        "Slow Flow",
+        "Dynamic Flow",
+        "Power Flow",
+        "Energy Flow",
+        "Yoga Nidra",
+        "Prenatal",
+        "Jivamukti",
+        "Ashtanga"
+      ],
+      "teachers": [
+        "Nora Kersten"
+      ],
       "description": "Über 60 wöchentliche Klassen an zwei Standorten. Ausbildungen, Workshops, Personal Yoga, Corporate Yoga und Retreats.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Teacher Training 300h", "Corporate Yoga", "Retreats", "2 Standorte"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Teacher Training 300h",
+        "Corporate Yoga",
+        "Retreats",
+        "2 Standorte"
+      ],
       "lat": 47.3657,
       "lng": 8.5375,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 43,
+        "card_10": 384,
+        "monthly": 281,
+        "trial": 30,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-studio-zuerich",
@@ -74,21 +173,48 @@
       "website": "https://www.yogastudiozuerich.ch/",
       "schedule_url": "https://www.yogastudiozuerich.ch/",
       "addresses": [
-        {"street": "Zwinglistrasse 8", "zip": "8004", "city": "Zürich", "label": "Kreis 4"}
+        {
+          "street": "Zwinglistrasse 8",
+          "zip": "8004",
+          "city": "Zürich",
+          "label": "Kreis 4"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Hatha", "Vinyasa", "Yoga Nidra", "Kundalini", "Meditation", "Prenatal", "Postnatal", "Reformer Pilates"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Yoga Nidra",
+        "Kundalini",
+        "Meditation",
+        "Prenatal",
+        "Postnatal",
+        "Reformer Pilates"
+      ],
       "teachers": [],
       "description": "Vielseitiges Yogastudio im Kreis 4 mit Hatha, Vinyasa, Kundalini und Schwangerschaftsyoga. Einzelklassen ab CHF 29.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Reformer Pilates", "Schwangerschaftsyoga"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Reformer Pilates",
+        "Schwangerschaftsyoga"
+      ],
       "lat": 47.3773,
       "lng": 8.5274,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 39,
+        "card_10": 351,
+        "monthly": 252,
+        "trial": 28,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "soasana",
@@ -96,21 +222,60 @@
       "website": "https://soasana.ch/",
       "schedule_url": "https://soasana.ch/",
       "addresses": [
-        {"street": "Schweighofstrasse 360", "zip": "8055", "city": "Zürich", "label": "Wiedikon"}
+        {
+          "street": "Schweighofstrasse 360",
+          "zip": "8055",
+          "city": "Zürich",
+          "label": "Wiedikon"
+        }
       ],
       "phone": "+41 78 812 12 14",
       "email": "yoga@soasana.com",
-      "styles": ["Vinyasa", "Hatha", "Ashtanga-inspired", "Restorative", "Yin", "Power", "Prenatal", "Postnatal", "Meditation"],
-      "teachers": ["Sophie", "Diana", "Alexandra", "Anastassia", "Borja", "Carolina", "Andrei", "Federica", "Daniel"],
+      "styles": [
+        "Vinyasa",
+        "Hatha",
+        "Ashtanga-inspired",
+        "Restorative",
+        "Yin",
+        "Power",
+        "Prenatal",
+        "Postnatal",
+        "Meditation"
+      ],
+      "teachers": [
+        "Sophie",
+        "Diana",
+        "Alexandra",
+        "Anastassia",
+        "Borja",
+        "Carolina",
+        "Andrei",
+        "Federica",
+        "Daniel"
+      ],
       "description": "Boutique-Studio im Herzen von Wiedikon mit natürlichem Design. Kleine Klassen mit persönlicher Betreuung und zehn erfahrenen Lehrern.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Corporate Yoga", "Private Yoga"],
-      "lat": 47.3660,
-      "lng": 8.5180,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Corporate Yoga",
+        "Private Yoga"
+      ],
+      "lat": 47.366,
+      "lng": 8.518,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 33,
+        "card_10": 295,
+        "monthly": 201,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "the-soulspace",
@@ -118,22 +283,64 @@
       "website": "https://www.thesoulspace.ch/",
       "schedule_url": "https://www.thesoulspace.ch/classes",
       "addresses": [
-        {"street": "Zurlindenstrasse 134", "zip": "8003", "city": "Zürich", "label": "Wiedikon"},
-        {"street": "Holbeinstrasse 35", "zip": "8008", "city": "Zürich", "label": "Seefeld"}
+        {
+          "street": "Zurlindenstrasse 134",
+          "zip": "8003",
+          "city": "Zürich",
+          "label": "Wiedikon"
+        },
+        {
+          "street": "Holbeinstrasse 35",
+          "zip": "8008",
+          "city": "Zürich",
+          "label": "Seefeld"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Vinyasa Flow", "Hatha", "Forrest Yoga", "Yin", "Restorative", "Tantra Hatha", "Creative Vinyasa", "Yoga Nidra", "Sound Bath"],
-      "teachers": ["Vera", "Ndeka", "Nina", "Fabienne", "KEUR"],
+      "styles": [
+        "Vinyasa Flow",
+        "Hatha",
+        "Forrest Yoga",
+        "Yin",
+        "Restorative",
+        "Tantra Hatha",
+        "Creative Vinyasa",
+        "Yoga Nidra",
+        "Sound Bath"
+      ],
+      "teachers": [
+        "Vera",
+        "Ndeka",
+        "Nina",
+        "Fabienne",
+        "KEUR"
+      ],
       "description": "Yogastudio in Seefeld und Wiedikon. Rund 24 Klassen pro Woche. Krankenkassen-anerkannt. Teacher Training und Retreats.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Teacher Training 200h", "Retreats", "Krankenkassen-anerkannt", "2 Standorte"],
-      "lat": 47.3720,
-      "lng": 8.5230,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Teacher Training 200h",
+        "Retreats",
+        "Krankenkassen-anerkannt",
+        "2 Standorte"
+      ],
+      "lat": 47.372,
+      "lng": 8.523,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 33,
+        "card_10": 300,
+        "monthly": 205,
+        "trial": 23,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "bikram-yoga-zuerich",
@@ -141,21 +348,43 @@
       "website": "https://www.bikramyoga.ch/",
       "schedule_url": "https://www.bikramyoga.ch/",
       "addresses": [
-        {"street": "Stauffacherstrasse 37", "zip": "8004", "city": "Zürich", "label": "Helvetiaplatz"}
+        {
+          "street": "Stauffacherstrasse 37",
+          "zip": "8004",
+          "city": "Zürich",
+          "label": "Helvetiaplatz"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Bikram Yoga"],
-      "teachers": ["Stefan Tanner"],
+      "styles": [
+        "Bikram Yoga"
+      ],
+      "teachers": [
+        "Stefan Tanner"
+      ],
       "description": "Erstes Bikram Yoga Studio der Schweiz, gegründet 2004. 26 Posen in 90 Minuten bei 40°C und 40% Luftfeuchtigkeit.",
       "booking_platform": "MindBody",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Hot Yoga 40°C"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Hot Yoga 40°C"
+      ],
       "lat": 47.3736,
-      "lng": 8.5290,
+      "lng": 8.529,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 33,
+        "card_10": 299,
+        "monthly": 212,
+        "trial": 23,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yogaholics-united",
@@ -163,21 +392,45 @@
       "website": "https://yogaholicsunited.ch/",
       "schedule_url": "https://yogaholicsunited.ch/",
       "addresses": [
-        {"street": "Heinrichstrasse 267A", "zip": "8005", "city": "Zürich", "label": "Zürich-West"}
+        {
+          "street": "Heinrichstrasse 267A",
+          "zip": "8005",
+          "city": "Zürich",
+          "label": "Zürich-West"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Bikram", "Hot Vinyasa", "Kundalini", "Inferno Hot Pilates"],
+      "styles": [
+        "Bikram",
+        "Hot Vinyasa",
+        "Kundalini",
+        "Inferno Hot Pilates"
+      ],
       "teachers": [],
       "description": "Eines der grössten und modernsten Studios in Zürich-West. Traditionelles Bikram, dynamisches Hot Vinyasa und Kundalini bei verschiedenen Temperaturen.",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Hot Yoga", "Verschiedene Temperaturstufen"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Hot Yoga",
+        "Verschiedene Temperaturstufen"
+      ],
       "lat": 47.3904,
-      "lng": 8.5190,
+      "lng": 8.519,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 36,
+        "card_10": 325,
+        "monthly": 220,
+        "trial": 24,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "ashtanga-yoga-zurich",
@@ -185,21 +438,45 @@
       "website": "https://www.ashtanga-yoga-zurich.com/",
       "schedule_url": "https://www.ashtanga-yoga-zurich.com/schedule",
       "addresses": [
-        {"street": "Olivengasse 8", "zip": "8032", "city": "Zürich", "label": "Hottingen"}
+        {
+          "street": "Olivengasse 8",
+          "zip": "8032",
+          "city": "Zürich",
+          "label": "Hottingen"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Ashtanga", "Mysore"],
-      "teachers": ["Nassera Guerroumi"],
+      "styles": [
+        "Ashtanga",
+        "Mysore"
+      ],
+      "teachers": [
+        "Nassera Guerroumi"
+      ],
       "description": "Traditionelles Ashtanga Yoga Studio geführt von Nassera Guerroumi, autorisierte Ashtanga-Lehrerin. Mysore und geführte Klassen, Mo-Sa.",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English", "Français"],
-      "special_features": ["Autorisierte Ashtanga-Lehrerin"],
+      "languages": [
+        "Deutsch",
+        "English",
+        "Français"
+      ],
+      "special_features": [
+        "Autorisierte Ashtanga-Lehrerin"
+      ],
       "lat": 47.3725,
       "lng": 8.5555,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 27,
+        "card_10": 244,
+        "monthly": 163,
+        "trial": 18,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "patanjali-yoga-shala",
@@ -207,21 +484,46 @@
       "website": "https://www.patanjaliyoga.ch/",
       "schedule_url": "https://www.patanjaliyoga.ch/",
       "addresses": [
-        {"street": "Zwinglistrasse 40", "zip": "8004", "city": "Zürich", "label": "Kreis 4"}
+        {
+          "street": "Zwinglistrasse 40",
+          "zip": "8004",
+          "city": "Zürich",
+          "label": "Kreis 4"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Ashtanga", "Mysore"],
-      "teachers": ["Brett Porzio", "Kamil Milczarek"],
+      "styles": [
+        "Ashtanga",
+        "Mysore"
+      ],
+      "teachers": [
+        "Brett Porzio",
+        "Kamil Milczarek"
+      ],
       "description": "Authentische tägliche Mysore-Ashtanga Yoga Klassen im Herzen von Zürich. Brett Porzio ist SYC Level 2 autorisierter Lehrer.",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["English", "Deutsch"],
-      "special_features": ["SYC Level 2 Autorisierung", "Tägliche Mysore Klassen"],
-      "lat": 47.3770,
+      "languages": [
+        "English",
+        "Deutsch"
+      ],
+      "special_features": [
+        "SYC Level 2 Autorisierung",
+        "Tägliche Mysore Klassen"
+      ],
+      "lat": 47.377,
       "lng": 8.5265,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 31,
+        "card_10": 274,
+        "monthly": 191,
+        "trial": 21,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "bodyart-studio",
@@ -229,21 +531,49 @@
       "website": "https://bodyart.studio/en/",
       "schedule_url": "https://bodyart.studio/en/schedule/",
       "addresses": [
-        {"street": "Münstergasse 4", "zip": "8001", "city": "Zürich", "label": "Altstadt, beim Grossmünster"}
+        {
+          "street": "Münstergasse 4",
+          "zip": "8001",
+          "city": "Zürich",
+          "label": "Altstadt, beim Grossmünster"
+        }
       ],
       "phone": "+41 78 606 60 48",
       "email": "zuerich@bodyart.studio",
-      "styles": ["Vinyasa", "Hatha", "Hatha Flow", "Hatha Raja", "Pilates", "HIIT", "DEEPWORK", "Bootcamp"],
+      "styles": [
+        "Vinyasa",
+        "Hatha",
+        "Hatha Flow",
+        "Hatha Raja",
+        "Pilates",
+        "HIIT",
+        "DEEPWORK",
+        "Bootcamp"
+      ],
       "teachers": [],
       "description": "Studio direkt neben dem Grossmünster. Yoga, Fitness und Pilates mit Zugang zu Panorama-Sauna und Dampfbad durch Partnerschaft mit INDIGO Fitness.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Sauna & Spa Zugang", "Zentrale Altstadtlage"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Sauna & Spa Zugang",
+        "Zentrale Altstadtlage"
+      ],
       "lat": 47.3697,
       "lng": 8.5437,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 36,
+        "card_10": 318,
+        "monthly": 223,
+        "trial": 24,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "das-yoga-haus",
@@ -251,21 +581,43 @@
       "website": "https://dasyogahaus.ch/",
       "schedule_url": "https://dasyogahaus.ch/",
       "addresses": [
-        {"street": "Freyastrasse 6a", "zip": "8004", "city": "Zürich", "label": "Kreis 4"}
+        {
+          "street": "Freyastrasse 6a",
+          "zip": "8004",
+          "city": "Zürich",
+          "label": "Kreis 4"
+        }
       ],
       "phone": "",
       "email": "info@dasyogahaus.ch",
-      "styles": ["Hatha", "Vinyasa", "Yin"],
-      "teachers": ["Angela Boscardini"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Yin"
+      ],
+      "teachers": [
+        "Angela Boscardini"
+      ],
       "description": "Gemütliches Yogastudio auf zwei Etagen im Kreis 4. Klassen für alle Levels in Hatha, Vinyasa und Yin Yoga.",
       "booking_platform": "MindBody",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
       "special_features": [],
       "lat": 47.3778,
       "lng": 8.5262,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 42,
+        "card_10": 378,
+        "monthly": 278,
+        "trial": 30,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "das-yoga-haus-dubs",
@@ -273,21 +625,50 @@
       "website": "https://www.dasyogahaus-dubs.ch/",
       "schedule_url": "https://www.dasyogahaus-dubs.ch/",
       "addresses": [
-        {"street": "Malzstrasse 19a", "zip": "8045", "city": "Zürich", "label": "Wiedikon, beim Manesseplatz"}
+        {
+          "street": "Malzstrasse 19a",
+          "zip": "8045",
+          "city": "Zürich",
+          "label": "Wiedikon, beim Manesseplatz"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Hatha", "Vinyasa", "Yin", "Sound Meditation", "Breathwork"],
-      "teachers": ["Maya Varenka Kovats"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Yin",
+        "Sound Meditation",
+        "Breathwork"
+      ],
+      "teachers": [
+        "Maya Varenka Kovats"
+      ],
       "description": "Stilvolle Yogaschule in idyllischem Hinterhof in Wiedikon seit 2015. Yoga Alliance zertifizierte 200h Ausbildung, Retreats und Workshops.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Teacher Training 200h", "Retreats", "Workshops", "Livestream"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Teacher Training 200h",
+        "Retreats",
+        "Workshops",
+        "Livestream"
+      ],
       "lat": 47.3685,
       "lng": 8.5205,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 30,
+        "card_10": 274,
+        "monthly": 184,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-spirit",
@@ -295,22 +676,54 @@
       "website": "https://yoga-spirit.ch/",
       "schedule_url": "https://yoga-spirit.ch/",
       "addresses": [
-        {"street": "Steinwiesstrasse 9", "zip": "8032", "city": "Zürich", "label": "Yoga-Spirit-House (beim Bellevue)"},
-        {"street": "Kilchbergstrasse 1", "zip": "8038", "city": "Zürich", "label": "St. Franziskus Kirchgemeindezentrum, Wollishofen"}
+        {
+          "street": "Steinwiesstrasse 9",
+          "zip": "8032",
+          "city": "Zürich",
+          "label": "Yoga-Spirit-House (beim Bellevue)"
+        },
+        {
+          "street": "Kilchbergstrasse 1",
+          "zip": "8038",
+          "city": "Zürich",
+          "label": "St. Franziskus Kirchgemeindezentrum, Wollishofen"
+        }
       ],
       "phone": "+41 78 607 38 58",
       "email": "",
-      "styles": ["Hatha", "Vinyasa", "Meditation"],
-      "teachers": ["Sabina Asnani", "Dominique", "Carly"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Meditation"
+      ],
+      "teachers": [
+        "Sabina Asnani",
+        "Dominique",
+        "Carly"
+      ],
       "description": "Yoga- und Meditationsschule mit indischen Wurzeln. Zwei Standorte beim Bellevue und in Wollishofen. Probelektion verfügbar.",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["2 Standorte", "Probelektion"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "2 Standorte",
+        "Probelektion"
+      ],
       "lat": 47.3655,
       "lng": 8.5515,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 41,
+        "card_10": 372,
+        "monthly": 273,
+        "trial": 29,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "vvoo",
@@ -318,21 +731,48 @@
       "website": "https://vvoo.ch/",
       "schedule_url": "https://vvoo.ch/pages/yoga",
       "addresses": [
-        {"street": "Dufourstrasse 90", "zip": "8008", "city": "Zürich", "label": "Seefeld, über dem Café Monocle"}
+        {
+          "street": "Dufourstrasse 90",
+          "zip": "8008",
+          "city": "Zürich",
+          "label": "Seefeld, über dem Café Monocle"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Hatha", "Katonah", "Alignment", "Restorative", "Sound Bath", "Breathwork"],
+      "styles": [
+        "Hatha",
+        "Katonah",
+        "Alignment",
+        "Restorative",
+        "Sound Bath",
+        "Breathwork"
+      ],
       "teachers": [],
       "description": "100m2 helles Studio im Seefeld mit Holzboden und Lounge. Yoga, Treatments und Wellness Shop. Bis zu 30 Teilnehmer.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Wellness Shop", "Treatments", "Acupressure"],
-      "lat": 47.3580,
-      "lng": 8.5530,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Wellness Shop",
+        "Treatments",
+        "Acupressure"
+      ],
+      "lat": 47.358,
+      "lng": 8.553,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 38,
+        "card_10": 345,
+        "monthly": 248,
+        "trial": 27,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-am-zuerichberg",
@@ -340,21 +780,45 @@
       "website": "https://www.xn--yoga-zrichberg-lsb.ch/",
       "schedule_url": "https://www.eversports.ch/s/yoga-am-zuerichberg",
       "addresses": [
-        {"street": "Mommsenstrasse 2", "zip": "8044", "city": "Zürich", "label": "Fluntern"}
+        {
+          "street": "Mommsenstrasse 2",
+          "zip": "8044",
+          "city": "Zürich",
+          "label": "Fluntern"
+        }
       ],
       "phone": "+41 79 629 92 69",
       "email": "",
-      "styles": ["Hatha", "Vinyasa", "Yin"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Yin"
+      ],
       "teachers": [],
       "description": "Persönliches Yogastudio im Quartier Fluntern. Erfahrene Lehrer, kleine Gruppen, hohe Qualität. Kinderyoga und Workshops verfügbar.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Teacher Training 200h", "Kinderyoga", "Workshops", "Kleine Gruppen"],
-      "lat": 47.3830,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Teacher Training 200h",
+        "Kinderyoga",
+        "Workshops",
+        "Kleine Gruppen"
+      ],
+      "lat": 47.383,
       "lng": 8.5625,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 40,
+        "card_10": 360,
+        "monthly": 262,
+        "trial": 28,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-am-fluss",
@@ -362,21 +826,48 @@
       "website": "https://www.yogaamfluss.ch/",
       "schedule_url": "https://www.yogaamfluss.ch/",
       "addresses": [
-        {"street": "Hardturmstrasse 68a", "zip": "8005", "city": "Zürich", "label": "Kreis 5"}
+        {
+          "street": "Hardturmstrasse 68a",
+          "zip": "8005",
+          "city": "Zürich",
+          "label": "Kreis 5"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Hatha", "Iyengar"],
-      "teachers": ["Susan Connor", "Marianne", "Celine"],
+      "styles": [
+        "Hatha",
+        "Iyengar"
+      ],
+      "teachers": [
+        "Susan Connor",
+        "Marianne",
+        "Celine"
+      ],
       "description": "Yogaschule im Kreis 5 mit kleinen Gruppen. Kurse für Morgen, Abend, Rücken, Schwangere und Fortgeschrittene. Einstieg jederzeit möglich.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Personal Training", "Yoga-Ferien in Brasilien/Marokko", "Kleine Gruppen"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Personal Training",
+        "Yoga-Ferien in Brasilien/Marokko",
+        "Kleine Gruppen"
+      ],
       "lat": 47.3892,
       "lng": 8.5167,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 37,
+        "card_10": 333,
+        "monthly": 244,
+        "trial": 26,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "iyengar-yoga-zuerich",
@@ -384,21 +875,41 @@
       "website": "https://www.iyengar-yoga-zurich.ch/",
       "schedule_url": "https://www.iyengar-yoga-zurich.ch/kurse.html",
       "addresses": [
-        {"street": "Quellenstrasse 2", "zip": "8005", "city": "Zürich", "label": "Kreis 5"}
+        {
+          "street": "Quellenstrasse 2",
+          "zip": "8005",
+          "city": "Zürich",
+          "label": "Kreis 5"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Iyengar"],
+      "styles": [
+        "Iyengar"
+      ],
       "teachers": [],
       "description": "Älteste Iyengar-Yogaschule in Zürich, gegründet 1996 und von B.K.S. Iyengar persönlich eingeweiht. Systematischer Unterricht für alle Stufen.",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Von B.K.S. Iyengar eingeweiht", "Workshops"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Von B.K.S. Iyengar eingeweiht",
+        "Workshops"
+      ],
       "lat": 47.3785,
       "lng": 8.5218,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 27,
+        "card_10": 246,
+        "monthly": 165,
+        "trial": 18,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-city",
@@ -406,21 +917,45 @@
       "website": "https://www.yogacity.ch/",
       "schedule_url": "https://www.yogacity.ch/",
       "addresses": [
-        {"street": "Bäckerstrasse 40", "zip": "8004", "city": "Zürich", "label": "Kreis 4, Langstrasse"}
+        {
+          "street": "Bäckerstrasse 40",
+          "zip": "8004",
+          "city": "Zürich",
+          "label": "Kreis 4, Langstrasse"
+        }
       ],
       "phone": "+41 44 463 42 62",
       "email": "info@yogacity.ch",
-      "styles": ["Iyengar"],
-      "teachers": ["Pius Meier", "Carlos de Azevedo Correia"],
+      "styles": [
+        "Iyengar"
+      ],
+      "teachers": [
+        "Pius Meier",
+        "Carlos de Azevedo Correia"
+      ],
       "description": "Iyengar Yogaschule seit über 20 Jahren im Herzen von Zürich. Alle Lehrer mit diplomierter Iyengar-Ausbildung.",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Workshops", "Retreats", "Mindfulness"],
-      "lat": 47.3760,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Workshops",
+        "Retreats",
+        "Mindfulness"
+      ],
+      "lat": 47.376,
       "lng": 8.5305,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 34,
+        "card_10": 310,
+        "monthly": 222,
+        "trial": 24,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "soul-city",
@@ -428,21 +963,50 @@
       "website": "https://soulcity-zurich.ch/",
       "schedule_url": "https://soulcity-zurich.ch/",
       "addresses": [
-        {"street": "Dienerstrasse 10", "zip": "8004", "city": "Zürich", "label": "Kreis 4, Langstrasse"}
+        {
+          "street": "Dienerstrasse 10",
+          "zip": "8004",
+          "city": "Zürich",
+          "label": "Kreis 4, Langstrasse"
+        }
       ],
       "phone": "+41 79 104 28 28",
       "email": "",
-      "styles": ["Hatha", "Tantra Hatha", "Yin", "Vinyasa", "Katonah", "Sound Bath", "Breathwork"],
+      "styles": [
+        "Hatha",
+        "Tantra Hatha",
+        "Yin",
+        "Vinyasa",
+        "Katonah",
+        "Sound Bath",
+        "Breathwork"
+      ],
       "description": "Yogastudio und Café an der Langstrasse. 90% handgefertigte Einrichtung aus recycelten Materialien. Yoga & Brunch Events jeden 2. Sonntag.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Café", "Co-Working", "Yoga & Brunch Events", "Duschen"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Café",
+        "Co-Working",
+        "Yoga & Brunch Events",
+        "Duschen"
+      ],
       "teachers": [],
       "lat": 47.3775,
       "lng": 8.5285,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 33,
+        "card_10": 296,
+        "monthly": 204,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-nest",
@@ -450,22 +1014,56 @@
       "website": "https://www.theyoganest.ch/",
       "schedule_url": "https://www.theyoganest.ch/",
       "addresses": [
-        {"street": "Wattstrasse 3", "zip": "8050", "city": "Zürich", "label": "Oerlikon"},
-        {"street": "", "zip": "8001", "city": "Zürich", "label": "Zentrum/Niederdorf"}
+        {
+          "street": "Wattstrasse 3",
+          "zip": "8050",
+          "city": "Zürich",
+          "label": "Oerlikon"
+        },
+        {
+          "street": "",
+          "zip": "8001",
+          "city": "Zürich",
+          "label": "Zentrum/Niederdorf"
+        }
       ],
       "phone": "",
       "email": "info@theyoganest.ch",
-      "styles": ["Vinyasa", "Hatha", "Aerial", "Yin", "Sound Bath", "Meditation"],
+      "styles": [
+        "Vinyasa",
+        "Hatha",
+        "Aerial",
+        "Yin",
+        "Sound Bath",
+        "Meditation"
+      ],
       "teachers": [],
       "description": "Einladendes Studio mit zwei Standorten in Oerlikon und im Zentrum (Niederdorf). Vinyasa, Aerial Yoga und Teacher Trainings.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["English", "Deutsch"],
-      "special_features": ["Teacher Training 200h", "Aerial Yoga", "Sound Baths", "Retreats", "2 Standorte"],
-      "lat": 47.4110,
+      "languages": [
+        "English",
+        "Deutsch"
+      ],
+      "special_features": [
+        "Teacher Training 200h",
+        "Aerial Yoga",
+        "Sound Baths",
+        "Retreats",
+        "2 Standorte"
+      ],
+      "lat": 47.411,
       "lng": 8.5445,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 39,
+        "card_10": 353,
+        "monthly": 255,
+        "trial": 28,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-culture",
@@ -473,22 +1071,54 @@
       "website": "https://www.yogaculture.ch/",
       "schedule_url": "https://www.yogaculture.ch/",
       "addresses": [
-        {"street": "Tramstrasse 2", "zip": "8050", "city": "Zürich", "label": "Oerlikon, beim Sternen"},
-        {"street": "Hottingerstrasse 35", "zip": "8032", "city": "Zürich", "label": "Hottingen"}
+        {
+          "street": "Tramstrasse 2",
+          "zip": "8050",
+          "city": "Zürich",
+          "label": "Oerlikon, beim Sternen"
+        },
+        {
+          "street": "Hottingerstrasse 35",
+          "zip": "8032",
+          "city": "Zürich",
+          "label": "Hottingen"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Vinyasa", "Hatha", "Yin", "Prenatal", "Meditation"],
-      "teachers": ["Vivianne"],
+      "styles": [
+        "Vinyasa",
+        "Hatha",
+        "Yin",
+        "Prenatal",
+        "Meditation"
+      ],
+      "teachers": [
+        "Vivianne"
+      ],
       "description": "Helles Studio mit Eichenparkett an zwei Standorten in Oerlikon und Hottingen. Early Bird, Morning Flow, Lunch Flow und Gentle Klassen.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["2 Standorte", "Qualitop zertifiziert"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "2 Standorte",
+        "Qualitop zertifiziert"
+      ],
       "lat": 47.4098,
       "lng": 8.5482,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 35,
+        "card_10": 318,
+        "monthly": 223,
+        "trial": 24,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "the-yoga-place",
@@ -496,21 +1126,48 @@
       "website": "https://www.theyogaplace.ch/",
       "schedule_url": "https://www.theyogaplace.ch/en/offering",
       "addresses": [
-        {"street": "Turbinenstrasse 40", "zip": "8005", "city": "Zürich", "label": "3 Min. von Hardbrücke"}
+        {
+          "street": "Turbinenstrasse 40",
+          "zip": "8005",
+          "city": "Zürich",
+          "label": "3 Min. von Hardbrücke"
+        }
       ],
       "phone": "+41 79 423 21 91",
       "email": "info@theyogaplace.ch",
-      "styles": ["Alignment Hatha", "Prenatal"],
-      "teachers": ["Tanja", "Joey"],
+      "styles": [
+        "Alignment Hatha",
+        "Prenatal"
+      ],
+      "teachers": [
+        "Tanja",
+        "Joey"
+      ],
       "description": "Alignment-basiertes Hatha Yoga Studio. Individuelle Anatomie berücksichtigt, Verletzungen vermeiden. Teacher Training und Yoga-Ferien.",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Teacher Training 200h", "Yoga-Ferien", "Schwangerschaftsyoga", "Private Yoga"],
-      "lat": 47.3870,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Teacher Training 200h",
+        "Yoga-Ferien",
+        "Schwangerschaftsyoga",
+        "Private Yoga"
+      ],
+      "lat": 47.387,
       "lng": 8.5185,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 27,
+        "card_10": 247,
+        "monthly": 166,
+        "trial": 18,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "planet-yoga",
@@ -518,21 +1175,46 @@
       "website": "https://www.planetyoga.ch/",
       "schedule_url": "https://www.eversports.ch/s/planet-yoga",
       "addresses": [
-        {"street": "Rüdigerstrasse 15", "zip": "8045", "city": "Zürich", "label": "Kreis 3"}
+        {
+          "street": "Rüdigerstrasse 15",
+          "zip": "8045",
+          "city": "Zürich",
+          "label": "Kreis 3"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Vinyasa", "Yin", "Yin & Yang", "Hatha"],
-      "teachers": ["Bettina Walter"],
+      "styles": [
+        "Vinyasa",
+        "Yin",
+        "Yin & Yang",
+        "Hatha"
+      ],
+      "teachers": [
+        "Bettina Walter"
+      ],
       "description": "Seit 2004 von Bettina Walter geführt. Yoga im Kreis 3 mit Vinyasa, Yin und Hatha. Workshops und Teacher Training.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Teacher Training", "Workshops"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Teacher Training",
+        "Workshops"
+      ],
       "lat": 47.3685,
       "lng": 8.5195,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 38,
+        "card_10": 341,
+        "monthly": 245,
+        "trial": 26,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yogalives",
@@ -540,21 +1222,50 @@
       "website": "https://www.yogalives.ch/",
       "schedule_url": "https://www.yogalives.ch/",
       "addresses": [
-        {"street": "Giesshübelstrasse 62B", "zip": "8045", "city": "Zürich", "label": "Grösstes Yoga-Zimmer in Zürich"}
+        {
+          "street": "Giesshübelstrasse 62B",
+          "zip": "8045",
+          "city": "Zürich",
+          "label": "Grösstes Yoga-Zimmer in Zürich"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Hatha", "Vinyasa", "Ashtanga", "Yin", "Flow"],
-      "teachers": ["Olive Ssembuze", "Melanie"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Ashtanga",
+        "Yin",
+        "Flow"
+      ],
+      "teachers": [
+        "Olive Ssembuze",
+        "Melanie"
+      ],
       "description": "Seit 2008 Körper und Geist in Einklang. Grösster Yogaraum in Zürich. Yoga Alliance zertifizierte Teacher Trainings seit 2011.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Teacher Training", "Yoga Alliance zertifiziert", "Grösster Yogaraum"],
-      "lat": 47.3650,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Teacher Training",
+        "Yoga Alliance zertifiziert",
+        "Grösster Yogaraum"
+      ],
+      "lat": 47.365,
       "lng": 8.5235,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 36,
+        "card_10": 330,
+        "monthly": 234,
+        "trial": 25,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "nandalayoga",
@@ -562,21 +1273,41 @@
       "website": "https://www.nandalayoga.ch/",
       "schedule_url": "https://www.nandalayoga.ch/",
       "addresses": [
-        {"street": "Klingenstrasse 42", "zip": "8005", "city": "Zürich", "label": "Kreis 5"}
+        {
+          "street": "Klingenstrasse 42",
+          "zip": "8005",
+          "city": "Zürich",
+          "label": "Kreis 5"
+        }
       ],
       "phone": "+41 79 224 52 70",
       "email": "daniela@nandalayoga.ch",
-      "styles": ["Hatha", "Vinyasa"],
-      "teachers": ["Daniela"],
+      "styles": [
+        "Hatha",
+        "Vinyasa"
+      ],
+      "teachers": [
+        "Daniela"
+      ],
       "description": "Yogaoase in Zürich. Wohlfühl-Yoga mit Daniela in persönlicher Atmosphäre im Kreis 5.",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
+      "languages": [
+        "Deutsch"
+      ],
       "special_features": [],
       "lat": 47.3872,
       "lng": 8.5235,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 36,
+        "card_10": 324,
+        "monthly": 236,
+        "trial": 25,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "sleepy-yogi",
@@ -584,21 +1315,40 @@
       "website": "https://www.sleepyyogi.com/",
       "schedule_url": "https://www.sleepyyogi.com/",
       "addresses": [
-        {"street": "Löwenstrasse 2", "zip": "8001", "city": "Zürich", "label": "Zentrum"}
+        {
+          "street": "Löwenstrasse 2",
+          "zip": "8001",
+          "city": "Zürich",
+          "label": "Zentrum"
+        }
       ],
       "phone": "+41 79 586 96 34",
       "email": "",
-      "styles": ["Yoga", "Pilates"],
+      "styles": [
+        "Yoga",
+        "Pilates"
+      ],
       "teachers": [],
       "description": "Yoga- und Pilates-Studio im Herzen von Zürich an der Löwenstrasse. Klassen für Energie und inneren Frieden.",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
       "special_features": [],
       "lat": 47.3738,
       "lng": 8.5355,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 32,
+        "card_10": 284,
+        "monthly": 200,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-in-a-bag-altstetten",
@@ -606,21 +1356,46 @@
       "website": "https://yogainabag.com/",
       "schedule_url": "https://www.eversports.ch/s/yoga-in-a-bag-altstetten",
       "addresses": [
-        {"street": "Hohlstrasse 481", "zip": "8048", "city": "Zürich", "label": "Altstetten"}
+        {
+          "street": "Hohlstrasse 481",
+          "zip": "8048",
+          "city": "Zürich",
+          "label": "Altstetten"
+        }
       ],
       "phone": "+41 78 686 23 23",
       "email": "altstetten@yogainabag.com",
-      "styles": ["Hatha", "Vinyasa", "Kundalini", "Yin", "Pilates"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Kundalini",
+        "Yin",
+        "Pilates"
+      ],
       "teachers": [],
       "description": "Teil der Yoga in a Bag Kette mit Studios in Altstetten, Albisrieden, Dietikon und Winterthur. Dynamische und sanfte Klassen für jede Lebenslage.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Retreats", "Workshops", "Mehrere Standorte"],
-      "lat": 47.3850,
-      "lng": 8.4880,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Retreats",
+        "Workshops",
+        "Mehrere Standorte"
+      ],
+      "lat": 47.385,
+      "lng": 8.488,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 34,
+        "card_10": 306,
+        "monthly": 213,
+        "trial": 23,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-in-a-bag-albisrieden",
@@ -628,21 +1403,45 @@
       "website": "https://yogainabag.com/",
       "schedule_url": "https://yogainabag.com/en/studios/",
       "addresses": [
-        {"street": "Albisriederstrasse 361", "zip": "8047", "city": "Zürich", "label": "Albisrieden"}
+        {
+          "street": "Albisriederstrasse 361",
+          "zip": "8047",
+          "city": "Zürich",
+          "label": "Albisrieden"
+        }
       ],
       "phone": "+41 44 203 66 96",
       "email": "albisrieden@yogainabag.com",
-      "styles": ["Hatha", "Vinyasa", "Kundalini", "Yin", "Pilates"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Kundalini",
+        "Yin",
+        "Pilates"
+      ],
       "teachers": [],
       "description": "Yoga in a Bag Standort in Albisrieden. Familiäre Atmosphäre mit abwechslungsreichem Programm.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Retreats", "Workshops"],
-      "lat": 47.3760,
-      "lng": 8.4850,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Retreats",
+        "Workshops"
+      ],
+      "lat": 47.376,
+      "lng": 8.485,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 30,
+        "card_10": 274,
+        "monthly": 184,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "aranya-studio",
@@ -650,21 +1449,50 @@
       "website": "https://www.aranya-studio.ch/",
       "schedule_url": "https://www.aranya-studio.ch/en",
       "addresses": [
-        {"street": "Hammerstrasse 7", "zip": "8008", "city": "Zürich", "label": "Seefeld"}
+        {
+          "street": "Hammerstrasse 7",
+          "zip": "8008",
+          "city": "Zürich",
+          "label": "Seefeld"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Hatha", "Vinyasa", "Yin", "Pilates", "Senioren-Yoga"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Yin",
+        "Pilates",
+        "Senioren-Yoga"
+      ],
       "teachers": [],
       "description": "Zentral gelegen in Seefeld. Yoga, Pilates, Personal Training, Massage und Sound Treatment. Gruppenkurse für 10-15 Teilnehmer.",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Personal Training", "Massage", "Sound Treatment", "Fascia Workshops", "Cacao Ceremonies", "Retreats"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Personal Training",
+        "Massage",
+        "Sound Treatment",
+        "Fascia Workshops",
+        "Cacao Ceremonies",
+        "Retreats"
+      ],
       "lat": 47.3555,
-      "lng": 8.5540,
+      "lng": 8.554,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 37,
+        "card_10": 338,
+        "monthly": 242,
+        "trial": 26,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "elevate-studio",
@@ -672,21 +1500,51 @@
       "website": "https://www.elevate-studio.ch/",
       "schedule_url": "https://www.elevate-studio.ch/",
       "addresses": [
-        {"street": "Wyssgasse 2", "zip": "8004", "city": "Zürich", "label": "Kreis 4"}
+        {
+          "street": "Wyssgasse 2",
+          "zip": "8004",
+          "city": "Zürich",
+          "label": "Kreis 4"
+        }
       ],
       "phone": "",
       "email": "hello@elevate-studio.ch",
-      "styles": ["Neo Kundalini", "Hatha", "Vinyasa", "Yin", "Yoga Nidra", "Meditation", "Breathwork", "Sound Bath"],
+      "styles": [
+        "Neo Kundalini",
+        "Hatha",
+        "Vinyasa",
+        "Yin",
+        "Yoga Nidra",
+        "Meditation",
+        "Breathwork",
+        "Sound Bath"
+      ],
       "teachers": [],
       "description": "Neues Studio im Herzen von Zürich mit Neo Kundalini Yoga - eine frische, offene Perspektive auf die alte Kundalini-Tradition.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Neo Kundalini Yoga", "Cacao Ceremony", "Women Health", "Stress Detox"],
-      "lat": 47.3770,
-      "lng": 8.5270,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Neo Kundalini Yoga",
+        "Cacao Ceremony",
+        "Women Health",
+        "Stress Detox"
+      ],
+      "lat": 47.377,
+      "lng": 8.527,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 33,
+        "card_10": 290,
+        "monthly": 197,
+        "trial": 21,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "radiant-heart-studio",
@@ -694,21 +1552,43 @@
       "website": "https://www.radiantheartstudio.com/",
       "schedule_url": "https://www.radiantheartstudio.com/schedule-1",
       "addresses": [
-        {"street": "Rüdigerstrasse 17", "zip": "8045", "city": "Zürich", "label": "Kreis 3, Wiedikon, 5 Min. von Sihlcity"}
+        {
+          "street": "Rüdigerstrasse 17",
+          "zip": "8045",
+          "city": "Zürich",
+          "label": "Kreis 3, Wiedikon, 5 Min. von Sihlcity"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Yoga", "Meditation"],
+      "styles": [
+        "Yoga",
+        "Meditation"
+      ],
       "teachers": [],
       "description": "Studio für Yoga, Kunst und Community im Herzen von Kreis 3. Eröffnet Oktober 2023. Raum auch zur Miete verfügbar.",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Community Space", "Raum mieten"],
-      "lat": 47.3680,
-      "lng": 8.5190,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Community Space",
+        "Raum mieten"
+      ],
+      "lat": 47.368,
+      "lng": 8.519,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 30,
+        "card_10": 270,
+        "monthly": 187,
+        "trial": 21,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "studio-y3",
@@ -716,21 +1596,49 @@
       "website": "https://www.studioy3.ch/",
       "schedule_url": "https://www.studioy3.ch/book",
       "addresses": [
-        {"street": "Weststrasse 138", "zip": "8003", "city": "Zürich", "label": "Kreis 3"}
+        {
+          "street": "Weststrasse 138",
+          "zip": "8003",
+          "city": "Zürich",
+          "label": "Kreis 3"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Vinyasa Flow", "Yin", "Yinyasa", "Yoga Nidra", "Prenatal", "Barre"],
-      "teachers": ["Cecilia Jane"],
+      "styles": [
+        "Vinyasa Flow",
+        "Yin",
+        "Yinyasa",
+        "Yoga Nidra",
+        "Prenatal",
+        "Barre"
+      ],
+      "teachers": [
+        "Cecilia Jane"
+      ],
       "description": "Kleines, minimalistisches Boutique-Yogastudio im Kreis 3. Alle Klassen auf Englisch mit kuratierten Playlisten.",
       "booking_platform": "ClassPass",
       "drop_in": true,
-      "languages": ["English"],
-      "special_features": ["Cecilia Jane Method", "Sweat Yoga", "Musik-begleitete Klassen"],
-      "lat": 47.3720,
-      "lng": 8.5180,
+      "languages": [
+        "English"
+      ],
+      "special_features": [
+        "Cecilia Jane Method",
+        "Sweat Yoga",
+        "Musik-begleitete Klassen"
+      ],
+      "lat": 47.372,
+      "lng": 8.518,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 41,
+        "card_10": 368,
+        "monthly": 269,
+        "trial": 29,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-by-nora",
@@ -738,21 +1646,44 @@
       "website": "https://yogabynora.ch/",
       "schedule_url": "https://www.eversports.ch/s/yoga-by-nora-mikkel",
       "addresses": [
-        {"street": "Weltistrasse 5", "zip": "8002", "city": "Zürich", "label": "Enge, Kreis 2"}
+        {
+          "street": "Weltistrasse 5",
+          "zip": "8002",
+          "city": "Zürich",
+          "label": "Enge, Kreis 2"
+        }
       ],
       "phone": "+41 79 720 44 25",
       "email": "",
-      "styles": ["Iyengar"],
-      "teachers": ["Nora"],
+      "styles": [
+        "Iyengar"
+      ],
+      "teachers": [
+        "Nora"
+      ],
       "description": "Kleines Iyengar-Yoga-Studio in Zürich Enge. Gruppenlektionen mit max. 9 Teilnehmern und Privatlektionen. Einzelklasse ab CHF 20.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Max. 9 Teilnehmer", "Privatlektionen", "Rolfing"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Max. 9 Teilnehmer",
+        "Privatlektionen",
+        "Rolfing"
+      ],
       "lat": 47.3638,
-      "lng": 8.5310,
+      "lng": 8.531,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 32,
+        "card_10": 283,
+        "monthly": 198,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "jio-kundalini-yoga",
@@ -760,21 +1691,46 @@
       "website": "https://www.jiokundaliniyoga.com/",
       "schedule_url": "https://www.jiokundaliniyoga.com/register",
       "addresses": [
-        {"street": "Kernstrasse 25", "zip": "8004", "city": "Zürich", "label": "Gobinde Yoga Studio, Kreis 4"}
+        {
+          "street": "Kernstrasse 25",
+          "zip": "8004",
+          "city": "Zürich",
+          "label": "Gobinde Yoga Studio, Kreis 4"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Kundalini", "Meditation", "Breathwork"],
+      "styles": [
+        "Kundalini",
+        "Meditation",
+        "Breathwork"
+      ],
       "teachers": [],
       "description": "Seit 2009 Pionier für Kundalini Yoga in Zürich. Morning Sadhana, Abendklassen, Teacher Trainings und Retreats.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Teacher Training 200h", "Teacher Training 300h", "Morning Sadhana", "Retreats"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Teacher Training 200h",
+        "Teacher Training 300h",
+        "Morning Sadhana",
+        "Retreats"
+      ],
       "lat": 47.3765,
       "lng": 8.5265,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 35,
+        "card_10": 314,
+        "monthly": 220,
+        "trial": 24,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "templeshape",
@@ -782,21 +1738,42 @@
       "website": "https://templeshape.com/",
       "schedule_url": "https://templeshape.com/en/templeshape-studio-wiedikon/yoga-in-wiedikon-zurich/",
       "addresses": [
-        {"street": "Manessestrasse 120", "zip": "8045", "city": "Zürich", "label": "Wiedikon, Kreis 3"}
+        {
+          "street": "Manessestrasse 120",
+          "zip": "8045",
+          "city": "Zürich",
+          "label": "Wiedikon, Kreis 3"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Vinyasa", "Hatha"],
+      "styles": [
+        "Vinyasa",
+        "Hatha"
+      ],
       "teachers": [],
       "description": "Boutique-Studio in Wiedikon mit familiärer Atmosphäre. Abo-Optionen ab CHF 99/Mt. Vinyasa und Hatha Yoga.",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Boutique Studio"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Boutique Studio"
+      ],
       "lat": 47.3672,
-      "lng": 8.5180,
+      "lng": 8.518,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 36,
+        "card_10": 324,
+        "monthly": 236,
+        "trial": 25,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga2day",
@@ -804,21 +1781,48 @@
       "website": "https://www.yoga2day.ch/",
       "schedule_url": "https://www.yoga2day.ch/angebot-yoga2day/",
       "addresses": [
-        {"street": "", "zip": "8050", "city": "Zürich", "label": "Oerlikon, beim Bahnhof"}
+        {
+          "street": "",
+          "zip": "8050",
+          "city": "Zürich",
+          "label": "Oerlikon, beim Bahnhof"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Hatha", "Vinyasa", "Yin", "Meditation"],
-      "teachers": ["Anna Morf"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Yin",
+        "Meditation"
+      ],
+      "teachers": [
+        "Anna Morf"
+      ],
       "description": "Zwei Studios in Zürich Oerlikon seit 2009. Yoga Kurse auch für Senioren. Teacher Training zertifiziert nach Yoga Alliance (RYS200, RYS300).",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Teacher Training 200h", "Teacher Training 300h", "Yoga Alliance RYS", "Senioren-Yoga"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Teacher Training 200h",
+        "Teacher Training 300h",
+        "Yoga Alliance RYS",
+        "Senioren-Yoga"
+      ],
       "lat": 47.4105,
-      "lng": 8.5450,
+      "lng": 8.545,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 35,
+        "card_10": 316,
+        "monthly": 222,
+        "trial": 24,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yogagold",
@@ -826,21 +1830,51 @@
       "website": "https://www.yogagold.net/",
       "schedule_url": "https://en.yogagold.net/yogaklassen",
       "addresses": [
-        {"street": "Giesshübelstrasse 62b", "zip": "8045", "city": "Zürich", "label": "bei Yogalives"}
+        {
+          "street": "Giesshübelstrasse 62b",
+          "zip": "8045",
+          "city": "Zürich",
+          "label": "bei Yogalives"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Hatha", "Vinyasa", "Jivamukti", "Yin", "Kundalini", "Lach-Yoga"],
-      "teachers": ["Susen Veronica"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Jivamukti",
+        "Yin",
+        "Kundalini",
+        "Lach-Yoga"
+      ],
+      "teachers": [
+        "Susen Veronica"
+      ],
       "description": "Jivamukti, Kundalini und kreative Yoga-Workshops. Corporate Yoga und Online-Klassen weltweit. Klassen im ADC Gallery und bei Yogalives.",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Lach-Yoga", "Corporate Yoga", "Online Live Klassen", "Workshops"],
-      "lat": 47.3650,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Lach-Yoga",
+        "Corporate Yoga",
+        "Online Live Klassen",
+        "Workshops"
+      ],
+      "lat": 47.365,
       "lng": 8.5235,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 37,
+        "card_10": 337,
+        "monthly": 241,
+        "trial": 26,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "project-peace",
@@ -848,21 +1882,46 @@
       "website": "https://projectpeace.ch/",
       "schedule_url": "https://projectpeace.ch/classes-prices",
       "addresses": [
-        {"street": "", "zip": "8008", "city": "Zürich", "label": "Seefeld"}
+        {
+          "street": "",
+          "zip": "8008",
+          "city": "Zürich",
+          "label": "Seefeld"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Jivamukti"],
-      "teachers": ["Laurina Waltersperger"],
+      "styles": [
+        "Jivamukti"
+      ],
+      "teachers": [
+        "Laurina Waltersperger"
+      ],
       "description": "Jivamukti Yoga in Zürich Seefeld. Inneren und äusseren Frieden durch die Jivamukti-Methode, Emotional Healing und Community.",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Jivamukti Method", "Trauma Informed Yoga", "Intuitive Bodywork", "Yoga for Surfers"],
-      "lat": 47.3570,
-      "lng": 8.5530,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Jivamukti Method",
+        "Trauma Informed Yoga",
+        "Intuitive Bodywork",
+        "Yoga for Surfers"
+      ],
+      "lat": 47.357,
+      "lng": 8.553,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 32,
+        "card_10": 296,
+        "monthly": 211,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-am-hottingerplatz",
@@ -870,21 +1929,42 @@
       "website": "https://yo-am-ho.com/",
       "schedule_url": "https://yo-am-ho.com/en/class-schedule/",
       "addresses": [
-        {"street": "Hottingerstrasse 35", "zip": "8032", "city": "Zürich", "label": "Hottingen"}
+        {
+          "street": "Hottingerstrasse 35",
+          "zip": "8032",
+          "city": "Zürich",
+          "label": "Hottingen"
+        }
       ],
       "phone": "+41 44 501 04 25",
       "email": "",
-      "styles": ["Hatha", "Vinyasa", "Yin", "Yoga Conditioning"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Yin",
+        "Yoga Conditioning"
+      ],
       "teachers": [],
       "description": "Yoga am Hottingerplatz bietet breites Angebot an Hatha, Vinyasa, Yin und Yoga Conditioning für Anfänger und Fortgeschrittene.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
       "special_features": [],
-      "lat": 47.3740,
+      "lat": 47.374,
       "lng": 8.5555,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 41,
+        "card_10": 375,
+        "monthly": 264,
+        "trial": 29,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yogamoves-winterthur",
@@ -892,21 +1972,44 @@
       "website": "https://www.yoga-moves.ch/",
       "schedule_url": "https://www.eversports.ch/s/yogamoves-gmbh",
       "addresses": [
-        {"street": "Steinberggasse 61", "zip": "8400", "city": "Winterthur", "label": "Altstadt, 5 Min. vom HB"}
+        {
+          "street": "Steinberggasse 61",
+          "zip": "8400",
+          "city": "Winterthur",
+          "label": "Altstadt, 5 Min. vom HB"
+        }
       ],
       "phone": "+41 79 307 48 28",
       "email": "",
-      "styles": ["Ashtanga", "Vinyasa", "Hatha", "Yin"],
+      "styles": [
+        "Ashtanga",
+        "Vinyasa",
+        "Hatha",
+        "Yin"
+      ],
       "teachers": [],
       "description": "Yogastudio in der Altstadt von Winterthur. Vielfältige Yoga-Stile von energetischem Ashtanga bis sanftem Yin. Alle Lehrer Yoga Alliance diplomiert.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Workshops", "Teacher Training"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Workshops",
+        "Teacher Training"
+      ],
       "lat": 47.4985,
       "lng": 8.7273,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 39,
+        "card_10": 351,
+        "monthly": 254,
+        "trial": 27,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "flowfabrik-winterthur",
@@ -914,21 +2017,53 @@
       "website": "https://www.flowfabrik.ch/",
       "schedule_url": "https://www.flowfabrik.ch/",
       "addresses": [
-        {"street": "Wartstrasse 19", "zip": "8400", "city": "Winterthur", "label": "Veltheim"}
+        {
+          "street": "Wartstrasse 19",
+          "zip": "8400",
+          "city": "Winterthur",
+          "label": "Veltheim"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Yoga", "Aerial Yoga", "Barre", "Pilates", "HIIT", "TRX", "Schwangerschaftsyoga", "Kinderyoga", "Meditation"],
+      "styles": [
+        "Yoga",
+        "Aerial Yoga",
+        "Barre",
+        "Pilates",
+        "HIIT",
+        "TRX",
+        "Schwangerschaftsyoga",
+        "Kinderyoga",
+        "Meditation"
+      ],
       "teachers": [],
       "description": "Yoga & Movement Studio in Veltheim, Winterthur. Raum für Achtsamkeit, Verbindung und persönliche Entwicklung. Qualitop-Label, Krankenkassen-anerkannt.",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Aerial Yoga", "Qualitop zertifiziert", "Krankenkassen-anerkannt", "Kinderyoga", "Schwangerschaftsyoga", "Rückbildungskurse"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Aerial Yoga",
+        "Qualitop zertifiziert",
+        "Krankenkassen-anerkannt",
+        "Kinderyoga",
+        "Schwangerschaftsyoga",
+        "Rückbildungskurse"
+      ],
       "lat": 47.5045,
-      "lng": 8.7200,
+      "lng": 8.72,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 38,
+        "card_10": 344,
+        "monthly": 244,
+        "trial": 27,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "zanana-living-winterthur",
@@ -936,21 +2071,56 @@
       "website": "https://zanana-living.ch/",
       "schedule_url": "https://zanana-living.ch/",
       "addresses": [
-        {"street": "Rychenbergstrasse 67", "zip": "8400", "city": "Winterthur", "label": "Haldengutareal"}
+        {
+          "street": "Rychenbergstrasse 67",
+          "zip": "8400",
+          "city": "Winterthur",
+          "label": "Haldengutareal"
+        }
       ],
       "phone": "+41 78 886 03 32",
       "email": "",
-      "styles": ["Hatha", "Vinyasa Flow", "Ashtanga-Vinyasa", "Power Yoga", "Gentle Yoga", "Yoga Nidra", "Anusara", "Bhakti", "Iyengar", "Jivamukti", "Kundalini", "Pilates", "Meditation"],
+      "styles": [
+        "Hatha",
+        "Vinyasa Flow",
+        "Ashtanga-Vinyasa",
+        "Power Yoga",
+        "Gentle Yoga",
+        "Yoga Nidra",
+        "Anusara",
+        "Bhakti",
+        "Iyengar",
+        "Jivamukti",
+        "Kundalini",
+        "Pilates",
+        "Meditation"
+      ],
       "teachers": [],
       "description": "Modernes Fabrikambiente in Winterthur mit lichtdurchfluteten Räumen. Breites Angebot von Hatha bis Jivamukti. Krankenkassen-anerkannt.",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Teacher Training", "Retreats", "Workshops", "Outdoor Yoga", "Krankenkassen-anerkannt"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Teacher Training",
+        "Retreats",
+        "Workshops",
+        "Outdoor Yoga",
+        "Krankenkassen-anerkannt"
+      ],
       "lat": 47.5035,
       "lng": 8.7168,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 40,
+        "card_10": 354,
+        "monthly": 250,
+        "trial": 28,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-in-winterthur",
@@ -958,21 +2128,40 @@
       "website": "https://www.yoga-in.ch/",
       "schedule_url": "https://www.yoga-in.ch/",
       "addresses": [
-        {"street": "", "zip": "8400", "city": "Winterthur", "label": "Zentrum"}
+        {
+          "street": "",
+          "zip": "8400",
+          "city": "Winterthur",
+          "label": "Zentrum"
+        }
       ],
       "phone": "",
       "email": "info@yoga-in.ch",
-      "styles": ["Yoga"],
+      "styles": [
+        "Yoga"
+      ],
       "teachers": [],
       "description": "Yoga Studio im Zentrum von Winterthur. Präsenzkurse und Online-Lektionen (60 Min., CHF 25) via Zoom.",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Online Klassen via Zoom"],
-      "lat": 47.4990,
-      "lng": 8.7290,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Online Klassen via Zoom"
+      ],
+      "lat": 47.499,
+      "lng": 8.729,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 29,
+        "card_10": 259,
+        "monthly": 177,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-academy-winterthur",
@@ -980,21 +2169,44 @@
       "website": "https://yoga-academy-winterthur.ch/",
       "schedule_url": "https://www.eversports.ch/s/yoga-academy-winterthur",
       "addresses": [
-        {"street": "Dialogplatz 10", "zip": "8400", "city": "Winterthur", "label": "1. OG, Lokwerk-Areal, Gebäude Big Boy"}
+        {
+          "street": "Dialogplatz 10",
+          "zip": "8400",
+          "city": "Winterthur",
+          "label": "1. OG, Lokwerk-Areal, Gebäude Big Boy"
+        }
       ],
       "phone": "+41 79 263 32 18",
       "email": "behappy@yoga-academy-winterthur.ch",
-      "styles": ["Yoga", "Meditation", "Kinderyoga"],
+      "styles": [
+        "Yoga",
+        "Meditation",
+        "Kinderyoga"
+      ],
       "teachers": [],
       "description": "Yoga Academy im modernen Big Boy Gebäude im Lokwerk-Areal. Kurse, Workshops und Events für alle Levels. Auch Kinderyoga.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Kinderyoga", "Workshops", "Events"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Kinderyoga",
+        "Workshops",
+        "Events"
+      ],
       "lat": 47.4995,
-      "lng": 8.7310,
+      "lng": 8.731,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 40,
+        "card_10": 362,
+        "monthly": 264,
+        "trial": 28,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-in-a-bag-winterthur",
@@ -1002,21 +2214,45 @@
       "website": "https://yogainabag.com/",
       "schedule_url": "https://yogainabag.com/en/studios/winterthur/",
       "addresses": [
-        {"street": "Stadthausstrasse 24", "zip": "8400", "city": "Winterthur", "label": "Zentrum"}
+        {
+          "street": "Stadthausstrasse 24",
+          "zip": "8400",
+          "city": "Winterthur",
+          "label": "Zentrum"
+        }
       ],
       "phone": "+41 44 203 66 96",
       "email": "winterthur@yogainabag.com",
-      "styles": ["Hatha", "Vinyasa", "Kundalini", "Yin", "Pilates"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Kundalini",
+        "Yin",
+        "Pilates"
+      ],
       "teachers": [],
       "description": "Yoga in a Bag Standort in Winterthur. Dynamische und sanfte Klassen, klassisch oder modern, für Individuen und Familien.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Workshops", "Retreats"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Workshops",
+        "Retreats"
+      ],
       "lat": 47.4998,
       "lng": 8.7262,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 36,
+        "card_10": 322,
+        "monthly": 227,
+        "trial": 25,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ]
 }

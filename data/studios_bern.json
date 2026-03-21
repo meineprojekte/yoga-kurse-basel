@@ -7,21 +7,48 @@
       "website": "https://www.yamabern.ch/",
       "schedule_url": "https://www.yamabern.ch/schedule",
       "addresses": [
-        {"street": "Postgasse 37", "zip": "3011", "city": "Bern", "label": "Altstadt"}
+        {
+          "street": "Postgasse 37",
+          "zip": "3011",
+          "city": "Bern",
+          "label": "Altstadt"
+        }
       ],
       "phone": "+41 79 594 77 51",
       "email": "yoga@yamabern.ch",
-      "styles": ["Hatha", "Vinyasa", "Schwangerschaftsyoga", "Beckenboden Yoga"],
-      "teachers": ["Linda Eden"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Schwangerschaftsyoga",
+        "Beckenboden Yoga"
+      ],
+      "teachers": [
+        "Linda Eden"
+      ],
       "description": "Ruhige Oase in der UNESCO-geschuetzten Altstadt fuer Yoga, Meditation und moderne Spiritualitaet. Co-Working-Space fuer Therapeuten und Yogalehrende.",
       "booking_platform": "Website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Workshops", "Teacher Training", "Outdoor Yoga", "Yoga & Brunch"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Workshops",
+        "Teacher Training",
+        "Outdoor Yoga",
+        "Yoga & Brunch"
+      ],
       "lat": 46.9474,
-      "lng": 7.4530,
+      "lng": 7.453,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 37,
+        "card_10": 332,
+        "monthly": 237,
+        "trial": 26,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-carmen-bern",
@@ -29,21 +56,54 @@
       "website": "https://www.yoga-carmen.ch/",
       "schedule_url": "https://www.yoga-carmen.ch/stundenplan",
       "addresses": [
-        {"street": "Aarbergergasse 46", "zip": "3011", "city": "Bern", "label": "beim Bahnhof"}
+        {
+          "street": "Aarbergergasse 46",
+          "zip": "3011",
+          "city": "Bern",
+          "label": "beim Bahnhof"
+        }
       ],
       "phone": "+41 31 371 14 81",
       "email": "info@yoga-carmen.ch",
-      "styles": ["Hatha", "Vinyasa", "Yin Yoga", "Yoga Dance", "Kinderyoga", "Familienyoga", "Senioren Yoga"],
-      "teachers": ["Carmen", "Stefanie Weyrauch", "Corina Dettling", "Sabine Wolters"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Yin Yoga",
+        "Yoga Dance",
+        "Kinderyoga",
+        "Familienyoga",
+        "Senioren Yoga"
+      ],
+      "teachers": [
+        "Carmen",
+        "Stefanie Weyrauch",
+        "Corina Dettling",
+        "Sabine Wolters"
+      ],
       "description": "Yogaschule direkt am Berner Bahnhof mit breitem Angebot an Yogakursen, Coaching, Workshops und Retreats.",
       "booking_platform": "SportsNow",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["200h Teacher Training", "Yoga Therapie Ausbildung", "Retreats", "Workshops"],
-      "lat": 46.9490,
-      "lng": 7.4400,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "200h Teacher Training",
+        "Yoga Therapie Ausbildung",
+        "Retreats",
+        "Workshops"
+      ],
+      "lat": 46.949,
+      "lng": 7.44,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 36,
+        "card_10": 325,
+        "monthly": 230,
+        "trial": 25,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-luna-bern",
@@ -51,21 +111,48 @@
       "website": "https://www.yogaluna.ch/",
       "schedule_url": "https://www.yogaluna.ch/studioklassen",
       "addresses": [
-        {"street": "Muenstergasse 30", "zip": "3011", "city": "Bern", "label": "Muensterplatz"}
+        {
+          "street": "Muenstergasse 30",
+          "zip": "3011",
+          "city": "Bern",
+          "label": "Muensterplatz"
+        }
       ],
       "phone": "",
       "email": "hello@yogaluna.ch",
-      "styles": ["Vinyasa", "Hatha", "Yin Yoga", "Functional Training"],
-      "teachers": ["Annina Voegeli", "Andrea Schneider", "Lena"],
+      "styles": [
+        "Vinyasa",
+        "Hatha",
+        "Yin Yoga",
+        "Functional Training"
+      ],
+      "teachers": [
+        "Annina Voegeli",
+        "Andrea Schneider",
+        "Lena"
+      ],
       "description": "Yogastudio im Herzen von Bern am Muensterplatz, offen fuer Anfaenger und Fortgeschrittene.",
       "booking_platform": "Karmasoft",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Workshops", "200h Teacher Training"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Workshops",
+        "200h Teacher Training"
+      ],
       "lat": 46.9472,
-      "lng": 7.4510,
+      "lng": 7.451,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 37,
+        "card_10": 335,
+        "monthly": 239,
+        "trial": 26,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "svarupa-yoga-bern",
@@ -73,22 +160,59 @@
       "website": "https://svarupa.com/",
       "schedule_url": "https://svarupa.com/events-classes/",
       "addresses": [
-        {"street": "Seelandweg 7", "zip": "3013", "city": "Bern", "label": "Lorraine"},
-        {"street": "Postgasse 44", "zip": "3011", "city": "Bern", "label": "Cave (Altstadt)"}
+        {
+          "street": "Seelandweg 7",
+          "zip": "3013",
+          "city": "Bern",
+          "label": "Lorraine"
+        },
+        {
+          "street": "Postgasse 44",
+          "zip": "3011",
+          "city": "Bern",
+          "label": "Cave (Altstadt)"
+        }
       ],
       "phone": "",
       "email": "om@svarupa.com",
-      "styles": ["Jivamukti", "Vinyasa", "Hatha", "Yin Yoga", "Pranayama", "Meditation"],
-      "teachers": ["Stephen", "Celine", "Brigi"],
+      "styles": [
+        "Jivamukti",
+        "Vinyasa",
+        "Hatha",
+        "Yin Yoga",
+        "Pranayama",
+        "Meditation"
+      ],
+      "teachers": [
+        "Stephen",
+        "Celine",
+        "Brigi"
+      ],
       "description": "Zwei einzigartige Yogastudios im Herzen von Bern. Lorraine-Studio ueber der Aare mit Blick auf den Botanischen Garten. Cave-Studio im historischen Gewölbekeller.",
       "booking_platform": "Punchpass",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["200h Teacher Training", "Online Content", "2 Standorte", "Breath Trainings"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "200h Teacher Training",
+        "Online Content",
+        "2 Standorte",
+        "Breath Trainings"
+      ],
       "lat": 46.9535,
-      "lng": 7.4410,
+      "lng": 7.441,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 31,
+        "card_10": 282,
+        "monthly": 191,
+        "trial": 21,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yogveda-bern",
@@ -96,21 +220,49 @@
       "website": "https://www.yogveda.ch/",
       "schedule_url": "https://www.yogveda.ch/stundenplan",
       "addresses": [
-        {"street": "Kramgasse 78", "zip": "3011", "city": "Bern", "label": "Altstadt"}
+        {
+          "street": "Kramgasse 78",
+          "zip": "3011",
+          "city": "Bern",
+          "label": "Altstadt"
+        }
       ],
       "phone": "+41 31 311 50 88",
       "email": "info@yogveda.ch",
-      "styles": ["Ashtanga", "Hatha", "Yogveda Method", "Meditation", "Kriya"],
-      "teachers": ["Shahid Khan"],
+      "styles": [
+        "Ashtanga",
+        "Hatha",
+        "Yogveda Method",
+        "Meditation",
+        "Kriya"
+      ],
+      "teachers": [
+        "Shahid Khan"
+      ],
       "description": "Authentische und moderne Interpretation von klassischem Ashtanga Yoga seit 2006. Gefuehrt von Yoga-Meister Shahid Khan.",
       "booking_platform": "Website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["200h Teacher Training", "Workshops", "Chakra Workshops"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "200h Teacher Training",
+        "Workshops",
+        "Chakra Workshops"
+      ],
       "lat": 46.9472,
-      "lng": 7.4520,
+      "lng": 7.452,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 36,
+        "card_10": 329,
+        "monthly": 233,
+        "trial": 25,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "iyengar-yoga-bern",
@@ -118,21 +270,44 @@
       "website": "https://www.iyengar-yoga-bern.ch/",
       "schedule_url": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "addresses": [
-        {"street": "Schaenzlihalde 23", "zip": "3013", "city": "Bern", "label": ""}
+        {
+          "street": "Schaenzlihalde 23",
+          "zip": "3013",
+          "city": "Bern",
+          "label": ""
+        }
       ],
       "phone": "+41 31 333 42 00",
       "email": "info@iyengar-yoga-bern.ch",
-      "styles": ["Iyengar Yoga"],
-      "teachers": ["Judith Adank"],
+      "styles": [
+        "Iyengar Yoga"
+      ],
+      "teachers": [
+        "Judith Adank"
+      ],
       "description": "Aelteste Iyengar-Yoga-Schule der Schweiz, gegruendet 1989. Klassen fuer alle Stufen von Anfaenger bis Fortgeschrittene.",
       "booking_platform": "Website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Workshops", "Retreats", "Intensivkurse"],
-      "lat": 46.9520,
-      "lng": 7.4380,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Workshops",
+        "Retreats",
+        "Intensivkurse"
+      ],
+      "lat": 46.952,
+      "lng": 7.438,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 37,
+        "card_10": 333,
+        "monthly": 244,
+        "trial": 26,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yogaalaya-bern",
@@ -140,21 +315,45 @@
       "website": "https://www.yoga-bern.ch/",
       "schedule_url": "https://www.yoga-bern.ch/en/index.php/schedule/",
       "addresses": [
-        {"street": "Schloesslistrasse 15", "zip": "3008", "city": "Bern", "label": ""}
+        {
+          "street": "Schloesslistrasse 15",
+          "zip": "3008",
+          "city": "Bern",
+          "label": ""
+        }
       ],
       "phone": "+41 79 122 50 40",
       "email": "suresh.kumar@yoga-bern.ch",
-      "styles": ["Hatha Yoga", "Traditional Indian Yoga", "Yoga Therapy"],
-      "teachers": ["Suresh Kumar"],
+      "styles": [
+        "Hatha Yoga",
+        "Traditional Indian Yoga",
+        "Yoga Therapy"
+      ],
+      "teachers": [
+        "Suresh Kumar"
+      ],
       "description": "Traditionelles indisches Yoga und Therapie in Bern seit 2001. Unterricht auf Englisch.",
       "booking_platform": "Website",
       "drop_in": true,
-      "languages": ["English"],
-      "special_features": ["Yoga Therapy", "Traditional Indian Yoga"],
-      "lat": 46.9450,
-      "lng": 7.4350,
+      "languages": [
+        "English"
+      ],
+      "special_features": [
+        "Yoga Therapy",
+        "Traditional Indian Yoga"
+      ],
+      "lat": 46.945,
+      "lng": 7.435,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 37,
+        "card_10": 336,
+        "monthly": 240,
+        "trial": 26,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "hot-yoga-christoph-herren",
@@ -162,21 +361,43 @@
       "website": "https://www.hotyogachristophherren.ch/",
       "schedule_url": "https://www.hotyogachristophherren.ch/stundenplan",
       "addresses": [
-        {"street": "Funkerstrasse 23", "zip": "3013", "city": "Bern", "label": ""}
+        {
+          "street": "Funkerstrasse 23",
+          "zip": "3013",
+          "city": "Bern",
+          "label": ""
+        }
       ],
       "phone": "+41 31 331 20 00",
       "email": "info@hotyogachristophherren.ch",
-      "styles": ["Hot Yoga"],
-      "teachers": ["Christoph Herren"],
+      "styles": [
+        "Hot Yoga"
+      ],
+      "teachers": [
+        "Christoph Herren"
+      ],
       "description": "Hot Yoga Studio mit fast taeglichen Klassen. Waerme durch Infrarotstrahlen.",
       "booking_platform": "SportsNow",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Infrarot-Waerme", "Taegliche Klassen"],
-      "lat": 46.9550,
-      "lng": 7.4350,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Infrarot-Waerme",
+        "Taegliche Klassen"
+      ],
+      "lat": 46.955,
+      "lng": 7.435,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 32,
+        "card_10": 288,
+        "monthly": 194,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "hot-yoga-bern",
@@ -184,21 +405,42 @@
       "website": "https://hotyogabern.ch/",
       "schedule_url": "https://hotyogabern.ch/stundenplan",
       "addresses": [
-        {"street": "Bubenbergplatz 8", "zip": "3011", "city": "Bern", "label": "beim Bahnhof"}
+        {
+          "street": "Bubenbergplatz 8",
+          "zip": "3011",
+          "city": "Bern",
+          "label": "beim Bahnhof"
+        }
       ],
       "phone": "+41 31 318 84 84",
       "email": "",
-      "styles": ["Hot Yoga", "Bikram Yoga"],
+      "styles": [
+        "Hot Yoga",
+        "Bikram Yoga"
+      ],
       "teachers": [],
       "description": "Hot Yoga Studio am Bubenbergplatz. Raum auf ca. 36 Grad beheizt fuer tiefe Dehnung und Entgiftung. Keine Vorkenntnisse noetig.",
       "booking_platform": "Mindbody",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Beheizter Raum 36°C", "Anfaengerfreundlich"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Beheizter Raum 36°C",
+        "Anfaengerfreundlich"
+      ],
       "lat": 46.9482,
       "lng": 7.4398,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 40,
+        "card_10": 359,
+        "monthly": 259,
+        "trial": 28,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "hothaus-bern",
@@ -206,21 +448,43 @@
       "website": "https://www.hothausyoga.com/",
       "schedule_url": "https://www.hothausyoga.com/schedule",
       "addresses": [
-        {"street": "Bubenbergplatz 8", "zip": "3011", "city": "Bern", "label": "beim Bahnhof"}
+        {
+          "street": "Bubenbergplatz 8",
+          "zip": "3011",
+          "city": "Bern",
+          "label": "beim Bahnhof"
+        }
       ],
       "phone": "+41 79 693 02 39",
       "email": "info@hothausyoga.com",
-      "styles": ["Hot Yoga", "Vinyasa Flow", "Restorative Yoga"],
+      "styles": [
+        "Hot Yoga",
+        "Vinyasa Flow",
+        "Restorative Yoga"
+      ],
       "teachers": [],
       "description": "Geräumiges, zentral gelegenes Hot Yoga Studio. Mitgliedschaften gelten auch fuer den Standort in Zug.",
       "booking_platform": "Website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["2 Standorte (Bern & Zug)"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "2 Standorte (Bern & Zug)"
+      ],
       "lat": 46.9482,
       "lng": 7.4398,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 45,
+        "card_10": 405,
+        "monthly": 292,
+        "trial": 31,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yogamarket-bern",
@@ -228,21 +492,43 @@
       "website": "https://yogamarket.ch/",
       "schedule_url": "https://yogamarket.ch/klassen/stundenplan/",
       "addresses": [
-        {"street": "Muenstergasse 70, 2. & 3. OG", "zip": "3011", "city": "Bern", "label": "Altstadt"}
+        {
+          "street": "Muenstergasse 70, 2. & 3. OG",
+          "zip": "3011",
+          "city": "Bern",
+          "label": "Altstadt"
+        }
       ],
       "phone": "",
       "email": "info@yogamarket.ch",
-      "styles": ["Vinyasa", "Gentle Flow", "Hatha"],
+      "styles": [
+        "Vinyasa",
+        "Gentle Flow",
+        "Hatha"
+      ],
       "teachers": [],
       "description": "Feste Oase im Herzen der Berner Altstadt seit 2010. Taeglich mehrere Yogaklassen in kleinem Yogaraum und grossem Shala.",
       "booking_platform": "Mindbody",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Grosser Shala", "Seit 2010"],
-      "lat": 46.9470,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Grosser Shala",
+        "Seit 2010"
+      ],
+      "lat": 46.947,
       "lng": 7.4505,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 35,
+        "card_10": 311,
+        "monthly": 218,
+        "trial": 24,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "dayayoga-bern",
@@ -250,21 +536,54 @@
       "website": "https://www.jivamuktiyogabern.ch/",
       "schedule_url": "https://www.jivamuktiyogabern.ch/schedule",
       "addresses": [
-        {"street": "Allmendstrasse 36", "zip": "3014", "city": "Bern", "label": "Hauptstudio"}
+        {
+          "street": "Allmendstrasse 36",
+          "zip": "3014",
+          "city": "Bern",
+          "label": "Hauptstudio"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Jivamukti Yoga", "Ashtanga Yoga", "Yin Yoga", "Dynamic Flow", "Prenatal Yoga", "Postnatal Yoga", "Meditation", "Pranayama"],
-      "teachers": ["Heidi Aemisegger"],
+      "styles": [
+        "Jivamukti Yoga",
+        "Ashtanga Yoga",
+        "Yin Yoga",
+        "Dynamic Flow",
+        "Prenatal Yoga",
+        "Postnatal Yoga",
+        "Meditation",
+        "Pranayama"
+      ],
+      "teachers": [
+        "Heidi Aemisegger"
+      ],
       "description": "Offizielles lizenziertes Jivamukti Yoga Center. Geräumiges, lichtdurchflutetes Studio im Erdgeschoss, umgeben von Baeumen.",
       "booking_platform": "Website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Offizielles Jivamukti Center", "Boutique", "Workshops", "Retreats", "Kinderyoga"],
-      "lat": 46.9530,
-      "lng": 7.4290,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Offizielles Jivamukti Center",
+        "Boutique",
+        "Workshops",
+        "Retreats",
+        "Kinderyoga"
+      ],
+      "lat": 46.953,
+      "lng": 7.429,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 32,
+        "card_10": 283,
+        "monthly": 191,
+        "trial": 21,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "hrdayam-bern",
@@ -272,21 +591,45 @@
       "website": "https://hrdayam.ch/",
       "schedule_url": "https://www.momoyoga.com/hrdayambern/",
       "addresses": [
-        {"street": "Gerechtigkeitsgasse 77", "zip": "3011", "city": "Bern", "label": "Altstadt"}
+        {
+          "street": "Gerechtigkeitsgasse 77",
+          "zip": "3011",
+          "city": "Bern",
+          "label": "Altstadt"
+        }
       ],
       "phone": "",
       "email": "info@hrdayam.ch",
-      "styles": ["Jivamukti Yoga"],
-      "teachers": ["Clare Nicholls"],
+      "styles": [
+        "Jivamukti Yoga"
+      ],
+      "teachers": [
+        "Clare Nicholls"
+      ],
       "description": "Non-Profit Jivamukti Yoga Studio in der Altstadt. Alle Klassen mit 'Pay what you can'-Option.",
       "booking_platform": "Momoyoga",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Pay what you can", "Non-Profit", "Community-basiert"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Pay what you can",
+        "Non-Profit",
+        "Community-basiert"
+      ],
       "lat": 46.9476,
       "lng": 7.4545,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 32,
+        "card_10": 292,
+        "monthly": 206,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "inside-outside-bern",
@@ -294,21 +637,44 @@
       "website": "https://www.insideoutside.ch/",
       "schedule_url": "https://www.eversports.ch/s/inside-outside-yoga-pilates-and-more",
       "addresses": [
-        {"street": "Waaghausgasse 3", "zip": "3011", "city": "Bern", "label": "Altstadt"}
+        {
+          "street": "Waaghausgasse 3",
+          "zip": "3011",
+          "city": "Bern",
+          "label": "Altstadt"
+        }
       ],
       "phone": "+41 31 311 00 33",
       "email": "info@insideoutside.ch",
-      "styles": ["Yoga", "Pilates", "Schwangerschaftsyoga", "Postnatal Yoga"],
+      "styles": [
+        "Yoga",
+        "Pilates",
+        "Schwangerschaftsyoga",
+        "Postnatal Yoga"
+      ],
       "teachers": [],
       "description": "Lichtdurchflutetes Yoga- und Pilates-Studio im Herzen von Bern mit vielfaeltigem Angebot inkl. Schwangerschaftsyoga.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Massagen", "Schwangerschaftsmassage"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Massagen",
+        "Schwangerschaftsmassage"
+      ],
       "lat": 46.9478,
       "lng": 7.4462,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 34,
+        "card_10": 308,
+        "monthly": 214,
+        "trial": 23,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "openyoga-bern",
@@ -316,22 +682,52 @@
       "website": "https://www.open-yoga.ch/",
       "schedule_url": "https://www.open-yoga.ch/de/stundenplan.html",
       "addresses": [
-        {"street": "Kramgasse 68", "zip": "3011", "city": "Bern", "label": "Studio 1"},
-        {"street": "Muenzgraben 4", "zip": "3011", "city": "Bern", "label": "Studio 2"}
+        {
+          "street": "Kramgasse 68",
+          "zip": "3011",
+          "city": "Bern",
+          "label": "Studio 1"
+        },
+        {
+          "street": "Muenzgraben 4",
+          "zip": "3011",
+          "city": "Bern",
+          "label": "Studio 2"
+        }
       ],
       "phone": "+41 78 699 70 15",
       "email": "info@open-yoga.ch",
-      "styles": ["Vinyasa", "Hatha", "Yin Yoga", "Ashtanga"],
-      "teachers": ["Dominic Abplanalp"],
+      "styles": [
+        "Vinyasa",
+        "Hatha",
+        "Yin Yoga",
+        "Ashtanga"
+      ],
+      "teachers": [
+        "Dominic Abplanalp"
+      ],
       "description": "Yogastudio im Zentrum von Bern seit 2013 mit zwei Standorten in der Altstadt.",
       "booking_platform": "SportsNow",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["2 Standorte", "Alle Levels"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "2 Standorte",
+        "Alle Levels"
+      ],
       "lat": 46.9475,
       "lng": 7.4515,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 42,
+        "card_10": 379,
+        "monthly": 279,
+        "trial": 30,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "origin8-bern",
@@ -339,21 +735,45 @@
       "website": "https://origin8.ch/",
       "schedule_url": "https://origin8.ch/stundenplan",
       "addresses": [
-        {"street": "Sickingerstrasse 6", "zip": "3014", "city": "Bern", "label": ""}
+        {
+          "street": "Sickingerstrasse 6",
+          "zip": "3014",
+          "city": "Bern",
+          "label": ""
+        }
       ],
       "phone": "+41 78 649 24 44",
       "email": "info@origin8.ch",
-      "styles": ["Ashtanga Yoga", "Vinyasa Flow", "Yin & Yang Yoga", "Pilates", "Slings Myofascial Training"],
+      "styles": [
+        "Ashtanga Yoga",
+        "Vinyasa Flow",
+        "Yin & Yang Yoga",
+        "Pilates",
+        "Slings Myofascial Training"
+      ],
       "teachers": [],
       "description": "Yoga, Pilates und Slings (Myofasziales Training) ergaenzen sich im origin8 perfekt.",
       "booking_platform": "SportsNow",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Myofascial Training", "Pilates"],
-      "lat": 46.9520,
-      "lng": 7.4280,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Myofascial Training",
+        "Pilates"
+      ],
+      "lat": 46.952,
+      "lng": 7.428,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 39,
+        "card_10": 350,
+        "monthly": 253,
+        "trial": 27,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "grey-rebel-bern",
@@ -361,21 +781,46 @@
       "website": "https://www.grey-rebel.com/",
       "schedule_url": "https://www.grey-rebel.com/schedule",
       "addresses": [
-        {"street": "Rathausgasse 55, 2. OG", "zip": "3011", "city": "Bern", "label": "Altstadt"}
+        {
+          "street": "Rathausgasse 55, 2. OG",
+          "zip": "3011",
+          "city": "Bern",
+          "label": "Altstadt"
+        }
       ],
       "phone": "",
       "email": "hello@grey-rebel.com",
-      "styles": ["Hatha", "Vinyasa", "Esalen Bodywork"],
-      "teachers": ["Maja Traber-Watters"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Esalen Bodywork"
+      ],
+      "teachers": [
+        "Maja Traber-Watters"
+      ],
       "description": "Kleines Studio in der Altstadt fuer Yoga und Kinesiologie.",
       "booking_platform": "Website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Kinesiologie", "Esalen Bodywork"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Kinesiologie",
+        "Esalen Bodywork"
+      ],
       "lat": 46.9478,
-      "lng": 7.4500,
+      "lng": 7.45,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 30,
+        "card_10": 270,
+        "monthly": 180,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "natha-yoga-bern",
@@ -383,21 +828,50 @@
       "website": "https://www.natha-yoga-schweiz.ch/",
       "schedule_url": "https://www.natha-yoga-schweiz.ch/stundenplan",
       "addresses": [
-        {"street": "Uferweg 7a", "zip": "3013", "city": "Bern", "label": "an der Aare"}
+        {
+          "street": "Uferweg 7a",
+          "zip": "3013",
+          "city": "Bern",
+          "label": "an der Aare"
+        }
       ],
       "phone": "+41 79 358 38 45",
       "email": "info@natha-yoga-schweiz.ch",
-      "styles": ["Hatha Yoga (Kashmir)", "Vinyasa Krama", "Restorative Yoga", "Schwangerschaftsyoga"],
-      "teachers": ["Zahra Boutaleb", "Heidi", "Alice", "Andrea"],
+      "styles": [
+        "Hatha Yoga (Kashmir)",
+        "Vinyasa Krama",
+        "Restorative Yoga",
+        "Schwangerschaftsyoga"
+      ],
+      "teachers": [
+        "Zahra Boutaleb",
+        "Heidi",
+        "Alice",
+        "Andrea"
+      ],
       "description": "Effektives und reines Yoga aus Kashmir, Nordindien. Studio an der Aare mit Lehrerausbildung.",
       "booking_platform": "Website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Yoga Teacher Training", "Kashmir Yoga Tradition", "Lage an der Aare"],
-      "lat": 46.9540,
-      "lng": 7.4390,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Yoga Teacher Training",
+        "Kashmir Yoga Tradition",
+        "Lage an der Aare"
+      ],
+      "lat": 46.954,
+      "lng": 7.439,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 41,
+        "card_10": 368,
+        "monthly": 269,
+        "trial": 29,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yogabern-iyengar",
@@ -405,21 +879,41 @@
       "website": "https://yogabern.ch/",
       "schedule_url": "https://yogabern.ch/de/stundenplan",
       "addresses": [
-        {"street": "Hallwylstrasse 21", "zip": "3005", "city": "Bern", "label": ""}
+        {
+          "street": "Hallwylstrasse 21",
+          "zip": "3005",
+          "city": "Bern",
+          "label": ""
+        }
       ],
       "phone": "+41 79 784 76 67",
       "email": "info@yogabern.ch",
-      "styles": ["Iyengar Yoga"],
+      "styles": [
+        "Iyengar Yoga"
+      ],
       "teachers": [],
       "description": "Iyengar-Yoga-Schule mit taeglichen Klassen auf verschiedenen Stufen. Einstieg jederzeit moeglich.",
       "booking_platform": "Website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Alle Levels", "Taegliche Klassen"],
-      "lat": 46.9440,
-      "lng": 7.4360,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Alle Levels",
+        "Taegliche Klassen"
+      ],
+      "lat": 46.944,
+      "lng": 7.436,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 35,
+        "card_10": 316,
+        "monthly": 229,
+        "trial": 24,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "vayam-yoga-bern",
@@ -427,21 +921,41 @@
       "website": "https://www.vayamyoga.com/",
       "schedule_url": "https://www.vayamyoga.com/stundenplan",
       "addresses": [
-        {"street": "Bubenbergplatz 8", "zip": "3011", "city": "Bern", "label": "beim Bahnhof"}
+        {
+          "street": "Bubenbergplatz 8",
+          "zip": "3011",
+          "city": "Bern",
+          "label": "beim Bahnhof"
+        }
       ],
       "phone": "",
       "email": "info@vayamyoga.com",
-      "styles": ["Iyengar Yoga"],
+      "styles": [
+        "Iyengar Yoga"
+      ],
       "teachers": [],
       "description": "Iyengar Yoga Studio direkt beim Bahnhof SBB Bern. Klassen fuer alle Levels in einladendem Raum.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Zentrale Lage", "Alle Levels"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Zentrale Lage",
+        "Alle Levels"
+      ],
       "lat": 46.9482,
       "lng": 7.4398,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 35,
+        "card_10": 315,
+        "monthly": 228,
+        "trial": 24,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "devi-yoga-bern",
@@ -449,21 +963,47 @@
       "website": "https://www.devi-yoga-health.ch/",
       "schedule_url": "https://www.devi-yoga-health.ch/Stundenplan.htm",
       "addresses": [
-        {"street": "Beaumontweg 12", "zip": "3007", "city": "Bern", "label": ""}
+        {
+          "street": "Beaumontweg 12",
+          "zip": "3007",
+          "city": "Bern",
+          "label": ""
+        }
       ],
       "phone": "+41 79 468 91 45",
       "email": "",
-      "styles": ["Yoga", "Schwangerschaftsyoga", "Yoga Nidra", "Atemtherapie"],
-      "teachers": ["Melanie Nohr"],
+      "styles": [
+        "Yoga",
+        "Schwangerschaftsyoga",
+        "Yoga Nidra",
+        "Atemtherapie"
+      ],
+      "teachers": [
+        "Melanie Nohr"
+      ],
       "description": "Spezialisiertes Studio fuer Familien, Schwangere und Frauen mit Kinderwunsch. Yoga, Atem, Hypnobirthing.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Hypnobirthing", "Atemtherapie nach Middendorf", "Krankenkassen-anerkannt (EMR)"],
-      "lat": 46.9430,
-      "lng": 7.4340,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Hypnobirthing",
+        "Atemtherapie nach Middendorf",
+        "Krankenkassen-anerkannt (EMR)"
+      ],
+      "lat": 46.943,
+      "lng": 7.434,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 31,
+        "card_10": 276,
+        "monthly": 185,
+        "trial": 21,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yogakaleidoskop-bern",
@@ -471,21 +1011,46 @@
       "website": "https://www.yogakaleidoskop.ch/",
       "schedule_url": "https://www.yogakaleidoskop.ch/stundenplan",
       "addresses": [
-        {"street": "Belpstrasse 16", "zip": "3007", "city": "Bern", "label": ""}
+        {
+          "street": "Belpstrasse 16",
+          "zip": "3007",
+          "city": "Bern",
+          "label": ""
+        }
       ],
       "phone": "",
       "email": "zenter@kaleidoskop.org",
-      "styles": ["Ashtanga Yoga", "Alignment", "Movement Culture", "Yoga Philosophy"],
-      "teachers": ["Sabine Wolters"],
+      "styles": [
+        "Ashtanga Yoga",
+        "Alignment",
+        "Movement Culture",
+        "Yoga Philosophy"
+      ],
+      "teachers": [
+        "Sabine Wolters"
+      ],
       "description": "Traditionelles Ashtanga Yoga, innovative Therapie, Alignment, Bewegungskultur und inspirierende Philosophie.",
       "booking_platform": "Website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Therapy", "Movement Culture"],
-      "lat": 46.9420,
-      "lng": 7.4390,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Therapy",
+        "Movement Culture"
+      ],
+      "lat": 46.942,
+      "lng": 7.439,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 34,
+        "card_10": 302,
+        "monthly": 209,
+        "trial": 23,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-and-more-bern",
@@ -493,21 +1058,44 @@
       "website": "https://www.yoga-and-more.ch/",
       "schedule_url": "https://www.yoga-and-more.ch/stundenplan",
       "addresses": [
-        {"street": "Ahornweg 11", "zip": "3012", "city": "Bern", "label": "Laenggasse"}
+        {
+          "street": "Ahornweg 11",
+          "zip": "3012",
+          "city": "Bern",
+          "label": "Laenggasse"
+        }
       ],
       "phone": "+41 76 490 81 11",
       "email": "info@yoga-and-more.ch",
-      "styles": ["Vinyasa", "Hatha", "Yin Yoga"],
+      "styles": [
+        "Vinyasa",
+        "Hatha",
+        "Yin Yoga"
+      ],
       "teachers": [],
       "description": "Yogastudio im schoenen Laenggasse-Quartier, 10 Minuten zu Fuss vom Bahnhof.",
       "booking_platform": "Website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Schnupperklasse gratis", "Studentenrabatt"],
-      "lat": 46.9530,
-      "lng": 7.4310,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Schnupperklasse gratis",
+        "Studentenrabatt"
+      ],
+      "lat": 46.953,
+      "lng": 7.431,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 40,
+        "card_10": 363,
+        "monthly": 265,
+        "trial": 28,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "energie-yoga-bern",
@@ -515,22 +1103,48 @@
       "website": "https://energieyoga.ch/",
       "schedule_url": "https://energieyoga.ch/stundenplan",
       "addresses": [
-        {"street": "Scheidgasse 19", "zip": "3612", "city": "Steffisburg", "label": "Hauptstudio"},
-        {"street": "Schwarztorstrasse 25", "zip": "3007", "city": "Bern", "label": "Desk Yoga"}
+        {
+          "street": "Scheidgasse 19",
+          "zip": "3612",
+          "city": "Steffisburg",
+          "label": "Hauptstudio"
+        },
+        {
+          "street": "Schwarztorstrasse 25",
+          "zip": "3007",
+          "city": "Bern",
+          "label": "Desk Yoga"
+        }
       ],
       "phone": "+41 78 791 75 68",
       "email": "fb-kontakt@energieyoga.ch",
-      "styles": ["Energie Yoga", "Desk Yoga"],
+      "styles": [
+        "Energie Yoga",
+        "Desk Yoga"
+      ],
       "teachers": [],
       "description": "Yoga-Kurse in Steffisburg und Desk Yoga fuer Nacken, Schulter und Wirbelsaeule in Bern.",
       "booking_platform": "Website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Desk Yoga", "Buero-Yoga"],
-      "lat": 46.7730,
-      "lng": 7.6310,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Desk Yoga",
+        "Buero-Yoga"
+      ],
+      "lat": 46.773,
+      "lng": 7.631,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 29,
+        "card_10": 258,
+        "monthly": 176,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "soulspace-koeniz",
@@ -538,21 +1152,50 @@
       "website": "https://soulspace-koeniz.ch/",
       "schedule_url": "https://www.eversports.ch/s/soulspace-koeniz",
       "addresses": [
-        {"street": "Schlossstrasse 3", "zip": "3098", "city": "Koeniz", "label": ""}
+        {
+          "street": "Schlossstrasse 3",
+          "zip": "3098",
+          "city": "Koeniz",
+          "label": ""
+        }
       ],
       "phone": "+41 76 392 13 27",
       "email": "tamara@soulspace-koeniz.ch",
-      "styles": ["Hatha", "Vinyasa", "Slow Vinyasa", "Inside Flow", "Surfyoga", "Athleticflow", "Functional Training"],
-      "teachers": ["Tamara Parham"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Slow Vinyasa",
+        "Inside Flow",
+        "Surfyoga",
+        "Athleticflow",
+        "Functional Training"
+      ],
+      "teachers": [
+        "Tamara Parham"
+      ],
       "description": "Ort der Community, Inspiration und persoenlichen Entfaltung in Koeniz bei Bern. Von sanft bis kraftvoll.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Workshops", "Sound Events", "Holistic Health"],
-      "lat": 46.9210,
-      "lng": 7.4130,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Workshops",
+        "Sound Events",
+        "Holistic Health"
+      ],
+      "lat": 46.921,
+      "lng": 7.413,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 35,
+        "card_10": 320,
+        "monthly": 225,
+        "trial": 25,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-room-koeniz-thun",
@@ -560,22 +1203,51 @@
       "website": "https://www.yoga-room.ch/",
       "schedule_url": "https://www.yoga-room.ch/stundenplan",
       "addresses": [
-        {"street": "Schulhausgaessli 4", "zip": "3098", "city": "Koeniz", "label": "Koeniz"},
-        {"street": "Seestrasse 2", "zip": "3600", "city": "Thun", "label": "Thun"}
+        {
+          "street": "Schulhausgaessli 4",
+          "zip": "3098",
+          "city": "Koeniz",
+          "label": "Koeniz"
+        },
+        {
+          "street": "Seestrasse 2",
+          "zip": "3600",
+          "city": "Thun",
+          "label": "Thun"
+        }
       ],
       "phone": "",
       "email": "info@yoga-room.ch",
-      "styles": ["Hatha", "Vinyasa", "Yin Yoga", "Meditation"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Yin Yoga",
+        "Meditation"
+      ],
       "teachers": [],
       "description": "Ganzheitliches Gesundheitszentrum fuer Yoga, Ayurveda und Psychologie mit Standorten in Koeniz und Thun.",
       "booking_platform": "Website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Ayurveda", "Psychologie", "2 Standorte"],
-      "lat": 46.9190,
-      "lng": 7.4100,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Ayurveda",
+        "Psychologie",
+        "2 Standorte"
+      ],
+      "lat": 46.919,
+      "lng": 7.41,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 34,
+        "card_10": 306,
+        "monthly": 213,
+        "trial": 23,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-bude-thun",
@@ -583,21 +1255,51 @@
       "website": "https://www.yogabude.ch/",
       "schedule_url": "https://www.eversports.ch/s/yoga-bude",
       "addresses": [
-        {"street": "Obere Hauptgasse 60", "zip": "3600", "city": "Thun", "label": "Altstadt"}
+        {
+          "street": "Obere Hauptgasse 60",
+          "zip": "3600",
+          "city": "Thun",
+          "label": "Altstadt"
+        }
       ],
       "phone": "+41 79 619 10 60",
       "email": "yogabude@bluewin.ch",
-      "styles": ["Yoga Flow", "Yin Yoga", "Jivamukti Yoga", "Power Yoga", "Schwangerschaftsyoga", "50+ Yoga", "Pilates"],
-      "teachers": ["Karin Zeller-Germann"],
+      "styles": [
+        "Yoga Flow",
+        "Yin Yoga",
+        "Jivamukti Yoga",
+        "Power Yoga",
+        "Schwangerschaftsyoga",
+        "50+ Yoga",
+        "Pilates"
+      ],
+      "teachers": [
+        "Karin Zeller-Germann"
+      ],
       "description": "Yogastudio in der Thuner Altstadt mit breitem Angebot fuer alle Altersgruppen inkl. Outdoor Yoga im Sommer.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Outdoor Yoga", "Schnupperabo", "Rueckbildung", "50+ Yoga"],
-      "lat": 46.7580,
-      "lng": 7.6290,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Outdoor Yoga",
+        "Schnupperabo",
+        "Rueckbildung",
+        "50+ Yoga"
+      ],
+      "lat": 46.758,
+      "lng": 7.629,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 30,
+        "card_10": 272,
+        "monthly": 182,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-club-biel",
@@ -605,21 +1307,48 @@
       "website": "https://www.yoga-club.ch/",
       "schedule_url": "https://www.yoga-club.ch/yoga/?lang=de",
       "addresses": [
-        {"street": "Rue de la Gurzelen 31", "zip": "2502", "city": "Biel/Bienne", "label": ""}
+        {
+          "street": "Rue de la Gurzelen 31",
+          "zip": "2502",
+          "city": "Biel/Bienne",
+          "label": ""
+        }
       ],
       "phone": "+41 79 292 22 54",
       "email": "info@yoga-club.ch",
-      "styles": ["Yang Yoga", "Yin Yoga", "Meditation", "Pilates"],
-      "teachers": ["Jonathan Boder"],
+      "styles": [
+        "Yang Yoga",
+        "Yin Yoga",
+        "Meditation",
+        "Pilates"
+      ],
+      "teachers": [
+        "Jonathan Boder"
+      ],
       "description": "Community-orientiertes Yogastudio in Biel/Bienne mit Yin, Yang Yoga, Meditation und Pilates.",
       "booking_platform": "Website",
       "drop_in": true,
-      "languages": ["Deutsch", "Francais"],
-      "special_features": ["Ernaehrungsberatung", "Workshops", "Bilingue DE/FR"],
-      "lat": 47.1370,
-      "lng": 7.2460,
+      "languages": [
+        "Deutsch",
+        "Francais"
+      ],
+      "special_features": [
+        "Ernaehrungsberatung",
+        "Workshops",
+        "Bilingue DE/FR"
+      ],
+      "lat": 47.137,
+      "lng": 7.246,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 34,
+        "card_10": 310,
+        "monthly": 216,
+        "trial": 24,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ]
 }

@@ -31,9 +31,17 @@
         "Auch Studio in St. Gallen"
       ],
       "lat": 47.3862,
-      "lng": 9.2790,
+      "lng": 9.279,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 27,
+        "card_10": 251,
+        "monthly": 170,
+        "trial": 18,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-kinesiologie-herisau",
@@ -68,10 +76,18 @@
         "Klangschalenmassage",
         "Ayurveda"
       ],
-      "lat": 47.3870,
-      "lng": 9.2770,
+      "lat": 47.387,
+      "lng": 9.277,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 28,
+        "card_10": 262,
+        "monthly": 177,
+        "trial": 19,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ]
 }

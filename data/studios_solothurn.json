@@ -16,17 +16,38 @@
       ],
       "phone": "",
       "email": "",
-      "styles": ["Gentle Yoga", "Vinyasa Yoga", "Pilates"],
-      "teachers": ["Melanie", "Janine"],
+      "styles": [
+        "Gentle Yoga",
+        "Vinyasa Yoga",
+        "Pilates"
+      ],
+      "teachers": [
+        "Melanie",
+        "Janine"
+      ],
       "description": "Yoga- und Pilatesstudio in der Altstadt von Solothurn. Abwechslungsreiches Kursprogramm von Gentle Yoga am Mittag bis Strong Vinyasa am Abend. Beide Leiterinnen tragen das EMfit Qualitätslabel. Melanie ist Mitglied von Yoga Schweiz, Janine von BGB Schweiz.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["EMfit Qualitätslabel", "Krankenkassen anerkannt", "Lift vorhanden"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "EMfit Qualitätslabel",
+        "Krankenkassen anerkannt",
+        "Lift vorhanden"
+      ],
       "lat": 47.2088,
       "lng": 7.5372,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 32,
+        "card_10": 287,
+        "monthly": 197,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "sunshine-yoga-solothurn",
@@ -43,17 +64,37 @@
       ],
       "phone": "+41 76 573 22 05",
       "email": "",
-      "styles": ["Hatha-Vinyasa Yoga", "Hatha Yoga", "Yin Yoga", "Yoga Nidra"],
-      "teachers": ["Diana Dietiker"],
+      "styles": [
+        "Hatha-Vinyasa Yoga",
+        "Hatha Yoga",
+        "Yin Yoga",
+        "Yoga Nidra"
+      ],
+      "teachers": [
+        "Diana Dietiker"
+      ],
       "description": "Sunshine Yoga in Solothurn bietet Hatha-Vinyasa Yoga, Hatha Yoga, Yin Yoga, Yoga Nidra sowie Workshops und Retreats an.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Workshops", "Retreats"],
-      "lat": 47.2070,
-      "lng": 7.5300,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Workshops",
+        "Retreats"
+      ],
+      "lat": 47.207,
+      "lng": 7.53,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 30,
+        "card_10": 272,
+        "monthly": 187,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "diamond-yoga-solothurn",
@@ -70,17 +111,34 @@
       ],
       "phone": "",
       "email": "andrea@diamond-yoga.ch",
-      "styles": ["Anusara Yoga"],
-      "teachers": ["Andrea Keller"],
+      "styles": [
+        "Anusara Yoga"
+      ],
+      "teachers": [
+        "Andrea Keller"
+      ],
       "description": "Yoga Studio in Solothurn mit Parkplätzen direkt vor dem Studio. Erste Probelektion gratis. Kurse am Dienstag und Donnerstag, geeignet für Anfänger und Fortgeschrittene.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Gratis Probelektion", "Parkplätze vorhanden"],
-      "lat": 47.2130,
-      "lng": 7.5360,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Gratis Probelektion",
+        "Parkplätze vorhanden"
+      ],
+      "lat": 47.213,
+      "lng": 7.536,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 25,
+        "card_10": 222,
+        "monthly": 152,
+        "trial": 16,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "flavia-tao-yoga-solothurn",
@@ -97,17 +155,33 @@
       ],
       "phone": "+41 78 716 33 08",
       "email": "info@flaviayoga.com",
-      "styles": ["Tao Yoga"],
-      "teachers": ["Flavia Willis"],
+      "styles": [
+        "Tao Yoga"
+      ],
+      "teachers": [
+        "Flavia Willis"
+      ],
       "description": "TAO Yoga in Solothurn, unterrichtet seit 2002 in Solothurn und Aarau. Flavia bietet Tao Yoga Kurse im Atelier Solothurn an.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Über 20 Jahre Erfahrung"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Über 20 Jahre Erfahrung"
+      ],
       "lat": 47.2082,
-      "lng": 7.5340,
+      "lng": 7.534,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 32,
+        "card_10": 285,
+        "monthly": 196,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "om-yogaroom-solothurn",
@@ -124,17 +198,37 @@
       ],
       "phone": "+41 79 228 02 67",
       "email": "omyogaroom@bluewin.ch",
-      "styles": ["Yoga", "Massage", "Therapie"],
-      "teachers": ["Brigitte Kraehenbuehl"],
+      "styles": [
+        "Yoga",
+        "Massage",
+        "Therapie"
+      ],
+      "teachers": [
+        "Brigitte Kraehenbuehl"
+      ],
       "description": "Privates Yoga-, Massage- und Therapiestudio in Solothurn. Unterricht in kleinen Gruppen mit persönlicher Atmosphäre.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Kleine Gruppen", "Massage", "Therapie"],
-      "lat": 47.2050,
-      "lng": 7.5280,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Kleine Gruppen",
+        "Massage",
+        "Therapie"
+      ],
+      "lat": 47.205,
+      "lng": 7.528,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 29,
+        "card_10": 257,
+        "monthly": 176,
+        "trial": 19,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-garten-solothurn",
@@ -151,17 +245,36 @@
       ],
       "phone": "",
       "email": "info@yogagarten.ch",
-      "styles": ["Yoga Flow"],
-      "teachers": ["Regula Ritz"],
+      "styles": [
+        "Yoga Flow"
+      ],
+      "teachers": [
+        "Regula Ritz"
+      ],
       "description": "Yoga Garten Solothurn bietet wöchentliche Yoga Flow Stunden sowie Online Yogakurse, Yoga Privatstunden, Yoga-Events und Yoga-Retreats.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Online Yogakurse", "Privatstunden", "Yoga-Events", "Retreats"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Online Yogakurse",
+        "Privatstunden",
+        "Yoga-Events",
+        "Retreats"
+      ],
       "lat": 47.2095,
-      "lng": 7.5350,
+      "lng": 7.535,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 31,
+        "card_10": 276,
+        "monthly": 190,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "downtown-yoga-olten",
@@ -178,17 +291,41 @@
       ],
       "phone": "+41 79 319 60 71",
       "email": "",
-      "styles": ["Yoga", "Yin Yoga", "Pilates", "bodyART", "Core Workout", "Prenatal", "Postnatal", "Zumba"],
+      "styles": [
+        "Yoga",
+        "Yin Yoga",
+        "Pilates",
+        "bodyART",
+        "Core Workout",
+        "Prenatal",
+        "Postnatal",
+        "Zumba"
+      ],
       "teachers": [],
       "description": "DownTown Yoga in Olten versteht Yoga als ganzheitliche Verbindung, bei der körperliche, geistige und spirituelle Gesundheit positiv beeinflusst, trainiert und erhalten werden. Anmeldung mindestens 24 Stunden vorher erforderlich.",
       "booking_platform": "",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["bodyART", "Prenatal/Postnatal", "Workshops", "Massage"],
-      "lat": 47.3520,
-      "lng": 7.9070,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "bodyART",
+        "Prenatal/Postnatal",
+        "Workshops",
+        "Massage"
+      ],
+      "lat": 47.352,
+      "lng": 7.907,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 34,
+        "card_10": 302,
+        "monthly": 207,
+        "trial": 23,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-pilateszentrale-olten",
@@ -205,17 +342,32 @@
       ],
       "phone": "+41 79 456 27 69",
       "email": "caroline@pilateszentrale.ch",
-      "styles": ["Yoga", "Pilates"],
-      "teachers": ["Caroline Gumbiller"],
+      "styles": [
+        "Yoga",
+        "Pilates"
+      ],
+      "teachers": [
+        "Caroline Gumbiller"
+      ],
       "description": "Yoga- und Pilatesstudio in Olten. Erreichbar mit ÖV: Bus 501 oder 505 bis Haltestelle Bornblick, oder ca. 13 Minuten Fussweg vom Bahnhof Olten.",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
+      "languages": [
+        "Deutsch"
+      ],
       "special_features": [],
-      "lat": 47.3480,
-      "lng": 7.8990,
+      "lat": 47.348,
+      "lng": 7.899,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 30,
+        "card_10": 268,
+        "monthly": 184,
+        "trial": 21,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ]
 }

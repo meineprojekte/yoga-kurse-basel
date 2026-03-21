@@ -94,7 +94,15 @@ if ('serviceWorker' in navigator) {
             'geo.nearby': 'In der Nähe',
             'canton.select': 'Wähle deinen Kanton:',
             'canton.choose': 'Kanton wählen...',
-            'cantons.other': 'Yoga in anderen Kantonen'
+            'cantons.other': 'Yoga in anderen Kantonen',
+            'pricing.single': 'Einzeleintritt',
+            'pricing.card_10': '10er-Karte',
+            'pricing.monthly': 'Monatsabo',
+            'pricing.trial': 'Probestunde',
+            'pricing.from': 'ab',
+            'pricing.guide_prices': 'Richtpreise',
+            'pricing.title': 'Preise',
+            'pricing.disclaimer': 'Richtpreise — aktuelle Preise auf der Studio-Website'
         },
         en: {
             'nav.studios': 'Studios',
@@ -178,7 +186,15 @@ if ('serviceWorker' in navigator) {
             'geo.nearby': 'Nearby',
             'canton.select': 'Choose your canton:',
             'canton.choose': 'Select canton...',
-            'cantons.other': 'Yoga in other cantons'
+            'cantons.other': 'Yoga in other cantons',
+            'pricing.single': 'Single class',
+            'pricing.card_10': '10-class card',
+            'pricing.monthly': 'Monthly pass',
+            'pricing.trial': 'Trial class',
+            'pricing.from': 'from',
+            'pricing.guide_prices': 'Guide prices',
+            'pricing.title': 'Prices',
+            'pricing.disclaimer': 'Guide prices — check the studio website for current prices'
         },
         it: {
             'nav.studios': 'Studi',
@@ -262,7 +278,15 @@ if ('serviceWorker' in navigator) {
             'geo.nearby': 'Nelle vicinanze',
             'canton.select': 'Scegli il tuo cantone:',
             'canton.choose': 'Seleziona cantone...',
-            'cantons.other': 'Yoga in altri cantoni'
+            'cantons.other': 'Yoga in altri cantoni',
+            'pricing.single': 'Lezione singola',
+            'pricing.card_10': 'Carta 10 lezioni',
+            'pricing.monthly': 'Abbonamento mensile',
+            'pricing.trial': 'Lezione di prova',
+            'pricing.from': 'da',
+            'pricing.guide_prices': 'Prezzi indicativi',
+            'pricing.title': 'Prezzi',
+            'pricing.disclaimer': 'Prezzi indicativi — consulta il sito dello studio per i prezzi aggiornati'
         },
         fr: {
             'nav.studios': 'Studios',
@@ -346,7 +370,15 @@ if ('serviceWorker' in navigator) {
             'geo.nearby': 'À proximité',
             'canton.select': 'Choisis ton canton :',
             'canton.choose': 'Sélectionner un canton...',
-            'cantons.other': 'Yoga dans d\'autres cantons'
+            'cantons.other': 'Yoga dans d\'autres cantons',
+            'pricing.single': 'Cours unique',
+            'pricing.card_10': 'Carte 10 cours',
+            'pricing.monthly': 'Abonnement mensuel',
+            'pricing.trial': 'Cours d\'essai',
+            'pricing.from': 'dès',
+            'pricing.guide_prices': 'Prix indicatifs',
+            'pricing.title': 'Prix',
+            'pricing.disclaimer': 'Prix indicatifs — consulte le site du studio pour les prix actuels'
         }
     };
 
@@ -984,10 +1016,16 @@ if ('serviceWorker' in navigator) {
             stylesHtml += '<span class="style-tag more">+' + hiddenCount + ' ' + t('card.more_styles') + '</span>';
         }
 
+        var priceBadgeHtml = '';
+        if (studio.pricing && studio.pricing.single) {
+            priceBadgeHtml = '<span class="studio-price-badge">' + t('pricing.from') + ' ' + (studio.pricing.currency || 'CHF') + ' ' + studio.pricing.single + '</span>';
+        }
+
         card.innerHTML =
             '<div class="studio-card-header">' +
                 '<h3 class="studio-name">' + escapeHtml(studio.name) + '</h3>' +
                 (studio.drop_in ? '<span class="studio-badge drop-in">Drop-in</span>' : '') +
+                priceBadgeHtml +
             '</div>' +
             '<div class="studio-address">' +
                 '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>' +
@@ -1123,6 +1161,19 @@ if ('serviceWorker' in navigator) {
 
         if (features.length > 0) {
             html += '<div class="modal-section"><h3>' + t('modal.features') + '</h3><div class="modal-features">' + featuresHtml + '</div></div>';
+        }
+
+        if (studio.pricing && studio.pricing.single) {
+            var cur = studio.pricing.currency || 'CHF';
+            html += '<div class="modal-section"><h3>' + t('pricing.title') + '</h3>' +
+                '<table class="pricing-table">' +
+                '<tr><td>' + t('pricing.single') + '</td><td>' + cur + ' ' + studio.pricing.single + '</td></tr>' +
+                (studio.pricing.card_10 ? '<tr><td>' + t('pricing.card_10') + '</td><td>' + cur + ' ' + studio.pricing.card_10 + '</td></tr>' : '') +
+                (studio.pricing.monthly ? '<tr><td>' + t('pricing.monthly') + '</td><td>' + cur + ' ' + studio.pricing.monthly + '</td></tr>' : '') +
+                (studio.pricing.trial ? '<tr><td>' + t('pricing.trial') + '</td><td>' + cur + ' ' + studio.pricing.trial + '</td></tr>' : '') +
+                '</table>' +
+                '<p class="pricing-note">' + t('pricing.disclaimer') + '</p>' +
+                '</div>';
         }
 
         html += '<div class="modal-actions">';
@@ -1532,12 +1583,22 @@ if ('serviceWorker' in navigator) {
             }
         }
 
+        // Build studio pricing lookup
+        var studioPricingMap = {};
+        for (var si = 0; si < state.studios.length; si++) {
+            var st = state.studios[si];
+            if (st.pricing && st.pricing.single) {
+                studioPricingMap[st.id] = st.pricing;
+            }
+        }
+
         var html = '<div class="schedule-header">' +
             '<span>' + (state.lang === 'de' ? 'Zeit' : 'Time') + '</span>' +
             '<span>' + (state.lang === 'de' ? 'Kurs' : 'Class') + '</span>' +
             '<span>Studio</span>' +
             '<span>' + (state.lang === 'de' ? 'Lehrer/in' : 'Teacher') + '</span>' +
             '<span>Level</span>' +
+            '<span>' + (state.lang === 'de' ? 'Preis' : 'Price') + '</span>' +
             '</div>';
 
         for (var j = 0; j < classes.length; j++) {
@@ -1546,12 +1607,18 @@ if ('serviceWorker' in navigator) {
             var levelText = c.level || '';
             if (levelText === 'all') levelText = state.lang === 'de' ? 'Alle Stufen' : 'All levels';
 
+            var classPricing = studioPricingMap[c.studio_id];
+            var priceHtml = classPricing
+                ? '<span class="schedule-price-badge">' + (classPricing.currency || 'CHF') + ' ' + classPricing.single + '</span>'
+                : '<span class="schedule-price-na">\u2014</span>';
+
             html += '<div class="schedule-row">' +
                 '<span class="schedule-time">' + escapeHtml(timeStr) + '</span>' +
                 '<span class="schedule-class">' + escapeHtml(c.class_name) + '</span>' +
                 '<span class="schedule-studio">' + escapeHtml(c.studio_name) + '</span>' +
                 '<span class="schedule-teacher">' + escapeHtml(c.teacher || '\u2014') + '</span>' +
                 '<span class="schedule-level">' + escapeHtml(levelText) + '</span>' +
+                '<span class="schedule-price">' + priceHtml + '</span>' +
                 '<button class="schedule-cal-btn" data-cal="' + j + '" title="' + (state.lang === 'de' ? 'Zum Kalender hinzufügen' : 'Add to calendar') + '">\uD83D\uDCC5</button>' +
                 '</div>';
         }

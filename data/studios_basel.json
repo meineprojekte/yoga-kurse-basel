@@ -7,23 +7,63 @@
       "website": "https://www.byoga.ch/",
       "schedule_url": "https://www.byoga.ch/yoga-klassen",
       "addresses": [
-        {"street": "Hutgasse 1", "zip": "4001", "city": "Basel", "label": "Hauptstudio (Marktplatz)"},
-        {"street": "Aeschengraben 29", "zip": "4002", "city": "Basel", "label": "INDIGO Fitness (8./9. OG)"}
+        {
+          "street": "Hutgasse 1",
+          "zip": "4001",
+          "city": "Basel",
+          "label": "Hauptstudio (Marktplatz)"
+        },
+        {
+          "street": "Aeschengraben 29",
+          "zip": "4002",
+          "city": "Basel",
+          "label": "INDIGO Fitness (8./9. OG)"
+        }
       ],
       "phone": "+41 61 261 32 64",
       "email": "info@byoga.ch",
-      "styles": ["Vinyasa", "Ashtanga", "Hatha", "Jivamukti", "Kundalini", "Flow", "Yin", "Restorative", "Prenatal", "Postnatal", "Kids", "Family", "Dharma Yoga", "Meditation"],
+      "styles": [
+        "Vinyasa",
+        "Ashtanga",
+        "Hatha",
+        "Jivamukti",
+        "Kundalini",
+        "Flow",
+        "Yin",
+        "Restorative",
+        "Prenatal",
+        "Postnatal",
+        "Kids",
+        "Family",
+        "Dharma Yoga",
+        "Meditation"
+      ],
       "teachers": [],
       "description": "Das grösste Yoga-Studio in Basel mit 30-40 Klassen pro Woche in über 12 Stilen. Drop-in willkommen, alle Levels.",
       "hours": "Mo-Fr 9:00-13:00 & 17:00-21:00, Sa 11:00-13:00, So 9:00-13:00 & 18:00-20:00",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Teacher Training", "Workshops", "2 Standorte"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Teacher Training",
+        "Workshops",
+        "2 Standorte"
+      ],
       "lat": 47.5577,
       "lng": 7.5886,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 35,
+        "card_10": 317,
+        "monthly": 217,
+        "trial": 24,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "looking-glass",
@@ -31,22 +71,61 @@
       "website": "https://thelookingglassbasel.com/",
       "schedule_url": "https://thelookingglassbasel.com/class-schedule",
       "addresses": [
-        {"street": "Feldbergstrasse 1", "zip": "4057", "city": "Basel", "label": "Kleinbasel (am Rhein)"}
+        {
+          "street": "Feldbergstrasse 1",
+          "zip": "4057",
+          "city": "Basel",
+          "label": "Kleinbasel (am Rhein)"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Vinyasa", "Alignment", "Ashtanga-inspired", "Katonah", "Yin", "Embodied Flow", "Meditation", "Kirtan", "Pilates"],
-      "teachers": ["Kristen Watson", "Silas", "Julia", "Nora", "Yuma", "Margherita", "Rinny Biberstein"],
+      "styles": [
+        "Vinyasa",
+        "Alignment",
+        "Ashtanga-inspired",
+        "Katonah",
+        "Yin",
+        "Embodied Flow",
+        "Meditation",
+        "Kirtan",
+        "Pilates"
+      ],
+      "teachers": [
+        "Kristen Watson",
+        "Silas",
+        "Julia",
+        "Nora",
+        "Yuma",
+        "Margherita",
+        "Rinny Biberstein"
+      ],
       "description": "Wunderschönes Studio mit Blick auf den Rhein in Kleinbasel. 7 Tage die Woche geöffnet.",
       "hours": "Mo-So, Morgenklassen ab 7:15, Mittag 12:15-13:15, Abend 18:00-21:00",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["English", "Deutsch"],
-      "special_features": ["Rheinblick", "Teacher Training", "Reiki", "Retreats"],
+      "languages": [
+        "English",
+        "Deutsch"
+      ],
+      "special_features": [
+        "Rheinblick",
+        "Teacher Training",
+        "Reiki",
+        "Retreats"
+      ],
       "lat": 47.5627,
       "lng": 7.5912,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 41,
+        "card_10": 363,
+        "monthly": 261,
+        "trial": 28,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "niyama",
@@ -54,22 +133,54 @@
       "website": "https://www.niyama-yoga.ch/en/start/",
       "schedule_url": "https://www.niyama-yoga.ch/en/our-classes/",
       "addresses": [
-        {"street": "Falknerstrasse 35", "zip": "4001", "city": "Basel", "label": "Zentrum"}
+        {
+          "street": "Falknerstrasse 35",
+          "zip": "4001",
+          "city": "Basel",
+          "label": "Zentrum"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Vinyasa", "Power Yoga", "Yin Yoga", "Pilates"],
-      "teachers": ["Regula Guldimann", "Martina", "Silas", "Julia"],
+      "styles": [
+        "Vinyasa",
+        "Power Yoga",
+        "Yin Yoga",
+        "Pilates"
+      ],
+      "teachers": [
+        "Regula Guldimann",
+        "Martina",
+        "Silas",
+        "Julia"
+      ],
       "description": "Drop-in Yoga & Pilates im Herzen von Basel. Keine Anmeldung nötig.",
       "hours": "",
       "booking_platform": "FitPass, MyClubs",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Drop-in", "Zoom-Klassen", "Workshops", "Retreats", "Teacher Training"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Drop-in",
+        "Zoom-Klassen",
+        "Workshops",
+        "Retreats",
+        "Teacher Training"
+      ],
       "lat": 47.5548,
-      "lng": 7.5880,
+      "lng": 7.588,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 34,
+        "card_10": 308,
+        "monthly": 215,
+        "trial": 23,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "anjali",
@@ -77,23 +188,56 @@
       "website": "https://www.anjali.ch/en",
       "schedule_url": "https://www.anjali.ch/stundenplan/",
       "addresses": [
-        {"street": "Spalenvorstadt 11", "zip": "4051", "city": "Basel", "label": "Hauptstandort"},
-        {"street": "Stapfelberg 9", "zip": "4051", "city": "Basel", "label": "Temporär (Renovation)"}
+        {
+          "street": "Spalenvorstadt 11",
+          "zip": "4051",
+          "city": "Basel",
+          "label": "Hauptstandort"
+        },
+        {
+          "street": "Stapfelberg 9",
+          "zip": "4051",
+          "city": "Basel",
+          "label": "Temporär (Renovation)"
+        }
       ],
       "phone": "+41 76 722 72 92",
       "email": "info@anjali.ch",
-      "styles": ["Yoga", "Pilates", "Aerial", "Meditation", "Breathwork", "Sound Healing"],
+      "styles": [
+        "Yoga",
+        "Pilates",
+        "Aerial",
+        "Meditation",
+        "Breathwork",
+        "Sound Healing"
+      ],
       "teachers": [],
       "description": "Yoga, Pilates, Aerial und mehr. Keine Anmeldung nötig, auch per Livestream verfügbar.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Aerial Yoga", "Sound Healing", "Breathwork", "Livestream"],
-      "lat": 47.5570,
-      "lng": 7.5810,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Aerial Yoga",
+        "Sound Healing",
+        "Breathwork",
+        "Livestream"
+      ],
+      "lat": 47.557,
+      "lng": 7.581,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 41,
+        "card_10": 366,
+        "monthly": 268,
+        "trial": 29,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yogabloom",
@@ -101,22 +245,58 @@
       "website": "https://www.yogabloom.ch/",
       "schedule_url": "https://www.yogabloom.ch/",
       "addresses": [
-        {"street": "Pfluggasslein 1", "zip": "4001", "city": "Basel", "label": "Altstadt"}
+        {
+          "street": "Pfluggasslein 1",
+          "zip": "4001",
+          "city": "Basel",
+          "label": "Altstadt"
+        }
       ],
       "phone": "+41 76 650 38 00",
       "email": "info@yogabloom.ch",
-      "styles": ["Vinyasa Flow", "Ashtanga", "Jivamukti", "Slow Flow", "Yin", "Aerial Yoga", "Family Yoga", "Kids Yoga"],
-      "teachers": ["Emily", "Sandi", "Kata", "Niels", "Grace"],
+      "styles": [
+        "Vinyasa Flow",
+        "Ashtanga",
+        "Jivamukti",
+        "Slow Flow",
+        "Yin",
+        "Aerial Yoga",
+        "Family Yoga",
+        "Kids Yoga"
+      ],
+      "teachers": [
+        "Emily",
+        "Sandi",
+        "Kata",
+        "Niels",
+        "Grace"
+      ],
       "description": "Vielfältiges Angebot inkl. Aerial und Family Yoga. Neukundenangebot: 14 Tage unlimited CHF 60.",
       "hours": "",
       "booking_platform": "MindBody",
       "drop_in": false,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Aerial Yoga", "Family Yoga", "Kids Yoga", "Teacher Training"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Aerial Yoga",
+        "Family Yoga",
+        "Kids Yoga",
+        "Teacher Training"
+      ],
       "lat": 47.5575,
       "lng": 7.5875,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 39,
+        "card_10": 353,
+        "monthly": 254,
+        "trial": 28,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "volta-yoga",
@@ -124,22 +304,51 @@
       "website": "https://en.voltayoga.ch/",
       "schedule_url": "https://en.voltayoga.ch/stundenplan",
       "addresses": [
-        {"street": "Aeschenvorstadt 57", "zip": "4051", "city": "Basel", "label": "Studio 1"}
+        {
+          "street": "Aeschenvorstadt 57",
+          "zip": "4051",
+          "city": "Basel",
+          "label": "Studio 1"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Vinyasa", "Hatha", "Yin", "Yoga Nidra", "Prenatal"],
-      "teachers": ["Nico Krattli", "Anya Hausermann"],
+      "styles": [
+        "Vinyasa",
+        "Hatha",
+        "Yin",
+        "Yoga Nidra",
+        "Prenatal"
+      ],
+      "teachers": [
+        "Nico Krattli",
+        "Anya Hausermann"
+      ],
       "description": "Zwei Studios in Basel, Drop-in, keine Verpflichtungen. Auf Deutsch und Englisch. Prenatal Yoga Mo 18:30, Do 18:00.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["2 Studios", "Prenatal Yoga", "Drop-in"],
-      "lat": 47.5510,
-      "lng": 7.5890,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "2 Studios",
+        "Prenatal Yoga",
+        "Drop-in"
+      ],
+      "lat": 47.551,
+      "lng": 7.589,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 39,
+        "card_10": 356,
+        "monthly": 259,
+        "trial": 28,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "bikram",
@@ -147,21 +356,39 @@
       "website": "https://bikramyogabasel.ch/",
       "schedule_url": "https://bikramyogabasel.ch/",
       "addresses": [
-        {"street": "Amerbachstrasse 66", "zip": "4057", "city": "Basel", "label": "Kleinbasel (Hinterhof)"}
+        {
+          "street": "Amerbachstrasse 66",
+          "zip": "4057",
+          "city": "Basel",
+          "label": "Kleinbasel (Hinterhof)"
+        }
       ],
       "phone": "",
       "email": "hello@bikramyogabasel.ch",
-      "styles": ["Bikram Hot Yoga"],
+      "styles": [
+        "Bikram Hot Yoga"
+      ],
       "teachers": [],
       "description": "Das einzige Hot-Yoga-Studio in Basel. 26 Hatha-Posen bei 40°C, 90 Minuten. Max. 18 Teilnehmer.",
       "hours": "",
       "booking_platform": "Eversports",
       "drop_in": false,
-      "languages": ["English"],
-      "special_features": ["Hot Yoga 40°C", "Max 18 Teilnehmer"],
-      "pricing": {"single": 41, "trial_8days": 55, "10class": 355, "monthly": 260, "currency": "CHF"},
-      "lat": 47.5650,
-      "lng": 7.5960,
+      "languages": [
+        "English"
+      ],
+      "special_features": [
+        "Hot Yoga 40°C",
+        "Max 18 Teilnehmer"
+      ],
+      "pricing": {
+        "single": 41,
+        "trial_8days": 55,
+        "10class": 355,
+        "monthly": 260,
+        "currency": "CHF"
+      },
+      "lat": 47.565,
+      "lng": 7.596,
       "active": true,
       "classes": []
     },
@@ -171,22 +398,46 @@
       "website": "https://www.meyohouse.com/",
       "schedule_url": "https://www.meyohouse.com/",
       "addresses": [
-        {"street": "Lindenberg 8", "zip": "4058", "city": "Basel", "label": "Kleinbasel"}
+        {
+          "street": "Lindenberg 8",
+          "zip": "4058",
+          "city": "Basel",
+          "label": "Kleinbasel"
+        }
       ],
       "phone": "061 556 29 26",
       "email": "",
-      "styles": ["Hatha", "Vinyasa", "Yin Yoga", "Pilates"],
+      "styles": [
+        "Hatha",
+        "Vinyasa",
+        "Yin Yoga",
+        "Pilates"
+      ],
       "teachers": [],
       "description": "Kleine Gruppen für individuelle Betreuung. Schöner Blick auf die Altstadt-Dächer. Auch TCM-Praxis (Akupunktur, Tuina).",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Kleine Gruppen", "Altstadtblick", "TCM-Praxis"],
-      "lat": 47.5620,
-      "lng": 7.5950,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Kleine Gruppen",
+        "Altstadtblick",
+        "TCM-Praxis"
+      ],
+      "lat": 47.562,
+      "lng": 7.595,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 40,
+        "card_10": 362,
+        "monthly": 264,
+        "trial": 28,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-atelier",
@@ -194,22 +445,52 @@
       "website": "https://www.yoga-atelier-basel.ch/",
       "schedule_url": "https://www.yoga-atelier-basel.ch/angebot/woechentliche-kurse/",
       "addresses": [
-        {"street": "Petersgasse 32", "zip": "4051", "city": "Basel", "label": "Altstadt (~2 Min. von Schifflände)"}
+        {
+          "street": "Petersgasse 32",
+          "zip": "4051",
+          "city": "Basel",
+          "label": "Altstadt (~2 Min. von Schifflände)"
+        }
       ],
       "phone": "+41 79 829 47 45",
       "email": "orsina@yoga-atelier-basel.ch",
-      "styles": ["Hatha", "Yoga für Rücken", "Schwangerschaftsyoga", "Postnatal", "Yoga 60+", "Qigong"],
-      "teachers": ["Orsina Studach"],
+      "styles": [
+        "Hatha",
+        "Yoga für Rücken",
+        "Schwangerschaftsyoga",
+        "Postnatal",
+        "Yoga 60+",
+        "Qigong"
+      ],
+      "teachers": [
+        "Orsina Studach"
+      ],
       "description": "Eine Oase der Stille im Herzen der Basler Altstadt. Spezialisiert auf Hatha Yoga und therapeutisches Yoga.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Yoga 60+", "Schwangerschaftsyoga", "Rücken-Yoga", "Qigong", "Workshops"],
-      "lat": 47.5580,
-      "lng": 7.5860,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Yoga 60+",
+        "Schwangerschaftsyoga",
+        "Rücken-Yoga",
+        "Qigong",
+        "Workshops"
+      ],
+      "lat": 47.558,
+      "lng": 7.586,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 32,
+        "card_10": 292,
+        "monthly": 200,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "ashtanga-basel",
@@ -217,22 +498,47 @@
       "website": "https://www.ashtanga-basel.ch/",
       "schedule_url": "https://www.ashtanga-basel.ch/classes/",
       "addresses": [
-        {"street": "Spalenring 150, 1. OG", "zip": "4055", "city": "Basel", "label": ""}
+        {
+          "street": "Spalenring 150, 1. OG",
+          "zip": "4055",
+          "city": "Basel",
+          "label": ""
+        }
       ],
       "phone": "",
       "email": "lladiudelamata@gmail.com",
-      "styles": ["Ashtanga Mysore", "Ashtanga Led", "Hatha", "Restorative", "Yoga Nidra"],
+      "styles": [
+        "Ashtanga Mysore",
+        "Ashtanga Led",
+        "Hatha",
+        "Restorative",
+        "Yoga Nidra"
+      ],
       "teachers": [],
       "description": "Gemütliche, gut gelegene Shala. Mysore-Stil und geführte Klassen für Anfänger und Fortgeschrittene.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Mysore Style", "Weekend Workshops"],
-      "lat": 47.5500,
-      "lng": 7.5750,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Mysore Style",
+        "Weekend Workshops"
+      ],
+      "lat": 47.55,
+      "lng": 7.575,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 37,
+        "card_10": 336,
+        "monthly": 240,
+        "trial": 26,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "lotos",
@@ -240,21 +546,51 @@
       "website": "https://lotosyoga.ch/",
       "schedule_url": "https://lotosyoga.ch/kalender/",
       "addresses": [
-        {"street": "Rutimeyerstrasse 40", "zip": "4054", "city": "Basel", "label": ""}
+        {
+          "street": "Rutimeyerstrasse 40",
+          "zip": "4054",
+          "city": "Basel",
+          "label": ""
+        }
       ],
       "phone": "+41 61 271 40 86",
       "email": "sekretariat@lotosyoga.ch",
-      "styles": ["Hatha", "Yin", "Samara", "Kundalini", "Kids Yoga", "Yoga 60+", "Rücken-Yoga", "Schwangerschaftsyoga", "Yoga für Flüchtlinge", "Faszien Yoga", "Aerial Yoga", "Yoga Therapie"],
-      "teachers": ["Rosmarie Herczog"],
+      "styles": [
+        "Hatha",
+        "Yin",
+        "Samara",
+        "Kundalini",
+        "Kids Yoga",
+        "Yoga 60+",
+        "Rücken-Yoga",
+        "Schwangerschaftsyoga",
+        "Yoga für Flüchtlinge",
+        "Faszien Yoga",
+        "Aerial Yoga",
+        "Yoga Therapie"
+      ],
+      "teachers": [
+        "Rosmarie Herczog"
+      ],
       "description": "Seit 1994 — das älteste Yoga-Zentrum in Basel. Zwei Räume (Himalaya & Kerala). Teacher Training (200h-750h YCH).",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Seit 1994", "Teacher Training 200-750h", "2 Yoga-Räume", "Aerial Yoga"],
-      "pricing": {"single_range": "25-35", "currency": "CHF"},
-      "lat": 47.5530,
-      "lng": 7.5720,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Seit 1994",
+        "Teacher Training 200-750h",
+        "2 Yoga-Räume",
+        "Aerial Yoga"
+      ],
+      "pricing": {
+        "single_range": "25-35",
+        "currency": "CHF"
+      },
+      "lat": 47.553,
+      "lng": 7.572,
       "active": true,
       "classes": []
     },
@@ -264,22 +600,47 @@
       "website": "https://www.yogaimgaertnerhuus.com",
       "schedule_url": "https://www.yogaimgaertnerhuus.com",
       "addresses": [
-        {"street": "Gellertstrasse 133", "zip": "4052", "city": "Basel", "label": "im Schwarzpark"}
+        {
+          "street": "Gellertstrasse 133",
+          "zip": "4052",
+          "city": "Basel",
+          "label": "im Schwarzpark"
+        }
       ],
       "phone": "",
       "email": "yogaimgaertnerhuus@gmail.com",
-      "styles": ["Yin", "Vinyasa", "Kleinkind-Yoga", "Kids Yoga"],
+      "styles": [
+        "Yin",
+        "Vinyasa",
+        "Kleinkind-Yoga",
+        "Kids Yoga"
+      ],
       "teachers": [],
       "description": "Gemeinschaftsorientiertes Studio (Verein) im Grünen des Schwarzparks. Sound Baths, Live-Musik-Events.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Im Park", "Sound Bath", "Yoga & Live Musik", "Verein"],
-      "lat": 47.5440,
-      "lng": 7.6000,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Im Park",
+        "Sound Bath",
+        "Yoga & Live Musik",
+        "Verein"
+      ],
+      "lat": 47.544,
+      "lng": 7.6,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 40,
+        "card_10": 365,
+        "monthly": 267,
+        "trial": 29,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "secret-garden",
@@ -287,22 +648,50 @@
       "website": "https://secretgarden-yoga.ch/en/",
       "schedule_url": "https://secretgarden-yoga.ch/en/stundenplan/",
       "addresses": [
-        {"street": "Austrasse 112", "zip": "4051", "city": "Basel", "label": "Nähe Schützenmattpark"}
+        {
+          "street": "Austrasse 112",
+          "zip": "4051",
+          "city": "Basel",
+          "label": "Nähe Schützenmattpark"
+        }
       ],
       "phone": "",
       "email": "hello@secretgarden-yoga.ch",
-      "styles": ["Aerial Yoga", "Vinyasa", "Breathwork", "Sound Healing"],
-      "teachers": ["Jay", "Nadine"],
+      "styles": [
+        "Aerial Yoga",
+        "Vinyasa",
+        "Breathwork",
+        "Sound Healing"
+      ],
+      "teachers": [
+        "Jay",
+        "Nadine"
+      ],
       "description": "Eine grüne Oase mitten in Basel. Seit April 2023. Erreichbar mit Tram 6, 1, 8 oder Bus 50.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Aerial Yoga", "Sound Healing", "Breathwork"],
-      "lat": 47.5530,
-      "lng": 7.5790,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Aerial Yoga",
+        "Sound Healing",
+        "Breathwork"
+      ],
+      "lat": 47.553,
+      "lng": 7.579,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 35,
+        "card_10": 317,
+        "monthly": 223,
+        "trial": 24,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "mint",
@@ -310,22 +699,50 @@
       "website": "https://mint-loft.ch/",
       "schedule_url": "https://mint-loft.ch/stundenplan/",
       "addresses": [
-        {"street": "Rebgasse 43", "zip": "4058", "city": "Basel", "label": "Kleinbasel"}
+        {
+          "street": "Rebgasse 43",
+          "zip": "4058",
+          "city": "Basel",
+          "label": "Kleinbasel"
+        }
       ],
       "phone": "+41 79 613 47 77",
       "email": "",
-      "styles": ["Vinyasa", "Gentle Flow", "Yin Yoga", "Aerial Yoga", "Yoga 55+"],
-      "teachers": ["Tanja Koechlin"],
+      "styles": [
+        "Vinyasa",
+        "Gentle Flow",
+        "Yin Yoga",
+        "Aerial Yoga",
+        "Yoga 55+"
+      ],
+      "teachers": [
+        "Tanja Koechlin"
+      ],
       "description": "Yoga für alle Altersgruppen inkl. Yoga 55+. Sommer-Outdoor-Klassen im Wenkenpark Riehen.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Yoga 55+", "Aerial Yoga", "Outdoor Sommer", "Pilates Reformer"],
-      "lat": 47.5640,
-      "lng": 7.5930,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Yoga 55+",
+        "Aerial Yoga",
+        "Outdoor Sommer",
+        "Pilates Reformer"
+      ],
+      "lat": 47.564,
+      "lng": 7.593,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 33,
+        "card_10": 298,
+        "monthly": 205,
+        "trial": 23,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "erlenyoga",
@@ -333,22 +750,45 @@
       "website": "https://erlenyoga.ch/",
       "schedule_url": "https://erlenyoga.ch/",
       "addresses": [
-        {"street": "Erlenmatt", "zip": "4058", "city": "Basel", "label": "Max. 8 Personen"}
+        {
+          "street": "Erlenmatt",
+          "zip": "4058",
+          "city": "Basel",
+          "label": "Max. 8 Personen"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Vinyasa Flow", "Yin Yoga"],
-      "teachers": ["Astrid Rembges"],
+      "styles": [
+        "Vinyasa Flow",
+        "Yin Yoga"
+      ],
+      "teachers": [
+        "Astrid Rembges"
+      ],
       "description": "Intimers Studio im Erlenmatt-Quartier, maximal 8 Teilnehmer. Studio auch privat mietbar.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Max 8 Personen", "Privat mietbar"],
-      "lat": 47.5680,
-      "lng": 7.6020,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Max 8 Personen",
+        "Privat mietbar"
+      ],
+      "lat": 47.568,
+      "lng": 7.602,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 38,
+        "card_10": 340,
+        "monthly": 250,
+        "trial": 27,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "exhale",
@@ -356,22 +796,45 @@
       "website": "https://exhale.ch/",
       "schedule_url": "https://exhale.ch/",
       "addresses": [
-        {"street": "Martinskirchplatz 15", "zip": "4051", "city": "Basel", "label": "Altstadt (bei Schifflände)"}
+        {
+          "street": "Martinskirchplatz 15",
+          "zip": "4051",
+          "city": "Basel",
+          "label": "Altstadt (bei Schifflände)"
+        }
       ],
       "phone": "+41 79 627 00 80",
       "email": "markus.latscha@exhale.ch",
-      "styles": ["Yoga Training", "Coaching"],
-      "teachers": ["Markus Latscha"],
+      "styles": [
+        "Yoga Training",
+        "Coaching"
+      ],
+      "teachers": [
+        "Markus Latscha"
+      ],
       "description": "124 m² grosses Studio in der Altstadt. Yoga-Training und persönliches Coaching.",
       "hours": "",
       "booking_platform": "Eversports",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["124m² Studio", "Coaching"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "124m² Studio",
+        "Coaching"
+      ],
       "lat": 47.5575,
-      "lng": 7.5870,
+      "lng": 7.587,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 32,
+        "card_10": 291,
+        "monthly": 205,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "iyengar-kreis",
@@ -379,22 +842,43 @@
       "website": "https://www.i-yoga-basel.ch/",
       "schedule_url": "https://www.i-yoga-basel.ch/",
       "addresses": [
-        {"street": "Güterstrasse 285", "zip": "4053", "city": "Basel", "label": "Nähe SBB (Hinterhof)"}
+        {
+          "street": "Güterstrasse 285",
+          "zip": "4053",
+          "city": "Basel",
+          "label": "Nähe SBB (Hinterhof)"
+        }
       ],
       "phone": "+41 78 754 55 59",
       "email": "kontakt@i-yoga-basel.ch",
-      "styles": ["Iyengar Yoga"],
-      "teachers": ["Caroline Kreis Maissen"],
+      "styles": [
+        "Iyengar Yoga"
+      ],
+      "teachers": [
+        "Caroline Kreis Maissen"
+      ],
       "description": "Zertifizierte Iyengar-Lehrerin seit 2004. Anfängerkurse Montag morgens 9:15-10:45.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Iyengar zertifiziert seit 2004"],
-      "lat": 47.5460,
-      "lng": 7.5830,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Iyengar zertifiziert seit 2004"
+      ],
+      "lat": 47.546,
+      "lng": 7.583,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 29,
+        "card_10": 256,
+        "monthly": 175,
+        "trial": 19,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "iyengar-gerbergaesslein",
@@ -402,22 +886,43 @@
       "website": "https://gerbergaesslein-yoga.ch/",
       "schedule_url": "https://gerbergaesslein-yoga.ch/stundenplan/",
       "addresses": [
-        {"street": "Gerbergässlein 23", "zip": "4001", "city": "Basel", "label": "Altstadt"}
+        {
+          "street": "Gerbergässlein 23",
+          "zip": "4001",
+          "city": "Basel",
+          "label": "Altstadt"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Iyengar Yoga"],
-      "teachers": ["Sabine Skinner-Baur"],
+      "styles": [
+        "Iyengar Yoga"
+      ],
+      "teachers": [
+        "Sabine Skinner-Baur"
+      ],
       "description": "Iyengar Yoga in der Altstadt. Level I+II, alle Stufen, Anfänger.",
       "hours": "Mo 12:00-13:30 & 18:00-19:30, Di 18:00-19:30, Mi 12:00-13:30",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Iyengar zertifiziert"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Iyengar zertifiziert"
+      ],
       "lat": 47.5565,
-      "lng": 7.5880,
+      "lng": 7.588,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 32,
+        "card_10": 285,
+        "monthly": 201,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "ayalga",
@@ -425,22 +930,43 @@
       "website": "https://ayalgayoga.ch/en/",
       "schedule_url": "https://ayalgayoga.ch/en/",
       "addresses": [
-        {"street": "Basel", "zip": "", "city": "Basel", "label": ""}
+        {
+          "street": "Basel",
+          "zip": "",
+          "city": "Basel",
+          "label": ""
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Iyengar Yoga"],
+      "styles": [
+        "Iyengar Yoga"
+      ],
       "teachers": [],
       "description": "Iyengar Yoga mit Hilfsmitteln (Seile, Decken, Blöcke, Stühle). Für alle Altersgruppen und Mobilitätslevel.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Props/Hilfsmittel", "Alle Mobilitätslevel"],
-      "lat": 47.5560,
-      "lng": 7.5880,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Props/Hilfsmittel",
+        "Alle Mobilitätslevel"
+      ],
+      "lat": 47.556,
+      "lng": 7.588,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 32,
+        "card_10": 293,
+        "monthly": 208,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-now",
@@ -448,22 +974,43 @@
       "website": "https://www.yoganow-basel.ch/",
       "schedule_url": "https://www.yoganow-basel.ch/",
       "addresses": [
-        {"street": "Basel", "zip": "", "city": "Basel", "label": ""}
+        {
+          "street": "Basel",
+          "zip": "",
+          "city": "Basel",
+          "label": ""
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Iyengar Yoga"],
-      "teachers": ["Luis Gonzalez"],
+      "styles": [
+        "Iyengar Yoga"
+      ],
+      "teachers": [
+        "Luis Gonzalez"
+      ],
       "description": "Kleines, ruhiges Studio mit persönlicher Betreuung. Klare Anleitung und Einsatz von Hilfsmitteln.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Persönliche Betreuung"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Persönliche Betreuung"
+      ],
       "lat": 47.5555,
-      "lng": 7.5870,
+      "lng": 7.587,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 32,
+        "card_10": 294,
+        "monthly": 209,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "studio-devin",
@@ -471,22 +1018,46 @@
       "website": "http://devinyoga.com/",
       "schedule_url": "http://devinyoga.com/",
       "addresses": [
-        {"street": "Stapfelberg 1", "zip": "4051", "city": "Basel", "label": ""}
+        {
+          "street": "Stapfelberg 1",
+          "zip": "4051",
+          "city": "Basel",
+          "label": ""
+        }
       ],
       "phone": "076 498 48 20",
       "email": "",
-      "styles": ["Hatha (Alignment-based)"],
-      "teachers": ["Vincent Pezet"],
+      "styles": [
+        "Hatha (Alignment-based)"
+      ],
+      "teachers": [
+        "Vincent Pezet"
+      ],
       "description": "Alignment-basiertes Hatha Yoga. Auch Osteo Thai Massage und Teacher Training (RYT200 & RYT500).",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English", "Français"],
-      "special_features": ["Osteo Thai Massage", "Teacher Training RYT200/500"],
+      "languages": [
+        "Deutsch",
+        "English",
+        "Français"
+      ],
+      "special_features": [
+        "Osteo Thai Massage",
+        "Teacher Training RYT200/500"
+      ],
       "lat": 47.5568,
-      "lng": 7.5850,
+      "lng": 7.585,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 34,
+        "card_10": 310,
+        "monthly": 223,
+        "trial": 24,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "kathrin-mathews",
@@ -494,22 +1065,46 @@
       "website": "https://www.kathrinmathews.com/",
       "schedule_url": "https://www.kathrinmathews.com/schedule/",
       "addresses": [
-        {"street": "Basel", "zip": "", "city": "Basel", "label": ""}
+        {
+          "street": "Basel",
+          "zip": "",
+          "city": "Basel",
+          "label": ""
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Ashtanga Mysore"],
-      "teachers": ["Kathrin Mathews"],
+      "styles": [
+        "Ashtanga Mysore"
+      ],
+      "teachers": [
+        "Kathrin Mathews"
+      ],
       "description": "Ashtanga Yoga im Mysore-Stil. Auch Retreats und Privatstunden.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Mysore Style", "Retreats", "Privatstunden"],
-      "lat": 47.5560,
-      "lng": 7.5880,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Mysore Style",
+        "Retreats",
+        "Privatstunden"
+      ],
+      "lat": 47.556,
+      "lng": 7.588,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 35,
+        "card_10": 318,
+        "monthly": 230,
+        "trial": 25,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "mysore-club",
@@ -517,22 +1112,43 @@
       "website": "https://www.mysorebasel.ch/",
       "schedule_url": "https://www.mysorebasel.ch/",
       "addresses": [
-        {"street": "Basel", "zip": "", "city": "Basel", "label": ""}
+        {
+          "street": "Basel",
+          "zip": "",
+          "city": "Basel",
+          "label": ""
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Ashtanga Mysore"],
+      "styles": [
+        "Ashtanga Mysore"
+      ],
       "teachers": [],
       "description": "Community-orientierte Ashtanga-Mysore-Praxis. Frühmorgens-Klassen. Sonntags bei Spirit Studio.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Community", "Früh-Morgen-Klassen"],
-      "lat": 47.5560,
-      "lng": 7.5880,
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Community",
+        "Früh-Morgen-Klassen"
+      ],
+      "lat": 47.556,
+      "lng": 7.588,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 29,
+        "card_10": 256,
+        "monthly": 175,
+        "trial": 19,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "rin-yoga",
@@ -540,22 +1156,48 @@
       "website": "https://rin.yoga/",
       "schedule_url": "https://rin.yoga/",
       "addresses": [
-        {"street": "Schlüsselberg 10", "zip": "4001", "city": "Basel", "label": "Raum für Mehr"}
+        {
+          "street": "Schlüsselberg 10",
+          "zip": "4001",
+          "city": "Basel",
+          "label": "Raum für Mehr"
+        }
       ],
       "phone": "+41 76 589 98 29",
       "email": "rin@rin.yoga",
-      "styles": ["Embodied Flow", "Vinyasa", "Hatha", "Kundalini"],
-      "teachers": ["Rinny Biberstein"],
+      "styles": [
+        "Embodied Flow",
+        "Vinyasa",
+        "Hatha",
+        "Kundalini"
+      ],
+      "teachers": [
+        "Rinny Biberstein"
+      ],
       "description": "Max. 10 Teilnehmer. Gleitende Preisgestaltung. Auch bei The Looking Glass.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Max 10 Personen", "Sliding Scale Preise"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Max 10 Personen",
+        "Sliding Scale Preise"
+      ],
       "lat": 47.5573,
       "lng": 7.5875,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 32,
+        "card_10": 284,
+        "monthly": 193,
+        "trial": 21,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "alessia-yoga",
@@ -563,23 +1205,51 @@
       "website": "https://www.alessiayoga.com/",
       "schedule_url": "https://www.alessiayoga.com/",
       "addresses": [
-        {"street": "Im Westfeld 6", "zip": "4055", "city": "Basel", "label": "Pro Senectute"},
-        {"street": "Elsässerstrasse 34", "zip": "4056", "city": "Basel", "label": "ZOESPACES"}
+        {
+          "street": "Im Westfeld 6",
+          "zip": "4055",
+          "city": "Basel",
+          "label": "Pro Senectute"
+        },
+        {
+          "street": "Elsässerstrasse 34",
+          "zip": "4056",
+          "city": "Basel",
+          "label": "ZOESPACES"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Vinyasa"],
-      "teachers": ["Alessia"],
+      "styles": [
+        "Vinyasa"
+      ],
+      "teachers": [
+        "Alessia"
+      ],
       "description": "Begrenzte Plätze für individuelle Betreuung. Erste Probestunde gratis. Sommer-Outdoor-Klassen.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["English", "Deutsch"],
-      "special_features": ["Erste Stunde gratis", "Outdoor Sommer"],
-      "lat": 47.5520,
-      "lng": 7.5730,
+      "languages": [
+        "English",
+        "Deutsch"
+      ],
+      "special_features": [
+        "Erste Stunde gratis",
+        "Outdoor Sommer"
+      ],
+      "lat": 47.552,
+      "lng": 7.573,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 33,
+        "card_10": 302,
+        "monthly": 215,
+        "trial": 23,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "food-changes",
@@ -587,22 +1257,49 @@
       "website": "https://www.foodchangeseverything.me/",
       "schedule_url": "https://www.foodchangeseverything.me/class-schedule",
       "addresses": [
-        {"street": "Pfluggasslein 1", "zip": "4001", "city": "Basel", "label": "bei YOGABLOOM"}
+        {
+          "street": "Pfluggasslein 1",
+          "zip": "4001",
+          "city": "Basel",
+          "label": "bei YOGABLOOM"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Rest + Reset", "Vinyasa", "Yoga für Verdauung", "Yoga für Menopause"],
-      "teachers": ["Vanessa Gatelein"],
+      "styles": [
+        "Rest + Reset",
+        "Vinyasa",
+        "Yoga für Verdauung",
+        "Yoga für Menopause"
+      ],
+      "teachers": [
+        "Vanessa Gatelein"
+      ],
       "description": "Ganzheitlicher Ansatz: Yoga + Ernährungsberatung. In-Person und Online. Frauen-Retreats.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["English", "Deutsch"],
-      "special_features": ["Ernährungsberatung", "Yoga für Verdauung", "Frauen-Retreats"],
+      "languages": [
+        "English",
+        "Deutsch"
+      ],
+      "special_features": [
+        "Ernährungsberatung",
+        "Yoga für Verdauung",
+        "Frauen-Retreats"
+      ],
       "lat": 47.5575,
       "lng": 7.5875,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 31,
+        "card_10": 278,
+        "monthly": 187,
+        "trial": 21,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "claudia-stamm",
@@ -610,22 +1307,49 @@
       "website": "https://www.claudia-stamm.com/",
       "schedule_url": "https://www.claudia-stamm.com/",
       "addresses": [
-        {"street": "Gellertstrasse 148", "zip": "4052", "city": "Basel", "label": "Haus der Geburt Bethesda"}
+        {
+          "street": "Gellertstrasse 148",
+          "zip": "4052",
+          "city": "Basel",
+          "label": "Haus der Geburt Bethesda"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Schwangerschaftsyoga", "Yoga Therapie", "Rückbildung", "Beckenboden-Yoga"],
-      "teachers": ["Claudia Reusch-Stamm"],
+      "styles": [
+        "Schwangerschaftsyoga",
+        "Yoga Therapie",
+        "Rückbildung",
+        "Beckenboden-Yoga"
+      ],
+      "teachers": [
+        "Claudia Reusch-Stamm"
+      ],
       "description": "Spezialisiert auf Schwangerschafts- und Postnatal-Yoga. Mo 18:00-19:15, CHF 25/Klasse.",
       "hours": "Mo 18:00-19:15",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["Schwangerschaft", "Postnatal", "Beckenboden", "1:1 Sessions"],
-      "lat": 47.5430,
-      "lng": 7.6010,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Schwangerschaft",
+        "Postnatal",
+        "Beckenboden",
+        "1:1 Sessions"
+      ],
+      "lat": 47.543,
+      "lng": 7.601,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 37,
+        "card_10": 330,
+        "monthly": 234,
+        "trial": 25,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "mignon",
@@ -633,22 +1357,46 @@
       "website": "https://www.mignonbaby.com/",
       "schedule_url": "https://www.mignonbaby.com/",
       "addresses": [
-        {"street": "Leimgrubenweg 9/9C, 2. OG", "zip": "4053", "city": "Basel", "label": "Kindermusik Studio"}
+        {
+          "street": "Leimgrubenweg 9/9C, 2. OG",
+          "zip": "4053",
+          "city": "Basel",
+          "label": "Kindermusik Studio"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Prenatal Yoga", "Mama & Baby Yoga", "Postnatal Yoga"],
+      "styles": [
+        "Prenatal Yoga",
+        "Mama & Baby Yoga",
+        "Postnatal Yoga"
+      ],
       "teachers": [],
       "description": "Yoga rund um Schwangerschaft und Geburt, auf Englisch. Nur für Frauen.",
       "hours": "Prenatal: Di 18:15-19:45, Do 18:00-20:00. Postnatal: Do 13:30-14:30",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["English"],
-      "special_features": ["Prenatal", "Postnatal", "Mama & Baby", "Nur Frauen"],
-      "lat": 47.5470,
-      "lng": 7.5830,
+      "languages": [
+        "English"
+      ],
+      "special_features": [
+        "Prenatal",
+        "Postnatal",
+        "Mama & Baby",
+        "Nur Frauen"
+      ],
+      "lat": 47.547,
+      "lng": 7.583,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 32,
+        "card_10": 289,
+        "monthly": 197,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "katerina-wen",
@@ -656,22 +1404,49 @@
       "website": "https://www.katerinawen.com/",
       "schedule_url": "https://www.katerinawen.com/",
       "addresses": [
-        {"street": "Basel", "zip": "", "city": "Basel", "label": ""}
+        {
+          "street": "Basel",
+          "zip": "",
+          "city": "Basel",
+          "label": ""
+        }
       ],
       "phone": "",
       "email": "KaterinaWen@fastmail.com",
-      "styles": ["Therapeutisches Yoga", "Somatische Bewegung", "Chair Yoga"],
-      "teachers": ["Katerina Wen"],
+      "styles": [
+        "Therapeutisches Yoga",
+        "Somatische Bewegung",
+        "Chair Yoga"
+      ],
+      "teachers": [
+        "Katerina Wen"
+      ],
       "description": "Private therapeutische Yoga-Sessions, Gruppen, Corporate Yoga. On-Demand Videothek.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": false,
-      "languages": ["English", "Deutsch"],
-      "special_features": ["Privat-Sessions", "Corporate Yoga", "On-Demand Videos", "Chair Yoga"],
-      "lat": 47.5560,
-      "lng": 7.5880,
+      "languages": [
+        "English",
+        "Deutsch"
+      ],
+      "special_features": [
+        "Privat-Sessions",
+        "Corporate Yoga",
+        "On-Demand Videos",
+        "Chair Yoga"
+      ],
+      "lat": 47.556,
+      "lng": 7.588,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 31,
+        "card_10": 275,
+        "monthly": 184,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "bethsabe",
@@ -679,22 +1454,46 @@
       "website": "https://www.bethsabe.ch",
       "schedule_url": "https://www.bethsabe.ch",
       "addresses": [
-        {"street": "Baslerstrasse 8", "zip": "4103", "city": "Bottmingen", "label": "Nahe Basel"}
+        {
+          "street": "Baslerstrasse 8",
+          "zip": "4103",
+          "city": "Bottmingen",
+          "label": "Nahe Basel"
+        }
       ],
       "phone": "+41 61 421 54 54",
       "email": "",
-      "styles": ["Yoga", "Therapeutisches Yoga", "MBSR/MSC", "Craniosacral"],
+      "styles": [
+        "Yoga",
+        "Therapeutisches Yoga",
+        "MBSR/MSC",
+        "Craniosacral"
+      ],
       "teachers": [],
       "description": "Yoga, Therapie und Achtsamkeitskurse in Bottmingen bei Basel.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
-      "special_features": ["MBSR/MSC", "Craniosacral", "Physiotherapie"],
-      "lat": 47.5320,
-      "lng": 7.5740,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "MBSR/MSC",
+        "Craniosacral",
+        "Physiotherapie"
+      ],
+      "lat": 47.532,
+      "lng": 7.574,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 35,
+        "card_10": 314,
+        "monthly": 220,
+        "trial": 24,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "fitnesspark",
@@ -702,23 +1501,46 @@
       "website": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/",
       "schedule_url": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/",
       "addresses": [
-        {"street": "Steinentorstrasse", "zip": "4051", "city": "Basel", "label": "Nähe SBB"}
+        {
+          "street": "Steinentorstrasse",
+          "zip": "4051",
+          "city": "Basel",
+          "label": "Nähe SBB"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Hatha Yoga", "Pilates"],
+      "styles": [
+        "Hatha Yoga",
+        "Pilates"
+      ],
       "teachers": [],
       "description": "Drei-stöckiges Fitnesscenter mit Yoga-Klassen, Wellness, 5 Saunen und Relaxpool.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": false,
-      "languages": ["Deutsch"],
-      "special_features": ["Wellness", "Sauna", "Pool", "Migros-Kette"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Wellness",
+        "Sauna",
+        "Pool",
+        "Migros-Kette"
+      ],
       "category": "fitness",
-      "lat": 47.5490,
-      "lng": 7.5870,
+      "lat": 47.549,
+      "lng": 7.587,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 31,
+        "card_10": 275,
+        "monthly": 192,
+        "trial": 21,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "gyym",
@@ -726,23 +1548,44 @@
       "website": "https://gyym.ch/en/",
       "schedule_url": "https://gyym.ch/en/",
       "addresses": [
-        {"street": "Stucki Park", "zip": "4057", "city": "Basel", "label": ""}
+        {
+          "street": "Stucki Park",
+          "zip": "4057",
+          "city": "Basel",
+          "label": ""
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Yoga", "Pilates", "Body Balance"],
+      "styles": [
+        "Yoga",
+        "Pilates",
+        "Body Balance"
+      ],
       "teachers": [],
       "description": "Über 300 Gruppenkurse inkl. Yoga. Community-orientiertes Fitnesscenter.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": false,
-      "languages": ["Deutsch"],
-      "special_features": ["300+ Gruppenkurse"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "300+ Gruppenkurse"
+      ],
       "category": "fitness",
-      "lat": 47.5780,
-      "lng": 7.6060,
+      "lat": 47.578,
+      "lng": 7.606,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 30,
+        "card_10": 271,
+        "monthly": 181,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "klubschule",
@@ -750,23 +1593,45 @@
       "website": "https://www.klubschule.ch/",
       "schedule_url": "https://www.klubschule.ch/",
       "addresses": [
-        {"street": "Basel", "zip": "", "city": "Basel", "label": ""}
+        {
+          "street": "Basel",
+          "zip": "",
+          "city": "Basel",
+          "label": ""
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Hatha Yoga", "Power Yoga", "Vinyasa"],
+      "styles": [
+        "Hatha Yoga",
+        "Power Yoga",
+        "Vinyasa"
+      ],
       "teachers": [],
       "description": "Yoga-Kurse als Teil des Migros-Erwachsenenbildungsprogramms. Flexibles Wertabo-System.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": false,
-      "languages": ["Deutsch"],
-      "special_features": ["Wertabo-System", "Migros-Netzwerk"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Wertabo-System",
+        "Migros-Netzwerk"
+      ],
       "category": "education",
-      "lat": 47.5530,
-      "lng": 7.5890,
+      "lat": 47.553,
+      "lng": 7.589,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 39,
+        "card_10": 353,
+        "monthly": 256,
+        "trial": 28,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "unisport",
@@ -774,23 +1639,42 @@
       "website": "https://universitaetssport.unibas.ch/",
       "schedule_url": "https://universitaetssport.unibas.ch/sportbereiche/body-und-mind-26704/yoga-26707/1",
       "addresses": [
-        {"street": "Universität Basel", "zip": "", "city": "Basel", "label": "Verschiedene Standorte"}
+        {
+          "street": "Universität Basel",
+          "zip": "",
+          "city": "Basel",
+          "label": "Verschiedene Standorte"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Yoga"],
+      "styles": [
+        "Yoga"
+      ],
       "teachers": [],
       "description": "Yoga-Kurse für Uni-Angehörige (Studierende und Mitarbeitende).",
       "hours": "",
       "booking_platform": "website",
       "drop_in": false,
-      "languages": ["Deutsch"],
-      "special_features": ["Nur für Uni-Angehörige"],
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Nur für Uni-Angehörige"
+      ],
       "category": "university",
-      "lat": 47.5590,
-      "lng": 7.5830,
+      "lat": 47.559,
+      "lng": 7.583,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 31,
+        "card_10": 273,
+        "monthly": 189,
+        "trial": 21,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "sutra-house",
@@ -798,23 +1682,46 @@
       "website": "https://www.sutra-house.com/",
       "schedule_url": "https://www.sutra-house.com/",
       "addresses": [
-        {"street": "Rütiring 36/36a", "zip": "4125", "city": "Riehen", "label": "Bewaldeter Hang am Rhein"}
+        {
+          "street": "Rütiring 36/36a",
+          "zip": "4125",
+          "city": "Riehen",
+          "label": "Bewaldeter Hang am Rhein"
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Yoga Retreats"],
+      "styles": [
+        "Yoga Retreats"
+      ],
       "teachers": [],
       "description": "Kein reguläres Studio — Retreat-Venue. Beheizter Aussenpool, Sauna, Dampfbad. Seit 2020.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": false,
-      "languages": ["Deutsch", "English"],
-      "special_features": ["Retreats", "Pool", "Sauna", "Architektur"],
+      "languages": [
+        "Deutsch",
+        "English"
+      ],
+      "special_features": [
+        "Retreats",
+        "Pool",
+        "Sauna",
+        "Architektur"
+      ],
       "category": "retreat",
-      "lat": 47.5770,
-      "lng": 7.6350,
+      "lat": 47.577,
+      "lng": 7.635,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 30,
+        "card_10": 264,
+        "monthly": 181,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoba",
@@ -822,22 +1729,39 @@
       "website": "",
       "schedule_url": "",
       "addresses": [
-        {"street": "Güterstrasse 144", "zip": "4053", "city": "Basel", "label": ""}
+        {
+          "street": "Güterstrasse 144",
+          "zip": "4053",
+          "city": "Basel",
+          "label": ""
+        }
       ],
       "phone": "078 725 08 15",
       "email": "yoga@yoba.ch",
-      "styles": ["Yoga"],
+      "styles": [
+        "Yoga"
+      ],
       "teachers": [],
       "description": "Yoga-Studio in Basel.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": true,
-      "languages": ["Deutsch"],
+      "languages": [
+        "Deutsch"
+      ],
       "special_features": [],
       "lat": 47.5455,
-      "lng": 7.5830,
+      "lng": 7.583,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 35,
+        "card_10": 318,
+        "monthly": 230,
+        "trial": 25,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "cristina-hagman",
@@ -845,30 +1769,81 @@
       "website": "",
       "schedule_url": "",
       "addresses": [
-        {"street": "Güterstrasse 302", "zip": "4053", "city": "Basel", "label": ""}
+        {
+          "street": "Güterstrasse 302",
+          "zip": "4053",
+          "city": "Basel",
+          "label": ""
+        }
       ],
       "phone": "",
       "email": "",
-      "styles": ["Yoga", "Körpertherapie", "Somatische Stressregulation"],
-      "teachers": ["Cristina Hagman"],
+      "styles": [
+        "Yoga",
+        "Körpertherapie",
+        "Somatische Stressregulation"
+      ],
+      "teachers": [
+        "Cristina Hagman"
+      ],
       "description": "Yoga und Körpertherapie, somatische Stressregulation.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": false,
-      "languages": ["Deutsch"],
-      "special_features": ["Körpertherapie", "Stressregulation"],
-      "lat": 47.5440,
-      "lng": 7.5830,
+      "languages": [
+        "Deutsch"
+      ],
+      "special_features": [
+        "Körpertherapie",
+        "Stressregulation"
+      ],
+      "lat": 47.544,
+      "lng": 7.583,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 37,
+        "card_10": 332,
+        "monthly": 236,
+        "trial": 26,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ],
   "styles_index": [
-    "Ashtanga", "Aerial", "Bikram/Hot", "Breathwork", "Chair Yoga", "Corporate Yoga",
-    "Dharma Yoga", "Embodied Flow", "Faszien Yoga", "Flow", "Gentle Flow",
-    "Hatha", "Iyengar", "Jivamukti", "Katonah", "Kids Yoga", "Kundalini",
-    "Meditation", "Mysore", "Pilates", "Power Yoga", "Prenatal", "Postnatal",
-    "Qigong", "Restorative", "Slow Flow", "Sound Healing", "Therapeutisches Yoga",
-    "Vinyasa", "Yin", "Yoga 55+/60+", "Yoga Nidra", "Yoga für Rücken"
+    "Ashtanga",
+    "Aerial",
+    "Bikram/Hot",
+    "Breathwork",
+    "Chair Yoga",
+    "Corporate Yoga",
+    "Dharma Yoga",
+    "Embodied Flow",
+    "Faszien Yoga",
+    "Flow",
+    "Gentle Flow",
+    "Hatha",
+    "Iyengar",
+    "Jivamukti",
+    "Katonah",
+    "Kids Yoga",
+    "Kundalini",
+    "Meditation",
+    "Mysore",
+    "Pilates",
+    "Power Yoga",
+    "Prenatal",
+    "Postnatal",
+    "Qigong",
+    "Restorative",
+    "Slow Flow",
+    "Sound Healing",
+    "Therapeutisches Yoga",
+    "Vinyasa",
+    "Yin",
+    "Yoga 55+/60+",
+    "Yoga Nidra",
+    "Yoga für Rücken"
   ]
 }

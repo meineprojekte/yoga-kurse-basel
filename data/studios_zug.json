@@ -38,7 +38,15 @@
       "lat": 47.1951,
       "lng": 8.5246,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 25,
+        "card_10": 225,
+        "monthly": 153,
+        "trial": 15,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "iyengar-yoga-zug",
@@ -70,9 +78,17 @@
         "Online-Buchung"
       ],
       "lat": 47.1942,
-      "lng": 8.5280,
+      "lng": 8.528,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 30,
+        "card_10": 269,
+        "monthly": 184,
+        "trial": 21,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "zug-yoga-sports",
@@ -112,7 +128,15 @@
       "lat": 47.1724,
       "lng": 8.5163,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 30,
+        "card_10": 273,
+        "monthly": 187,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "chinmayi-yoga-baar",
@@ -146,7 +170,15 @@
       "lat": 47.1963,
       "lng": 8.5225,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 28,
+        "card_10": 254,
+        "monthly": 175,
+        "trial": 19,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "aum-yoga-zug",
@@ -181,7 +213,15 @@
       "lat": 47.1724,
       "lng": 8.5163,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 25,
+        "card_10": 220,
+        "monthly": 151,
+        "trial": 16,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ]
 }

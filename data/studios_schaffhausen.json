@@ -36,7 +36,15 @@
       "lat": 47.6961,
       "lng": 8.6342,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 28,
+        "card_10": 249,
+        "monthly": 170,
+        "trial": 18,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yogalicht-schaffhausen",
@@ -69,7 +77,15 @@
       "lat": 47.6966,
       "lng": 8.6356,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 23,
+        "card_10": 202,
+        "monthly": 139,
+        "trial": 14,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yogaschule-narayana-schaffhausen",
@@ -100,10 +116,18 @@
       "special_features": [
         "Besonderer Standort auf dem Emmersberg"
       ],
-      "lat": 47.7010,
-      "lng": 8.6360,
+      "lat": 47.701,
+      "lng": 8.636,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 23,
+        "card_10": 203,
+        "monthly": 140,
+        "trial": 14,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ]
 }

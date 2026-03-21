@@ -36,7 +36,15 @@
       "lat": 47.0371,
       "lng": 9.0714,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 26,
+        "card_10": 243,
+        "monthly": 162,
+        "trial": 18,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "12yoga-ennenda",
@@ -74,7 +82,15 @@
       "lat": 47.0371,
       "lng": 9.0714,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 24,
+        "card_10": 219,
+        "monthly": 144,
+        "trial": 16,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "cgworkout-niederurnen",
@@ -111,7 +127,15 @@
       "lat": 47.1228,
       "lng": 9.0556,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 23,
+        "card_10": 216,
+        "monthly": 144,
+        "trial": 16,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ]
 }

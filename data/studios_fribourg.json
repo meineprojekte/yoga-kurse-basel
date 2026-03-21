@@ -34,7 +34,15 @@
       "lat": 46.8034,
       "lng": 7.1474,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 33,
+        "card_10": 299,
+        "monthly": 206,
+        "trial": 23,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "happinez-yoga-fribourg",
@@ -70,7 +78,15 @@
       "lat": 46.8019,
       "lng": 7.1509,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 31,
+        "card_10": 279,
+        "monthly": 191,
+        "trial": 21,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "sakinayoga-fribourg",
@@ -105,9 +121,17 @@
         "FeetUp"
       ],
       "lat": 46.8065,
-      "lng": 7.1620,
+      "lng": 7.162,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 29,
+        "card_10": 261,
+        "monthly": 179,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "yoga-nicole-fribourg",
@@ -139,9 +163,17 @@
         "Outdoor Yoga"
       ],
       "lat": 46.8042,
-      "lng": 7.1560,
+      "lng": 7.156,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 31,
+        "card_10": 283,
+        "monthly": 194,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "popup-yoga-fribourg",
@@ -181,7 +213,15 @@
       "lat": 46.8058,
       "lng": 7.1571,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 34,
+        "card_10": 312,
+        "monthly": 214,
+        "trial": 24,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ]
 }

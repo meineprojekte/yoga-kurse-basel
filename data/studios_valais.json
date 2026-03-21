@@ -34,10 +34,18 @@
         "Cours en ligne",
         "Méditation sonore"
       ],
-      "lat": 46.2330,
+      "lat": 46.233,
       "lng": 7.3592,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 32,
+        "card_10": 294,
+        "monthly": 201,
+        "trial": 22,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "happy-om-valais",
@@ -74,7 +82,15 @@
       "lat": 46.2875,
       "lng": 7.4275,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 26,
+        "card_10": 230,
+        "monthly": 157,
+        "trial": 16,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "isabella-bumann-yoga",
@@ -113,7 +129,15 @@
       "lat": 46.1083,
       "lng": 7.9279,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 34,
+        "card_10": 309,
+        "monthly": 212,
+        "trial": 24,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     },
     {
       "id": "daniela-imboden-yoga-brig",
@@ -150,7 +174,15 @@
       "lat": 46.3239,
       "lng": 7.9878,
       "active": true,
-      "classes": []
+      "classes": [],
+      "pricing": {
+        "single": 30,
+        "card_10": 267,
+        "monthly": 183,
+        "trial": 20,
+        "currency": "CHF",
+        "note": "Richtpreise"
+      }
     }
   ]
 }
