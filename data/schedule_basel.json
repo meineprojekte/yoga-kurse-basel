@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-19T21:00:00Z",
+  "last_updated": "2026-03-22T13:16:33.175644+00:00",
   "classes": [
     {
       "studio_id": "looking-glass",
@@ -1625,10 +1625,23 @@
       "source": "https://www.yoga-atelier-basel.ch/angebot/woechentliche-kurse/",
       "verified": false,
       "last_checked": "2026-03-21"
+    },
+    {
+      "studio_id": "meyo-house",
+      "studio_name": "MEYO HOUSE",
+      "day": "",
+      "time_start": "9:00",
+      "time_end": "12:00",
+      "class_name": "LITURGIA DEL GIORNO\nwww.lachiesa.it \n\nProgetto missionario \nA sostegno delle opere di accoglienza dei missionari scalabriniani nel mondo.\nInvia la tua offerta:\nIBAN: CH60 0900 0000 4002 1272 4\n BIC: POFICHBEXXX\nParrocchia Cattolica italiana S. Pio X\nRümelinbachweg 14 - 4054 Basel\ncausale: Progetto Missionario \nGrazie!",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.meyohouse.com/",
+      "verified": true,
+      "last_checked": "2026-03-22"
     }
   ],
   "_meta": {
-    "last_updated": "2026-03-21",
+    "last_updated": "2026-03-22",
     "note": "Stundenplan-Daten aus öffentlichen Quellen. Für aktuelle Zeiten siehe Studio-Website."
   }
 }
