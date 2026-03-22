@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T08:11:55.866689+00:00",
+  "last_updated": "2026-03-22T11:18:55.901640+00:00",
   "studios": [
     {
       "id": "airyoga",
@@ -54,13 +54,13 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.airyoga.ch/preise",
-        "last_checked": "2026-03-22T08:08:41.371019+00:00"
+        "last_checked": "2026-03-22T11:15:19.555784+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:08:33.440215+00:00",
+      "last_scraped": "2026-03-22T11:15:04.354396+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:08:41.371098+00:00",
-        "last_price_check": "2026-03-22T08:08:41.371098+00:00",
+        "last_scraped": "2026-03-22T11:15:19.555849+00:00",
+        "last_price_check": "2026-03-22T11:15:19.555849+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -120,12 +120,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.sanapurna.ch/yoga-price-packages.php",
-        "last_checked": "2026-03-22T08:08:42.151270+00:00"
+        "last_checked": "2026-03-22T11:15:20.731599+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:08:41.898245+00:00",
+      "last_scraped": "2026-03-22T11:15:20.175573+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:08:42.151288+00:00",
+        "last_scraped": "2026-03-22T11:15:20.731615+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -195,10 +195,10 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.athayoga.ch/preise",
-        "last_checked": "2026-03-22T08:08:45.328352+00:00"
+        "last_checked": "2026-03-22T11:15:24.590348+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:08:43.430513+00:00",
+      "last_scraped": "2026-03-22T11:15:22.395572+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -230,8 +230,8 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-03-22T08:08:45.328406+00:00",
-        "last_price_check": "2026-03-22T08:08:45.328406+00:00",
+        "last_scraped": "2026-03-22T11:15:24.590408+00:00",
+        "last_price_check": "2026-03-22T11:15:24.590408+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -311,17 +311,17 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:08:45.784715+00:00",
+      "last_scraped": "2026-03-22T11:15:24.916989+00:00",
       "pricing": {
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogastudiozuerich.ch/angebot",
-        "last_checked": "2026-03-22T08:08:49.296225+00:00",
+        "last_checked": "2026-03-22T11:15:30.560118+00:00",
         "abo": 90.0
       },
       "_meta": {
-        "last_scraped": "2026-03-22T08:08:49.296281+00:00",
-        "last_price_check": "2026-03-22T08:08:49.296281+00:00",
+        "last_scraped": "2026-03-22T11:15:30.560189+00:00",
+        "last_price_check": "2026-03-22T11:15:30.560189+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -391,10 +391,10 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://soasana.ch/prices",
-        "last_checked": "2026-03-22T08:08:49.658296+00:00"
+        "last_checked": "2026-03-22T11:15:31.009351+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:08:49.506010+00:00",
+      "last_scraped": "2026-03-22T11:15:30.810326+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -438,8 +438,8 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-03-22T08:08:49.658351+00:00",
-        "last_price_check": "2026-03-22T08:08:49.658351+00:00",
+        "last_scraped": "2026-03-22T11:15:31.009422+00:00",
+        "last_price_check": "2026-03-22T11:15:31.009422+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -547,9 +547,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:08:51.797912+00:00",
+      "last_scraped": "2026-03-22T11:15:31.582046+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:08:52.779123+00:00",
+        "last_scraped": "2026-03-22T11:15:32.376816+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -595,7 +595,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:08:54.135310+00:00",
+      "last_scraped": "2026-03-22T11:15:33.571337+00:00",
       "detected_booking_links": [
         {
           "platform": "mindbody",
@@ -630,12 +630,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.bikramyoga.ch",
-        "last_checked": "2026-03-22T08:08:55.514874+00:00",
+        "last_checked": "2026-03-22T11:15:35.188767+00:00",
         "abo": 100.0
       },
       "_meta": {
-        "last_scraped": "2026-03-22T08:08:55.514947+00:00",
-        "last_price_check": "2026-03-22T08:08:55.514947+00:00",
+        "last_scraped": "2026-03-22T11:15:35.188860+00:00",
+        "last_price_check": "2026-03-22T11:15:35.188860+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -712,9 +712,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:08:57.046007+00:00",
+      "last_scraped": "2026-03-22T11:15:36.701960+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:09:06.525408+00:00",
+        "last_scraped": "2026-03-22T11:15:46.014329+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -768,12 +768,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.ashtanga-yoga-zurich.com/schedule",
-        "last_checked": "2026-03-22T08:09:07.684695+00:00"
+        "last_checked": "2026-03-22T11:15:47.184250+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:09:06.950142+00:00",
+      "last_scraped": "2026-03-22T11:15:46.385593+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:09:07.684710+00:00",
+        "last_scraped": "2026-03-22T11:15:47.184267+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -822,9 +822,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:09:08.286242+00:00",
+      "last_scraped": "2026-03-22T11:15:48.779531+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:09:13.402753+00:00",
+        "last_scraped": "2026-03-22T11:15:54.612850+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -883,13 +883,13 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://bodyart.studio/en",
-        "last_checked": "2026-03-22T08:09:20.107500+00:00"
+        "last_checked": "2026-03-22T11:16:01.342216+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:09:14.874636+00:00",
+      "last_scraped": "2026-03-22T11:15:55.944153+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:09:20.107652+00:00",
-        "last_price_check": "2026-03-22T08:09:20.107652+00:00",
+        "last_scraped": "2026-03-22T11:16:01.342311+00:00",
+        "last_price_check": "2026-03-22T11:16:01.342311+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -940,10 +940,10 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://dasyogahaus.ch/preise/",
-        "last_checked": "2026-03-22T08:09:41.510116+00:00"
+        "last_checked": "2026-03-22T11:16:21.937893+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:09:23.968387+00:00",
+      "last_scraped": "2026-03-22T11:16:04.874002+00:00",
       "detected_booking_links": [
         {
           "platform": "mindbody",
@@ -955,7 +955,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-03-22T08:09:41.510129+00:00",
+        "last_scraped": "2026-03-22T11:16:21.937911+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -1023,12 +1023,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.dasyogahaus-dubs.ch/preise",
-        "last_checked": "2026-03-22T08:09:42.603040+00:00"
+        "last_checked": "2026-03-22T11:16:23.056436+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:09:41.984131+00:00",
+      "last_scraped": "2026-03-22T11:16:22.329347+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:09:42.603058+00:00",
+        "last_scraped": "2026-03-22T11:16:23.056454+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -1085,19 +1085,19 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:09:43.737314+00:00",
+      "last_scraped": "2026-03-22T11:16:24.546661+00:00",
       "pricing": {
         "currency": "CHF",
         "verified": true,
         "source": "https://yoga-spirit.ch/prices",
-        "last_checked": "2026-03-22T08:09:45.138774+00:00",
+        "last_checked": "2026-03-22T11:16:26.155771+00:00",
         "trial": 25.0,
         "abo": 25.0,
         "monthly": 38.0
       },
       "_meta": {
-        "last_scraped": "2026-03-22T08:09:45.138837+00:00",
-        "last_price_check": "2026-03-22T08:09:45.138837+00:00",
+        "last_scraped": "2026-03-22T11:16:26.155841+00:00",
+        "last_price_check": "2026-03-22T11:16:26.155841+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -1148,9 +1148,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:09:45.969622+00:00",
+      "last_scraped": "2026-03-22T11:16:27.413750+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:09:47.892692+00:00",
+        "last_scraped": "2026-03-22T11:16:29.721023+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -1204,13 +1204,13 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.xn--yoga-zrichberg-lsb.ch/preise",
-        "last_checked": "2026-03-22T08:09:48.874880+00:00",
+        "last_checked": "2026-03-22T11:16:30.400110+00:00",
         "abo": 125.0
       },
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-03-22T08:09:48.874960+00:00",
-        "last_price_check": "2026-03-22T08:09:48.874960+00:00",
+        "last_scraped": "2026-03-22T11:16:30.400196+00:00",
+        "last_price_check": "2026-03-22T11:16:30.400196+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
@@ -1266,10 +1266,10 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogaamfluss.ch/",
-        "last_checked": "2026-03-22T08:09:50.766667+00:00"
+        "last_checked": "2026-03-22T11:16:32.555055+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:09:49.696542+00:00",
+      "last_scraped": "2026-03-22T11:16:31.299385+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -1293,7 +1293,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-03-22T08:09:50.766685+00:00",
+        "last_scraped": "2026-03-22T11:16:32.555071+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -1363,12 +1363,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.iyengar-yoga-zurich.ch/kontakt-preise.html",
-        "last_checked": "2026-03-22T08:09:53.349798+00:00"
+        "last_checked": "2026-03-22T11:16:35.626651+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:09:51.725776+00:00",
+      "last_scraped": "2026-03-22T11:16:33.806584+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:09:53.349815+00:00",
+        "last_scraped": "2026-03-22T11:16:35.626669+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -1416,9 +1416,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:09:54.010454+00:00",
+      "last_scraped": "2026-03-22T11:16:38.491248+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:09:56.727469+00:00",
+        "last_scraped": "2026-03-22T11:16:48.040591+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -1471,9 +1471,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:09:57.010842+00:00",
+      "last_scraped": "2026-03-22T11:16:48.395283+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:09:57.786603+00:00",
+        "last_scraped": "2026-03-22T11:16:49.022575+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -1532,7 +1532,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:09:58.157396+00:00",
+      "last_scraped": "2026-03-22T11:16:49.501615+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -1540,7 +1540,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-03-22T08:09:58.565905+00:00",
+        "last_scraped": "2026-03-22T11:16:50.082958+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -1602,9 +1602,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:10:02.077206+00:00",
+      "last_scraped": "2026-03-22T11:16:53.239631+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:10:18.779739+00:00",
+        "last_scraped": "2026-03-22T11:17:08.412909+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -1655,9 +1655,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:10:20.155239+00:00",
+      "last_scraped": "2026-03-22T11:17:09.707302+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:10:23.160615+00:00",
+        "last_scraped": "2026-03-22T11:17:14.255578+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -1710,14 +1710,14 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.planetyoga.ch/preise",
-        "last_checked": "2026-03-22T08:10:24.489604+00:00",
+        "last_checked": "2026-03-22T11:17:16.053505+00:00",
         "monthly": 159.0,
         "abo": 80.0,
         "card_10": 235.0
       },
       "_meta": {
-        "last_scraped": "2026-03-22T08:10:24.489674+00:00",
-        "last_price_check": "2026-03-22T08:10:24.489674+00:00",
+        "last_scraped": "2026-03-22T11:17:16.053568+00:00",
+        "last_price_check": "2026-03-22T11:17:16.053568+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
@@ -1770,9 +1770,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:10:25.125026+00:00",
+      "last_scraped": "2026-03-22T11:17:16.535701+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:10:25.708959+00:00",
+        "last_scraped": "2026-03-22T11:17:17.272701+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -1816,9 +1816,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:10:26.187918+00:00",
+      "last_scraped": "2026-03-22T11:17:17.764650+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:10:28.077480+00:00",
+        "last_scraped": "2026-03-22T11:17:19.530628+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -1902,7 +1902,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-03-22T08:10:34.913336+00:00",
+        "last_scraped": "2026-03-22T11:17:27.514774+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [],
@@ -1950,9 +1950,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:10:35.941127+00:00",
+      "last_scraped": "2026-03-22T11:17:28.639977+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:10:42.316398+00:00",
+        "last_scraped": "2026-03-22T11:17:35.717812+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -2005,9 +2005,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:10:44.324645+00:00",
+      "last_scraped": "2026-03-22T11:17:37.483127+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:10:48.150088+00:00",
+        "last_scraped": "2026-03-22T11:17:40.310443+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -2061,7 +2061,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:10:48.654918+00:00",
+      "last_scraped": "2026-03-22T11:17:41.077082+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -2073,7 +2073,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-03-22T08:10:50.185022+00:00",
+        "last_scraped": "2026-03-22T11:17:41.876299+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -2128,9 +2128,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:10:52.473329+00:00",
+      "last_scraped": "2026-03-22T11:17:44.613313+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:10:53.289725+00:00",
+        "last_scraped": "2026-03-22T11:17:45.377774+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -2182,9 +2182,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:10:53.789445+00:00",
+      "last_scraped": "2026-03-22T11:17:45.782314+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:10:54.658508+00:00",
+        "last_scraped": "2026-03-22T11:17:46.461654+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -2235,12 +2235,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://yogabynora.ch/preise",
-        "last_checked": "2026-03-22T08:10:58.832532+00:00"
+        "last_checked": "2026-03-22T11:17:49.584637+00:00"
       },
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-03-22T08:10:58.832632+00:00",
-        "last_price_check": "2026-03-22T08:10:58.832632+00:00",
+        "last_scraped": "2026-03-22T11:17:49.584696+00:00",
+        "last_price_check": "2026-03-22T11:17:49.584696+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
@@ -2295,12 +2295,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.jiokundaliniyoga.com/anmelden",
-        "last_checked": "2026-03-22T08:11:00.352863+00:00"
+        "last_checked": "2026-03-22T11:17:50.773908+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:10:59.432755+00:00",
+      "last_scraped": "2026-03-22T11:17:50.017623+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:11:00.352876+00:00",
+        "last_scraped": "2026-03-22T11:17:50.773926+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -2345,9 +2345,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:11:01.451196+00:00",
+      "last_scraped": "2026-03-22T11:17:53.306259+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:11:08.073317+00:00",
+        "last_scraped": "2026-03-22T11:17:59.980577+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -2399,7 +2399,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-03-22T08:11:08.555670+00:00",
+        "last_scraped": "2026-03-22T11:18:00.493902+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [],
@@ -2453,9 +2453,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:11:09.848007+00:00",
+      "last_scraped": "2026-03-22T11:18:02.326306+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:11:16.130246+00:00",
+        "last_scraped": "2026-03-22T11:18:10.369750+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -2508,11 +2508,11 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://projectpeace.ch/yoga-bodywork",
-        "last_checked": "2026-03-22T08:11:17.981660+00:00"
+        "last_checked": "2026-03-22T11:18:12.421080+00:00"
       },
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-03-22T08:11:17.981677+00:00",
+        "last_scraped": "2026-03-22T11:18:12.421098+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [],
@@ -2601,11 +2601,11 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yoga-moves.ch/ueber-uns/stundenplan-und-preise",
-        "last_checked": "2026-03-22T08:11:20.491618+00:00"
+        "last_checked": "2026-03-22T11:18:15.202396+00:00"
       },
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-03-22T08:11:20.491632+00:00",
+        "last_scraped": "2026-03-22T11:18:15.202415+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [],
@@ -2661,9 +2661,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:11:20.930758+00:00",
+      "last_scraped": "2026-03-22T11:18:15.681391+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:11:27.498669+00:00",
+        "last_scraped": "2026-03-22T11:18:21.919277+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -2722,7 +2722,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:11:32.953798+00:00",
+      "last_scraped": "2026-03-22T11:18:32.181374+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -2746,7 +2746,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-03-22T08:11:40.350905+00:00",
+        "last_scraped": "2026-03-22T11:18:39.447558+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -2815,13 +2815,13 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yoga-in.ch/preise",
-        "last_checked": "2026-03-22T08:11:44.266672+00:00"
+        "last_checked": "2026-03-22T11:18:43.925317+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:11:42.772571+00:00",
+      "last_scraped": "2026-03-22T11:18:42.418485+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:11:44.266769+00:00",
-        "last_price_check": "2026-03-22T08:11:44.266769+00:00",
+        "last_scraped": "2026-03-22T11:18:43.925375+00:00",
+        "last_price_check": "2026-03-22T11:18:43.925375+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -2869,7 +2869,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-03-22T08:11:48.179477+00:00",
+        "last_scraped": "2026-03-22T11:18:47.463450+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [],
@@ -2917,7 +2917,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:11:49.566201+00:00",
+      "last_scraped": "2026-03-22T11:18:49.013280+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -2933,7 +2933,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-03-22T08:11:55.866665+00:00",
+        "last_scraped": "2026-03-22T11:18:55.901613+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [

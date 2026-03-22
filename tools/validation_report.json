@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-22T08:11:56.031795",
+  "timestamp": "2026-03-22T11:18:56.080364",
   "summary": {
     "total_studios": 266,
     "total_active": 249,
@@ -838,22 +838,22 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yoga-am-hottingerplatz",
+      "studio_id": "yoga-culture",
       "studio_name": "Yoga Culture",
       "canton": "zurich",
       "field": "address",
       "value": "hottingerstrasse 35, 8032",
-      "message": "Gleiche Adresse 'hottingerstrasse 35, 8032' bei Studios: yoga-am-hottingerplatz, yoga-culture"
+      "message": "Gleiche Adresse 'hottingerstrasse 35, 8032' bei Studios: yoga-culture, yoga-am-hottingerplatz"
     },
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yogagold",
+      "studio_id": "yogalives",
       "studio_name": "Yogalives",
       "canton": "zurich",
       "field": "address",
       "value": "giesshübelstrasse 62b, 8045",
-      "message": "Gleiche Adresse 'giesshübelstrasse 62b, 8045' bei Studios: yogagold, yogalives"
+      "message": "Gleiche Adresse 'giesshübelstrasse 62b, 8045' bei Studios: yogalives, yogagold"
     },
     {
       "type": "duplicate_coordinates",
@@ -1018,12 +1018,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "hot-yoga-bern",
+      "studio_id": "hothaus-bern",
       "studio_name": "Hot Yoga Bern",
       "canton": "bern",
       "field": "address",
       "value": "bubenbergplatz 8, 3011",
-      "message": "Gleiche Adresse 'bubenbergplatz 8, 3011' bei Studios: hot-yoga-bern, hothaus-bern, vayam-yoga-bern"
+      "message": "Gleiche Adresse 'bubenbergplatz 8, 3011' bei Studios: hothaus-bern, vayam-yoga-bern, hot-yoga-bern"
     },
     {
       "type": "duplicate_coordinates",
@@ -1148,12 +1148,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yoga-mit-herz",
+      "studio_id": "ashtanga-luzern",
       "studio_name": "Ashtanga Yoga Luzern",
       "canton": "luzern",
       "field": "address",
       "value": "weggisgasse 31, 6004",
-      "message": "Gleiche Adresse 'weggisgasse 31, 6004' bei Studios: yoga-mit-herz, ashtanga-luzern"
+      "message": "Gleiche Adresse 'weggisgasse 31, 6004' bei Studios: ashtanga-luzern, yoga-mit-herz"
     },
     {
       "type": "duplicate_address",
@@ -1168,12 +1168,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "pure-you-yoga-horw",
+      "studio_id": "yogakurse-horw",
       "studio_name": "Pure You Yoga",
       "canton": "luzern",
       "field": "address",
       "value": "kantonsstrasse 100, 6048",
-      "message": "Gleiche Adresse 'kantonsstrasse 100, 6048' bei Studios: pure-you-yoga-horw, yogakurse-horw"
+      "message": "Gleiche Adresse 'kantonsstrasse 100, 6048' bei Studios: yogakurse-horw, pure-you-yoga-horw"
     },
     {
       "type": "duplicate_coordinates",
@@ -1308,22 +1308,22 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yogabloom",
+      "studio_id": "food-changes",
       "studio_name": "YOGABLOOM",
       "canton": "basel-stadt",
       "field": "address",
       "value": "pfluggasslein 1, 4001",
-      "message": "Gleiche Adresse 'pfluggasslein 1, 4001' bei Studios: yogabloom, food-changes"
+      "message": "Gleiche Adresse 'pfluggasslein 1, 4001' bei Studios: food-changes, yogabloom"
     },
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yoga-now",
+      "studio_id": "ayalga",
       "studio_name": "Ayalga Yoga (Iyengar)",
       "canton": "basel-stadt",
       "field": "address",
       "value": "basel, ",
-      "message": "Gleiche Adresse 'basel, ' bei Studios: yoga-now, kathrin-mathews, klubschule, katerina-wen, mysore-club, ayalga"
+      "message": "Gleiche Adresse 'basel, ' bei Studios: ayalga, kathrin-mathews, klubschule, katerina-wen, yoga-now, mysore-club"
     },
     {
       "type": "duplicate_coordinates",
@@ -1598,12 +1598,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yogaplaza-davos",
+      "studio_id": "flux2motus-davos",
       "studio_name": "flux2motus - Yoga & Massage",
       "canton": "graubuenden",
       "field": "address",
       "value": "mattastrasse 6, 7270",
-      "message": "Gleiche Adresse 'mattastrasse 6, 7270' bei Studios: yogaplaza-davos, flux2motus-davos"
+      "message": "Gleiche Adresse 'mattastrasse 6, 7270' bei Studios: flux2motus-davos, yogaplaza-davos"
     },
     {
       "type": "duplicate_coordinates",
@@ -1658,12 +1658,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "ashtanga-yoga-lausanne",
+      "studio_id": "yogaworks-lausanne",
       "studio_name": "Yogaworks",
       "canton": "vaud",
       "field": "address",
       "value": "rue chaucrau 3-5, 1003",
-      "message": "Gleiche Adresse 'rue chaucrau 3-5, 1003' bei Studios: ashtanga-yoga-lausanne, yogaworks-lausanne"
+      "message": "Gleiche Adresse 'rue chaucrau 3-5, 1003' bei Studios: yogaworks-lausanne, ashtanga-yoga-lausanne"
     },
     {
       "type": "duplicate_coordinates",

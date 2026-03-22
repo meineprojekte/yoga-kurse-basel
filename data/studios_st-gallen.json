@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T08:04:21.431089+00:00",
+  "last_updated": "2026-03-22T11:10:26.575825+00:00",
   "studios": [
     {
       "id": "yoga-in-der-altstadt-st-gallen",
@@ -41,7 +41,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-03-22T08:03:52.854304+00:00",
+        "last_scraped": "2026-03-22T11:09:59.196083+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [],
@@ -86,9 +86,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:03:53.661200+00:00",
+      "last_scraped": "2026-03-22T11:10:00.161432+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:03:54.747531+00:00",
+        "last_scraped": "2026-03-22T11:10:01.441856+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -138,7 +138,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:03:57.909070+00:00",
+      "last_scraped": "2026-03-22T11:10:04.604241+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -162,7 +162,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-03-22T08:04:06.530330+00:00",
+        "last_scraped": "2026-03-22T11:10:13.404918+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -231,7 +231,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:04:07.352798+00:00",
+      "last_scraped": "2026-03-22T11:10:14.506405+00:00",
       "detected_booking_links": [
         {
           "platform": "momoyoga",
@@ -455,7 +455,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-03-22T08:04:08.928474+00:00",
+        "last_scraped": "2026-03-22T11:10:16.300018+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -727,12 +727,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.lineupyoga.ch/yoga-preise-abos",
-        "last_checked": "2026-03-22T08:04:09.913465+00:00"
+        "last_checked": "2026-03-22T11:10:17.437811+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:04:09.349019+00:00",
+      "last_scraped": "2026-03-22T11:10:16.728234+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:04:09.913479+00:00",
+        "last_scraped": "2026-03-22T11:10:17.437829+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -779,10 +779,10 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://123yoga.ch/courses/",
-        "last_checked": "2026-03-22T08:04:16.796740+00:00"
+        "last_checked": "2026-03-22T11:10:20.881110+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:04:14.998396+00:00",
+      "last_scraped": "2026-03-22T11:10:18.708577+00:00",
       "detected_booking_links": [
         {
           "platform": "fitogram",
@@ -790,7 +790,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-03-22T08:04:16.796755+00:00",
+        "last_scraped": "2026-03-22T11:10:20.881127+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -843,7 +843,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-03-22T08:04:17.212049+00:00",
+        "last_scraped": "2026-03-22T11:10:21.199727+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [],
@@ -896,12 +896,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogaloft.ch/angebot2.php",
-        "last_checked": "2026-03-22T08:04:18.899339+00:00"
+        "last_checked": "2026-03-22T11:10:23.312301+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:04:17.888808+00:00",
+      "last_scraped": "2026-03-22T11:10:22.058791+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:04:18.899359+00:00",
+        "last_scraped": "2026-03-22T11:10:23.312324+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -952,13 +952,13 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://hotyoga4u.ch",
-        "last_checked": "2026-03-22T08:04:21.430935+00:00"
+        "last_checked": "2026-03-22T11:10:26.575663+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:04:19.838846+00:00",
+      "last_scraped": "2026-03-22T11:10:24.704812+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:04:21.431078+00:00",
-        "last_price_check": "2026-03-22T08:04:21.431078+00:00",
+        "last_scraped": "2026-03-22T11:10:26.575809+00:00",
+        "last_price_check": "2026-03-22T11:10:26.575809+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {

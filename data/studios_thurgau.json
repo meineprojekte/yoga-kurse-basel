@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T08:04:38.501999+00:00",
+  "last_updated": "2026-03-22T11:10:47.254272+00:00",
   "studios": [
     {
       "id": "gymayo-frauenfeld",
@@ -41,12 +41,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://gymayo.ch/angebot/preise",
-        "last_checked": "2026-03-22T08:04:23.502625+00:00"
+        "last_checked": "2026-03-22T11:10:29.058890+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:04:22.301828+00:00",
+      "last_scraped": "2026-03-22T11:10:27.544485+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:04:23.502643+00:00",
+        "last_scraped": "2026-03-22T11:10:29.058907+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -93,7 +93,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-03-22T08:04:24.750868+00:00",
+        "last_scraped": "2026-03-22T11:10:30.266058+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [],
@@ -154,10 +154,10 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogagrenzenlos.com/preise",
-        "last_checked": "2026-03-22T08:04:25.233733+00:00"
+        "last_checked": "2026-03-22T11:10:30.802561+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:04:25.034231+00:00",
+      "last_scraped": "2026-03-22T11:10:30.623789+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -169,8 +169,8 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-03-22T08:04:25.233869+00:00",
-        "last_price_check": "2026-03-22T08:04:25.233869+00:00",
+        "last_scraped": "2026-03-22T11:10:30.802628+00:00",
+        "last_price_check": "2026-03-22T11:10:30.802628+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -233,13 +233,13 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yoga-asana.ch",
-        "last_checked": "2026-03-22T08:04:27.623281+00:00"
+        "last_checked": "2026-03-22T11:10:33.624092+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:04:26.464315+00:00",
+      "last_scraped": "2026-03-22T11:10:32.240990+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:04:27.623474+00:00",
-        "last_price_check": "2026-03-22T08:04:27.623474+00:00",
+        "last_scraped": "2026-03-22T11:10:33.624186+00:00",
+        "last_price_check": "2026-03-22T11:10:33.624186+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -289,12 +289,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.soma-yoga.ch/preise",
-        "last_checked": "2026-03-22T08:04:28.863972+00:00"
+        "last_checked": "2026-03-22T11:10:34.752380+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:04:28.041993+00:00",
+      "last_scraped": "2026-03-22T11:10:34.048914+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:04:28.863989+00:00",
+        "last_scraped": "2026-03-22T11:10:34.752398+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -342,9 +342,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:04:31.358126+00:00",
+      "last_scraped": "2026-03-22T11:10:38.857222+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:04:37.571510+00:00",
+        "last_scraped": "2026-03-22T11:10:45.895380+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -392,9 +392,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T08:04:37.928942+00:00",
+      "last_scraped": "2026-03-22T11:10:46.345777+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T08:04:38.501976+00:00",
+        "last_scraped": "2026-03-22T11:10:47.254256+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
