@@ -528,53 +528,6 @@ def scrape_studio(target):
         if not loaded:
             log.warning(f"  Page did not finish loading within 15s")
 
-        # Accept cookies / dismiss consent banners
-        cookie_js = r"""
-        (function() {
-            // Common cookie consent button selectors
-            var selectors = [
-                '[id*="accept" i]', '[id*="cookie" i] button', '[id*="consent" i] button',
-                '[class*="accept" i]', '[class*="cookie-accept" i]', '[class*="consent-accept" i]',
-                'button[class*="agree" i]', 'a[class*="agree" i]',
-                '[data-testid*="accept" i]', '[data-action*="accept" i]',
-                '.cc-accept', '.cc-allow', '.cc-dismiss',
-                '#onetrust-accept-btn-handler', '.onetrust-accept-btn-handler',
-                '#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll',
-                '#cookie-accept', '#accept-cookies', '#acceptAllCookies',
-                '.cookie-consent-accept', '.js-cookie-accept',
-                '[aria-label*="accept" i]', '[aria-label*="akzeptieren" i]',
-                '[aria-label*="accepter" i]', '[aria-label*="accetta" i]',
-                'button[title*="accept" i]', 'button[title*="akzeptieren" i]',
-                '.gdpr-accept', '#gdpr-accept',
-                // German-specific
-                'button:not([disabled])', 'a.btn'
-            ];
-            var clicked = false;
-            for (var i = 0; i < selectors.length - 2; i++) {
-                var btns = document.querySelectorAll(selectors[i]);
-                for (var j = 0; j < btns.length; j++) {
-                    var txt = (btns[j].textContent || '').toLowerCase().trim();
-                    if (txt.match(/^(accept|akzeptieren|accepter|accetta|ok|alle akzeptieren|accept all|tout accepter|accetta tutti|einverstanden|zustimmen|allow|erlauben|got it|verstanden|alles klar)$/i)) {
-                        btns[j].click();
-                        clicked = true;
-                        break;
-                    }
-                }
-                if (clicked) break;
-            }
-            // Also try removing overlay/modal blockers
-            var overlays = document.querySelectorAll('[class*="cookie-overlay"], [class*="consent-overlay"], [id*="cookie-banner"], [class*="cookie-banner"], .cc-banner, #onetrust-banner-sdk');
-            overlays.forEach(function(el) { el.style.display = 'none'; });
-            var body = document.body;
-            if (body) { body.style.overflow = 'auto'; body.classList.remove('no-scroll', 'modal-open'); }
-            return clicked ? 'clicked' : 'no-banner';
-        })();
-        """
-        cookie_result = safari_execute_js(cookie_js, timeout=5)
-        if cookie_result and 'clicked' in cookie_result:
-            log.info("  Cookie banner accepted automatically")
-            time.sleep(1)  # Wait for banner to dismiss
-
         # Extra wait for JS-heavy pages (Eversports, etc.)
         wait_time = 10 if is_eversports else 5
         log.info(f"  Waiting {wait_time}s for JS rendering...")
