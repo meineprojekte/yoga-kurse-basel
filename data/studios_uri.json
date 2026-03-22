@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T00:00:00Z",
+  "last_updated": "2026-03-22T08:05:10.347860+00:00",
   "studios": [
     {
       "id": "anantara-yogastudio-altdorf",
@@ -34,7 +34,18 @@
       "lat": 46.8808,
       "lng": 8.644,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:05:06.073942+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:05:08.088443+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.anantara-yogastudio.ch/"
+        }
+      }
     },
     {
       "id": "flow-altdorf",
@@ -73,7 +84,18 @@
       "lat": 46.8808,
       "lng": 8.644,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:05:08.714048+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:05:10.347764+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.flow-altdorf.ch/"
+        }
+      }
     },
     {
       "id": "urvani-yoga-altdorf",
@@ -107,7 +129,15 @@
       "lat": 46.8808,
       "lng": 8.644,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:05:10.347854+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {}
+      }
     }
   ]
 }

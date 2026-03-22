@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T00:00:00Z",
+  "last_updated": "2026-03-22T07:53:48.724628+00:00",
   "studios": [
     {
       "id": "yogaar-herisau",
@@ -33,7 +33,18 @@
       "lat": 47.3862,
       "lng": 9.279,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:53:47.783342+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:53:48.724611+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogaar.ch/"
+        }
+      }
     },
     {
       "id": "yoga-kinesiologie-herisau",

@@ -1,17 +1,113 @@
 {
-  "timestamp": "2026-03-21T23:18:58.456136",
+  "timestamp": "2026-03-22T08:11:56.031795",
   "summary": {
     "total_studios": 266,
     "total_active": 249,
-    "total_with_pricing": 91,
+    "total_with_pricing": 105,
     "total_classes": 759,
     "cantons_loaded": 26,
-    "anomalies_found": 31,
-    "warnings_found": 111,
+    "anomalies_found": 39,
+    "warnings_found": 122,
     "price_changes_found": 0,
     "first_run": false
   },
   "anomalies": [
+    {
+      "type": "price_out_of_range",
+      "severity": "high",
+      "studio_id": "yoga-spirit",
+      "studio_name": "Yoga Spirit",
+      "canton": "zurich",
+      "field": "pricing.monthly",
+      "value": 38.0,
+      "expected_range": "50-400",
+      "source": "https://yoga-spirit.ch/prices",
+      "message": "monthly CHF 38.0 ist ausserhalb des normalen Bereichs (CHF 50-400)"
+    },
+    {
+      "type": "price_out_of_range",
+      "severity": "high",
+      "studio_id": "vayam-yoga-bern",
+      "studio_name": "vayam yoga",
+      "canton": "bern",
+      "field": "pricing.monthly",
+      "value": 35.0,
+      "expected_range": "50-400",
+      "source": "https://www.vayamyoga.com",
+      "message": "monthly CHF 35.0 ist ausserhalb des normalen Bereichs (CHF 50-400)"
+    },
+    {
+      "type": "price_out_of_range",
+      "severity": "high",
+      "studio_id": "ashtanga-luzern",
+      "studio_name": "Ashtanga Yoga Luzern",
+      "canton": "luzern",
+      "field": "pricing.single",
+      "value": 500.0,
+      "expected_range": "10-60",
+      "source": "https://ashtanga-luzern.ch/prices",
+      "message": "single CHF 500.0 ist ausserhalb des normalen Bereichs (CHF 10-60)"
+    },
+    {
+      "type": "price_out_of_range",
+      "severity": "high",
+      "studio_id": "yogaraum-luzern",
+      "studio_name": "Yogaraum Luzern",
+      "canton": "luzern",
+      "field": "pricing.single",
+      "value": 120.0,
+      "expected_range": "10-60",
+      "source": "https://www.yogaraum-luzern.ch",
+      "message": "single CHF 120.0 ist ausserhalb des normalen Bereichs (CHF 10-60)"
+    },
+    {
+      "type": "price_out_of_range",
+      "severity": "high",
+      "studio_id": "fitnesspark",
+      "studio_name": "Fitnesspark Basel Heuwaage (Migros)",
+      "canton": "basel-stadt",
+      "field": "pricing.single",
+      "value": 131.0,
+      "expected_range": "10-60",
+      "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/preise",
+      "message": "single CHF 131.0 ist ausserhalb des normalen Bereichs (CHF 10-60)"
+    },
+    {
+      "type": "price_out_of_range",
+      "severity": "high",
+      "studio_id": "fitnesspark",
+      "studio_name": "Fitnesspark Basel Heuwaage (Migros)",
+      "canton": "basel-stadt",
+      "field": "pricing.monthly",
+      "value": 10.0,
+      "expected_range": "50-400",
+      "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/preise",
+      "message": "monthly CHF 10.0 ist ausserhalb des normalen Bereichs (CHF 50-400)"
+    },
+    {
+      "type": "price_out_of_range",
+      "severity": "high",
+      "studio_id": "yoga-grenzenlos-kreuzlingen",
+      "studio_name": "yoga grenzenlos",
+      "canton": "thurgau",
+      "field": "pricing.single",
+      "value": 150.0,
+      "expected_range": "10-60",
+      "source": "https://www.yogagrenzenlos.com/preise",
+      "message": "single CHF 150.0 ist ausserhalb des normalen Bereichs (CHF 10-60)"
+    },
+    {
+      "type": "price_out_of_range",
+      "severity": "high",
+      "studio_id": "ar-yoga-geneve",
+      "studio_name": "ar'Yoga Genève",
+      "canton": "geneve",
+      "field": "pricing.monthly",
+      "value": 15.0,
+      "expected_range": "50-400",
+      "source": "https://aryoga.ch",
+      "message": "monthly CHF 15.0 ist ausserhalb des normalen Bereichs (CHF 50-400)"
+    },
     {
       "type": "orphan_schedule_entry",
       "severity": "high",
@@ -356,6 +452,18 @@
   ],
   "warnings": [
     {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "airyoga",
+      "studio_name": "AIRYOGA",
+      "canton": "zurich",
+      "field": "pricing.card_10 / pricing.single",
+      "value": 4.8,
+      "expected_range": "7-12x",
+      "source": "https://www.airyoga.ch/preise",
+      "message": "10er-Karte/Einzeleintritt Verhältnis 4.8x (erwartet 7-12x)"
+    },
+    {
       "type": "trial_exceeds_single",
       "severity": "medium",
       "studio_id": "airyoga",
@@ -364,7 +472,7 @@
       "field": "pricing.trial vs pricing.single",
       "value": 75,
       "expected_range": "<= 25",
-      "source": "https://airyoga.ch/de/preise/",
+      "source": "https://www.airyoga.ch/preise",
       "message": "Probepreis CHF 75 ist höher als Einzeleintritt CHF 25"
     },
     {
@@ -386,10 +494,10 @@
       "studio_name": "ATHAYOGA",
       "canton": "zurich",
       "field": "pricing.trial vs pricing.single",
-      "value": 79,
+      "value": 79.0,
       "expected_range": "<= 36",
-      "source": "https://www.athayoga.ch/preise/",
-      "message": "Probepreis CHF 79 ist höher als Einzeleintritt CHF 36"
+      "source": "https://www.athayoga.ch/preise",
+      "message": "Probepreis CHF 79.0 ist höher als Einzeleintritt CHF 36"
     },
     {
       "type": "trial_exceeds_single",
@@ -399,9 +507,21 @@
       "canton": "zurich",
       "field": "pricing.trial vs pricing.single",
       "value": 65,
-      "expected_range": "<= 33",
+      "expected_range": "<= 33.0",
       "source": "https://soasana.ch/prices",
-      "message": "Probepreis CHF 65 ist höher als Einzeleintritt CHF 33"
+      "message": "Probepreis CHF 65 ist höher als Einzeleintritt CHF 33.0"
+    },
+    {
+      "type": "trial_exceeds_single",
+      "severity": "medium",
+      "studio_id": "bodyart-studio",
+      "studio_name": "BODYART Studio Zürich",
+      "canton": "zurich",
+      "field": "pricing.trial vs pricing.single",
+      "value": 40.0,
+      "expected_range": "<= 34",
+      "source": "https://bodyart.studio/en",
+      "message": "Probepreis CHF 40.0 ist höher als Einzeleintritt CHF 34"
     },
     {
       "type": "trial_exceeds_single",
@@ -414,6 +534,18 @@
       "expected_range": "<= 29",
       "source": "https://www.dasyogahaus-dubs.ch/preise",
       "message": "Probepreis CHF 75 ist höher als Einzeleintritt CHF 29"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "yoga-am-zuerichberg",
+      "studio_name": "Yoga am Zürichberg",
+      "canton": "zurich",
+      "field": "pricing.card_10 / pricing.single",
+      "value": 6.58,
+      "expected_range": "7-12x",
+      "source": "https://www.xn--yoga-zrichberg-lsb.ch/preise",
+      "message": "10er-Karte/Einzeleintritt Verhältnis 6.6x (erwartet 7-12x)"
     },
     {
       "type": "trial_exceeds_single",
@@ -459,9 +591,9 @@
       "canton": "bern",
       "field": "pricing.trial vs pricing.single",
       "value": 50,
-      "expected_range": "<= 38",
+      "expected_range": "<= 40.0",
       "source": "https://www.hothausyoga.com/pricing",
-      "message": "Probepreis CHF 50 ist höher als Einzeleintritt CHF 38"
+      "message": "Probepreis CHF 50 ist höher als Einzeleintritt CHF 40.0"
     },
     {
       "type": "price_ratio_unusual",
@@ -474,6 +606,18 @@
       "expected_range": "7-12x",
       "source": "https://yogabern.ch/de/kurse",
       "message": "10er-Karte/Einzeleintritt Verhältnis 6.2x (erwartet 7-12x)"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "vayam-yoga-bern",
+      "studio_name": "vayam yoga",
+      "canton": "bern",
+      "field": "pricing.monthly / pricing.single",
+      "value": 0.95,
+      "expected_range": "4-10x",
+      "source": "https://www.vayamyoga.com",
+      "message": "Monatsabo/Einzeleintritt Verhältnis 0.9x (erwartet 4-10x)"
     },
     {
       "type": "price_ratio_unusual",
@@ -512,6 +656,18 @@
       "message": "Probepreis CHF 60 ist höher als Einzeleintritt CHF 35"
     },
     {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "yogaraum-luzern",
+      "studio_name": "Yogaraum Luzern",
+      "canton": "luzern",
+      "field": "pricing.card_10 / pricing.single",
+      "value": 2.08,
+      "expected_range": "7-12x",
+      "source": "https://www.yogaraum-luzern.ch",
+      "message": "10er-Karte/Einzeleintritt Verhältnis 2.1x (erwartet 7-12x)"
+    },
+    {
       "type": "trial_exceeds_single",
       "severity": "medium",
       "studio_id": "looking-glass",
@@ -522,6 +678,30 @@
       "expected_range": "<= 30",
       "source": "https://thelookingglassbasel.com/pricing",
       "message": "Probepreis CHF 60 ist höher als Einzeleintritt CHF 30"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "niyama",
+      "studio_name": "Niyama Studio for Yoga & Pilates",
+      "canton": "basel-stadt",
+      "field": "pricing.card_10 / pricing.single",
+      "value": 6.0,
+      "expected_range": "7-12x",
+      "source": "https://www.niyama-yoga.ch/en/start/preise",
+      "message": "10er-Karte/Einzeleintritt Verhältnis 6.0x (erwartet 7-12x)"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "niyama",
+      "studio_name": "Niyama Studio for Yoga & Pilates",
+      "canton": "basel-stadt",
+      "field": "pricing.monthly / pricing.single",
+      "value": 2.0,
+      "expected_range": "4-10x",
+      "source": "https://www.niyama-yoga.ch/en/start/preise",
+      "message": "Monatsabo/Einzeleintritt Verhältnis 2.0x (erwartet 4-10x)"
     },
     {
       "type": "trial_exceeds_single",
@@ -550,13 +730,25 @@
     {
       "type": "price_ratio_unusual",
       "severity": "medium",
+      "studio_id": "mint",
+      "studio_name": "mint Basel",
+      "canton": "basel-stadt",
+      "field": "pricing.card_10 / pricing.single",
+      "value": 6.67,
+      "expected_range": "7-12x",
+      "source": "https://mint-loft.ch/preise",
+      "message": "10er-Karte/Einzeleintritt Verhältnis 6.7x (erwartet 7-12x)"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
       "studio_id": "rin-yoga",
       "studio_name": "Rin Yoga — Rinny Biberstein",
       "canton": "basel-stadt",
       "field": "pricing.card_10 / pricing.single",
       "value": 6.67,
       "expected_range": "7-12x",
-      "source": "https://rin.yoga/",
+      "source": "https://rin.yoga",
       "message": "10er-Karte/Einzeleintritt Verhältnis 6.7x (erwartet 7-12x)"
     },
     {
@@ -565,11 +757,23 @@
       "studio_id": "fitnesspark",
       "studio_name": "Fitnesspark Basel Heuwaage (Migros)",
       "canton": "basel-stadt",
+      "field": "pricing.card_10 / pricing.single",
+      "value": 1.68,
+      "expected_range": "7-12x",
+      "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/preise",
+      "message": "10er-Karte/Einzeleintritt Verhältnis 1.7x (erwartet 7-12x)"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "fitnesspark",
+      "studio_name": "Fitnesspark Basel Heuwaage (Migros)",
+      "canton": "basel-stadt",
       "field": "pricing.monthly / pricing.single",
-      "value": 3.15,
+      "value": 0.08,
       "expected_range": "4-10x",
-      "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/prices/",
-      "message": "Monatsabo/Einzeleintritt Verhältnis 3.2x (erwartet 4-10x)"
+      "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/preise",
+      "message": "Monatsabo/Einzeleintritt Verhältnis 0.1x (erwartet 4-10x)"
     },
     {
       "type": "trial_exceeds_single",
@@ -594,6 +798,30 @@
       "expected_range": "7-12x",
       "source": "https://123yoga.ch/courses/",
       "message": "10er-Karte/Einzeleintritt Verhältnis 6.7x (erwartet 7-12x)"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "yoga-grenzenlos-kreuzlingen",
+      "studio_name": "yoga grenzenlos",
+      "canton": "thurgau",
+      "field": "pricing.card_10 / pricing.single",
+      "value": 3.13,
+      "expected_range": "7-12x",
+      "source": "https://www.yogagrenzenlos.com/preise",
+      "message": "10er-Karte/Einzeleintritt Verhältnis 3.1x (erwartet 7-12x)"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "yoga-grenzenlos-kreuzlingen",
+      "studio_name": "yoga grenzenlos",
+      "canton": "thurgau",
+      "field": "pricing.monthly / pricing.single",
+      "value": 0.87,
+      "expected_range": "4-10x",
+      "source": "https://www.yogagrenzenlos.com/preise",
+      "message": "Monatsabo/Einzeleintritt Verhältnis 0.9x (erwartet 4-10x)"
     },
     {
       "type": "price_ratio_unusual",
@@ -790,12 +1018,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "hothaus-bern",
+      "studio_id": "hot-yoga-bern",
       "studio_name": "Hot Yoga Bern",
       "canton": "bern",
       "field": "address",
       "value": "bubenbergplatz 8, 3011",
-      "message": "Gleiche Adresse 'bubenbergplatz 8, 3011' bei Studios: hothaus-bern, vayam-yoga-bern, hot-yoga-bern"
+      "message": "Gleiche Adresse 'bubenbergplatz 8, 3011' bei Studios: hot-yoga-bern, hothaus-bern, vayam-yoga-bern"
     },
     {
       "type": "duplicate_coordinates",
@@ -930,22 +1158,22 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yoga-mit-herz",
+      "studio_id": "yogagemeinschaft-luzern",
       "studio_name": "Yogagemeinschaft Luzern",
       "canton": "luzern",
       "field": "address",
       "value": "hirschengraben 13a, 6003",
-      "message": "Gleiche Adresse 'hirschengraben 13a, 6003' bei Studios: yoga-mit-herz, yogagemeinschaft-luzern"
+      "message": "Gleiche Adresse 'hirschengraben 13a, 6003' bei Studios: yogagemeinschaft-luzern, yoga-mit-herz"
     },
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yogakurse-horw",
+      "studio_id": "pure-you-yoga-horw",
       "studio_name": "Pure You Yoga",
       "canton": "luzern",
       "field": "address",
       "value": "kantonsstrasse 100, 6048",
-      "message": "Gleiche Adresse 'kantonsstrasse 100, 6048' bei Studios: yogakurse-horw, pure-you-yoga-horw"
+      "message": "Gleiche Adresse 'kantonsstrasse 100, 6048' bei Studios: pure-you-yoga-horw, yogakurse-horw"
     },
     {
       "type": "duplicate_coordinates",
@@ -1080,12 +1308,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "food-changes",
+      "studio_id": "yogabloom",
       "studio_name": "YOGABLOOM",
       "canton": "basel-stadt",
       "field": "address",
       "value": "pfluggasslein 1, 4001",
-      "message": "Gleiche Adresse 'pfluggasslein 1, 4001' bei Studios: food-changes, yogabloom"
+      "message": "Gleiche Adresse 'pfluggasslein 1, 4001' bei Studios: yogabloom, food-changes"
     },
     {
       "type": "duplicate_address",
@@ -1095,7 +1323,7 @@
       "canton": "basel-stadt",
       "field": "address",
       "value": "basel, ",
-      "message": "Gleiche Adresse 'basel, ' bei Studios: yoga-now, ayalga, katerina-wen, mysore-club, klubschule, kathrin-mathews"
+      "message": "Gleiche Adresse 'basel, ' bei Studios: yoga-now, kathrin-mathews, klubschule, katerina-wen, mysore-club, ayalga"
     },
     {
       "type": "duplicate_coordinates",

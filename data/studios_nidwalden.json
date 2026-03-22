@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T00:00:00Z",
+  "last_updated": "2026-03-22T08:03:05.860272+00:00",
   "studios": [
     {
       "id": "yoga-ayurveda-zentrum-stans",
@@ -36,7 +36,18 @@
       "lat": 46.9592,
       "lng": 8.366,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:02:56.990784+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:03:03.082316+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://vedasudha.ch/"
+        }
+      }
     },
     {
       "id": "gesund-und-munter-stans",
@@ -73,7 +84,18 @@
       "lat": 46.9583,
       "lng": 8.3654,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:03:03.472826+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:03:04.360520+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.gesund-und-munter.ch/"
+        }
+      }
     },
     {
       "id": "sevencolors-stans",
@@ -109,7 +131,18 @@
       "lat": 46.9592,
       "lng": 8.366,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:03:05.126854+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:03:05.860251+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.sevencolors.ch/"
+        }
+      }
     }
   ]
 }

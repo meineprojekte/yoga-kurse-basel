@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T00:00:00Z",
+  "last_updated": "2026-03-22T07:58:17.957213+00:00",
   "studios": [
     {
       "id": "yogiface-fribourg",
@@ -39,7 +39,21 @@
         "trial": 0,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.yogiface.ch/prix"
+        "source": "https://www.yogiface.ch/prix",
+        "last_checked": "2026-03-22T07:58:12.452325+00:00",
+        "abo": 500.0
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:58:09.271936+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:58:12.452398+00:00",
+        "last_price_check": "2026-03-22T07:58:12.452398+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogiface.ch/",
+          "pricing": "https://www.yogiface.ch/prix"
+        }
       }
     },
     {
@@ -76,7 +90,18 @@
       "lat": 46.8019,
       "lng": 7.1509,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:58:12.758103+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:58:13.434718+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.happinez.ch/"
+        }
+      }
     },
     {
       "id": "sakinayoga-fribourg",
@@ -113,7 +138,18 @@
       "lat": 46.8065,
       "lng": 7.162,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:58:14.120774+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:58:14.976300+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.sakinayoga.com/"
+        }
+      }
     },
     {
       "id": "yoga-nicole-fribourg",
@@ -154,7 +190,19 @@
         "trial": 10,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.yoga-nicole.ch/kurse-cours/preise-tarifs"
+        "source": "https://www.yoga-nicole.ch/kurse-cours/preise-tarifs",
+        "last_checked": "2026-03-22T07:58:17.957188+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:58:16.147107+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:58:17.957204+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yoga-nicole.ch/"
+        }
       }
     },
     {

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T00:00:00Z",
+  "last_updated": "2026-03-22T08:03:31.664674+00:00",
   "studios": [
     {
       "id": "heyoga-schwyz",
@@ -43,11 +43,53 @@
       "classes": [],
       "pricing": {
         "single": 30,
-        "card_10": 270,
+        "card_10": 300.0,
         "trial": 0,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.heyoga.ch/preise/"
+        "source": "https://www.heyoga.ch/preise",
+        "last_checked": "2026-03-22T08:03:23.088933+00:00",
+        "abo": 140.0
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:03:22.207845+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/widget/w/2Wi3sL?list=workshop"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/widget/w/2Wi3sL?list=retreat"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/widget/w/2Wi3sL?list=course"
+        }
+      ],
+      "_meta": {
+        "last_scraped": "2026-03-22T08:03:23.089030+00:00",
+        "last_price_check": "2026-03-22T08:03:23.089030+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/widget/w/2Wi3sL?list=workshop"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/widget/w/2Wi3sL?list=retreat"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/widget/w/2Wi3sL?list=course"
+          }
+        ],
+        "source_urls": {
+          "website": "https://www.heyoga.ch/",
+          "schedule": "https://www.heyoga.ch/yoga/",
+          "pricing": "https://www.heyoga.ch/preise"
+        }
       }
     },
     {
@@ -88,7 +130,18 @@
       "lat": 47.1275,
       "lng": 8.747,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:03:24.575588+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:03:29.607285+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://ganesha-yoga.ch/"
+        }
+      }
     },
     {
       "id": "yoga8-einsiedeln",
@@ -129,7 +182,19 @@
         "single": 37,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.yoga8.ch/"
+        "source": "https://www.yoga8.ch/",
+        "last_checked": "2026-03-22T08:03:31.664655+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:03:30.590089+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:03:31.664668+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yoga8.ch/"
+        }
       }
     }
   ]

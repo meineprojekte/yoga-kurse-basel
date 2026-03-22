@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T00:00:00Z",
+  "last_updated": "2026-03-22T08:05:34.496519+00:00",
   "studios": [
     {
       "id": "espace-tadasana-sion",
@@ -37,7 +37,18 @@
       "lat": 46.233,
       "lng": 7.3592,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:05:10.789088+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:05:11.545495+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.tadasana-yoga.ch/"
+        }
+      }
     },
     {
       "id": "happy-om-valais",
@@ -74,7 +85,18 @@
       "lat": 46.2875,
       "lng": 7.4275,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:05:14.149948+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:05:24.375293+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://happyom.ch/"
+        }
+      }
     },
     {
       "id": "isabella-bumann-yoga",
@@ -113,7 +135,19 @@
       "lat": 46.1083,
       "lng": 7.9279,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:05:27.730061+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:05:34.496502+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://isabellayoga.ch/",
+          "schedule": "https://isabellayoga.ch/en/yoga/"
+        }
+      }
     },
     {
       "id": "daniela-imboden-yoga-brig",

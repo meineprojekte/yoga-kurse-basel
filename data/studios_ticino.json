@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T00:00:00Z",
+  "last_updated": "2026-03-22T08:05:05.720820+00:00",
   "studios": [
     {
       "id": "yoga-dinamico-lugano",
@@ -40,7 +40,18 @@
       "lat": 46.0073,
       "lng": 8.9672,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:04:39.240613+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:04:40.220565+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogadinamico.ch/"
+        }
+      }
     },
     {
       "id": "yogal-lugano",
@@ -74,7 +85,19 @@
       "lat": 46.0095,
       "lng": 8.9268,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:04:40.652680+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:04:41.856990+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogalugano.ch/",
+          "schedule": "https://www.yogalugano.ch/schedule"
+        }
+      }
     },
     {
       "id": "slow-move-lugano",
@@ -111,7 +134,19 @@
       "lat": 46.0037,
       "lng": 8.9511,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:04:44.535969+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:04:49.210022+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://slow-move.ch/",
+          "schedule": "https://slow-move.ch/classes/"
+        }
+      }
     },
     {
       "id": "soulsinnature-yoga-loft",
@@ -150,7 +185,18 @@
       "lat": 46.0333,
       "lng": 8.9333,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:04:51.421314+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:05:00.126122+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.soulsinnature.net/yogaloft"
+        }
+      }
     },
     {
       "id": "centro-annapurna-tenero",
@@ -188,7 +234,18 @@
       "lat": 46.1728,
       "lng": 8.8497,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:05:00.828162+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:05:01.864392+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://centroannapurna.ch/"
+        }
+      }
     },
     {
       "id": "yoga-vidya-swiss-locarno",
@@ -229,7 +286,20 @@
         "trial": 30,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.yogavidyaswiss.ch/Prezzi"
+        "source": "https://www.yogavidyaswiss.ch/Prezzi",
+        "last_checked": "2026-03-22T08:05:04.704257+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:05:03.367282+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:05:04.704273+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogavidyaswiss.ch/",
+          "schedule": "https://www.yogavidyaswiss.ch/Orari"
+        }
       }
     },
     {
@@ -265,7 +335,19 @@
       "lat": 46.1953,
       "lng": 9.0238,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:05:05.165409+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:05:05.720800+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.tanjaioveneyoga.com/classes-bellinzona",
+          "schedule": "https://www.tanjaioveneyoga.com/classes-bellinzona"
+        }
+      }
     }
   ]
 }

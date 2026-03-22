@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T00:00:00Z",
+  "last_updated": "2026-03-22T08:03:08.053346+00:00",
   "studios": [
     {
       "id": "goyoga-sarnen",
@@ -42,7 +42,19 @@
         "trial": 20,
         "currency": "CHF",
         "verified": true,
-        "source": "https://goyoga.ch/stundenplan-2.html"
+        "source": "https://goyoga.ch/stundenplan-2.html",
+        "last_checked": "2026-03-22T08:03:07.631011+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:03:06.520230+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:03:07.631030+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://goyoga.ch/"
+        }
       }
     },
     {
@@ -81,7 +93,17 @@
       "lat": 46.885,
       "lng": 8.24,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:03:08.053332+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yoga-ishwari.ch/"
+        }
+      }
     }
   ]
 }

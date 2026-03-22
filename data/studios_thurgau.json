@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T00:00:00Z",
+  "last_updated": "2026-03-22T08:04:38.501999+00:00",
   "studios": [
     {
       "id": "gymayo-frauenfeld",
@@ -40,7 +40,19 @@
         "trial": 0,
         "currency": "CHF",
         "verified": true,
-        "source": "https://gymayo.ch/angebot/preise"
+        "source": "https://gymayo.ch/angebot/preise",
+        "last_checked": "2026-03-22T08:04:23.502625+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:04:22.301828+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:04:23.502643+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://gymayo.ch/"
+        }
       }
     },
     {
@@ -78,7 +90,18 @@
       "lat": 47.556,
       "lng": 8.904,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:04:24.750868+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yoga-place.com/",
+          "schedule": "https://www.eversports.ch/s/yogaplace"
+        }
+      }
     },
     {
       "id": "yoga-grenzenlos-kreuzlingen",
@@ -124,13 +147,45 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 26,
-        "card_10": 245,
+        "single": 150.0,
+        "card_10": 470.0,
         "monthly": 130,
         "trial": 13,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.yogagrenzenlos.com/preise"
+        "source": "https://www.yogagrenzenlos.com/preise",
+        "last_checked": "2026-03-22T08:04:25.233733+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:04:25.034231+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/i/hg06b1"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://help.eversportsmanager.com/de/collections/103221-informationen-fur-deine-kund-innen"
+        }
+      ],
+      "_meta": {
+        "last_scraped": "2026-03-22T08:04:25.233869+00:00",
+        "last_price_check": "2026-03-22T08:04:25.233869+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/i/hg06b1"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://help.eversportsmanager.com/de/collections/103221-informationen-fur-deine-kund-innen"
+          }
+        ],
+        "source_urls": {
+          "website": "https://www.yogagrenzenlos.com/",
+          "pricing": "https://www.yogagrenzenlos.com/preise"
+        }
       }
     },
     {
@@ -172,12 +227,25 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 30,
-        "card_10": 270,
+        "single": 32.0,
+        "card_10": 300.0,
         "trial": 10,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.yoga-asana.ch/"
+        "source": "https://www.yoga-asana.ch",
+        "last_checked": "2026-03-22T08:04:27.623281+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:04:26.464315+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:04:27.623474+00:00",
+        "last_price_check": "2026-03-22T08:04:27.623474+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yoga-asana.ch/",
+          "pricing": "https://www.yoga-asana.ch"
+        }
       }
     },
     {
@@ -220,7 +288,19 @@
         "trial": 17,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.soma-yoga.ch/preise"
+        "source": "https://www.soma-yoga.ch/preise",
+        "last_checked": "2026-03-22T08:04:28.863972+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:04:28.041993+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:04:28.863989+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.soma-yoga.ch/"
+        }
       }
     },
     {
@@ -260,7 +340,18 @@
       "lat": 47.547,
       "lng": 9.289,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:04:31.358126+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:04:37.571510+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.feelyoga.ch/"
+        }
+      }
     },
     {
       "id": "miyoga-thurgau",
@@ -299,7 +390,18 @@
       "lat": 47.5571,
       "lng": 8.898,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:04:37.928942+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:04:38.501976+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.miyoga.ch/"
+        }
+      }
     }
   ]
 }

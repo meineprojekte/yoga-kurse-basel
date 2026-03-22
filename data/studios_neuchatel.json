@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T00:00:00Z",
+  "last_updated": "2026-03-22T08:02:55.027395+00:00",
   "studios": [
     {
       "id": "yoga-fabrik-neuchatel",
@@ -45,7 +45,19 @@
       "lat": 46.99,
       "lng": 6.9293,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:02:37.759372+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:02:44.971544+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://yoga-fabrik.ch/",
+          "schedule": "https://yogafabrik.zenitoo.ch/fr/"
+        }
+      }
     },
     {
       "id": "yoga-shashin-neuchatel",
@@ -85,7 +97,19 @@
         "trial": 25,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.yogashashin.ch/"
+        "source": "https://www.yogashashin.ch/",
+        "last_checked": "2026-03-22T08:02:47.937002+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:02:46.090479+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:02:47.937019+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogashashin.ch/"
+        }
       }
     },
     {
@@ -124,7 +148,18 @@
       "lat": 47.1035,
       "lng": 6.8322,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:02:49.096026+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:02:53.828559+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.parvata.ch/"
+        }
+      }
     },
     {
       "id": "banyann-yoga",
@@ -167,7 +202,19 @@
       "lat": 47.1028,
       "lng": 6.8296,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:02:54.201677+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:02:55.027373+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.banyann.ch/",
+          "schedule": "https://www.banyann.ch/prestations"
+        }
+      }
     }
   ]
 }

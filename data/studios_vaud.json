@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T00:00:00Z",
+  "last_updated": "2026-03-22T08:07:59.312841+00:00",
   "studios": [
     {
       "id": "ooom-lausanne",
@@ -47,7 +47,20 @@
         "monthly": 165,
         "currency": "CHF",
         "verified": true,
-        "source": "https://ooom.ch/tarifs/"
+        "source": "https://ooom.ch/tarifs/",
+        "last_checked": "2026-03-22T08:05:42.513580+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:05:35.987925+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:05:42.513632+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://ooom.ch/",
+          "schedule": "https://ooom.ch/"
+        }
       }
     },
     {
@@ -102,7 +115,31 @@
         "trial": 20,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.nuevalunayoga.ch/cours-collectifs-yoga-lausanne/"
+        "source": "https://www.nuevalunayoga.ch/cours-collectifs-yoga-lausanne/",
+        "last_checked": "2026-03-22T08:05:56.891135+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:05:45.352727+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "mindbody",
+          "url": "https://clients.mindbodyonline.com/ASP/su1.asp?studioid=405514&tg=&vt=&lvl=&stype=&view=&trn=0&page=&catid=&prodid=&date=9%2f10%2f2024&classid=0&prodGroupId=&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=0&loc=1"
+        }
+      ],
+      "_meta": {
+        "last_scraped": "2026-03-22T08:05:56.891152+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [
+          {
+            "platform": "mindbody",
+            "url": "https://clients.mindbodyonline.com/ASP/su1.asp?studioid=405514&tg=&vt=&lvl=&stype=&view=&trn=0&page=&catid=&prodid=&date=9%2f10%2f2024&classid=0&prodGroupId=&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=0&loc=1"
+          }
+        ],
+        "source_urls": {
+          "website": "https://www.nuevalunayoga.ch/",
+          "schedule": "https://www.nuevalunayoga.ch/"
+        }
       }
     },
     {
@@ -145,7 +182,19 @@
       "lat": 46.5225,
       "lng": 6.6295,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:05:57.303134+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:05:57.964117+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.theyogarden.ch/",
+          "schedule": "https://www.theyogarden.ch/"
+        }
+      }
     },
     {
       "id": "yogaworks-lausanne",
@@ -192,7 +241,20 @@
         "trial": 30,
         "currency": "CHF",
         "verified": true,
-        "source": "https://yogaworks-lausanne.ch/en/prices/"
+        "source": "https://yogaworks-lausanne.ch/en/prices/",
+        "last_checked": "2026-03-22T08:06:11.938051+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:06:00.121367+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:06:11.938072+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://yogaworks-lausanne.ch/",
+          "schedule": "https://yogaworks-lausanne.ch/en/"
+        }
       }
     },
     {
@@ -237,7 +299,18 @@
       "lat": 46.5155,
       "lng": 6.6275,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:06:12.700048+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://yogaflame.ch/",
+          "schedule": "https://yogaflame.ch/studios/studio-lausanne/"
+        }
+      }
     },
     {
       "id": "yogavaud",
@@ -277,7 +350,19 @@
       "lat": 46.527,
       "lng": 6.645,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "blocked",
+      "last_scraped": null,
+      "_meta": {
+        "last_scraped": "2026-03-22T08:06:13.173813+00:00",
+        "last_price_check": null,
+        "scrape_status": "blocked",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogavaud.ch/",
+          "schedule": "https://www.yogavaud.ch/"
+        }
+      }
     },
     {
       "id": "myoga-studio-lausanne",
@@ -325,7 +410,20 @@
         "trial": 15,
         "currency": "CHF",
         "verified": true,
-        "source": "https://myogastudio.ch/schedule-of-classes/classes-and-prices/"
+        "source": "https://myogastudio.ch/schedule-of-classes/classes-and-prices/",
+        "last_checked": "2026-03-22T08:06:27.062014+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:06:15.340679+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:06:27.062027+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://myogastudio.ch/",
+          "schedule": "https://myogastudio.ch/schedule-of-classes/classes-and-prices/"
+        }
       }
     },
     {
@@ -369,7 +467,18 @@
       "lat": 46.521,
       "lng": 6.631,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:06:32.587318+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.ashtanga-yoga-lausanne.com/",
+          "schedule": "https://en.ashtanga-yoga-lausanne.com/cours-horaire"
+        }
+      }
     },
     {
       "id": "imyoga-lausanne",
@@ -410,7 +519,19 @@
       "lat": 46.5125,
       "lng": 6.629,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:06:33.045613+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:06:33.725950+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://imyoga.ch/",
+          "schedule": "https://imyoga.ch/en/schedule"
+        }
+      }
     },
     {
       "id": "yoga-sadhana-lausanne",
@@ -446,7 +567,19 @@
       "lat": 46.5275,
       "lng": 6.604,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:06:40.491664+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:06:50.781176+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://vivre-le-yoga.ch/",
+          "schedule": "https://vivre-le-yoga.ch/"
+        }
+      }
     },
     {
       "id": "yoga-moves-nyon",
@@ -503,7 +636,20 @@
         "monthly": 250,
         "currency": "CHF",
         "verified": true,
-        "source": "https://yogamoves.blueleaf.ch/en/subscriptions/"
+        "source": "https://yogamoves.blueleaf.ch/en/subscriptions/",
+        "last_checked": "2026-03-22T08:06:53.358457+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:06:51.978426+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:06:53.358475+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogamovesnyon.ch/",
+          "schedule": "https://yogamoves.blueleaf.ch/en/calendar/"
+        }
       }
     },
     {
@@ -560,7 +706,20 @@
         "trial": 20,
         "currency": "CHF",
         "verified": true,
-        "source": "https://yogacenter.ch/prix/"
+        "source": "https://yogacenter.ch/prix/",
+        "last_checked": "2026-03-22T08:07:14.989486+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:06:56.722344+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:07:14.989501+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://yogacenter.ch/",
+          "schedule": "https://yogacenter.ch/en/"
+        }
       }
     },
     {
@@ -645,7 +804,18 @@
       "lat": 46.462,
       "lng": 6.848,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:07:16.913327+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.caroledalmas.com/",
+          "schedule": "https://www.caroledalmas.com/"
+        }
+      }
     },
     {
       "id": "sundora-shala-pully",
@@ -682,7 +852,19 @@
       "lat": 46.5105,
       "lng": 6.662,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:07:17.341320+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:07:18.113668+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.sundorashala.com/",
+          "schedule": "https://www.sundorashala.com/classes"
+        }
+      }
     },
     {
       "id": "yoga-pour-tous-nyon",
@@ -725,7 +907,20 @@
         "single": 30,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.yogapourtous-nyon.ch/tarifs/"
+        "source": "https://www.yogapourtous-nyon.ch/tarifs/",
+        "last_checked": "2026-03-22T08:07:59.312812+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:07:24.894852+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:07:59.312831+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogapourtous-nyon.ch/",
+          "schedule": "https://www.yogapourtous-nyon.ch/horaires/"
+        }
       }
     }
   ]

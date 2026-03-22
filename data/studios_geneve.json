@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T00:00:00Z",
+  "last_updated": "2026-03-22T08:00:25.266116+00:00",
   "studios": [
     {
       "id": "yoga7-geneve",
@@ -37,7 +37,18 @@
       "lat": 46.202,
       "lng": 6.1565,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:58:34.752749+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://yoga7.com/",
+          "schedule": "https://yoga7.com/horaire/"
+        }
+      }
     },
     {
       "id": "innercityoga",
@@ -123,7 +134,18 @@
       "lat": 46.204,
       "lng": 6.148,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:58:35.596673+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://yogaflame.ch/",
+          "schedule": "https://yogaflame.ch/studios/studio-geneva/"
+        }
+      }
     },
     {
       "id": "yoga-lab-geneve",
@@ -168,7 +190,31 @@
         "monthly": 195,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.lab.yoga/cours"
+        "source": "https://www.lab.yoga/cours",
+        "last_checked": "2026-03-22T07:58:36.729842+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:58:36.099204+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/s/yoga-lab-1"
+        }
+      ],
+      "_meta": {
+        "last_scraped": "2026-03-22T07:58:36.729857+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/s/yoga-lab-1"
+          }
+        ],
+        "source_urls": {
+          "website": "https://www.lab.yoga/",
+          "schedule": "https://www.lab.yoga/cours"
+        }
       }
     },
     {
@@ -211,7 +257,19 @@
       "lat": 46.201,
       "lng": 6.1495,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:58:38.498897+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:58:39.242395+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.fancy.yoga/",
+          "schedule": "https://www.fancy.yoga/en/yoga"
+        }
+      }
     },
     {
       "id": "sakura-yoga-geneve",
@@ -256,7 +314,20 @@
         "trial": 30,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.thesakurayoga.com/fr/tarifs"
+        "source": "https://www.thesakurayoga.com/fr/tarifs",
+        "last_checked": "2026-03-22T07:58:40.382120+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:58:39.551444+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:58:40.382138+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.thesakurayoga.com/",
+          "schedule": "https://www.thesakurayoga.com/"
+        }
       }
     },
     {
@@ -307,7 +378,19 @@
       "lat": 46.2185,
       "lng": 6.1375,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:58:42.973007+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:58:51.926135+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://colife.ch/",
+          "schedule": "https://colife.ch/studio-yoga-geneve/"
+        }
+      }
     },
     {
       "id": "sol-studio-geneve",
@@ -355,7 +438,20 @@
         "trial": 20,
         "currency": "CHF",
         "verified": true,
-        "source": "https://solstudio.ch/sol-yoga/"
+        "source": "https://solstudio.ch/sol-yoga/",
+        "last_checked": "2026-03-22T07:59:02.129074+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:58:56.091297+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:59:02.129092+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://solstudio.ch/",
+          "schedule": "https://solstudio.ch/"
+        }
       }
     },
     {
@@ -401,7 +497,20 @@
         "monthly": 299,
         "currency": "CHF",
         "verified": true,
-        "source": "https://swisspilatesandyoga.com/tarifs/"
+        "source": "https://swisspilatesandyoga.com/tarifs/",
+        "last_checked": "2026-03-22T07:59:09.538534+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:59:04.959308+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:59:09.538553+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://swisspilatesandyoga.com/",
+          "schedule": "https://swisspilatesandyoga.com/en/"
+        }
       }
     },
     {
@@ -454,7 +563,20 @@
         "trial": 22,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.aktayoga.ch/fr/subscriptions/"
+        "source": "https://www.aktayoga.ch/fr/subscriptions/",
+        "last_checked": "2026-03-22T07:59:14.500548+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:59:10.362013+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:59:14.500563+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.aktayoga.ch/",
+          "schedule": "https://www.aktayoga.ch/fr/"
+        }
       }
     },
     {
@@ -499,7 +621,20 @@
         "trial": 30,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.yoga-shambala.ch/horaires-tarifs.html"
+        "source": "https://www.yoga-shambala.ch/horaires-tarifs.html",
+        "last_checked": "2026-03-22T07:59:16.165011+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:59:15.300828+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:59:16.165023+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yoga-shambala.ch/",
+          "schedule": "https://www.yoga-shambala.ch/"
+        }
       }
     },
     {
@@ -539,7 +674,19 @@
       "lat": 46.182,
       "lng": 6.137,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:59:16.992060+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:59:26.697384+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://deva-yoga.ch/",
+          "schedule": "https://deva-yoga.ch/"
+        }
+      }
     },
     {
       "id": "yoga-nest-carouge",
@@ -582,7 +729,19 @@
       "lat": 46.1845,
       "lng": 6.1385,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:59:28.783494+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:59:41.704135+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://yoga-nest.com/",
+          "schedule": "https://yoga-nest.com/community/yoga-classes/"
+        }
+      }
     },
     {
       "id": "yoginimage-lancy",
@@ -624,7 +783,19 @@
       "lat": 46.177,
       "lng": 6.1285,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:59:42.113474+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:59:42.691918+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yoginimage.ch/",
+          "schedule": "https://www.yoginimage.ch/planning-et-tarif"
+        }
+      }
     },
     {
       "id": "ka-studio-geneve",
@@ -663,7 +834,19 @@
       "lat": 46.202,
       "lng": 6.1605,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:59:42.905023+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:59:43.428100+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.kastudio.ch/",
+          "schedule": "https://www.kastudio.ch/"
+        }
+      }
     },
     {
       "id": "ar-yoga-geneve",
@@ -705,7 +888,27 @@
       "lat": 46.2035,
       "lng": 6.16,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:59:46.844311+00:00",
+      "pricing": {
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://aryoga.ch",
+        "last_checked": "2026-03-22T08:00:02.593554+00:00",
+        "monthly": 15.0
+      },
+      "_meta": {
+        "last_scraped": "2026-03-22T08:00:02.593654+00:00",
+        "last_price_check": "2026-03-22T08:00:02.593654+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://aryoga.ch/",
+          "schedule": "https://aryoga.ch/",
+          "pricing": "https://aryoga.ch"
+        }
+      }
     },
     {
       "id": "yoga-geneve-studio",
@@ -749,7 +952,20 @@
         "card_10": 270,
         "currency": "CHF",
         "verified": true,
-        "source": "https://yogageneve.com/pricing"
+        "source": "https://yogageneve.com/pricing",
+        "last_checked": "2026-03-22T08:00:06.431777+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:00:03.781254+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:00:06.431792+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://yogageneve.com/",
+          "schedule": "https://yogageneve.com/"
+        }
       }
     },
     {
@@ -793,7 +1009,19 @@
       "lat": 46.1845,
       "lng": 6.137,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:00:10.968456+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:00:24.103622+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://yogasha.ch/",
+          "schedule": "https://yogasha.ch/"
+        }
+      }
     },
     {
       "id": "la-perle-de-letre",
@@ -827,7 +1055,19 @@
       "lat": 46.2044,
       "lng": 6.1432,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:00:24.590512+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:00:25.266093+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.laperledeletre.com/",
+          "schedule": "https://www.laperledeletre.com/"
+        }
+      }
     }
   ]
 }

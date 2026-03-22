@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T00:00:00Z",
+  "last_updated": "2026-03-22T08:02:36.824267+00:00",
   "studios": [
     {
       "id": "yogastudio-luzern",
@@ -40,7 +40,18 @@
       "lat": 47.0453,
       "lng": 8.307,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:01:24.732690+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogastudio.ch/",
+          "schedule": "https://www.yogastudio.ch/stundenplan"
+        }
+      }
     },
     {
       "id": "liv-lab",
@@ -101,7 +112,39 @@
         "trial": 80,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.livlab.ch/en/prices"
+        "source": "https://www.livlab.ch/en/prices",
+        "last_checked": "2026-03-22T08:01:27.759305+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:01:25.925069+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "mindbody",
+          "url": "https://clients.mindbodyonline.com/classic/ws?studioid=921019"
+        },
+        {
+          "platform": "mindbody",
+          "url": "https://clients.mindbodyonline.com/classic/ws?studioid=921019&stype=-2&subTab=info"
+        }
+      ],
+      "_meta": {
+        "last_scraped": "2026-03-22T08:01:27.759326+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [
+          {
+            "platform": "mindbody",
+            "url": "https://clients.mindbodyonline.com/classic/ws?studioid=921019"
+          },
+          {
+            "platform": "mindbody",
+            "url": "https://clients.mindbodyonline.com/classic/ws?studioid=921019&stype=-2&subTab=info"
+          }
+        ],
+        "source_urls": {
+          "website": "https://www.livlab.ch/",
+          "schedule": "https://www.livlab.ch/en/schedule"
+        }
       }
     },
     {
@@ -142,7 +185,27 @@
       "lat": 47.0515,
       "lng": 8.3065,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:01:29.064791+00:00",
+      "pricing": {
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://ashtanga-luzern.ch/prices",
+        "last_checked": "2026-03-22T08:01:30.038542+00:00",
+        "single": 500.0
+      },
+      "_meta": {
+        "last_scraped": "2026-03-22T08:01:30.038602+00:00",
+        "last_price_check": "2026-03-22T08:01:30.038602+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://ashtanga-luzern.ch/",
+          "schedule": "https://ashtanga-luzern.ch/schedule/",
+          "pricing": "https://ashtanga-luzern.ch/prices"
+        }
+      }
     },
     {
       "id": "original-hot-yoga-luzern",
@@ -181,7 +244,18 @@
       "lat": 47.044,
       "lng": 8.301,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:01:30.855241+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://originalhotyoga.net/",
+          "schedule": "https://www.eversports.ch/s/original-hot-yoga-luzern"
+        }
+      }
     },
     {
       "id": "mii-ruum",
@@ -233,7 +307,19 @@
         "trial": 60,
         "currency": "CHF",
         "verified": true,
-        "source": "https://mii-ruum.ch/kurse1/preise"
+        "source": "https://mii-ruum.ch/kurse1/preise",
+        "last_checked": "2026-03-22T08:01:35.098824+00:00"
+      },
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:01:35.098845+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://mii-ruum.ch/",
+          "schedule": "https://mii-ruum.ch/en/kurse1/schedule"
+        }
       }
     },
     {
@@ -273,7 +359,18 @@
       "lat": 47.051,
       "lng": 8.304,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:01:35.999078+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://luzern-yoga.ch/",
+          "schedule": "https://luzern-yoga.ch/stundenplan"
+        }
+      }
     },
     {
       "id": "studio-fayo",
@@ -313,11 +410,25 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 34,
+        "single": 34.0,
         "card_10": 300,
         "currency": "CHF",
         "verified": true,
-        "source": "https://studiofayo.com/"
+        "source": "https://studiofayo.com",
+        "last_checked": "2026-03-22T08:01:46.763889+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:01:38.224931+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:01:46.763946+00:00",
+        "last_price_check": "2026-03-22T08:01:46.763946+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://studiofayo.com/",
+          "schedule": "https://studiofayo.com/stundenplan/",
+          "pricing": "https://studiofayo.com"
+        }
       }
     },
     {
@@ -358,7 +469,30 @@
       "lat": 47.052,
       "lng": 8.31,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:01:48.224802+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "fitogram",
+          "url": "https://widget.fitogram.pro/yogasitz/?w=/login"
+        }
+      ],
+      "_meta": {
+        "last_scraped": "2026-03-22T08:01:51.096978+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [
+          {
+            "platform": "fitogram",
+            "url": "https://widget.fitogram.pro/yogasitz/?w=/login"
+          }
+        ],
+        "source_urls": {
+          "website": "https://yogasitz.ch/",
+          "schedule": "https://yogasitz.ch/index.php/angebot/kursanmeldung_veranstaltungen/"
+        }
+      }
     },
     {
       "id": "om-shanti-luzern",
@@ -399,7 +533,27 @@
       "lat": 47.0525,
       "lng": 8.3055,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:01:52.082500+00:00",
+      "pricing": {
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.yogaschuleluzern.ch",
+        "last_checked": "2026-03-22T08:01:54.165689+00:00",
+        "trial": 27.0
+      },
+      "_meta": {
+        "last_scraped": "2026-03-22T08:01:54.165751+00:00",
+        "last_price_check": "2026-03-22T08:01:54.165751+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogaschuleluzern.ch/",
+          "schedule": "https://www.yogaschuleluzern.ch/yoga-am-loewengraben-15/",
+          "pricing": "https://www.yogaschuleluzern.ch"
+        }
+      }
     },
     {
       "id": "yogaraum-luzern",
@@ -440,12 +594,26 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 30,
+        "single": 120.0,
         "card_10": 250,
         "trial": 25,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.yogaraum-luzern.ch/"
+        "source": "https://www.yogaraum-luzern.ch",
+        "last_checked": "2026-03-22T08:02:03.414367+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:01:57.472343+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:02:03.414499+00:00",
+        "last_price_check": "2026-03-22T08:02:03.414499+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogaraum-luzern.ch/",
+          "schedule": "https://www.yogaraum-luzern.ch/",
+          "pricing": "https://www.yogaraum-luzern.ch"
+        }
       }
     },
     {
@@ -496,7 +664,19 @@
         "trial": 25,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.yogamitherz.com/Angebot/Preise/"
+        "source": "https://www.yogamitherz.com/Angebot/Preise/",
+        "last_checked": "2026-03-22T08:02:05.508901+00:00"
+      },
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:02:05.508920+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogamitherz.com/",
+          "schedule": "https://www.yogamitherz.com/yogastunde-buchen-horw-kriens-luzern"
+        }
       }
     },
     {
@@ -541,7 +721,20 @@
         "trial": 0,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.derraum.ch/yoga-kurse-mit-verena-naepflin-in-horw/"
+        "source": "https://www.derraum.ch/yoga-kurse-mit-verena-naepflin-in-horw/",
+        "last_checked": "2026-03-22T08:02:15.911664+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:02:09.008537+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:02:15.911679+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.derraum.ch/",
+          "schedule": "https://www.derraum.ch/yoga-kurse-mit-verena-naepflin-in-horw/"
+        }
       }
     },
     {
@@ -578,7 +771,19 @@
       "lat": 47.077,
       "lng": 8.283,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:02:16.655779+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:02:26.428893+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yoga-kundalini.net/",
+          "schedule": "https://www.yoga-kundalini.net/"
+        }
+      }
     },
     {
       "id": "pure-you-yoga-horw",
@@ -618,7 +823,19 @@
       "lat": 47.0215,
       "lng": 8.31,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:02:28.781209+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:02:29.633440+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.pureyouyoga.ch/",
+          "schedule": "https://www.pureyouyoga.ch/en/abo-preise"
+        }
+      }
     },
     {
       "id": "yoga-veda-luzern",
@@ -664,7 +881,19 @@
       "lat": 47.0453,
       "lng": 8.307,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:02:30.913836+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:02:35.586444+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yoga-veda-ausbildungen.ch/",
+          "schedule": "https://www.yoga-veda-ausbildungen.ch/yoga-weiterbildung/yoga-workshops.html"
+        }
+      }
     },
     {
       "id": "yogakurse-horw",
@@ -704,7 +933,19 @@
       "lat": 47.0215,
       "lng": 8.31,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:02:36.131325+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:02:36.824251+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogakurse-horw.ch/",
+          "schedule": "https://www.yogakurse-horw.ch/"
+        }
+      }
     }
   ]
 }

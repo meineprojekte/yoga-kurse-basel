@@ -1,1 +1,218 @@
-[]
+[
+  {
+    "timestamp": "2026-03-22T07:53:40.396569+00:00",
+    "studio_id": "manta-yoga-pilates-rombach",
+    "canton": "aargau",
+    "field": "pricing.trial",
+    "old_value": 0,
+    "new_value": 25.0,
+    "source": "https://manta-yoga-pilates.ch"
+  },
+  {
+    "timestamp": "2026-03-22T07:53:45.539893+00:00",
+    "studio_id": "hieryoga-baden",
+    "canton": "aargau",
+    "field": "pricing.single",
+    "old_value": 32,
+    "new_value": 29.0,
+    "source": "https://hieryoga.ch/preise"
+  },
+  {
+    "timestamp": "2026-03-22T07:55:06.970451+00:00",
+    "studio_id": "niyama",
+    "canton": "basel",
+    "field": "pricing.card_10",
+    "old_value": 220,
+    "new_value": 150.0,
+    "source": "https://www.niyama-yoga.ch/en/start/preise"
+  },
+  {
+    "timestamp": "2026-03-22T07:55:06.970485+00:00",
+    "studio_id": "niyama",
+    "canton": "basel",
+    "field": "pricing.monthly",
+    "old_value": 195,
+    "new_value": 50.0,
+    "source": "https://www.niyama-yoga.ch/en/start/preise"
+  },
+  {
+    "timestamp": "2026-03-22T07:55:35.567526+00:00",
+    "studio_id": "mint",
+    "canton": "basel",
+    "field": "pricing.card_10",
+    "old_value": 250,
+    "new_value": 200.0,
+    "source": "https://mint-loft.ch/preise"
+  },
+  {
+    "timestamp": "2026-03-22T07:55:49.012540+00:00",
+    "studio_id": "iyengar-gerbergaesslein",
+    "canton": "basel",
+    "field": "pricing.single",
+    "old_value": 36,
+    "new_value": 30.0,
+    "source": "https://gerbergaesslein-yoga.ch/preise"
+  },
+  {
+    "timestamp": "2026-03-22T07:56:24.451683+00:00",
+    "studio_id": "fitnesspark",
+    "canton": "basel",
+    "field": "pricing.single",
+    "old_value": 39,
+    "new_value": 131.0,
+    "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/preise"
+  },
+  {
+    "timestamp": "2026-03-22T07:56:24.451715+00:00",
+    "studio_id": "fitnesspark",
+    "canton": "basel",
+    "field": "pricing.card_10",
+    "old_value": 355,
+    "new_value": 220.0,
+    "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/preise"
+  },
+  {
+    "timestamp": "2026-03-22T07:56:24.451736+00:00",
+    "studio_id": "fitnesspark",
+    "canton": "basel",
+    "field": "pricing.monthly",
+    "old_value": 123,
+    "new_value": 10.0,
+    "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/preise"
+  },
+  {
+    "timestamp": "2026-03-22T07:57:02.902636+00:00",
+    "studio_id": "hothaus-bern",
+    "canton": "bern",
+    "field": "pricing.single",
+    "old_value": 38,
+    "new_value": 40.0,
+    "source": "https://www.hothausyoga.com/pricing"
+  },
+  {
+    "timestamp": "2026-03-22T07:57:33.873825+00:00",
+    "studio_id": "vayam-yoga-bern",
+    "canton": "bern",
+    "field": "pricing.monthly",
+    "old_value": 250,
+    "new_value": 35.0,
+    "source": "https://www.vayamyoga.com"
+  },
+  {
+    "timestamp": "2026-03-22T08:02:03.414394+00:00",
+    "studio_id": "yogaraum-luzern",
+    "canton": "luzern",
+    "field": "pricing.single",
+    "old_value": 30,
+    "new_value": 120.0,
+    "source": "https://www.yogaraum-luzern.ch"
+  },
+  {
+    "timestamp": "2026-03-22T08:03:23.088952+00:00",
+    "studio_id": "heyoga-schwyz",
+    "canton": "schwyz",
+    "field": "pricing.card_10",
+    "old_value": 270,
+    "new_value": 300.0,
+    "source": "https://www.heyoga.ch/preise"
+  },
+  {
+    "timestamp": "2026-03-22T08:03:35.096958+00:00",
+    "studio_id": "diamond-yoga-solothurn",
+    "canton": "solothurn",
+    "field": "pricing.trial",
+    "old_value": 0,
+    "new_value": 23.0,
+    "source": "https://www.diamond-yoga.ch"
+  },
+  {
+    "timestamp": "2026-03-22T08:04:21.430959+00:00",
+    "studio_id": "hot-yoga-4-u-rapperswil",
+    "canton": "st-gallen",
+    "field": "pricing.card_10",
+    "old_value": 275,
+    "new_value": 250.0,
+    "source": "https://hotyoga4u.ch"
+  },
+  {
+    "timestamp": "2026-03-22T08:04:25.233755+00:00",
+    "studio_id": "yoga-grenzenlos-kreuzlingen",
+    "canton": "thurgau",
+    "field": "pricing.single",
+    "old_value": 26,
+    "new_value": 150.0,
+    "source": "https://www.yogagrenzenlos.com/preise"
+  },
+  {
+    "timestamp": "2026-03-22T08:04:25.233801+00:00",
+    "studio_id": "yoga-grenzenlos-kreuzlingen",
+    "canton": "thurgau",
+    "field": "pricing.card_10",
+    "old_value": 245,
+    "new_value": 470.0,
+    "source": "https://www.yogagrenzenlos.com/preise"
+  },
+  {
+    "timestamp": "2026-03-22T08:04:27.623309+00:00",
+    "studio_id": "yoga-asana-kreuzlingen",
+    "canton": "thurgau",
+    "field": "pricing.single",
+    "old_value": 30,
+    "new_value": 32.0,
+    "source": "https://www.yoga-asana.ch"
+  },
+  {
+    "timestamp": "2026-03-22T08:04:27.623377+00:00",
+    "studio_id": "yoga-asana-kreuzlingen",
+    "canton": "thurgau",
+    "field": "pricing.card_10",
+    "old_value": 270,
+    "new_value": 300.0,
+    "source": "https://www.yoga-asana.ch"
+  },
+  {
+    "timestamp": "2026-03-22T08:08:41.371037+00:00",
+    "studio_id": "airyoga",
+    "canton": "zurich",
+    "field": "pricing.card_10",
+    "old_value": 290,
+    "new_value": 120.0,
+    "source": "https://www.airyoga.ch/preise"
+  },
+  {
+    "timestamp": "2026-03-22T08:09:20.107526+00:00",
+    "studio_id": "bodyart-studio",
+    "canton": "zurich",
+    "field": "pricing.trial",
+    "old_value": 25,
+    "new_value": 40.0,
+    "source": "https://bodyart.studio/en"
+  },
+  {
+    "timestamp": "2026-03-22T08:09:48.874899+00:00",
+    "studio_id": "yoga-am-zuerichberg",
+    "canton": "zurich",
+    "field": "pricing.card_10",
+    "old_value": 340,
+    "new_value": 250.0,
+    "source": "https://www.xn--yoga-zrichberg-lsb.ch/preise"
+  },
+  {
+    "timestamp": "2026-03-22T08:10:58.832549+00:00",
+    "studio_id": "yoga-by-nora",
+    "canton": "zurich",
+    "field": "pricing.single",
+    "old_value": 27,
+    "new_value": 39.0,
+    "source": "https://yogabynora.ch/preise"
+  },
+  {
+    "timestamp": "2026-03-22T08:11:44.266690+00:00",
+    "studio_id": "yoga-in-winterthur",
+    "canton": "zurich",
+    "field": "pricing.card_10",
+    "old_value": 280,
+    "new_value": 340.0,
+    "source": "https://www.yoga-in.ch/preise"
+  }
+]

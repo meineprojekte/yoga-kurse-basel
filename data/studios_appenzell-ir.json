@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T00:00:00Z",
+  "last_updated": "2026-03-22T07:54:11.317576+00:00",
   "studios": [
     {
       "id": "studio-mond-appenzell",
@@ -47,7 +47,20 @@
         "trial": 0,
         "currency": "CHF",
         "verified": true,
-        "source": "https://studiomond.ch/preise/"
+        "source": "https://studiomond.ch/preise/",
+        "last_checked": "2026-03-22T07:54:01.435938+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:53:49.995629+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:54:01.435955+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://studiomond.ch/",
+          "schedule": "https://studiomond.ch/yoga-studio/"
+        }
       }
     },
     {
@@ -84,7 +97,19 @@
       "lat": 47.3298,
       "lng": 9.4102,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T07:54:03.289530+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T07:54:11.317559+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yoga-claudia.ch/",
+          "schedule": "https://www.yoga-claudia.ch/kursangebote/appenzell"
+        }
+      }
     },
     {
       "id": "yoga-appenzell-andrea-manser",

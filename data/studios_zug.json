@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T00:00:00Z",
+  "last_updated": "2026-03-22T08:08:27.468294+00:00",
   "studios": [
     {
       "id": "yogaflowzug",
@@ -46,7 +46,20 @@
         "trial": 20,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.sportsnow.ch/go/yogaflowzug/prices?locale=de"
+        "source": "https://www.sportsnow.ch/go/yogaflowzug/prices?locale=de",
+        "last_checked": "2026-03-22T08:08:14.857965+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:08:03.502190+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:08:14.857980+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogaflowzug.ch/",
+          "schedule": "https://www.yogaflowzug.ch/en/class-schedule/"
+        }
       }
     },
     {
@@ -157,7 +170,18 @@
       "lat": 47.1963,
       "lng": 8.5225,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:08:16.035228+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:08:26.473475+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.chinmayi.ch/"
+        }
+      }
     },
     {
       "id": "aum-yoga-zug",
@@ -192,7 +216,18 @@
       "lat": 47.1724,
       "lng": 8.5163,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "blocked",
+      "last_scraped": null,
+      "_meta": {
+        "last_scraped": "2026-03-22T08:08:27.468275+00:00",
+        "last_price_check": null,
+        "scrape_status": "blocked",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.aumyogastudio.ch/"
+        }
+      }
     }
   ]
 }

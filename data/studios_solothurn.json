@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T00:00:00Z",
+  "last_updated": "2026-03-22T08:03:52.400085+00:00",
   "studios": [
     {
       "id": "studio-30-solothurn",
@@ -39,7 +39,18 @@
       "lat": 47.2088,
       "lng": 7.5372,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:03:32.288221+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:03:32.962781+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.studio-30.ch/"
+        }
+      }
     },
     {
       "id": "sunshine-yoga-solothurn",
@@ -78,7 +89,28 @@
       "lat": 47.207,
       "lng": 7.53,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:03:33.328551+00:00",
+      "pricing": {
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.sunshine-yoga.ch/preise",
+        "last_checked": "2026-03-22T08:03:33.532374+00:00",
+        "abo": 145.0,
+        "card_10": 200.0,
+        "trial": 20.0
+      },
+      "_meta": {
+        "last_scraped": "2026-03-22T08:03:33.532431+00:00",
+        "last_price_check": "2026-03-22T08:03:33.532431+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.sunshine-yoga.ch",
+          "pricing": "https://www.sunshine-yoga.ch/preise"
+        }
+      }
     },
     {
       "id": "diamond-yoga-solothurn",
@@ -117,10 +149,23 @@
       "classes": [],
       "pricing": {
         "single": 23,
-        "trial": 0,
+        "trial": 23.0,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.diamond-yoga.ch/"
+        "source": "https://www.diamond-yoga.ch",
+        "last_checked": "2026-03-22T08:03:35.096932+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:03:33.985282+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:03:35.097056+00:00",
+        "last_price_check": "2026-03-22T08:03:35.097056+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.diamond-yoga.ch/",
+          "pricing": "https://www.diamond-yoga.ch"
+        }
       }
     },
     {
@@ -156,7 +201,18 @@
       "lat": 47.2082,
       "lng": 7.534,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:03:35.481568+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:03:36.142537+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.flaviayoga.com/"
+        }
+      }
     },
     {
       "id": "om-yogaroom-solothurn",
@@ -201,7 +257,19 @@
         "card_10": 250,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.om-yogaroom.ch/"
+        "source": "https://www.om-yogaroom.ch/",
+        "last_checked": "2026-03-22T08:03:37.969523+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:03:36.855323+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:03:37.969537+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.om-yogaroom.ch/"
+        }
       }
     },
     {
@@ -240,7 +308,18 @@
       "lat": 47.2095,
       "lng": 7.535,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:03:38.812328+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:03:41.147014+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://yogagarten.ch/"
+        }
+      }
     },
     {
       "id": "downtown-yoga-olten",
@@ -291,7 +370,19 @@
         "trial": 25,
         "currency": "CHF",
         "verified": true,
-        "source": "https://downtownyoga.ch/kurse-preise/"
+        "source": "https://downtownyoga.ch/kurse-preise/",
+        "last_checked": "2026-03-22T08:03:51.892031+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:03:42.877143+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:03:51.892048+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://downtownyoga.ch/"
+        }
       }
     },
     {
@@ -326,7 +417,17 @@
       "lat": 47.348,
       "lng": 7.899,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:03:52.400065+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.pilateszentrale.ch/"
+        }
+      }
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T12:00:00Z",
+  "last_updated": "2026-03-22T08:11:55.866689+00:00",
   "studios": [
     {
       "id": "airyoga",
@@ -48,12 +48,26 @@
       "classes": [],
       "pricing": {
         "single": 25,
-        "card_10": 290,
+        "card_10": 120.0,
         "monthly": 200,
         "trial": 75,
         "currency": "CHF",
         "verified": true,
-        "source": "https://airyoga.ch/de/preise/"
+        "source": "https://www.airyoga.ch/preise",
+        "last_checked": "2026-03-22T08:08:41.371019+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:08:33.440215+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:08:41.371098+00:00",
+        "last_price_check": "2026-03-22T08:08:41.371098+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.airyoga.ch/",
+          "schedule": "https://www.airyoga.ch/en/class-schedules/",
+          "pricing": "https://www.airyoga.ch/preise"
+        }
       }
     },
     {
@@ -105,7 +119,20 @@
         "trial": 75,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.sanapurna.ch/yoga-price-packages.php"
+        "source": "https://www.sanapurna.ch/yoga-price-packages.php",
+        "last_checked": "2026-03-22T08:08:42.151270+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:08:41.898245+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:08:42.151288+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.sanapurna.ch/",
+          "schedule": "https://www.sanapurna.ch/yoga-types.php"
+        }
       }
     },
     {
@@ -164,10 +191,83 @@
         "single": 36,
         "card_10": 270,
         "monthly": 169,
-        "trial": 79,
+        "trial": 79.0,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.athayoga.ch/preise/"
+        "source": "https://www.athayoga.ch/preise",
+        "last_checked": "2026-03-22T08:08:45.328352+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:08:43.430513+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/widget/w/3kuhpu"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/widget/w/3kuhpu"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/widget/w/fkdyt6"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/widget/w/fkdyt6"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/auth/register?origin=widget&redirectApp=widget&redirectPath=%2Fwidget%2Fw%2F3kuhpu&venueId=5423b160-80ed-40cc-9324-6f63e25dd685"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/auth/register?origin=widget&redirectApp=widget&redirectPath=%2Fwidget%2Fw%2F3kuhpu&venueId=5423b160-80ed-40cc-9324-6f63e25dd685"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/widget/w/3kuhpu?list=shop"
+        }
+      ],
+      "_meta": {
+        "last_scraped": "2026-03-22T08:08:45.328406+00:00",
+        "last_price_check": "2026-03-22T08:08:45.328406+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/widget/w/3kuhpu"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/widget/w/3kuhpu"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/widget/w/fkdyt6"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/widget/w/fkdyt6"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/auth/register?origin=widget&redirectApp=widget&redirectPath=%2Fwidget%2Fw%2F3kuhpu&venueId=5423b160-80ed-40cc-9324-6f63e25dd685"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/auth/register?origin=widget&redirectApp=widget&redirectPath=%2Fwidget%2Fw%2F3kuhpu&venueId=5423b160-80ed-40cc-9324-6f63e25dd685"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/widget/w/3kuhpu?list=shop"
+          }
+        ],
+        "source_urls": {
+          "website": "https://www.athayoga.ch/",
+          "schedule": "https://www.athayoga.ch/stundenplan/",
+          "pricing": "https://www.athayoga.ch/preise"
+        }
       }
     },
     {
@@ -209,7 +309,27 @@
       "lat": 47.3773,
       "lng": 8.5274,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:08:45.784715+00:00",
+      "pricing": {
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.yogastudiozuerich.ch/angebot",
+        "last_checked": "2026-03-22T08:08:49.296225+00:00",
+        "abo": 90.0
+      },
+      "_meta": {
+        "last_scraped": "2026-03-22T08:08:49.296281+00:00",
+        "last_price_check": "2026-03-22T08:08:49.296281+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogastudiozuerich.ch/",
+          "schedule": "https://www.yogastudiozuerich.ch/",
+          "pricing": "https://www.yogastudiozuerich.ch/angebot"
+        }
+      }
     },
     {
       "id": "soasana",
@@ -264,13 +384,110 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 33,
+        "single": 33.0,
         "card_10": 270,
-        "monthly": 155,
+        "monthly": 155.0,
         "trial": 65,
         "currency": "CHF",
         "verified": true,
-        "source": "https://soasana.ch/prices"
+        "source": "https://soasana.ch/prices",
+        "last_checked": "2026-03-22T08:08:49.658296+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:08:49.506010+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/widget/w/cy-9nD"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/widget/w/cy-9nD"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/org/widget/9b862b1f-0890-4cd4-a438-34ca83062213?venueId=22f01e06-a8ae-42a6-baa8-c33b1d4a9108"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/widget/w/cy-9nD"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/org/widget/9b862b1f-0890-4cd4-a438-34ca83062213?venueId=22f01e06-a8ae-42a6-baa8-c33b1d4a9108"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/widget/w/cy-9nD"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/org/widget/9b862b1f-0890-4cd4-a438-34ca83062213?venueId=22f01e06-a8ae-42a6-baa8-c33b1d4a9108"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/widget/w/cy-9nD"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/widget/w/cy-9nD"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/org/widget/9b862b1f-0890-4cd4-a438-34ca83062213?venueId=22f01e06-a8ae-42a6-baa8-c33b1d4a9108"
+        }
+      ],
+      "_meta": {
+        "last_scraped": "2026-03-22T08:08:49.658351+00:00",
+        "last_price_check": "2026-03-22T08:08:49.658351+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/widget/w/cy-9nD"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/widget/w/cy-9nD"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/org/widget/9b862b1f-0890-4cd4-a438-34ca83062213?venueId=22f01e06-a8ae-42a6-baa8-c33b1d4a9108"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/widget/w/cy-9nD"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/org/widget/9b862b1f-0890-4cd4-a438-34ca83062213?venueId=22f01e06-a8ae-42a6-baa8-c33b1d4a9108"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/widget/w/cy-9nD"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/org/widget/9b862b1f-0890-4cd4-a438-34ca83062213?venueId=22f01e06-a8ae-42a6-baa8-c33b1d4a9108"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/widget/w/cy-9nD"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/widget/w/cy-9nD"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/org/widget/9b862b1f-0890-4cd4-a438-34ca83062213?venueId=22f01e06-a8ae-42a6-baa8-c33b1d4a9108"
+          }
+        ],
+        "source_urls": {
+          "website": "https://soasana.ch/",
+          "schedule": "https://soasana.ch/",
+          "pricing": "https://soasana.ch/prices"
+        }
       }
     },
     {
@@ -328,7 +545,19 @@
       "lat": 47.372,
       "lng": 8.523,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:08:51.797912+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:08:52.779123+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.thesoulspace.ch/",
+          "schedule": "https://www.thesoulspace.ch/classes"
+        }
+      }
     },
     {
       "id": "bikram-yoga-zuerich",
@@ -364,7 +593,86 @@
       "lat": 47.3736,
       "lng": 8.529,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:08:54.135310+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "mindbody",
+          "url": "https://clients.mindbodyonline.com/classic/ws?studioid=5743778&stype=41"
+        },
+        {
+          "platform": "mindbody",
+          "url": "https://clients.mindbodyonline.com/classic/ws?studioid=5743778&stype=41"
+        },
+        {
+          "platform": "mindbody",
+          "url": "https://clients.mindbodyonline.com/classic/ws?studioid=5743778&stype=43"
+        },
+        {
+          "platform": "mindbody",
+          "url": "https://clients.mindbodyonline.com/classic/ws?studioid=5743778&stype=41"
+        },
+        {
+          "platform": "mindbody",
+          "url": "https://clients.mindbodyonline.com/classic/ws?studioid=5743778&stype=43"
+        },
+        {
+          "platform": "mindbody",
+          "url": "https://www.mindbodyonline.com/?ql=softwrfooter"
+        },
+        {
+          "platform": "mindbody",
+          "url": "https://www.mindbodyonline.com/?ql=softwrfooter"
+        }
+      ],
+      "pricing": {
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.bikramyoga.ch",
+        "last_checked": "2026-03-22T08:08:55.514874+00:00",
+        "abo": 100.0
+      },
+      "_meta": {
+        "last_scraped": "2026-03-22T08:08:55.514947+00:00",
+        "last_price_check": "2026-03-22T08:08:55.514947+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [
+          {
+            "platform": "mindbody",
+            "url": "https://clients.mindbodyonline.com/classic/ws?studioid=5743778&stype=41"
+          },
+          {
+            "platform": "mindbody",
+            "url": "https://clients.mindbodyonline.com/classic/ws?studioid=5743778&stype=41"
+          },
+          {
+            "platform": "mindbody",
+            "url": "https://clients.mindbodyonline.com/classic/ws?studioid=5743778&stype=43"
+          },
+          {
+            "platform": "mindbody",
+            "url": "https://clients.mindbodyonline.com/classic/ws?studioid=5743778&stype=41"
+          },
+          {
+            "platform": "mindbody",
+            "url": "https://clients.mindbodyonline.com/classic/ws?studioid=5743778&stype=43"
+          },
+          {
+            "platform": "mindbody",
+            "url": "https://www.mindbodyonline.com/?ql=softwrfooter"
+          },
+          {
+            "platform": "mindbody",
+            "url": "https://www.mindbodyonline.com/?ql=softwrfooter"
+          }
+        ],
+        "source_urls": {
+          "website": "https://www.bikramyoga.ch/",
+          "schedule": "https://www.bikramyoga.ch/",
+          "pricing": "https://www.bikramyoga.ch"
+        }
+      }
     },
     {
       "id": "yogaholics-united",
@@ -402,7 +710,19 @@
       "lat": 47.3904,
       "lng": 8.519,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:08:57.046007+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:09:06.525408+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://yogaholicsunited.ch/",
+          "schedule": "https://yogaholicsunited.ch/"
+        }
+      }
     },
     {
       "id": "ashtanga-yoga-zurich",
@@ -447,7 +767,20 @@
         "monthly": 250,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.ashtanga-yoga-zurich.com/schedule"
+        "source": "https://www.ashtanga-yoga-zurich.com/schedule",
+        "last_checked": "2026-03-22T08:09:07.684695+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:09:06.950142+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:09:07.684710+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.ashtanga-yoga-zurich.com/",
+          "schedule": "https://www.ashtanga-yoga-zurich.com/schedule"
+        }
       }
     },
     {
@@ -487,7 +820,19 @@
       "lat": 47.377,
       "lng": 8.5265,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:09:08.286242+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:09:13.402753+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.patanjaliyoga.ch/",
+          "schedule": "https://www.patanjaliyoga.ch/"
+        }
+      }
     },
     {
       "id": "bodyart-studio",
@@ -534,10 +879,24 @@
         "single": 34,
         "card_10": 299,
         "monthly": 239,
-        "trial": 25,
+        "trial": 40.0,
         "currency": "CHF",
         "verified": true,
-        "source": "https://bodyart.studio/en/pricing/"
+        "source": "https://bodyart.studio/en",
+        "last_checked": "2026-03-22T08:09:20.107500+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:09:14.874636+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:09:20.107652+00:00",
+        "last_price_check": "2026-03-22T08:09:20.107652+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://bodyart.studio/en/",
+          "schedule": "https://bodyart.studio/en/schedule/",
+          "pricing": "https://bodyart.studio/en"
+        }
       }
     },
     {
@@ -580,7 +939,39 @@
         "card_10": 240,
         "currency": "CHF",
         "verified": true,
-        "source": "https://dasyogahaus.ch/preise/"
+        "source": "https://dasyogahaus.ch/preise/",
+        "last_checked": "2026-03-22T08:09:41.510116+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:09:23.968387+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "mindbody",
+          "url": "https://clients.mindbodyonline.com/classic/ws?studioid=984884&stype=41&sTG=26&prodId=11182"
+        },
+        {
+          "platform": "mindbody",
+          "url": "https://clients.mindbodyonline.com/classic/ws?studioid=984884&stype=42&giftCardID=11222"
+        }
+      ],
+      "_meta": {
+        "last_scraped": "2026-03-22T08:09:41.510129+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [
+          {
+            "platform": "mindbody",
+            "url": "https://clients.mindbodyonline.com/classic/ws?studioid=984884&stype=41&sTG=26&prodId=11182"
+          },
+          {
+            "platform": "mindbody",
+            "url": "https://clients.mindbodyonline.com/classic/ws?studioid=984884&stype=42&giftCardID=11222"
+          }
+        ],
+        "source_urls": {
+          "website": "https://dasyogahaus.ch/",
+          "schedule": "https://dasyogahaus.ch/"
+        }
       }
     },
     {
@@ -631,7 +1022,20 @@
         "trial": 75,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.dasyogahaus-dubs.ch/preise"
+        "source": "https://www.dasyogahaus-dubs.ch/preise",
+        "last_checked": "2026-03-22T08:09:42.603040+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:09:41.984131+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:09:42.603058+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.dasyogahaus-dubs.ch/",
+          "schedule": "https://www.dasyogahaus-dubs.ch/"
+        }
       }
     },
     {
@@ -679,7 +1083,29 @@
       "lat": 47.3655,
       "lng": 8.5515,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:09:43.737314+00:00",
+      "pricing": {
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://yoga-spirit.ch/prices",
+        "last_checked": "2026-03-22T08:09:45.138774+00:00",
+        "trial": 25.0,
+        "abo": 25.0,
+        "monthly": 38.0
+      },
+      "_meta": {
+        "last_scraped": "2026-03-22T08:09:45.138837+00:00",
+        "last_price_check": "2026-03-22T08:09:45.138837+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://yoga-spirit.ch/",
+          "schedule": "https://yoga-spirit.ch/",
+          "pricing": "https://yoga-spirit.ch/prices"
+        }
+      }
     },
     {
       "id": "vvoo",
@@ -720,7 +1146,19 @@
       "lat": 47.358,
       "lng": 8.553,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:09:45.969622+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:09:47.892692+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://vvoo.ch/",
+          "schedule": "https://vvoo.ch/pages/yoga"
+        }
+      }
     },
     {
       "id": "yoga-am-zuerichberg",
@@ -761,11 +1199,25 @@
       "classes": [],
       "pricing": {
         "single": 38,
-        "card_10": 340,
+        "card_10": 250.0,
         "trial": 75,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.xn--yoga-zrichberg-lsb.ch/preise"
+        "source": "https://www.xn--yoga-zrichberg-lsb.ch/preise",
+        "last_checked": "2026-03-22T08:09:48.874880+00:00",
+        "abo": 125.0
+      },
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:09:48.874960+00:00",
+        "last_price_check": "2026-03-22T08:09:48.874960+00:00",
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.xn--yoga-zrichberg-lsb.ch/",
+          "schedule": "https://www.eversports.ch/s/yoga-am-zuerichberg",
+          "pricing": "https://www.xn--yoga-zrichberg-lsb.ch/preise"
+        }
       }
     },
     {
@@ -813,7 +1265,63 @@
         "trial": 20,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.yogaamfluss.ch/"
+        "source": "https://www.yogaamfluss.ch/",
+        "last_checked": "2026-03-22T08:09:50.766667+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:09:49.696542+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/sp/yoga-am-fluss"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/w/booking-widget/yoga-am-fluss"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/s/yoga-am-fluss"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/scl/yoga-am-fluss"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.com/w/booking-widget/yoga-am-fluss?list=shop"
+        }
+      ],
+      "_meta": {
+        "last_scraped": "2026-03-22T08:09:50.766685+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/sp/yoga-am-fluss"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/w/booking-widget/yoga-am-fluss"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/s/yoga-am-fluss"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/scl/yoga-am-fluss"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.com/w/booking-widget/yoga-am-fluss?list=shop"
+          }
+        ],
+        "source_urls": {
+          "website": "https://www.yogaamfluss.ch/",
+          "schedule": "https://www.yogaamfluss.ch/"
+        }
       }
     },
     {
@@ -854,7 +1362,20 @@
         "trial": 35,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.iyengar-yoga-zurich.ch/kontakt-preise.html"
+        "source": "https://www.iyengar-yoga-zurich.ch/kontakt-preise.html",
+        "last_checked": "2026-03-22T08:09:53.349798+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:09:51.725776+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:09:53.349815+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.iyengar-yoga-zurich.ch/",
+          "schedule": "https://www.iyengar-yoga-zurich.ch/kurse.html"
+        }
       }
     },
     {
@@ -893,7 +1414,19 @@
       "lat": 47.376,
       "lng": 8.5305,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:09:54.010454+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:09:56.727469+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogacity.ch/",
+          "schedule": "https://www.yogacity.ch/"
+        }
+      }
     },
     {
       "id": "soul-city",
@@ -936,7 +1469,19 @@
       "lat": 47.3775,
       "lng": 8.5285,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:09:57.010842+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:09:57.786603+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://soulcity-zurich.ch/",
+          "schedule": "https://soulcity-zurich.ch/"
+        }
+      }
     },
     {
       "id": "yoga-nest",
@@ -985,7 +1530,30 @@
       "lat": 47.411,
       "lng": 8.5445,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:09:58.157396+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/org/widget/c8c50684-6e31-4cb1-8fe3-4934fc57a3fc?venueId=b336fe38-08c9-45ab-a1d8-3255d21ed886"
+        }
+      ],
+      "_meta": {
+        "last_scraped": "2026-03-22T08:09:58.565905+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/org/widget/c8c50684-6e31-4cb1-8fe3-4934fc57a3fc?venueId=b336fe38-08c9-45ab-a1d8-3255d21ed886"
+          }
+        ],
+        "source_urls": {
+          "website": "https://www.theyoganest.ch/",
+          "schedule": "https://www.theyoganest.ch/"
+        }
+      }
     },
     {
       "id": "yoga-culture",
@@ -1032,7 +1600,19 @@
       "lat": 47.4098,
       "lng": 8.5482,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:10:02.077206+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:10:18.779739+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogaculture.ch/",
+          "schedule": "https://www.yogaculture.ch/"
+        }
+      }
     },
     {
       "id": "the-yoga-place",
@@ -1073,7 +1653,19 @@
       "lat": 47.387,
       "lng": 8.5185,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:10:20.155239+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:10:23.160615+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.theyogaplace.ch/",
+          "schedule": "https://www.theyogaplace.ch/en/offering"
+        }
+      }
     },
     {
       "id": "planet-yoga",
@@ -1112,7 +1704,28 @@
       "lat": 47.3685,
       "lng": 8.5195,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "no_data",
+      "pricing": {
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.planetyoga.ch/preise",
+        "last_checked": "2026-03-22T08:10:24.489604+00:00",
+        "monthly": 159.0,
+        "abo": 80.0,
+        "card_10": 235.0
+      },
+      "_meta": {
+        "last_scraped": "2026-03-22T08:10:24.489674+00:00",
+        "last_price_check": "2026-03-22T08:10:24.489674+00:00",
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.planetyoga.ch/",
+          "schedule": "https://www.eversports.ch/s/planet-yoga",
+          "pricing": "https://www.planetyoga.ch/preise"
+        }
+      }
     },
     {
       "id": "yogalives",
@@ -1155,7 +1768,19 @@
       "lat": 47.365,
       "lng": 8.5235,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:10:25.125026+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:10:25.708959+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogalives.ch/",
+          "schedule": "https://www.yogalives.ch/"
+        }
+      }
     },
     {
       "id": "nandalayoga",
@@ -1189,7 +1814,19 @@
       "lat": 47.3872,
       "lng": 8.5235,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:10:26.187918+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:10:28.077480+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.nandalayoga.ch/",
+          "schedule": "https://www.nandalayoga.ch/"
+        }
+      }
     },
     {
       "id": "sleepy-yogi",
@@ -1262,7 +1899,18 @@
       "lat": 47.385,
       "lng": 8.488,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:10:34.913336+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://yogainabag.com/",
+          "schedule": "https://www.eversports.ch/s/yoga-in-a-bag-altstetten"
+        }
+      }
     },
     {
       "id": "yoga-in-a-bag-albisrieden",
@@ -1300,7 +1948,19 @@
       "lat": 47.376,
       "lng": 8.485,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:10:35.941127+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:10:42.316398+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://yogainabag.com/",
+          "schedule": "https://yogainabag.com/en/studios/"
+        }
+      }
     },
     {
       "id": "aranya-studio",
@@ -1343,7 +2003,19 @@
       "lat": 47.3555,
       "lng": 8.554,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:10:44.324645+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:10:48.150088+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.aranya-studio.ch/",
+          "schedule": "https://www.aranya-studio.ch/en"
+        }
+      }
     },
     {
       "id": "elevate-studio",
@@ -1387,7 +2059,38 @@
       "lat": 47.377,
       "lng": 8.527,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:10:48.654918+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/scl/elevate-studio"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/scl/elevate-studio"
+        }
+      ],
+      "_meta": {
+        "last_scraped": "2026-03-22T08:10:50.185022+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/scl/elevate-studio"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/scl/elevate-studio"
+          }
+        ],
+        "source_urls": {
+          "website": "https://www.elevate-studio.ch/",
+          "schedule": "https://www.elevate-studio.ch/"
+        }
+      }
     },
     {
       "id": "radiant-heart-studio",
@@ -1423,7 +2126,19 @@
       "lat": 47.368,
       "lng": 8.519,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:10:52.473329+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:10:53.289725+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.radiantheartstudio.com/",
+          "schedule": "https://www.radiantheartstudio.com/schedule-1"
+        }
+      }
     },
     {
       "id": "studio-y3",
@@ -1465,7 +2180,19 @@
       "lat": 47.372,
       "lng": 8.518,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:10:53.789445+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:10:54.658508+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.studioy3.ch/",
+          "schedule": "https://www.studioy3.ch/book"
+        }
+      }
     },
     {
       "id": "yoga-by-nora",
@@ -1504,10 +2231,23 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 27,
+        "single": 39.0,
         "currency": "CHF",
         "verified": true,
-        "source": "https://yogabynora.ch/preise"
+        "source": "https://yogabynora.ch/preise",
+        "last_checked": "2026-03-22T08:10:58.832532+00:00"
+      },
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:10:58.832632+00:00",
+        "last_price_check": "2026-03-22T08:10:58.832632+00:00",
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://yogabynora.ch/",
+          "schedule": "https://www.eversports.ch/s/yoga-by-nora-mikkel",
+          "pricing": "https://yogabynora.ch/preise"
+        }
       }
     },
     {
@@ -1554,7 +2294,20 @@
         "trial": 20,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.jiokundaliniyoga.com/anmelden"
+        "source": "https://www.jiokundaliniyoga.com/anmelden",
+        "last_checked": "2026-03-22T08:11:00.352863+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:10:59.432755+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:11:00.352876+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.jiokundaliniyoga.com/",
+          "schedule": "https://www.jiokundaliniyoga.com/register"
+        }
       }
     },
     {
@@ -1590,7 +2343,19 @@
       "lat": 47.3672,
       "lng": 8.518,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:11:01.451196+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:11:08.073317+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://templeshape.com/",
+          "schedule": "https://templeshape.com/en/templeshape-studio-wiedikon/yoga-in-wiedikon-zurich/"
+        }
+      }
     },
     {
       "id": "yoga2day",
@@ -1631,7 +2396,18 @@
       "lat": 47.4105,
       "lng": 8.545,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:11:08.555670+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yoga2day.ch/",
+          "schedule": "https://www.yoga2day.ch/angebot-yoga2day/"
+        }
+      }
     },
     {
       "id": "yogagold",
@@ -1675,7 +2451,19 @@
       "lat": 47.365,
       "lng": 8.5235,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:11:09.848007+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:11:16.130246+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yogagold.net/",
+          "schedule": "https://en.yogagold.net/yogaklassen"
+        }
+      }
     },
     {
       "id": "project-peace",
@@ -1719,7 +2507,19 @@
         "single": 30,
         "currency": "CHF",
         "verified": true,
-        "source": "https://projectpeace.ch/yoga-bodywork"
+        "source": "https://projectpeace.ch/yoga-bodywork",
+        "last_checked": "2026-03-22T08:11:17.981660+00:00"
+      },
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:11:17.981677+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://projectpeace.ch/",
+          "schedule": "https://projectpeace.ch/classes-prices"
+        }
       }
     },
     {
@@ -1800,7 +2600,19 @@
         "monthly": 300,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.yoga-moves.ch/ueber-uns/stundenplan-und-preise"
+        "source": "https://www.yoga-moves.ch/ueber-uns/stundenplan-und-preise",
+        "last_checked": "2026-03-22T08:11:20.491618+00:00"
+      },
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:11:20.491632+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yoga-moves.ch/",
+          "schedule": "https://www.eversports.ch/s/yogamoves-gmbh"
+        }
       }
     },
     {
@@ -1847,7 +2659,19 @@
       "lat": 47.5045,
       "lng": 8.72,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:11:20.930758+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:11:27.498669+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.flowfabrik.ch/",
+          "schedule": "https://www.flowfabrik.ch/"
+        }
+      }
     },
     {
       "id": "zanana-living-winterthur",
@@ -1896,7 +2720,62 @@
       "lat": 47.5035,
       "lng": 8.7168,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:11:32.953798+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/sp/zanana-living"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/org/widget/98825496-bdcc-4c63-85f6-4449ee645480?venueId=f3144f78-8a2f-4773-822a-06918dfa06c6"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/org/widget/98825496-bdcc-4c63-85f6-4449ee645480?venueId=f3144f78-8a2f-4773-822a-06918dfa06c6"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/org/activity/fb995725-a7b7-4ad4-b159-57d5390db26a"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/org/widget/98825496-bdcc-4c63-85f6-4449ee645480?venueId=f3144f78-8a2f-4773-822a-06918dfa06c6"
+        }
+      ],
+      "_meta": {
+        "last_scraped": "2026-03-22T08:11:40.350905+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/sp/zanana-living"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/org/widget/98825496-bdcc-4c63-85f6-4449ee645480?venueId=f3144f78-8a2f-4773-822a-06918dfa06c6"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/org/widget/98825496-bdcc-4c63-85f6-4449ee645480?venueId=f3144f78-8a2f-4773-822a-06918dfa06c6"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/org/activity/fb995725-a7b7-4ad4-b159-57d5390db26a"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/org/widget/98825496-bdcc-4c63-85f6-4449ee645480?venueId=f3144f78-8a2f-4773-822a-06918dfa06c6"
+          }
+        ],
+        "source_urls": {
+          "website": "https://zanana-living.ch/",
+          "schedule": "https://zanana-living.ch/"
+        }
+      }
     },
     {
       "id": "yoga-in-winterthur",
@@ -1932,10 +2811,24 @@
       "classes": [],
       "pricing": {
         "single": 35,
-        "card_10": 280,
+        "card_10": 340.0,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.yoga-in.ch/preise/"
+        "source": "https://www.yoga-in.ch/preise",
+        "last_checked": "2026-03-22T08:11:44.266672+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:11:42.772571+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:11:44.266769+00:00",
+        "last_price_check": "2026-03-22T08:11:44.266769+00:00",
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yoga-in.ch/",
+          "schedule": "https://www.yoga-in.ch/",
+          "pricing": "https://www.yoga-in.ch/preise"
+        }
       }
     },
     {
@@ -1973,7 +2866,18 @@
       "lat": 47.4995,
       "lng": 8.731,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:11:48.179477+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://yoga-academy-winterthur.ch/",
+          "schedule": "https://www.eversports.ch/s/yoga-academy-winterthur"
+        }
+      }
     },
     {
       "id": "yoga-in-a-bag-winterthur",
@@ -2011,7 +2915,46 @@
       "lat": 47.4998,
       "lng": 8.7262,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:11:49.566201+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/org/widget/2680beba-7cba-4fcc-bf99-ef3a92e38156?venueId=6b9303f7-68ba-42c5-beae-8f9963c2f5de"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/org/product/ddb32ae7-cfb1-4439-9b93-5debffc491f7?venueId=6b9303f7-68ba-42c5-beae-8f9963c2f5de"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.de/sw/yoga-in-a-bag-winterthur"
+        }
+      ],
+      "_meta": {
+        "last_scraped": "2026-03-22T08:11:55.866665+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/org/widget/2680beba-7cba-4fcc-bf99-ef3a92e38156?venueId=6b9303f7-68ba-42c5-beae-8f9963c2f5de"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/org/product/ddb32ae7-cfb1-4439-9b93-5debffc491f7?venueId=6b9303f7-68ba-42c5-beae-8f9963c2f5de"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.de/sw/yoga-in-a-bag-winterthur"
+          }
+        ],
+        "source_urls": {
+          "website": "https://yogainabag.com/",
+          "schedule": "https://yogainabag.com/en/studios/winterthur/"
+        }
+      }
     }
   ]
 }

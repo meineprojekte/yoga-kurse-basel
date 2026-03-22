@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T00:00:00Z",
+  "last_updated": "2026-03-22T08:00:29.152426+00:00",
   "studios": [
     {
       "id": "yogaamfluss-ennenda",
@@ -36,7 +36,18 @@
       "lat": 47.0371,
       "lng": 9.0714,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:00:25.607473+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.yoga-am-fluss.ch/",
+          "schedule": "https://www.yoga-am-fluss.ch/angebot/stundenplan/"
+        }
+      }
     },
     {
       "id": "12yoga-ennenda",
@@ -79,7 +90,19 @@
         "single": 24,
         "currency": "CHF",
         "verified": true,
-        "source": "https://12yoga.ch/"
+        "source": "https://12yoga.ch/",
+        "last_checked": "2026-03-22T08:00:28.639411+00:00"
+      },
+      "scrape_status": "scraped",
+      "last_scraped": "2026-03-22T08:00:26.746378+00:00",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:00:28.639425+00:00",
+        "last_price_check": null,
+        "scrape_status": "scraped",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://12yoga.ch/"
+        }
       }
     },
     {
@@ -117,7 +140,17 @@
       "lat": 47.1228,
       "lng": 9.0556,
       "active": true,
-      "classes": []
+      "classes": [],
+      "scrape_status": "no_data",
+      "_meta": {
+        "last_scraped": "2026-03-22T08:00:29.152400+00:00",
+        "last_price_check": null,
+        "scrape_status": "no_data",
+        "booking_links": [],
+        "source_urls": {
+          "website": "https://www.cgworkout.ch/"
+        }
+      }
     }
   ]
 }
