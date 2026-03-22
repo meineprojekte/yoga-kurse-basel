@@ -1,58 +1,19 @@
 {
-  "last_updated": "2026-03-21T00:00:00Z",
+  "last_updated": "2026-03-22T21:40:25.560425+00:00",
   "_notes": "goYoga Sarnen schedule from goyoga.ch/stundenplan-2.html. Yoga Ishwari website returned 403; no schedule extracted. Teacher for goYoga is Petra Kathriner (studio owner).",
   "classes": [
     {
       "studio_id": "goyoga-sarnen",
       "studio_name": "goYoga Sarnen",
       "day": "Tuesday",
-      "time_start": "06:30",
-      "time_end": "07:30",
-      "class_name": "Hatha-Vinyasa",
-      "teacher": "Petra Kathriner",
-      "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
-    },
-    {
-      "studio_id": "goyoga-sarnen",
-      "studio_name": "goYoga Sarnen",
-      "day": "Tuesday",
-      "time_start": "08:00",
-      "time_end": "09:00",
-      "class_name": "Hatha-Vinyasa",
-      "teacher": "Petra Kathriner",
-      "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
-    },
-    {
-      "studio_id": "goyoga-sarnen",
-      "studio_name": "goYoga Sarnen",
-      "day": "Tuesday",
-      "time_start": "09:15",
-      "time_end": "10:15",
-      "class_name": "Hatha-Vinyasa",
-      "teacher": "Petra Kathriner",
-      "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
-    },
-    {
-      "studio_id": "goyoga-sarnen",
-      "studio_name": "goYoga Sarnen",
-      "day": "Tuesday",
       "time_start": "17:45",
       "time_end": "18:45",
-      "class_name": "Hatha-Vinyasa",
+      "class_name": "Hatha Vinyasa",
       "teacher": "Petra Kathriner",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -62,10 +23,10 @@
       "time_end": "20:00",
       "class_name": "Poweryoga",
       "teacher": "Petra Kathriner",
-      "level": "intermediate",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "level": "all",
+      "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -73,25 +34,12 @@
       "day": "Tuesday",
       "time_start": "20:15",
       "time_end": "21:15",
-      "class_name": "Hatha-Vinyasa",
+      "class_name": "Hatha Vinyasa",
       "teacher": "Petra Kathriner",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
-    },
-    {
-      "studio_id": "goyoga-sarnen",
-      "studio_name": "goYoga Sarnen",
-      "day": "Wednesday",
-      "time_start": "06:30",
-      "time_end": "07:30",
-      "class_name": "Poweryoga",
-      "teacher": "Petra Kathriner",
-      "level": "intermediate",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -99,12 +47,12 @@
       "day": "Wednesday",
       "time_start": "17:45",
       "time_end": "18:45",
-      "class_name": "Hatha-Vinyasa",
+      "class_name": "Hatha Vinyasa",
       "teacher": "Petra Kathriner",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -112,12 +60,12 @@
       "day": "Wednesday",
       "time_start": "19:00",
       "time_end": "20:00",
-      "class_name": "Hatha-Vinyasa",
+      "class_name": "Hatha Vinyasa / Mi 19-20",
       "teacher": "Petra Kathriner",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -125,12 +73,25 @@
       "day": "Wednesday",
       "time_start": "20:15",
       "time_end": "21:15",
-      "class_name": "Hatha-Vinyasa",
+      "class_name": "Hatha Vinyasa",
       "teacher": "Petra Kathriner",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
+    },
+    {
+      "studio_id": "goyoga-sarnen",
+      "studio_name": "goYoga Sarnen",
+      "day": "Friday",
+      "time_start": "06:30",
+      "time_end": "07:30",
+      "class_name": "Poweryoga",
+      "teacher": "Petra Kathriner",
+      "level": "all",
+      "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -138,16 +99,29 @@
       "day": "Friday",
       "time_start": "08:00",
       "time_end": "09:00",
-      "class_name": "Hatha-Vinyasa",
+      "class_name": "Hatha Vinyasa",
       "teacher": "Petra Kathriner",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
+    },
+    {
+      "studio_id": "goyoga-sarnen",
+      "studio_name": "goYoga Sarnen",
+      "day": "Friday",
+      "time_start": "09:15",
+      "time_end": "10:15",
+      "class_name": "Hatha Vinyasa",
+      "teacher": "Petra Kathriner",
+      "level": "all",
+      "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
     }
   ],
   "_meta": {
-    "last_updated": "2026-03-21",
+    "last_updated": "2026-03-22",
     "note": "Stundenplan-Daten aus öffentlichen Quellen. Für aktuelle Zeiten siehe Studio-Website."
   }
 }

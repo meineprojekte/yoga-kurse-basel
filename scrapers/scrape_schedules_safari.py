@@ -63,214 +63,226 @@ TARGET_STATUSES = {"blocked", "dynamic", "error"}
 EXTRACTION_JS = r"""
 (function() {
     var results = {classes: [], platform: 'unknown', error: null};
+
+    // Day name mapping: DE, EN, FR, IT -> English canonical
+    var dayMap = {
+        'montag':'Monday','dienstag':'Tuesday','mittwoch':'Wednesday',
+        'donnerstag':'Thursday','freitag':'Friday','samstag':'Saturday','sonntag':'Sunday',
+        'mo':'Monday','di':'Tuesday','mi':'Wednesday','do':'Thursday',
+        'fr':'Friday','sa':'Saturday','so':'Sunday',
+        'monday':'Monday','tuesday':'Tuesday','wednesday':'Wednesday',
+        'thursday':'Thursday','friday':'Friday','saturday':'Saturday','sunday':'Sunday',
+        'mon':'Monday','tue':'Tuesday','wed':'Wednesday','thu':'Thursday',
+        'fri':'Friday','sat':'Saturday','sun':'Sunday',
+        'lundi':'Monday','mardi':'Tuesday','mercredi':'Wednesday',
+        'jeudi':'Thursday','vendredi':'Friday','samedi':'Saturday','dimanche':'Sunday',
+        'lunedi':'Monday','lunedì':'Monday','martedi':'Tuesday','martedì':'Tuesday',
+        'mercoledi':'Wednesday','mercoledì':'Wednesday','giovedi':'Thursday','giovedì':'Thursday',
+        'venerdi':'Friday','venerdì':'Friday','sabato':'Saturday','domenica':'Sunday',
+        'lu':'Monday','ma':'Tuesday','me':'Wednesday','gi':'Thursday',
+        've':'Friday','lun':'Monday','mar':'Tuesday','mer':'Wednesday',
+        'gio':'Thursday','ven':'Friday','sab':'Saturday','dom':'Sunday'
+    };
+
+    // Yoga-related keywords to validate class names
+    var yogaKeywords = /yoga|vinyasa|hatha|yin|ashtanga|kundalini|flow|pilates|meditation|stretch|power|hot|bikram|restorative|prenatal|postnatal|nidra|pranayama|mysore|jivamukti|aerial|acro|iyengar|sivananda|anusara|forrest|rocket|slow|gentle|sanft|dynamic|dynamisch|kurs|class|lektion|stunde|session/i;
+
+    // Noise words to skip
+    var noiseWords = /^(buchen|book|anmelden|register|sign up|mehr|more|details|info|plätze|spots|frei|available|abbrechen|cancel|jetzt|now|login|warenkorb|cart|CHF|EUR|\d+\s*(min|€|CHF)|cookie|akzeptieren|accept|impressum|datenschutz|agb)$/i;
+
+    var timeRangeRe = /(\d{1,2})[.:h](\d{2})\s*[-–—]\s*(\d{1,2})[.:h](\d{2})/;
+    var singleTimeRe = /(\d{1,2})[.:h](\d{2})/;
+    var dayRe = /\b(Montag|Dienstag|Mittwoch|Donnerstag|Freitag|Samstag|Sonntag|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|Lundi|Mardi|Mercredi|Jeudi|Vendredi|Samedi|Dimanche|Luned[iì]|Marted[iì]|Mercoled[iì]|Gioved[iì]|Venerd[iì]|Sabato|Domenica|Mo|Di|Mi|Do|Fr|Sa|So)\b/gi;
+
+    function normTime(h, m) {
+        return (h.length === 1 ? '0' : '') + h + ':' + m;
+    }
+
+    function lookupDay(text) {
+        var t = text.trim().toLowerCase().replace(/[,.\s\d]/g, '');
+        return dayMap[t] || null;
+    }
+
     try {
-        // --- Eversports ---
-        var evCells = document.querySelectorAll(
-            '.ev-event-cell, .ev-session, [class*="EventCell"], [class*="event-cell"], '
-            + '[class*="SessionCard"], [class*="session-card"], [data-testid*="event"], '
-            + '[class*="schedule-event"], [class*="timetable"] [class*="event"]'
-        );
-        if (evCells.length > 0) {
-            results.platform = 'Eversports';
-            evCells.forEach(function(cell) {
-                var text = cell.innerText || cell.textContent || '';
-                var lines = text.split('\n').map(function(l){return l.trim()}).filter(Boolean);
-                var timeMatch = text.match(/(\d{1,2}[:.]\d{2})\s*[-–]\s*(\d{1,2}[:.]\d{2})/);
-                var timeStart = timeMatch ? timeMatch[1].replace('.', ':') : '';
-                var timeEnd = timeMatch ? timeMatch[2].replace('.', ':') : '';
-                // Try single time if no range found
-                if (!timeStart) {
-                    var singleTime = text.match(/(\d{1,2}[:.]\d{2})/);
-                    if (singleTime) timeStart = singleTime[1].replace('.', ':');
+        // =====================================================================
+        // STRATEGY 1: TEXT-BASED extraction from document.body.innerText
+        // Works regardless of CSS class names (Eversports obfuscated DOM, etc.)
+        // =====================================================================
+        var bodyText = document.body.innerText || '';
+        var allLines = bodyText.split('\n').map(function(l){return l.trim()}).filter(function(l){return l.length > 0});
+
+        // Detect platform from URL or page content
+        var pageUrl = window.location.href || '';
+        if (pageUrl.indexOf('eversports') >= 0) results.platform = 'Eversports';
+        else if (pageUrl.indexOf('mindbody') >= 0 || bodyText.indexOf('MINDBODY') >= 0) results.platform = 'MindBody';
+        else if (pageUrl.indexOf('sportsnow') >= 0) results.platform = 'SportsNow';
+
+        var currentDay = '';
+        var pendingClass = null;
+
+        for (var li = 0; li < allLines.length; li++) {
+            var line = allLines[li];
+
+            // Skip noise
+            if (noiseWords.test(line)) continue;
+            if (line.length > 200) continue;
+
+            // Check if this line is a day header
+            var dayMatch = line.match(dayRe);
+            if (dayMatch) {
+                var candidateDay = lookupDay(dayMatch[0]);
+                if (candidateDay) {
+                    // Only treat as day header if line is short (just the day name, maybe a date)
+                    var stripped = line.replace(dayRe, '').replace(/[\d\s.,\/\-]/g, '');
+                    if (stripped.length < 15) {
+                        currentDay = candidateDay;
+                        continue;
+                    }
                 }
+            }
+
+            // Check for time range in this line
+            var trMatch = line.match(timeRangeRe);
+            if (trMatch) {
+                var timeStart = normTime(trMatch[1], trMatch[2]);
+                var timeEnd = normTime(trMatch[3], trMatch[4]);
+
+                // Extract class name: text before or after the time, excluding noise
+                var beforeTime = line.substring(0, line.indexOf(trMatch[0])).trim();
+                var afterTime = line.substring(line.indexOf(trMatch[0]) + trMatch[0].length).trim();
+
+                // Remove trailing/leading separators
+                beforeTime = beforeTime.replace(/^[\s\-–—|:]+|[\s\-–—|:]+$/g, '');
+                afterTime = afterTime.replace(/^[\s\-–—|:]+|[\s\-–—|:]+$/g, '');
+
                 var className = '';
                 var teacher = '';
-                // First non-time, non-empty line is usually the class name
-                for (var i = 0; i < lines.length; i++) {
-                    if (!lines[i].match(/^\d{1,2}[:.]\d{2}/) && lines[i].length > 2) {
-                        if (!className) className = lines[i];
-                        else if (!teacher && lines[i] !== className) {
-                            teacher = lines[i];
-                            break;
+
+                // If there's text before the time, that's often the class name
+                if (beforeTime.length > 2 && !noiseWords.test(beforeTime)) {
+                    className = beforeTime;
+                    if (afterTime.length > 2 && !noiseWords.test(afterTime)) {
+                        teacher = afterTime;
+                    }
+                } else if (afterTime.length > 2 && !noiseWords.test(afterTime)) {
+                    className = afterTime;
+                }
+
+                // If no class name found inline, look at adjacent lines
+                if (!className) {
+                    // Check previous line
+                    if (li > 0 && !allLines[li-1].match(timeRangeRe) && !noiseWords.test(allLines[li-1])) {
+                        var prevLine = allLines[li-1];
+                        var prevDay = lookupDay(prevLine);
+                        if (!prevDay && prevLine.length > 2 && prevLine.length < 100) {
+                            className = prevLine;
+                        }
+                    }
+                    // Check next line
+                    if (!className && li + 1 < allLines.length && !allLines[li+1].match(timeRangeRe)) {
+                        var nextLine = allLines[li+1];
+                        if (!noiseWords.test(nextLine) && nextLine.length > 2 && nextLine.length < 100) {
+                            className = nextLine;
                         }
                     }
                 }
+
+                // If still no class name, check next line for teacher
+                if (className && !teacher && li + 1 < allLines.length) {
+                    var nextL = allLines[li+1];
+                    if (!nextL.match(timeRangeRe) && !noiseWords.test(nextL) && nextL.length > 2 && nextL.length < 60) {
+                        var nextDay = lookupDay(nextL);
+                        if (!nextDay && nextL !== className) {
+                            teacher = nextL;
+                        }
+                    }
+                }
+
                 if (className || timeStart) {
                     results.classes.push({
                         class_name: className,
                         time_start: timeStart,
                         time_end: timeEnd,
                         teacher: teacher,
-                        day: '',
+                        day: currentDay,
                         level: 'all',
-                        raw: text.substring(0, 200)
+                        raw: line.substring(0, 200)
                     });
                 }
-            });
+                continue;
+            }
+
+            // Check for single time (no range) — less reliable, only use if line has yoga keywords
+            var stMatch = line.match(singleTimeRe);
+            if (stMatch && yogaKeywords.test(line)) {
+                var tStart = normTime(stMatch[1], stMatch[2]);
+                var cName = line.replace(singleTimeRe, '').replace(/^[\s\-–—|:]+|[\s\-–—|:]+$/g, '').trim();
+                if (cName.length > 2 && !noiseWords.test(cName)) {
+                    results.classes.push({
+                        class_name: cName,
+                        time_start: tStart,
+                        time_end: '',
+                        teacher: '',
+                        day: currentDay,
+                        level: 'all',
+                        raw: line.substring(0, 200)
+                    });
+                }
+            }
         }
 
-        // --- Eversports table/grid view (day columns) ---
+        // =====================================================================
+        // STRATEGY 2: DOM-BASED extraction (try specific selectors as fallback)
+        // =====================================================================
         if (results.classes.length === 0) {
-            var dayHeaders = document.querySelectorAll(
-                '[class*="DayHeader"], [class*="day-header"], '
-                + '[class*="weekday"], th[class*="day"]'
-            );
-            if (dayHeaders.length > 0) {
-                results.platform = 'Eversports';
-                var dayNames = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
-                var deDays = {'Mo':'Monday','Di':'Tuesday','Mi':'Wednesday','Do':'Thursday',
-                              'Fr':'Friday','Sa':'Saturday','So':'Sunday',
-                              'Montag':'Monday','Dienstag':'Tuesday','Mittwoch':'Wednesday',
-                              'Donnerstag':'Thursday','Freitag':'Friday','Samstag':'Saturday',
-                              'Sonntag':'Sunday'};
-                dayHeaders.forEach(function(header, idx) {
-                    var dayText = (header.innerText || '').trim();
-                    var day = deDays[dayText] || dayText;
-                    // Find events in the same column
-                    var col = header.closest('[class*="column"], [class*="col"]');
-                    if (col) {
-                        var events = col.querySelectorAll('[class*="event"], [class*="session"]');
-                        events.forEach(function(ev) {
-                            var t = ev.innerText || '';
-                            var tm = t.match(/(\d{1,2}[:.]\d{2})\s*[-–]?\s*(\d{1,2}[:.]\d{2})?/);
-                            var lines = t.split('\n').map(function(l){return l.trim()}).filter(Boolean);
-                            var cn = '';
-                            for (var i=0;i<lines.length;i++) {
-                                if (!lines[i].match(/^\d/) && lines[i].length > 2) { cn = lines[i]; break; }
-                            }
-                            results.classes.push({
-                                class_name: cn,
-                                time_start: tm ? tm[1].replace('.',':') : '',
-                                time_end: tm && tm[2] ? tm[2].replace('.',':') : '',
-                                teacher: '',
-                                day: day,
-                                level: 'all',
-                                raw: t.substring(0,200)
-                            });
+            // --- SportsNow cal-entry divs ---
+            var snEntries = document.querySelectorAll('.cal-entry, .calendar-entry');
+            if (snEntries.length > 0) {
+                results.platform = 'SportsNow';
+                snEntries.forEach(function(entry) {
+                    var name = entry.getAttribute('data-service-session-name') || '';
+                    var teacher = entry.getAttribute('data-team') || '';
+                    var text = entry.innerText || '';
+                    var tm = text.match(timeRangeRe);
+                    if (name || tm) {
+                        results.classes.push({
+                            class_name: name,
+                            time_start: tm ? normTime(tm[1], tm[2]) : '',
+                            time_end: tm ? normTime(tm[3], tm[4]) : '',
+                            teacher: teacher,
+                            day: currentDay,
+                            level: 'all',
+                            raw: text.substring(0, 200)
                         });
                     }
                 });
             }
-        }
 
-        // --- MindBody ---
-        if (results.classes.length === 0) {
-            var mbSessions = document.querySelectorAll(
-                '.bw-session, .bw-widget__class, [class*="mindbody"] [class*="session"], '
-                + '[class*="healcode"] [class*="session"]'
-            );
-            if (mbSessions.length > 0) {
-                results.platform = 'MindBody';
-                mbSessions.forEach(function(s) {
-                    var text = s.innerText || '';
-                    var tm = text.match(/(\d{1,2}[:.]\d{2}\s*(?:AM|PM)?)\s*[-–]\s*(\d{1,2}[:.]\d{2}\s*(?:AM|PM)?)/i);
-                    var lines = text.split('\n').map(function(l){return l.trim()}).filter(Boolean);
-                    results.classes.push({
-                        class_name: lines[0] || '',
-                        time_start: tm ? tm[1] : '',
-                        time_end: tm ? tm[2] : '',
-                        teacher: lines.length > 1 ? lines[1] : '',
-                        day: '',
-                        level: 'all',
-                        raw: text.substring(0,200)
-                    });
-                });
-            }
-        }
-
-        // --- SportsNow ---
-        if (results.classes.length === 0) {
-            var snSessions = document.querySelectorAll(
-                '.sn-schedule, .sn-session, [class*="sportsnow"] [class*="event"]'
-            );
-            if (snSessions.length > 0) {
-                results.platform = 'SportsNow';
-                snSessions.forEach(function(s) {
-                    var text = s.innerText || '';
-                    var tm = text.match(/(\d{1,2}[:.]\d{2})\s*[-–]\s*(\d{1,2}[:.]\d{2})/);
-                    var lines = text.split('\n').map(function(l){return l.trim()}).filter(Boolean);
-                    results.classes.push({
-                        class_name: lines[0] || '',
-                        time_start: tm ? tm[1].replace('.',':') : '',
-                        time_end: tm ? tm[2].replace('.',':') : '',
-                        teacher: '',
-                        day: '',
-                        level: 'all',
-                        raw: text.substring(0,200)
-                    });
-                });
-            }
-        }
-
-        // --- Generic: tables with time patterns ---
-        if (results.classes.length === 0) {
-            results.platform = 'generic';
-            var deDays = {'Montag':'Monday','Dienstag':'Tuesday','Mittwoch':'Wednesday',
-                          'Donnerstag':'Thursday','Freitag':'Friday','Samstag':'Saturday',
-                          'Sonntag':'Sunday','Mo':'Monday','Di':'Tuesday','Mi':'Wednesday',
-                          'Do':'Thursday','Fr':'Friday','Sa':'Saturday','So':'Sunday'};
-            var dayPattern = /\b(Montag|Dienstag|Mittwoch|Donnerstag|Freitag|Samstag|Sonntag|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\b/gi;
-
-            // Try table rows
-            var rows = document.querySelectorAll('table tr, .schedule-row, [class*="schedule"] tr');
-            rows.forEach(function(row) {
-                var text = row.innerText || '';
-                var tm = text.match(/(\d{1,2}[:.]\d{2})\s*[-–]?\s*(\d{1,2}[:.]\d{2})?/);
-                if (tm) {
-                    var dayMatch = text.match(dayPattern);
-                    var cells = row.querySelectorAll('td, th');
-                    var cellTexts = Array.from(cells).map(function(c){return c.innerText.trim()});
-                    var cn = '';
-                    for (var i=0;i<cellTexts.length;i++) {
-                        if (cellTexts[i].length > 3 && !cellTexts[i].match(/^\d{1,2}[:.]\d{2}/) &&
-                            !cellTexts[i].match(dayPattern)) {
-                            cn = cellTexts[i]; break;
-                        }
-                    }
-                    results.classes.push({
-                        class_name: cn,
-                        time_start: tm[1].replace('.',':'),
-                        time_end: tm[2] ? tm[2].replace('.',':') : '',
-                        teacher: '',
-                        day: dayMatch ? (deDays[dayMatch[0]] || dayMatch[0]) : '',
-                        level: 'all',
-                        raw: text.substring(0,200)
-                    });
-                }
-            });
-
-            // Try lists / divs with times
+            // --- Generic table rows with times ---
             if (results.classes.length === 0) {
-                var allElements = document.querySelectorAll('li, div, p, span');
-                var seen = new Set();
-                allElements.forEach(function(el) {
-                    if (el.children.length > 3) return; // skip containers
-                    var text = (el.innerText || '').trim();
-                    if (text.length < 8 || text.length > 300) return;
-                    if (seen.has(text)) return;
-                    var tm = text.match(/(\d{1,2}[:.]\d{2})\s*[-–]?\s*(\d{1,2}[:.]\d{2})?/);
+                results.platform = 'generic';
+                var rows = document.querySelectorAll('table tr');
+                rows.forEach(function(row) {
+                    var text = row.innerText || '';
+                    var tm = text.match(timeRangeRe);
                     if (tm) {
-                        seen.add(text);
-                        var dayMatch = text.match(dayPattern);
-                        var parts = text.split(/\s{2,}|\t|\n|[|·•]/).map(function(p){return p.trim()}).filter(Boolean);
+                        var dm = text.match(dayRe);
+                        var cells = Array.from(row.querySelectorAll('td, th')).map(function(c){return c.innerText.trim()});
                         var cn = '';
-                        for (var i=0;i<parts.length;i++) {
-                            if (parts[i].length > 3 && !parts[i].match(/^\d{1,2}[:.]\d{2}/) &&
-                                !parts[i].match(dayPattern)) {
-                                cn = parts[i]; break;
+                        for (var i=0;i<cells.length;i++) {
+                            if (cells[i].length > 3 && !cells[i].match(/^\d{1,2}[.:]\d{2}/) && !cells[i].match(dayRe) && !noiseWords.test(cells[i])) {
+                                cn = cells[i]; break;
                             }
                         }
-                        if (cn) {
-                            results.classes.push({
-                                class_name: cn,
-                                time_start: tm[1].replace('.',':'),
-                                time_end: tm[2] ? tm[2].replace('.',':') : '',
-                                teacher: '',
-                                day: dayMatch ? (deDays[dayMatch[0]] || dayMatch[0]) : '',
-                                level: 'all',
-                                raw: text.substring(0,200)
-                            });
-                        }
+                        results.classes.push({
+                            class_name: cn,
+                            time_start: normTime(tm[1], tm[2]),
+                            time_end: normTime(tm[3], tm[4]),
+                            teacher: '',
+                            day: dm ? (dayMap[dm[0].toLowerCase()] || dm[0]) : '',
+                            level: 'all',
+                            raw: text.substring(0, 200)
+                        });
                     }
                 });
             }
@@ -279,7 +291,7 @@ EXTRACTION_JS = r"""
         // Deduplicate by class_name + time_start + day
         var unique = {};
         results.classes = results.classes.filter(function(c) {
-            var key = c.class_name + '|' + c.time_start + '|' + c.day;
+            var key = (c.class_name + '|' + c.time_start + '|' + c.day).toLowerCase();
             if (unique[key]) return false;
             unique[key] = true;
             return true;
@@ -511,34 +523,80 @@ def build_targets(verification, cantons_filter=None, statuses=None, max_studios=
 # Scrape a single studio
 # ---------------------------------------------------------------------------
 
+def get_eversports_schedule_url(url):
+    """
+    For Eversports studio URLs, try the /classes path variant.
+    E.g. https://www.eversports.ch/s/yoga-am-zuerichberg -> .../classes
+    """
+    if "eversports.ch/s/" in url:
+        base = url.rstrip("/")
+        if not base.endswith("/classes"):
+            return base + "/classes"
+    return url
+
+
+def get_mindbody_widget_url(url, studio):
+    """
+    For studios with MindBody widget IDs, construct the direct widget URL
+    which renders the schedule in an iframe-like page.
+    """
+    widget_id = studio.get("mindbody_widget_id", "")
+    if widget_id:
+        return f"https://go.mindbodyonline.com/book/widgets/schedules/view/{widget_id}/schedule"
+    return url
+
+
 def scrape_studio(target):
     """
     Scrape a single studio's schedule via Safari.
     Returns dict with keys: success, classes, platform, error
     """
     url = target["schedule_url"]
-    is_eversports = "eversports" in url.lower()
+    platform = target.get("platform", "").lower()
+    is_eversports = "eversports" in url.lower() or platform == "eversports"
+    is_mindbody = platform == "mindbody"
     log.info(f"  Opening: {url}")
+
+    # For Eversports, try /classes path first
+    if is_eversports:
+        url = get_eversports_schedule_url(url)
+        log.info(f"  Eversports: using URL {url}")
 
     try:
         safari_open_url(url)
 
         # Wait for initial page load
-        loaded = safari_wait_for_load(timeout_seconds=15)
+        loaded = safari_wait_for_load(timeout_seconds=20)
         if not loaded:
-            log.warning(f"  Page did not finish loading within 15s")
+            log.warning(f"  Page did not finish loading within 20s")
 
-        # Extra wait for JS-heavy pages (Eversports, etc.)
-        wait_time = 10 if is_eversports else 5
+        # Extra wait for JS-heavy pages
+        if is_eversports:
+            wait_time = 15
+        elif is_mindbody:
+            wait_time = 12
+        else:
+            wait_time = 5
         log.info(f"  Waiting {wait_time}s for JS rendering...")
         time.sleep(wait_time)
 
         # Execute extraction JavaScript
-        raw_result = safari_execute_js(EXTRACTION_JS, timeout=15)
+        raw_result = safari_execute_js(EXTRACTION_JS, timeout=20)
 
         if not raw_result:
-            return {"success": False, "classes": [], "platform": "unknown",
-                    "error": "No result from JS extraction"}
+            # For Eversports, try the base URL if /classes didn't work
+            if is_eversports and url.endswith("/classes"):
+                base_url = url.replace("/classes", "")
+                log.info(f"  /classes failed, trying base URL: {base_url}")
+                safari_close_tab()
+                safari_open_url(base_url)
+                safari_wait_for_load(timeout_seconds=20)
+                time.sleep(15)
+                raw_result = safari_execute_js(EXTRACTION_JS, timeout=20)
+
+            if not raw_result:
+                return {"success": False, "classes": [], "platform": "unknown",
+                        "error": "No result from JS extraction"}
 
         # Parse JSON result
         try:
@@ -555,7 +613,7 @@ def scrape_studio(target):
                         "error": f"Invalid JSON: {raw_result[:100]}"}
 
         classes = result.get("classes", [])
-        platform = result.get("platform", "unknown")
+        platform_detected = result.get("platform", "unknown")
         error = result.get("error")
 
         if error:
@@ -564,7 +622,7 @@ def scrape_studio(target):
         return {
             "success": len(classes) > 0,
             "classes": classes,
-            "platform": platform,
+            "platform": platform_detected,
             "error": error,
         }
 

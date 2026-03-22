@@ -94,6 +94,267 @@ def scrape_eversports_widget(url):
     return classes
 
 
+# ---------------------------------------------------------------------------
+# Platform-specific scrapers
+# ---------------------------------------------------------------------------
+
+# Known SportsNow slug overrides (studio_id -> sportsnow_slug)
+# Discovered by scraping studio websites for embedded SportsNow widget URLs
+SPORTSNOW_SLUGS = {
+    'ayana-yoga-schaffhausen': 'ayana-yoga',
+    'yogaflowzug': 'yogaflowzug',
+    'hot-yoga-christoph-herren': 'hot-yoga-christoph-herren',
+    'goyoga-sarnen': 'goyoga-sarnen',
+    'mii-ruum': 'mii-ruum-yoga-und-pilates-luzern',
+    'yoga-carmen-bern': 'yoga-carmen',
+    'openyoga-bern': 'openyoga',
+    'studio-8-st-gallen': 'studio-8',
+}
+
+
+def scrape_sportsnow_schedule(studio):
+    """
+    Scrape schedule from SportsNow using the /providers/{slug}/schedule endpoint.
+
+    This endpoint returns a clean HTML table with:
+    - Day headers as <tr><td colspan="6">Montag</td></tr>
+    - Class rows with columns: Zeit, Stunde, Leitung, Ort/Raum, Bemerkung, Aktion
+
+    URL pattern: https://www.sportsnow.ch/providers/{slug}/schedule?locale=de
+
+    Returns a list of class entry dicts, or None if the approach fails.
+    """
+    studio_id = studio.get('id', '')
+    studio_name = studio.get('name', '')
+
+    # Determine the SportsNow slug
+    sn_slug = studio.get('sportsnow_slug', '') or SPORTSNOW_SLUGS.get(studio_id, '')
+
+    # If no slug known, try to find it from the studio website
+    if not sn_slug:
+        sn_slug = _discover_sportsnow_slug(studio)
+        if sn_slug:
+            logger.info(f"  Discovered SportsNow slug: {sn_slug}")
+
+    if not sn_slug:
+        logger.debug(f"  No SportsNow slug found for {studio_name}")
+        return None
+
+    url = f'https://www.sportsnow.ch/providers/{sn_slug}/schedule?locale=de'
+    logger.info(f"  SportsNow: fetching {url}")
+
+    html = fetch_page(url, timeout=15)
+    if not html:
+        return None
+
+    soup = BeautifulSoup(html, 'html.parser')
+
+    table = soup.find('table')
+    if not table:
+        logger.warning(f"  SportsNow: no schedule table found for {sn_slug}")
+        return None
+
+    classes = []
+    current_day = None
+
+    # Day name mapping
+    sn_day_map = {
+        'montag': 'Monday', 'dienstag': 'Tuesday', 'mittwoch': 'Wednesday',
+        'donnerstag': 'Thursday', 'freitag': 'Friday', 'samstag': 'Saturday',
+        'sonntag': 'Sunday',
+    }
+
+    for tr in table.find_all('tr'):
+        tds = tr.find_all('td')
+        if not tds:
+            continue
+
+        # Day header row: single td with colspan
+        if len(tds) == 1 and tds[0].get('colspan'):
+            day_text = tds[0].get_text(strip=True).lower()
+            for de_day, en_day in sn_day_map.items():
+                if de_day in day_text:
+                    current_day = en_day
+                    break
+            continue
+
+        # Class row: 6 columns (Zeit, Stunde, Leitung, Ort/Raum, Bemerkung, Aktion)
+        if len(tds) >= 3 and current_day:
+            time_text = tds[0].get_text(strip=True)
+            class_name = tds[1].get_text(strip=True) if len(tds) > 1 else ''
+            teacher = tds[2].get_text(strip=True) if len(tds) > 2 else ''
+
+            # Parse time range (e.g., "09:00 - 10:15")
+            time_match = re.search(
+                r'(\d{1,2}:\d{2})\s*[-–]\s*(\d{1,2}:\d{2})', time_text)
+
+            if time_match and class_name:
+                # Clean class name: strip date ranges like "/ 15.09.2025 - 23.03.2026"
+                class_name = re.sub(
+                    r'\s*/?\s*\d{2}\.\d{2}\.\d{4}\s*[-–]\s*\d{2}\.\d{2}\.\d{4}',
+                    '', class_name).strip()
+                # Clean teacher name: SportsNow sometimes prefixes with "N) "
+                teacher = re.sub(r'^\d+\)\s*', '', teacher).strip()
+
+                classes.append({
+                    'studio_id': studio_id,
+                    'studio_name': studio_name,
+                    'day': current_day,
+                    'time_start': time_match.group(1),
+                    'time_end': time_match.group(2),
+                    'class_name': class_name,
+                    'teacher': teacher,
+                    'level': 'all',
+                    'source': url,
+                    'verified': True,
+                })
+
+    if classes:
+        logger.info(f"  SportsNow: extracted {len(classes)} classes for {studio_name}")
+    return classes if classes else None
+
+
+def _discover_sportsnow_slug(studio):
+    """
+    Try to discover the SportsNow slug by checking the studio's website
+    for embedded SportsNow widget URLs.
+    """
+    website = studio.get('website', '')
+    schedule_url = studio.get('schedule_url', '')
+
+    urls_to_check = []
+    if schedule_url:
+        urls_to_check.append(schedule_url)
+    if website and website != schedule_url:
+        urls_to_check.append(website)
+
+    for url in urls_to_check:
+        html = fetch_page(url, timeout=10)
+        if not html:
+            continue
+
+        # Look for sportsnow.ch slug patterns in HTML
+        slugs = re.findall(
+            r'sportsnow\.ch/(?:go|providers)/([a-zA-Z0-9_-]+)', html)
+        if slugs:
+            return slugs[0]
+
+        # Check subpages for schedule links
+        soup = BeautifulSoup(html, 'lxml')
+        for link in soup.find_all('a', href=re.compile(
+                r'(?:stundenplan|schedule|kurse|classes)', re.I)):
+            href = link.get('href', '')
+            if href.startswith('/'):
+                base = '/'.join(url.split('/')[:3])
+                sub_url = base + href
+            elif href.startswith('http'):
+                sub_url = href
+            else:
+                continue
+
+            sub_html = fetch_page(sub_url, timeout=10)
+            if sub_html:
+                sub_slugs = re.findall(
+                    r'sportsnow\.ch/(?:go|providers)/([a-zA-Z0-9_-]+)', sub_html)
+                if sub_slugs:
+                    return sub_slugs[0]
+
+    return None
+
+
+def scrape_eversports_schedule(studio):
+    """
+    Attempt to scrape Eversports schedule via HTTP.
+
+    Eversports blocks HTTP requests with 403. This function checks if the
+    studio's own website (not eversports.ch) embeds the schedule in static HTML.
+    If the schedule_url points to eversports.ch directly, returns None
+    (must use Safari scraper instead).
+
+    Returns a list of class entry dicts, or None.
+    """
+    schedule_url = studio.get('schedule_url', '')
+
+    # If URL is directly on eversports.ch, we cannot scrape via HTTP
+    if 'eversports.ch' in schedule_url:
+        logger.debug(f"  Eversports: {schedule_url} requires browser (Safari scraper)")
+        return None
+
+    # If the studio has its own website with an embedded Eversports widget,
+    # try to scrape it normally (handled by scrape_schedule_classes)
+    return None
+
+
+def scrape_squarespace_schedule(studio):
+    """
+    Extract schedule data from Squarespace sites using ?format=json.
+
+    Squarespace sites expose page data as JSON. This can reveal embedded
+    MindBody widget IDs which we store for the Safari scraper to use.
+
+    Returns a list of class entry dicts, or None.
+    """
+    schedule_url = studio.get('schedule_url', '') or studio.get('website', '')
+    if not schedule_url:
+        return None
+
+    studio_id = studio.get('id', '')
+    studio_name = studio.get('name', '')
+
+    # Try ?format=json on the schedule page
+    json_url = schedule_url.rstrip('/') + '?format=json'
+    try:
+        resp = SESSION.get(json_url, timeout=10)
+        if resp.status_code != 200:
+            return None
+
+        # Check if it's actually JSON
+        content_type = resp.headers.get('content-type', '')
+        if 'json' not in content_type and 'javascript' not in content_type:
+            return None
+
+        text = resp.text
+
+        # Look for MindBody widget IDs
+        widget_ids = re.findall(
+            r'data-widget-id["\s:=]+["\']?([a-f0-9]{10,})', text)
+        if widget_ids:
+            logger.info(f"  Squarespace: found MindBody widget ID {widget_ids[0]} for {studio_name}")
+            # Store it on the studio for future Safari scraper use
+            studio['mindbody_widget_id'] = widget_ids[0]
+            # We can't fetch the MindBody schedule via HTTP (it's a React SPA),
+            # but having the widget ID is valuable for the Safari scraper
+
+        # Look for any schedule-like JSON content
+        # (Squarespace page JSON rarely has schedule data directly)
+
+    except Exception as e:
+        logger.debug(f"  Squarespace JSON failed for {studio_name}: {e}")
+
+    return None
+
+
+def scrape_mindbody_schedule(studio, widget_id=None):
+    """
+    Attempt to scrape MindBody schedule via HTTP.
+
+    MindBody widgets are React SPAs that require a browser to render.
+    This function stores the widget URL for the Safari scraper.
+
+    Returns None (MindBody requires browser rendering).
+    """
+    wid = widget_id or studio.get('mindbody_widget_id', '')
+    if wid:
+        # Store the direct widget URL for Safari scraper to use
+        studio['_mindbody_widget_url'] = (
+            f'https://go.mindbodyonline.com/book/widgets/schedules/view/{wid}/schedule'
+        )
+        logger.debug(f"  MindBody widget URL stored for {studio.get('name', '')}")
+
+    # MindBody schedule data cannot be extracted via HTTP
+    return None
+
+
 def scrape_generic_schedule(studio):
     """Generic scraper that looks for schedule information on studio websites."""
     url = studio.get('schedule_url') or studio.get('website')
@@ -671,25 +932,45 @@ def update_studio_data(canton_files, changelog, schedule_files, verification_dat
             schedule_url = studio.get('schedule_url', '')
             vinfo = verification_data.get(studio_id, {})
             vstatus = vinfo.get('status', '')
+            booking_platform = (studio.get('booking_platform', '') or '').lower()
 
-            if vstatus == 'scrapable' and schedule_url:
-                # Studio has a scrapable static schedule
+            new_classes = None
+
+            # Try platform-specific scrapers first (these work via HTTP)
+            if booking_platform == 'sportsnow':
+                try:
+                    new_classes = scrape_sportsnow_schedule(studio)
+                except Exception as e:
+                    logger.error(f"Error in SportsNow scraper for {studio_name}: {e}")
+
+            # For Squarespace sites, try to extract MindBody widget IDs
+            if new_classes is None and schedule_url:
+                try:
+                    scrape_squarespace_schedule(studio)
+                except Exception as e:
+                    logger.debug(f"Squarespace check failed for {studio_name}: {e}")
+
+            # For MindBody, store widget URL for Safari scraper
+            if new_classes is None and booking_platform in ('mindbody', 'mind body'):
+                try:
+                    scrape_mindbody_schedule(studio)
+                except Exception as e:
+                    logger.debug(f"MindBody check failed for {studio_name}: {e}")
+
+            # Fall back to generic static HTML scraping
+            if new_classes is None and vstatus == 'scrapable' and schedule_url:
                 try:
                     new_classes = scrape_schedule_classes(studio, schedule_url)
-                    if new_classes:
-                        update_schedule_for_studio(sched_data, studio, new_classes,
-                                                   schedule_url, verified=True)
-                        schedule_scraped += 1
-                    else:
-                        # No classes extracted but studio is scrapable; keep existing, mark unverified
-                        update_schedule_for_studio(sched_data, studio, [],
-                                                   schedule_url, verified=False)
                 except Exception as e:
                     logger.error(f"Error scraping schedule classes for {studio_name}: {e}")
-                    update_schedule_for_studio(sched_data, studio, [],
-                                               schedule_url, verified=False)
-            elif vstatus in ('blocked', 'dynamic', 'error', 'no_url', ''):
-                # Cannot scrape; keep existing entries but mark as unverified
+
+            # Update schedule data
+            if new_classes:
+                source = new_classes[0].get('source', schedule_url) if new_classes else schedule_url
+                update_schedule_for_studio(sched_data, studio, new_classes,
+                                           source, verified=True)
+                schedule_scraped += 1
+            elif vstatus in ('scrapable', 'blocked', 'dynamic', 'error', 'no_url', ''):
                 update_schedule_for_studio(sched_data, studio, [],
                                            schedule_url, verified=False)
 

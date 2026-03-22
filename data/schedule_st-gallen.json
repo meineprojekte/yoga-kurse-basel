@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-21T00:00:00Z",
+  "last_updated": "2026-03-22T21:40:25.561061+00:00",
   "classes": [
     {
       "studio_id": "yoga-altstadt",
@@ -364,10 +364,153 @@
       "source": "",
       "verified": false,
       "last_checked": "2026-03-21"
+    },
+    {
+      "studio_id": "studio-8-st-gallen",
+      "studio_name": "Studio 8",
+      "day": "Monday",
+      "time_start": "08:15",
+      "time_end": "09:30",
+      "class_name": "Hatha Yoga",
+      "teacher": "Christine Enz",
+      "level": "all",
+      "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
+    },
+    {
+      "studio_id": "studio-8-st-gallen",
+      "studio_name": "Studio 8",
+      "day": "Tuesday",
+      "time_start": "18:30",
+      "time_end": "19:45",
+      "class_name": "Yoga",
+      "teacher": "Franziska Von Hoff",
+      "level": "all",
+      "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
+    },
+    {
+      "studio_id": "studio-8-st-gallen",
+      "studio_name": "Studio 8",
+      "day": "Thursday",
+      "time_start": "08:55",
+      "time_end": "09:50",
+      "class_name": "Pilates",
+      "teacher": "Susanna Koopmann",
+      "level": "all",
+      "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
+    },
+    {
+      "studio_id": "studio-8-st-gallen",
+      "studio_name": "Studio 8",
+      "day": "Thursday",
+      "time_start": "10:05",
+      "time_end": "10:55",
+      "class_name": "Pilates",
+      "teacher": "Susanna Koopmann",
+      "level": "all",
+      "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
+    },
+    {
+      "studio_id": "studio-8-st-gallen",
+      "studio_name": "Studio 8",
+      "day": "Thursday",
+      "time_start": "12:30",
+      "time_end": "13:25",
+      "class_name": "Pilates Care",
+      "teacher": "Susanna Koopmann",
+      "level": "all",
+      "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
+    },
+    {
+      "studio_id": "studio-8-st-gallen",
+      "studio_name": "Studio 8",
+      "day": "Thursday",
+      "time_start": "17:10",
+      "time_end": "18:05",
+      "class_name": "Pilates",
+      "teacher": "Susanna Koopmann",
+      "level": "all",
+      "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
+    },
+    {
+      "studio_id": "studio-8-st-gallen",
+      "studio_name": "Studio 8",
+      "day": "Thursday",
+      "time_start": "18:10",
+      "time_end": "19:05",
+      "class_name": "Pilates",
+      "teacher": "Susanna Koopmann",
+      "level": "all",
+      "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
+    },
+    {
+      "studio_id": "studio-8-st-gallen",
+      "studio_name": "Studio 8",
+      "day": "Thursday",
+      "time_start": "19:10",
+      "time_end": "20:05",
+      "class_name": "Pilates",
+      "teacher": "Susanna Koopmann",
+      "level": "all",
+      "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
+    },
+    {
+      "studio_id": "studio-8-st-gallen",
+      "studio_name": "Studio 8",
+      "day": "Friday",
+      "time_start": "09:00",
+      "time_end": "09:55",
+      "class_name": "Pilates",
+      "teacher": "Susanna Koopmann",
+      "level": "all",
+      "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
+    },
+    {
+      "studio_id": "studio-8-st-gallen",
+      "studio_name": "Studio 8",
+      "day": "Friday",
+      "time_start": "10:00",
+      "time_end": "10:55",
+      "class_name": "Pilates",
+      "teacher": "Susanna Koopmann",
+      "level": "all",
+      "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
+    },
+    {
+      "studio_id": "studio-8-st-gallen",
+      "studio_name": "Studio 8",
+      "day": "Friday",
+      "time_start": "12:30",
+      "time_end": "13:25",
+      "class_name": "Pilates",
+      "teacher": "Susanna Koopmann",
+      "level": "all",
+      "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-03-22"
     }
   ],
   "_meta": {
-    "last_updated": "2026-03-21",
+    "last_updated": "2026-03-22",
     "note": "Stundenplan-Daten aus öffentlichen Quellen. Für aktuelle Zeiten siehe Studio-Website."
   }
 }
