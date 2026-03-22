@@ -1,12 +1,100 @@
 {
   "last_updated": "2026-03-21T00:00:00Z",
   "classes": [
-    {"studio_id": "yogiface-fribourg", "studio_name": "Yogiface", "day": "Monday", "time_start": "12:15", "time_end": "13:15", "class_name": "Yoga Dynamique", "teacher": "", "level": "all"},
-    {"studio_id": "yogiface-fribourg", "studio_name": "Yogiface", "day": "Tuesday", "time_start": "18:30", "time_end": "19:45", "class_name": "Yoga Dynamique", "teacher": "", "level": "all"},
-    {"studio_id": "yogiface-fribourg", "studio_name": "Yogiface", "day": "Thursday", "time_start": "18:30", "time_end": "19:45", "class_name": "Yoga Restaurateur", "teacher": "", "level": "all"},
-    {"studio_id": "happinez-yoga-fribourg", "studio_name": "Happinez Yoga Fribourg", "day": "Monday", "time_start": "09:00", "time_end": "10:30", "class_name": "Yoga", "teacher": "", "level": "all"},
-    {"studio_id": "happinez-yoga-fribourg", "studio_name": "Happinez Yoga Fribourg", "day": "Monday", "time_start": "18:30", "time_end": "20:00", "class_name": "Yoga", "teacher": "", "level": "all"},
-    {"studio_id": "happinez-yoga-fribourg", "studio_name": "Happinez Yoga Fribourg", "day": "Thursday", "time_start": "19:00", "time_end": "20:30", "class_name": "Yoga", "teacher": "", "level": "all"},
-    {"studio_id": "happinez-yoga-fribourg", "studio_name": "Happinez Yoga Fribourg", "day": "Saturday", "time_start": "09:30", "time_end": "11:00", "class_name": "Yoga", "teacher": "", "level": "all"}
-  ]
+    {
+      "studio_id": "yogiface-fribourg",
+      "studio_name": "Yogiface",
+      "day": "Monday",
+      "time_start": "12:15",
+      "time_end": "13:15",
+      "class_name": "Yoga Dynamique",
+      "teacher": "",
+      "level": "all",
+      "source": "",
+      "verified": false,
+      "last_checked": "2026-03-21"
+    },
+    {
+      "studio_id": "yogiface-fribourg",
+      "studio_name": "Yogiface",
+      "day": "Tuesday",
+      "time_start": "18:30",
+      "time_end": "19:45",
+      "class_name": "Yoga Dynamique",
+      "teacher": "",
+      "level": "all",
+      "source": "",
+      "verified": false,
+      "last_checked": "2026-03-21"
+    },
+    {
+      "studio_id": "yogiface-fribourg",
+      "studio_name": "Yogiface",
+      "day": "Thursday",
+      "time_start": "18:30",
+      "time_end": "19:45",
+      "class_name": "Yoga Restaurateur",
+      "teacher": "",
+      "level": "all",
+      "source": "",
+      "verified": false,
+      "last_checked": "2026-03-21"
+    },
+    {
+      "studio_id": "happinez-yoga-fribourg",
+      "studio_name": "Happinez Yoga Fribourg",
+      "day": "Monday",
+      "time_start": "09:00",
+      "time_end": "10:30",
+      "class_name": "Yoga",
+      "teacher": "",
+      "level": "all",
+      "source": "",
+      "verified": false,
+      "last_checked": "2026-03-21"
+    },
+    {
+      "studio_id": "happinez-yoga-fribourg",
+      "studio_name": "Happinez Yoga Fribourg",
+      "day": "Monday",
+      "time_start": "18:30",
+      "time_end": "20:00",
+      "class_name": "Yoga",
+      "teacher": "",
+      "level": "all",
+      "source": "",
+      "verified": false,
+      "last_checked": "2026-03-21"
+    },
+    {
+      "studio_id": "happinez-yoga-fribourg",
+      "studio_name": "Happinez Yoga Fribourg",
+      "day": "Thursday",
+      "time_start": "19:00",
+      "time_end": "20:30",
+      "class_name": "Yoga",
+      "teacher": "",
+      "level": "all",
+      "source": "",
+      "verified": false,
+      "last_checked": "2026-03-21"
+    },
+    {
+      "studio_id": "happinez-yoga-fribourg",
+      "studio_name": "Happinez Yoga Fribourg",
+      "day": "Saturday",
+      "time_start": "09:30",
+      "time_end": "11:00",
+      "class_name": "Yoga",
+      "teacher": "",
+      "level": "all",
+      "source": "",
+      "verified": false,
+      "last_checked": "2026-03-21"
+    }
+  ],
+  "_meta": {
+    "last_updated": "2026-03-21",
+    "note": "Stundenplan-Daten aus öffentlichen Quellen. Für aktuelle Zeiten siehe Studio-Website."
+  }
 }

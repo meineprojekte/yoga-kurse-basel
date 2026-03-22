@@ -77,6 +77,13 @@ if ('serviceWorker' in navigator) {
             'schedule.subtitle': 'Wähle einen Tag und sieh alle Yoga-Kurse in Basel mit Uhrzeit, Ort und Lehrer/in',
             'schedule.placeholder': 'Wähle einen Wochentag oben, um alle Kurse zu sehen.',
             'schedule.note': '* Stundenpläne von 7 Studios mit verfügbaren Daten. Einige Studios verwenden dynamische Buchungssysteme — besuche deren Website für den aktuellen Plan.',
+            'schedule.source_note': 'Stundenplan-Daten von den offiziellen Studio-Websites. Für tagesaktuelle Zeiten besuche die Studio-Website.',
+            'schedule.more_studios': 'Weitere Studios',
+            'schedule.view_schedule': 'Zum Stundenplan',
+            'schedule.no_online_schedule': 'Online-Stundenplan nicht verfügbar',
+            'schedule.visit_website': 'Auf der Studio-Website ansehen',
+            'schedule.official_schedule': 'Offizieller Stundenplan',
+            'schedule.view_on_eversports': 'Auf Eversports ansehen',
             'feedback.title': 'Feedback & Vorschläge',
             'feedback.subtitle': 'Hilf uns, diese Seite zu verbessern. Fehlt ein Studio? Stimmt ein Stundenplan nicht? Hast du Ideen?',
             'feedback.type': 'Art des Feedbacks',
@@ -177,6 +184,13 @@ if ('serviceWorker' in navigator) {
             'schedule.subtitle': 'Select a day to see all yoga classes in Basel with time, location and teacher',
             'schedule.placeholder': 'Select a day above to see all classes.',
             'schedule.note': '* Schedules from 7 studios with available data. Some studios use dynamic booking systems — visit their website for the current schedule.',
+            'schedule.source_note': 'Schedule data from official studio websites. For up-to-date times, please visit the studio website.',
+            'schedule.more_studios': 'More studios',
+            'schedule.view_schedule': 'View schedule',
+            'schedule.no_online_schedule': 'Online schedule not available',
+            'schedule.visit_website': 'View on studio website',
+            'schedule.official_schedule': 'Official schedule',
+            'schedule.view_on_eversports': 'View on Eversports',
             'feedback.title': 'Feedback & Suggestions',
             'feedback.subtitle': 'Help us improve this site. Is a studio missing? Is a schedule wrong? Got ideas?',
             'feedback.type': 'Type of feedback',
@@ -277,6 +291,13 @@ if ('serviceWorker' in navigator) {
             'schedule.subtitle': 'Scegli un giorno e scopri tutti i corsi di yoga a Basilea con orario, luogo e insegnante',
             'schedule.placeholder': 'Scegli un giorno della settimana qui sopra per vedere tutti i corsi.',
             'schedule.note': '* Orari di 7 studi con dati disponibili. Alcuni studi utilizzano sistemi di prenotazione dinamici \u2014 visita il loro sito per l\'orario aggiornato.',
+            'schedule.source_note': 'Dati degli orari dai siti ufficiali degli studi. Per orari aggiornati, visita il sito dello studio.',
+            'schedule.more_studios': 'Altri studi',
+            'schedule.view_schedule': 'Vedi orario',
+            'schedule.no_online_schedule': 'Orario online non disponibile',
+            'schedule.visit_website': 'Vedi sul sito dello studio',
+            'schedule.official_schedule': 'Orario ufficiale',
+            'schedule.view_on_eversports': 'Vedi su Eversports',
             'feedback.title': 'Feedback e suggerimenti',
             'feedback.subtitle': 'Aiutaci a migliorare questo sito. Manca uno studio? Un orario non \u00e8 corretto? Hai idee?',
             'feedback.type': 'Tipo di feedback',
@@ -377,6 +398,13 @@ if ('serviceWorker' in navigator) {
             'schedule.subtitle': 'Choisis un jour et d\u00e9couvre tous les cours de yoga \u00e0 B\u00e2le avec horaire, lieu et enseignant(e)',
             'schedule.placeholder': 'Choisis un jour de la semaine ci-dessus pour voir tous les cours.',
             'schedule.note': '* Horaires de 7 studios avec donn\u00e9es disponibles. Certains studios utilisent des syst\u00e8mes de r\u00e9servation dynamiques \u2014 consulte leur site pour l\'horaire actuel.',
+            'schedule.source_note': 'Donn\u00e9es des horaires provenant des sites officiels des studios. Pour les horaires actuels, consulte le site du studio.',
+            'schedule.more_studios': 'Plus de studios',
+            'schedule.view_schedule': 'Voir horaire',
+            'schedule.no_online_schedule': 'Horaire en ligne non disponible',
+            'schedule.visit_website': 'Voir sur le site du studio',
+            'schedule.official_schedule': 'Horaire officiel',
+            'schedule.view_on_eversports': 'Voir sur Eversports',
             'feedback.title': 'Feedback et suggestions',
             'feedback.subtitle': 'Aide-nous \u00e0 am\u00e9liorer ce site. Un studio manque ? Un horaire est incorrect ? Tu as des id\u00e9es ?',
             'feedback.type': 'Type de feedback',
@@ -1278,7 +1306,9 @@ if ('serviceWorker' in navigator) {
             html += '<a href="' + escapeHtml(studio.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-primary">' + t('modal.website') + '</a>';
         }
         if (studio.schedule_url) {
-            html += '<a href="' + escapeHtml(studio.schedule_url) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline">' + t('modal.schedule') + '</a>';
+            var isEversports = studio.schedule_url.indexOf('eversports') !== -1;
+            var schedBtnLabel = isEversports ? t('schedule.view_on_eversports') : t('schedule.official_schedule');
+            html += '<a href="' + escapeHtml(studio.schedule_url) + '" target="_blank" rel="noopener noreferrer" class="btn btn-schedule">' + schedBtnLabel + ' \u2192</a>';
         }
         html += '</div>';
 
@@ -1656,9 +1686,33 @@ if ('serviceWorker' in navigator) {
         });
 
         if (classes.length === 0) {
-            list.innerHTML = '<p class="schedule-placeholder">' +
+            var emptyHtml = '<p class="schedule-placeholder">' +
                 (state.lang === 'de' ? 'Keine Kurse für diesen Tag in unserer Datenbank.' : 'No classes for this day in our database.') +
                 '</p>';
+            // Show "more studios" even when no classes for this day
+            var allStudiosMore = [];
+            for (var ems = 0; ems < state.studios.length; ems++) {
+                var eStudio = state.studios[ems];
+                if (eStudio.schedule_url || eStudio.website) {
+                    allStudiosMore.push(eStudio);
+                }
+            }
+            if (allStudiosMore.length > 0) {
+                emptyHtml += '<div class="more-studios-section">' +
+                    '<h3 class="more-studios-title">' + t('schedule.more_studios') + '</h3>' +
+                    '<div class="more-studios-grid">';
+                for (var emsi = 0; emsi < allStudiosMore.length; emsi++) {
+                    var ems2 = allStudiosMore[emsi];
+                    var eLinkUrl = ems2.schedule_url || ems2.website;
+                    emptyHtml += '<div class="more-studios-card">' +
+                        '<span class="more-studios-name">' + escapeHtml(ems2.name) + '</span>' +
+                        '<a href="' + escapeHtml(eLinkUrl) + '" target="_blank" rel="noopener noreferrer" class="more-studios-btn">' +
+                        t('schedule.view_schedule') + ' \u2192</a>' +
+                        '</div>';
+                }
+                emptyHtml += '</div></div>';
+            }
+            list.innerHTML = emptyHtml;
             if (info) info.style.display = 'none';
             return;
         }
@@ -1689,7 +1743,19 @@ if ('serviceWorker' in navigator) {
             }
         }
 
-        var html = '<div class="schedule-header">' +
+        // Build studio lookup for schedule_url
+        var studioLookup = {};
+        for (var sl = 0; sl < state.studios.length; sl++) {
+            studioLookup[state.studios[sl].id] = state.studios[sl];
+        }
+
+        // Source note
+        var html = '<div class="schedule-source-note">' +
+            '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;margin-top:1px;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>' +
+            '<span>' + t('schedule.source_note') + '</span>' +
+            '</div>';
+
+        html += '<div class="schedule-header">' +
             '<span>' + (state.lang === 'de' ? 'Zeit' : 'Time') + '</span>' +
             '<span>' + (state.lang === 'de' ? 'Kurs' : 'Class') + '</span>' +
             '<span>Studio</span>' +
@@ -1697,6 +1763,9 @@ if ('serviceWorker' in navigator) {
             '<span>Level</span>' +
             '<span>' + (state.lang === 'de' ? 'Preis' : 'Price') + '</span>' +
             '</div>';
+
+        // Track which studios have schedule entries
+        var studiosWithSchedule = {};
 
         for (var j = 0; j < classes.length; j++) {
             var c = classes[j];
@@ -1709,15 +1778,49 @@ if ('serviceWorker' in navigator) {
                 ? '<span class="schedule-price-badge">' + (classPricing.currency || 'CHF') + ' ' + classPricing.single + '</span>'
                 : '<span class="schedule-price-na">\u2014</span>';
 
+            // Source link for studio
+            var studioRef = studioLookup[c.studio_id];
+            var sourceLink = '';
+            if (studioRef && studioRef.schedule_url) {
+                sourceLink = '<a href="' + escapeHtml(studioRef.schedule_url) + '" target="_blank" rel="noopener noreferrer" class="schedule-source-link" title="' + t('schedule.visit_website') + '"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>';
+            }
+
+            studiosWithSchedule[c.studio_id] = true;
+
             html += '<div class="schedule-row">' +
                 '<span class="schedule-time">' + escapeHtml(timeStr) + '</span>' +
                 '<span class="schedule-class">' + escapeHtml(c.class_name) + '</span>' +
-                '<span class="schedule-studio">' + escapeHtml(c.studio_name) + '</span>' +
+                '<span class="schedule-studio">' + escapeHtml(c.studio_name) + sourceLink + '</span>' +
                 '<span class="schedule-teacher">' + escapeHtml(c.teacher || '\u2014') + '</span>' +
                 '<span class="schedule-level">' + escapeHtml(levelText) + '</span>' +
                 '<span class="schedule-price">' + priceHtml + '</span>' +
                 '<button class="schedule-cal-btn" data-cal="' + j + '" title="' + (state.lang === 'de' ? 'Zum Kalender hinzufügen' : 'Add to calendar') + '">\uD83D\uDCC5</button>' +
                 '</div>';
+        }
+
+        // "More studios" section — studios without schedule entries
+        var moreStudios = [];
+        for (var ms = 0; ms < state.studios.length; ms++) {
+            var mStudio = state.studios[ms];
+            if (!studiosWithSchedule[mStudio.id] && (mStudio.schedule_url || mStudio.website)) {
+                moreStudios.push(mStudio);
+            }
+        }
+
+        if (moreStudios.length > 0) {
+            html += '<div class="more-studios-section">' +
+                '<h3 class="more-studios-title">' + t('schedule.more_studios') + '</h3>' +
+                '<div class="more-studios-grid">';
+            for (var msi = 0; msi < moreStudios.length; msi++) {
+                var ms2 = moreStudios[msi];
+                var linkUrl = ms2.schedule_url || ms2.website;
+                html += '<div class="more-studios-card">' +
+                    '<span class="more-studios-name">' + escapeHtml(ms2.name) + '</span>' +
+                    '<a href="' + escapeHtml(linkUrl) + '" target="_blank" rel="noopener noreferrer" class="more-studios-btn">' +
+                    t('schedule.view_schedule') + ' \u2192</a>' +
+                    '</div>';
+            }
+            html += '</div></div>';
         }
 
         list.innerHTML = html;

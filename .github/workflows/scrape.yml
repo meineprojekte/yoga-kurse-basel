@@ -85,6 +85,7 @@ jobs:
           git config user.name "Yoga Basel Bot"
           git config user.email "bot@yogakursebasel.ch"
           git add data/studios_*.json
+          git add data/schedule_*.json
           git add tools/price_changelog.json || true
           git add tools/validation_report.json || true
           git commit -m "chore: update studio data $(date -u +'%Y-%m-%d %H:%M UTC')"

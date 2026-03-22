@@ -2,8 +2,48 @@
   "last_updated": "2026-03-21T00:00:00Z",
   "_notes": "Yoga Zentrum Stans schedule from yoga-stans.ch/termine (calendar-based, recurring weekly groups). Gesund & Munter and sevencolors use Wix sites that did not render schedules. Sevencolors partial data from search snippets.",
   "classes": [
-    {"studio_id": "yoga-ayurveda-zentrum-stans", "studio_name": "Yoga und Ayurveda Zentrum", "day": "Monday", "time_start": "18:00", "time_end": "19:30", "class_name": "Yoga Gruppe 1", "teacher": "George Theruvel", "level": "all"},
-    {"studio_id": "yoga-ayurveda-zentrum-stans", "studio_name": "Yoga und Ayurveda Zentrum", "day": "Monday", "time_start": "20:00", "time_end": "21:30", "class_name": "Yoga Gruppe 2", "teacher": "George Theruvel", "level": "all"},
-    {"studio_id": "sevencolors-stans", "studio_name": "sevencolors", "day": "Wednesday", "time_start": "19:15", "time_end": "20:15", "class_name": "Hatha Yoga", "teacher": null, "level": "all"}
-  ]
+    {
+      "studio_id": "yoga-ayurveda-zentrum-stans",
+      "studio_name": "Yoga und Ayurveda Zentrum",
+      "day": "Monday",
+      "time_start": "18:00",
+      "time_end": "19:30",
+      "class_name": "Yoga Gruppe 1",
+      "teacher": "George Theruvel",
+      "level": "all",
+      "source": "",
+      "verified": false,
+      "last_checked": "2026-03-21"
+    },
+    {
+      "studio_id": "yoga-ayurveda-zentrum-stans",
+      "studio_name": "Yoga und Ayurveda Zentrum",
+      "day": "Monday",
+      "time_start": "20:00",
+      "time_end": "21:30",
+      "class_name": "Yoga Gruppe 2",
+      "teacher": "George Theruvel",
+      "level": "all",
+      "source": "",
+      "verified": false,
+      "last_checked": "2026-03-21"
+    },
+    {
+      "studio_id": "sevencolors-stans",
+      "studio_name": "sevencolors",
+      "day": "Wednesday",
+      "time_start": "19:15",
+      "time_end": "20:15",
+      "class_name": "Hatha Yoga",
+      "teacher": null,
+      "level": "all",
+      "source": "",
+      "verified": false,
+      "last_checked": "2026-03-21"
+    }
+  ],
+  "_meta": {
+    "last_updated": "2026-03-21",
+    "note": "Stundenplan-Daten aus öffentlichen Quellen. Für aktuelle Zeiten siehe Studio-Website."
+  }
 }

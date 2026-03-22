@@ -29,6 +29,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = PROJECT_ROOT / 'data'
 TOOLS_DIR = PROJECT_ROOT / 'tools'
 PRICE_CHANGELOG_FILE = TOOLS_DIR / 'price_changelog.json'
+VERIFICATION_FILE = TOOLS_DIR / 'schedule_verification.json'
 
 HEADERS = {
     'User-Agent': 'YogaKurseBasel/1.0 (https://yogakursebasel.ch; info aggregator)',
@@ -301,6 +302,219 @@ def save_canton_file(file_path, data):
 
 
 # ---------------------------------------------------------------------------
+# Schedule file handling (canton-specific)
+# ---------------------------------------------------------------------------
+
+# Day name mapping for schedule parsing (DE/FR/EN -> English canonical)
+DAY_MAP = {
+    'montag': 'Monday', 'dienstag': 'Tuesday', 'mittwoch': 'Wednesday',
+    'donnerstag': 'Thursday', 'freitag': 'Friday', 'samstag': 'Saturday',
+    'sonntag': 'Sunday',
+    'lundi': 'Monday', 'mardi': 'Tuesday', 'mercredi': 'Wednesday',
+    'jeudi': 'Thursday', 'vendredi': 'Friday', 'samedi': 'Saturday',
+    'dimanche': 'Sunday',
+    'monday': 'Monday', 'tuesday': 'Tuesday', 'wednesday': 'Wednesday',
+    'thursday': 'Thursday', 'friday': 'Friday', 'saturday': 'Saturday',
+    'sunday': 'Sunday',
+    'mon': 'Monday', 'tue': 'Tuesday', 'wed': 'Wednesday',
+    'thu': 'Thursday', 'fri': 'Friday', 'sat': 'Saturday', 'sun': 'Sunday',
+    'mo': 'Monday', 'di': 'Tuesday', 'mi': 'Wednesday',
+    'do': 'Thursday', 'fr': 'Friday', 'sa': 'Saturday', 'so': 'Sunday',
+}
+
+# Time pattern: matches HH:MM or H:MM
+TIME_PATTERN = re.compile(r'\b(\d{1,2}:\d{2})\b')
+
+
+def load_verification_data():
+    """Load schedule verification data to know which studios are scrapable."""
+    if VERIFICATION_FILE.exists():
+        try:
+            with open(VERIFICATION_FILE, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError):
+            logger.warning("Could not load schedule_verification.json")
+    return {}
+
+
+def load_all_schedule_files():
+    """
+    Load all canton-specific schedule files (data/schedule_*.json, excluding .enc.json).
+
+    Returns a dict: canton_name -> (file_path, data_dict).
+    """
+    pattern = str(DATA_DIR / 'schedule_*.json')
+    all_files = sorted(glob.glob(pattern))
+    schedule_files = {}
+
+    for fpath in all_files:
+        if fpath.endswith('.enc.json'):
+            continue
+        canton_name = Path(fpath).stem.replace('schedule_', '')
+        try:
+            with open(fpath, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            schedule_files[canton_name] = (fpath, data)
+            class_count = len(data.get('classes', []))
+            logger.info(f"Loaded schedule {fpath} ({class_count} classes)")
+        except (json.JSONDecodeError, OSError) as e:
+            logger.error(f"Failed to load schedule {fpath}: {e}")
+
+    return schedule_files
+
+
+def save_schedule_file(file_path, data):
+    """Save a schedule data dict back to its JSON file."""
+    with open(file_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+        f.write('\n')
+    logger.info(f"Saved schedule {file_path}")
+
+
+def _normalize_day(text):
+    """Try to extract a canonical English day name from text."""
+    text_lower = text.strip().lower()
+    for key, value in DAY_MAP.items():
+        if key in text_lower:
+            return value
+    return None
+
+
+def scrape_schedule_classes(studio, schedule_url):
+    """
+    Attempt to scrape actual class entries from a studio's schedule page.
+
+    Looks for schedule tables and structured content to extract:
+    - day, time_start, time_end, class_name, teacher
+
+    Returns a list of class entry dicts, or an empty list if nothing found.
+    """
+    html = fetch_page(schedule_url)
+    if not html:
+        return []
+
+    soup = BeautifulSoup(html, 'lxml')
+    classes = []
+    studio_id = studio.get('id', '')
+    studio_name = studio.get('name', '')
+
+    # Strategy 1: Look for schedule tables
+    tables = soup.find_all('table')
+    for table in tables:
+        headers = [th.get_text(strip=True).lower() for th in table.find_all('th')]
+        schedule_keywords = ['montag', 'dienstag', 'mittwoch', 'donnerstag', 'freitag',
+                             'samstag', 'sonntag', 'monday', 'tuesday', 'wednesday',
+                             'thursday', 'friday', 'saturday', 'sunday',
+                             'zeit', 'time', 'kurs', 'class', 'tag', 'day']
+        if not any(kw in ' '.join(headers) for kw in schedule_keywords):
+            continue
+
+        rows = table.find_all('tr')
+        for row in rows:
+            cells = [td.get_text(strip=True) for td in row.find_all(['td', 'th'])]
+            if len(cells) < 2:
+                continue
+
+            day = None
+            times = []
+            class_name = None
+            teacher = None
+
+            for cell in cells:
+                if not day:
+                    day = _normalize_day(cell)
+                    if day:
+                        continue
+
+                found_times = TIME_PATTERN.findall(cell)
+                if found_times and not times:
+                    times = found_times[:2]
+                    continue
+
+                if not class_name and cell and not TIME_PATTERN.match(cell):
+                    class_name = cell
+
+            if day and times and class_name:
+                entry = {
+                    'studio_id': studio_id,
+                    'studio_name': studio_name,
+                    'day': day,
+                    'time_start': times[0],
+                    'time_end': times[1] if len(times) > 1 else '',
+                    'class_name': class_name,
+                    'teacher': teacher,
+                    'level': 'all',
+                }
+                classes.append(entry)
+
+    # Strategy 2: Look for day headings followed by class listings
+    if not classes:
+        for heading in soup.find_all(['h2', 'h3', 'h4', 'strong', 'b']):
+            heading_text = heading.get_text(strip=True)
+            day = _normalize_day(heading_text)
+            if not day:
+                continue
+
+            # Look at siblings/next elements for class info
+            sibling = heading.find_next_sibling()
+            while sibling and sibling.name not in ['h2', 'h3', 'h4']:
+                text = sibling.get_text(strip=True)
+                found_times = TIME_PATTERN.findall(text)
+                if found_times:
+                    # Try to extract class name: text minus times
+                    class_text = TIME_PATTERN.sub('', text).strip(' -–|/')
+                    if class_text:
+                        entry = {
+                            'studio_id': studio_id,
+                            'studio_name': studio_name,
+                            'day': day,
+                            'time_start': found_times[0],
+                            'time_end': found_times[1] if len(found_times) > 1 else '',
+                            'class_name': class_text.split('  ')[0].strip(),
+                            'teacher': None,
+                            'level': 'all',
+                        }
+                        classes.append(entry)
+                sibling = sibling.find_next_sibling()
+
+    if classes:
+        logger.info(f"  Scraped {len(classes)} class(es) from {schedule_url}")
+    return classes
+
+
+def update_schedule_for_studio(schedule_data, studio, new_classes, schedule_url, verified):
+    """
+    Update schedule entries for a specific studio within a canton's schedule data.
+
+    If verified=True (freshly scraped), replaces all entries for this studio.
+    Otherwise, just updates the tracking fields on existing entries.
+    """
+    studio_id = studio.get('id', '')
+    now_date = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+    existing_classes = schedule_data.get('classes', [])
+
+    if verified and new_classes:
+        # Remove old entries for this studio and add new ones
+        existing_classes = [c for c in existing_classes if c.get('studio_id') != studio_id]
+        for entry in new_classes:
+            entry['source'] = schedule_url
+            entry['verified'] = True
+            entry['last_checked'] = now_date
+        existing_classes.extend(new_classes)
+        logger.info(f"  Replaced schedule entries for {studio_id} ({len(new_classes)} classes)")
+    else:
+        # Mark existing entries as unverified but update last_checked
+        for entry in existing_classes:
+            if entry.get('studio_id') == studio_id:
+                entry['verified'] = False
+                entry['last_checked'] = now_date
+                if schedule_url:
+                    entry['source'] = schedule_url
+
+    schedule_data['classes'] = existing_classes
+
+
+# ---------------------------------------------------------------------------
 # Price change logging
 # ---------------------------------------------------------------------------
 
@@ -398,17 +612,31 @@ def build_meta(studio, scrape_result, pricing_result):
 # Main scraping logic
 # ---------------------------------------------------------------------------
 
-def update_studio_data(canton_files, changelog):
-    """Run scrapers for all active studios across all canton files."""
+def update_studio_data(canton_files, changelog, schedule_files, verification_data):
+    """Run scrapers for all active studios across all canton files.
+
+    Also scrapes fresh schedule data for studios marked as scrapable in the
+    verification data, and updates the corresponding schedule_*.json files.
+    """
     total_updated = 0
     total_errors = 0
     total_prices_found = 0
+    total_schedule_scraped = 0
 
     for file_path, canton_name, data in canton_files:
         logger.info(f"--- Canton: {canton_name} ({file_path}) ---")
         updated_count = 0
         error_count = 0
         prices_found = 0
+        schedule_scraped = 0
+
+        # Get or create the schedule data for this canton
+        if canton_name in schedule_files:
+            sched_path, sched_data = schedule_files[canton_name]
+        else:
+            sched_path = str(DATA_DIR / f'schedule_{canton_name}.json')
+            sched_data = {'classes': []}
+            schedule_files[canton_name] = (sched_path, sched_data)
 
         for studio in data.get('studios', []):
             if not studio.get('active', True):
@@ -421,7 +649,7 @@ def update_studio_data(canton_files, changelog):
             scrape_result = None
             pricing_result = None
 
-            # --- Schedule scraping ---
+            # --- Schedule scraping (studio metadata) ---
             try:
                 scrape_result = scrape_generic_schedule(studio)
                 if scrape_result:
@@ -438,6 +666,32 @@ def update_studio_data(canton_files, changelog):
                 studio['scrape_status'] = 'error'
                 scrape_result = {'status': 'error'}
                 error_count += 1
+
+            # --- Schedule class scraping (actual class data) ---
+            schedule_url = studio.get('schedule_url', '')
+            vinfo = verification_data.get(studio_id, {})
+            vstatus = vinfo.get('status', '')
+
+            if vstatus == 'scrapable' and schedule_url:
+                # Studio has a scrapable static schedule
+                try:
+                    new_classes = scrape_schedule_classes(studio, schedule_url)
+                    if new_classes:
+                        update_schedule_for_studio(sched_data, studio, new_classes,
+                                                   schedule_url, verified=True)
+                        schedule_scraped += 1
+                    else:
+                        # No classes extracted but studio is scrapable; keep existing, mark unverified
+                        update_schedule_for_studio(sched_data, studio, [],
+                                                   schedule_url, verified=False)
+                except Exception as e:
+                    logger.error(f"Error scraping schedule classes for {studio_name}: {e}")
+                    update_schedule_for_studio(sched_data, studio, [],
+                                               schedule_url, verified=False)
+            elif vstatus in ('blocked', 'dynamic', 'error', 'no_url', ''):
+                # Cannot scrape; keep existing entries but mark as unverified
+                update_schedule_for_studio(sched_data, studio, [],
+                                           schedule_url, verified=False)
 
             # --- Price scraping ---
             try:
@@ -465,16 +719,24 @@ def update_studio_data(canton_files, changelog):
             # --- Persist _meta ---
             studio['_meta'] = build_meta(studio, scrape_result, pricing_result)
 
-        # Update file-level timestamp
+        # Update file-level timestamps
         data['last_updated'] = datetime.now(timezone.utc).isoformat()
+        now_date = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+        sched_data['_meta'] = {
+            'last_updated': now_date,
+            'note': 'Stundenplan-Daten aus öffentlichen Quellen. Für aktuelle Zeiten siehe Studio-Website.',
+        }
 
         logger.info(f"Canton {canton_name}: {updated_count} updated, "
-                     f"{error_count} errors, {prices_found} prices found")
+                     f"{error_count} errors, {prices_found} prices found, "
+                     f"{schedule_scraped} schedules scraped")
         total_updated += updated_count
         total_errors += error_count
         total_prices_found += prices_found
+        total_schedule_scraped += schedule_scraped
 
     logger.info(f"Total price scraping summary: {total_prices_found} studios with new/updated prices")
+    logger.info(f"Total schedule scraping summary: {total_schedule_scraped} studios with fresh schedule data")
     return total_updated, total_errors
 
 
@@ -516,7 +778,7 @@ def main():
     logger.info("Yoga Kurse Schweiz — Starting scrape run (all cantons)")
     logger.info("=" * 60)
 
-    # Load all canton-specific files
+    # Load all canton-specific studio files
     canton_files = load_all_canton_files()
     if not canton_files:
         logger.error("No canton studio files found in data/ directory")
@@ -524,15 +786,28 @@ def main():
 
     logger.info(f"Found {len(canton_files)} canton file(s) to process")
 
+    # Load schedule verification data (which studios are scrapable)
+    verification_data = load_verification_data()
+    logger.info(f"Loaded verification data for {len(verification_data)} studio(s)")
+
+    # Load all canton-specific schedule files
+    schedule_files = load_all_schedule_files()
+    logger.info(f"Loaded {len(schedule_files)} schedule file(s)")
+
     # Load existing price changelog
     changelog = load_price_changelog()
 
-    # Run scrapers across all cantons
-    updated, errors = update_studio_data(canton_files, changelog)
+    # Run scrapers across all cantons (studios + schedules + prices)
+    updated, errors = update_studio_data(canton_files, changelog,
+                                         schedule_files, verification_data)
 
-    # Save all canton files back
+    # Save all canton studio files back
     for file_path, canton_name, data in canton_files:
         save_canton_file(file_path, data)
+
+    # Save all canton schedule files back
+    for canton_name, (sched_path, sched_data) in schedule_files.items():
+        save_schedule_file(sched_path, sched_data)
 
     # Save price changelog if there were changes
     save_price_changelog(changelog)

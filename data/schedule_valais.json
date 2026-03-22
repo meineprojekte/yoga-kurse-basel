@@ -1,9 +1,61 @@
 {
   "last_updated": "2026-03-21T00:00:00Z",
   "classes": [
-    {"studio_id": "espace-tadasana-sion", "studio_name": "Espace Tadasana", "day": "Tuesday", "time_start": "18:00", "time_end": "19:00", "class_name": "Vinyasa Yoga", "teacher": "Sophie", "level": "beginner"},
-    {"studio_id": "happy-om-valais", "studio_name": "Happy OM Yoga et Pilates", "day": "Monday", "time_start": "18:30", "time_end": "19:30", "class_name": "Yoga", "teacher": "Valérie Magnin", "level": "all"},
-    {"studio_id": "happy-om-valais", "studio_name": "Happy OM Yoga et Pilates", "day": "Wednesday", "time_start": "09:00", "time_end": "10:00", "class_name": "Pilates", "teacher": "Valérie Magnin", "level": "all"},
-    {"studio_id": "happy-om-valais", "studio_name": "Happy OM Yoga et Pilates", "day": "Thursday", "time_start": "18:30", "time_end": "19:30", "class_name": "Yoga", "teacher": "Valérie Magnin", "level": "all"}
-  ]
+    {
+      "studio_id": "espace-tadasana-sion",
+      "studio_name": "Espace Tadasana",
+      "day": "Tuesday",
+      "time_start": "18:00",
+      "time_end": "19:00",
+      "class_name": "Vinyasa Yoga",
+      "teacher": "Sophie",
+      "level": "beginner",
+      "source": "",
+      "verified": false,
+      "last_checked": "2026-03-21"
+    },
+    {
+      "studio_id": "happy-om-valais",
+      "studio_name": "Happy OM Yoga et Pilates",
+      "day": "Monday",
+      "time_start": "18:30",
+      "time_end": "19:30",
+      "class_name": "Yoga",
+      "teacher": "Valérie Magnin",
+      "level": "all",
+      "source": "",
+      "verified": false,
+      "last_checked": "2026-03-21"
+    },
+    {
+      "studio_id": "happy-om-valais",
+      "studio_name": "Happy OM Yoga et Pilates",
+      "day": "Wednesday",
+      "time_start": "09:00",
+      "time_end": "10:00",
+      "class_name": "Pilates",
+      "teacher": "Valérie Magnin",
+      "level": "all",
+      "source": "",
+      "verified": false,
+      "last_checked": "2026-03-21"
+    },
+    {
+      "studio_id": "happy-om-valais",
+      "studio_name": "Happy OM Yoga et Pilates",
+      "day": "Thursday",
+      "time_start": "18:30",
+      "time_end": "19:30",
+      "class_name": "Yoga",
+      "teacher": "Valérie Magnin",
+      "level": "all",
+      "source": "",
+      "verified": false,
+      "last_checked": "2026-03-21"
+    }
+  ],
+  "_meta": {
+    "last_updated": "2026-03-21",
+    "note": "Stundenplan-Daten aus öffentlichen Quellen. Für aktuelle Zeiten siehe Studio-Website."
+  }
 }

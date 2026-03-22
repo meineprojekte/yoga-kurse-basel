@@ -1,0 +1,1002 @@
+{
+  "yoba": {
+    "schedule_url": "",
+    "studio_name": "YOBA Yoga Studio",
+    "canton": "basel",
+    "status": "no_url",
+    "has_static_schedule": false,
+    "platform": "website",
+    "classes_found": 0,
+    "http_status": null
+  },
+  "cristina-hagman": {
+    "schedule_url": "",
+    "studio_name": "Cristina Hagman — Body Therapy & Yoga",
+    "canton": "basel",
+    "status": "no_url",
+    "has_static_schedule": false,
+    "platform": "website",
+    "classes_found": 0,
+    "http_status": null
+  },
+  "soasana": {
+    "schedule_url": "https://soasana.ch/",
+    "studio_name": "Soasana Yoga",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Eversports",
+    "classes_found": 30,
+    "http_status": 200
+  },
+  "yogaholics-united": {
+    "schedule_url": "https://yogaholicsunited.ch/",
+    "studio_name": "Yogaholics United",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Eversports",
+    "classes_found": 6,
+    "http_status": 200
+  },
+  "bikram-yoga-zuerich": {
+    "schedule_url": "https://www.bikramyoga.ch/",
+    "studio_name": "Bikram Yoga College of India Zürich",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "MindBody",
+    "classes_found": 3,
+    "http_status": 200
+  },
+  "yoga-studio-zuerich": {
+    "schedule_url": "https://www.yogastudiozuerich.ch/",
+    "studio_name": "Yoga Studio Zürich",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 30,
+    "http_status": 200
+  },
+  "the-soulspace": {
+    "schedule_url": "https://www.thesoulspace.ch/classes",
+    "studio_name": "the SOULSPACE",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 30,
+    "http_status": 200
+  },
+  "athayoga": {
+    "schedule_url": "https://www.athayoga.ch/stundenplan/",
+    "studio_name": "ATHAYOGA",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Eversports",
+    "classes_found": 12,
+    "http_status": 200
+  },
+  "sanapurna": {
+    "schedule_url": "https://www.sanapurna.ch/yoga-types.php",
+    "studio_name": "Sanapurna Yoga & Ayurveda Centre",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "MindBody",
+    "classes_found": 20,
+    "http_status": 200
+  },
+  "ashtanga-yoga-zurich": {
+    "schedule_url": "https://www.ashtanga-yoga-zurich.com/schedule",
+    "studio_name": "Ashtanga Yoga Zurich",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Kursifant",
+    "classes_found": 10,
+    "http_status": 200
+  },
+  "patanjali-yoga-shala": {
+    "schedule_url": "https://www.patanjaliyoga.ch/",
+    "studio_name": "Patanjali Yoga Shala",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 17,
+    "http_status": 200
+  },
+  "das-yoga-haus-dubs": {
+    "schedule_url": "https://www.dasyogahaus-dubs.ch/",
+    "studio_name": "Das Yoga Haus Dubs",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 11,
+    "http_status": 200
+  },
+  "yoga-spirit": {
+    "schedule_url": "https://yoga-spirit.ch/",
+    "studio_name": "Yoga Spirit",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "TeamUp",
+    "classes_found": 30,
+    "http_status": 200
+  },
+  "yoga-am-zuerichberg": {
+    "schedule_url": "https://www.eversports.ch/s/yoga-am-zuerichberg",
+    "studio_name": "Yoga am Zürichberg",
+    "canton": "zurich",
+    "status": "blocked",
+    "has_static_schedule": false,
+    "platform": "Eversports",
+    "classes_found": 0,
+    "http_status": 403
+  },
+  "bodyart-studio": {
+    "schedule_url": "https://bodyart.studio/en/schedule/",
+    "studio_name": "BODYART Studio Zürich",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Eversports",
+    "classes_found": 7,
+    "http_status": 200
+  },
+  "yoga-am-fluss": {
+    "schedule_url": "https://www.yogaamfluss.ch/",
+    "studio_name": "Yoga am Fluss",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Eversports",
+    "classes_found": 25,
+    "http_status": 200
+  },
+  "soul-city": {
+    "schedule_url": "https://soulcity-zurich.ch/",
+    "studio_name": "Soul City",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 16,
+    "http_status": 200
+  },
+  "iyengar-yoga-zuerich": {
+    "schedule_url": "https://www.iyengar-yoga-zurich.ch/kurse.html",
+    "studio_name": "Iyengar Yoga Zürich",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 16,
+    "http_status": 200
+  },
+  "yoga-city": {
+    "schedule_url": "https://www.yogacity.ch/",
+    "studio_name": "Yoga City",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 20,
+    "http_status": 200
+  },
+  "yoga-nest": {
+    "schedule_url": "https://www.theyoganest.ch/",
+    "studio_name": "Yoga Nest",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Eversports",
+    "classes_found": 9,
+    "http_status": 200
+  },
+  "yoga-culture": {
+    "schedule_url": "https://www.yogaculture.ch/",
+    "studio_name": "Yoga Culture",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Eversports",
+    "classes_found": 30,
+    "http_status": 200
+  },
+  "planet-yoga": {
+    "schedule_url": "https://www.eversports.ch/s/planet-yoga",
+    "studio_name": "Planet Yoga",
+    "canton": "zurich",
+    "status": "blocked",
+    "has_static_schedule": false,
+    "platform": "Eversports",
+    "classes_found": 0,
+    "http_status": 403
+  },
+  "vvoo": {
+    "schedule_url": "https://vvoo.ch/pages/yoga",
+    "studio_name": "VVOO Yoga Studio & Wellness Shop",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Eversports",
+    "classes_found": 5,
+    "http_status": 200
+  },
+  "sleepy-yogi": {
+    "schedule_url": "https://www.sleepyyogi.com/",
+    "studio_name": "Sleepy Yogi Studio",
+    "canton": "zurich",
+    "status": "error",
+    "has_static_schedule": false,
+    "platform": "website",
+    "classes_found": 0,
+    "http_status": "connection_error"
+  },
+  "yoga-in-a-bag-altstetten": {
+    "schedule_url": "https://www.eversports.ch/s/yoga-in-a-bag-altstetten",
+    "studio_name": "Yoga in a Bag (Altstetten)",
+    "canton": "zurich",
+    "status": "blocked",
+    "has_static_schedule": false,
+    "platform": "Eversports",
+    "classes_found": 0,
+    "http_status": 403
+  },
+  "yogalives": {
+    "schedule_url": "https://www.yogalives.ch/",
+    "studio_name": "Yogalives",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Eversports",
+    "classes_found": 29,
+    "http_status": 200
+  },
+  "the-yoga-place": {
+    "schedule_url": "https://www.theyogaplace.ch/en/offering",
+    "studio_name": "The Yoga Place",
+    "canton": "zurich",
+    "status": "dynamic",
+    "has_static_schedule": false,
+    "platform": "website",
+    "classes_found": 0,
+    "http_status": 200
+  },
+  "nandalayoga": {
+    "schedule_url": "https://www.nandalayoga.ch/",
+    "studio_name": "nandalayoga",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 30,
+    "http_status": 200
+  },
+  "elevate-studio": {
+    "schedule_url": "https://www.elevate-studio.ch/",
+    "studio_name": "Elevate Studio",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Eversports",
+    "classes_found": 9,
+    "http_status": 200
+  },
+  "yoga-by-nora": {
+    "schedule_url": "https://www.eversports.ch/s/yoga-by-nora-mikkel",
+    "studio_name": "YOGA by Nora + Mikkel",
+    "canton": "zurich",
+    "status": "blocked",
+    "has_static_schedule": false,
+    "platform": "Eversports",
+    "classes_found": 0,
+    "http_status": 403
+  },
+  "studio-y3": {
+    "schedule_url": "https://www.studioy3.ch/book",
+    "studio_name": "Studio Y3",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 30,
+    "http_status": 200
+  },
+  "airyoga": {
+    "schedule_url": "https://www.airyoga.ch/en/class-schedules/",
+    "studio_name": "AIRYOGA",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "MindBody",
+    "classes_found": 9,
+    "http_status": 200
+  },
+  "yoga-in-a-bag-albisrieden": {
+    "schedule_url": "https://yogainabag.com/en/studios/",
+    "studio_name": "Yoga in a Bag (Albisrieden)",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 6,
+    "http_status": 200
+  },
+  "yoga2day": {
+    "schedule_url": "https://www.yoga2day.ch/angebot-yoga2day/",
+    "studio_name": "Yoga2day",
+    "canton": "zurich",
+    "status": "blocked",
+    "has_static_schedule": false,
+    "platform": "website",
+    "classes_found": 0,
+    "http_status": 403
+  },
+  "yoga-am-hottingerplatz": {
+    "schedule_url": "https://yo-am-ho.com/en/class-schedule/",
+    "studio_name": "Yoga am Hottingerplatz",
+    "canton": "zurich",
+    "status": "error",
+    "has_static_schedule": false,
+    "platform": "Eversports",
+    "classes_found": 0,
+    "http_status": "connection_error"
+  },
+  "yogamoves-winterthur": {
+    "schedule_url": "https://www.eversports.ch/s/yogamoves-gmbh",
+    "studio_name": "yogamoves",
+    "canton": "zurich",
+    "status": "blocked",
+    "has_static_schedule": false,
+    "platform": "Eversports",
+    "classes_found": 0,
+    "http_status": 403
+  },
+  "das-yoga-haus": {
+    "schedule_url": "https://dasyogahaus.ch/",
+    "studio_name": "Das Yoga Haus",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "MindBody",
+    "classes_found": 30,
+    "http_status": 200
+  },
+  "jio-kundalini-yoga": {
+    "schedule_url": "https://www.jiokundaliniyoga.com/register",
+    "studio_name": "Jio Kundalini Yoga",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Eversports",
+    "classes_found": 23,
+    "http_status": 200
+  },
+  "flowfabrik-winterthur": {
+    "schedule_url": "https://www.flowfabrik.ch/",
+    "studio_name": "FlowFabrik",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 30,
+    "http_status": 200
+  },
+  "yoga-academy-winterthur": {
+    "schedule_url": "https://www.eversports.ch/s/yoga-academy-winterthur",
+    "studio_name": "Yoga Academy Winterthur",
+    "canton": "zurich",
+    "status": "blocked",
+    "has_static_schedule": false,
+    "platform": "Eversports",
+    "classes_found": 0,
+    "http_status": 403
+  },
+  "yoga-in-winterthur": {
+    "schedule_url": "https://www.yoga-in.ch/",
+    "studio_name": "YOGA.IN",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 7,
+    "http_status": 200
+  },
+  "byoga": {
+    "schedule_url": "https://www.byoga.ch/yoga-klassen",
+    "studio_name": "B.Yoga Basel",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "MindBody",
+    "classes_found": 21,
+    "http_status": 200
+  },
+  "aranya-studio": {
+    "schedule_url": "https://www.aranya-studio.ch/en",
+    "studio_name": "ARANYA Studio",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 30,
+    "http_status": 200
+  },
+  "yoga-in-a-bag-winterthur": {
+    "schedule_url": "https://yogainabag.com/en/studios/winterthur/",
+    "studio_name": "Yoga in a Bag (Winterthur)",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Eversports",
+    "classes_found": 14,
+    "http_status": 200
+  },
+  "looking-glass": {
+    "schedule_url": "https://thelookingglassbasel.com/class-schedule",
+    "studio_name": "The Looking Glass Basel",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Eversports",
+    "classes_found": 30,
+    "http_status": 200
+  },
+  "templeshape": {
+    "schedule_url": "https://templeshape.com/en/templeshape-studio-wiedikon/yoga-in-wiedikon-zurich/",
+    "studio_name": "Templeshape",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 20,
+    "http_status": 200
+  },
+  "anjali": {
+    "schedule_url": "https://www.anjali.ch/stundenplan/",
+    "studio_name": "Anjali Yoga & Pilates Studio",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 19,
+    "http_status": 200
+  },
+  "yogagold": {
+    "schedule_url": "https://en.yogagold.net/yogaklassen",
+    "studio_name": "Yogagold",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 30,
+    "http_status": 200
+  },
+  "niyama": {
+    "schedule_url": "https://www.niyama-yoga.ch/en/our-classes/",
+    "studio_name": "Niyama Studio for Yoga & Pilates",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 11,
+    "http_status": 200
+  },
+  "bikram": {
+    "schedule_url": "https://bikramyogabasel.ch/",
+    "studio_name": "Bikram Yoga Basel",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Eversports",
+    "classes_found": 10,
+    "http_status": 200
+  },
+  "meyo-house": {
+    "schedule_url": "https://www.meyohouse.com/",
+    "studio_name": "MEYO HOUSE",
+    "canton": "basel",
+    "status": "blocked",
+    "has_static_schedule": false,
+    "platform": "website",
+    "classes_found": 0,
+    "http_status": 403
+  },
+  "lotos": {
+    "schedule_url": "https://lotosyoga.ch/kalender/",
+    "studio_name": "Lotos Yoga-Zentrum",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "TeamUp",
+    "classes_found": 30,
+    "http_status": 200
+  },
+  "yoga-atelier": {
+    "schedule_url": "https://www.yoga-atelier-basel.ch/angebot/woechentliche-kurse/",
+    "studio_name": "Yoga Atelier Basel",
+    "canton": "basel",
+    "status": "error",
+    "has_static_schedule": false,
+    "platform": "website",
+    "classes_found": 0,
+    "http_status": 404
+  },
+  "radiant-heart-studio": {
+    "schedule_url": "https://www.radiantheartstudio.com/schedule-1",
+    "studio_name": "Radiant Heart Studio",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 30,
+    "http_status": 200
+  },
+  "ashtanga-basel": {
+    "schedule_url": "https://www.ashtanga-basel.ch/classes/",
+    "studio_name": "Ashtanga Yoga Basel",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 22,
+    "http_status": 200
+  },
+  "volta-yoga": {
+    "schedule_url": "https://en.voltayoga.ch/stundenplan",
+    "studio_name": "Volta Yoga",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Eversports",
+    "classes_found": 8,
+    "http_status": 200
+  },
+  "secret-garden": {
+    "schedule_url": "https://secretgarden-yoga.ch/en/stundenplan/",
+    "studio_name": "Secret Garden Yoga Studio",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 30,
+    "http_status": 200
+  },
+  "mint": {
+    "schedule_url": "https://mint-loft.ch/stundenplan/",
+    "studio_name": "mint Basel",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 4,
+    "http_status": 200
+  },
+  "yoga-gaertnerhuus": {
+    "schedule_url": "https://www.yogaimgaertnerhuus.com",
+    "studio_name": "Yoga im Gärtnerhuus",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 30,
+    "http_status": 200
+  },
+  "exhale": {
+    "schedule_url": "https://exhale.ch/",
+    "studio_name": "Exhale Yoga Training & Coaching",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Eversports",
+    "classes_found": 17,
+    "http_status": 200
+  },
+  "project-peace": {
+    "schedule_url": "https://projectpeace.ch/classes-prices",
+    "studio_name": "Project Peace (Jivamukti Yoga)",
+    "canton": "zurich",
+    "status": "error",
+    "has_static_schedule": false,
+    "platform": "website",
+    "classes_found": 0,
+    "http_status": 404
+  },
+  "iyengar-kreis": {
+    "schedule_url": "https://www.i-yoga-basel.ch/",
+    "studio_name": "Iyengar Yoga Basel — Caroline Kreis",
+    "canton": "basel",
+    "status": "dynamic",
+    "has_static_schedule": false,
+    "platform": "website",
+    "classes_found": 0,
+    "http_status": 200
+  },
+  "studio-devin": {
+    "schedule_url": "http://devinyoga.com/",
+    "studio_name": "Studio Devin Yoga — Vincent Pezet",
+    "canton": "basel",
+    "status": "error",
+    "has_static_schedule": false,
+    "platform": "website",
+    "classes_found": 0,
+    "http_status": "connection_error"
+  },
+  "yogabloom": {
+    "schedule_url": "https://www.yogabloom.ch/",
+    "studio_name": "YOGABLOOM",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "MindBody",
+    "classes_found": 11,
+    "http_status": 200
+  },
+  "ayalga": {
+    "schedule_url": "https://ayalgayoga.ch/en/",
+    "studio_name": "Ayalga Yoga (Iyengar)",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 11,
+    "http_status": 200
+  },
+  "iyengar-gerbergaesslein": {
+    "schedule_url": "https://gerbergaesslein-yoga.ch/stundenplan/",
+    "studio_name": "Iyengar Yoga — Gerbergässlein",
+    "canton": "basel",
+    "status": "error",
+    "has_static_schedule": false,
+    "platform": "website",
+    "classes_found": 0,
+    "http_status": 429
+  },
+  "erlenyoga": {
+    "schedule_url": "https://erlenyoga.ch/",
+    "studio_name": "ErlenYoga",
+    "canton": "basel",
+    "status": "dynamic",
+    "has_static_schedule": false,
+    "platform": "website",
+    "classes_found": 0,
+    "http_status": 200
+  },
+  "yoga-now": {
+    "schedule_url": "https://www.yoganow-basel.ch/",
+    "studio_name": "Yoga Now Basel (Iyengar)",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 27,
+    "http_status": 200
+  },
+  "zanana-living-winterthur": {
+    "schedule_url": "https://zanana-living.ch/",
+    "studio_name": "Zanana Living Yoga",
+    "canton": "zurich",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Eversports",
+    "classes_found": 28,
+    "http_status": 200
+  },
+  "mysore-club": {
+    "schedule_url": "https://www.mysorebasel.ch/",
+    "studio_name": "Mysore Club Basel",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 26,
+    "http_status": 200
+  },
+  "rin-yoga": {
+    "schedule_url": "https://rin.yoga/",
+    "studio_name": "Rin Yoga — Rinny Biberstein",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 12,
+    "http_status": 200
+  },
+  "alessia-yoga": {
+    "schedule_url": "https://www.alessiayoga.com/",
+    "studio_name": "Alessia Yoga / THRIVE Mind & Body",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Eversports",
+    "classes_found": 3,
+    "http_status": 200
+  },
+  "claudia-stamm": {
+    "schedule_url": "https://www.claudia-stamm.com/",
+    "studio_name": "Claudia Stamm Yoga",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 16,
+    "http_status": 200
+  },
+  "katerina-wen": {
+    "schedule_url": "https://www.katerinawen.com/",
+    "studio_name": "Katerina Wen — Infinite Body Yoga",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 24,
+    "http_status": 200
+  },
+  "fitnesspark": {
+    "schedule_url": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/",
+    "studio_name": "Fitnesspark Basel Heuwaage (Migros)",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 19,
+    "http_status": 200
+  },
+  "mignon": {
+    "schedule_url": "https://www.mignonbaby.com/",
+    "studio_name": "Mignon — Birth & Parenting Support",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 9,
+    "http_status": 200
+  },
+  "bethsabe": {
+    "schedule_url": "https://www.bethsabe.ch",
+    "studio_name": "Bethsabé Yoga (Bottmingen)",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 9,
+    "http_status": 200
+  },
+  "food-changes": {
+    "schedule_url": "https://www.foodchangeseverything.me/class-schedule",
+    "studio_name": "Food Changes Everything — Vanessa Gatelein",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 27,
+    "http_status": 200
+  },
+  "klubschule": {
+    "schedule_url": "https://www.klubschule.ch/",
+    "studio_name": "Klubschule Migros Basel",
+    "canton": "basel",
+    "status": "dynamic",
+    "has_static_schedule": false,
+    "platform": "website",
+    "classes_found": 0,
+    "http_status": 200
+  },
+  "unisport": {
+    "schedule_url": "https://universitaetssport.unibas.ch/sportbereiche/body-und-mind-26704/yoga-26707/1",
+    "studio_name": "Universitätssport Basel",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 30,
+    "http_status": 200
+  },
+  "svarupa-yoga-bern": {
+    "schedule_url": "https://svarupa.com/events-classes/",
+    "studio_name": "svarupa yoga bern",
+    "canton": "bern",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 7,
+    "http_status": 200
+  },
+  "yoga-luna-bern": {
+    "schedule_url": "https://www.yogaluna.ch/studioklassen",
+    "studio_name": "Yoga Luna",
+    "canton": "bern",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 27,
+    "http_status": 200
+  },
+  "sutra-house": {
+    "schedule_url": "https://www.sutra-house.com/",
+    "studio_name": "Sutra House (Riehen)",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 12,
+    "http_status": 200
+  },
+  "yoga-carmen-bern": {
+    "schedule_url": "https://www.yoga-carmen.ch/stundenplan",
+    "studio_name": "Yoga Carmen",
+    "canton": "bern",
+    "status": "error",
+    "has_static_schedule": false,
+    "platform": "SportsNow",
+    "classes_found": 0,
+    "http_status": 404
+  },
+  "hot-yoga-bern": {
+    "schedule_url": "https://hotyogabern.ch/stundenplan",
+    "studio_name": "Hot Yoga Bern",
+    "canton": "bern",
+    "status": "error",
+    "has_static_schedule": false,
+    "platform": "Mindbody",
+    "classes_found": 0,
+    "http_status": "connection_error"
+  },
+  "kathrin-mathews": {
+    "schedule_url": "https://www.kathrinmathews.com/schedule/",
+    "studio_name": "Kathrin Mathews Yoga",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 16,
+    "http_status": 200
+  },
+  "yogveda-bern": {
+    "schedule_url": "https://www.yogveda.ch/stundenplan",
+    "studio_name": "Yogveda Yoga",
+    "canton": "bern",
+    "status": "error",
+    "has_static_schedule": false,
+    "platform": "Website",
+    "classes_found": 0,
+    "http_status": 404
+  },
+  "dayayoga-bern": {
+    "schedule_url": "https://www.jivamuktiyogabern.ch/schedule",
+    "studio_name": "Dayayoga / Jivamukti Yoga Bern",
+    "canton": "bern",
+    "status": "error",
+    "has_static_schedule": false,
+    "platform": "Website",
+    "classes_found": 0,
+    "http_status": "connection_error"
+  },
+  "iyengar-yoga-bern": {
+    "schedule_url": "https://www.iyengar-yoga-bern.ch/stundenplan",
+    "studio_name": "Iyengar Yoga Bern",
+    "canton": "bern",
+    "status": "error",
+    "has_static_schedule": false,
+    "platform": "Website",
+    "classes_found": 0,
+    "http_status": 404
+  },
+  "hot-yoga-christoph-herren": {
+    "schedule_url": "https://www.hotyogachristophherren.ch/stundenplan",
+    "studio_name": "Hot Yoga Christoph Herren",
+    "canton": "bern",
+    "status": "error",
+    "has_static_schedule": false,
+    "platform": "SportsNow",
+    "classes_found": 0,
+    "http_status": 404
+  },
+  "yogamarket-bern": {
+    "schedule_url": "https://yogamarket.ch/klassen/stundenplan/",
+    "studio_name": "yogamarket",
+    "canton": "bern",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "MindBody",
+    "classes_found": 11,
+    "http_status": 200
+  },
+  "inside-outside-bern": {
+    "schedule_url": "https://www.eversports.ch/s/inside-outside-yoga-pilates-and-more",
+    "studio_name": "Inside Outside yoga, pilates & more",
+    "canton": "bern",
+    "status": "blocked",
+    "has_static_schedule": false,
+    "platform": "Eversports",
+    "classes_found": 0,
+    "http_status": 403
+  },
+  "grey-rebel-bern": {
+    "schedule_url": "https://www.grey-rebel.com/schedule",
+    "studio_name": "Grey Rebel Yoga & Kinesiologie",
+    "canton": "bern",
+    "status": "error",
+    "has_static_schedule": false,
+    "platform": "Website",
+    "classes_found": 0,
+    "http_status": 404
+  },
+  "openyoga-bern": {
+    "schedule_url": "https://www.open-yoga.ch/de/stundenplan.html",
+    "studio_name": "OpenYoga",
+    "canton": "bern",
+    "status": "error",
+    "has_static_schedule": false,
+    "platform": "SportsNow",
+    "classes_found": 0,
+    "http_status": 404
+  },
+  "hothaus-bern": {
+    "schedule_url": "https://www.hothausyoga.com/schedule",
+    "studio_name": "HOTHAUS Hot Yoga & Movement Bern",
+    "canton": "bern",
+    "status": "error",
+    "has_static_schedule": false,
+    "platform": "Website",
+    "classes_found": 0,
+    "http_status": 404
+  },
+  "gyym": {
+    "schedule_url": "https://gyym.ch/en/",
+    "studio_name": "GYYM Health & Fitness",
+    "canton": "basel",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 11,
+    "http_status": 200
+  },
+  "hrdayam-bern": {
+    "schedule_url": "https://www.momoyoga.com/hrdayambern/",
+    "studio_name": "Hrdayam - Jivamukti Yoga Bern",
+    "canton": "bern",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "Momoyoga",
+    "classes_found": 30,
+    "http_status": 200
+  },
+  "origin8-bern": {
+    "schedule_url": "https://origin8.ch/stundenplan",
+    "studio_name": "origin8 - yoga, pilates & more",
+    "canton": "bern",
+    "status": "error",
+    "has_static_schedule": false,
+    "platform": "SportsNow",
+    "classes_found": 0,
+    "http_status": 404
+  },
+  "yama-yoga-bern": {
+    "schedule_url": "https://www.yamabern.ch/schedule",
+    "studio_name": "YAMA Yoga & Co",
+    "canton": "bern",
+    "status": "scrapable",
+    "has_static_schedule": true,
+    "platform": "website",
+    "classes_found": 18,
+    "http_status": 200
+  },
+  "yogaalaya-bern": {
+    "schedule_url": "https://www.yoga-bern.ch/en/index.php/schedule/",
+    "studio_name": "Yogaalaya Bern",
+    "canton": "bern",
+    "status": "error",
+    "has_static_schedule": false,
+    "platform": "Website",
+    "classes_found": 0,
+    "http_status": 404
+  }
+}
