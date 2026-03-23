@@ -1,0 +1,1244 @@
+{
+  "timestamp": "2026-03-23T19:46:17.170834+00:00",
+  "total_attempted": 158,
+  "total_recovered": 37,
+  "total_failed": 121,
+  "total_new_classes": 673,
+  "method_stats": {
+    "html": 18,
+    "eversports": 12,
+    "sportsnow": 5,
+    "momoyoga": 2
+  },
+  "successes": [
+    {
+      "id": "aurum-raum-fuer-yoga-aarau",
+      "name": "AURUM Raum für Yoga",
+      "canton": "aargau",
+      "classes_found": 1,
+      "method": "html:https://raum-fuer-yoga.ch/kursangebote/lu-jong-der-tibetische-yoga-in-aarau-mit-pascale-schmid/"
+    },
+    {
+      "id": "hieryoga-baden",
+      "name": "hierYOGA",
+      "canton": "aargau",
+      "classes_found": 26,
+      "method": "eversports:2KG8pr"
+    },
+    {
+      "id": "yogabloom",
+      "name": "YOGABLOOM",
+      "canton": "basel",
+      "classes_found": 11,
+      "method": "html:https://www.yogabloom.ch/schedule"
+    },
+    {
+      "id": "volta-yoga",
+      "name": "Volta Yoga",
+      "canton": "basel",
+      "classes_found": 88,
+      "method": "eversports:volta-yoga-basel"
+    },
+    {
+      "id": "exhale",
+      "name": "Exhale Yoga Training & Coaching",
+      "canton": "basel",
+      "classes_found": 8,
+      "method": "eversports:oKyP6Y"
+    },
+    {
+      "id": "yoga-now",
+      "name": "Yoga Now Basel (Iyengar)",
+      "canton": "basel",
+      "classes_found": 6,
+      "method": "html:https://www.yoganow-basel.ch/Kurse"
+    },
+    {
+      "id": "yogabern-iyengar",
+      "name": "YOGABERN Iyengar-Yoga-Schule",
+      "canton": "bern",
+      "classes_found": 16,
+      "method": "html:https://yogabern.ch/de/kurse"
+    },
+    {
+      "id": "vayam-yoga-bern",
+      "name": "vayam yoga",
+      "canton": "bern",
+      "classes_found": 8,
+      "method": "eversports:QMXfFC"
+    },
+    {
+      "id": "devi-yoga-bern",
+      "name": "DEVI Yoga Atem Therapie",
+      "canton": "bern",
+      "classes_found": 24,
+      "method": "eversports:p0c6yz"
+    },
+    {
+      "id": "yoga-and-more-bern",
+      "name": "Yoga & more",
+      "canton": "bern",
+      "classes_found": 5,
+      "method": "html:https://www.yoga-and-more.ch/"
+    },
+    {
+      "id": "yoga-club-biel",
+      "name": "Yoga Club Biel-Bienne",
+      "canton": "bern",
+      "classes_found": 5,
+      "method": "html:https://www.yoga-club.ch/horaire/"
+    },
+    {
+      "id": "sakura-yoga-geneve",
+      "name": "The Sakura Yoga",
+      "canton": "geneve",
+      "classes_found": 6,
+      "method": "html:https://www.thesakurayoga.com/en/schedule"
+    },
+    {
+      "id": "cgworkout-niederurnen",
+      "name": "CG workout - Pole & Yoga Studio",
+      "canton": "glarus",
+      "classes_found": 22,
+      "method": "eversports:VS9wgp"
+    },
+    {
+      "id": "acroyoga-group-chur",
+      "name": "Acroyoga Group Graubünden",
+      "canton": "graubuenden",
+      "classes_found": 3,
+      "method": "html:https://acroyoga.group/"
+    },
+    {
+      "id": "om-shanti-luzern",
+      "name": "Om Shanti Yogaschule Luzern",
+      "canton": "luzern",
+      "classes_found": 11,
+      "method": "html:https://www.yogaschuleluzern.ch/yoga-am-loewengraben-15/"
+    },
+    {
+      "id": "yoga-mit-herz",
+      "name": "Yoga mit Herz",
+      "canton": "luzern",
+      "classes_found": 2,
+      "method": "html:https://www.yogamitherz.com/"
+    },
+    {
+      "id": "yoga-veda-luzern",
+      "name": "Yoga Veda Ausbildungen",
+      "canton": "luzern",
+      "classes_found": 16,
+      "method": "html:https://www.yoga-veda-ausbildungen.ch/yoga-weiterbildung/yoga-workshops.html"
+    },
+    {
+      "id": "studio-30-solothurn",
+      "name": "Studio 30 - Yoga und Pilates",
+      "canton": "solothurn",
+      "classes_found": 9,
+      "method": "sportsnow:studio-30"
+    },
+    {
+      "id": "sunshine-yoga-solothurn",
+      "name": "Sunshine Yoga",
+      "canton": "solothurn",
+      "classes_found": 41,
+      "method": "momoyoga:sunshineyogasolothurn"
+    },
+    {
+      "id": "om-yogaroom-solothurn",
+      "name": "OM yogaroom",
+      "canton": "solothurn",
+      "classes_found": 3,
+      "method": "html:https://www.om-yogaroom.ch/"
+    },
+    {
+      "id": "yoga-pilateszentrale-olten",
+      "name": "Yoga & Pilateszentrale",
+      "canton": "solothurn",
+      "classes_found": 1,
+      "method": "sportsnow:aerialicious"
+    },
+    {
+      "id": "yoga-in-der-altstadt-st-gallen",
+      "name": "Yoga in der Altstadt",
+      "canton": "st-gallen",
+      "classes_found": 19,
+      "method": "sportsnow:yoga-in-der-altstadt-gmbh"
+    },
+    {
+      "id": "yogaloft-rapperswil-jona",
+      "name": "YOGALOFT Rapperswil-Jona",
+      "canton": "st-gallen",
+      "classes_found": 13,
+      "method": "html:https://www.yogaloft.ch/"
+    },
+    {
+      "id": "soma-yoga-weinfelden",
+      "name": "Soma Yoga",
+      "canton": "thurgau",
+      "classes_found": 32,
+      "method": "eversports:V5HreJ"
+    },
+    {
+      "id": "slow-move-lugano",
+      "name": "Slow Move Yoga & Wellness",
+      "canton": "ticino",
+      "classes_found": 46,
+      "method": "momoyoga:slow-move-lugano"
+    },
+    {
+      "id": "ooom-lausanne",
+      "name": "oOom - Yoga & thérapie",
+      "canton": "vaud",
+      "classes_found": 6,
+      "method": "html:https://ooom.ch/horaire/"
+    },
+    {
+      "id": "chinmayi-yoga-baar",
+      "name": "Chinmayi - Yoga & Kinesiologie",
+      "canton": "zug",
+      "classes_found": 5,
+      "method": "html:https://www.chinmayi.ch/angebot/yogabaar/"
+    },
+    {
+      "id": "yoga-studio-zuerich",
+      "name": "Yoga Studio Zürich",
+      "canton": "zurich",
+      "classes_found": 50,
+      "method": "eversports:yoga-pilates-studio-zuerich-1"
+    },
+    {
+      "id": "bikram-yoga-zuerich",
+      "name": "Bikram Yoga College of India Zürich",
+      "canton": "zurich",
+      "classes_found": 4,
+      "method": "sportsnow:jkstudio"
+    },
+    {
+      "id": "bodyart-studio",
+      "name": "BODYART Studio Zürich",
+      "canton": "zurich",
+      "classes_found": 1,
+      "method": "html:https://bodyart.studio/en/"
+    },
+    {
+      "id": "das-yoga-haus-dubs",
+      "name": "Das Yoga Haus Dubs",
+      "canton": "zurich",
+      "classes_found": 50,
+      "method": "eversports:i8zLN1"
+    },
+    {
+      "id": "yoga-spirit",
+      "name": "Yoga Spirit",
+      "canton": "zurich",
+      "classes_found": 10,
+      "method": "html:https://yoga-spirit.ch/"
+    },
+    {
+      "id": "vvoo",
+      "name": "VVOO Yoga Studio & Wellness Shop",
+      "canton": "zurich",
+      "classes_found": 42,
+      "method": "eversports:5yrWVG"
+    },
+    {
+      "id": "yoga-culture",
+      "name": "Yoga Culture",
+      "canton": "zurich",
+      "classes_found": 40,
+      "method": "eversports:epvwn8"
+    },
+    {
+      "id": "the-yoga-place",
+      "name": "The Yoga Place",
+      "canton": "zurich",
+      "classes_found": 14,
+      "method": "sportsnow:the-yoga-place"
+    },
+    {
+      "id": "yogalives",
+      "name": "Yogalives",
+      "canton": "zurich",
+      "classes_found": 24,
+      "method": "eversports:qmayc3"
+    },
+    {
+      "id": "yoga-in-winterthur",
+      "name": "YOGA.IN",
+      "canton": "zurich",
+      "classes_found": 5,
+      "method": "html:https://www.yoga-in.ch/kalender"
+    }
+  ],
+  "failures": [
+    {
+      "id": "my-yoga-garden-suhr",
+      "name": "My Yoga Garden",
+      "canton": "aargau",
+      "website": "https://www.my-yoga-garden.ch",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "iyengar-yoga-aarau",
+      "name": "Iyengar Yoga Aarau",
+      "canton": "aargau",
+      "website": "https://yogaiyengar.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "yoga-mahameru-aarau",
+      "name": "Yoga Mahameru",
+      "canton": "aargau",
+      "website": "https://mahameru.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "manta-yoga-pilates-rombach",
+      "name": "Manta Yoga & Pilates",
+      "canton": "aargau",
+      "website": "https://manta-yoga-pilates.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "yoga-baden-stefanie-amrein",
+      "name": "YOGA.BADEN - Stefanie Amrein",
+      "canton": "aargau",
+      "website": "https://www.yogabaden.ch/",
+      "schedule_url": "https://www.yogabaden.ch/wochenkurse",
+      "booking_platform": ""
+    },
+    {
+      "id": "namaste-yoga-baden",
+      "name": "Namaste Yoga Baden",
+      "canton": "aargau",
+      "website": "https://www.namaste-yoga-baden.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "jetzt-yoga-baden",
+      "name": "jetzt. YOGA Baden",
+      "canton": "aargau",
+      "website": "https://www.jetzt.yoga/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "yoga-werkstatt-liestal",
+      "name": "Yoga Werkstatt",
+      "canton": "basel-landschaft",
+      "website": "https://yoga-werkstatt.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "jyoti-yoga-liestal",
+      "name": "Jyoti Yoga",
+      "canton": "basel-landschaft",
+      "website": "https://www.jyotiyoga.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "bethsabe-yoga-bottmingen",
+      "name": "Bethsabé Yoga",
+      "canton": "basel-landschaft",
+      "website": "https://www.bethsabe.ch",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "yoga-nordemann-oberwil",
+      "name": "Yoga Nordemann - Zeitgenössisches Yoga",
+      "canton": "basel-landschaft",
+      "website": "https://www.yoga.nordemann.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "yoga-shanti-oberwil",
+      "name": "yoga shanti",
+      "canton": "basel-landschaft",
+      "website": "https://www.yogashanti.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "ebe-wellness-oberwil",
+      "name": "ebe-wellness Yoga",
+      "canton": "basel-landschaft",
+      "website": "https://ebe-wellness.ch/",
+      "schedule_url": "https://ebe-wellness.ch/daten-yoga/",
+      "booking_platform": ""
+    },
+    {
+      "id": "hathayoga-arlesheim",
+      "name": "Hatha Yoga Arlesheim",
+      "canton": "basel-landschaft",
+      "website": "https://www.hathayoga-basel.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "koerpergeheimnis-pratteln",
+      "name": "Körpergeheimnis Pilates & Yoga",
+      "canton": "basel-landschaft",
+      "website": "https://koerpergeheimnis.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "byoga",
+      "name": "B.Yoga Basel",
+      "canton": "basel",
+      "website": "https://www.byoga.ch/",
+      "schedule_url": "https://www.byoga.ch/yoga-klassen",
+      "booking_platform": "website"
+    },
+    {
+      "id": "secret-garden",
+      "name": "Secret Garden Yoga Studio",
+      "canton": "basel",
+      "website": "https://secretgarden-yoga.ch/en/",
+      "schedule_url": "https://secretgarden-yoga.ch/en/stundenplan/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "erlenyoga",
+      "name": "ErlenYoga",
+      "canton": "basel",
+      "website": "https://erlenyoga.ch/",
+      "schedule_url": "https://erlenyoga.ch/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "iyengar-kreis",
+      "name": "Iyengar Yoga Basel — Caroline Kreis",
+      "canton": "basel",
+      "website": "https://www.i-yoga-basel.ch/",
+      "schedule_url": "https://www.i-yoga-basel.ch/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "ayalga",
+      "name": "Ayalga Yoga (Iyengar)",
+      "canton": "basel",
+      "website": "https://ayalgayoga.ch/en/",
+      "schedule_url": "https://ayalgayoga.ch/en/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "kathrin-mathews",
+      "name": "Kathrin Mathews Yoga",
+      "canton": "basel",
+      "website": "https://www.kathrinmathews.com/",
+      "schedule_url": "https://www.kathrinmathews.com/schedule/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "mysore-club",
+      "name": "Mysore Club Basel",
+      "canton": "basel",
+      "website": "https://www.mysorebasel.ch/",
+      "schedule_url": "https://www.mysorebasel.ch/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "alessia-yoga",
+      "name": "Alessia Yoga / THRIVE Mind & Body",
+      "canton": "basel",
+      "website": "https://www.alessiayoga.com/",
+      "schedule_url": "https://www.alessiayoga.com/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "food-changes",
+      "name": "Food Changes Everything — Vanessa Gatelein",
+      "canton": "basel",
+      "website": "https://www.foodchangeseverything.me/",
+      "schedule_url": "https://www.foodchangeseverything.me/class-schedule",
+      "booking_platform": "website"
+    },
+    {
+      "id": "claudia-stamm",
+      "name": "Claudia Stamm Yoga",
+      "canton": "basel",
+      "website": "https://www.claudia-stamm.com/",
+      "schedule_url": "https://www.claudia-stamm.com/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "mignon",
+      "name": "Mignon — Birth & Parenting Support",
+      "canton": "basel",
+      "website": "https://www.mignonbaby.com/",
+      "schedule_url": "https://www.mignonbaby.com/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "fitnesspark",
+      "name": "Fitnesspark Basel Heuwaage (Migros)",
+      "canton": "basel",
+      "website": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/",
+      "schedule_url": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "gyym",
+      "name": "GYYM Health & Fitness",
+      "canton": "basel",
+      "website": "https://gyym.ch/en/",
+      "schedule_url": "https://gyym.ch/en/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "klubschule",
+      "name": "Klubschule Migros Basel",
+      "canton": "basel",
+      "website": "https://www.klubschule.ch/",
+      "schedule_url": "https://www.klubschule.ch/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "sutra-house",
+      "name": "Sutra House (Riehen)",
+      "canton": "basel",
+      "website": "https://www.sutra-house.com/",
+      "schedule_url": "https://www.sutra-house.com/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "yoba",
+      "name": "YOBA Yoga Studio",
+      "canton": "basel",
+      "website": "",
+      "schedule_url": "",
+      "booking_platform": "website"
+    },
+    {
+      "id": "yoga-luna-bern",
+      "name": "Yoga Luna",
+      "canton": "bern",
+      "website": "https://www.yogaluna.ch/",
+      "schedule_url": "https://www.yogaluna.ch/studioklassen",
+      "booking_platform": "Karmasoft"
+    },
+    {
+      "id": "svarupa-yoga-bern",
+      "name": "svarupa yoga bern",
+      "canton": "bern",
+      "website": "https://svarupa.com/",
+      "schedule_url": "https://svarupa.com/events-classes/",
+      "booking_platform": "Punchpass"
+    },
+    {
+      "id": "yogaalaya-bern",
+      "name": "Yogaalaya Bern",
+      "canton": "bern",
+      "website": "https://www.yoga-bern.ch/",
+      "schedule_url": "https://www.yoga-bern.ch/en/index.php/schedule/",
+      "booking_platform": "Website"
+    },
+    {
+      "id": "hothaus-bern",
+      "name": "HOTHAUS Hot Yoga & Movement Bern",
+      "canton": "bern",
+      "website": "https://www.hothausyoga.com/",
+      "schedule_url": "https://www.hothausyoga.com/schedule",
+      "booking_platform": "Website"
+    },
+    {
+      "id": "yogamarket-bern",
+      "name": "yogamarket",
+      "canton": "bern",
+      "website": "https://yogamarket.ch/",
+      "schedule_url": "https://yogamarket.ch/klassen/stundenplan/",
+      "booking_platform": "Mindbody"
+    },
+    {
+      "id": "origin8-bern",
+      "name": "origin8 - yoga, pilates & more",
+      "canton": "bern",
+      "website": "https://origin8.ch/",
+      "schedule_url": "https://origin8.ch/stundenplan",
+      "booking_platform": "SportsNow"
+    },
+    {
+      "id": "grey-rebel-bern",
+      "name": "Grey Rebel Yoga & Kinesiologie",
+      "canton": "bern",
+      "website": "https://www.grey-rebel.com/",
+      "schedule_url": "https://www.grey-rebel.com/schedule",
+      "booking_platform": "Website"
+    },
+    {
+      "id": "natha-yoga-bern",
+      "name": "Natha Yoga Schweiz",
+      "canton": "bern",
+      "website": "https://www.natha-yoga-schweiz.ch/",
+      "schedule_url": "https://www.natha-yoga-schweiz.ch/stundenplan",
+      "booking_platform": "Website"
+    },
+    {
+      "id": "yogakaleidoskop-bern",
+      "name": "Yogakaleidoskop",
+      "canton": "bern",
+      "website": "https://www.innerlightacademy.ch/",
+      "schedule_url": "https://www.innerlightacademy.ch/stundenplan",
+      "booking_platform": "Website"
+    },
+    {
+      "id": "energie-yoga-bern",
+      "name": "Energie Yoga",
+      "canton": "bern",
+      "website": "https://energieyoga.ch/",
+      "schedule_url": "https://energieyoga.ch/stundenplan",
+      "booking_platform": "Website"
+    },
+    {
+      "id": "sakinayoga-fribourg",
+      "name": "Sakinayoga",
+      "canton": "fribourg",
+      "website": "https://www.sakinayoga.com/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "yoga-nicole-fribourg",
+      "name": "Yoga Nicole - Triyoga",
+      "canton": "fribourg",
+      "website": "https://www.yoga-nicole.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "yoga7-geneve",
+      "name": "Yoga7",
+      "canton": "geneve",
+      "website": "https://yoga7.com/",
+      "schedule_url": "https://yoga7.com/horaire/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "yoga-flame-geneve",
+      "name": "Yoga Flame Genève",
+      "canton": "geneve",
+      "website": "https://yogaflame.ch/",
+      "schedule_url": "https://yogaflame.ch/studios/studio-geneva/",
+      "booking_platform": "Mindbody"
+    },
+    {
+      "id": "fancy-yoga-geneve",
+      "name": "Fancy Yoga",
+      "canton": "geneve",
+      "website": "https://www.fancy.yoga/",
+      "schedule_url": "https://www.fancy.yoga/en/yoga",
+      "booking_platform": "website"
+    },
+    {
+      "id": "colife-geneve",
+      "name": "COLIFE",
+      "canton": "geneve",
+      "website": "https://colife.ch/",
+      "schedule_url": "https://colife.ch/studio-yoga-geneve/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "sol-studio-geneve",
+      "name": "Sol Studio",
+      "canton": "geneve",
+      "website": "https://solstudio.ch/",
+      "schedule_url": "https://solstudio.ch/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "swiss-pilates-yoga-geneve",
+      "name": "Swiss Pilates and Yoga",
+      "canton": "geneve",
+      "website": "https://swisspilatesandyoga.com/",
+      "schedule_url": "https://swisspilatesandyoga.com/en/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "akta-yoga-geneve",
+      "name": "Akta Yoga",
+      "canton": "geneve",
+      "website": "https://www.aktayoga.ch/",
+      "schedule_url": "https://www.aktayoga.ch/fr/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "yoga-shambala-carouge",
+      "name": "Centre de Yoga Shambala",
+      "canton": "geneve",
+      "website": "https://www.yoga-shambala.ch/",
+      "schedule_url": "https://www.yoga-shambala.ch/",
+      "booking_platform": ""
+    },
+    {
+      "id": "deva-yoga-carouge",
+      "name": "DEVA Yoga",
+      "canton": "geneve",
+      "website": "https://deva-yoga.ch/",
+      "schedule_url": "https://deva-yoga.ch/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "yoga-nest-carouge",
+      "name": "Yoga Nest",
+      "canton": "geneve",
+      "website": "https://yoga-nest.com/",
+      "schedule_url": "https://yoga-nest.com/community/yoga-classes/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "yoginimage-lancy",
+      "name": "Yoginimage",
+      "canton": "geneve",
+      "website": "https://www.yoginimage.ch/",
+      "schedule_url": "https://www.yoginimage.ch/planning-et-tarif",
+      "booking_platform": "website"
+    },
+    {
+      "id": "ka-studio-geneve",
+      "name": "ka studio",
+      "canton": "geneve",
+      "website": "https://www.kastudio.ch/",
+      "schedule_url": "https://www.kastudio.ch/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "ar-yoga-geneve",
+      "name": "ar'Yoga Genève",
+      "canton": "geneve",
+      "website": "https://aryoga.ch/",
+      "schedule_url": "https://aryoga.ch/",
+      "booking_platform": ""
+    },
+    {
+      "id": "yoga-geneve-studio",
+      "name": "Yoga Genève Studio",
+      "canton": "geneve",
+      "website": "https://yogageneve.com/",
+      "schedule_url": "https://yogageneve.com/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "yoga-sha-geneve",
+      "name": "Yoga Sha",
+      "canton": "geneve",
+      "website": "https://yogasha.ch/",
+      "schedule_url": "https://yogasha.ch/",
+      "booking_platform": ""
+    },
+    {
+      "id": "yoga-pyramide-chur",
+      "name": "Yoga Pyramide",
+      "canton": "graubuenden",
+      "website": "https://yogapyramide.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "belude-yoga-chur",
+      "name": "Belude - Yoga & Klang",
+      "canton": "graubuenden",
+      "website": "https://belude.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "raw-yoga-chur",
+      "name": "RAW Yoga",
+      "canton": "graubuenden",
+      "website": "https://rawstation.ch/yoga-by-raw-station/",
+      "schedule_url": "https://www.eversports.ch/s/raw-yoga",
+      "booking_platform": "Eversports"
+    },
+    {
+      "id": "yogaplaza-davos",
+      "name": "Yogaplaza Davos",
+      "canton": "graubuenden",
+      "website": "https://www.yogaplazadavos.ch/",
+      "schedule_url": "https://www.eversports.ch/s/yogaplaza-davos",
+      "booking_platform": "Eversports"
+    },
+    {
+      "id": "yoga-loft-engadin-samedan",
+      "name": "Yoga Loft Engadin",
+      "canton": "graubuenden",
+      "website": "https://yogaloftengadin.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "pilatesyogajura",
+      "name": "PilatesYogaJura",
+      "canton": "jura",
+      "website": "https://www.pilatesyogajura.com/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "ashtanga-luzern",
+      "name": "Ashtanga Yoga Luzern",
+      "canton": "luzern",
+      "website": "https://ashtanga-luzern.ch/",
+      "schedule_url": "https://ashtanga-luzern.ch/schedule/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "yogagemeinschaft-luzern",
+      "name": "Yogagemeinschaft Luzern",
+      "canton": "luzern",
+      "website": "https://luzern-yoga.ch/",
+      "schedule_url": "https://luzern-yoga.ch/stundenplan",
+      "booking_platform": "website"
+    },
+    {
+      "id": "studio-fayo",
+      "name": "Studio Fayo",
+      "canton": "luzern",
+      "website": "https://studiofayo.com/",
+      "schedule_url": "https://studiofayo.com/stundenplan/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "yogasitz-luzern",
+      "name": "YogaSitz Luzern",
+      "canton": "luzern",
+      "website": "https://yogasitz.ch/",
+      "schedule_url": "https://yogasitz.ch/index.php/angebot/kursanmeldung_veranstaltungen/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "yogaraum-luzern",
+      "name": "Yogaraum Luzern",
+      "canton": "luzern",
+      "website": "https://www.yogaraum-luzern.ch/",
+      "schedule_url": "https://www.yogaraum-luzern.ch/",
+      "booking_platform": ""
+    },
+    {
+      "id": "der-raum-horw",
+      "name": "der raum - Yoga in Horw",
+      "canton": "luzern",
+      "website": "https://www.derraum.ch/",
+      "schedule_url": "https://www.derraum.ch/yoga-kurse-mit-verena-naepflin-in-horw/",
+      "booking_platform": ""
+    },
+    {
+      "id": "kundalini-yoga-emmen",
+      "name": "Kundalini Yoga Emmen",
+      "canton": "luzern",
+      "website": "https://www.yoga-kundalini.net/",
+      "schedule_url": "https://www.yoga-kundalini.net/",
+      "booking_platform": ""
+    },
+    {
+      "id": "pure-you-yoga-horw",
+      "name": "Pure You Yoga",
+      "canton": "luzern",
+      "website": "https://www.pureyouyoga.ch/",
+      "schedule_url": "https://www.pureyouyoga.ch/en/abo-preise",
+      "booking_platform": "website"
+    },
+    {
+      "id": "yogakurse-horw",
+      "name": "Yogakurse Horw - Myriam Bühler",
+      "canton": "luzern",
+      "website": "https://www.yogakurse-horw.ch/",
+      "schedule_url": "https://www.yogakurse-horw.ch/",
+      "booking_platform": ""
+    },
+    {
+      "id": "yoga-shashin-neuchatel",
+      "name": "Yoga Shashin",
+      "canton": "neuchatel",
+      "website": "https://www.yogashashin.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "banyann-yoga",
+      "name": "Banyann Yoga",
+      "canton": "neuchatel",
+      "website": "https://www.banyann.ch/",
+      "schedule_url": "https://www.banyann.ch/prestations",
+      "booking_platform": ""
+    },
+    {
+      "id": "gesund-und-munter-stans",
+      "name": "Gesund & Munter - Hatha-Yoga und Pilates Studio",
+      "canton": "nidwalden",
+      "website": "https://www.gesund-und-munter.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "yoga-ishwari-sarnen",
+      "name": "Yoga Ishwari",
+      "canton": "obwalden",
+      "website": "https://www.yoga-ishwari.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "yogaschule-narayana-schaffhausen",
+      "name": "Yogaschule SH (Narayana)",
+      "canton": "schaffhausen",
+      "website": "https://www.yogaschule-narayana.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "yogastudio-ganesha-einsiedeln",
+      "name": "Yogastudio Ganesha",
+      "canton": "schwyz",
+      "website": "https://ganesha-yoga.ch/",
+      "schedule_url": "",
+      "booking_platform": "Eversports"
+    },
+    {
+      "id": "diamond-yoga-solothurn",
+      "name": "The Diamond of Yoga",
+      "canton": "solothurn",
+      "website": "https://www.diamond-yoga.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "flavia-tao-yoga-solothurn",
+      "name": "Flavia Tao Yoga",
+      "canton": "solothurn",
+      "website": "https://www.flaviayoga.com/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "yoga-garten-solothurn",
+      "name": "Yoga Garten Solothurn",
+      "canton": "solothurn",
+      "website": "https://yogagarten.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "downtown-yoga-olten",
+      "name": "DownTown Yoga",
+      "canton": "solothurn",
+      "website": "https://downtownyoga.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "lineupyoga-st-gallen",
+      "name": "LINEUPYOGA",
+      "canton": "st-gallen",
+      "website": "https://www.lineupyoga.ch/",
+      "schedule_url": "",
+      "booking_platform": "Eversports"
+    },
+    {
+      "id": "123-yoga-st-gallen",
+      "name": "123 Yoga",
+      "canton": "st-gallen",
+      "website": "https://123yoga.ch/",
+      "schedule_url": "https://123yoga.ch/courses/",
+      "booking_platform": ""
+    },
+    {
+      "id": "power-yoga-st-gallen",
+      "name": "Power Yoga St. Gallen",
+      "canton": "st-gallen",
+      "website": "https://www.poweryogastgallen.com/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "hot-yoga-4-u-rapperswil",
+      "name": "HOT YOGA 4 U",
+      "canton": "st-gallen",
+      "website": "https://hotyoga4u.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "yoga-asana-kreuzlingen",
+      "name": "Yoga Asana",
+      "canton": "thurgau",
+      "website": "https://www.yoga-asana.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "feel-yoga-amriswil",
+      "name": "Feel Yoga & Ayurveda",
+      "canton": "thurgau",
+      "website": "https://www.feelyoga.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "miyoga-thurgau",
+      "name": "MiYoga",
+      "canton": "thurgau",
+      "website": "https://www.miyoga.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "tanja-iovene-yoga-bellinzona",
+      "name": "Tanja Iovene Yoga - Bellinzona",
+      "canton": "ticino",
+      "website": "https://www.tanjaioveneyoga.com/classes-bellinzona",
+      "schedule_url": "https://www.tanjaioveneyoga.com/classes-bellinzona",
+      "booking_platform": ""
+    },
+    {
+      "id": "anantara-yogastudio-altdorf",
+      "name": "Anantara Yogastudio",
+      "canton": "uri",
+      "website": "https://www.anantara-yogastudio.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "isabella-bumann-yoga",
+      "name": "Isabella Bumann Yoga",
+      "canton": "valais",
+      "website": "https://isabellayoga.ch/",
+      "schedule_url": "https://isabellayoga.ch/en/yoga/",
+      "booking_platform": ""
+    },
+    {
+      "id": "nueva-luna-yoga",
+      "name": "Nueva Luna Yoga",
+      "canton": "vaud",
+      "website": "https://www.nuevalunayoga.ch/",
+      "schedule_url": "https://www.nuevalunayoga.ch/",
+      "booking_platform": "Mindbody"
+    },
+    {
+      "id": "the-yogarden",
+      "name": "The Yogarden",
+      "canton": "vaud",
+      "website": "https://www.theyogarden.ch/",
+      "schedule_url": "https://www.theyogarden.ch/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "yoga-flame-lausanne",
+      "name": "Yoga Flame Lausanne",
+      "canton": "vaud",
+      "website": "https://yogaflame.ch/",
+      "schedule_url": "https://yogaflame.ch/studios/studio-lausanne/",
+      "booking_platform": "Mindbody"
+    },
+    {
+      "id": "yogavaud",
+      "name": "Yogavaud",
+      "canton": "vaud",
+      "website": "https://www.yogavaud.ch/",
+      "schedule_url": "https://www.yogavaud.ch/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "myoga-studio-lausanne",
+      "name": "Myoga Studio",
+      "canton": "vaud",
+      "website": "https://myogastudio.ch/",
+      "schedule_url": "https://myogastudio.ch/schedule-of-classes/classes-and-prices/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "ashtanga-yoga-lausanne",
+      "name": "Ashtanga Yoga Lausanne",
+      "canton": "vaud",
+      "website": "https://www.ashtanga-yoga-lausanne.com/",
+      "schedule_url": "https://en.ashtanga-yoga-lausanne.com/cours-horaire",
+      "booking_platform": "website"
+    },
+    {
+      "id": "yoga-sadhana-lausanne",
+      "name": "Atelier de Yoga Sadhana",
+      "canton": "vaud",
+      "website": "https://vivre-le-yoga.ch/",
+      "schedule_url": "https://vivre-le-yoga.ch/",
+      "booking_platform": ""
+    },
+    {
+      "id": "yoga-moves-nyon",
+      "name": "Yoga Moves Nyon",
+      "canton": "vaud",
+      "website": "https://www.yogamovesnyon.ch/",
+      "schedule_url": "https://yogamoves.blueleaf.ch/en/calendar/",
+      "booking_platform": "Blueleaf"
+    },
+    {
+      "id": "yogacenter-montreux",
+      "name": "YogaCenter by Patrick Nolfo",
+      "canton": "vaud",
+      "website": "https://yogacenter.ch/",
+      "schedule_url": "https://yogacenter.ch/en/",
+      "booking_platform": "Mindbody"
+    },
+    {
+      "id": "terre-du-yoga-vevey",
+      "name": "Terre du Yoga",
+      "canton": "vaud",
+      "website": "https://www.caroledalmas.com/",
+      "schedule_url": "https://www.caroledalmas.com/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "sundora-shala-pully",
+      "name": "SunDora Shala",
+      "canton": "vaud",
+      "website": "https://www.sundorashala.com/",
+      "schedule_url": "https://www.sundorashala.com/classes",
+      "booking_platform": "website"
+    },
+    {
+      "id": "yoga-pour-tous-nyon",
+      "name": "Yoga Pour Tous Nyon",
+      "canton": "vaud",
+      "website": "https://www.yogapourtous-nyon.ch/",
+      "schedule_url": "https://www.yogapourtous-nyon.ch/horaires/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "aum-yoga-zug",
+      "name": "Aum Yoga Studio",
+      "canton": "zug",
+      "website": "https://www.aumyogastudio.ch/",
+      "schedule_url": "",
+      "booking_platform": ""
+    },
+    {
+      "id": "yogaholics-united",
+      "name": "Yogaholics United",
+      "canton": "zurich",
+      "website": "https://yogaholicsunited.ch/",
+      "schedule_url": "https://yogaholicsunited.ch/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "yoga-city",
+      "name": "Yoga City",
+      "canton": "zurich",
+      "website": "https://www.yogacity.ch/",
+      "schedule_url": "https://www.yogacity.ch/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "soul-city",
+      "name": "Soul City",
+      "canton": "zurich",
+      "website": "https://soulcity-zurich.ch/",
+      "schedule_url": "https://soulcity-zurich.ch/",
+      "booking_platform": "Eversports"
+    },
+    {
+      "id": "yoga-nest",
+      "name": "Yoga Nest",
+      "canton": "zurich",
+      "website": "https://www.theyoganest.ch/",
+      "schedule_url": "https://www.theyoganest.ch/",
+      "booking_platform": "Eversports"
+    },
+    {
+      "id": "yoga-in-a-bag-albisrieden",
+      "name": "Yoga in a Bag (Albisrieden)",
+      "canton": "zurich",
+      "website": "https://yogainabag.com/",
+      "schedule_url": "https://yogainabag.com/en/studios/",
+      "booking_platform": "Eversports"
+    },
+    {
+      "id": "elevate-studio",
+      "name": "Elevate Studio",
+      "canton": "zurich",
+      "website": "https://www.elevate-studio.ch/",
+      "schedule_url": "https://www.elevate-studio.ch/",
+      "booking_platform": "Eversports"
+    },
+    {
+      "id": "radiant-heart-studio",
+      "name": "Radiant Heart Studio",
+      "canton": "zurich",
+      "website": "https://www.radiantheartstudio.com/",
+      "schedule_url": "https://www.radiantheartstudio.com/schedule-1",
+      "booking_platform": "website"
+    },
+    {
+      "id": "studio-y3",
+      "name": "Studio Y3",
+      "canton": "zurich",
+      "website": "https://www.studioy3.ch/",
+      "schedule_url": "https://www.studioy3.ch/book",
+      "booking_platform": "ClassPass"
+    },
+    {
+      "id": "jio-kundalini-yoga",
+      "name": "Jio Kundalini Yoga",
+      "canton": "zurich",
+      "website": "https://www.jiokundaliniyoga.com/",
+      "schedule_url": "https://www.jiokundaliniyoga.com/register",
+      "booking_platform": "Eversports"
+    },
+    {
+      "id": "templeshape",
+      "name": "Templeshape",
+      "canton": "zurich",
+      "website": "https://templeshape.com/",
+      "schedule_url": "https://templeshape.com/en/templeshape-studio-wiedikon/yoga-in-wiedikon-zurich/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "yoga2day",
+      "name": "Yoga2day",
+      "canton": "zurich",
+      "website": "https://www.yoga2day.ch/",
+      "schedule_url": "https://www.yoga2day.ch/angebot-yoga2day/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "project-peace",
+      "name": "Project Peace (Jivamukti Yoga)",
+      "canton": "zurich",
+      "website": "https://projectpeace.ch/",
+      "schedule_url": "https://projectpeace.ch/classes-prices",
+      "booking_platform": "website"
+    },
+    {
+      "id": "flowfabrik-winterthur",
+      "name": "FlowFabrik",
+      "canton": "zurich",
+      "website": "https://www.flowfabrik.ch/",
+      "schedule_url": "https://www.flowfabrik.ch/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "zanana-living-winterthur",
+      "name": "Zanana Living Yoga",
+      "canton": "zurich",
+      "website": "https://zanana-living.ch/",
+      "schedule_url": "https://zanana-living.ch/",
+      "booking_platform": "website"
+    },
+    {
+      "id": "yoga-in-a-bag-winterthur",
+      "name": "Yoga in a Bag (Winterthur)",
+      "canton": "zurich",
+      "website": "https://yogainabag.com/",
+      "schedule_url": "https://yogainabag.com/en/studios/winterthur/",
+      "booking_platform": "Eversports"
+    }
+  ]
+}

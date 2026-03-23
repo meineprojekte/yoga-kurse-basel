@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-23T00:50:03.697632+00:00",
+  "last_updated": "2026-03-23T19:46:17.163275+00:00",
   "classes": [
     {
       "studio_id": "ooom",
@@ -921,6 +921,84 @@
       "teacher": null,
       "level": "all",
       "source": "https://imyoga.ch/en/schedule",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "ooom-lausanne",
+      "studio_name": "oOom - Yoga & thérapie",
+      "day": "Monday",
+      "time_start": "12:15",
+      "time_end": "",
+      "class_name": "13:15Soft VinyasaJulien18:00 – 19:15Fascia YogaSelma",
+      "teacher": "",
+      "level": "all",
+      "source": "https://ooom.ch/horaire/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "ooom-lausanne",
+      "studio_name": "oOom - Yoga & thérapie",
+      "day": "Tuesday",
+      "time_start": "08:00",
+      "time_end": "12:15",
+      "class_name": "08:30MéditationJuliette (zoom) – 13:15Fascia YogaSelma18:00 – 19:15VinyasaPiera",
+      "teacher": "",
+      "level": "all",
+      "source": "https://ooom.ch/horaire/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "ooom-lausanne",
+      "studio_name": "oOom - Yoga & thérapie",
+      "day": "Wednesday",
+      "time_start": "09:00",
+      "time_end": "",
+      "class_name": "10:15Fascia YogaSelma12:15 – 13:15PilatesAnna18:00 – 19:15Yin YogaSébastien",
+      "teacher": "",
+      "level": "all",
+      "source": "https://ooom.ch/horaire/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "ooom-lausanne",
+      "studio_name": "oOom - Yoga & thérapie",
+      "day": "Thursday",
+      "time_start": "12:15",
+      "time_end": "",
+      "class_name": "13:15Mix YogaTournus des profs18:00 – 19:15Hatha YogaFanny",
+      "teacher": "",
+      "level": "all",
+      "source": "https://ooom.ch/horaire/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "ooom-lausanne",
+      "studio_name": "oOom - Yoga & thérapie",
+      "day": "Friday",
+      "time_start": "12:15",
+      "time_end": "",
+      "class_name": "13:15Hatha YogaPamela",
+      "teacher": "",
+      "level": "all",
+      "source": "https://ooom.ch/horaire/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "ooom-lausanne",
+      "studio_name": "oOom - Yoga & thérapie",
+      "day": "Saturday",
+      "time_start": "08:00",
+      "time_end": "",
+      "class_name": "08:30MéditationJuliette (zoom)",
+      "teacher": "",
+      "level": "all",
+      "source": "https://ooom.ch/horaire/",
       "verified": true,
       "last_checked": "2026-03-23"
     }
