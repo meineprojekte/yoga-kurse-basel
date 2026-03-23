@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-21T00:00:00Z",
+  "last_updated": "2026-03-23T00:46:37.125475+00:00",
   "_notes": "Yoga Zentrum Stans schedule from yoga-stans.ch/termine (calendar-based, recurring weekly groups). Gesund & Munter and sevencolors use Wix sites that did not render schedules. Sevencolors partial data from search snippets.",
   "classes": [
     {
@@ -13,7 +13,7 @@
       "level": "all",
       "source": "",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "yoga-ayurveda-zentrum-stans",
@@ -26,24 +26,76 @@
       "level": "all",
       "source": "",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "sevencolors-stans",
       "studio_name": "sevencolors",
-      "day": "Wednesday",
-      "time_start": "19:15",
-      "time_end": "20:15",
-      "class_name": "Hatha Yoga",
-      "teacher": null,
+      "day": "Monday",
+      "time_start": "09:00",
+      "time_end": "10:00",
+      "class_name": "Yoga Kinder Reha Schweiz",
+      "teacher": "Petra Kramer",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "https://www.sevencolors.ch/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "sevencolors-stans",
+      "studio_name": "sevencolors",
+      "day": "Tuesday",
+      "time_start": "11:15",
+      "time_end": "12:15",
+      "class_name": "Yoga Kinder Reha Schweiz",
+      "teacher": "Petra Kramer",
+      "level": "all",
+      "source": "https://www.sevencolors.ch/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "sevencolors-stans",
+      "studio_name": "sevencolors",
+      "day": "Thursday",
+      "time_start": "17:30",
+      "time_end": "18:45",
+      "class_name": "Yoga & Entspannung",
+      "teacher": "Petra Kramer",
+      "level": "all",
+      "source": "https://www.sevencolors.ch/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "sevencolors-stans",
+      "studio_name": "sevencolors",
+      "day": "Thursday",
+      "time_start": "19:00",
+      "time_end": "20:15",
+      "class_name": "Yoga & Meditation",
+      "teacher": "Petra Kramer",
+      "level": "all",
+      "source": "https://www.sevencolors.ch/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "sevencolors-stans",
+      "studio_name": "sevencolors",
+      "day": "Monday",
+      "time_start": "09:00",
+      "time_end": "10:00",
+      "class_name": "Yoga Kinder Reha Schweiz",
+      "teacher": "Petra Kramer",
+      "level": "all",
+      "source": "https://www.sevencolors.ch/",
+      "verified": true,
+      "last_checked": "2026-03-23"
     }
   ],
   "_meta": {
-    "last_updated": "2026-03-21",
-    "note": "Stundenplan-Daten aus öffentlichen Quellen. Für aktuelle Zeiten siehe Studio-Website."
+    "last_updated": "2026-03-23",
+    "note": "Stundenplan-Daten aus oeffentlichen Quellen. Fuer aktuelle Zeiten siehe Studio-Website."
   }
 }

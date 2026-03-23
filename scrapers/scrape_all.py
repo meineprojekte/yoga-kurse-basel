@@ -13,11 +13,24 @@ import logging
 import re
 import glob
 import subprocess
-from datetime import datetime, timezone
+import time
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
+
+# curl_cffi bypasses Cloudflare/bot protection (needed for Eversports & Wix)
+try:
+    from curl_cffi import requests as cffi_requests
+    HAS_CURL_CFFI = True
+except ImportError:
+    HAS_CURL_CFFI = False
+    try:
+        import cloudscraper
+        HAS_CLOUDSCRAPER = True
+    except ImportError:
+        HAS_CLOUDSCRAPER = False
 
 logging.basicConfig(
     level=logging.INFO,
@@ -39,6 +52,71 @@ HEADERS = {
 
 SESSION = requests.Session()
 SESSION.headers.update(HEADERS)
+
+# Rate limiting between studios (seconds)
+RATE_LIMIT_DELAY = 2
+
+
+def cffi_get(url, timeout=15):
+    """
+    Fetch a URL using curl_cffi (impersonates Chrome to bypass 403 blocks).
+    Falls back to cloudscraper, then regular requests.
+    """
+    if HAS_CURL_CFFI:
+        try:
+            resp = cffi_requests.get(url, timeout=timeout, impersonate="chrome")
+            resp.raise_for_status()
+            return resp.text
+        except Exception as e:
+            logger.warning(f"curl_cffi failed for {url}: {e}")
+            return None
+    elif HAS_CLOUDSCRAPER:
+        try:
+            scraper = cloudscraper.create_scraper()
+            resp = scraper.get(url, timeout=timeout)
+            resp.raise_for_status()
+            return resp.text
+        except Exception as e:
+            logger.warning(f"cloudscraper failed for {url}: {e}")
+            return None
+    else:
+        logger.warning("Neither curl_cffi nor cloudscraper available; using requests")
+        return fetch_page(url, timeout=timeout)
+
+
+def cffi_post_json(url, headers=None, json_body=None, timeout=15):
+    """
+    POST JSON using curl_cffi (impersonates Chrome to bypass 403 blocks).
+    Returns parsed JSON response or None.
+    """
+    if HAS_CURL_CFFI:
+        try:
+            resp = cffi_requests.post(
+                url, headers=headers, json=json_body,
+                timeout=timeout, impersonate="chrome"
+            )
+            resp.raise_for_status()
+            return resp.json()
+        except Exception as e:
+            logger.warning(f"curl_cffi POST failed for {url}: {e}")
+            return None
+    elif HAS_CLOUDSCRAPER:
+        try:
+            scraper = cloudscraper.create_scraper()
+            resp = scraper.post(url, headers=headers, json=json_body, timeout=timeout)
+            resp.raise_for_status()
+            return resp.json()
+        except Exception as e:
+            logger.warning(f"cloudscraper POST failed for {url}: {e}")
+            return None
+    else:
+        try:
+            resp = requests.post(url, headers=headers, json=json_body, timeout=timeout)
+            resp.raise_for_status()
+            return resp.json()
+        except Exception as e:
+            logger.warning(f"requests POST failed for {url}: {e}")
+            return None
 
 
 def fetch_page(url, timeout=15):
@@ -76,27 +154,412 @@ def check_robots_txt(base_url):
         return True
 
 
-def scrape_eversports_widget(url):
-    """Attempt to extract schedule info from pages using Eversports widgets."""
-    html = fetch_page(url)
-    if not html:
-        return []
-
-    soup = BeautifulSoup(html, 'lxml')
-    classes = []
-
-    iframes = soup.find_all('iframe', src=re.compile(r'eversports', re.I))
-    if iframes:
-        logger.info(f"Found Eversports widget at {url}")
-        for iframe in iframes:
-            logger.info(f"  Eversports iframe: {iframe.get('src', '')}")
-
-    return classes
-
-
 # ---------------------------------------------------------------------------
 # Platform-specific scrapers
 # ---------------------------------------------------------------------------
+
+# Eversports day name mapping (German day headers in calendar HTML)
+EVERSPORTS_DAY_MAP = {
+    'montag': 'Monday', 'dienstag': 'Tuesday', 'mittwoch': 'Wednesday',
+    'donnerstag': 'Thursday', 'freitag': 'Friday', 'samstag': 'Saturday',
+    'sonntag': 'Sunday',
+    'monday': 'Monday', 'tuesday': 'Tuesday', 'wednesday': 'Wednesday',
+    'thursday': 'Thursday', 'friday': 'Friday', 'saturday': 'Saturday',
+    'sunday': 'Sunday',
+    'mo': 'Monday', 'di': 'Tuesday', 'mi': 'Wednesday',
+    'do': 'Thursday', 'fr': 'Friday', 'sa': 'Saturday', 'so': 'Sunday',
+}
+
+
+def _extract_eversports_slug(studio):
+    """Extract the Eversports slug from studio schedule_url or detected booking links."""
+    schedule_url = studio.get('schedule_url', '')
+    # Pattern: eversports.ch/s/{slug}
+    m = re.search(r'eversports\.ch/s/([a-zA-Z0-9_-]+)', schedule_url)
+    if m:
+        return m.group(1)
+
+    # Check detected_booking_links and _meta.booking_links
+    for links_key in ('detected_booking_links', ):
+        for link in studio.get(links_key, []):
+            url = link.get('url', '')
+            m = re.search(r'eversports\.ch/s/([a-zA-Z0-9_-]+)', url)
+            if m:
+                return m.group(1)
+
+    meta_links = studio.get('_meta', {}).get('booking_links', [])
+    for link in meta_links:
+        url = link.get('url', '')
+        m = re.search(r'eversports\.ch/s/([a-zA-Z0-9_-]+)', url)
+        if m:
+            return m.group(1)
+
+    return None
+
+
+def _extract_eversports_widget_slug(studio):
+    """Extract widget slug (short hash) from detected Eversports widget URLs."""
+    for links_key in ('detected_booking_links', ):
+        for link in studio.get(links_key, []):
+            url = link.get('url', '')
+            m = re.search(r'eversports\.ch/widget/w/([a-zA-Z0-9]+)', url)
+            if m:
+                return m.group(1)
+
+    meta_links = studio.get('_meta', {}).get('booking_links', [])
+    for link in meta_links:
+        url = link.get('url', '')
+        m = re.search(r'eversports\.ch/widget/w/([a-zA-Z0-9]+)', url)
+        if m:
+            return m.group(1)
+
+    return None
+
+
+def scrape_eversports_widget_api(studio):
+    """
+    Scrape schedule from Eversports using the widget calendar API.
+
+    The calendar API accepts the studio slug directly as facilityShortId.
+    URL: /widget/api/eventsession/calendar?facilityShortId={slug}&startDate={date}
+    Response: JSON with data.html containing calendar HTML.
+
+    Calendar HTML structure per slot (li.calendar__slot):
+      - div.sr-only: day name (e.g. "Monday, 23/03/2026")
+      - div.session-time: time + duration (e.g. "09:30 . 90 Min")
+      - div.session-name: class name
+      - div.ellipsis (2nd): teacher name
+
+    Returns list of class entry dicts, or None if approach fails.
+    """
+    studio_id = studio.get('id', '')
+    studio_name = studio.get('name', '')
+
+    # Get the Eversports slug
+    slug = _extract_eversports_slug(studio)
+    if not slug:
+        # Try widget slug as fallback for calendar API
+        slug = _extract_eversports_widget_slug(studio)
+    if not slug:
+        logger.debug(f"  Eversports: no slug found for {studio_name}")
+        return None
+
+    # Call calendar API (slug works directly as facilityShortId)
+    today = datetime.now().strftime('%Y-%m-%d')
+    calendar_url = (
+        f'https://www.eversports.ch/widget/api/eventsession/calendar'
+        f'?facilityShortId={slug}&startDate={today}'
+    )
+    logger.info(f"  Eversports: fetching calendar API for {studio_name} (slug={slug})")
+    raw_response = cffi_get(calendar_url, timeout=15)
+    if not raw_response:
+        logger.warning(f"  Eversports: calendar API returned no data for {studio_name}")
+        return None
+
+    # Parse JSON response to get HTML content
+    try:
+        calendar_json = json.loads(raw_response)
+        if calendar_json.get('status') != 'success':
+            logger.warning(f"  Eversports: API status={calendar_json.get('status')} for {studio_name}")
+            return None
+        calendar_html = calendar_json.get('data', {}).get('html', '')
+    except (json.JSONDecodeError, AttributeError):
+        logger.warning(f"  Eversports: failed to parse API JSON for {studio_name}")
+        return None
+
+    if not calendar_html:
+        logger.warning(f"  Eversports: no calendar HTML for {studio_name}")
+        return None
+
+    # Parse the calendar HTML
+    soup = BeautifulSoup(calendar_html, 'html.parser')
+    classes = []
+    schedule_url = studio.get('schedule_url', f'https://www.eversports.ch/s/{slug}')
+
+    # Day name mapping from date to weekday
+    WEEKDAY_NAMES = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+    # Iterate over all calendar slots
+    for slot in soup.find_all('li', class_=re.compile(r'calendar__slot')):
+        # Extract day from .sr-only div (e.g., "Monday, 23/03/2026")
+        sr_only = slot.find('div', class_='sr-only')
+        day_name = None
+        if sr_only:
+            sr_text = sr_only.get_text(strip=True)
+            # Parse day from text like "Monday, 23/03/2026"
+            for en_day in WEEKDAY_NAMES:
+                if en_day.lower() in sr_text.lower():
+                    day_name = en_day
+                    break
+            if not day_name:
+                # Try German day names
+                for de_day, en_day in EVERSPORTS_DAY_MAP.items():
+                    if de_day in sr_text.lower():
+                        day_name = en_day
+                        break
+            if not day_name:
+                # Try to parse the date from sr_text
+                date_match = re.search(r'(\d{2})/(\d{2})/(\d{4})', sr_text)
+                if date_match:
+                    try:
+                        dt = datetime(int(date_match.group(3)), int(date_match.group(2)),
+                                      int(date_match.group(1)))
+                        day_name = WEEKDAY_NAMES[dt.weekday()]
+                    except (ValueError, IndexError):
+                        pass
+
+        # If no sr-only, find closest preceding day header
+        if not day_name:
+            prev = slot.find_previous('h3', class_='calendar__day-header')
+            if prev:
+                data_day = prev.get('data-day', '')
+                if data_day:
+                    try:
+                        dt = datetime.strptime(data_day, '%Y-%m-%d')
+                        day_name = WEEKDAY_NAMES[dt.weekday()]
+                    except ValueError:
+                        pass
+
+        # Extract time from .session-time div (e.g., "09:30 . 90 Min")
+        time_el = slot.find('div', class_='session-time')
+        time_text = time_el.get_text(strip=True) if time_el else ''
+        time_start = ''
+        time_end = ''
+        duration_min = 0
+
+        time_match = re.search(r'(\d{1,2}:\d{2})', time_text)
+        if time_match:
+            time_start = time_match.group(1)
+            # Extract duration to calculate end time
+            dur_match = re.search(r'(\d+)\s*[Mm]in', time_text)
+            if dur_match:
+                duration_min = int(dur_match.group(1))
+                try:
+                    start_h, start_m = map(int, time_start.split(':'))
+                    end_total = start_h * 60 + start_m + duration_min
+                    time_end = f'{end_total // 60:02d}:{end_total % 60:02d}'
+                except ValueError:
+                    pass
+
+        # Extract class name from .session-name div
+        name_el = slot.find('div', class_='session-name')
+        class_name = name_el.get_text(strip=True) if name_el else ''
+
+        # Extract teacher from the second .ellipsis div
+        # Structure: 1st ellipsis = level/spots, 2nd = teacher, 3rd = room
+        ellipsis_divs = slot.find_all('div', class_='ellipsis')
+        teacher = ''
+        if len(ellipsis_divs) >= 2:
+            teacher = ellipsis_divs[1].get_text(strip=True)
+        elif len(ellipsis_divs) == 1:
+            teacher = ellipsis_divs[0].get_text(strip=True)
+
+        if class_name and time_start:
+            classes.append({
+                'studio_id': studio_id,
+                'studio_name': studio_name,
+                'day': day_name or 'Unknown',
+                'time_start': time_start,
+                'time_end': time_end,
+                'class_name': class_name,
+                'teacher': teacher,
+                'level': 'all',
+                'source': schedule_url,
+                'verified': True,
+            })
+
+    if classes:
+        logger.info(f"  Eversports: extracted {len(classes)} classes for {studio_name}")
+    else:
+        logger.info(f"  Eversports: no classes parsed from calendar for {studio_name}")
+
+    return classes if classes else None
+
+
+def scrape_wix_bookings(studio):
+    """
+    Scrape schedule from Wix-based studio websites using the Wix Bookings V2 API.
+
+    Steps:
+    1. Fetch /_api/v2/dynamicmodel to get app instance tokens
+    2. Extract instance token for Wix Bookings app (13d21c63-b5ec-5912-8397-c3a5ddb27a97)
+    3. POST to Wix Bookings V2 calendar sessions query API
+    4. Parse JSON response for class sessions (uses localDateTime for correct timezone)
+
+    Returns list of class entry dicts, or None if approach fails.
+    """
+    studio_id = studio.get('id', '')
+    studio_name = studio.get('name', '')
+    website = studio.get('website', '') or studio.get('schedule_url', '')
+
+    if not website:
+        return None
+
+    # Normalize base URL
+    base_url = website.rstrip('/')
+    # Extract domain (e.g., https://www.yamabern.ch)
+    parts = base_url.split('/')
+    if len(parts) >= 3:
+        domain_url = '/'.join(parts[:3])
+    else:
+        domain_url = base_url
+
+    # Step 1: Fetch dynamic model to get app instance tokens
+    dynamic_model_url = f'{domain_url}/_api/v2/dynamicmodel'
+    logger.info(f"  Wix: fetching dynamic model from {domain_url}")
+    dm_text = cffi_get(dynamic_model_url, timeout=15)
+    if not dm_text:
+        return None
+
+    try:
+        dm = json.loads(dm_text)
+    except (json.JSONDecodeError, TypeError):
+        logger.debug(f"  Wix: dynamic model not valid JSON for {studio_name}")
+        return None
+
+    # Step 2: Extract Wix Bookings instance token
+    WIX_BOOKINGS_APP_ID = '13d21c63-b5ec-5912-8397-c3a5ddb27a97'
+    apps = dm.get('apps', {})
+    bookings_app = apps.get(WIX_BOOKINGS_APP_ID, {})
+    instance_token = bookings_app.get('instance', '') if isinstance(bookings_app, dict) else ''
+
+    if not instance_token:
+        logger.debug(f"  Wix: no Bookings app instance found for {studio_name}")
+        return None
+
+    logger.info(f"  Wix: found Bookings instance token for {studio_name}")
+
+    # Step 3: Query the Wix Bookings V2 API for sessions over the next 7 days
+    now = datetime.now(timezone.utc)
+    from_date = now.strftime('%Y-%m-%dT00:00:00Z')
+    to_date = (now + timedelta(days=7)).strftime('%Y-%m-%dT23:59:59Z')
+
+    api_url = 'https://www.wixapis.com/bookings/v2/calendar/sessions/query'
+    api_headers = {
+        'Authorization': instance_token,
+        'Content-Type': 'application/json',
+    }
+    api_body = {
+        'fromDate': from_date,
+        'toDate': to_date,
+    }
+
+    logger.info(f"  Wix: querying bookings API for {studio_name}")
+    result = cffi_post_json(api_url, headers=api_headers, json_body=api_body, timeout=15)
+    if not result:
+        return None
+
+    # Step 4: Parse sessions from the response
+    sessions = result.get('sessions', [])
+    if not sessions:
+        sessions = result.get('data', {}).get('sessions', [])
+
+    if not sessions:
+        logger.info(f"  Wix: no sessions returned for {studio_name}")
+        return None
+
+    classes = []
+    schedule_url = studio.get('schedule_url', '') or website
+
+    WEEKDAY_NAMES = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+    for session in sessions:
+        try:
+            # Use localDateTime for correct timezone display
+            start_info = session.get('start', {})
+            end_info = session.get('end', {})
+
+            local_start = start_info.get('localDateTime', {})
+            local_end = end_info.get('localDateTime', {})
+
+            if local_start:
+                hour = local_start.get('hourOfDay', 0)
+                minute = local_start.get('minutesOfHour', 0)
+                year = local_start.get('year', 0)
+                month = local_start.get('monthOfYear', 0)
+                day = local_start.get('dayOfMonth', 0)
+                time_start = f'{hour:02d}:{minute:02d}'
+                try:
+                    start_dt = datetime(year, month, day)
+                    day_name = WEEKDAY_NAMES[start_dt.weekday()]
+                except (ValueError, IndexError):
+                    day_name = 'Unknown'
+            else:
+                # Fallback to timestamp
+                start_str = start_info.get('timestamp', '')
+                if not start_str:
+                    continue
+                start_dt = None
+                for fmt in ('%Y-%m-%dT%H:%M:%S.%fZ', '%Y-%m-%dT%H:%M:%SZ', '%Y-%m-%dT%H:%M:%S'):
+                    try:
+                        start_dt = datetime.strptime(start_str, fmt)
+                        break
+                    except ValueError:
+                        continue
+                if not start_dt:
+                    continue
+                day_name = WEEKDAY_NAMES[start_dt.weekday()]
+                time_start = start_dt.strftime('%H:%M')
+
+            if local_end:
+                end_hour = local_end.get('hourOfDay', 0)
+                end_minute = local_end.get('minutesOfHour', 0)
+                time_end = f'{end_hour:02d}:{end_minute:02d}'
+            else:
+                end_str = end_info.get('timestamp', '')
+                if end_str:
+                    for fmt in ('%Y-%m-%dT%H:%M:%S.%fZ', '%Y-%m-%dT%H:%M:%SZ', '%Y-%m-%dT%H:%M:%S'):
+                        try:
+                            end_dt = datetime.strptime(end_str, fmt)
+                            time_end = end_dt.strftime('%H:%M')
+                            break
+                        except ValueError:
+                            continue
+                    else:
+                        time_end = ''
+                else:
+                    time_end = ''
+
+            # Extract class name
+            class_name = session.get('title', '') or 'Yoga Class'
+
+            # Extract teacher from affectedSchedules
+            teacher = ''
+            affected = session.get('affectedSchedules', [])
+            for aff in affected:
+                owner_name = aff.get('scheduleOwnerName', '')
+                if owner_name:
+                    teacher = owner_name
+                    break
+
+            # Also check staffMembers
+            if not teacher:
+                staff = session.get('staffMembers', []) or session.get('staff', [])
+                if staff:
+                    teacher = staff[0].get('name', '') or staff[0].get('fullName', '')
+
+            classes.append({
+                'studio_id': studio_id,
+                'studio_name': studio_name,
+                'day': day_name,
+                'time_start': time_start,
+                'time_end': time_end,
+                'class_name': class_name,
+                'teacher': teacher,
+                'level': 'all',
+                'source': schedule_url,
+                'verified': True,
+            })
+        except Exception as e:
+            logger.debug(f"  Wix: error parsing session for {studio_name}: {e}")
+            continue
+
+    if classes:
+        logger.info(f"  Wix: extracted {len(classes)} classes for {studio_name}")
+    else:
+        logger.info(f"  Wix: no classes parsed from API for {studio_name}")
+
+    return classes if classes else None
 
 # Known SportsNow slug overrides (studio_id -> sportsnow_slug)
 # Discovered by scraping studio websites for embedded SportsNow widget URLs
@@ -264,25 +727,12 @@ def _discover_sportsnow_slug(studio):
 
 def scrape_eversports_schedule(studio):
     """
-    Attempt to scrape Eversports schedule via HTTP.
-
-    Eversports blocks HTTP requests with 403. This function checks if the
-    studio's own website (not eversports.ch) embeds the schedule in static HTML.
-    If the schedule_url points to eversports.ch directly, returns None
-    (must use Safari scraper instead).
+    Scrape Eversports schedule via the widget calendar API.
+    Uses curl_cffi to bypass Cloudflare 403 blocks.
 
     Returns a list of class entry dicts, or None.
     """
-    schedule_url = studio.get('schedule_url', '')
-
-    # If URL is directly on eversports.ch, we cannot scrape via HTTP
-    if 'eversports.ch' in schedule_url:
-        logger.debug(f"  Eversports: {schedule_url} requires browser (Safari scraper)")
-        return None
-
-    # If the studio has its own website with an embedded Eversports widget,
-    # try to scrape it normally (handled by scrape_schedule_classes)
-    return None
+    return scrape_eversports_widget_api(studio)
 
 
 def scrape_squarespace_schedule(studio):
@@ -936,33 +1386,59 @@ def update_studio_data(canton_files, changelog, schedule_files, verification_dat
 
             new_classes = None
 
-            # Try platform-specific scrapers first (these work via HTTP)
-            if booking_platform == 'sportsnow':
+            # --- Platform-specific scrapers (ordered by reliability) ---
+
+            # 1. Eversports: use widget calendar API via curl_cffi
+            if new_classes is None and booking_platform == 'eversports':
+                try:
+                    new_classes = scrape_eversports_widget_api(studio)
+                except Exception as e:
+                    logger.error(f"Error in Eversports scraper for {studio_name}: {e}")
+
+            # Also try Eversports if schedule_url points to eversports.ch
+            if new_classes is None and 'eversports.ch' in schedule_url:
+                try:
+                    new_classes = scrape_eversports_widget_api(studio)
+                except Exception as e:
+                    logger.error(f"Error in Eversports scraper for {studio_name}: {e}")
+
+            # 2. SportsNow
+            if new_classes is None and booking_platform == 'sportsnow':
                 try:
                     new_classes = scrape_sportsnow_schedule(studio)
                 except Exception as e:
                     logger.error(f"Error in SportsNow scraper for {studio_name}: {e}")
 
-            # For Squarespace sites, try to extract MindBody widget IDs
+            # 3. Wix: try if website is on Wix platform
+            if new_classes is None and schedule_url:
+                try:
+                    new_classes = scrape_wix_bookings(studio)
+                except Exception as e:
+                    logger.debug(f"Wix check failed for {studio_name}: {e}")
+
+            # 4. For Squarespace sites, try to extract MindBody widget IDs
             if new_classes is None and schedule_url:
                 try:
                     scrape_squarespace_schedule(studio)
                 except Exception as e:
                     logger.debug(f"Squarespace check failed for {studio_name}: {e}")
 
-            # For MindBody, store widget URL for Safari scraper
+            # 5. For MindBody, store widget URL for Safari scraper
             if new_classes is None and booking_platform in ('mindbody', 'mind body'):
                 try:
                     scrape_mindbody_schedule(studio)
                 except Exception as e:
                     logger.debug(f"MindBody check failed for {studio_name}: {e}")
 
-            # Fall back to generic static HTML scraping
-            if new_classes is None and vstatus == 'scrapable' and schedule_url:
+            # 6. Fall back to generic static HTML scraping
+            if new_classes is None and schedule_url:
                 try:
                     new_classes = scrape_schedule_classes(studio, schedule_url)
                 except Exception as e:
                     logger.error(f"Error scraping schedule classes for {studio_name}: {e}")
+
+            # Rate limit between studios
+            time.sleep(RATE_LIMIT_DELAY)
 
             # Update schedule data
             if new_classes:

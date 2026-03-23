@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T21:40:25.561061+00:00",
+  "last_updated": "2026-03-23T00:47:42.530451+00:00",
   "classes": [
     {
       "studio_id": "yoga-altstadt",
@@ -376,7 +376,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-22"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "studio-8-st-gallen",
@@ -389,7 +389,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-22"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "studio-8-st-gallen",
@@ -402,7 +402,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-22"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "studio-8-st-gallen",
@@ -415,7 +415,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-22"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "studio-8-st-gallen",
@@ -428,7 +428,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-22"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "studio-8-st-gallen",
@@ -441,7 +441,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-22"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "studio-8-st-gallen",
@@ -454,7 +454,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-22"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "studio-8-st-gallen",
@@ -467,7 +467,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-22"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "studio-8-st-gallen",
@@ -480,7 +480,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-22"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "studio-8-st-gallen",
@@ -493,7 +493,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-22"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "studio-8-st-gallen",
@@ -506,11 +506,284 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/studio-8/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-22"
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "bubble-yoga-st-gallen",
+      "studio_name": "Bubble Yoga",
+      "day": "Tuesday",
+      "time_start": "18:30",
+      "time_end": "20:00",
+      "class_name": "Vinyasa Flow (EN)",
+      "teacher": "Anne",
+      "level": "all",
+      "source": "https://bubbleyoga.ch/events/calendar/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "bubble-yoga-st-gallen",
+      "studio_name": "Bubble Yoga",
+      "day": "Tuesday",
+      "time_start": "18:30",
+      "time_end": "20:00",
+      "class_name": "ONLINE // Vinyasa Flow (EN)",
+      "teacher": "Anne",
+      "level": "all",
+      "source": "https://bubbleyoga.ch/events/calendar/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "bubble-yoga-st-gallen",
+      "studio_name": "Bubble Yoga",
+      "day": "Wednesday",
+      "time_start": "18:30",
+      "time_end": "19:45",
+      "class_name": "Vinyasa Flow (EN)",
+      "teacher": "Miriam",
+      "level": "all",
+      "source": "https://bubbleyoga.ch/events/calendar/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "bubble-yoga-st-gallen",
+      "studio_name": "Bubble Yoga",
+      "day": "Thursday",
+      "time_start": "18:30",
+      "time_end": "19:45",
+      "class_name": "Yoga Sculpt (DE/EN)",
+      "teacher": "Laila",
+      "level": "all",
+      "source": "https://bubbleyoga.ch/events/calendar/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "bubble-yoga-st-gallen",
+      "studio_name": "Bubble Yoga",
+      "day": "Saturday",
+      "time_start": "09:30",
+      "time_end": "11:00",
+      "class_name": "Ashtanga-Inspired Flow (EN)",
+      "teacher": "Cancelled",
+      "level": "all",
+      "source": "https://bubbleyoga.ch/events/calendar/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "bubble-yoga-st-gallen",
+      "studio_name": "Bubble Yoga",
+      "day": "Sunday",
+      "time_start": "10:00",
+      "time_end": "11:15",
+      "class_name": "Community Hatha Flow (EN)",
+      "teacher": "Cancelled",
+      "level": "all",
+      "source": "https://bubbleyoga.ch/events/calendar/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "bubble-yoga-st-gallen",
+      "studio_name": "Bubble Yoga",
+      "day": "Sunday",
+      "time_start": "18:30",
+      "time_end": "19:45",
+      "class_name": "Yin & Release (EN)",
+      "teacher": "Anne",
+      "level": "all",
+      "source": "https://bubbleyoga.ch/events/calendar/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "bubble-yoga-st-gallen",
+      "studio_name": "Bubble Yoga",
+      "day": "Sunday",
+      "time_start": "18:30",
+      "time_end": "19:45",
+      "class_name": "ONLINE // Yin & Release (EN)",
+      "teacher": "Anne",
+      "level": "all",
+      "source": "https://bubbleyoga.ch/events/calendar/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "bubble-yoga-st-gallen",
+      "studio_name": "Bubble Yoga",
+      "day": "Tuesday",
+      "time_start": "18:30",
+      "time_end": "20:00",
+      "class_name": "Vinyasa Flow (EN)",
+      "teacher": "Anne",
+      "level": "all",
+      "source": "https://bubbleyoga.ch/events/calendar/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "bubble-yoga-st-gallen",
+      "studio_name": "Bubble Yoga",
+      "day": "Tuesday",
+      "time_start": "18:30",
+      "time_end": "20:00",
+      "class_name": "ONLINE // Vinyasa Flow (EN)",
+      "teacher": "Anne",
+      "level": "all",
+      "source": "https://bubbleyoga.ch/events/calendar/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "bubble-yoga-st-gallen",
+      "studio_name": "Bubble Yoga",
+      "day": "Wednesday",
+      "time_start": "18:30",
+      "time_end": "19:45",
+      "class_name": "Vinyasa Flow (EN)",
+      "teacher": "Miriam",
+      "level": "all",
+      "source": "https://bubbleyoga.ch/events/calendar/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "bubble-yoga-st-gallen",
+      "studio_name": "Bubble Yoga",
+      "day": "Thursday",
+      "time_start": "18:30",
+      "time_end": "19:45",
+      "class_name": "Yoga Sculpt (DE/EN)",
+      "teacher": "Laila",
+      "level": "all",
+      "source": "https://bubbleyoga.ch/events/calendar/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "bubble-yoga-st-gallen",
+      "studio_name": "Bubble Yoga",
+      "day": "Saturday",
+      "time_start": "09:30",
+      "time_end": "11:00",
+      "class_name": "Ashtanga-Inspired Flow (EN)",
+      "teacher": "Cancelled",
+      "level": "all",
+      "source": "https://bubbleyoga.ch/events/calendar/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "bubble-yoga-st-gallen",
+      "studio_name": "Bubble Yoga",
+      "day": "Sunday",
+      "time_start": "10:00",
+      "time_end": "11:15",
+      "class_name": "Community Hatha Flow (EN)",
+      "teacher": "Cancelled",
+      "level": "all",
+      "source": "https://bubbleyoga.ch/events/calendar/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "bubble-yoga-st-gallen",
+      "studio_name": "Bubble Yoga",
+      "day": "Sunday",
+      "time_start": "18:30",
+      "time_end": "19:45",
+      "class_name": "Yin & Release (EN)",
+      "teacher": "Anne",
+      "level": "all",
+      "source": "https://bubbleyoga.ch/events/calendar/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "bubble-yoga-st-gallen",
+      "studio_name": "Bubble Yoga",
+      "day": "Sunday",
+      "time_start": "18:30",
+      "time_end": "19:45",
+      "class_name": "ONLINE // Yin & Release (EN)",
+      "teacher": "Anne",
+      "level": "all",
+      "source": "https://bubbleyoga.ch/events/calendar/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "rach-yoga-st-gallen",
+      "studio_name": "RACH Yoga",
+      "day": "Monday",
+      "time_start": "10:00",
+      "time_end": "13:30",
+      "class_name": "10:00RachelVinyasa Hatha Mix ( EN ) - Zoom LiveOnlineVinyasa Hatha Mix ( EN ) - Zoom LiveOnline23 March 2026 •",
+      "teacher": null,
+      "level": "all",
+      "source": "https://www.momoyoga.com/rachyoga/schedule",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "rach-yoga-st-gallen",
+      "studio_name": "RACH Yoga",
+      "day": "Tuesday",
+      "time_start": "10:00",
+      "time_end": "12:00",
+      "class_name": "10:00RachelPrivate Prenatal YogaClient's HomePrivate Prenatal Yoga24 March 2026 •",
+      "teacher": null,
+      "level": "all",
+      "source": "https://www.momoyoga.com/rachyoga/schedule",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "rach-yoga-st-gallen",
+      "studio_name": "RACH Yoga",
+      "day": "Wednesday",
+      "time_start": "18:00",
+      "time_end": "19:45",
+      "class_name": "18:00RachelPrivate Yoga ClassClient's HomePrivate Yoga Class25 March 2026 •",
+      "teacher": null,
+      "level": "all",
+      "source": "https://www.momoyoga.com/rachyoga/schedule",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "rach-yoga-st-gallen",
+      "studio_name": "RACH Yoga",
+      "day": "Thursday",
+      "time_start": "11:00",
+      "time_end": "",
+      "class_name": "11:00RachelPrivate Yoga ClassClient's HomePrivate Yoga Class26 March 2026 •",
+      "teacher": null,
+      "level": "all",
+      "source": "https://www.momoyoga.com/rachyoga/schedule",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "rach-yoga-st-gallen",
+      "studio_name": "RACH Yoga",
+      "day": "Friday",
+      "time_start": "14:00",
+      "time_end": "18:00",
+      "class_name": "14:00RachelPrivate Yoga ClassClient's HomePrivate Yoga Class27 March 2026 •",
+      "teacher": null,
+      "level": "all",
+      "source": "https://www.momoyoga.com/rachyoga/schedule",
+      "verified": true,
+      "last_checked": "2026-03-23"
     }
   ],
   "_meta": {
-    "last_updated": "2026-03-22",
-    "note": "Stundenplan-Daten aus öffentlichen Quellen. Für aktuelle Zeiten siehe Studio-Website."
+    "last_updated": "2026-03-23",
+    "note": "Stundenplan-Daten aus oeffentlichen Quellen. Fuer aktuelle Zeiten siehe Studio-Website."
   }
 }

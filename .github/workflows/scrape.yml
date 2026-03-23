@@ -28,7 +28,9 @@ jobs:
           cache-dependency-path: scrapers/requirements.txt
 
       - name: Install dependencies
-        run: pip install -r scrapers/requirements.txt
+        run: |
+          pip install -r scrapers/requirements.txt
+          pip install curl_cffi cloudscraper || echo "Optional deps install warning (non-fatal)"
 
       - name: Run scraper (all cantons)
         run: python scrapers/scrape_all.py

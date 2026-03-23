@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-21T00:00:00Z",
+  "last_updated": "2026-03-23T00:48:32.998388+00:00",
   "_notes": "Urvani Yoga schedule from sportsnow.ch booking page. Anantara Yogastudio and Flow Altdorf use Wix sites that did not render schedule data; no classes extracted for those studios.",
   "classes": [
     {
@@ -13,7 +13,7 @@
       "level": "all",
       "source": "",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "urvani-yoga-altdorf",
@@ -26,7 +26,7 @@
       "level": "all",
       "source": "",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "urvani-yoga-altdorf",
@@ -39,7 +39,7 @@
       "level": "all",
       "source": "",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "urvani-yoga-altdorf",
@@ -52,7 +52,7 @@
       "level": "intermediate",
       "source": "",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "urvani-yoga-altdorf",
@@ -65,7 +65,7 @@
       "level": "senior",
       "source": "",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "urvani-yoga-altdorf",
@@ -78,7 +78,7 @@
       "level": "all",
       "source": "",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "urvani-yoga-altdorf",
@@ -91,11 +91,167 @@
       "level": "all",
       "source": "",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "flow-altdorf",
+      "studio_name": "Flow Altdorf",
+      "day": "Monday",
+      "time_start": "08:15",
+      "time_end": "09:15",
+      "class_name": "morning flow für alle level",
+      "teacher": "rahel gerber",
+      "level": "all",
+      "source": "https://www.flow-altdorf.ch/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "flow-altdorf",
+      "studio_name": "Flow Altdorf",
+      "day": "Monday",
+      "time_start": "19:30",
+      "time_end": "20:30",
+      "class_name": "yoga kurs",
+      "teacher": "maria arnold",
+      "level": "all",
+      "source": "https://www.flow-altdorf.ch/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "flow-altdorf",
+      "studio_name": "Flow Altdorf",
+      "day": "Tuesday",
+      "time_start": "18:30",
+      "time_end": "19:30",
+      "class_name": "hatha flow",
+      "teacher": "rolf bissig",
+      "level": "all",
+      "source": "https://www.flow-altdorf.ch/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "flow-altdorf",
+      "studio_name": "Flow Altdorf",
+      "day": "Tuesday",
+      "time_start": "19:45",
+      "time_end": "20:45",
+      "class_name": "hatha flow",
+      "teacher": "rolf bissig",
+      "level": "all",
+      "source": "https://www.flow-altdorf.ch/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "flow-altdorf",
+      "studio_name": "Flow Altdorf",
+      "day": "Wednesday",
+      "time_start": "09:40",
+      "time_end": "10:40",
+      "class_name": "yoga zum entspannen",
+      "teacher": "carla gisler",
+      "level": "all",
+      "source": "https://www.flow-altdorf.ch/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "flow-altdorf",
+      "studio_name": "Flow Altdorf",
+      "day": "Wednesday",
+      "time_start": "19:30",
+      "time_end": "20:30",
+      "class_name": "männer yoga",
+      "teacher": "rolf bissig",
+      "level": "all",
+      "source": "https://www.flow-altdorf.ch/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "flow-altdorf",
+      "studio_name": "Flow Altdorf",
+      "day": "Thursday",
+      "time_start": "17:45",
+      "time_end": "19:00",
+      "class_name": "vinyasa flow für alle level",
+      "teacher": "rahel gerber",
+      "level": "all",
+      "source": "https://www.flow-altdorf.ch/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "flow-altdorf",
+      "studio_name": "Flow Altdorf",
+      "day": "Thursday",
+      "time_start": "19:30",
+      "time_end": "20:30",
+      "class_name": "hatha yoga (in english)",
+      "teacher": "abi bissig",
+      "level": "all",
+      "source": "https://www.flow-altdorf.ch/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "flow-altdorf",
+      "studio_name": "Flow Altdorf",
+      "day": "Friday",
+      "time_start": "19:00",
+      "time_end": "21:00",
+      "class_name": "women’s circle",
+      "teacher": "abi bissig",
+      "level": "all",
+      "source": "https://www.flow-altdorf.ch/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "flow-altdorf",
+      "studio_name": "Flow Altdorf",
+      "day": "Sunday",
+      "time_start": "18:30",
+      "time_end": "19:30",
+      "class_name": "sunday reset (in english)",
+      "teacher": "abi bissig",
+      "level": "all",
+      "source": "https://www.flow-altdorf.ch/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "flow-altdorf",
+      "studio_name": "Flow Altdorf",
+      "day": "Monday",
+      "time_start": "08:15",
+      "time_end": "09:15",
+      "class_name": "morning flow für alle level",
+      "teacher": "rahel gerber",
+      "level": "all",
+      "source": "https://www.flow-altdorf.ch/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "flow-altdorf",
+      "studio_name": "Flow Altdorf",
+      "day": "Monday",
+      "time_start": "19:30",
+      "time_end": "20:30",
+      "class_name": "yoga kurs",
+      "teacher": "maria arnold",
+      "level": "all",
+      "source": "https://www.flow-altdorf.ch/",
+      "verified": true,
+      "last_checked": "2026-03-23"
     }
   ],
   "_meta": {
-    "last_updated": "2026-03-21",
-    "note": "Stundenplan-Daten aus öffentlichen Quellen. Für aktuelle Zeiten siehe Studio-Website."
+    "last_updated": "2026-03-23",
+    "note": "Stundenplan-Daten aus oeffentlichen Quellen. Fuer aktuelle Zeiten siehe Studio-Website."
   }
 }

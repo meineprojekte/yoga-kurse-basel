@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-21T00:00:00Z",
+  "last_updated": "2026-03-23T00:38:49.392696+00:00",
   "_notes": "Schedule data extracted from yogaar.ch/stundenplan and raumsein.ch. Yoga & Kinesiologie website was unreachable. Some Herisau classes are in St. Gallen locations.",
   "classes": [
     {
@@ -13,7 +13,7 @@
       "level": "senior",
       "source": "",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "yogaar-herisau",
@@ -26,7 +26,7 @@
       "level": "all",
       "source": "",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "yogaar-herisau",
@@ -39,11 +39,11 @@
       "level": "all",
       "source": "",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     }
   ],
   "_meta": {
-    "last_updated": "2026-03-21",
-    "note": "Stundenplan-Daten aus öffentlichen Quellen. Für aktuelle Zeiten siehe Studio-Website."
+    "last_updated": "2026-03-23",
+    "note": "Stundenplan-Daten aus oeffentlichen Quellen. Fuer aktuelle Zeiten siehe Studio-Website."
   }
 }

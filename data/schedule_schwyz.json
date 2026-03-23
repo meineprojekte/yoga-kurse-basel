@@ -1,123 +1,6 @@
 {
-  "last_updated": "2026-03-21T00:00:00Z",
+  "last_updated": "2026-03-23T00:46:57.218054+00:00",
   "classes": [
-    {
-      "studio_id": "heyoga-schwyz",
-      "studio_name": "heyoga",
-      "day": "Monday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Hatha Yoga",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.heyoga.ch/yoga/",
-      "verified": false,
-      "last_checked": "2026-03-21"
-    },
-    {
-      "studio_id": "heyoga-schwyz",
-      "studio_name": "heyoga",
-      "day": "Monday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Vinyasa Yoga",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.heyoga.ch/yoga/",
-      "verified": false,
-      "last_checked": "2026-03-21"
-    },
-    {
-      "studio_id": "heyoga-schwyz",
-      "studio_name": "heyoga",
-      "day": "Tuesday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Yin Yoga",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.heyoga.ch/yoga/",
-      "verified": false,
-      "last_checked": "2026-03-21"
-    },
-    {
-      "studio_id": "heyoga-schwyz",
-      "studio_name": "heyoga",
-      "day": "Tuesday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Hatha Yoga",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.heyoga.ch/yoga/",
-      "verified": false,
-      "last_checked": "2026-03-21"
-    },
-    {
-      "studio_id": "heyoga-schwyz",
-      "studio_name": "heyoga",
-      "day": "Wednesday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Vinyasa Yoga",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.heyoga.ch/yoga/",
-      "verified": false,
-      "last_checked": "2026-03-21"
-    },
-    {
-      "studio_id": "heyoga-schwyz",
-      "studio_name": "heyoga",
-      "day": "Wednesday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Yoga & Klang",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.heyoga.ch/yoga/",
-      "verified": false,
-      "last_checked": "2026-03-21"
-    },
-    {
-      "studio_id": "heyoga-schwyz",
-      "studio_name": "heyoga",
-      "day": "Thursday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Hatha Yoga",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.heyoga.ch/yoga/",
-      "verified": false,
-      "last_checked": "2026-03-21"
-    },
-    {
-      "studio_id": "heyoga-schwyz",
-      "studio_name": "heyoga",
-      "day": "Thursday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Yin Yoga",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.heyoga.ch/yoga/",
-      "verified": false,
-      "last_checked": "2026-03-21"
-    },
-    {
-      "studio_id": "heyoga-schwyz",
-      "studio_name": "heyoga",
-      "day": "Friday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Senior Yoga",
-      "teacher": "",
-      "level": "beginner",
-      "source": "https://www.heyoga.ch/yoga/",
-      "verified": false,
-      "last_checked": "2026-03-21"
-    },
     {
       "studio_id": "yoga8-einsiedeln",
       "studio_name": "yoga8",
@@ -129,7 +12,7 @@
       "level": "all",
       "source": "",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "yoga8-einsiedeln",
@@ -142,7 +25,7 @@
       "level": "all",
       "source": "",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "yoga8-einsiedeln",
@@ -155,11 +38,167 @@
       "level": "all",
       "source": "",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "heyoga-schwyz",
+      "studio_name": "heyoga",
+      "day": "Monday",
+      "time_start": "18:30",
+      "time_end": "20:00",
+      "class_name": "Vinyasa",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.heyoga.ch/yoga/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "heyoga-schwyz",
+      "studio_name": "heyoga",
+      "day": "Tuesday",
+      "time_start": "10:00",
+      "time_end": "11:00",
+      "class_name": "Yoga für Seniorinnen/Senioren",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.heyoga.ch/yoga/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "heyoga-schwyz",
+      "studio_name": "heyoga",
+      "day": "Tuesday",
+      "time_start": "19:00",
+      "time_end": "20:15",
+      "class_name": "Vinyasa",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.heyoga.ch/yoga/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "heyoga-schwyz",
+      "studio_name": "heyoga",
+      "day": "Wednesday",
+      "time_start": "06:00",
+      "time_end": "07:00",
+      "class_name": "Morning Flow",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.heyoga.ch/yoga/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "heyoga-schwyz",
+      "studio_name": "heyoga",
+      "day": "Wednesday",
+      "time_start": "19:10",
+      "time_end": "20:25",
+      "class_name": "Yin  & Klang",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.heyoga.ch/yoga/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "heyoga-schwyz",
+      "studio_name": "heyoga",
+      "day": "Thursday",
+      "time_start": "18:45",
+      "time_end": "20:00",
+      "class_name": "Hatha",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.heyoga.ch/yoga/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "heyoga-schwyz",
+      "studio_name": "heyoga",
+      "day": "Monday",
+      "time_start": "18:30",
+      "time_end": "20:00",
+      "class_name": "Vinyasa",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.heyoga.ch/yoga/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "heyoga-schwyz",
+      "studio_name": "heyoga",
+      "day": "Tuesday",
+      "time_start": "10:00",
+      "time_end": "11:00",
+      "class_name": "Yoga für Seniorinnen/Senioren",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.heyoga.ch/yoga/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "heyoga-schwyz",
+      "studio_name": "heyoga",
+      "day": "Tuesday",
+      "time_start": "19:00",
+      "time_end": "20:15",
+      "class_name": "Vinyasa",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.heyoga.ch/yoga/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "heyoga-schwyz",
+      "studio_name": "heyoga",
+      "day": "Wednesday",
+      "time_start": "06:00",
+      "time_end": "07:00",
+      "class_name": "Morning Flow",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.heyoga.ch/yoga/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "heyoga-schwyz",
+      "studio_name": "heyoga",
+      "day": "Wednesday",
+      "time_start": "19:10",
+      "time_end": "20:25",
+      "class_name": "Yin  & Klang",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.heyoga.ch/yoga/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "heyoga-schwyz",
+      "studio_name": "heyoga",
+      "day": "Thursday",
+      "time_start": "18:45",
+      "time_end": "20:00",
+      "class_name": "Hatha",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.heyoga.ch/yoga/",
+      "verified": true,
+      "last_checked": "2026-03-23"
     }
   ],
   "_meta": {
-    "last_updated": "2026-03-21",
-    "note": "Stundenplan-Daten aus öffentlichen Quellen. Für aktuelle Zeiten siehe Studio-Website."
+    "last_updated": "2026-03-23",
+    "note": "Stundenplan-Daten aus oeffentlichen Quellen. Fuer aktuelle Zeiten siehe Studio-Website."
   }
 }

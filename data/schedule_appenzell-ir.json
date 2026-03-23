@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-21T00:00:00Z",
+  "last_updated": "2026-03-23T00:39:02.065285+00:00",
   "_notes": "Schedule data from studiomond.ch/stundenplan/ and yoga-claudia.ch/kursangebote/appenzell. Andrea Manser website had TLS certificate issues; no schedule extracted.",
   "classes": [
     {
@@ -13,7 +13,7 @@
       "level": "all",
       "source": "https://studiomond.ch/yoga-studio/",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "studio-mond-appenzell",
@@ -26,7 +26,7 @@
       "level": "all",
       "source": "https://studiomond.ch/yoga-studio/",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "studio-mond-appenzell",
@@ -39,7 +39,7 @@
       "level": "all",
       "source": "https://studiomond.ch/yoga-studio/",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "studio-mond-appenzell",
@@ -52,7 +52,7 @@
       "level": "all",
       "source": "https://studiomond.ch/yoga-studio/",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "studio-mond-appenzell",
@@ -65,7 +65,7 @@
       "level": "all",
       "source": "https://studiomond.ch/yoga-studio/",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "studio-mond-appenzell",
@@ -78,7 +78,7 @@
       "level": "all",
       "source": "https://studiomond.ch/yoga-studio/",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "yoga-claudia-appenzell",
@@ -91,7 +91,7 @@
       "level": "postnatal",
       "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "yoga-claudia-appenzell",
@@ -104,7 +104,7 @@
       "level": "all",
       "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "yoga-claudia-appenzell",
@@ -117,7 +117,7 @@
       "level": "all",
       "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "yoga-claudia-appenzell",
@@ -130,7 +130,7 @@
       "level": "all",
       "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "yoga-claudia-appenzell",
@@ -143,7 +143,7 @@
       "level": "all",
       "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "yoga-claudia-appenzell",
@@ -156,7 +156,7 @@
       "level": "prenatal",
       "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     },
     {
       "studio_id": "yoga-claudia-appenzell",
@@ -169,11 +169,11 @@
       "level": "all",
       "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
       "verified": false,
-      "last_checked": "2026-03-21"
+      "last_checked": "2026-03-23"
     }
   ],
   "_meta": {
-    "last_updated": "2026-03-21",
-    "note": "Stundenplan-Daten aus öffentlichen Quellen. Für aktuelle Zeiten siehe Studio-Website."
+    "last_updated": "2026-03-23",
+    "note": "Stundenplan-Daten aus oeffentlichen Quellen. Fuer aktuelle Zeiten siehe Studio-Website."
   }
 }
