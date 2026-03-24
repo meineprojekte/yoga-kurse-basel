@@ -103,7 +103,7 @@ input, textarea, select, .search-input, .faq-answer, .guide-content p, .guide-co
 html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
-    scroll-padding-top: calc(var(--header-height) + 20px);
+    scroll-padding-top: calc(var(--header-height) + 120px);
 }
 
 body {
@@ -184,12 +184,13 @@ select {
     display: inline-flex;
     align-items: center;
     gap: var(--spacing-sm);
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: var(--radius-md);
     font-weight: 500;
     font-size: 14px;
     transition: all var(--transition-fast);
     white-space: nowrap;
+    min-height: 44px;
 }
 
 .btn-primary {
@@ -226,8 +227,11 @@ select {
 }
 
 .btn-sm {
-    padding: 6px 14px;
+    padding: 8px 14px;
     font-size: 13px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
 }
 
 /* --- Header --- */
@@ -316,8 +320,8 @@ select {
 }
 
 .lang-toggle, .theme-toggle {
-    width: 36px;
-    height: 36px;
+    width: 44px;
+    height: 44px;
     border-radius: var(--radius-sm);
     display: flex;
     align-items: center;
@@ -341,9 +345,9 @@ select {
     display: none;
     flex-direction: column;
     gap: 5px;
-    padding: 8px;
-    width: 36px;
-    height: 36px;
+    padding: 10px;
+    width: 44px;
+    height: 44px;
     justify-content: center;
 }
 
@@ -462,14 +466,14 @@ select {
 
 .search-clear {
     position: absolute;
-    right: 12px;
-    width: 32px;
-    height: 32px;
+    right: 8px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--color-text-muted);
     background: var(--color-bg);
 }
@@ -561,6 +565,12 @@ select {
 .hero-scroll a {
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
 }
 
 .hero-scroll a:hover {
@@ -637,7 +647,7 @@ select {
 }
 
 .chip {
-    padding: 6px 16px;
+    padding: 8px 16px;
     border-radius: 20px;
     font-size: 13px;
     font-weight: 500;
@@ -646,6 +656,9 @@ select {
     color: var(--color-text-secondary);
     transition: all var(--transition-fast);
     background: transparent;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
 }
 
 .chip:hover {
@@ -667,7 +680,7 @@ select {
 
 .filters-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: var(--spacing-md);
 }
 
@@ -686,14 +699,15 @@ select {
 }
 
 .filter-select {
-    padding: 8px 12px;
+    padding: 10px 12px;
     border: 1.5px solid var(--color-border);
     border-radius: var(--radius-sm);
     background: var(--color-bg);
     color: var(--color-text);
-    font-size: 14px;
+    font-size: 16px;
     transition: border-color var(--transition-fast);
     appearance: auto;
+    min-height: 44px;
 }
 
 .filter-select:focus {
@@ -739,9 +753,14 @@ select {
 }
 
 .view-btn {
-    padding: 6px 10px;
+    padding: 10px 14px;
+    min-width: 44px;
+    min-height: 44px;
     color: var(--color-text-muted);
     transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .view-btn:hover {
@@ -775,7 +794,7 @@ select {
 
 .studios-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr));
     gap: var(--spacing-lg);
 }
 
@@ -916,6 +935,11 @@ select {
     display: flex;
     align-items: center;
     gap: var(--spacing-xs);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+    flex: 1;
 }
 
 .studio-teachers svg {
@@ -929,6 +953,8 @@ select {
     display: flex;
     align-items: center;
     gap: 4px;
+    flex-shrink: 0;
+    min-height: 44px;
 }
 
 .studio-link:hover {
@@ -938,12 +964,13 @@ select {
 .studio-card-actions {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 0;
+    flex-shrink: 0;
 }
 
 .fav-btn, .share-btn {
-    width: 28px;
-    height: 28px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -972,9 +999,14 @@ select {
     border: none;
     cursor: pointer;
     font-size: 14px;
-    padding: 4px;
+    padding: 10px;
+    min-width: 44px;
+    min-height: 44px;
     border-radius: 4px;
     transition: background var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .schedule-cal-btn:hover {
@@ -1076,7 +1108,7 @@ select {
 
 .schedule-row {
     display: grid;
-    grid-template-columns: 110px 1fr 180px 140px 100px 80px 36px;
+    grid-template-columns: 110px 1fr 180px 140px 100px 80px 44px;
     gap: var(--spacing-md);
     padding: 12px var(--spacing-md);
     background: var(--color-bg-card);
@@ -1130,7 +1162,7 @@ select {
 
 .schedule-header {
     display: grid;
-    grid-template-columns: 110px 1fr 180px 140px 100px 80px 36px;
+    grid-template-columns: 110px 1fr 180px 140px 100px 80px 44px;
     gap: var(--spacing-md);
     padding: 8px var(--spacing-md);
     font-size: 11px;
@@ -1151,21 +1183,39 @@ select {
 
 @media (max-width: 768px) {
     .schedule-row, .schedule-header {
-        grid-template-columns: 80px 1fr;
-        gap: 4px var(--spacing-sm);
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
     }
 
     .schedule-row {
-        padding: 10px var(--spacing-sm);
+        padding: 12px var(--spacing-sm);
+    }
+
+    .schedule-time {
+        font-size: 13px;
+        white-space: normal;
+    }
+
+    .schedule-class {
+        font-size: 15px;
+        font-weight: 700;
     }
 
     .schedule-studio, .schedule-teacher {
-        grid-column: 2;
+        font-size: 12px;
     }
 
     .schedule-level {
-        grid-column: 2;
-        justify-self: start;
+        align-self: flex-start;
+    }
+
+    .schedule-price {
+        align-self: flex-start;
+    }
+
+    .schedule-cal-btn {
+        align-self: flex-start;
     }
 
     .schedule-header {
@@ -1187,7 +1237,7 @@ select {
 
 .styles-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(180px, 100%), 1fr));
     gap: var(--spacing-md);
 }
 
@@ -1337,7 +1387,7 @@ select {
 
 .guide-styles-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(380px, 100%), 1fr));
     gap: var(--spacing-lg);
     margin-bottom: var(--spacing-xl);
 }
@@ -1415,7 +1465,7 @@ select {
 
 .guide-districts {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr));
     gap: var(--spacing-lg);
     margin-bottom: var(--spacing-xl);
 }
@@ -1468,7 +1518,7 @@ select {
 /* --- Guide Stats Grid --- */
 .guide-stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
     gap: var(--spacing-lg);
     margin-bottom: var(--spacing-xl);
 }
@@ -1683,13 +1733,13 @@ select {
 .feedback-field select,
 .feedback-field input,
 .feedback-field textarea {
-    padding: 10px 14px;
+    padding: 12px 14px;
     border: 1.5px solid var(--color-border);
     border-radius: var(--radius-sm);
     background: var(--color-bg-card);
     color: var(--color-text);
     font-family: var(--font-sans);
-    font-size: 14px;
+    font-size: 16px;
     transition: border-color var(--transition-fast);
     resize: vertical;
 }
@@ -1722,6 +1772,12 @@ select {
 @media (max-width: 600px) {
     .feedback-row {
         grid-template-columns: 1fr;
+    }
+
+    .feedback-form .btn {
+        align-self: stretch;
+        justify-content: center;
+        width: 100%;
     }
 }
 
@@ -1832,17 +1888,20 @@ select {
     inset: 0;
     background: var(--color-overlay);
     z-index: 2000;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: var(--spacing-lg);
     opacity: 0;
-    transition: opacity var(--transition-normal);
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--transition-normal), visibility var(--transition-normal);
 }
 
 .modal-overlay.active {
-    display: flex;
     opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .modal {
@@ -1866,9 +1925,9 @@ select {
     position: sticky;
     top: 0;
     float: right;
-    width: 40px;
-    height: 40px;
-    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    font-size: 28px;
     color: var(--color-text-muted);
     border-radius: var(--radius-sm);
     display: flex;
@@ -2033,6 +2092,12 @@ select {
         padding: var(--spacing-md) 0;
         font-size: 16px;
         border-bottom: 1px solid var(--color-border-light);
+        min-height: 48px;
+        line-height: 1.4;
+    }
+
+    .nav-list li:last-child .nav-link {
+        border-bottom: none;
     }
 
     .mobile-menu-toggle {
@@ -2076,6 +2141,12 @@ select {
     .results-bar-inner {
         flex-direction: column;
         align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+
+    .results-actions {
+        flex-wrap: wrap;
+        gap: var(--spacing-sm);
     }
 
     .modal {
@@ -2088,8 +2159,14 @@ select {
         flex-direction: column;
     }
 
+    .modal-actions .btn {
+        width: 100%;
+        justify-content: center;
+        min-height: 48px;
+    }
+
     .styles-grid {
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(min(140px, 45%), 1fr));
     }
 
     .canton-selector {
@@ -2097,7 +2174,7 @@ select {
     }
 
     .canton-select {
-        font-size: 15px;
+        font-size: 16px;
         padding: 12px 16px;
     }
 
@@ -2129,7 +2206,7 @@ select {
     }
 
     .canton-select {
-        font-size: 14px;
+        font-size: 16px;
         border-radius: var(--radius-md);
     }
 
@@ -2147,13 +2224,14 @@ select {
     }
 
     .search-input {
-        padding: 14px 40px 14px 44px;
-        font-size: 15px;
+        padding: 14px 48px 14px 44px;
+        font-size: 16px;
     }
 
     .chip {
-        padding: 5px 12px;
+        padding: 6px 12px;
         font-size: 12px;
+        min-height: 36px;
     }
 
     .studio-card {
@@ -2423,7 +2501,7 @@ select {
 
 .more-studios-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
     gap: var(--spacing-sm);
 }
 
@@ -2485,4 +2563,685 @@ select {
         font-size: 12px;
         padding: 8px 10px;
     }
+}
+
+/* ============================================================
+   MOBILE UX ENHANCEMENTS
+   ============================================================ */
+
+/* --- Safe area support (notch / dynamic island) --- */
+@supports (padding: env(safe-area-inset-top)) {
+    .header {
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+    }
+
+    .footer {
+        padding-bottom: calc(var(--spacing-xl) + env(safe-area-inset-bottom));
+    }
+
+    .back-to-top {
+        bottom: calc(24px + env(safe-area-inset-bottom));
+        right: calc(24px + env(safe-area-inset-right));
+    }
+
+    .modal-overlay {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    .modal {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+}
+
+/* --- Body scroll lock when mobile menu is open --- */
+body.menu-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    touch-action: none;
+}
+
+/* --- Body scroll lock when modal is open --- */
+body.modal-open {
+    overflow: hidden;
+}
+
+/* --- Smooth scrolling for touch containers --- */
+.filters-quick,
+.guide-comparison-table,
+.schedule-list {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* --- Ensure footer links are easily tappable on mobile --- */
+@media (max-width: 768px) {
+    .footer-links a {
+        display: inline-block;
+        padding: 6px 0;
+        min-height: 44px;
+        line-height: 32px;
+    }
+
+    .footer-links li {
+        margin-bottom: 0;
+    }
+}
+
+/* --- FAQ summary tappable area --- */
+.faq-item summary {
+    min-height: 48px;
+}
+
+/* --- Canton cross-links minimum touch target --- */
+.canton-cross-link {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* --- More studios button touch target --- */
+.more-studios-btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* --- More studios card touch target --- */
+.more-studios-card {
+    min-height: 48px;
+}
+
+/* --- Day buttons minimum touch target --- */
+.day-btn {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Filters toggle touch target --- */
+.filters-toggle {
+    min-height: 44px;
+}
+
+/* --- Touch device optimizations --- */
+@media (hover: none) and (pointer: coarse) {
+    /* Disable hover transform on touch devices to prevent sticky hover */
+    .studio-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .style-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .guide-stat-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .btn-primary:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    /* Active/tap feedback states (after hover to ensure they win) */
+    .studio-card:active {
+        transform: scale(0.98);
+        transition-duration: 50ms;
+    }
+
+    .chip:active {
+        transform: scale(0.95);
+        transition-duration: 50ms;
+    }
+
+    .btn:active {
+        transform: scale(0.97);
+        transition-duration: 50ms;
+    }
+
+    .day-btn:active {
+        transform: scale(0.95);
+        transition-duration: 50ms;
+    }
+
+    .faq-item summary:active {
+        background: var(--color-primary-bg);
+    }
+
+    .style-card:active {
+        transform: scale(0.97);
+        transition-duration: 50ms;
+    }
+}
+
+/* --- Focus-visible for keyboard navigation --- */
+*:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible),
+select:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* --- Landscape orientation on phones --- */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding-top: calc(var(--header-height) + var(--spacing-lg));
+        padding-bottom: var(--spacing-lg);
+    }
+
+    .hero-stats {
+        gap: var(--spacing-xl);
+    }
+
+    .hero-scroll {
+        display: none;
+    }
+
+    .modal {
+        max-height: 95vh;
+    }
+
+    .nav.open {
+        max-height: calc(100vh - var(--header-height));
+        overflow-y: auto;
+    }
+}
+
+/* --- 320px narrow screen fixes --- */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    .hero-title {
+        font-size: 1.6rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .hero-stats {
+        gap: var(--spacing-md);
+    }
+
+    .stat-number {
+        font-size: 1.3rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .studio-name {
+        font-size: 1.05rem;
+    }
+
+    .chip {
+        padding: 6px 12px;
+        font-size: 12px;
+        min-height: 36px;
+    }
+
+    .results-actions {
+        flex-wrap: wrap;
+        gap: var(--spacing-sm);
+    }
+
+    .btn-sm {
+        font-size: 12px;
+        padding: 6px 10px;
+        min-height: 40px;
+    }
+
+    .modal-content h2 {
+        font-size: 1.2rem;
+        padding-right: 50px;
+    }
+
+    .guide-tips li {
+        padding-left: 40px;
+    }
+
+    .guide-tips li::before {
+        left: 10px;
+        width: 22px;
+        height: 22px;
+        font-size: 11px;
+    }
+
+    .footer-links h3 {
+        font-size: 13px;
+    }
+
+    .canton-selector-label {
+        font-size: 13px;
+    }
+}
+
+/* --- Nav overlay for closing menu by tapping outside --- */
+.nav-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    top: var(--header-height);
+    background: var(--color-overlay);
+    z-index: 99;
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.nav-overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+/* --- Schedule fine-tuning on small phones --- */
+@media (max-width: 480px) {
+    .schedule-row {
+        padding: 10px var(--spacing-sm);
+        gap: 3px;
+    }
+
+    .schedule-time {
+        font-size: 12px;
+    }
+
+    .schedule-class {
+        font-size: 14px;
+    }
+
+    .schedule-studio,
+    .schedule-teacher {
+        font-size: 11px;
+    }
+
+    .schedule-level {
+        font-size: 10px;
+    }
+}
+
+/* --- Improve modal on mobile --- */
+@media (max-width: 480px) {
+    .modal-overlay {
+        padding: 0;
+        align-items: flex-end;
+    }
+
+    .modal {
+        max-height: 92vh;
+        border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    }
+
+    .modal-content {
+        padding: 0 var(--spacing-md) var(--spacing-lg);
+    }
+
+    .modal-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+    }
+
+    .modal-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* --- Improve results bar on small screens --- */
+@media (max-width: 480px) {
+    .results-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /* Hide PDF export text on very small screens, keep icon */
+    #exportPdf span,
+    #geoBtn span,
+    #installBtn span {
+        display: none;
+    }
+
+    #exportPdf svg,
+    #geoBtn svg,
+    #installBtn svg {
+        margin: 0;
+    }
+}
+
+/* --- Prevent text from being cut off in cards --- */
+.studio-description {
+    word-break: break-word;
+}
+
+.modal-info-row {
+    word-break: break-word;
+}
+
+/* --- Smooth scroll padding for all anchor targets --- */
+[id] {
+    scroll-margin-top: calc(var(--header-height) + 120px);
+}
+
+/* --- Fix canton-select on 480px (was 14px, needs 16px for iOS) --- */
+@media (max-width: 480px) {
+    .canton-select {
+        font-size: 16px;
+    }
+}
+
+/* ============================================================
+   DEEP MOBILE AUDIT FIXES (Round 3)
+   ============================================================ */
+
+/* --- 1. Tap highlight: suppress default blue flash on iOS --- */
+a, button, select, input, textarea, summary, .chip, .studio-card,
+.style-card, .day-btn, .canton-cross-link, .more-studios-btn,
+.fav-btn, .share-btn, .view-btn, .back-to-top, .nav-link {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* --- 2. Overscroll behavior: prevent pull-to-refresh conflicts --- */
+html {
+    overscroll-behavior-y: none;
+}
+
+body {
+    overscroll-behavior-y: none;
+}
+
+/* --- 3. Fix fav-btn/share-btn touch targets (40px -> 44px) --- */
+.fav-btn, .share-btn {
+    width: 44px;
+    height: 44px;
+}
+
+/* --- 5. Back-to-top: fix sticky hover on touch & add active state --- */
+@media (hover: none) and (pointer: coarse) {
+    .back-to-top:hover {
+        transform: none;
+        background: var(--color-primary);
+    }
+
+    .back-to-top.visible:hover {
+        transform: translateY(0);
+    }
+
+    .back-to-top:active {
+        transform: scale(0.9);
+        transition-duration: 50ms;
+    }
+
+    /* Active states for elements missed in previous round */
+    .canton-cross-link:active {
+        transform: scale(0.97);
+        transition-duration: 50ms;
+    }
+
+    .more-studios-btn:active {
+        transform: scale(0.95);
+        transition-duration: 50ms;
+    }
+
+    .more-studios-card:active {
+        transform: scale(0.98);
+        transition-duration: 50ms;
+    }
+
+    .view-btn:active {
+        transform: scale(0.9);
+        transition-duration: 50ms;
+    }
+
+    .fav-btn:active, .share-btn:active {
+        transform: scale(0.85);
+        transition-duration: 50ms;
+    }
+
+    .nav-link:active {
+        background: var(--color-primary-bg);
+    }
+
+    .filters-toggle:active {
+        transform: scale(0.97);
+        transition-duration: 50ms;
+    }
+
+    .search-clear:active {
+        transform: scale(0.9);
+        transition-duration: 50ms;
+    }
+
+    .lang-toggle:active, .theme-toggle:active {
+        transform: scale(0.9);
+        transition-duration: 50ms;
+    }
+
+    .modal-close:active {
+        transform: scale(0.9);
+        transition-duration: 50ms;
+    }
+
+    .guide-style-item:active {
+        transform: scale(0.98);
+        transition-duration: 50ms;
+    }
+
+    .guide-district-item:active {
+        transform: scale(0.98);
+        transition-duration: 50ms;
+    }
+}
+
+/* --- 7. Map touch: prevent page scroll conflict when interacting with map --- */
+.map {
+    touch-action: none;
+}
+
+/* --- 9. Print styles: include more sections, cleaner output --- */
+@media print {
+    .schedule-section, .guide-section, .styles-section {
+        background: white !important;
+    }
+
+    .feedback-section, .canton-links-section, .canton-intro-section,
+    .nav-overlay, #cantonSelector {
+        display: none !important;
+    }
+
+    .guide-style-item, .guide-district-item, .guide-stat-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    .faq-item {
+        break-inside: avoid;
+    }
+
+    .section-title {
+        color: black !important;
+    }
+
+    a[href]::after {
+        content: none;
+    }
+}
+
+/* --- 10. Chip min-height at 360px: ensure at least 40px (accessible minimum) --- */
+@media (max-width: 360px) {
+    .chip {
+        min-height: 38px;
+    }
+}
+
+/* --- 11. Fix filter-select visual on dark mode (appearance:auto can look broken) --- */
+@media (max-width: 768px) {
+    .filter-select {
+        appearance: none;
+        -webkit-appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        background-size: 12px;
+        padding-right: 32px;
+    }
+
+    [data-theme="dark"] .filter-select {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23B0B0C0' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    }
+}
+
+/* --- 12. Ensure schedule-days horizontal scroll with momentum & hidden scrollbar --- */
+.schedule-days {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.schedule-days::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .schedule-days {
+        flex-wrap: nowrap;
+        gap: 6px;
+        padding-bottom: 2px;
+    }
+
+    .day-btn {
+        flex-shrink: 0;
+    }
+}
+
+/* --- 13. Canton cross-links: horizontal scroll on very narrow screens --- */
+@media (max-width: 360px) {
+    .canton-cross-links {
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+        padding-bottom: 4px;
+    }
+
+    .canton-cross-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .canton-cross-link {
+        flex-shrink: 0;
+    }
+}
+
+/* --- 14. Theme toggle transition smoothness --- */
+.theme-toggle svg {
+    transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+/* --- 16. Ensure footer grid wraps properly with 6 children --- */
+@media (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+}
+
+/* --- 17. Fix results-bar potential overflow on 320px --- */
+@media (max-width: 360px) {
+    .results-count {
+        font-size: 12px;
+    }
+
+    .view-toggle {
+        flex-shrink: 0;
+    }
+}
+
+/* --- 18. Guide comparison table: add scroll hint shadow on mobile --- */
+@media (max-width: 768px) {
+    .guide-comparison-table {
+        position: relative;
+    }
+
+    .guide-comparison-table::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 24px;
+        background: linear-gradient(to right, transparent, var(--color-bg));
+        pointer-events: none;
+        border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    }
+
+    [data-theme="dark"] .guide-comparison-table::after {
+        background: linear-gradient(to right, transparent, var(--color-bg));
+    }
+}
+
+/* --- 19. Modal drag handle indicator on mobile --- */
+@media (max-width: 480px) {
+    .modal::before {
+        content: '';
+        display: block;
+        width: 36px;
+        height: 4px;
+        background: var(--color-border);
+        border-radius: 2px;
+        margin: 10px auto 0;
+        flex-shrink: 0;
+    }
+}
+
+/* --- 20. Ensure hero-scroll is above fold content --- */
+@media (max-width: 768px) {
+    .hero-scroll {
+        bottom: 16px;
+    }
+}
+
+/* --- 21. Schedule cal btn gap from other buttons --- */
+.schedule-cal-btn + .schedule-cal-btn,
+.schedule-cal-btn + a {
+    margin-left: 4px;
+}
+
+/* --- 22. Prevent content shift when scrollbar appears/disappears --- */
+html {
+    scrollbar-gutter: stable;
 }
