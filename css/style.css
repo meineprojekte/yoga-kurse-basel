@@ -1118,7 +1118,11 @@ select {
     border-left: 3px solid transparent;
 }
 
-.schedule-row:hover {
+.schedule-row-link {
+    cursor: pointer;
+}
+
+.schedule-row:hover, .schedule-row-link:active {
     border-left-color: var(--color-primary);
     box-shadow: 0 2px 8px var(--color-shadow);
 }

@@ -1787,7 +1787,8 @@ if ('serviceWorker' in navigator) {
 
             studiosWithSchedule[c.studio_id] = true;
 
-            html += '<div class="schedule-row">' +
+            var rowUrl = (studioRef && studioRef.schedule_url) ? studioRef.schedule_url : ((studioRef && studioRef.website) ? studioRef.website : '');
+            html += '<div class="schedule-row' + (rowUrl ? ' schedule-row-link' : '') + '"' + (rowUrl ? ' data-href="' + escapeHtml(rowUrl) + '"' : '') + '>' +
                 '<span class="schedule-time">' + escapeHtml(timeStr) + '</span>' +
                 '<span class="schedule-class">' + escapeHtml(c.class_name) + '</span>' +
                 '<span class="schedule-studio">' + escapeHtml(c.studio_name) + sourceLink + '</span>' +
@@ -2538,6 +2539,18 @@ if ('serviceWorker' in navigator) {
         // Theme toggle
         if (el.closest && el.closest('#themeToggle')) {
             analytics.trackEvent('click', 'theme-' + state.theme);
+        }
+    });
+
+    // Make entire schedule row clickable
+    document.addEventListener('click', function (e) {
+        var row = e.target.closest('.schedule-row-link');
+        if (!row) return;
+        // Don't navigate if clicking the calendar button or existing link
+        if (e.target.closest('.schedule-cal-btn') || e.target.closest('a')) return;
+        var href = row.getAttribute('data-href');
+        if (href) {
+            window.open(href, '_blank', 'noopener,noreferrer');
         }
     });
 
