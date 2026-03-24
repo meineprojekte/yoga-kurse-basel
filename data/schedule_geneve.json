@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-23T19:46:17.154071+00:00",
+  "last_updated": "2026-03-24T21:51:44.275745+00:00",
   "_notes": "Geneva studios use various booking systems (Fitogram, MindBody, Eversports). INNERCITYOGA had the most searchable schedule data. Some studios had limited schedule visibility in search results. Akta Yoga class times partially from BuyClub/search snippets.",
   "classes": [
     {
@@ -1565,6 +1565,19 @@
       "source": "https://www.thesakurayoga.com/en/schedule",
       "verified": true,
       "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "akta-yoga-geneve",
+      "studio_name": "Akta Yoga",
+      "day": "Sunday",
+      "time_start": "7:00",
+      "time_end": "21:30",
+      "class_name": "Contact",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.aktayoga.ch/fr/",
+      "verified": true,
+      "last_checked": "2026-03-24"
     }
   ],
   "_meta": {

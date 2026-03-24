@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-23T19:46:17.156920+00:00",
+  "last_updated": "2026-03-24T21:52:22.155141+00:00",
   "classes": [
     {
       "studio_id": "yoga-loft-chur",
@@ -312,6 +312,97 @@
       "source": "https://acroyoga.group/",
       "verified": true,
       "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "yoga-pyramide-chur",
+      "studio_name": "Yoga Pyramide",
+      "day": "Monday",
+      "time_start": "18:00",
+      "time_end": "19:15",
+      "class_name": "Dienstag   19.15 - 20.30",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogapyramide.ch/kurse",
+      "verified": true,
+      "last_checked": "2026-03-24"
+    },
+    {
+      "studio_id": "yoga-pyramide-chur",
+      "studio_name": "Yoga Pyramide",
+      "day": "Wednesday",
+      "time_start": "18:15",
+      "time_end": "19:30",
+      "class_name": "Unsere Kurse sind für alle Lebensstufen geeignet.",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogapyramide.ch/kurse",
+      "verified": true,
+      "last_checked": "2026-03-24"
+    },
+    {
+      "studio_id": "raw-yoga-chur",
+      "studio_name": "RAW Yoga",
+      "day": "Tuesday",
+      "time_start": "18:10",
+      "time_end": "19:10",
+      "class_name": "Inside Flow",
+      "teacher": "from 30.00 CHF",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/raw-yoga",
+      "verified": true,
+      "last_checked": "2026-03-24"
+    },
+    {
+      "studio_id": "raw-yoga-chur",
+      "studio_name": "RAW Yoga",
+      "day": "Tuesday",
+      "time_start": "19:30",
+      "time_end": "20:30",
+      "class_name": "LUUM Vinyasa Dienstag",
+      "teacher": "from 30.00 CHF",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/raw-yoga",
+      "verified": true,
+      "last_checked": "2026-03-24"
+    },
+    {
+      "studio_id": "raw-yoga-chur",
+      "studio_name": "RAW Yoga",
+      "day": "Wednesday",
+      "time_start": "18:30",
+      "time_end": "19:30",
+      "class_name": "LUUM Yin and Win",
+      "teacher": "from 30.00 CHF",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/raw-yoga",
+      "verified": true,
+      "last_checked": "2026-03-24"
+    },
+    {
+      "studio_id": "raw-yoga-chur",
+      "studio_name": "RAW Yoga",
+      "day": "Saturday",
+      "time_start": "09:45",
+      "time_end": "10:45",
+      "class_name": "Inside Flow am Samstag",
+      "teacher": "from 30.00 CHF",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/raw-yoga",
+      "verified": true,
+      "last_checked": "2026-03-24"
+    },
+    {
+      "studio_id": "raw-yoga-chur",
+      "studio_name": "RAW Yoga",
+      "day": "Thursday",
+      "time_start": "19:30",
+      "time_end": "20:30",
+      "class_name": "LUUM Flow&Stretch",
+      "teacher": "from 30.00 CHF",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/raw-yoga",
+      "verified": true,
+      "last_checked": "2026-03-24"
     }
   ],
   "_meta": {

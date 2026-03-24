@@ -735,6 +735,256 @@ def scrape_eversports_schedule(studio):
     return scrape_eversports_widget_api(studio)
 
 
+def discover_eversports_from_html(studio):
+    """
+    Discover Eversports widget slug by fetching the studio's website with curl_cffi
+    and searching for embedded widget URLs or facilityShortId parameters.
+    If found, calls the Eversports calendar API to extract classes.
+
+    Returns a list of class entry dicts, or None.
+    """
+    website = studio.get('website', '')
+    schedule_url = studio.get('schedule_url', '')
+    urls_to_try = [u for u in [schedule_url, website] if u]
+
+    for url in urls_to_try:
+        html = cffi_get(url)
+        if not html:
+            continue
+
+        slug = None
+        # Pattern: eversports.ch/widget/w/SLUG
+        m = re.search(r'eversports\.ch/widget/w/([a-zA-Z0-9_-]+)', html)
+        if m:
+            slug = m.group(1)
+        # Pattern: facilityShortId=SLUG
+        if not slug:
+            m = re.search(r'facilityShortId=([a-zA-Z0-9_-]+)', html)
+            if m:
+                slug = m.group(1)
+        # Pattern: eversports.ch/s/SLUG
+        if not slug:
+            m = re.search(r'eversports\.ch/s/([a-zA-Z0-9_-]+)', html)
+            if m:
+                slug = m.group(1)
+
+        if slug:
+            logger.info(f"  Discovered Eversports slug from HTML: {slug}")
+            # Inject discovered slug so the standard Eversports scraper can use it
+            studio.setdefault('_meta', {}).setdefault('booking_links', []).append({
+                'platform': 'eversports',
+                'url': f'https://www.eversports.ch/s/{slug}'
+            })
+            return scrape_eversports_widget_api(studio)
+
+    return None
+
+
+def scrape_acuity_schedule(studio):
+    """
+    Discover and scrape Acuity Scheduling / Squarespace Scheduling widgets.
+    Fetches the studio's website, looks for owner IDs in embedded iframe URLs,
+    then retrieves appointment types from the Acuity widget page.
+
+    Returns a list of class entry dicts, or None.
+    """
+    studio_id = studio.get('id', '')
+    studio_name = studio.get('name', '')
+    website = studio.get('website', '')
+    schedule_url = studio.get('schedule_url', '')
+
+    urls_to_try = [u for u in [schedule_url, website] if u]
+    owner_id = None
+
+    for url in urls_to_try:
+        html = cffi_get(url)
+        if not html:
+            continue
+        m = re.search(r'squarespacescheduling\.com/schedule\.php\?owner=(\d+)', html)
+        if not m:
+            m = re.search(r'acuityscheduling\.com/schedule\.php\?owner=(\d+)', html)
+        if m:
+            owner_id = m.group(1)
+            break
+
+    if not owner_id:
+        return None
+
+    logger.info(f"  Acuity: found owner={owner_id} for {studio_name}")
+    acuity_url = f"https://app.squarespacescheduling.com/schedule.php?owner={owner_id}"
+    acuity_html = cffi_get(acuity_url)
+    if not acuity_html:
+        return None
+
+    classes = []
+    m = re.search(r'"appointmentTypes"\s*:\s*(\{.+?\})\s*,\s*"[a-z]', acuity_html, re.DOTALL)
+    if not m:
+        return None
+
+    names = re.findall(r'"name":"([^"]+)"', m.group(1))
+    descs = re.findall(r'"description":"([^"]*)"', m.group(1))
+    yoga_keywords = ['yoga', 'pilates', 'meditation', 'breathwork', 'vinyasa',
+                     'hatha', 'yin', 'flow', 'ashtanga', 'kundalini', 'stretch']
+
+    for i, name in enumerate(names):
+        if any(k in name.lower() for k in yoga_keywords):
+            desc = descs[i] if i < len(descs) else ''
+            day = ''
+            t_start = ''
+            for de_day, en_day in EVERSPORTS_DAY_MAP.items():
+                if de_day in desc.lower():
+                    day = en_day
+                    break
+            tm = re.search(r'(\d{1,2}[:.]\d{2})', desc)
+            if tm:
+                t_start = tm.group(1).replace('.', ':')
+            if day or t_start:
+                classes.append({
+                    'studio_id': studio_id,
+                    'studio_name': studio_name,
+                    'day': day or 'TBC',
+                    'time_start': t_start,
+                    'time_end': '',
+                    'class_name': name.strip()[:100],
+                    'teacher': '',
+                    'level': 'all',
+                })
+
+    if classes:
+        logger.info(f"  Acuity: extracted {len(classes)} classes for {studio_name}")
+    return classes if classes else None
+
+
+# Subpage paths used for schedule discovery crawling
+_SCHEDULE_SUBPATHS = [
+    '/stundenplan', '/schedule', '/classes', '/kurse', '/horaire',
+    '/angebot', '/yoga', '/orario', '/class-schedule',
+]
+
+
+def scrape_subpage_crawl(studio):
+    """
+    Try to discover schedule data by crawling common subpages of the studio website.
+    For each subpage, check for embedded booking widgets (Eversports, SportsNow, Acuity)
+    and attempt HTML schedule parsing.
+
+    Returns a list of class entry dicts, or None.
+    """
+    website = studio.get('website', '')
+    if not website:
+        return None
+
+    studio_id = studio.get('id', '')
+    studio_name = studio.get('name', '')
+    base_url = website.rstrip('/')
+
+    for subpath in _SCHEDULE_SUBPATHS:
+        sub_url = base_url + subpath
+        html = cffi_get(sub_url, timeout=8)
+        if not html or len(html) < 500:
+            continue
+
+        # Check for Eversports widget
+        slug = None
+        m = re.search(r'eversports\.ch/widget/w/([a-zA-Z0-9_-]+)', html)
+        if m:
+            slug = m.group(1)
+        if not slug:
+            m = re.search(r'facilityShortId=([a-zA-Z0-9_-]+)', html)
+            if m:
+                slug = m.group(1)
+        if not slug:
+            m = re.search(r'eversports\.ch/s/([a-zA-Z0-9_-]+)', html)
+            if m:
+                slug = m.group(1)
+        if slug:
+            studio.setdefault('_meta', {}).setdefault('booking_links', []).append({
+                'platform': 'eversports',
+                'url': f'https://www.eversports.ch/s/{slug}'
+            })
+            result = scrape_eversports_widget_api(studio)
+            if result:
+                logger.info(f"  Subpage crawl: found Eversports on {subpath}")
+                return result
+
+        # Check for SportsNow
+        sn_m = re.search(r'sportsnow\.ch/(?:go|providers)/([a-zA-Z0-9_-]+)', html)
+        if sn_m:
+            sn_slug = sn_m.group(1)
+            studio['sportsnow_slug'] = sn_slug
+            result = scrape_sportsnow_schedule(studio)
+            if result:
+                logger.info(f"  Subpage crawl: found SportsNow on {subpath}")
+                return result
+
+        # Check for Acuity
+        ac_m = re.search(r'(?:squarespacescheduling|acuityscheduling)\.com/schedule\.php\?owner=(\d+)', html)
+        if ac_m:
+            studio['_acuity_owner'] = ac_m.group(1)
+            result = scrape_acuity_schedule(studio)
+            if result:
+                logger.info(f"  Subpage crawl: found Acuity on {subpath}")
+                return result
+
+        # Try HTML schedule parsing on subpage
+        soup = BeautifulSoup(html, 'html.parser')
+        classes = _parse_subpage_schedule(soup, studio_id, studio_name, sub_url)
+        if classes:
+            logger.info(f"  Subpage crawl: parsed {len(classes)} classes from {subpath}")
+            return classes
+
+    return None
+
+
+def _parse_subpage_schedule(soup, studio_id, studio_name, source_url):
+    """Parse schedule from a subpage's HTML using day headings + time patterns."""
+    classes = []
+    seen = set()
+
+    for heading in soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'strong', 'b']):
+        heading_text = heading.get_text(strip=True)
+        day = _normalize_day(heading_text)
+        if not day:
+            continue
+
+        sibling = heading.find_next_sibling()
+        attempts = 0
+        while sibling and attempts < 30:
+            attempts += 1
+            sib_text = sibling.get_text(strip=True)
+            if sibling.name in ['h1', 'h2', 'h3', 'h4', 'h5']:
+                break
+            if _normalize_day(sib_text):
+                break
+
+            m = re.search(r'(\d{1,2}[:.]\d{2})\s*[-\u2013\u2014]\s*(\d{1,2}[:.]\d{2})', sib_text)
+            if m:
+                t_start = m.group(1).replace('.', ':')
+                t_end = m.group(2).replace('.', ':')
+                name = re.sub(r'\d{1,2}[:.]\d{2}\s*[-\u2013\u2014]\s*\d{1,2}[:.]\d{2}', '', sib_text)
+                name = name.strip(' -\u2013\u2014|/:,\t\n')
+                name = re.sub(r'\s*(Uhr|h)\s*', ' ', name).strip()
+                if not name:
+                    name = 'Yoga'
+                key = (day, t_start, name[:40])
+                if key not in seen:
+                    seen.add(key)
+                    classes.append({
+                        'studio_id': studio_id,
+                        'studio_name': studio_name,
+                        'day': day,
+                        'time_start': t_start,
+                        'time_end': t_end,
+                        'class_name': name.strip()[:100],
+                        'teacher': '',
+                        'level': 'all',
+                        'source': source_url,
+                    })
+            sibling = sibling.find_next_sibling()
+
+    return classes if classes else None
+
+
 def scrape_squarespace_schedule(studio):
     """
     Extract schedule data from Squarespace sites using ?format=json.
@@ -1430,12 +1680,33 @@ def update_studio_data(canton_files, changelog, schedule_files, verification_dat
                 except Exception as e:
                     logger.debug(f"MindBody check failed for {studio_name}: {e}")
 
-            # 6. Fall back to generic static HTML scraping
+            # 6. Discover Eversports widget from HTML (curl_cffi scan)
+            if new_classes is None:
+                try:
+                    new_classes = discover_eversports_from_html(studio)
+                except Exception as e:
+                    logger.debug(f"Eversports HTML discovery failed for {studio_name}: {e}")
+
+            # 7. Acuity Scheduling discovery
+            if new_classes is None:
+                try:
+                    new_classes = scrape_acuity_schedule(studio)
+                except Exception as e:
+                    logger.debug(f"Acuity check failed for {studio_name}: {e}")
+
+            # 8. Fall back to generic static HTML scraping
             if new_classes is None and schedule_url:
                 try:
                     new_classes = scrape_schedule_classes(studio, schedule_url)
                 except Exception as e:
                     logger.error(f"Error scraping schedule classes for {studio_name}: {e}")
+
+            # 9. Subpage crawling as last resort
+            if new_classes is None:
+                try:
+                    new_classes = scrape_subpage_crawl(studio)
+                except Exception as e:
+                    logger.debug(f"Subpage crawl failed for {studio_name}: {e}")
 
             # Rate limit between studios
             time.sleep(RATE_LIMIT_DELAY)
