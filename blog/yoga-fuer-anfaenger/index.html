@@ -2,7 +2,10 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#6B5B95">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="../../manifest.json">
     <title>Yoga für Anfänger: Der ultimative Guide 2026 — YogaSchweiz</title>
     <meta name="description" content="Yoga für Anfänger: Die 10 wichtigsten Yoga-Stile, Ausrüstungstipps, häufige Fehler und wie du das richtige Studio findest. Der komplette Einstiegs-Guide.">
     <meta name="keywords" content="Yoga Anfänger, Yoga für Anfänger, Yoga Einstieg, Yoga Stile, Yoga Guide, Yoga Schweiz, erster Yoga Kurs">
@@ -24,6 +27,9 @@
     <meta property="og:url" content="https://meineprojekte.github.io/yoga-kurse-basel/blog/yoga-fuer-anfaenger/">
     <meta property="og:locale" content="de_CH">
     <meta property="og:site_name" content="Yoga Kurse Schweiz">
+    <meta property="og:image" content="https://meineprojekte.github.io/yoga-kurse-basel/img/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="article:published_time" content="2026-03-21">
     <meta property="article:author" content="Redaktion YogaSchweiz">
     <meta property="article:section" content="Guide">
@@ -32,6 +38,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Yoga für Anfänger: Der ultimative Guide 2026">
     <meta name="twitter:description" content="Die 10 wichtigsten Yoga-Stile, Ausrüstungstipps und wie du das richtige Studio findest.">
+    <meta name="twitter:image" content="https://meineprojekte.github.io/yoga-kurse-basel/img/og-image.png">
 
     <!-- Schema.org Article -->
     <script type="application/ld+json">
@@ -223,6 +230,153 @@
             .article-hero { padding: 50px 0 35px; }
             .article-content h2 { font-size: 1.5rem; }
             .toc { padding: 20px; }
+            .blog-menu-toggle { display: flex; }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 0;
+            }
+            .nav-links.open { display: flex; }
+            .nav-links a {
+                display: block;
+                padding: 12px 0;
+                border-bottom: 1px solid #eee;
+                font-size: 1rem;
+                min-height: 48px;
+                line-height: 24px;
+            }
+            .nav-links a:last-child { border-bottom: none; }
+            .header-inner { flex-wrap: wrap; }
+        }
+
+        /* === Mobile QA Fixes === */
+
+        /* Smooth scroll & overflow */
+        html {
+            scroll-behavior: smooth;
+            overscroll-behavior-y: none;
+            scroll-padding-top: 80px;
+        }
+        body {
+            overflow-x: hidden;
+            overscroll-behavior-y: none;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* Safe area insets */
+        .header-inner {
+            padding-left: max(24px, env(safe-area-inset-left));
+            padding-right: max(24px, env(safe-area-inset-right));
+        }
+        .container {
+            padding-left: max(24px, env(safe-area-inset-left));
+            padding-right: max(24px, env(safe-area-inset-right));
+        }
+        .footer {
+            padding-bottom: max(40px, env(safe-area-inset-bottom));
+        }
+
+        /* Tap highlight suppression */
+        a, button, select, input, summary {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Touch targets — fix article content links (was inline-flex breaking text flow) */
+        .article-content a {
+            display: inline;
+            min-height: auto;
+            padding: 4px 0;
+        }
+
+        /* TOC links touch target */
+        .toc a {
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        /* Breadcrumb links touch target */
+        .breadcrumb a {
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        /* Nav links touch target */
+        .nav-links a {
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        /* Footer links touch target */
+        .footer a {
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        /* Hamburger menu */
+        .blog-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px;
+            width: 44px;
+            height: 44px;
+            justify-content: center;
+            align-items: center;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .blog-menu-toggle span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: var(--color-text);
+            transition: all 0.2s;
+            border-radius: 1px;
+        }
+        .blog-menu-toggle[aria-expanded="true"] span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .blog-menu-toggle[aria-expanded="true"] span:nth-child(2) {
+            opacity: 0;
+        }
+        .blog-menu-toggle[aria-expanded="true"] span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* Touch device optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            .style-card:hover {
+                box-shadow: none;
+            }
+            .style-card:active {
+                transform: scale(0.98);
+                transition-duration: 50ms;
+            }
+        }
+
+        /* Anchor scroll offset */
+        [id] {
+            scroll-margin-top: 80px;
+        }
+
+        /* iOS zoom prevention on inputs */
+        select, input {
+            font-size: 16px;
+        }
+
+        /* Author box stacking on mobile */
+        @media (max-width: 480px) {
+            .author-box {
+                flex-direction: column;
+                text-align: center;
+                gap: 12px;
+            }
         }
     </style>
 </head>
@@ -231,7 +385,10 @@
     <header class="header">
         <div class="header-inner">
             <a href="/" class="logo"><span>🧘</span> Yoga<strong>Schweiz</strong></a>
-            <nav class="nav-links">
+            <button class="blog-menu-toggle" id="blogMenuToggle" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links" id="blogNav">
                 <a href="/">Studios</a>
                 <a href="/blog/">Blog</a>
             </nav>
@@ -540,5 +697,26 @@
         </div>
     </footer>
 
+    <!-- Mobile menu toggle & service worker -->
+    <script>
+        const menuBtn = document.getElementById('blogMenuToggle');
+        const nav = document.getElementById('blogNav');
+        if (menuBtn && nav) {
+            menuBtn.addEventListener('click', () => {
+                const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+                menuBtn.setAttribute('aria-expanded', !expanded);
+                nav.classList.toggle('open');
+            });
+            nav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menuBtn.setAttribute('aria-expanded', 'false');
+                    nav.classList.remove('open');
+                });
+            });
+        }
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('../../sw.js').catch(() => {});
+        }
+    </script>
 </body>
 </html>
