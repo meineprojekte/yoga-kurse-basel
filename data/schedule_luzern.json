@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-25T17:23:20.718153+00:00",
+  "last_updated": "2026-03-25T17:47:19.897571+00:00",
   "_notes": "Luzern studios use Eversports, SportsNow, Fitogram, and MindBody widgets. Data from web search snippets. Mii-Ruum and LIV lab had some searchable class data. Yogastudio Luzern and Original Hot Yoga schedules are primarily in dynamic widgets.",
   "classes": [
     {
@@ -2835,6 +2835,32 @@
       "teacher": "Ana Sonar",
       "level": "all",
       "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "pure-you-yoga-horw",
+      "studio_name": "Pure You Yoga Horw",
+      "day": "Saturday",
+      "time_start": "08:00",
+      "time_end": "08:30",
+      "class_name": "Morgen Meditation (30min)",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.pureyouyoga.ch/yoga-retreat-im-fruehling-2026",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "pure-you-yoga-horw",
+      "studio_name": "Pure You Yoga Horw",
+      "day": "Sunday",
+      "time_start": "08:00",
+      "time_end": "08:30",
+      "class_name": "Morgen Meditation (30min)",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.pureyouyoga.ch/yoga-retreat-im-fruehling-2026",
       "verified": true,
       "last_checked": "2026-03-25"
     }

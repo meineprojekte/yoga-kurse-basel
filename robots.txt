@@ -120,11 +120,19 @@ Disallow: /
 User-agent: Applebot
 Disallow: /data/
 
+# Allow DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /data/
+
 # Block everything else by default, allow only specific bots above
 User-agent: *
 Disallow: /data/
 Disallow: /tools/
 Disallow: /scrapers/
 Allow: /
+Allow: /kanton/
+Allow: /yoga/
+Allow: /blog/
 
 Sitemap: https://meineprojekte.github.io/yoga-kurse-basel/sitemap.xml

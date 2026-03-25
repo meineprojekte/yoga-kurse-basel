@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-25T17:23:20.739844+00:00",
+  "last_updated": "2026-03-25T17:47:34.921661+00:00",
   "classes": [
     {
       "studio_id": "yoga-fabrik-neuchatel",
@@ -89,6 +89,19 @@
       "teacher": "",
       "level": "all",
       "source": "https://www.parvata.ch/",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "banyann-yoga",
+      "studio_name": "Banyann Yoga",
+      "day": "Wednesday",
+      "time_start": "09:01",
+      "time_end": "30:06",
+      "class_name": "s)",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.banyann.ch/horaires-tarifs",
       "verified": true,
       "last_checked": "2026-03-25"
     }

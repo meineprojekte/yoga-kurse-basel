@@ -1,16 +1,28 @@
-# API Endpoints for Wix and Squarespace Yoga Studio Websites
+# API Endpoints for Wix, Squarespace, and MindBody Yoga Studio Websites
 
-## Test Date: 2026-03-22
+## Test Date: 2026-03-22 (Updated: 2026-03-22 — Calendar V3 Discovery)
 
 ---
 
 ## 1. WIX BOOKINGS API
 
-### Working Endpoint
+### Working Endpoints
 
+#### Endpoint A: Services Catalog
 **`POST {website}/_api/bookings/v2/services/query`**
 
-This is the only Wix API endpoint that works reliably for extracting class/service data.
+Returns the service catalog (class names, prices, capacity, durations, locations).
+
+#### Endpoint B: Calendar Events (WEEKLY SCHEDULE) — NEW DISCOVERY
+**`POST {website}/_api/calendar/v3/events/query`**
+
+**This is the breakthrough endpoint.** Returns actual calendar events with:
+- Class name (title)
+- Exact day + time (start.localDate, end.localDate)
+- Timezone (Europe/Zurich)
+- Recurrence rules (frequency: WEEKLY, days: ['MONDAY'], interval: 1)
+- Capacity and remaining spots
+- Status (CONFIRMED)
 
 ### Authentication Flow (2 steps)
 
@@ -20,7 +32,7 @@ GET {website}/_api/v2/dynamicmodel
 ```
 Returns JSON with an `apps` object. The Wix Bookings app ID is `13d21c63-b5ec-5912-8397-c3a5ddb27a97`. Extract its `instance` value.
 
-**Step 2: Query services**
+**Step 2a: Query services (catalog)**
 ```
 POST {website}/_api/bookings/v2/services/query
 Headers:
@@ -28,6 +40,28 @@ Headers:
   Authorization: {instance_token}
 Body: {"query":{"filter":{"type":"CLASS"}}}
 ```
+
+**Step 2b: Query calendar events (WEEKLY SCHEDULE)**
+```
+POST {website}/_api/calendar/v3/events/query
+Headers:
+  Content-Type: application/json
+  Authorization: {instance_token}
+Body: {"query":{"filter":{},"paging":{"limit":100}}}
+```
+
+This returns actual class instances with recurrence rules. Each event contains:
+- `title`: Class name (e.g., "Vinyasa Yoga")
+- `start.localDate`: Start datetime (e.g., "2026-03-23T18:45:00")
+- `end.localDate`: End datetime
+- `start.timeZone`: Timezone (e.g., "Europe/Zurich")
+- `recurrenceType`: "INSTANCE" for recurring classes
+- `recurrenceRule.frequency`: "WEEKLY"
+- `recurrenceRule.days`: ["MONDAY"] — the day(s) of the week
+- `recurrenceRule.interval`: 1 (every week)
+- `totalCapacity`, `remainingCapacity`
+- `status`: "CONFIRMED"
+- `type`: "CLASS"
 
 ### How to Detect Wix Sites
 Look for these markers in page source:
@@ -105,20 +139,27 @@ Each service object contains:
 - Booking page URLs
 - Cancellation/waitlist policies
 
-**NOT available via this API:**
-- Recurring day-of-week schedule (e.g., "Mondays at 18:00")
-- Teacher/instructor names
-- Actual session instances/calendar
-- The sessions/availability/calendar endpoints all return 404 or 403
+**NOT available via the Services API alone:**
+- ~~Recurring day-of-week schedule~~ **NOW AVAILABLE via Calendar V3 Events API!**
+- Teacher/instructor names (partially available in `resources` field of events)
+- ~~Actual session instances/calendar~~ **NOW AVAILABLE!**
 
-### Limitation: No Recurring Schedule
-The API does NOT return the weekly recurring schedule (which day/time each class runs). This data is loaded dynamically by the Wix Bookings calendar widget on the client side. The `firstSessionStart` timestamp can hint at the day/time pattern but is unreliable for recurring schedules.
+### SOLVED: Weekly Recurring Schedule via Calendar V3
+The Calendar V3 Events API (`/_api/calendar/v3/events/query`) returns the complete weekly schedule with recurrence rules. This was previously documented as impossible.
+
+**Verified on yamabern.ch** — returned 50 events with complete weekly timetable:
+- Monday: Hatha Flow 12:30, Gentle Hatha Flow 17:30, Vinyasaflow 19:15
+- Tuesday: Morning Bliss 07:00, Synergy Vinyasa Yoga 09:00 & 10:30, Lunchflow 12:15, Hatha Flow 17:45, Vinyasaflow 19:15, Candle light Yoga 21:00
+- Wednesday: Surfyoga 12:15, Basicflow 17:30, Evening Flow 19:30
+- Thursday: Morning Flow 09:00, Lunchflow for Beginner 12:15, Kundalini Yoga 19:15
+- Friday: Lunchflow 12:15, Spirit Power-Flow 17:30
+- Saturday: What the Core?! 10:00
 
 ### Studios Tested
-| Studio | URL | Services Found | Notes |
-|--------|-----|----------------|-------|
-| YAMA Yoga & Co | yamabern.ch | 61 (36 CLASS) | Rich data, all fields populated |
-| FlowFabrik | flowfabrik.ch | 6 (3 CLASS) | Old schedule dates (2018-2019), site may not actively use Wix Bookings |
+| Studio | URL | Services | Calendar Events | Notes |
+|--------|-----|----------|-----------------|-------|
+| YAMA Yoga & Co | yamabern.ch | 61 (36 CLASS) | 50 events, full weekly timetable | Both APIs work perfectly |
+| FlowFabrik | flowfabrik.ch | 6 (3 CLASS) | 50 events (2018 data) | Calendar API works, old data |
 
 ### Endpoints That FAILED
 | Endpoint | Status | Notes |
@@ -126,10 +167,21 @@ The API does NOT return the weekly recurring schedule (which day/time each class
 | `_api/bookings-viewer/visitor/services/list` | 406/404 | Old API, deprecated |
 | `_api/bookings/v1/catalog/services` | 404 | Old API |
 | `_api/bookings/v2/sessions/list` | 404 | Not accessible |
+| `_api/bookings/v2/sessions/query` | 404 | Not accessible |
 | `_api/bookings/v2/availability/query` | 404 | Not accessible |
 | `_api/wix-bookings-availability-api/api/public/availability/query` | 403 | Forbidden |
 | `_api/wix-one-events-server/v1/events/query` | 404 | Not on these sites |
-| `_api/bookings/v2/sessions/query` | 404 | Not accessible |
+| `_api/bookings/v1/calendar/sessions/query` | 404 | Not accessible |
+| `_api/wix-bookings/v2/sessions/query` | 403 | Needs different auth |
+| `_api/bookings/v1/calendar/schedules` | 404 | Not accessible |
+| `_serverless/bookings-viewer-server/*` | 404 | Not on these sites |
+
+### Endpoints That WORK
+| Endpoint | Method | Auth | Returns |
+|----------|--------|------|---------|
+| `_api/v2/dynamicmodel` | GET | None | Instance tokens for all apps |
+| `_api/bookings/v2/services/query` | POST | Instance token | Service catalog (names, prices, capacity) |
+| `_api/calendar/v3/events/query` | POST | Instance token | **Weekly schedule with day/time/recurrence** |
 
 ---
 
@@ -218,12 +270,13 @@ iframes = re.findall(r'src=["\']?(https?://[^"\'>\s]+)', main_content)
 
 ### For the Scraper
 
-#### Wix Sites with Bookings
+#### Wix Sites with Bookings — COMPLETE SOLUTION
 ```python
 import requests
+from datetime import datetime
 
 def scrape_wix_bookings(website_url):
-    """Scrape class data from Wix Bookings sites."""
+    """Scrape class catalog + weekly schedule from Wix Bookings sites."""
     # Step 1: Get auth token
     dynamic = requests.get(f"{website_url}/_api/v2/dynamicmodel").json()
 
@@ -232,46 +285,83 @@ def scrape_wix_bookings(website_url):
         return None  # No Wix Bookings on this site
 
     instance = dynamic["apps"][BOOKINGS_APP_ID]["instance"]
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": instance
+    }
 
-    # Step 2: Query services
-    response = requests.post(
+    # Step 2: Query services (catalog with prices, capacity, etc.)
+    svc_resp = requests.post(
         f"{website_url}/_api/bookings/v2/services/query",
-        headers={
-            "Content-Type": "application/json",
-            "Authorization": instance
-        },
+        headers=headers,
         json={"query": {"filter": {"type": "CLASS"}}}
     )
+    services = svc_resp.json().get("services", [])
 
-    services = response.json().get("services", [])
+    # Step 3: Query calendar events (weekly schedule with day/time)
+    events_resp = requests.post(
+        f"{website_url}/_api/calendar/v3/events/query",
+        headers=headers,
+        json={"query": {"filter": {}, "paging": {"limit": 100}}}
+    )
+    events = events_resp.json().get("events", [])
 
-    classes = []
-    for svc in services:
-        if svc.get("hidden"):
+    # Build weekly schedule from events
+    weekly_schedule = {}  # key: "ClassName-DAY-HH:MM" to dedupe
+    for event in events:
+        if event.get("type") != "CLASS" or event.get("status") != "CONFIRMED":
             continue
 
-        schedule = svc.get("schedule", {})
-        durations = schedule.get("availabilityConstraints", {}).get("sessionDurations", [])
-        price_info = svc.get("payment", {}).get("fixed", {}).get("price", {})
-        locations = svc.get("locations", [])
-        address = ""
-        if locations:
-            address = locations[0].get("calculatedAddress", {}).get("formattedAddress", "")
+        title = event.get("title", "")
+        start = event.get("start", {}).get("localDate", "")
+        end = event.get("end", {}).get("localDate", "")
+        rrule = event.get("recurrenceRule", {})
 
-        classes.append({
-            "name": svc["name"],
-            "description": svc.get("tagLine", ""),
-            "type": svc["type"],
-            "category": svc.get("category", {}).get("name", ""),
-            "price": price_info.get("value", ""),
-            "currency": price_info.get("currency", ""),
-            "capacity": svc.get("defaultCapacity", 0),
-            "duration_minutes": durations[0] if durations else None,
-            "address": address,
-            "booking_url": svc.get("urls", {}).get("bookingPage", {}).get("url", ""),
-            "first_session": schedule.get("firstSessionStart", ""),
-            "last_session": schedule.get("lastSessionEnd", ""),
-        })
+        if not start:
+            continue
+
+        dt = datetime.fromisoformat(start)
+        time_str = dt.strftime("%H:%M")
+
+        # Get day of week from recurrence rule (most reliable)
+        days = rrule.get("days", []) if isinstance(rrule, dict) else []
+        if not days:
+            # Fallback: derive from date
+            days = [dt.strftime("%A").upper()]
+
+        for day in days:
+            key = f"{title}-{day}-{time_str}"
+            if key not in weekly_schedule:
+                end_dt = datetime.fromisoformat(end) if end else None
+                duration = int((end_dt - dt).total_seconds() / 60) if end_dt else None
+                weekly_schedule[key] = {
+                    "name": title,
+                    "day": day,
+                    "time": time_str,
+                    "end_time": end_dt.strftime("%H:%M") if end_dt else None,
+                    "duration_minutes": duration,
+                    "capacity": event.get("totalCapacity"),
+                    "schedule_id": event.get("scheduleId"),
+                }
+
+    # Enrich with price data from services
+    svc_by_schedule = {}
+    for svc in services:
+        if not svc.get("hidden"):
+            sid = svc.get("schedule", {}).get("id", "")
+            svc_by_schedule[sid] = svc
+
+    classes = list(weekly_schedule.values())
+    for cls in classes:
+        svc = svc_by_schedule.get(cls.get("schedule_id"), {})
+        if svc:
+            price_info = svc.get("payment", {}).get("fixed", {}).get("price", {})
+            cls["price"] = price_info.get("value", "")
+            cls["currency"] = price_info.get("currency", "")
+            locations = svc.get("locations", [])
+            if locations:
+                cls["address"] = locations[0].get("calculatedAddress", {}).get("formattedAddress", "")
+            cls["booking_url"] = svc.get("urls", {}).get("bookingPage", {}).get("url", "")
 
     return classes
 ```
@@ -341,15 +431,144 @@ def detect_platform(website_url):
 
 ---
 
+## 3. MINDBODY API
+
+### Overview
+MindBody-powered studios (e.g., B.Yoga Basel) use MindBody's scheduling platform. There are multiple API tiers available.
+
+### How to Detect MindBody Studios
+Look for these markers in page source:
+- `mindbody.io` or `mindbodyonline.com` in URLs
+- `<healcode-widget>` HTML elements
+- `widgets.mindbodyonline.com/javascripts/healcode.js` script
+- `video.mindbody.io/studios/{id}` video URLs (reveals Studio ID)
+- `data-mb-site-id` attributes in widget embed codes
+
+### Known Studio IDs
+| Studio | Studio ID | Source |
+|--------|-----------|--------|
+| B.Yoga Basel | 6743 | video.mindbody.io URL on byoga.ch |
+
+### API Tier 1: MindBody Affiliate API (RECOMMENDED)
+**Base URL:** `https://mb-api.mindbodyonline.com/affiliate/api/v1`
+
+**Authentication:** API key + Basic Auth (client key:secret encoded in Base64)
+```
+Headers:
+  API-Key: {your_api_key}
+  Authorization: Basic {base64(clientKey:clientSecret)}
+  User-Agent: YogaKurseBasel/1.0
+```
+
+**To get credentials:** Sign up at https://developers.mindbodyonline.com/ as a developer.
+
+**Key Endpoints:**
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/locations` | GET | Search studios by lat/lon, radius, keyword |
+| `/locations/{id}/classes` | GET | **Get class schedule for a specific studio** |
+| `/locations/{id}/pricingoptions` | GET | Get pricing for a location |
+| `/classes/{id}/pricingoptions` | GET | Get pricing for specific classes |
+
+**Location Search Parameters:**
+- `latitude`, `longitude`: Geographic center
+- `radius`: Search radius
+- `searchText`: Category or business name filter
+- `maxResults`, `offset`: Pagination
+
+### API Tier 2: MindBody Public API V6
+**Base URL:** `https://api.mindbodyonline.com/public/v6`
+
+**Authentication:** API-Key header + optional SiteId header + optional user token
+```
+Headers:
+  Api-Key: {your_api_key}
+  SiteId: {studio_id}
+```
+
+**Key Endpoints:**
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/class/classes` | GET | Get classes (needs API key, returns limited data without token) |
+| `/class/classschedules` | GET | Get class schedules |
+| `/site/sites` | GET | Get site/studio info |
+
+**Note:** Without a user token, some data is limited (hidden classes not returned, etc.).
+
+### API Tier 3: Branded Web Widgets (Healcode)
+Studios embed schedule widgets using `<healcode-widget>` elements. These widgets:
+- Load via `https://widgets.mindbodyonline.com/javascripts/healcode.js`
+- Use `data-site-id` (Branded Web ID) and `data-mb-site-id` (MindBody Studio ID)
+- Render class schedules dynamically via JavaScript
+- Have a `/print` endpoint at `https://widgets.healcode.com/widgets/schedules/{widget_id}/print`
+
+**Print endpoint status:** Returns schedule HTML when widget is properly configured. Many return "Widget not found" errors. Requires JavaScript rendering for full data.
+
+### API Tier 4: MindBody Explore Gateway
+**Base URL:** `https://prod-mkt-gateway.mindbody.io/v1`
+
+This is the API powering MindBody's consumer search at mindbodyonline.com/explore. Returns Elasticsearch results.
+
+**Tested Endpoints:**
+| Endpoint | Status | Notes |
+|----------|--------|-------|
+| `/search/locations?filter.latitude=...&filter.longitude=...&filter.radius=...` | 200 | Returns 0 results for Basel (maybe not indexed in Switzerland) |
+
+### MindBody Implementation Recommendation
+```python
+import requests
+import base64
+
+def scrape_mindbody_classes(studio_id, api_key, client_key, client_secret):
+    """Scrape class schedule from MindBody Affiliate API."""
+    credentials = base64.b64encode(f"{client_key}:{client_secret}".encode()).decode()
+
+    headers = {
+        "API-Key": api_key,
+        "Authorization": f"Basic {credentials}",
+        "User-Agent": "YogaKurseBasel/1.0"
+    }
+
+    # Get classes for this studio
+    response = requests.get(
+        f"https://mb-api.mindbodyonline.com/affiliate/api/v1/locations/{studio_id}/classes",
+        headers=headers
+    )
+
+    if response.status_code == 200:
+        return response.json()
+    return None
+```
+
+### Endpoints That FAILED
+| Endpoint | Status | Notes |
+|----------|--------|-------|
+| `clients.mindbodyonline.com/classic/ws?studioid=...` | 403 | Cloudflare protection |
+| `widgets.healcode.com/widgets/schedules/{id}` | "Widget not found" | Widget ID may be expired |
+| `brandedweb.mindbodyonline.com/widget/schedule/{id}` | 404 | Not a valid endpoint |
+| `go.mindbody.io/book/widgets/schedules/view/{id}/schedule` | ECONNREFUSED | Server not accessible |
+| `prod-mkt-gateway.mindbody.io/v1/studios/{id}/classes` | 404 | Wrong endpoint path |
+| `prod-mkt-gateway.mindbody.io/v1/search/classes?...` | 403 | Requires auth |
+
+---
+
 ## 4. SUMMARY
 
 | Platform | Endpoint | Auth Required | Data Quality | Best For |
 |----------|----------|---------------|--------------|----------|
-| **Wix** | `_api/bookings/v2/services/query` | Yes (instance token from `_api/v2/dynamicmodel`) | High: names, prices, addresses, capacity, durations | Class catalog (names, prices, locations) |
-| **Squarespace** | `/events?format=json` | No | Medium: events with dates, locations | Workshops, retreats, special events |
-| **Squarespace** | `/{page}?format=json` | No | Low: HTML content with possible iframe URLs | Finding embedded booking widgets |
+| **Wix** | `_api/bookings/v2/services/query` | Yes (instance token) | High: names, prices, capacity, durations | Class catalog |
+| **Wix** | `_api/calendar/v3/events/query` | Yes (instance token) | **Excellent: day, time, recurrence, capacity** | **Weekly timetable** |
+| **MindBody** | Affiliate API `/locations/{id}/classes` | Yes (API key + Basic Auth) | High: full class schedule | Weekly timetable |
+| **Squarespace** | `/events?format=json` | No | Medium: events with dates | Workshops, retreats |
+| **Squarespace** | `/{page}?format=json` | No | Low: HTML with iframe URLs | Finding booking widgets |
 
-### Key Limitations
-1. **No recurring schedules from Wix**: Cannot get "Mondays at 18:00" - only service definitions
-2. **Squarespace events are workshops, not classes**: Weekly yoga class schedules are managed by external platforms (Eversports, MindBody, etc.)
-3. **Both platforms load schedule data dynamically**: A headless browser (Playwright/Puppeteer) would be needed to capture the actual rendered schedule with day/time slots
+### Key Findings
+1. **Wix recurring schedules ARE available** via Calendar V3 Events API - SOLVED
+2. **MindBody class schedules** available via Affiliate API (requires free developer signup)
+3. **Squarespace events are workshops, not classes**: Weekly schedules managed by external platforms
+4. **No headless browser needed for Wix!** Pure REST API calls work
+
+### Remaining Challenges
+1. **MindBody API requires developer credentials**: Free signup at developers.mindbodyonline.com
+2. **MindBody Cloudflare protection**: Direct client portal scraping blocked
+3. **Some studios may not use Wix Bookings or MindBody**: Those still need manual entry or headless scraping

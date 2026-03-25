@@ -1,0 +1,421 @@
+{
+  "timestamp": "2026-03-25T17:58:20.715243+00:00",
+  "total_studios": 50,
+  "success": 5,
+  "failed": 45,
+  "new_classes": 31,
+  "canton_stats": {
+    "basel": {
+      "success": 1,
+      "fail": 8,
+      "classes": 24
+    },
+    "basel-landschaft": {
+      "success": 2,
+      "fail": 1,
+      "classes": 4
+    },
+    "bern": {
+      "success": 0,
+      "fail": 5,
+      "classes": 0
+    },
+    "fribourg": {
+      "success": 0,
+      "fail": 2,
+      "classes": 0
+    },
+    "geneve": {
+      "success": 0,
+      "fail": 8,
+      "classes": 0
+    },
+    "graubuenden": {
+      "success": 0,
+      "fail": 2,
+      "classes": 0
+    },
+    "jura": {
+      "success": 0,
+      "fail": 1,
+      "classes": 0
+    },
+    "luzern": {
+      "success": 1,
+      "fail": 2,
+      "classes": 2
+    },
+    "neuchatel": {
+      "success": 1,
+      "fail": 1,
+      "classes": 1
+    },
+    "st-gallen": {
+      "success": 0,
+      "fail": 1,
+      "classes": 0
+    },
+    "vaud": {
+      "success": 0,
+      "fail": 9,
+      "classes": 0
+    },
+    "zurich": {
+      "success": 0,
+      "fail": 5,
+      "classes": 0
+    }
+  },
+  "details": [
+    {
+      "studio": "meyo-house",
+      "canton": "basel",
+      "status": "success",
+      "method": "eversports_guess (slug=meyo-house)",
+      "classes": 24
+    },
+    {
+      "studio": "erlenyoga",
+      "canton": "basel",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "iyengar-kreis",
+      "canton": "basel",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "mysore-club",
+      "canton": "basel",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "fitnesspark",
+      "canton": "basel",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "gyym",
+      "canton": "basel",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "klubschule",
+      "canton": "basel",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "sutra-house",
+      "canton": "basel",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "yoba",
+      "canton": "basel",
+      "status": "fail",
+      "method": "no website",
+      "classes": 0
+    },
+    {
+      "studio": "yoga-werkstatt-liestal",
+      "canton": "basel-landschaft",
+      "status": "success",
+      "method": "html_parse_homepage",
+      "classes": 2
+    },
+    {
+      "studio": "yoga-shanti-oberwil",
+      "canton": "basel-landschaft",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "hathayoga-arlesheim",
+      "canton": "basel-landschaft",
+      "status": "success",
+      "method": "html_parse_homepage",
+      "classes": 2
+    },
+    {
+      "studio": "hothaus-bern",
+      "canton": "bern",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "origin8-bern",
+      "canton": "bern",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "grey-rebel-bern",
+      "canton": "bern",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "yogakaleidoskop-bern",
+      "canton": "bern",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "energie-yoga-bern",
+      "canton": "bern",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "sakinayoga-fribourg",
+      "canton": "fribourg",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "yoga-nicole-fribourg",
+      "canton": "fribourg",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "yoga7-geneve",
+      "canton": "geneve",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "fancy-yoga-geneve",
+      "canton": "geneve",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "colife-geneve",
+      "canton": "geneve",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "sol-studio-geneve",
+      "canton": "geneve",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "swiss-pilates-yoga-geneve",
+      "canton": "geneve",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "yoga-shambala-carouge",
+      "canton": "geneve",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "ka-studio-geneve",
+      "canton": "geneve",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "yoga-sha-geneve",
+      "canton": "geneve",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "belude-yoga-chur",
+      "canton": "graubuenden",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "yogaplaza-davos",
+      "canton": "graubuenden",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "pilatesyogajura",
+      "canton": "jura",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "ashtanga-luzern",
+      "canton": "luzern",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "studio-fayo",
+      "canton": "luzern",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "pure-you-yoga-horw",
+      "canton": "luzern",
+      "status": "success",
+      "method": "html_parse_menulink (https://www.pureyouyoga.ch/yoga-retreat-im-fruehling-2026)",
+      "classes": 2
+    },
+    {
+      "studio": "yoga-shashin-neuchatel",
+      "canton": "neuchatel",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "banyann-yoga",
+      "canton": "neuchatel",
+      "status": "success",
+      "method": "html_parse_menulink (https://www.banyann.ch/horaires-tarifs)",
+      "classes": 1
+    },
+    {
+      "studio": "power-yoga-st-gallen",
+      "canton": "st-gallen",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "nueva-luna-yoga",
+      "canton": "vaud",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "the-yogarden",
+      "canton": "vaud",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "yoga-flame-lausanne",
+      "canton": "vaud",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "yogavaud",
+      "canton": "vaud",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "myoga-studio-lausanne",
+      "canton": "vaud",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "ashtanga-yoga-lausanne",
+      "canton": "vaud",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "yoga-sadhana-lausanne",
+      "canton": "vaud",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "yogacenter-montreux",
+      "canton": "vaud",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "terre-du-yoga-vevey",
+      "canton": "vaud",
+      "status": "fail",
+      "method": "website unreachable",
+      "classes": 0
+    },
+    {
+      "studio": "soul-city",
+      "canton": "zurich",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "studio-y3",
+      "canton": "zurich",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "templeshape",
+      "canton": "zurich",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "project-peace",
+      "canton": "zurich",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    },
+    {
+      "studio": "flowfabrik-winterthur",
+      "canton": "zurich",
+      "status": "fail",
+      "method": "no schedule data extractable",
+      "classes": 0
+    }
+  ]
+}

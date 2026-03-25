@@ -1,10 +1,13 @@
 {
-  "name": "Yoga Kurse Schweiz",
+  "name": "Yoga Kurse Schweiz — Alle Studios & Kurse",
   "short_name": "YogaCH",
-  "description": "Alle 266 Yoga-Studios in der Schweiz — alle 26 Kantone auf einen Blick",
-  "start_url": "/",
+  "description": "Alle 266 Yoga-Studios in der Schweiz — alle 26 Kantone auf einen Blick. Stundenplan, Karte, PDF-Export.",
+  "start_url": "/yoga-kurse-basel/",
+  "scope": "/yoga-kurse-basel/",
   "display": "standalone",
   "background_color": "#FAFAFA",
   "theme_color": "#6B5B95",
+  "lang": "de-CH",
+  "categories": ["health", "fitness", "lifestyle"],
   "icons": []
 }

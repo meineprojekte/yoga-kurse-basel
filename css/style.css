@@ -93,6 +93,16 @@ input, textarea, select, .search-input, .faq-answer, .guide-content p, .guide-co
     user-select: text;
 }
 
+/* --- Core Web Vitals: content-visibility for below-the-fold sections --- */
+.map-section,
+.faq-section,
+.guide-section,
+.feedback-section,
+.canton-links-section {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 500px;
+}
+
 /* --- Reset & Base --- */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -1794,8 +1804,8 @@ select {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: var(--spacing-2xl);
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    gap: var(--spacing-xl);
     margin-bottom: var(--spacing-2xl);
 }
 
@@ -2056,7 +2066,7 @@ select {
 /* --- Responsive --- */
 @media (max-width: 1024px) {
     .footer-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -2134,7 +2144,7 @@ select {
     }
 
     .footer-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-xl);
     }
 
@@ -2235,7 +2245,7 @@ select {
     .chip {
         padding: 6px 12px;
         font-size: 12px;
-        min-height: 36px;
+        min-height: 40px;
     }
 
     .studio-card {
@@ -2806,7 +2816,7 @@ textarea:focus:not(:focus-visible) {
     .chip {
         padding: 6px 12px;
         font-size: 12px;
-        min-height: 36px;
+        min-height: 40px;
     }
 
     .results-actions {
@@ -3100,7 +3110,7 @@ body {
 /* --- 10. Chip min-height at 360px: ensure at least 40px (accessible minimum) --- */
 @media (max-width: 360px) {
     .chip {
-        min-height: 38px;
+        min-height: 40px;
     }
 }
 
@@ -3171,13 +3181,13 @@ body {
 }
 
 /* --- 16. Ensure footer grid wraps properly with 6 children --- */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 480px) {
     .footer-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-xl);
