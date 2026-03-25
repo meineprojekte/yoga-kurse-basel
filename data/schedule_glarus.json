@@ -1,98 +1,7 @@
 {
-  "last_updated": "2026-03-24T23:09:26.610870+00:00",
+  "last_updated": "2026-03-25T17:23:20.742256+00:00",
   "_notes": "YOGAamFLUSS schedule from web search snippet (website returned 403). 12yoga schedule from 12yoga.ch. CG workout website returned 403; no schedule extracted.",
   "classes": [
-    {
-      "studio_id": "yogaamfluss-ennenda",
-      "studio_name": "YOGAamFLUSS",
-      "day": "Monday",
-      "time_start": "18:30",
-      "time_end": "19:45",
-      "class_name": "Yin/Yang-Yoga",
-      "teacher": "Yvonne Gabriel",
-      "level": "all",
-      "source": "https://www.yoga-am-fluss.ch/angebot/stundenplan/",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogaamfluss-ennenda",
-      "studio_name": "YOGAamFLUSS",
-      "day": "Tuesday",
-      "time_start": "10:00",
-      "time_end": "11:15",
-      "class_name": "Yoga für Senioren",
-      "teacher": "Yvonne Gabriel",
-      "level": "senior",
-      "source": "https://www.yoga-am-fluss.ch/angebot/stundenplan/",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogaamfluss-ennenda",
-      "studio_name": "YOGAamFLUSS",
-      "day": "Tuesday",
-      "time_start": "12:15",
-      "time_end": "13:15",
-      "class_name": "Midday Flow",
-      "teacher": "Yvonne Gabriel",
-      "level": "all",
-      "source": "https://www.yoga-am-fluss.ch/angebot/stundenplan/",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogaamfluss-ennenda",
-      "studio_name": "YOGAamFLUSS",
-      "day": "Tuesday",
-      "time_start": "18:30",
-      "time_end": "19:45",
-      "class_name": "Yin-Yoga",
-      "teacher": "Yvonne Gabriel",
-      "level": "all",
-      "source": "https://www.yoga-am-fluss.ch/angebot/stundenplan/",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogaamfluss-ennenda",
-      "studio_name": "YOGAamFLUSS",
-      "day": "Wednesday",
-      "time_start": "08:30",
-      "time_end": "09:45",
-      "class_name": "Vinyasa-Flow",
-      "teacher": "Yvonne Gabriel",
-      "level": "all",
-      "source": "https://www.yoga-am-fluss.ch/angebot/stundenplan/",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogaamfluss-ennenda",
-      "studio_name": "YOGAamFLUSS",
-      "day": "Thursday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Yoga für Senioren",
-      "teacher": "Yvonne Gabriel",
-      "level": "senior",
-      "source": "https://www.yoga-am-fluss.ch/angebot/stundenplan/",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogaamfluss-ennenda",
-      "studio_name": "YOGAamFLUSS",
-      "day": "Thursday",
-      "time_start": "19:00",
-      "time_end": "20:15",
-      "class_name": "Vinyasa-Flow",
-      "teacher": "Yvonne Gabriel",
-      "level": "all",
-      "source": "https://www.yoga-am-fluss.ch/angebot/stundenplan/",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
     {
       "studio_id": "12yoga-ennenda",
       "studio_name": "12yoga (Eins Zwei Yoga)",
@@ -102,9 +11,9 @@
       "class_name": "Hatha Yoga",
       "teacher": "Denise Marx",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "source": "https://12yoga.ch/",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "12yoga-ennenda",
@@ -115,9 +24,9 @@
       "class_name": "Hatha Yoga",
       "teacher": "Denise Marx",
       "level": "senior",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "source": "https://12yoga.ch/",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "12yoga-ennenda",
@@ -128,9 +37,9 @@
       "class_name": "Yoga in der Schwangerschaft",
       "teacher": "Denise Marx",
       "level": "prenatal",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "source": "https://12yoga.ch/",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "12yoga-ennenda",
@@ -141,9 +50,9 @@
       "class_name": "Hatha Yoga",
       "teacher": "Denise Marx",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "source": "https://12yoga.ch/",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "cgworkout-niederurnen",
@@ -300,6 +209,71 @@
       "source": "https://www.cgworkout.ch/",
       "verified": true,
       "last_checked": "2026-03-24"
+    },
+    {
+      "studio_id": "yogaamfluss-ennenda",
+      "studio_name": "YOGAamFLUSS",
+      "day": "Monday",
+      "time_start": "19:00",
+      "time_end": "20:15",
+      "class_name": "Yin/Yang-Yoga (tief lösend und entspannend)",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-am-fluss.ch/angebot/stundenplan/",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogaamfluss-ennenda",
+      "studio_name": "YOGAamFLUSS",
+      "day": "Tuesday",
+      "time_start": "10:00",
+      "time_end": "11:15",
+      "class_name": "Yoga für Senioren",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-am-fluss.ch/angebot/stundenplan/",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogaamfluss-ennenda",
+      "studio_name": "YOGAamFLUSS",
+      "day": "Wednesday",
+      "time_start": "08:30",
+      "time_end": "09:45",
+      "class_name": "Vinyasa-Flow (kräftigend, öffnend und",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-am-fluss.ch/angebot/stundenplan/",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogaamfluss-ennenda",
+      "studio_name": "YOGAamFLUSS",
+      "day": "Thursday",
+      "time_start": "09:00",
+      "time_end": "10:15",
+      "class_name": "Yoga für Senioren",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-am-fluss.ch/angebot/stundenplan/",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogaamfluss-ennenda",
+      "studio_name": "YOGAamFLUSS",
+      "day": "Friday",
+      "time_start": "08:30",
+      "time_end": "09:45",
+      "class_name": "Yin und Yang  (tief lösend und aufbauend)",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-am-fluss.ch/angebot/stundenplan/",
+      "verified": true,
+      "last_checked": "2026-03-25"
     }
   ],
   "_meta": {

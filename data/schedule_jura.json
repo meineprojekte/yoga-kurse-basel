@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-24T23:10:13.220098+00:00",
+  "last_updated": "2026-03-25T17:23:20.736029+00:00",
   "_notes": "YogaJura.ch schedule from yogajura.ch. Elevea Yoga schedule from eleveayoga.com. PilatesYogaJura uses a Wix site that did not render schedule data; no classes extracted.",
   "classes": [
     {
@@ -12,8 +12,8 @@
       "teacher": "Monique Godinat",
       "level": "all",
       "source": "https://www.yogajura.ch/pratique",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "yogajura",
@@ -25,8 +25,8 @@
       "teacher": "Monique Godinat",
       "level": "all",
       "source": "https://www.yogajura.ch/pratique",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "yogajura",
@@ -38,8 +38,8 @@
       "teacher": "Monique Godinat",
       "level": "all",
       "source": "https://www.yogajura.ch/pratique",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "elevea-yoga-delemont",
@@ -50,9 +50,9 @@
       "class_name": "Vinyasa Yoga",
       "teacher": "Noémie",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "source": "https://eleveayoga.com/",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "elevea-yoga-delemont",
@@ -63,9 +63,9 @@
       "class_name": "Vinyasa Yoga",
       "teacher": "Noémie",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "source": "https://eleveayoga.com/",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "elevea-yoga-delemont",
@@ -76,9 +76,9 @@
       "class_name": "Vinyasa Yoga",
       "teacher": "Noémie",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "source": "https://eleveayoga.com/",
+      "verified": true,
+      "last_checked": "2026-03-25"
     }
   ],
   "_meta": {

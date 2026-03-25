@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-23T00:39:02.065285+00:00",
+  "last_updated": "2026-03-25T17:23:20.746401+00:00",
   "_notes": "Schedule data from studiomond.ch/stundenplan/ and yoga-claudia.ch/kursangebote/appenzell. Andrea Manser website had TLS certificate issues; no schedule extracted.",
   "classes": [
     {
@@ -12,8 +12,8 @@
       "teacher": "Anja",
       "level": "all",
       "source": "https://studiomond.ch/yoga-studio/",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "studio-mond-appenzell",
@@ -25,8 +25,8 @@
       "teacher": "Anja",
       "level": "all",
       "source": "https://studiomond.ch/yoga-studio/",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "studio-mond-appenzell",
@@ -38,8 +38,8 @@
       "teacher": "Julia",
       "level": "all",
       "source": "https://studiomond.ch/yoga-studio/",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "studio-mond-appenzell",
@@ -51,8 +51,8 @@
       "teacher": "Anja",
       "level": "all",
       "source": "https://studiomond.ch/yoga-studio/",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "studio-mond-appenzell",
@@ -64,8 +64,8 @@
       "teacher": "Andrea",
       "level": "all",
       "source": "https://studiomond.ch/yoga-studio/",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "studio-mond-appenzell",
@@ -77,21 +77,8 @@
       "teacher": "Anja",
       "level": "all",
       "source": "https://studiomond.ch/yoga-studio/",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-claudia-appenzell",
-      "studio_name": "Claudia Hauri - Yoga und Ayurveda",
-      "day": "Monday",
-      "time_start": "14:30",
-      "time_end": "15:30",
-      "class_name": "Rückbildungsyoga mit Baby",
-      "teacher": "Claudia Hauri",
-      "level": "postnatal",
-      "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "yoga-claudia-appenzell",
@@ -99,25 +86,25 @@
       "day": "Monday",
       "time_start": "17:00",
       "time_end": "18:00",
-      "class_name": "Yoga",
-      "teacher": "Claudia Hauri",
+      "class_name": "live & zoom",
+      "teacher": "",
       "level": "all",
       "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "yoga-claudia-appenzell",
       "studio_name": "Claudia Hauri - Yoga und Ayurveda",
       "day": "Monday",
-      "time_start": "19:30",
-      "time_end": "20:30",
-      "class_name": "Yoga",
-      "teacher": "Claudia Hauri",
+      "time_start": "14:30",
+      "time_end": "15:30",
+      "class_name": "live & zoom",
+      "teacher": "",
       "level": "all",
       "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "yoga-claudia-appenzell",
@@ -125,12 +112,12 @@
       "day": "Tuesday",
       "time_start": "09:30",
       "time_end": "10:30",
-      "class_name": "Yoga",
-      "teacher": "Claudia Hauri",
+      "class_name": "live & zoom",
+      "teacher": "",
       "level": "all",
       "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "yoga-claudia-appenzell",
@@ -138,25 +125,12 @@
       "day": "Wednesday",
       "time_start": "18:00",
       "time_end": "19:00",
-      "class_name": "Entlastungsstunde",
-      "teacher": "Claudia Hauri",
+      "class_name": "live & zoom",
+      "teacher": "",
       "level": "all",
       "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-claudia-appenzell",
-      "studio_name": "Claudia Hauri - Yoga und Ayurveda",
-      "day": "Thursday",
-      "time_start": "18:00",
-      "time_end": "19:00",
-      "class_name": "Schwangerschaftsyoga",
-      "teacher": "Claudia Hauri",
-      "level": "prenatal",
-      "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "yoga-claudia-appenzell",
@@ -164,12 +138,25 @@
       "day": "Thursday",
       "time_start": "19:30",
       "time_end": "20:30",
-      "class_name": "Yoga",
-      "teacher": "Claudia Hauri",
+      "class_name": "live & zoom",
+      "teacher": "",
       "level": "all",
       "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yoga-claudia-appenzell",
+      "studio_name": "Claudia Hauri - Yoga und Ayurveda",
+      "day": "Thursday",
+      "time_start": "18:00",
+      "time_end": "19:00",
+      "class_name": "live & zoom",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
+      "verified": true,
+      "last_checked": "2026-03-25"
     }
   ],
   "_meta": {

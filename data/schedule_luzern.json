@@ -1,138 +1,7 @@
 {
-  "last_updated": "2026-03-24T23:11:55.812281+00:00",
+  "last_updated": "2026-03-25T17:23:20.718153+00:00",
   "_notes": "Luzern studios use Eversports, SportsNow, Fitogram, and MindBody widgets. Data from web search snippets. Mii-Ruum and LIV lab had some searchable class data. Yogastudio Luzern and Original Hot Yoga schedules are primarily in dynamic widgets.",
   "classes": [
-    {
-      "studio_id": "yogastudio-luzern",
-      "studio_name": "Yogastudio Luzern",
-      "day": "Monday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Hatha Yoga",
-      "teacher": null,
-      "level": "all",
-      "_note": "Schedule via Eversports widget; class types confirmed, times representative. Visit yogastudio.ch/kurse/",
-      "source": "https://www.yogastudio.ch/stundenplan",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogastudio-luzern",
-      "studio_name": "Yogastudio Luzern",
-      "day": "Monday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Vinyasa Flow",
-      "teacher": null,
-      "level": "all",
-      "source": "https://www.yogastudio.ch/stundenplan",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogastudio-luzern",
-      "studio_name": "Yogastudio Luzern",
-      "day": "Tuesday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Hatha Yoga",
-      "teacher": null,
-      "level": "all",
-      "source": "https://www.yogastudio.ch/stundenplan",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogastudio-luzern",
-      "studio_name": "Yogastudio Luzern",
-      "day": "Tuesday",
-      "time_start": "18:30",
-      "time_end": "19:45",
-      "class_name": "Yin Yoga",
-      "teacher": null,
-      "level": "all",
-      "source": "https://www.yogastudio.ch/stundenplan",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogastudio-luzern",
-      "studio_name": "Yogastudio Luzern",
-      "day": "Wednesday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Vinyasa Flow",
-      "teacher": null,
-      "level": "all",
-      "source": "https://www.yogastudio.ch/stundenplan",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogastudio-luzern",
-      "studio_name": "Yogastudio Luzern",
-      "day": "Wednesday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Hatha Yoga",
-      "teacher": null,
-      "level": "all",
-      "source": "https://www.yogastudio.ch/stundenplan",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogastudio-luzern",
-      "studio_name": "Yogastudio Luzern",
-      "day": "Thursday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Prenatal Yoga",
-      "teacher": null,
-      "level": "all",
-      "source": "https://www.yogastudio.ch/stundenplan",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogastudio-luzern",
-      "studio_name": "Yogastudio Luzern",
-      "day": "Thursday",
-      "time_start": "18:30",
-      "time_end": "19:45",
-      "class_name": "Vinyasa Flow",
-      "teacher": null,
-      "level": "all",
-      "source": "https://www.yogastudio.ch/stundenplan",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogastudio-luzern",
-      "studio_name": "Yogastudio Luzern",
-      "day": "Friday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Hatha Yoga",
-      "teacher": null,
-      "level": "all",
-      "source": "https://www.yogastudio.ch/stundenplan",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogastudio-luzern",
-      "studio_name": "Yogastudio Luzern",
-      "day": "Saturday",
-      "time_start": "10:00",
-      "time_end": "11:30",
-      "class_name": "Weekend Yoga",
-      "teacher": null,
-      "level": "all",
-      "source": "https://www.yogastudio.ch/stundenplan",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
     {
       "studio_id": "liv-lab",
       "studio_name": "LIV lab",
@@ -143,8 +12,8 @@
       "teacher": null,
       "level": "all",
       "source": "https://www.livlab.ch/en/schedule",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "liv-lab",
@@ -156,8 +25,8 @@
       "teacher": null,
       "level": "all",
       "source": "https://www.livlab.ch/en/schedule",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "liv-lab",
@@ -169,8 +38,8 @@
       "teacher": null,
       "level": "all",
       "source": "https://www.livlab.ch/en/schedule",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "liv-lab",
@@ -182,8 +51,8 @@
       "teacher": null,
       "level": "all",
       "source": "https://www.livlab.ch/en/schedule",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "liv-lab",
@@ -195,8 +64,8 @@
       "teacher": null,
       "level": "all",
       "source": "https://www.livlab.ch/en/schedule",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "liv-lab",
@@ -208,8 +77,8 @@
       "teacher": null,
       "level": "all",
       "source": "https://www.livlab.ch/en/schedule",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "liv-lab",
@@ -221,8 +90,8 @@
       "teacher": null,
       "level": "all",
       "source": "https://www.livlab.ch/en/schedule",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "liv-lab",
@@ -234,8 +103,8 @@
       "teacher": null,
       "level": "all",
       "source": "https://www.livlab.ch/en/schedule",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "liv-lab",
@@ -247,8 +116,8 @@
       "teacher": null,
       "level": "all",
       "source": "https://www.livlab.ch/en/schedule",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "liv-lab",
@@ -260,8 +129,8 @@
       "teacher": null,
       "level": "all",
       "source": "https://www.livlab.ch/en/schedule",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "liv-lab",
@@ -273,8 +142,8 @@
       "teacher": null,
       "level": "all",
       "source": "https://www.livlab.ch/en/schedule",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "liv-lab",
@@ -286,8 +155,8 @@
       "teacher": null,
       "level": "all",
       "source": "https://www.livlab.ch/en/schedule",
-      "verified": false,
-      "last_checked": "2026-03-23"
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "ashtanga-yoga-luzern",
@@ -299,9 +168,9 @@
       "teacher": null,
       "level": "all",
       "_note": "Schedule via Fitogram widget; Mysore and Led classes confirmed. Visit ashtanga-luzern.ch/classes/",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "ashtanga-yoga-luzern",
@@ -312,9 +181,9 @@
       "class_name": "Ashtanga Led I",
       "teacher": null,
       "level": "beginner",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "ashtanga-yoga-luzern",
@@ -325,9 +194,9 @@
       "class_name": "Mysore",
       "teacher": null,
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "ashtanga-yoga-luzern",
@@ -338,9 +207,9 @@
       "class_name": "Mysore",
       "teacher": null,
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "ashtanga-yoga-luzern",
@@ -351,9 +220,9 @@
       "class_name": "Ashtanga Led II",
       "teacher": null,
       "level": "intermediate",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "ashtanga-yoga-luzern",
@@ -364,9 +233,9 @@
       "class_name": "Mysore",
       "teacher": null,
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "ashtanga-yoga-luzern",
@@ -377,9 +246,9 @@
       "class_name": "Mysore",
       "teacher": null,
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "ashtanga-yoga-luzern",
@@ -390,9 +259,9 @@
       "class_name": "Led Full Primary (1st Sunday/month)",
       "teacher": null,
       "level": "intermediate",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "original-hot-yoga",
@@ -404,9 +273,9 @@
       "teacher": null,
       "level": "all",
       "_note": "Schedule via Eversports widget; offers hot yoga, hatha, pilates. Visit eversports.ch/s/original-hot-yoga-luzern",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "original-hot-yoga",
@@ -417,9 +286,9 @@
       "class_name": "Hot Yoga",
       "teacher": null,
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "original-hot-yoga",
@@ -430,9 +299,9 @@
       "class_name": "Hot Yoga",
       "teacher": null,
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "original-hot-yoga",
@@ -443,9 +312,9 @@
       "class_name": "Hot Yoga",
       "teacher": null,
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "original-hot-yoga",
@@ -456,9 +325,9 @@
       "class_name": "Hot Yoga",
       "teacher": null,
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "original-hot-yoga",
@@ -469,9 +338,9 @@
       "class_name": "Hatha Yoga",
       "teacher": null,
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "original-hot-yoga",
@@ -482,9 +351,9 @@
       "class_name": "Hot Yoga",
       "teacher": null,
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "original-hot-yoga",
@@ -495,9 +364,9 @@
       "class_name": "Hot Yoga",
       "teacher": null,
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "original-hot-yoga",
@@ -508,9 +377,9 @@
       "class_name": "Hot Yoga",
       "teacher": null,
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "original-hot-yoga",
@@ -521,9 +390,9 @@
       "class_name": "Hot Yoga",
       "teacher": null,
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "original-hot-yoga",
@@ -534,9 +403,9 @@
       "class_name": "Hot Yoga",
       "teacher": null,
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "original-hot-yoga-luzern",
@@ -2474,6 +2343,500 @@
       "source": "https://www.yogakurse-horw.ch/kurszeitenyogahorw",
       "verified": true,
       "last_checked": "2026-03-24"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Wednesday",
+      "time_start": "10:45",
+      "time_end": "12:15",
+      "class_name": "PEKiP - Kind und Elternkurs",
+      "teacher": "Eva Salman",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Thursday",
+      "time_start": "07:00",
+      "time_end": "08:00",
+      "class_name": "Online Yoga - Early Bird Yoga mit Pascal",
+      "teacher": "Pascal Portmann",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Thursday",
+      "time_start": "07:00",
+      "time_end": "08:00",
+      "class_name": "Early Bird Yoga",
+      "teacher": "Pascal Portmann",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Thursday",
+      "time_start": "09:30",
+      "time_end": "11:00",
+      "class_name": "Babymassage - Verbindung durch Berührung",
+      "teacher": "Eva Salman",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Friday",
+      "time_start": "08:30",
+      "time_end": "09:45",
+      "class_name": "Hatha Yoga mit Rosa (auch Englisch möglich)",
+      "teacher": "Rosa Catalano",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Friday",
+      "time_start": "08:30",
+      "time_end": "09:45",
+      "class_name": "Online Yoga - Yoga mit Rosa (auch Englisch möglich)",
+      "teacher": "Rosa Catalano",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Saturday",
+      "time_start": "08:00",
+      "time_end": "09:00",
+      "class_name": "Wald-Yoga mit Luzi",
+      "teacher": "Luzi Lambertucci",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Sunday",
+      "time_start": "10:00",
+      "time_end": "17:00",
+      "class_name": "Reiki Ausbildung Level 2",
+      "teacher": "Cancelled",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Monday",
+      "time_start": "09:00",
+      "time_end": "10:15",
+      "class_name": "Balance Yoga mit Flurina",
+      "teacher": "Flurina Schaub Wicki",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Monday",
+      "time_start": "09:00",
+      "time_end": "10:15",
+      "class_name": "Online Yoga - Balance Yoga mit Flurina",
+      "teacher": "Flurina Schaub Wicki",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Monday",
+      "time_start": "10:45",
+      "time_end": "12:00",
+      "class_name": "Spiel- und Kontaktgruppe",
+      "teacher": "Eva Salman",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Tuesday",
+      "time_start": "09:00",
+      "time_end": "10:15",
+      "class_name": "Hatha Yoga mit Katrin",
+      "teacher": "Katrin Rosenberg",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Tuesday",
+      "time_start": "09:00",
+      "time_end": "10:15",
+      "class_name": "Online Yoga - Hatha Yoga mit Katrin",
+      "teacher": "Katrin Rosenberg",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Wednesday",
+      "time_start": "12:00",
+      "time_end": "13:00",
+      "class_name": "Yoga Coaching mit Pascal",
+      "teacher": "Pascal Portmann",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Wednesday",
+      "time_start": "16:00",
+      "time_end": "17:00",
+      "class_name": "Yoga Coaching mit Rosa",
+      "teacher": "Rosa Catalano",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Monday",
+      "time_start": "13:00",
+      "time_end": "14:00",
+      "class_name": "Yoga Coaching mit Flurina",
+      "teacher": "Flurina Schaub Wicki",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Monday",
+      "time_start": "15:30",
+      "time_end": "16:45",
+      "class_name": "YOGA FOR ALL für Frauen aus aller Welt",
+      "teacher": "Verena Nacke",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Wednesday",
+      "time_start": "18:00",
+      "time_end": "19:15",
+      "class_name": "Online Yoga - Yoga mit Rosa (auch Englisch möglich)",
+      "teacher": "Rosa Catalano",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Wednesday",
+      "time_start": "18:00",
+      "time_end": "19:15",
+      "class_name": "Vinyasa Flow  mit Rosa (auch Englisch möglich)",
+      "teacher": "Rosa Catalano",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Thursday",
+      "time_start": "18:30",
+      "time_end": "19:15",
+      "class_name": "Meditation in der Stille mit Rosa",
+      "teacher": "Rosa Catalano",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Thursday",
+      "time_start": "19:45",
+      "time_end": "21:00",
+      "class_name": "Balance Yoga mit Flurina",
+      "teacher": "Flurina Schaub Wicki",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Friday",
+      "time_start": "19:00",
+      "time_end": "21:00",
+      "class_name": "KAP  (Kundalini Activation Process)",
+      "teacher": "Beatrice  Kleubler",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Saturday",
+      "time_start": "19:00",
+      "time_end": "20:30",
+      "class_name": "Shakti - Yoga Dance mit Rosa",
+      "teacher": "Cancelled",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Sunday",
+      "time_start": "18:00",
+      "time_end": "19:15",
+      "class_name": "YOGA FOR ALL für Frauen aus aller Welt",
+      "teacher": "Verena Nacke",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Monday",
+      "time_start": "18:00",
+      "time_end": "19:15",
+      "class_name": "Online Yoga - Yoga mit Pascal",
+      "teacher": "Pascal Portmann",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Monday",
+      "time_start": "18:00",
+      "time_end": "19:15",
+      "class_name": "Hatha Yoga mit Pascal",
+      "teacher": "Pascal Portmann",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Monday",
+      "time_start": "19:45",
+      "time_end": "21:00",
+      "class_name": "Yin Yoga mit Sandra",
+      "teacher": "Sandra  Arnold",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Tuesday",
+      "time_start": "18:00",
+      "time_end": "19:15",
+      "class_name": "Yoga & Meditation mit Katrin",
+      "teacher": "Katrin Rosenberg",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Tuesday",
+      "time_start": "18:00",
+      "time_end": "19:15",
+      "class_name": "Online Yoga - Yoga & Meditation mit Katrin",
+      "teacher": "Katrin Rosenberg",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Tuesday",
+      "time_start": "19:45",
+      "time_end": "21:00",
+      "class_name": "Hatha Yoga & Klang mit Renate",
+      "teacher": "Renate Lombriser",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Saturday",
+      "time_start": "10:00",
+      "time_end": "11:30",
+      "class_name": "Balance Yoga - intensiv - mit Flurina",
+      "teacher": "Flurina Schaub Wicki",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Thursday",
+      "time_start": "18:30",
+      "time_end": "20:00",
+      "class_name": "Klangreise mit Ana Sonar",
+      "teacher": "Ana Sonar",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Friday",
+      "time_start": "19:00",
+      "time_end": "20:30",
+      "class_name": "Rolf Züsli -  \t Nada Brahma - die Welt ist Klang - Bergkristall Klangschalenreise",
+      "teacher": "Rolf Züsli",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Sunday",
+      "time_start": "18:15",
+      "time_end": "20:45",
+      "class_name": "Sacred Sunday mit Rosa",
+      "teacher": "Rosa Catalano",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Thursday",
+      "time_start": "18:30",
+      "time_end": "20:00",
+      "class_name": "Breath (NO) Work mit Pascal",
+      "teacher": "Pascal Portmann",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Thursday",
+      "time_start": "18:30",
+      "time_end": "20:00",
+      "class_name": "Online - Breath (NO) Work mit Pascal",
+      "teacher": "Pascal Portmann",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Sunday",
+      "time_start": "17:00",
+      "time_end": "18:15",
+      "class_name": "YOGA FOR ALL für Frauen aus aller Welt",
+      "teacher": "Verena Nacke",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "day": "Friday",
+      "time_start": "18:30",
+      "time_end": "20:00",
+      "class_name": "Klangreise mit Ana Sonar",
+      "teacher": "Ana Sonar",
+      "level": "all",
+      "source": "https://www.yogastudio.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-25"
     }
   ],
   "_meta": {

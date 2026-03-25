@@ -1,45 +1,6 @@
 {
-  "last_updated": "2026-03-24T23:13:56.660982+00:00",
+  "last_updated": "2026-03-25T17:23:20.723925+00:00",
   "classes": [
-    {
-      "studio_id": "happy-om-valais",
-      "studio_name": "Happy OM Yoga et Pilates",
-      "day": "Monday",
-      "time_start": "18:30",
-      "time_end": "19:30",
-      "class_name": "Yoga",
-      "teacher": "Valérie Magnin",
-      "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "happy-om-valais",
-      "studio_name": "Happy OM Yoga et Pilates",
-      "day": "Wednesday",
-      "time_start": "09:00",
-      "time_end": "10:00",
-      "class_name": "Pilates",
-      "teacher": "Valérie Magnin",
-      "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "happy-om-valais",
-      "studio_name": "Happy OM Yoga et Pilates",
-      "day": "Thursday",
-      "time_start": "18:30",
-      "time_end": "19:30",
-      "class_name": "Yoga",
-      "teacher": "Valérie Magnin",
-      "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
     {
       "studio_id": "espace-tadasana-sion",
       "studio_name": "Espace Tadasana",
@@ -78,6 +39,19 @@
       "source": "https://isabellayoga.ch/en/yoga/",
       "verified": true,
       "last_checked": "2026-03-24"
+    },
+    {
+      "studio_id": "happy-om-valais",
+      "studio_name": "Happy OM Yoga et Pilates",
+      "day": "Friday",
+      "time_start": "10:30",
+      "time_end": "11:15",
+      "class_name": "YOGA Enfants",
+      "teacher": "",
+      "level": "all",
+      "source": "https://happyom.ch/horaire",
+      "verified": true,
+      "last_checked": "2026-03-25"
     }
   ],
   "_meta": {

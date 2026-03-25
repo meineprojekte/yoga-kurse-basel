@@ -1,150 +1,7 @@
 {
-  "last_updated": "2026-03-25T00:05:35.502722+00:00",
+  "last_updated": "2026-03-25T17:23:20.743213+00:00",
   "classes": [
     {
-      "studio_id": "yoga-loft-chur",
-      "studio_name": "Yoga Loft Chur",
-      "day": "Monday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Hatha Yoga",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yogaloftchur.ch/kontakt",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-loft-chur",
-      "studio_name": "Yoga Loft Chur",
-      "day": "Monday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Vinyasa Flow",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yogaloftchur.ch/kontakt",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-loft-chur",
-      "studio_name": "Yoga Loft Chur",
-      "day": "Tuesday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Yin Yoga",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yogaloftchur.ch/kontakt",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-loft-chur",
-      "studio_name": "Yoga Loft Chur",
-      "day": "Tuesday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Hatha Yoga",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yogaloftchur.ch/kontakt",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-loft-chur",
-      "studio_name": "Yoga Loft Chur",
-      "day": "Wednesday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Vinyasa Flow",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yogaloftchur.ch/kontakt",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-loft-chur",
-      "studio_name": "Yoga Loft Chur",
-      "day": "Wednesday",
-      "time_start": "12:15",
-      "time_end": "13:00",
-      "class_name": "Lunch Yoga",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yogaloftchur.ch/kontakt",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-loft-chur",
-      "studio_name": "Yoga Loft Chur",
-      "day": "Wednesday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Yin Yoga",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yogaloftchur.ch/kontakt",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-loft-chur",
-      "studio_name": "Yoga Loft Chur",
-      "day": "Thursday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Hatha Yoga",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yogaloftchur.ch/kontakt",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-loft-chur",
-      "studio_name": "Yoga Loft Chur",
-      "day": "Thursday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Vinyasa Flow",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yogaloftchur.ch/kontakt",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-loft-chur",
-      "studio_name": "Yoga Loft Chur",
-      "day": "Friday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Meditation & Pranayama",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yogaloftchur.ch/kontakt",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-loft-chur",
-      "studio_name": "Yoga Loft Chur",
-      "day": "Saturday",
-      "time_start": "09:30",
-      "time_end": "10:45",
-      "class_name": "Hatha Yoga",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yogaloftchur.ch/kontakt",
-      "verified": false,
-      "last_checked": "2026-03-23"
-    },
-    {
       "studio_id": "yoga-pyramide",
       "studio_name": "Yoga Pyramide Chur",
       "day": "Monday",
@@ -153,9 +10,9 @@
       "class_name": "Yoga",
       "teacher": "",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "yoga-pyramide",
@@ -166,9 +23,9 @@
       "class_name": "Yoga",
       "teacher": "",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "yoga-pyramide",
@@ -179,9 +36,9 @@
       "class_name": "Hatha & Ashtanga Yoga",
       "teacher": "",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "yoga-pyramide",
@@ -192,9 +49,9 @@
       "class_name": "Yoga",
       "teacher": "",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "yoga-pyramide",
@@ -205,9 +62,9 @@
       "class_name": "Yoga",
       "teacher": "",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "yoga-pyramide",
@@ -218,9 +75,9 @@
       "class_name": "Yoga",
       "teacher": "",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "yoga-pyramide",
@@ -231,9 +88,9 @@
       "class_name": "Yoga",
       "teacher": "",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "yoga-pyramide",
@@ -244,9 +101,9 @@
       "class_name": "Yoga",
       "teacher": "",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "yoga-pyramide",
@@ -257,9 +114,9 @@
       "class_name": "Yoga",
       "teacher": "",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "yoga-pyramide",
@@ -270,9 +127,9 @@
       "class_name": "Yoga",
       "teacher": "",
       "level": "all",
-      "source": "",
-      "verified": false,
-      "last_checked": "2026-03-21"
+      "source": "original scrape",
+      "verified": true,
+      "last_checked": "2026-03-25"
     },
     {
       "studio_id": "yoga-loft-engadin-samedan",
@@ -416,6 +273,19 @@
       "source": "https://acroyoga.group/",
       "verified": true,
       "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "yoga-loft-chur",
+      "studio_name": "Yoga Loft Chur",
+      "day": "Monday",
+      "time_start": "14:00",
+      "time_end": "16:00",
+      "class_name": "Freitag von  Uhr",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yogaloftchur.ch/kontakt",
+      "verified": true,
+      "last_checked": "2026-03-25"
     }
   ],
   "_meta": {
