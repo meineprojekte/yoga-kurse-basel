@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-24T21:59:26.742289+00:00",
+  "last_updated": "2026-03-25T00:05:35.519414+00:00",
   "classes": [
     {
       "studio_id": "iyengar-yoga-zug",
@@ -260,6 +260,19 @@
       "source": "https://www.sportsnow.ch/providers/yogaflowzug/schedule?locale=de",
       "verified": true,
       "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "aum-yoga-zug",
+      "studio_name": "Aum Yoga Studio",
+      "day": "Friday",
+      "time_start": "8:45",
+      "time_end": "9:45",
+      "class_name": "am : Iyengar Yoga class with Victoria Niven ( bring your own mat)",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.aumyogastudio.ch/yoga",
+      "verified": true,
+      "last_checked": "2026-03-24"
     },
     {
       "studio_id": "chinmayi-yoga-baar",

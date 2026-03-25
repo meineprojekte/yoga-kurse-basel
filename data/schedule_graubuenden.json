@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-24T21:52:22.155141+00:00",
+  "last_updated": "2026-03-25T00:05:35.502722+00:00",
   "classes": [
     {
       "studio_id": "yoga-loft-chur",
@@ -275,43 +275,17 @@
       "last_checked": "2026-03-21"
     },
     {
-      "studio_id": "acroyoga-group-chur",
-      "studio_name": "Acroyoga Group Graubünden",
-      "day": "Monday",
-      "time_start": "19:40",
-      "time_end": "21:10",
-      "class_name": "Donnersatags ( - )",
+      "studio_id": "yoga-loft-engadin-samedan",
+      "studio_name": "Yoga Loft Engadin",
+      "day": "Wednesday",
+      "time_start": "08:30",
+      "time_end": "10:30",
+      "class_name": "Cost",
       "teacher": "",
       "level": "all",
-      "source": "https://acroyoga.group/",
+      "source": "https://yogaloftengadin.ch/yoga",
       "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "acroyoga-group-chur",
-      "studio_name": "Acroyoga Group Graubünden",
-      "day": "Saturday",
-      "time_start": "19:40",
-      "time_end": "21:10",
-      "class_name": "Donnersatags ( - )",
-      "teacher": "",
-      "level": "all",
-      "source": "https://acroyoga.group/",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "acroyoga-group-chur",
-      "studio_name": "Acroyoga Group Graubünden",
-      "day": "Tuesday",
-      "time_start": "19:30",
-      "time_end": "",
-      "class_name": "Montag ()",
-      "teacher": "",
-      "level": "all",
-      "source": "https://acroyoga.group/",
-      "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-03-24"
     },
     {
       "studio_id": "yoga-pyramide-chur",
@@ -403,6 +377,45 @@
       "source": "https://www.eversports.ch/s/raw-yoga",
       "verified": true,
       "last_checked": "2026-03-24"
+    },
+    {
+      "studio_id": "acroyoga-group-chur",
+      "studio_name": "Acroyoga Group Graubünden",
+      "day": "Monday",
+      "time_start": "19:40",
+      "time_end": "21:10",
+      "class_name": "Donnersatags ( - )",
+      "teacher": "",
+      "level": "all",
+      "source": "https://acroyoga.group/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "acroyoga-group-chur",
+      "studio_name": "Acroyoga Group Graubünden",
+      "day": "Saturday",
+      "time_start": "19:40",
+      "time_end": "21:10",
+      "class_name": "Donnersatags ( - )",
+      "teacher": "",
+      "level": "all",
+      "source": "https://acroyoga.group/",
+      "verified": true,
+      "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "acroyoga-group-chur",
+      "studio_name": "Acroyoga Group Graubünden",
+      "day": "Tuesday",
+      "time_start": "19:30",
+      "time_end": "",
+      "class_name": "Montag ()",
+      "teacher": "",
+      "level": "all",
+      "source": "https://acroyoga.group/",
+      "verified": true,
+      "last_checked": "2026-03-23"
     }
   ],
   "_meta": {

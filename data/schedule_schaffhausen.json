@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-24T21:53:58.220639+00:00",
+  "last_updated": "2026-03-24T23:12:24.446175+00:00",
   "classes": [
     {
       "studio_id": "yogalicht-schaffhausen",
@@ -260,6 +260,32 @@
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
       "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "yogaschule-narayana-schaffhausen",
+      "studio_name": "Yogaschule SH (Narayana)",
+      "day": "Sunday",
+      "time_start": "10:00",
+      "time_end": "11:00",
+      "class_name": "18.00 – 19.00",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yogaschule-narayana.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-24"
+    },
+    {
+      "studio_id": "yogaschule-narayana-schaffhausen",
+      "studio_name": "Yogaschule SH (Narayana)",
+      "day": "Wednesday",
+      "time_start": "09:00",
+      "time_end": "10:00",
+      "class_name": "Do",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yogaschule-narayana.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-03-24"
     }
   ],
   "_meta": {

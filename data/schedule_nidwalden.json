@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-24T21:53:49.510454+00:00",
+  "last_updated": "2026-03-24T23:12:12.817121+00:00",
   "_notes": "Yoga Zentrum Stans schedule from yoga-stans.ch/termine (calendar-based, recurring weekly groups). Gesund & Munter and sevencolors use Wix sites that did not render schedules. Sevencolors partial data from search snippets.",
   "classes": [
     {
@@ -92,6 +92,58 @@
       "source": "https://www.sevencolors.ch/",
       "verified": true,
       "last_checked": "2026-03-23"
+    },
+    {
+      "studio_id": "gesund-und-munter-stans",
+      "studio_name": "Gesund & Munter - Hatha-Yoga und Pilates Studio",
+      "day": "Monday",
+      "time_start": "09:30",
+      "time_end": "10:30",
+      "class_name": "60",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.gesund-und-munter.ch/hatha-yoga",
+      "verified": true,
+      "last_checked": "2026-03-24"
+    },
+    {
+      "studio_id": "gesund-und-munter-stans",
+      "studio_name": "Gesund & Munter - Hatha-Yoga und Pilates Studio",
+      "day": "Monday",
+      "time_start": "19:00",
+      "time_end": "20:15",
+      "class_name": "75",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.gesund-und-munter.ch/hatha-yoga",
+      "verified": true,
+      "last_checked": "2026-03-24"
+    },
+    {
+      "studio_id": "gesund-und-munter-stans",
+      "studio_name": "Gesund & Munter - Hatha-Yoga und Pilates Studio",
+      "day": "Sunday",
+      "time_start": "19:00",
+      "time_end": "20:15",
+      "class_name": "75",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.gesund-und-munter.ch/hatha-yoga",
+      "verified": true,
+      "last_checked": "2026-03-24"
+    },
+    {
+      "studio_id": "gesund-und-munter-stans",
+      "studio_name": "Gesund & Munter - Hatha-Yoga und Pilates Studio",
+      "day": "Thursday",
+      "time_start": "08:30",
+      "time_end": "09:45",
+      "class_name": "75",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.gesund-und-munter.ch/hatha-yoga",
+      "verified": true,
+      "last_checked": "2026-03-24"
     }
   ],
   "_meta": {
