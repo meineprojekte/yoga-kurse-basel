@@ -2,8 +2,11 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schwangerschaftsyoga in Genf — Alle Studios &amp; Kurse | Yoga Schweiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#6B5B95">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="../../manifest.json">
+    <title>Schwangerschaftsyoga in Genf — Studios &amp; Kurse 2026</title>
     <meta name="description" content="Schwangerschaftsyoga in Genf: 8 Studios mit Schwangerschaftsyoga-Kursen. Adressen, Stile und Links. Finde deinen perfekten Kurs.">
     <meta name="keywords" content="Schwangerschaftsyoga Genf, Schwangerschaftsyoga Yoga Genf, Schwangerschaftsyoga Yoga Schweiz, Yoga Genf">
     <meta name="author" content="YogaSchweiz">
@@ -359,17 +362,34 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            .studios-grid {
-                grid-template-columns: 1fr;
-            }
-            .header-inner {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
+            .hero h1 { font-size: 1.8rem; }
+            .studios-grid { grid-template-columns: 1fr; }
+            .header-inner { flex-wrap: wrap; }
+            .yoga-menu-toggle { display: flex; }
+            .header nav { display: none; width: 100%; flex-direction: column; }
+            .header nav.open { display: flex; }
+            .header nav a { display: block; margin-left: 0; padding: 12px 0; border-bottom: 1px solid #eee; font-size: 1rem; min-height: 48px; line-height: 24px; opacity: 1; }
+            .header nav a:last-child { border-bottom: none; }
         }
+                /* === Mobile QA Fixes === */
+        html { scroll-behavior: smooth; overscroll-behavior-y: none; }
+        body { overflow-x: hidden; overscroll-behavior-y: none; -webkit-text-size-adjust: 100%; }
+        .header-inner { padding-left: max(1.5rem, env(safe-area-inset-left)); padding-right: max(1.5rem, env(safe-area-inset-right)); }
+        .footer { padding-bottom: max(2.5rem, env(safe-area-inset-bottom)); }
+        a, button, select, input, .studio-card, .related-link { -webkit-tap-highlight-color: transparent; }
+        .header nav a { min-height: 44px; display: inline-flex; align-items: center; }
+        .breadcrumb a { min-height: 44px; display: inline-flex; align-items: center; }
+        .studio-website, .studio-link, .related-link, .footer a { min-height: 44px; display: inline-flex; align-items: center; }
+        .studio-card { overflow: hidden; word-break: break-word; }
+        .studios-grid { grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr)); }
+        .yoga-menu-toggle { display: none; flex-direction: column; gap: 5px; padding: 10px; width: 44px; height: 44px; justify-content: center; align-items: center; background: none; border: none; cursor: pointer; }
+        .yoga-menu-toggle span { display: block; width: 20px; height: 2px; background: #fff; transition: all 0.2s; border-radius: 1px; }
+        .yoga-menu-toggle[aria-expanded="true"] span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .yoga-menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+        .yoga-menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+        @media (hover: none) and (pointer: coarse) { .studio-card:hover { transform: none; } .studio-card:active { transform: scale(0.98); transition-duration: 50ms; } .related-link:active { transform: scale(0.95); transition-duration: 50ms; } }
+        [id] { scroll-margin-top: 80px; }
+        select, input { font-size: 16px; }
     </style>
 </head>
 <body>
@@ -378,7 +398,8 @@
     <header class="header">
         <div class="header-inner">
             <a href="https://meineprojekte.github.io/yoga-kurse-basel/" class="logo">Yoga Schweiz</a>
-            <nav>
+            <button class="yoga-menu-toggle" id="yogaMenuToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+            <nav id="yogaNav">
                 <a href="https://meineprojekte.github.io/yoga-kurse-basel/">Home</a>
                 <a href="https://meineprojekte.github.io/yoga-kurse-basel/kanton/">Kantone</a>
                 <a href="https://meineprojekte.github.io/yoga-kurse-basel/kanton/geneve/">Genf</a>
@@ -512,5 +533,25 @@
         <p>&copy; 2026 Yoga Schweiz &mdash; Alle Angaben ohne Gew&auml;hr</p>
     </footer>
 
+    <script>
+        const menuBtn = document.getElementById('yogaMenuToggle');
+        const nav = document.getElementById('yogaNav');
+        if (menuBtn && nav) {
+            menuBtn.addEventListener('click', () => {
+                const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+                menuBtn.setAttribute('aria-expanded', !expanded);
+                nav.classList.toggle('open');
+            });
+            nav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menuBtn.setAttribute('aria-expanded', 'false');
+                    nav.classList.remove('open');
+                });
+            });
+        }
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('../../sw.js').catch(() => {});
+        }
+    </script>
 </body>
 </html>

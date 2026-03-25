@@ -1,6 +1,7 @@
 # Allow Google and Bing for SEO
 User-agent: Googlebot
 Allow: /
+Sitemap: https://meineprojekte.github.io/yoga-kurse-basel/sitemap.xml
 Disallow: /data/
 
 User-agent: Bingbot
@@ -134,5 +135,3 @@ Allow: /
 Allow: /kanton/
 Allow: /yoga/
 Allow: /blog/
-
-Sitemap: https://meineprojekte.github.io/yoga-kurse-basel/sitemap.xml

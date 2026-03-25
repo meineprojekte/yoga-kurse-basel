@@ -2,7 +2,10 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#6B5B95">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="../manifest.json">
     <title>Yoga Blog Schweiz — Tipps, Guides & Studio-Empfehlungen</title>
     <meta name="description" content="Der Yoga-Blog für die Schweiz: Anfänger-Guides, Studio-Empfehlungen, Yoga-Stil-Vergleiche und aktuelle Trends. Von der Redaktion YogaSchweiz.">
     <meta name="keywords" content="Yoga Blog Schweiz, Yoga Tipps, Yoga Anfänger, Yoga Studios Schweiz, Yoga Stile, Yoga Guide">
@@ -303,8 +306,26 @@
             .blog-hero h1 { font-size: 2rem; }
             .blog-hero { padding: 60px 0 40px; }
             .blog-grid { grid-template-columns: 1fr; gap: 24px; padding: 24px 0 60px; }
-            .nav-links { gap: 16px; }
+            .blog-menu-toggle { display: flex; }
+            .nav-links { display: none; width: 100%; flex-direction: column; gap: 0; }
+            .nav-links.open { display: flex; }
+            .nav-links a { display: block; padding: 12px 0; border-bottom: 1px solid #eee; font-size: 1rem; min-height: 48px; line-height: 24px; }
+            .nav-links a:last-child { border-bottom: none; }
+            .header-inner { flex-wrap: wrap; }
         }
+        /* === Mobile QA Fixes === */
+        html { scroll-behavior: smooth; overscroll-behavior-y: none; }
+        body { overflow-x: hidden; overscroll-behavior-y: none; -webkit-text-size-adjust: 100%; }
+        a, button, select, input, summary { -webkit-tap-highlight-color: transparent; }
+        .nav-links a, .footer a, .blog-card { min-height: 44px; }
+        .blog-menu-toggle { display: none; flex-direction: column; gap: 5px; padding: 10px; width: 44px; height: 44px; justify-content: center; align-items: center; background: none; border: none; cursor: pointer; }
+        .blog-menu-toggle span { display: block; width: 20px; height: 2px; background: var(--color-text, #2D2D2D); transition: all 0.2s; border-radius: 1px; }
+        .blog-menu-toggle[aria-expanded="true"] span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .blog-menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+        .blog-menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+        .footer { padding-bottom: max(40px, env(safe-area-inset-bottom)); }
+        @media (hover: none) and (pointer: coarse) { .blog-card:hover { transform: none; } .blog-card:active { transform: scale(0.98); transition-duration: 50ms; } }
+        [id] { scroll-margin-top: 80px; }
     </style>
 </head>
 <body>
@@ -316,7 +337,8 @@
                 <span class="logo-icon">🧘</span>
                 <span class="logo-text">Yoga<strong>Schweiz</strong></span>
             </a>
-            <nav class="nav-links">
+            <button class="blog-menu-toggle" id="blogMenuToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+            <nav class="nav-links" id="blogNav">
                 <a href="/">Studios</a>
                 <a href="/blog/" style="color: var(--color-primary);">Blog</a>
             </nav>
@@ -396,5 +418,25 @@
         </div>
     </footer>
 
+    <script>
+        const menuBtn = document.getElementById('blogMenuToggle');
+        const nav = document.getElementById('blogNav');
+        if (menuBtn && nav) {
+            menuBtn.addEventListener('click', () => {
+                const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+                menuBtn.setAttribute('aria-expanded', !expanded);
+                nav.classList.toggle('open');
+            });
+            nav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menuBtn.setAttribute('aria-expanded', 'false');
+                    nav.classList.remove('open');
+                });
+            });
+        }
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('../sw.js').catch(() => {});
+        }
+    </script>
 </body>
 </html>
