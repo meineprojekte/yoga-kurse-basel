@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-25T17:40:18.725083+00:00",
+  "last_updated": "2026-03-25T23:00:16.657569+00:00",
   "classes": [
     {
       "studio_id": "lotos",
@@ -3898,6 +3898,71 @@
       "teacher": "Marjatta",
       "level": "all",
       "source": "https://www.eversports.ch/s/meyo-house",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "gyym",
+      "studio_name": "GYYM Basel",
+      "day": "Monday",
+      "time_start": "19:00",
+      "time_end": "19:50",
+      "class_name": "Power Yoga",
+      "teacher": "",
+      "level": "all",
+      "source": "https://gyym.ch/group-fitness/kurse/",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "gyym",
+      "studio_name": "GYYM Basel",
+      "day": "Tuesday",
+      "time_start": "19:35",
+      "time_end": "20:30",
+      "class_name": "Power Yoga",
+      "teacher": "",
+      "level": "all",
+      "source": "https://gyym.ch/group-fitness/kurse/",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "gyym",
+      "studio_name": "GYYM Basel",
+      "day": "Wednesday",
+      "time_start": "19:50",
+      "time_end": "20:50",
+      "class_name": "Vinyasa Yoga",
+      "teacher": "",
+      "level": "all",
+      "source": "https://gyym.ch/group-fitness/kurse/",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "gyym",
+      "studio_name": "GYYM Basel",
+      "day": "Friday",
+      "time_start": "18:00",
+      "time_end": "19:30",
+      "class_name": "Inside Flow Yoga",
+      "teacher": "",
+      "level": "all",
+      "source": "https://gyym.ch/group-fitness/kurse/",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "gyym",
+      "studio_name": "GYYM Basel",
+      "day": "Saturday",
+      "time_start": "11:15",
+      "time_end": "12:30",
+      "class_name": "Yoga",
+      "teacher": "",
+      "level": "all",
+      "source": "https://gyym.ch/group-fitness/kurse/",
       "verified": true,
       "last_checked": "2026-03-25"
     }

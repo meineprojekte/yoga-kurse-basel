@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-25T17:41:21.572724+00:00",
+  "last_updated": "2026-03-25T23:00:16.660013+00:00",
   "_notes": "Bern studios use Wix, Eversports, SportsNow, Punchpass, and MindBody widgets. Data extracted from web search snippets. Svarupa yoga had the most searchable data via Punchpass. Some studios had very limited schedule visibility in search results.",
   "classes": [
     {
@@ -4165,6 +4165,71 @@
       "source": "https://www.yoga-club.ch/horaire",
       "verified": true,
       "last_checked": "2026-03-24"
+    },
+    {
+      "studio_id": "energie-yoga-bern",
+      "studio_name": "Energie Yoga",
+      "day": "Monday",
+      "time_start": "18:45",
+      "time_end": "19:45",
+      "class_name": "Energie Yoga",
+      "teacher": "Cornelia Baer",
+      "level": "all",
+      "source": "https://energieyoga.ch/b1.html",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "energie-yoga-bern",
+      "studio_name": "Energie Yoga",
+      "day": "Monday",
+      "time_start": "20:00",
+      "time_end": "21:00",
+      "class_name": "Energie Yoga",
+      "teacher": "Cornelia Baer",
+      "level": "all",
+      "source": "https://energieyoga.ch/b1.html",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "energie-yoga-bern",
+      "studio_name": "Energie Yoga",
+      "day": "Wednesday",
+      "time_start": "12:15",
+      "time_end": "13:15",
+      "class_name": "Schreibtisch Yoga",
+      "teacher": "Cornelia Baer",
+      "level": "all",
+      "source": "https://energieyoga.ch/b1.html",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "energie-yoga-bern",
+      "studio_name": "Energie Yoga",
+      "day": "Wednesday",
+      "time_start": "18:45",
+      "time_end": "19:45",
+      "class_name": "Energie Yoga",
+      "teacher": "Cornelia Baer",
+      "level": "all",
+      "source": "https://energieyoga.ch/b1.html",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "energie-yoga-bern",
+      "studio_name": "Energie Yoga",
+      "day": "Thursday",
+      "time_start": "12:15",
+      "time_end": "13:15",
+      "class_name": "Schreibtisch Yoga",
+      "teacher": "Cornelia Baer",
+      "level": "all",
+      "source": "https://energieyoga.ch/b1.html",
+      "verified": true,
+      "last_checked": "2026-03-25"
     }
   ],
   "_meta": {

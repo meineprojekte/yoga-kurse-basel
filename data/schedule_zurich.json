@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-25T17:58:20.701621+00:00",
+  "last_updated": "2026-03-25T23:00:16.666120+00:00",
   "_notes": "Many Zurich studios use dynamic booking widgets (Eversports, MindBody, Kursifant). Schedule data extracted from web search snippets and cached pages. Some entries are partial or representative. Verified data marked with confirmed teachers/times; others are best-effort from available search data.",
   "classes": [
     {
@@ -10113,6 +10113,19 @@
       "teacher": "",
       "level": "all",
       "source": "https://www.thesoulspace.ch/classes",
+      "verified": true,
+      "last_checked": "2026-03-25"
+    },
+    {
+      "studio_id": "project-peace",
+      "studio_name": "Project Peace",
+      "day": "Tuesday",
+      "time_start": "20:00",
+      "time_end": "21:15",
+      "class_name": "Jivamukti Open Class",
+      "teacher": "Laurina Wal",
+      "level": "all",
+      "source": "https://projectpeace.ch/yoga-bodywork",
       "verified": true,
       "last_checked": "2026-03-25"
     }
