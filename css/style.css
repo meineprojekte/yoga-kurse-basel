@@ -3268,35 +3268,43 @@ html {
 .comparison-table-wrapper {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    border-radius: var(--radius-lg);
-    border: 2px solid var(--border);
+    border-radius: 0;
+    border: 3px solid #6B5B95;
     background: var(--surface);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
 .comparison-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 0.9rem;
+    table-layout: auto;
 }
 
 .comparison-table thead {
-    background: var(--primary);
+    background: #6B5B95;
     color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1;
 }
 
 .comparison-table th {
-    padding: 14px 16px;
-    text-align: left;
-    font-weight: 700;
-    font-size: 0.85rem;
-    letter-spacing: 0.03em;
+    padding: 16px 14px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    border-right: 1px solid rgba(255,255,255,0.2);
+    border-right: 2px solid rgba(255,255,255,0.3);
+    border-bottom: 3px solid #4A3D6E;
     white-space: nowrap;
+}
+
+.comparison-table th:first-child {
+    text-align: center;
+    width: 35px;
+}
+
+.comparison-table th:nth-child(2) {
+    text-align: left;
 }
 
 .comparison-table th:last-child {
@@ -3304,10 +3312,11 @@ html {
 }
 
 .comparison-table td {
-    padding: 12px 16px;
+    padding: 11px 14px;
     border-bottom: 1px solid var(--border);
     border-right: 1px solid var(--border);
     vertical-align: middle;
+    text-align: center;
 }
 
 .comparison-table td:last-child {
@@ -3319,19 +3328,31 @@ html {
 }
 
 .comp-row-odd {
-    background: rgba(107, 91, 149, 0.03);
+    background: rgba(107, 91, 149, 0.06);
+}
+
+[data-theme="dark"] .comp-row-odd {
+    background: rgba(212, 163, 115, 0.05);
 }
 
 .comparison-table tbody tr:hover {
-    background: rgba(107, 91, 149, 0.08) !important;
+    background: rgba(107, 91, 149, 0.12) !important;
+}
+
+[data-theme="dark"] .comparison-table tbody tr:hover {
+    background: rgba(212, 163, 115, 0.12) !important;
 }
 
 .comp-studio {
     text-align: center;
-    font-weight: 700;
-    color: var(--primary);
-    width: 40px;
-    min-width: 40px;
+    font-weight: 800;
+    color: #6B5B95;
+    width: 35px;
+    font-size: 0.85rem;
+}
+
+.comp-name {
+    text-align: left !important;
 }
 
 .comp-name strong {
@@ -3341,23 +3362,32 @@ html {
 
 .comp-city {
     color: var(--text-muted);
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     font-weight: 400;
 }
 
 .comp-price {
     font-variant-numeric: tabular-nums;
-    text-align: right;
+    text-align: right !important;
     white-space: nowrap;
+    font-weight: 500;
 }
 
 .comp-price strong {
-    color: var(--primary);
+    color: #6B5B95;
     font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.comp-styles {
+    text-align: left !important;
+    max-width: 160px;
 }
 
 .comp-styles small {
     color: var(--text-muted);
+    white-space: normal;
+    line-height: 1.3;
 }
 
 .comp-link {
@@ -3365,25 +3395,18 @@ html {
 }
 
 .comp-website-link {
-    color: var(--primary);
+    color: white;
+    background: #6B5B95;
     display: inline-flex;
     align-items: center;
-    padding: 6px;
-    border-radius: var(--radius-sm);
+    padding: 5px 8px;
+    border-radius: 4px;
     transition: background 0.2s;
+    text-decoration: none;
 }
 
 .comp-website-link:hover {
-    background: rgba(107, 91, 149, 0.1);
-}
-
-/* Dark mode */
-[data-theme="dark"] .comp-row-odd {
-    background: rgba(212, 163, 115, 0.04);
-}
-
-[data-theme="dark"] .comparison-table tbody tr:hover {
-    background: rgba(212, 163, 115, 0.1) !important;
+    background: #4A3D6E;
 }
 
 /* Filters: icon only on mobile */
@@ -3403,18 +3426,22 @@ html {
     }
 }
 
-/* Mobile: same table, horizontal scroll */
+/* Mobile: compact table with scroll */
 @media (max-width: 768px) {
     .comparison-table {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 
-    .comparison-table th,
+    .comparison-table th {
+        padding: 10px 8px;
+        font-size: 0.68rem;
+    }
+
     .comparison-table td {
-        padding: 8px 10px;
+        padding: 8px;
     }
 
-    /* Hide styles column on small screens to save space */
+    /* Hide less important columns */
     .comparison-table th:nth-child(7),
     .comparison-table td:nth-child(7) {
         display: none;
