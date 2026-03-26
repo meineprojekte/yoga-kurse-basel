@@ -3259,3 +3259,129 @@ body {
 html {
     scrollbar-gutter: stable;
 }
+
+/* --- 23. Comparison Table (Vergleichstabelle) --- */
+.comparison-section {
+    padding: var(--space-xl) 0;
+}
+
+.comparison-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    background: var(--surface);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.comparison-table thead {
+    background: var(--primary);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.comparison-table th {
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+}
+
+.comparison-table td {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+}
+
+.comparison-table tbody tr:hover {
+    background: rgba(107, 91, 149, 0.05);
+}
+
+.comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.comp-studio strong {
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+.comp-studio small {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+.comp-price {
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+}
+
+.comp-price strong {
+    color: var(--primary);
+}
+
+.comp-styles small {
+    color: var(--text-muted);
+}
+
+.comp-website-link {
+    color: var(--primary);
+    display: inline-flex;
+    align-items: center;
+    padding: 6px;
+    border-radius: var(--radius-sm);
+    transition: background 0.2s;
+}
+
+.comp-website-link:hover {
+    background: rgba(107, 91, 149, 0.1);
+}
+
+/* Dark mode */
+[data-theme="dark"] .comparison-table tbody tr:hover {
+    background: rgba(212, 163, 115, 0.08);
+}
+
+/* Mobile: hide columns and stack */
+@media (max-width: 768px) {
+    .comparison-table {
+        font-size: 0.8rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 8px 10px;
+    }
+
+    /* Hide monthly and styles columns on mobile */
+    .comparison-table th:nth-child(4),
+    .comparison-table td:nth-child(4),
+    .comparison-table th:nth-child(6),
+    .comparison-table td:nth-child(6) {
+        display: none;
+    }
+
+    /* Filters: icon only, no text */
+    .filters-toggle span[data-i18n="filters.button"] {
+        display: none;
+    }
+
+    .filters-toggle {
+        padding: 8px 12px;
+        gap: 4px;
+    }
+
+    .filters-toggle svg {
+        width: 20px;
+        height: 20px;
+    }
+}

@@ -117,7 +117,15 @@ if ('serviceWorker' in navigator) {
             'sources.last_checked': 'Zuletzt geprüft',
             'sources.not_available': 'Nicht verfügbar',
             'pricing.verified_badge': 'Preise verifiziert',
-            'pricing.prices_from': 'Preise von'
+            'pricing.prices_from': 'Preise von',
+            'comparison.title': 'Preisvergleich',
+            'comparison.subtitle': 'Alle Studios mit verifizierten Preisen im Überblick',
+            'comparison.studio': 'Studio',
+            'comparison.styles': 'Stile',
+            'comparison.website': 'Website',
+            'comparison.no_data': 'Keine Preisdaten für diesen Kanton verfügbar',
+            'comparison.visit': 'Zur Website',
+            'comparison.sort_cheapest': 'Günstigste zuerst'
         },
         en: {
             'nav.studios': 'Studios',
@@ -224,7 +232,15 @@ if ('serviceWorker' in navigator) {
             'sources.last_checked': 'Last checked',
             'sources.not_available': 'Not available',
             'pricing.verified_badge': 'Prices verified',
-            'pricing.prices_from': 'Prices from'
+            'pricing.prices_from': 'Prices from',
+            'comparison.title': 'Price Comparison',
+            'comparison.subtitle': 'All studios with verified prices at a glance',
+            'comparison.studio': 'Studio',
+            'comparison.styles': 'Styles',
+            'comparison.website': 'Website',
+            'comparison.no_data': 'No price data available for this canton',
+            'comparison.visit': 'Visit website',
+            'comparison.sort_cheapest': 'Cheapest first'
         },
         it: {
             'nav.studios': 'Studi',
@@ -331,7 +347,15 @@ if ('serviceWorker' in navigator) {
             'sources.last_checked': 'Ultimo controllo',
             'sources.not_available': 'Non disponibile',
             'pricing.verified_badge': 'Prezzi verificati',
-            'pricing.prices_from': 'Prezzi da'
+            'pricing.prices_from': 'Prezzi da',
+            'comparison.title': 'Confronto Prezzi',
+            'comparison.subtitle': 'Tutti gli studi con prezzi verificati a colpo d\'occhio',
+            'comparison.studio': 'Studio',
+            'comparison.styles': 'Stili',
+            'comparison.website': 'Sito web',
+            'comparison.no_data': 'Nessun dato sui prezzi per questo cantone',
+            'comparison.visit': 'Vai al sito',
+            'comparison.sort_cheapest': 'Più economici prima'
         },
         fr: {
             'nav.studios': 'Studios',
@@ -438,7 +462,15 @@ if ('serviceWorker' in navigator) {
             'sources.last_checked': 'Dernière vérification',
             'sources.not_available': 'Non disponible',
             'pricing.verified_badge': 'Prix vérifiés',
-            'pricing.prices_from': 'Prix de'
+            'pricing.prices_from': 'Prix de',
+            'comparison.title': 'Comparaison des prix',
+            'comparison.subtitle': 'Tous les studios avec prix vérifiés en un coup d\'oeil',
+            'comparison.studio': 'Studio',
+            'comparison.styles': 'Styles',
+            'comparison.website': 'Site web',
+            'comparison.no_data': 'Aucune donnée de prix pour ce canton',
+            'comparison.visit': 'Voir le site',
+            'comparison.sort_cheapest': 'Moins chers d\'abord'
         }
     };
 
@@ -796,6 +828,52 @@ if ('serviceWorker' in navigator) {
     }
 
     // --- SEO: Dynamic keyword-rich paragraph per canton ---
+    function renderComparisonTable() {
+        var tbody = $('comparisonBody');
+        if (!tbody) return;
+
+        // Get studios with verified pricing, sorted by single price
+        var studiosWithPrice = state.studios.filter(function(s) {
+            return s.active !== false && s.pricing && s.pricing.verified && s.pricing.single;
+        }).sort(function(a, b) {
+            return (a.pricing.single || 999) - (b.pricing.single || 999);
+        });
+
+        if (studiosWithPrice.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;padding:30px;color:#888;">' + t('comparison.no_data') + '</td></tr>';
+            return;
+        }
+
+        var html = '';
+        for (var i = 0; i < studiosWithPrice.length; i++) {
+            var s = studiosWithPrice[i];
+            var p = s.pricing;
+            var addr = s.addresses && s.addresses[0] ? s.addresses[0].city : '';
+            var styles = (s.styles || []).slice(0, 3).join(', ');
+            if (s.styles && s.styles.length > 3) styles += ' +' + (s.styles.length - 3);
+            var sourceUrl = p.source || s.website || '';
+
+            html += '<tr>';
+            html += '<td class="comp-studio"><strong>' + escapeHtml(s.name) + '</strong>';
+            if (addr) html += '<br><small>' + escapeHtml(addr) + '</small>';
+            html += '</td>';
+            html += '<td class="comp-price">' + (p.single ? '<strong>CHF ' + p.single + '</strong>' : '—') + '</td>';
+            html += '<td class="comp-price">' + (p.card_10 ? 'CHF ' + p.card_10 : '—') + '</td>';
+            html += '<td class="comp-price">' + (p.monthly ? 'CHF ' + p.monthly : '—') + '</td>';
+            html += '<td class="comp-price">' + (p.trial !== undefined && p.trial !== null ? (p.trial === 0 ? t('pricing.trial') + ' gratis' : 'CHF ' + p.trial) : '—') + '</td>';
+            html += '<td class="comp-styles"><small>' + escapeHtml(styles) + '</small></td>';
+            html += '<td class="comp-link">';
+            if (sourceUrl) {
+                html += '<a href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noopener noreferrer" class="comp-website-link" title="' + t('comparison.visit') + '">';
+                html += '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>';
+                html += '</a>';
+            }
+            html += '</td>';
+            html += '</tr>';
+        }
+        tbody.innerHTML = html;
+    }
+
     function renderCantonIntro() {
         var el = $('cantonIntro');
         if (!el) return;
@@ -1019,6 +1097,7 @@ if ('serviceWorker' in navigator) {
         try { updateSchemaOrg(); } catch (e) { console.error('[YogaSchweiz] Error in updateSchemaOrg:', e); }
         try { renderCantonLinks(); } catch (e) { console.error('[YogaSchweiz] Error in renderCantonLinks:', e); }
         try { renderCantonIntro(); } catch (e) { console.error('[YogaSchweiz] Error in renderCantonIntro:', e); }
+        try { renderComparisonTable(); } catch (e) { console.error('[YogaSchweiz] Error in renderComparisonTable:', e); }
         try { initMap(); } catch (e) { console.error('[YogaSchweiz] Error in initMap:', e); }
     }
 
