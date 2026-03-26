@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T11:11:52.962137+00:00",
+  "last_updated": "2026-03-26T23:00:31.090489+00:00",
   "studios": [
     {
       "id": "espace-tadasana-sion",
@@ -42,12 +42,16 @@
       "last_scraped": "2026-03-22T11:11:29.423098+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:11:30.104055+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T22:07:52.075858+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.tadasana-yoga.ch/"
         }
+      },
+      "pricing": {
+        "verified": false,
+        "currency": "CHF"
       }
     },
     {

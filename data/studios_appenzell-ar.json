@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T10:59:29.068836+00:00",
+  "last_updated": "2026-03-26T22:08:32.152431+00:00",
   "studios": [
     {
       "id": "yogaar-herisau",
@@ -38,12 +38,20 @@
       "last_scraped": "2026-03-22T10:59:28.355159+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T10:59:29.068818+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T22:08:32.151426+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
-          "website": "https://www.yogaar.ch/"
+          "website": "https://www.yogaar.ch/",
+          "pricing": "https://www.yogaar.ch/preise"
         }
+      },
+      "pricing": {
+        "single": 25,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.yogaar.ch/preise",
+        "last_checked": "2026-03-26T22:08:32.151426+00:00"
       }
     },
     {

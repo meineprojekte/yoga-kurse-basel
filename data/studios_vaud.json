@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T11:14:24.171178+00:00",
+  "last_updated": "2026-03-26T22:36:01.434772+00:00",
   "studios": [
     {
       "id": "ooom-lausanne",
@@ -857,13 +857,17 @@
       "last_scraped": "2026-03-22T11:13:36.695831+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:13:37.674862+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T22:36:01.433450+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.sundorashala.com/",
           "schedule": "https://www.sundorashala.com/classes"
         }
+      },
+      "pricing": {
+        "verified": false,
+        "currency": "CHF"
       }
     },
     {

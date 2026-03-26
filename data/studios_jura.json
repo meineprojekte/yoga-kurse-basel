@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T11:07:20.484702+00:00",
+  "last_updated": "2026-03-26T23:00:31.090489+00:00",
   "studios": [
     {
       "id": "pilatesyogajura",
@@ -42,12 +42,16 @@
       "last_scraped": "2026-03-22T11:07:16.637842+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:07:17.225239+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T21:55:47.240153+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.pilatesyogajura.com/"
         }
+      },
+      "pricing": {
+        "verified": false,
+        "currency": "CHF"
       }
     },
     {

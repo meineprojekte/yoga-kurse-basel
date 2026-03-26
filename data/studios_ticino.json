@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T11:11:25.275892+00:00",
+  "last_updated": "2026-03-26T23:00:31.090489+00:00",
   "studios": [
     {
       "id": "yoga-dinamico-lugano",
@@ -45,12 +45,20 @@
       "last_scraped": "2026-03-22T11:10:52.663936+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:10:53.304600+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T23:00:31.090489+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
-          "website": "https://www.yogadinamico.ch/"
+          "website": "https://www.yogadinamico.ch/",
+          "pricing": "https://www.yogadinamico.ch/prezzi.html"
         }
+      },
+      "pricing": {
+        "single": 30,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.yogadinamico.ch/prezzi.html",
+        "last_checked": "2026-03-26T23:00:31.090489+00:00"
       }
     },
     {
@@ -90,13 +98,17 @@
       "last_scraped": "2026-03-22T11:10:54.899260+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:10:58.935464+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T22:05:05.916034+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yogalugano.ch/",
           "schedule": "https://www.yogalugano.ch/schedule"
         }
+      },
+      "pricing": {
+        "verified": false,
+        "currency": "CHF"
       }
     },
     {

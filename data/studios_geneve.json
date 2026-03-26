@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T11:06:36.888129+00:00",
+  "last_updated": "2026-03-26T23:00:31.090489+00:00",
   "studios": [
     {
       "id": "yoga7-geneve",
@@ -262,13 +262,23 @@
       "last_scraped": "2026-03-22T11:04:36.260283+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:04:37.028683+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T23:00:31.090489+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.fancy.yoga/",
-          "schedule": "https://www.fancy.yoga/en/yoga"
+          "schedule": "https://www.fancy.yoga/en/yoga",
+          "pricing": "https://www.fancy.yoga/tarifs"
         }
+      },
+      "pricing": {
+        "single": 40,
+        "card_10": 340,
+        "trial": 35,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.fancy.yoga/tarifs",
+        "last_checked": "2026-03-26T23:00:31.090489+00:00"
       }
     },
     {
@@ -383,13 +393,21 @@
       "last_scraped": "2026-03-22T11:04:41.789954+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:04:51.744790+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T23:00:31.090489+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://colife.ch/",
-          "schedule": "https://colife.ch/studio-yoga-geneve/"
+          "schedule": "https://colife.ch/studio-yoga-geneve/",
+          "pricing": "https://colife.ch/studio-yoga-geneve/"
         }
+      },
+      "pricing": {
+        "trial": 45,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://colife.ch/studio-yoga-geneve/",
+        "last_checked": "2026-03-26T23:00:31.090489+00:00"
       }
     },
     {
@@ -679,13 +697,21 @@
       "last_scraped": "2026-03-22T11:05:26.582939+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:05:36.452596+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T22:18:59.238457+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://deva-yoga.ch/",
-          "schedule": "https://deva-yoga.ch/"
+          "schedule": "https://deva-yoga.ch/",
+          "pricing": "https://deva-yoga.ch/tarifs"
         }
+      },
+      "pricing": {
+        "single": 30,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://deva-yoga.ch/tarifs/",
+        "last_checked": "2026-03-26T22:54:31.829650+00:00"
       }
     },
     {
@@ -1060,13 +1086,17 @@
       "last_scraped": "2026-03-22T11:06:36.247729+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:06:36.888104+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T21:55:07.376919+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.laperledeletre.com/",
           "schedule": "https://www.laperledeletre.com/"
         }
+      },
+      "pricing": {
+        "verified": false,
+        "currency": "CHF"
       }
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T10:59:27.886614+00:00",
+  "last_updated": "2026-03-26T23:00:31.090489+00:00",
   "studios": [
     {
       "id": "aloha-yoga-aarau",
@@ -152,7 +152,7 @@
       ],
       "_meta": {
         "last_scraped": "2026-03-22T10:58:45.517984+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T21:37:25.467308+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -163,6 +163,10 @@
         "source_urls": {
           "website": "https://www.my-yoga-garden.ch"
         }
+      },
+      "pricing": {
+        "verified": false,
+        "currency": "CHF"
       }
     },
     {
@@ -574,12 +578,16 @@
       "last_scraped": "2026-03-22T10:59:27.187319+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T10:59:27.886595+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T21:38:55.766182+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.jetzt.yoga/"
         }
+      },
+      "pricing": {
+        "verified": false,
+        "currency": "CHF"
       }
     }
   ]

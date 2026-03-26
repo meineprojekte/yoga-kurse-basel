@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T11:09:58.686633+00:00",
+  "last_updated": "2026-03-26T23:00:31.090489+00:00",
   "studios": [
     {
       "id": "studio-30-solothurn",
@@ -44,12 +44,16 @@
       "last_scraped": "2026-03-22T11:09:35.297110+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:09:35.924343+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T22:00:56.036248+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.studio-30.ch/"
         }
+      },
+      "pricing": {
+        "verified": false,
+        "currency": "CHF"
       }
     },
     {
@@ -206,12 +210,16 @@
       "last_scraped": "2026-03-22T11:09:39.203513+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:09:39.897155+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T22:00:58.593827+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.flaviayoga.com/"
         }
+      },
+      "pricing": {
+        "verified": false,
+        "currency": "CHF"
       }
     },
     {

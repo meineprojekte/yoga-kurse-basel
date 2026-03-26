@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T11:07:16.240857+00:00",
+  "last_updated": "2026-03-26T22:22:14.809973+00:00",
   "studios": [
     {
       "id": "yoga-loft-chur",
@@ -391,12 +391,21 @@
       "last_scraped": "2026-03-22T11:07:05.354587+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:07:13.939325+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T22:22:14.808879+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
-          "website": "https://yogaloftengadin.ch/"
+          "website": "https://yogaloftengadin.ch/",
+          "pricing": "https://yogaloftengadin.ch/prices/"
         }
+      },
+      "pricing": {
+        "single": 35,
+        "card_10": 333,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://yogaloftengadin.ch/prices/",
+        "last_checked": "2026-03-26T22:22:14.808879+00:00"
       }
     },
     {
@@ -435,16 +444,23 @@
       "lng": 9.538,
       "active": true,
       "classes": [],
-      "pricing": {},
+      "pricing": {
+        "single": 5,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://acroyoga.group/",
+        "last_checked": "2026-03-26T21:37:22.955099+00:00"
+      },
       "scrape_status": "scraped",
       "last_scraped": "2026-03-22T11:07:15.008855+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:07:16.240832+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T21:37:22.955099+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
-          "website": "https://acroyoga.group/"
+          "website": "https://acroyoga.group/",
+          "pricing": "https://acroyoga.group/"
         }
       }
     }

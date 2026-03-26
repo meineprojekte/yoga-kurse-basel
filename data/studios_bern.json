@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T11:04:04.234364+00:00",
+  "last_updated": "2026-03-26T23:00:31.090489+00:00",
   "studios": [
     {
       "id": "yama-yoga-bern",
@@ -2222,13 +2222,17 @@
       "last_scraped": "2026-03-22T11:03:49.055522+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:03:56.805116+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T21:49:51.954537+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yoga-room.ch/",
           "schedule": "https://www.yoga-room.ch/stundenplan"
         }
+      },
+      "pricing": {
+        "verified": false,
+        "currency": "CHF"
       }
     },
     {

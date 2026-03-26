@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T11:02:37.281133+00:00",
+  "last_updated": "2026-03-26T23:09:02.072737+00:00",
   "studios": [
     {
       "id": "byoga",
@@ -287,13 +287,21 @@
       "last_scraped": "2026-03-22T11:00:58.587557+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:01:00.961639+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T21:41:20.176566+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.anjali.ch/en",
-          "schedule": "https://www.anjali.ch/stundenplan/"
+          "schedule": "https://www.anjali.ch/stundenplan/",
+          "pricing": "https://www.anjali.ch/en"
         }
+      },
+      "pricing": {
+        "single": 25,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.anjali.ch/en",
+        "last_checked": "2026-03-26T23:09:02.072737+00:00"
       }
     },
     {
@@ -804,13 +812,17 @@
       "last_scraped": "2026-03-22T11:01:18.602502+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:01:19.306276+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-26T21:42:14.334336+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yogaimgaertnerhuus.com",
           "schedule": "https://www.yogaimgaertnerhuus.com"
         }
+      },
+      "pricing": {
+        "verified": false,
+        "currency": "CHF"
       }
     },
     {
