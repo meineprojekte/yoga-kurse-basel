@@ -1,13 +1,11 @@
-const CACHE_NAME = 'yogaschweiz-v4';
+const CACHE_NAME = 'yogaschweiz-v5';
 
 const ASSETS_TO_CACHE = [
-  '/',
+  './',
   './index.html',
   './css/style.css',
   './js/app.js',
   './js/shield.js',
-  './data/studios_basel.json',
-  './data/schedule_basel.json',
   './data/cantons.json'
 ];
 
@@ -58,7 +56,7 @@ self.addEventListener('fetch', (event) => {
           }
           // If the request is for a page, return the cached index
           if (event.request.headers.get('accept')?.includes('text/html')) {
-            return caches.match('./index.html');
+            return caches.match('./index.html') || caches.match('./');
           }
         });
       })

@@ -500,7 +500,12 @@ def generate_page(canton, studios, classes, all_cantons):
     </div>
 </div>'''
 
-    meta_desc = f"Yoga im Kanton {canton_name} ({canton_abbr}): {num_studios} Studios, {num_classes} Kurse pro Woche. {cities_str}. Stile: {styles_str}. Stundenplan & Kontaktdaten."
+    meta_desc_full = f"Yoga im Kanton {canton_name} ({canton_abbr}): {num_studios} Studios, {num_classes} Kurse pro Woche. {cities_str}. Stile: {styles_str}. Stundenplan & Kontaktdaten."
+    # Limit meta description to 150 chars (pre-escape) to stay under 160 after HTML escaping
+    if len(meta_desc_full) > 150:
+        meta_desc = meta_desc_full[:147].rsplit(' ', 1)[0] + '...'
+    else:
+        meta_desc = meta_desc_full
     meta_keywords = f"Yoga {canton_name}, Yoga {canton_abbr}, Yoga {canton_capital}, Yoga Studio {canton_name}, Yoga Kurse {canton_name}, {', '.join(f'Yoga {c}' for c in cities[:5])}, {', '.join(all_styles[:6])}, Yoga Schweiz"
 
     page = f'''<!DOCTYPE html>
@@ -529,6 +534,9 @@ def generate_page(canton, studios, classes, all_cantons):
     <meta property="og:url" content="{BASE_URL}/kanton/{canton_id}/">
     <meta property="og:locale" content="de_CH">
     <meta property="og:site_name" content="Yoga Schweiz">
+    <meta property="og:image" content="{BASE_URL}/img/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">

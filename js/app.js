@@ -18,11 +18,11 @@ if ('serviceWorker' in navigator) {
             'nav.map': 'Karte',
             'nav.faq': 'FAQ',
             'hero.title': 'Yoga in der Schweiz<br><span class="hero-accent">alle Kurse auf einen Blick</span>',
-            'hero.subtitle': '26 Kantone &bull; Hunderte Studios &bull; Täglich aktualisiert',
+            'hero.subtitle': '26 Kantone &bull; Hunderte Studios &bull; Wöchentlich aktualisiert',
             'hero.search_placeholder': 'Studio, Yoga-Stil oder Quartier suchen...',
             'hero.stat_studios': 'Studios',
             'hero.stat_styles': 'Yoga-Stile',
-            'hero.stat_updates': 'täglich aktualisiert',
+            'hero.stat_updates': 'wöchentlich aktualisiert',
             'filters.title': 'Filter',
             'filters.button': 'Filter & Sortierung',
             'filters.all': 'Alle',
@@ -125,11 +125,11 @@ if ('serviceWorker' in navigator) {
             'nav.map': 'Map',
             'nav.faq': 'FAQ',
             'hero.title': 'Yoga in Switzerland<br><span class="hero-accent">all classes at a glance</span>',
-            'hero.subtitle': '26 Cantons &bull; Hundreds of Studios &bull; Updated Daily',
+            'hero.subtitle': '26 Cantons &bull; Hundreds of Studios &bull; Updated Weekly',
             'hero.search_placeholder': 'Search studio, yoga style or district...',
             'hero.stat_studios': 'Studios',
             'hero.stat_styles': 'Yoga Styles',
-            'hero.stat_updates': 'daily updates',
+            'hero.stat_updates': 'weekly updates',
             'filters.title': 'Filters',
             'filters.button': 'Filters & Sorting',
             'filters.all': 'All',
@@ -233,11 +233,11 @@ if ('serviceWorker' in navigator) {
             'nav.faq': 'FAQ',
             'nav.schedule': 'Orario',
             'hero.title': 'Yoga in Svizzera<br><span class="hero-accent">tutti i corsi a colpo d\'occhio</span>',
-            'hero.subtitle': '26 Cantoni &bull; Centinaia di studi &bull; Aggiornato ogni giorno',
+            'hero.subtitle': '26 Cantoni &bull; Centinaia di studi &bull; Aggiornato settimanalmente',
             'hero.search_placeholder': 'Cerca studio, stile di yoga o quartiere...',
             'hero.stat_studios': 'Studi',
             'hero.stat_styles': 'Stili di yoga',
-            'hero.stat_updates': 'aggiornato ogni giorno',
+            'hero.stat_updates': 'aggiornato settimanalmente',
             'filters.title': 'Filtri',
             'filters.button': 'Filtri e ordinamento',
             'filters.all': 'Tutti',
@@ -340,11 +340,11 @@ if ('serviceWorker' in navigator) {
             'nav.faq': 'FAQ',
             'nav.schedule': 'Horaire',
             'hero.title': 'Yoga en Suisse<br><span class="hero-accent">tous les cours en un coup d\'\u0153il</span>',
-            'hero.subtitle': '26 cantons &bull; des centaines de studios &bull; Mis \u00e0 jour quotidiennement',
+            'hero.subtitle': '26 cantons &bull; des centaines de studios &bull; Mis \u00e0 jour chaque semaine',
             'hero.search_placeholder': 'Chercher un studio, un style de yoga ou un quartier...',
             'hero.stat_studios': 'Studios',
             'hero.stat_styles': 'Styles de yoga',
-            'hero.stat_updates': 'mis \u00e0 jour quotidiennement',
+            'hero.stat_updates': 'mis \u00e0 jour chaque semaine',
             'filters.title': 'Filtres',
             'filters.button': 'Filtres et tri',
             'filters.all': 'Tous',
@@ -639,13 +639,13 @@ if ('serviceWorker' in navigator) {
         var metaDesc = document.querySelector('meta[name="description"]');
         if (metaDesc) {
             if (lang === 'de') {
-                metaDesc.content = 'Alle Yoga-Studios und Kurse in ' + name + '. Stundenplan, interaktive Karte, PDF-Export. Vinyasa, Hatha, Yin, Ashtanga und mehr. Täglich aktualisiert.';
+                metaDesc.content = 'Alle Yoga-Studios und Kurse in ' + name + '. Stundenplan, interaktive Karte, PDF-Export. Vinyasa, Hatha, Yin, Ashtanga und mehr. Wöchentlich aktualisiert.';
             } else if (lang === 'en') {
-                metaDesc.content = 'All yoga studios and classes in ' + name + '. Schedule, interactive map, PDF export. Vinyasa, Hatha, Yin, Ashtanga and more. Updated daily.';
+                metaDesc.content = 'All yoga studios and classes in ' + name + '. Schedule, interactive map, PDF export. Vinyasa, Hatha, Yin, Ashtanga and more. Updated weekly.';
             } else if (lang === 'it') {
-                metaDesc.content = 'Tutti gli studi e i corsi di yoga a ' + name + '. Orario, mappa interattiva, export PDF. Aggiornato ogni giorno.';
+                metaDesc.content = 'Tutti gli studi e i corsi di yoga a ' + name + '. Orario, mappa interattiva, export PDF. Aggiornato settimanalmente.';
             } else {
-                metaDesc.content = 'Tous les studios et cours de yoga \u00e0 ' + name + '. Horaire, carte interactive, export PDF. Mis \u00e0 jour quotidiennement.';
+                metaDesc.content = 'Tous les studios et cours de yoga \u00e0 ' + name + '. Horaire, carte interactive, export PDF. Mis \u00e0 jour chaque semaine.';
             }
         }
     }
@@ -747,7 +747,7 @@ if ('serviceWorker' in navigator) {
         if (ogTitle) ogTitle.content = 'Yoga ' + name + ' — ' + count + ' Studios auf einen Blick';
 
         var ogDesc = document.querySelector('meta[property="og:description"]');
-        if (ogDesc) ogDesc.content = count + ' Yoga-Studios in ' + name + '. Stundenplan, Karte, PDF. Täglich aktualisiert.';
+        if (ogDesc) ogDesc.content = count + ' Yoga-Studios in ' + name + '. Stundenplan, Karte, PDF. Wöchentlich aktualisiert.';
 
         var twTitle = document.querySelector('meta[name="twitter:title"]');
         if (twTitle) twTitle.content = 'Yoga ' + name + ' — ' + count + ' Studios';
@@ -1004,6 +1004,7 @@ if ('serviceWorker' in navigator) {
             }
             state.filteredStudios = state.studios.slice();
             populateStyleFilter(data.styles_index || []);
+            populateDistrictFilter();
             if ($('studioCount')) $('studioCount').textContent = state.studios.length + '+';
             if ($('totalCount')) $('totalCount').textContent = state.studios.length;
             console.log('[YogaSchweiz] Loaded', state.studios.length, 'studios for', state.currentCanton);
@@ -1031,10 +1032,49 @@ if ('serviceWorker' in navigator) {
     function populateStyleFilter(styles) {
         var select = $('filterStyle');
         if (!select) return;
+        while (select.options.length > 1) select.remove(1);
         for (var i = 0; i < styles.length; i++) {
             var opt = document.createElement('option');
             opt.value = styles[i];
             opt.textContent = styles[i];
+            select.appendChild(opt);
+        }
+    }
+
+    function populateDistrictFilter() {
+        var select = $('filterDistrict');
+        if (!select) return;
+        var filterGroup = select.closest('.filter-group');
+
+        // Collect unique zip codes and cities from current studios
+        var zipCityMap = {};
+        for (var i = 0; i < state.studios.length; i++) {
+            var addrs = state.studios[i].addresses || [];
+            for (var j = 0; j < addrs.length; j++) {
+                var zip = (addrs[j].zip || '').trim();
+                var city = (addrs[j].city || '').trim();
+                if (zip && !zipCityMap[zip]) {
+                    zipCityMap[zip] = city;
+                }
+            }
+        }
+
+        var zips = Object.keys(zipCityMap).sort();
+        // Clear existing options except first ("Alle")
+        while (select.options.length > 1) select.remove(1);
+
+        if (zips.length <= 1) {
+            // Only one or zero zip codes — hide the district filter
+            if (filterGroup) filterGroup.style.display = 'none';
+            return;
+        }
+        if (filterGroup) filterGroup.style.display = '';
+
+        for (var k = 0; k < zips.length; k++) {
+            var opt = document.createElement('option');
+            opt.value = zips[k];
+            var label = zipCityMap[zips[k]] ? zipCityMap[zips[k]] + ' (' + zips[k] + ')' : zips[k];
+            opt.textContent = label;
             select.appendChild(opt);
         }
     }
@@ -1158,23 +1198,27 @@ if ('serviceWorker' in navigator) {
 
         var html = '';
         for (var k = 0; k < entries.length; k++) {
-            html += '<div class="style-card" data-style="' + escapeHtml(entries[k][0]) + '">' +
+            html += '<div class="style-card" role="button" aria-label="' + escapeHtml(entries[k][0]) + ' — ' + entries[k][1] + ' ' + t('styles.studios_count') + '" tabindex="0" data-style="' + escapeHtml(entries[k][0]) + '">' +
                 '<div class="style-card-name">' + escapeHtml(entries[k][0]) + '</div>' +
                 '<div class="style-card-count">' + entries[k][1] + ' ' + t('styles.studios_count') + '</div>' +
             '</div>';
         }
         grid.innerHTML = html;
 
-        // Click handlers
+        // Click and keyboard handlers
         var cards = grid.querySelectorAll('.style-card');
         for (var m = 0; m < cards.length; m++) {
-            cards[m].addEventListener('click', (function (card) {
+            var handler = (function (card) {
                 return function () {
                     filterByStyle(card.getAttribute('data-style'));
                     var studios = $('studios');
                     if (studios) studios.scrollIntoView({ behavior: 'smooth' });
                 };
-            })(cards[m]));
+            })(cards[m]);
+            cards[m].addEventListener('click', handler);
+            cards[m].addEventListener('keydown', (function (fn) {
+                return function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); fn(); } };
+            })(handler));
         }
     }
 
@@ -1223,7 +1267,7 @@ if ('serviceWorker' in navigator) {
             html += '<div class="modal-info-row"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>' + t('modal.booking') + ': ' + escapeHtml(studio.booking_platform) + '</span></div>';
         }
         if (studio.languages && studio.languages.length > 0) {
-            html += '<div class="modal-info-row"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>' + t('modal.languages') + ': ' + studio.languages.join(', ') + '</span></div>';
+            html += '<div class="modal-info-row"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>' + t('modal.languages') + ': ' + escapeHtml(studio.languages.join(', ')) + '</span></div>';
         }
 
         html += '</div>' +
@@ -1315,12 +1359,37 @@ if ('serviceWorker' in navigator) {
         content.innerHTML = html;
         overlay.classList.add('active');
         document.body.classList.add('modal-open');
+
+        // Focus trap: focus the close button and trap Tab
+        var modal = $('studioModal');
+        if (modal) {
+            var closeBtn = $('modalClose');
+            if (closeBtn) closeBtn.focus();
+            modal.addEventListener('keydown', trapFocus);
+        }
+    }
+
+    function trapFocus(e) {
+        if (e.key !== 'Tab') return;
+        var modal = $('studioModal');
+        if (!modal) return;
+        var focusable = modal.querySelectorAll('a[href], button, input, select, textarea, [tabindex]:not([tabindex="-1"])');
+        if (focusable.length === 0) return;
+        var first = focusable[0];
+        var last = focusable[focusable.length - 1];
+        if (e.shiftKey) {
+            if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+        } else {
+            if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+        }
     }
 
     function closeModal() {
         var overlay = $('modalOverlay');
         if (overlay) overlay.classList.remove('active');
         document.body.classList.remove('modal-open');
+        var modal = $('studioModal');
+        if (modal) modal.removeEventListener('keydown', trapFocus);
     }
 
     // --- Filtering ---
@@ -1370,21 +1439,12 @@ if ('serviceWorker' in navigator) {
         // District
         var districtVal = $('filterDistrict') ? $('filterDistrict').value : '';
         if (districtVal) {
-            if (districtVal === 'other') {
-                results = results.filter(function (s) {
-                    for (var i = 0; i < s.addresses.length; i++) {
-                        if (!s.addresses[i].zip.match(/^40/)) return true;
-                    }
-                    return false;
-                });
-            } else {
-                results = results.filter(function (s) {
-                    for (var i = 0; i < s.addresses.length; i++) {
-                        if (s.addresses[i].zip === districtVal) return true;
-                    }
-                    return false;
-                });
-            }
+            results = results.filter(function (s) {
+                for (var i = 0; i < s.addresses.length; i++) {
+                    if ((s.addresses[i].zip || '').trim() === districtVal) return true;
+                }
+                return false;
+            });
         }
 
         // Feature
@@ -1514,6 +1574,42 @@ if ('serviceWorker' in navigator) {
         // Update map title
         var mapTitle = document.querySelector('#karte .section-title');
         if (mapTitle) mapTitle.textContent = (state.lang === 'de' ? 'Studios auf der Karte — ' : state.lang === 'en' ? 'Studios on the Map — ' : state.lang === 'it' ? 'Studi sulla mappa — ' : 'Studios sur la carte — ') + name;
+
+        // Hide Basel-specific guide content for other cantons
+        var isBasel = state.currentCanton === 'basel-stadt';
+        var guideDistricts = document.querySelector('.guide-districts');
+        if (guideDistricts) guideDistricts.style.display = isBasel ? '' : 'none';
+        var quartiereHeading = document.getElementById('yoga-quartiere-basel');
+        if (quartiereHeading) quartiereHeading.style.display = isBasel ? '' : 'none';
+        var weitereFragenHeading = document.getElementById('weitere-fragen');
+        if (weitereFragenHeading) weitereFragenHeading.style.display = isBasel ? '' : 'none';
+        var guideFaqList = document.querySelector('#guide .faq-list');
+        if (guideFaqList) guideFaqList.style.display = isBasel ? '' : 'none';
+
+        // Hide Basel-specific guide text paragraphs for other cantons
+        var guideContent = document.querySelector('.guide-content');
+        if (guideContent) {
+            var paragraphs = guideContent.querySelectorAll(':scope > p');
+            for (var pi = 0; pi < paragraphs.length; pi++) {
+                paragraphs[pi].style.display = isBasel ? '' : 'none';
+            }
+            var anfaengerHeading = document.getElementById('yoga-anfaenger-tipps');
+            if (anfaengerHeading) anfaengerHeading.style.display = isBasel ? '' : 'none';
+            var guideTips = guideContent.querySelector('.guide-tips');
+            if (guideTips) guideTips.style.display = isBasel ? '' : 'none';
+        }
+    }
+
+    function getMinDropInPrice() {
+        var min = Infinity;
+        for (var i = 0; i < state.studios.length; i++) {
+            var p = state.studios[i].pricing;
+            if (p && p.single) {
+                var val = parseFloat(p.single);
+                if (!isNaN(val) && val < min) min = val;
+            }
+        }
+        return min === Infinity ? '25' : String(Math.round(min));
     }
 
     function renderGuideStats() {
@@ -1539,7 +1635,7 @@ if ('serviceWorker' in navigator) {
             '<div class="guide-stat-card"><div class="guide-stat-number">' + count + '</div><div class="guide-stat-label">Yoga-Studios in ' + escapeHtml(name) + '</div></div>' +
             '<div class="guide-stat-card"><div class="guide-stat-number">' + styleCount + '</div><div class="guide-stat-label">' + (state.lang === 'de' ? 'Verschiedene Yoga-Stile' : state.lang === 'en' ? 'Different Yoga Styles' : state.lang === 'it' ? 'Stili di yoga diversi' : 'Styles de yoga différents') + '</div></div>' +
             '<div class="guide-stat-card"><div class="guide-stat-number">' + dropInCount + '</div><div class="guide-stat-label">Drop-in Studios</div></div>' +
-            '<div class="guide-stat-card"><div class="guide-stat-number">CHF 25</div><div class="guide-stat-label">' + (state.lang === 'de' ? 'Drop-in ab diesem Preis' : state.lang === 'en' ? 'Drop-in from this price' : state.lang === 'it' ? 'Drop-in da questo prezzo' : 'Drop-in à partir de ce prix') + '</div></div>';
+            '<div class="guide-stat-card"><div class="guide-stat-number">CHF ' + getMinDropInPrice() + '</div><div class="guide-stat-label">' + (state.lang === 'de' ? 'Drop-in ab diesem Preis' : state.lang === 'en' ? 'Drop-in from this price' : state.lang === 'it' ? 'Drop-in da questo prezzo' : 'Drop-in à partir de ce prix') + '</div></div>';
     }
 
     function renderGuideTable() {
@@ -1963,7 +2059,7 @@ if ('serviceWorker' in navigator) {
                 '<strong style="font-size:14px;">' + escapeHtml(studio.name) + '</strong><br>' +
                 '<span style="font-size:12px;color:#666;">' + escapeHtml(addressText) + '</span><br>' +
                 '<span style="font-size:11px;color:#6B5B95;">' + studio.styles.slice(0, 3).join(', ') + (studio.styles.length > 3 ? '...' : '') + '</span><br>' +
-                (studio.website ? '<a href="' + escapeHtml(studio.website) + '" target="_blank" rel="noopener" style="font-size:12px;">Website &rarr;</a>' : '') +
+                (studio.website ? '<a href="' + escapeHtml(studio.website) + '" target="_blank" rel="noopener noreferrer" style="font-size:12px;">Website &rarr;</a>' : '') +
                 '</div>';
 
             L.marker([studio.lat, studio.lng], { icon: yogaIcon })
@@ -2329,18 +2425,7 @@ if ('serviceWorker' in navigator) {
             });
         }
 
-        // Style links in footer
-        var styleLinks = document.querySelectorAll('[data-style-link]');
-        for (var sl = 0; sl < styleLinks.length; sl++) {
-            styleLinks[sl].addEventListener('click', (function (link) {
-                return function (e) {
-                    e.preventDefault();
-                    filterByStyle(link.getAttribute('data-style-link'));
-                    var studios = $('studios');
-                    if (studios) studios.scrollIntoView({ behavior: 'smooth' });
-                };
-            })(styleLinks[sl]));
-        }
+        // Style links in footer — let them navigate to their href (yoga/ pages)
     }
 
     // --- Geolocation: Find nearest studios ---
@@ -2400,14 +2485,27 @@ if ('serviceWorker' in navigator) {
         var url = studio.website || window.location.href;
         if (navigator.share) {
             navigator.share({ title: studio.name, text: text, url: url }).catch(function () {});
+        } else if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text + '\n' + url).then(function () {
+                alert(state.lang === 'de' ? 'Link kopiert!' : 'Link copied!');
+            }).catch(function () {
+                fallbackCopy(text + '\n' + url);
+            });
         } else {
-            var ta = document.createElement('textarea');
-            ta.value = text + '\n' + url;
-            document.body.appendChild(ta); ta.select();
-            document.execCommand('copy');
-            document.body.removeChild(ta);
-            alert(state.lang === 'de' ? 'Link kopiert!' : 'Link copied!');
+            fallbackCopy(text + '\n' + url);
         }
+    }
+
+    function fallbackCopy(text) {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(ta);
+        alert(state.lang === 'de' ? 'Link kopiert!' : 'Link copied!');
     }
 
     // --- Calendar ---

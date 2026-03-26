@@ -294,7 +294,10 @@
       "WebFetch(domain:explorekeywords.com)",
       "WebFetch(domain:adtargeting.io)",
       "WebFetch(domain:yolawo.de)",
-      "WebFetch(domain:www.santoshamarketing.co.uk)"
+      "WebFetch(domain:www.santoshamarketing.co.uk)",
+      "Bash(find /Users/andrea/ClaudeWork/JogaKurseBasel/data -name *.json -type f)",
+      "WebFetch(domain:www.yogashashin.ch)",
+      "WebFetch(domain:theyogarden.ch)"
     ]
   }
 }

@@ -3,7 +3,7 @@
 Yoga Kurse Basel — Studio Schedule & Price Scraper
 Scrapes schedule and pricing data from yoga studio websites across all Swiss cantons.
 Processes all canton-specific data files (data/studios_*.json).
-Designed to run via GitHub Actions 4 times daily.
+Designed to run via GitHub Actions 2x weekly (Monday & Thursday).
 """
 
 import json
