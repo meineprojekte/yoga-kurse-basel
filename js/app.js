@@ -832,7 +832,6 @@ if ('serviceWorker' in navigator) {
         var tbody = $('comparisonBody');
         if (!tbody) return;
 
-        // Get studios with verified pricing, sorted by single price
         var studiosWithPrice = state.studios.filter(function(s) {
             return s.active !== false && s.pricing && s.pricing.verified && s.pricing.single;
         }).sort(function(a, b) {
@@ -844,6 +843,12 @@ if ('serviceWorker' in navigator) {
             return;
         }
 
+        var lblSingle = t('pricing.single');
+        var lbl10 = t('pricing.card_10');
+        var lblMonthly = t('pricing.monthly');
+        var lblTrial = t('pricing.trial');
+        var lblStyles = t('comparison.styles');
+
         var html = '';
         for (var i = 0; i < studiosWithPrice.length; i++) {
             var s = studiosWithPrice[i];
@@ -852,17 +857,19 @@ if ('serviceWorker' in navigator) {
             var styles = (s.styles || []).slice(0, 3).join(', ');
             if (s.styles && s.styles.length > 3) styles += ' +' + (s.styles.length - 3);
             var sourceUrl = p.source || s.website || '';
+            var rowClass = i % 2 === 0 ? 'comp-row-even' : 'comp-row-odd';
 
-            html += '<tr>';
-            html += '<td class="comp-studio"><strong>' + escapeHtml(s.name) + '</strong>';
-            if (addr) html += '<br><small>' + escapeHtml(addr) + '</small>';
+            html += '<tr class="' + rowClass + '">';
+            html += '<td class="comp-studio" data-label="#">' + (i + 1) + '</td>';
+            html += '<td class="comp-name" data-label="Studio"><strong>' + escapeHtml(s.name) + '</strong>';
+            if (addr) html += ' <span class="comp-city">(' + escapeHtml(addr) + ')</span>';
             html += '</td>';
-            html += '<td class="comp-price">' + (p.single ? '<strong>CHF ' + p.single + '</strong>' : '—') + '</td>';
-            html += '<td class="comp-price">' + (p.card_10 ? 'CHF ' + p.card_10 : '—') + '</td>';
-            html += '<td class="comp-price">' + (p.monthly ? 'CHF ' + p.monthly : '—') + '</td>';
-            html += '<td class="comp-price">' + (p.trial !== undefined && p.trial !== null ? (p.trial === 0 ? t('pricing.trial') + ' gratis' : 'CHF ' + p.trial) : '—') + '</td>';
-            html += '<td class="comp-styles"><small>' + escapeHtml(styles) + '</small></td>';
-            html += '<td class="comp-link">';
+            html += '<td class="comp-price" data-label="' + lblSingle + '">' + (p.single ? '<strong>CHF ' + p.single + '</strong>' : '—') + '</td>';
+            html += '<td class="comp-price" data-label="' + lbl10 + '">' + (p.card_10 ? 'CHF ' + p.card_10 : '—') + '</td>';
+            html += '<td class="comp-price" data-label="' + lblMonthly + '">' + (p.monthly ? 'CHF ' + p.monthly : '—') + '</td>';
+            html += '<td class="comp-price" data-label="' + lblTrial + '">' + (p.trial !== undefined && p.trial !== null ? (p.trial === 0 ? 'Gratis' : 'CHF ' + p.trial) : '—') + '</td>';
+            html += '<td class="comp-styles" data-label="' + lblStyles + '"><small>' + escapeHtml(styles) + '</small></td>';
+            html += '<td class="comp-link" data-label="Link">';
             if (sourceUrl) {
                 html += '<a href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noopener noreferrer" class="comp-website-link" title="' + t('comparison.visit') + '">';
                 html += '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>';
