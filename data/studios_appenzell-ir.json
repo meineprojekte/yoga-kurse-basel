@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T10:59:56.369827+00:00",
+  "last_updated": "2026-03-27T17:17:56.286963+00:00",
   "studios": [
     {
       "id": "studio-mond-appenzell",
@@ -102,13 +102,23 @@
       "last_scraped": "2026-03-22T10:59:48.371847+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T10:59:56.369801+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T17:17:56.286810+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yoga-claudia.ch/",
-          "schedule": "https://www.yoga-claudia.ch/kursangebote/appenzell"
+          "schedule": "https://www.yoga-claudia.ch/kursangebote/appenzell",
+          "pricing": "https://www.yoga-claudia.ch/kursangebote/appenzell"
         }
+      },
+      "pricing": {
+        "single": 10,
+        "card_10": 10,
+        "trial": 10,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
+        "last_checked": "2026-03-27T17:17:56.286810+00:00"
       }
     },
     {

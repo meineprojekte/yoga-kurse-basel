@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-26T23:00:31.090489+00:00",
+  "last_updated": "2026-03-27T13:30:52.548874+00:00",
   "studios": [
     {
       "id": "yoga-dinamico-lugano",
@@ -98,17 +98,23 @@
       "last_scraped": "2026-03-22T11:10:54.899260+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:10:58.935464+00:00",
-        "last_price_check": "2026-03-26T22:05:05.916034+00:00",
+        "last_price_check": "2026-03-27T13:30:50.049471+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yogalugano.ch/",
-          "schedule": "https://www.yogalugano.ch/schedule"
+          "schedule": "https://www.yogalugano.ch/schedule",
+          "pricing": "https://www.yogalugano.ch/prezzi"
         }
       },
       "pricing": {
-        "verified": false,
-        "currency": "CHF"
+        "single": 10,
+        "card_10": 30,
+        "trial": 30,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.yogalugano.ch/prezzi",
+        "last_checked": "2026-03-27T13:30:50.049471+00:00"
       }
     },
     {
@@ -151,13 +157,21 @@
       "last_scraped": "2026-03-22T11:11:00.888589+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:11:05.906257+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T13:30:52.548687+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://slow-move.ch/",
-          "schedule": "https://slow-move.ch/classes/"
+          "schedule": "https://slow-move.ch/classes/",
+          "pricing": "https://slow-move.ch/"
         }
+      },
+      "pricing": {
+        "single": 40,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://slow-move.ch/",
+        "last_checked": "2026-03-27T13:30:52.548687+00:00"
       }
     },
     {

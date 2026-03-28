@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-26T23:00:31.090489+00:00",
+  "last_updated": "2026-03-27T17:23:28.091466+00:00",
   "studios": [
     {
       "id": "yama-yoga-bern",
@@ -45,13 +45,23 @@
       "last_scraped": "2026-03-22T11:02:39.160770+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:02:40.001837+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T17:21:56.618561+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yamabern.ch/",
-          "schedule": "https://www.yamabern.ch/schedule"
+          "schedule": "https://www.yamabern.ch/schedule",
+          "pricing": "https://www.yamabern.ch/plans-pricing"
         }
+      },
+      "pricing": {
+        "card_10": 5,
+        "monthly": 5,
+        "trial": 65,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.yamabern.ch/plans-pricing",
+        "last_checked": "2026-03-27T17:21:56.618561+00:00"
       }
     },
     {
@@ -103,13 +113,23 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T11:02:43.219515+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T12:54:41.495883+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yoga-carmen.ch/",
-          "schedule": "https://www.yoga-carmen.ch/stundenplan"
+          "schedule": "https://www.yoga-carmen.ch/stundenplan",
+          "pricing": "https://www.yoga-carmen.ch/yoga-kurs-bern"
         }
+      },
+      "pricing": {
+        "single": 30,
+        "card_10": 15,
+        "trial": 15,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.yoga-carmen.ch/yoga-kurs-bern",
+        "last_checked": "2026-03-27T12:54:41.495883+00:00"
       }
     },
     {
@@ -230,13 +250,21 @@
       "last_scraped": "2026-03-22T11:02:45.420525+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:02:48.531980+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T17:22:01.777706+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://svarupa.com/",
-          "schedule": "https://svarupa.com/events-classes/"
+          "schedule": "https://svarupa.com/events-classes/",
+          "pricing": "https://svarupa.com/event/2026-05-10/handstand-workshop/"
         }
+      },
+      "pricing": {
+        "single": 40,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://svarupa.com/event/2026-05-10/handstand-workshop/",
+        "last_checked": "2026-03-27T17:22:01.777706+00:00"
       }
     },
     {
@@ -283,13 +311,21 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T11:02:51.542584+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T12:36:34.245157+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yogveda.ch/",
-          "schedule": "https://www.yogveda.ch/stundenplan"
+          "schedule": "https://www.yogveda.ch/stundenplan",
+          "pricing": "https://www.yogveda.ch/"
         }
+      },
+      "pricing": {
+        "single": 30,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.yogveda.ch/",
+        "last_checked": "2026-03-27T12:36:34.245157+00:00"
       }
     },
     {
@@ -436,13 +472,24 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T11:03:04.091500+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T17:22:24.778019+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.hotyogachristophherren.ch/",
-          "schedule": "https://www.hotyogachristophherren.ch/stundenplan"
+          "schedule": "https://www.hotyogachristophherren.ch/stundenplan",
+          "pricing": "https://www.hotyogachristophherren.ch/angebot-yoga-infrarot"
         }
+      },
+      "pricing": {
+        "single": 5,
+        "card_10": 38,
+        "monthly": 38,
+        "trial": 38,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.hotyogachristophherren.ch/angebot-yoga-infrarot",
+        "last_checked": "2026-03-27T17:22:24.778019+00:00"
       }
     },
     {
@@ -584,7 +631,7 @@
       ],
       "_meta": {
         "last_scraped": "2026-03-22T11:03:15.401186+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T17:22:26.801766+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -594,8 +641,16 @@
         ],
         "source_urls": {
           "website": "https://yogamarket.ch/",
-          "schedule": "https://yogamarket.ch/klassen/stundenplan/"
+          "schedule": "https://yogamarket.ch/klassen/stundenplan/",
+          "pricing": "https://yogamarket.ch/workshop"
         }
+      },
+      "pricing": {
+        "single": 23,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://yogamarket.ch/workshop",
+        "last_checked": "2026-03-27T17:22:26.801766+00:00"
       }
     },
     {
@@ -1562,13 +1617,21 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T11:03:23.543949+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T17:22:59.022599+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.insideoutside.ch/",
-          "schedule": "https://www.eversports.ch/s/inside-outside-yoga-pilates-and-more"
+          "schedule": "https://www.eversports.ch/s/inside-outside-yoga-pilates-and-more",
+          "pricing": "https://www.eversports.ch/s/inside-outside-yoga-pilates-and-more"
         }
+      },
+      "pricing": {
+        "trial": 30,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.eversports.ch/s/inside-outside-yoga-pilates-and-more",
+        "last_checked": "2026-03-27T17:22:59.022599+00:00"
       }
     },
     {
@@ -1667,13 +1730,21 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T11:03:28.469032+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T12:36:34.246791+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
           "website": "https://origin8.ch/",
-          "schedule": "https://origin8.ch/stundenplan"
+          "schedule": "https://origin8.ch/stundenplan",
+          "pricing": "https://origin8.ch/"
         }
+      },
+      "pricing": {
+        "single": 20,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://origin8.ch/",
+        "last_checked": "2026-03-27T12:36:34.246791+00:00"
       }
     },
     {
@@ -1771,13 +1842,21 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T11:03:31.876247+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T12:58:57.971881+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.natha-yoga-schweiz.ch/",
-          "schedule": "https://www.natha-yoga-schweiz.ch/stundenplan"
+          "schedule": "https://www.natha-yoga-schweiz.ch/stundenplan",
+          "pricing": "https://www.natha-yoga-schweiz.ch/"
         }
+      },
+      "pricing": {
+        "single": 29,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.natha-yoga-schweiz.ch/",
+        "last_checked": "2026-03-27T12:58:57.971881+00:00"
       }
     },
     {
@@ -1933,21 +2012,21 @@
       "scrape_status": "scraped",
       "last_scraped": "2026-03-22T11:03:39.859794+00:00",
       "pricing": {
+        "single": 195,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.devi-yoga-health.ch/prices",
-        "last_checked": "2026-03-22T11:03:41.541300+00:00",
-        "abo": 40.0
+        "source": "https://www.devi-yoga-health.ch/",
+        "last_checked": "2026-03-27T12:59:00.382358+00:00"
       },
       "_meta": {
         "last_scraped": "2026-03-22T11:03:41.541384+00:00",
-        "last_price_check": "2026-03-22T11:03:41.541384+00:00",
+        "last_price_check": "2026-03-27T12:59:00.382358+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.devi-yoga-health.ch/",
           "schedule": "https://www.devi-yoga-health.ch/Stundenplan.htm",
-          "pricing": "https://www.devi-yoga-health.ch/prices"
+          "pricing": "https://www.devi-yoga-health.ch/"
         }
       }
     },
@@ -1993,13 +2072,21 @@
       "last_scraped": "2026-03-22T11:03:42.876234+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:03:44.562652+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T17:23:26.529290+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.innerlightacademy.ch/",
-          "schedule": "https://www.innerlightacademy.ch/stundenplan"
+          "schedule": "https://www.innerlightacademy.ch/stundenplan",
+          "pricing": "https://www.innerlightacademy.ch/preise"
         }
+      },
+      "pricing": {
+        "single": 18,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.innerlightacademy.ch/preise",
+        "last_checked": "2026-03-27T17:23:26.529290+00:00"
       }
     },
     {
@@ -2103,13 +2190,24 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T11:03:47.394387+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T17:23:28.091124+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
           "website": "https://energieyoga.ch/",
-          "schedule": "https://energieyoga.ch/stundenplan"
+          "schedule": "https://energieyoga.ch/stundenplan",
+          "pricing": "https://energieyoga.ch/b3b.html"
         }
+      },
+      "pricing": {
+        "single": 25,
+        "card_10": 25,
+        "monthly": 50,
+        "trial": 25,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://energieyoga.ch/b3b.html",
+        "last_checked": "2026-03-27T17:23:28.091124+00:00"
       }
     },
     {
@@ -2222,17 +2320,23 @@
       "last_scraped": "2026-03-22T11:03:49.055522+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:03:56.805116+00:00",
-        "last_price_check": "2026-03-26T21:49:51.954537+00:00",
+        "last_price_check": "2026-03-27T12:59:43.521691+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yoga-room.ch/",
-          "schedule": "https://www.yoga-room.ch/stundenplan"
+          "schedule": "https://www.yoga-room.ch/stundenplan",
+          "pricing": "https://www.yoga-room.ch/preise"
         }
       },
       "pricing": {
-        "verified": false,
-        "currency": "CHF"
+        "single": 30,
+        "card_10": 30,
+        "trial": 50,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.yoga-room.ch/preise",
+        "last_checked": "2026-03-27T12:59:43.521691+00:00"
       }
     },
     {
@@ -2281,13 +2385,23 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T11:03:57.812200+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T12:59:52.118692+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yogabude.ch/",
-          "schedule": "https://www.eversports.ch/s/yoga-bude"
+          "schedule": "https://www.eversports.ch/s/yoga-bude",
+          "pricing": "https://www.yogabude.ch/abo-preise"
         }
+      },
+      "pricing": {
+        "single": 29,
+        "card_10": 29,
+        "trial": 29,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.yogabude.ch/abo-preise",
+        "last_checked": "2026-03-27T12:59:52.118692+00:00"
       }
     },
     {

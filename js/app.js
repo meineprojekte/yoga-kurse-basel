@@ -125,7 +125,12 @@ if ('serviceWorker' in navigator) {
             'comparison.website': 'Website',
             'comparison.no_data': 'Keine Preisdaten für diesen Kanton verfügbar',
             'comparison.visit': 'Zur Website',
-            'comparison.sort_cheapest': 'Günstigste zuerst'
+            'comparison.sort_cheapest': 'Günstigste zuerst',
+            'studios_found': 'Studios gefunden',
+            'fav_only': 'Favoriten',
+            'show_fav_only': 'Nur Favoriten anzeigen',
+            'page_title': 'Yoga Schweiz 2026 — {count} Studios in allen 26 Kantonen',
+            'page_desc': 'Alle Yoga-Studios und Kurse in der Schweiz. Stundenplan, interaktive Karte, PDF-Export. Wöchentlich aktualisiert.'
         },
         en: {
             'nav.studios': 'Studios',
@@ -240,7 +245,12 @@ if ('serviceWorker' in navigator) {
             'comparison.website': 'Website',
             'comparison.no_data': 'No price data available for this canton',
             'comparison.visit': 'Visit website',
-            'comparison.sort_cheapest': 'Cheapest first'
+            'comparison.sort_cheapest': 'Cheapest first',
+            'studios_found': 'studios found',
+            'fav_only': 'Favorites',
+            'show_fav_only': 'Show favorites only',
+            'page_title': 'Yoga Switzerland 2026 — {count} Studios in all 26 Cantons',
+            'page_desc': 'All yoga studios and classes in Switzerland. Schedule, interactive map, PDF export. Updated weekly.'
         },
         it: {
             'nav.studios': 'Studi',
@@ -355,7 +365,12 @@ if ('serviceWorker' in navigator) {
             'comparison.website': 'Sito web',
             'comparison.no_data': 'Nessun dato sui prezzi per questo cantone',
             'comparison.visit': 'Vai al sito',
-            'comparison.sort_cheapest': 'Più economici prima'
+            'comparison.sort_cheapest': 'Più economici prima',
+            'studios_found': 'studi trovati',
+            'fav_only': 'Preferiti',
+            'show_fav_only': 'Mostra solo preferiti',
+            'page_title': 'Yoga Svizzera 2026 — {count} studi in tutti i 26 cantoni',
+            'page_desc': 'Tutti gli studi e i corsi di yoga in Svizzera. Orario, mappa interattiva, export PDF. Aggiornato settimanalmente.'
         },
         fr: {
             'nav.studios': 'Studios',
@@ -470,7 +485,12 @@ if ('serviceWorker' in navigator) {
             'comparison.website': 'Site web',
             'comparison.no_data': 'Aucune donnée de prix pour ce canton',
             'comparison.visit': 'Voir le site',
-            'comparison.sort_cheapest': 'Moins chers d\'abord'
+            'comparison.sort_cheapest': 'Moins chers d\'abord',
+            'studios_found': 'studios trouvés',
+            'fav_only': 'Favoris',
+            'show_fav_only': 'Afficher uniquement les favoris',
+            'page_title': 'Yoga Suisse 2026 — {count} studios dans les 26 cantons',
+            'page_desc': 'Tous les studios et cours de yoga en Suisse. Horaire, carte interactive, export PDF. Mis à jour chaque semaine.'
         }
     };
 
@@ -485,7 +505,9 @@ if ('serviceWorker' in navigator) {
         searchQuery: '',
         map: null,
         markers: [],
-        currentCanton: 'basel-stadt'
+        currentCanton: 'basel-stadt',
+        favoritesOnly: false,
+        modalTrigger: null
     };
 
     // Canton data file mapping
@@ -763,10 +785,14 @@ if ('serviceWorker' in navigator) {
     }
 
     // --- SEO: Update URL hash for canton (each canton = unique URL) ---
-    function updateURLHash() {
+    function updateURLHash(skipPush) {
         var hash = '#canton/' + state.currentCanton;
         if (window.location.hash !== hash) {
-            history.replaceState(null, '', hash);
+            if (skipPush) {
+                history.replaceState({ canton: state.currentCanton }, '', hash);
+            } else {
+                history.pushState({ canton: state.currentCanton }, '', hash);
+            }
         }
     }
 
@@ -879,6 +905,71 @@ if ('serviceWorker' in navigator) {
             html += '</tr>';
         }
         tbody.innerHTML = html;
+        // Initialize column sorting after rendering (#11)
+        initComparisonSort();
+    }
+
+    // --- Comparison Table Sorting (#11) ---
+    var comparisonStudiosData = [];
+
+    function initComparisonSort() {
+        var table = document.querySelector('.comparison-table');
+        if (!table) return;
+        var headers = table.querySelectorAll('th[data-sort]');
+        headers.forEach(function (th) {
+            // Remove old listener by cloning (idempotent re-init)
+            var newTh = th.cloneNode(true);
+            th.parentNode.replaceChild(newTh, th);
+            newTh.style.cursor = 'pointer';
+            newTh.addEventListener('click', function () {
+                var key = this.dataset.sort;
+                var currentDir = this.classList.contains('sort-asc') ? 'asc' :
+                                 this.classList.contains('sort-desc') ? 'desc' : 'none';
+                // Reset all headers
+                var allHeaders = table.querySelectorAll('th[data-sort]');
+                allHeaders.forEach(function (h) { h.classList.remove('sort-asc', 'sort-desc'); });
+                // Toggle direction
+                var newDir = currentDir === 'asc' ? 'desc' : 'asc';
+                this.classList.add('sort-' + newDir);
+                sortComparisonTable(key, newDir);
+            });
+        });
+    }
+
+    function sortComparisonTable(key, direction) {
+        var tbody = $('comparisonBody');
+        if (!tbody) return;
+        var rows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+        rows.sort(function (a, b) {
+            var aVal, bVal;
+            if (key === 'name') {
+                aVal = (a.querySelector('.comp-name') || {}).textContent || '';
+                bVal = (b.querySelector('.comp-name') || {}).textContent || '';
+                return direction === 'asc' ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+            }
+            // Price columns — extract numeric value
+            var colIndex;
+            switch (key) {
+                case 'single': colIndex = 2; break;
+                case 'card10': colIndex = 3; break;
+                case 'monthly': colIndex = 4; break;
+                case 'trial': colIndex = 5; break;
+                default: colIndex = 2;
+            }
+            var aCells = a.querySelectorAll('td');
+            var bCells = b.querySelectorAll('td');
+            aVal = aCells[colIndex] ? parseFloat(aCells[colIndex].textContent.replace(/[^0-9.]/g, '')) : Infinity;
+            bVal = bCells[colIndex] ? parseFloat(bCells[colIndex].textContent.replace(/[^0-9.]/g, '')) : Infinity;
+            if (isNaN(aVal)) aVal = Infinity;
+            if (isNaN(bVal)) bVal = Infinity;
+            return direction === 'asc' ? aVal - bVal : bVal - aVal;
+        });
+        // Re-append sorted rows and re-stripe
+        for (var i = 0; i < rows.length; i++) {
+            rows[i].className = i % 2 === 0 ? 'comp-row-even' : 'comp-row-odd';
+            rows[i].querySelector('.comp-studio').textContent = (i + 1);
+            tbody.appendChild(rows[i]);
+        }
     }
 
     function renderCantonIntro() {
@@ -934,12 +1025,12 @@ if ('serviceWorker' in navigator) {
     }
 
     // --- Canton Switching ---
-    function switchCanton(cantonId) {
+    function switchCanton(cantonId, skipPush) {
         state.currentCanton = cantonId;
         try { localStorage.setItem('yogabasel-canton', cantonId); } catch (e) {}
 
         // Update URL hash for SEO
-        updateURLHash();
+        updateURLHash(skipPush);
 
         // Update title immediately (before data loads)
         updatePageTitle();
@@ -1027,6 +1118,20 @@ if ('serviceWorker' in navigator) {
         renderCantonIntro();
     }
 
+    // --- Skeleton Loading (#7) ---
+    function showSkeletonLoading() {
+        var grid = $('studiosGrid');
+        if (!grid) return;
+        grid.innerHTML = '';
+        for (var i = 0; i < 6; i++) {
+            var skeleton = document.createElement('div');
+            skeleton.className = 'skeleton-card';
+            skeleton.innerHTML = '<div class="skeleton-line skeleton-line-title"></div><div class="skeleton-line skeleton-line-text"></div><div class="skeleton-line skeleton-line-text-short"></div><div class="skeleton-line skeleton-line-tags"></div>';
+            skeleton.setAttribute('aria-hidden', 'true');
+            grid.appendChild(skeleton);
+        }
+    }
+
     // --- Data Loading ---
     function loadJSON(url, callback) {
         var xhr = new XMLHttpRequest();
@@ -1057,6 +1162,7 @@ if ('serviceWorker' in navigator) {
 
     function loadData(fileName) {
         fileName = fileName || 'studios_basel.json';
+        showSkeletonLoading();
         var encUrl = './data/' + fileName.replace('.json', '.enc.json');
         var plainUrl = './data/' + fileName;
 
@@ -1106,6 +1212,8 @@ if ('serviceWorker' in navigator) {
         try { renderCantonIntro(); } catch (e) { console.error('[YogaSchweiz] Error in renderCantonIntro:', e); }
         try { renderComparisonTable(); } catch (e) { console.error('[YogaSchweiz] Error in renderComparisonTable:', e); }
         try { initMap(); } catch (e) { console.error('[YogaSchweiz] Error in initMap:', e); }
+        try { createFavFilterButton(); } catch (e) { console.error('[YogaSchweiz] Error in createFavFilterButton:', e); }
+        try { checkStudioDeepLink(); } catch (e) { console.error('[YogaSchweiz] Error in checkStudioDeepLink:', e); }
     }
 
     function showError(msg) {
@@ -1165,33 +1273,85 @@ if ('serviceWorker' in navigator) {
         }
     }
 
+    // --- aria-live region for screen reader announcements (#6) ---
+    function announceResults(count) {
+        var liveRegion = document.getElementById('sr-live-region');
+        if (!liveRegion) {
+            liveRegion = document.createElement('div');
+            liveRegion.id = 'sr-live-region';
+            liveRegion.setAttribute('aria-live', 'polite');
+            liveRegion.setAttribute('aria-atomic', 'true');
+            liveRegion.className = 'sr-only';
+            liveRegion.style.cssText = 'position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;';
+            document.body.appendChild(liveRegion);
+        }
+        liveRegion.textContent = count + ' ' + t('studios_found');
+    }
+
     // --- Rendering ---
+    var gridDelegationBound = false;
+
     function renderStudios() {
         var grid = $('studiosGrid');
         var noResults = $('noResults');
         var visibleCount = $('visibleCount');
         if (!grid) return;
-
-        grid.innerHTML = '';
+        // Remove SEO pre-rendered content
+        var prerendered = document.getElementById('prerendered-studios');
+        if (prerendered) prerendered.remove();
 
         if (state.filteredStudios.length === 0) {
+            grid.innerHTML = '';
             if (noResults) noResults.hidden = false;
             if (visibleCount) visibleCount.textContent = '0';
+            announceResults(0);
             return;
         }
 
         if (noResults) noResults.hidden = true;
         if (visibleCount) visibleCount.textContent = state.filteredStudios.length;
 
+        // Use DocumentFragment for batch rendering (#4)
+        var fragment = document.createDocumentFragment();
         for (var i = 0; i < state.filteredStudios.length; i++) {
-            grid.appendChild(createStudioCard(state.filteredStudios[i], i));
+            fragment.appendChild(createStudioCard(state.filteredStudios[i], i));
         }
+        grid.innerHTML = '';
+        grid.appendChild(fragment);
+
+        // Event delegation for studio cards (#3) — bind once
+        if (!gridDelegationBound) {
+            grid.addEventListener('click', function (e) {
+                var card = e.target.closest('.studio-card');
+                if (!card) return;
+                if (e.target.closest('.fav-btn') || e.target.closest('.share-btn')) return;
+                var studioId = card.dataset.studioId;
+                var studio = state.studios.find(function (s) { return s.id === studioId; });
+                if (studio) openModal(studio);
+            });
+            grid.addEventListener('keydown', function (e) {
+                if (e.key !== 'Enter' && e.key !== ' ') return;
+                var card = e.target.closest('.studio-card');
+                if (!card) return;
+                e.preventDefault();
+                var studioId = card.dataset.studioId;
+                var studio = state.studios.find(function (s) { return s.id === studioId; });
+                if (studio) openModal(studio);
+            });
+            gridDelegationBound = true;
+        }
+
+        // Announce results to screen readers (#6)
+        announceResults(state.filteredStudios.length);
     }
 
     function createStudioCard(studio, index) {
         var card = document.createElement('article');
         card.className = 'studio-card';
         card.setAttribute('data-studio-id', studio.id);
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('role', 'button');
+        card.setAttribute('aria-label', studio.name + ' - ' + (studio.addresses && studio.addresses[0] && studio.addresses[0].city ? studio.addresses[0].city : ''));
         card.style.animationDelay = Math.min(index * 0.03, 0.3) + 's';
 
         var address = studio.addresses[0] || {};
@@ -1245,7 +1405,7 @@ if ('serviceWorker' in navigator) {
                 '<span class="studio-link">' + t('card.details') + ' &rarr;</span>' +
             '</div>';
 
-        // Fav/Share buttons (stop propagation so card click doesn't fire)
+        // Fav/Share buttons — delegation handles card click, these use stopPropagation
         var favBtn = card.querySelector('.fav-btn');
         if (favBtn) favBtn.addEventListener('click', (function (s) {
             return function (ev) { ev.stopPropagation(); toggleFavorite(s.id, ev.target); };
@@ -1255,9 +1415,7 @@ if ('serviceWorker' in navigator) {
             return function (ev) { ev.stopPropagation(); shareStudio(s); };
         })(studio));
 
-        card.addEventListener('click', (function (s) {
-            return function () { openModal(s); };
-        })(studio));
+        // Individual click listener removed — event delegation on grid handles it (#3)
 
         return card;
     }
@@ -1284,7 +1442,10 @@ if ('serviceWorker' in navigator) {
 
         var html = '';
         for (var k = 0; k < entries.length; k++) {
+            var styleKey = entries[k][0].toLowerCase().replace(/[^a-z]/g, '').replace('hot', 'bikram').replace('yoganidra', 'nidra');
+            var svgIcon = '<svg class="style-card-icon" width="48" height="48" aria-hidden="true"><use href="./img/yoga-styles.svg#yoga-' + styleKey + '"></use></svg>';
             html += '<div class="style-card" role="button" aria-label="' + escapeHtml(entries[k][0]) + ' — ' + entries[k][1] + ' ' + t('styles.studios_count') + '" tabindex="0" data-style="' + escapeHtml(entries[k][0]) + '">' +
+                svgIcon +
                 '<div class="style-card-name">' + escapeHtml(entries[k][0]) + '</div>' +
                 '<div class="style-card-count">' + entries[k][1] + ' ' + t('styles.studios_count') + '</div>' +
             '</div>';
@@ -1313,6 +1474,12 @@ if ('serviceWorker' in navigator) {
         var overlay = $('modalOverlay');
         var content = $('modalContent');
         if (!overlay || !content) return;
+
+        // Save trigger element for focus return (#5)
+        state.modalTrigger = document.activeElement;
+
+        // Push history state for modal (#1, #9)
+        history.pushState({ modal: studio.id, canton: state.currentCanton }, '', '#studio/' + encodeURIComponent(studio.id));
 
         var addresses = '';
         for (var i = 0; i < studio.addresses.length; i++) {
@@ -1472,16 +1639,29 @@ if ('serviceWorker' in navigator) {
 
     function closeModal() {
         var overlay = $('modalOverlay');
-        if (overlay) overlay.classList.remove('active');
+        if (!overlay || !overlay.classList.contains('active')) return;
+        overlay.classList.remove('active');
         document.body.classList.remove('modal-open');
         var modal = $('studioModal');
         if (modal) modal.removeEventListener('keydown', trapFocus);
+        // Restore focus to trigger element (#5)
+        if (state.modalTrigger) {
+            state.modalTrigger.focus();
+            state.modalTrigger = null;
+        }
+        // Navigate back to remove the #studio/ hash (#1)
+        history.back();
     }
 
     // --- Filtering ---
     function applyFilters() {
         var results = state.studios.slice();
         var searchQ = state.searchQuery.toLowerCase().trim();
+
+        // Favorites filter (#8)
+        if (state.favoritesOnly) {
+            results = results.filter(function (s) { return isFavorite(s.id); });
+        }
 
         // Search
         if (searchQ) {
@@ -1737,11 +1917,11 @@ if ('serviceWorker' in navigator) {
         var top = sorted.slice(0, Math.min(10, sorted.length));
 
         var html = '<table><thead><tr>' +
-            '<th>Studio</th>' +
-            '<th>' + (state.lang === 'de' ? 'Ort' : state.lang === 'en' ? 'Location' : state.lang === 'it' ? 'Luogo' : 'Lieu') + '</th>' +
-            '<th>' + (state.lang === 'de' ? 'Stile' : 'Styles') + '</th>' +
-            '<th>Drop-in</th>' +
-            '<th>' + (state.lang === 'de' ? 'Sprachen' : state.lang === 'en' ? 'Languages' : state.lang === 'it' ? 'Lingue' : 'Langues') + '</th>' +
+            '<th scope="col">Studio</th>' +
+            '<th scope="col">' + (state.lang === 'de' ? 'Ort' : state.lang === 'en' ? 'Location' : state.lang === 'it' ? 'Luogo' : 'Lieu') + '</th>' +
+            '<th scope="col">' + (state.lang === 'de' ? 'Stile' : 'Styles') + '</th>' +
+            '<th scope="col">Drop-in</th>' +
+            '<th scope="col">' + (state.lang === 'de' ? 'Sprachen' : state.lang === 'en' ? 'Languages' : state.lang === 'it' ? 'Lingue' : 'Langues') + '</th>' +
             '</tr></thead><tbody>';
 
         for (var i = 0; i < top.length; i++) {
@@ -1821,6 +2001,9 @@ if ('serviceWorker' in navigator) {
         var list = $('scheduleList');
         var info = $('scheduleInfo');
         if (!list) return;
+        // Remove SEO pre-rendered schedule
+        var prerenderedSched = document.getElementById('prerendered-schedule');
+        if (prerenderedSched) prerenderedSched.remove();
 
         // Get the set of filtered studio IDs
         var filteredIds = {};
@@ -2207,18 +2390,40 @@ if ('serviceWorker' in navigator) {
             margin: { left: 10, right: 10 }
         });
 
-        doc.save('yoga-studios-basel-' + now.replace(/\./g, '-') + '.pdf');
+        var cantonName = state.currentCanton || 'schweiz';
+        doc.save('yoga-studios-' + cantonName + '-' + now.replace(/\./g, '-') + '.pdf');
     }
 
-    // --- Theme ---
+    // --- Theme (#12: auto dark mode detection) ---
     function applyTheme() {
-        document.documentElement.setAttribute('data-theme', state.theme);
+        var saved = null;
+        try { saved = localStorage.getItem('yogabasel-theme'); } catch (e) {}
+        if (saved) {
+            state.theme = saved;
+            document.documentElement.setAttribute('data-theme', saved);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            state.theme = 'dark';
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            document.documentElement.setAttribute('data-theme', state.theme);
+        }
+        // Listen for system theme changes
+        if (window.matchMedia) {
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+                var userOverride = null;
+                try { userOverride = localStorage.getItem('yogabasel-theme'); } catch (ex) {}
+                if (!userOverride) {
+                    state.theme = e.matches ? 'dark' : 'light';
+                    document.documentElement.setAttribute('data-theme', state.theme);
+                }
+            });
+        }
     }
 
     function toggleTheme() {
         state.theme = state.theme === 'light' ? 'dark' : 'light';
         try { localStorage.setItem('yogabasel-theme', state.theme); } catch (e) {}
-        applyTheme();
+        document.documentElement.setAttribute('data-theme', state.theme);
     }
 
     // --- Language ---
@@ -2267,6 +2472,14 @@ if ('serviceWorker' in navigator) {
         renderStylesOverview();
         updatePageTitle();
         updateCantonTitles();
+        renderComparisonTable();
+        // Update fav filter button label
+        var favFilterBtn = document.getElementById('favFilterBtn');
+        if (favFilterBtn) {
+            var span = favFilterBtn.querySelector('[data-i18n="fav_only"]');
+            if (span) span.textContent = t('fav_only');
+            favFilterBtn.setAttribute('aria-label', t('show_fav_only'));
+        }
         // Re-render schedule if a day is selected
         var activeDay = document.querySelector('#scheduleDays .day-btn.active');
         if (activeDay) renderSchedule(activeDay.getAttribute('data-day'));
@@ -2565,6 +2778,44 @@ if ('serviceWorker' in navigator) {
     }
     function isFavorite(studioId) { return getFavorites().indexOf(studioId) !== -1; }
 
+    // --- Favorites Filter (#8) ---
+    function toggleFavoritesFilter() {
+        state.favoritesOnly = !state.favoritesOnly;
+        var btn = document.getElementById('favFilterBtn');
+        if (btn) btn.classList.toggle('active', state.favoritesOnly);
+        applyFilters();
+    }
+
+    function createFavFilterButton() {
+        var resultsBar = document.querySelector('.results-bar .results-actions') || document.querySelector('.results-bar');
+        if (!resultsBar || document.getElementById('favFilterBtn')) return;
+        var btn = document.createElement('button');
+        btn.id = 'favFilterBtn';
+        btn.className = 'fav-filter-btn';
+        btn.innerHTML = '\u2605 <span data-i18n="fav_only">' + t('fav_only') + '</span>';
+        btn.setAttribute('aria-label', t('show_fav_only'));
+        btn.addEventListener('click', toggleFavoritesFilter);
+        var pdfBtn = document.getElementById('exportPdf');
+        if (pdfBtn) {
+            pdfBtn.parentNode.insertBefore(btn, pdfBtn);
+        } else {
+            resultsBar.appendChild(btn);
+        }
+    }
+
+    // --- Studio Deep Linking (#9) ---
+    function checkStudioDeepLink() {
+        var hash = window.location.hash;
+        var match = hash.match(/#studio\/(.+)/);
+        if (match) {
+            var studioId = decodeURIComponent(match[1]);
+            var studio = state.studios.find(function (s) { return s.id === studioId; });
+            if (studio) {
+                setTimeout(function () { openModal(studio); }, 500);
+            }
+        }
+    }
+
     // --- Share ---
     function shareStudio(studio) {
         var text = studio.name + ' \u2014 Yoga in ' + getCantonDisplayName();
@@ -2673,9 +2924,9 @@ if ('serviceWorker' in navigator) {
 
     // Canton switch tracking
     var origSwitchCanton = switchCanton;
-    switchCanton = function (cantonId) {
+    switchCanton = function (cantonId, skipPush) {
         analytics.trackCanton(cantonId);
-        origSwitchCanton(cantonId);
+        origSwitchCanton(cantonId, skipPush);
     };
     // Re-expose
     window.findNearestStudios = findNearestStudios;
@@ -2762,5 +3013,46 @@ if ('serviceWorker' in navigator) {
             analytics.trackTimeOnPage();
         }
     });
+
+    // --- popstate: browser back/forward support ---
+    window.addEventListener('popstate', function (e) {
+        if (e.state && e.state.modal) {
+            // A modal state — try to open the studio modal
+            var studio = state.studios.find(function (s) { return s.id === e.state.modal; });
+            if (studio) openModal(studio);
+        } else if (e.state && e.state.canton) {
+            // Switch canton without pushing another state
+            var select = document.getElementById('cantonSelect');
+            if (select) select.value = e.state.canton;
+            switchCanton(e.state.canton, true);
+        } else {
+            // No modal state — close any open modal
+            var overlay = $('modalOverlay');
+            if (overlay && overlay.classList.contains('active')) {
+                closeModalWithoutBack();
+            }
+            // Try to detect canton from hash
+            var hash = window.location.hash;
+            if (hash && hash.indexOf('#canton/') === 0) {
+                var cantonId = hash.replace('#canton/', '');
+                var sel = document.getElementById('cantonSelect');
+                if (sel) sel.value = cantonId;
+                switchCanton(cantonId, true);
+            }
+        }
+    });
+
+    // Close modal without calling history.back() (used by popstate)
+    function closeModalWithoutBack() {
+        var overlay = $('modalOverlay');
+        if (overlay) overlay.classList.remove('active');
+        document.body.classList.remove('modal-open');
+        var modal = $('studioModal');
+        if (modal) modal.removeEventListener('keydown', trapFocus);
+        if (state.modalTrigger) {
+            state.modalTrigger.focus();
+            state.modalTrigger = null;
+        }
+    }
 
 })();

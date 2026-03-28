@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-26T23:09:02.072737+00:00",
+  "last_updated": "2026-03-27T17:21:18.662344+00:00",
   "studios": [
     {
       "id": "byoga",
@@ -449,7 +449,7 @@
       ],
       "_meta": {
         "last_scraped": "2026-03-22T11:01:03.448509+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T17:19:13.483892+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -467,8 +467,17 @@
         ],
         "source_urls": {
           "website": "https://en.voltayoga.ch/",
-          "schedule": "https://en.voltayoga.ch/stundenplan"
+          "schedule": "https://en.voltayoga.ch/stundenplan",
+          "pricing": "https://en.voltayoga.ch/preiseundabos"
         }
+      },
+      "pricing": {
+        "single": 20,
+        "monthly": 20,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://en.voltayoga.ch/preiseundabos",
+        "last_checked": "2026-03-27T17:19:13.483892+00:00"
       }
     },
     {
@@ -580,13 +589,23 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T11:01:04.873236+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T12:44:51.654206+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.meyohouse.com/",
-          "schedule": "https://www.meyohouse.com/"
+          "schedule": "https://www.meyohouse.com/",
+          "pricing": "https://www.meyohouse.com/preise"
         }
+      },
+      "pricing": {
+        "single": 10,
+        "card_10": 6,
+        "trial": 6,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.meyohouse.com/preise",
+        "last_checked": "2026-03-27T12:44:51.654206+00:00"
       }
     },
     {
@@ -636,13 +655,21 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T11:01:07.919977+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T17:19:15.428698+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yoga-atelier-basel.ch/",
-          "schedule": "https://www.yoga-atelier-basel.ch/angebot/woechentliche-kurse/"
+          "schedule": "https://www.yoga-atelier-basel.ch/angebot/woechentliche-kurse/",
+          "pricing": "https://www.yoga-atelier-basel.ch/workshops/"
         }
+      },
+      "pricing": {
+        "single": 24.04,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.yoga-atelier-basel.ch/workshops/",
+        "last_checked": "2026-03-27T17:19:15.428698+00:00"
       }
     },
     {
@@ -760,13 +787,22 @@
       "last_scraped": "2026-03-22T11:01:13.014814+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:01:16.035778+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T17:19:17.553745+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://lotosyoga.ch/",
-          "schedule": "https://lotosyoga.ch/kalender/"
+          "schedule": "https://lotosyoga.ch/kalender/",
+          "pricing": "https://lotosyoga.ch/kosten-der-yoga-therapie-ausbildung/"
         }
+      },
+      "pricing": {
+        "single": 960,
+        "trial": 960,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://lotosyoga.ch/kosten-der-yoga-therapie-ausbildung/",
+        "last_checked": "2026-03-27T17:19:17.553745+00:00"
       }
     },
     {
@@ -812,17 +848,24 @@
       "last_scraped": "2026-03-22T11:01:18.602502+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:01:19.306276+00:00",
-        "last_price_check": "2026-03-26T21:42:14.334336+00:00",
+        "last_price_check": "2026-03-27T17:19:24.243346+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yogaimgaertnerhuus.com",
-          "schedule": "https://www.yogaimgaertnerhuus.com"
+          "schedule": "https://www.yogaimgaertnerhuus.com",
+          "pricing": "https://www.yogaimgaertnerhuus.com/pricing-plans/list"
         }
       },
       "pricing": {
-        "verified": false,
-        "currency": "CHF"
+        "single": 17,
+        "card_10": 80,
+        "monthly": 12,
+        "trial": 45,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.yogaimgaertnerhuus.com/pricing-plans/list",
+        "last_checked": "2026-03-27T17:19:24.243346+00:00"
       }
     },
     {
@@ -871,13 +914,22 @@
       "last_scraped": "2026-03-22T11:01:20.255044+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:01:26.274888+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T17:19:29.525264+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://secretgarden-yoga.ch/en/",
-          "schedule": "https://secretgarden-yoga.ch/en/stundenplan/"
+          "schedule": "https://secretgarden-yoga.ch/en/stundenplan/",
+          "pricing": "https://secretgarden-yoga.ch/en/product/10er-paket/"
         }
+      },
+      "pricing": {
+        "single": 250,
+        "card_10": 200,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://secretgarden-yoga.ch/en/product/10er-paket/",
+        "last_checked": "2026-03-27T17:19:29.525264+00:00"
       }
     },
     {
@@ -1204,13 +1256,22 @@
       "last_scraped": "2026-03-22T11:01:45.003047+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:01:53.002639+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T17:19:42.668962+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://ayalgayoga.ch/en/",
-          "schedule": "https://ayalgayoga.ch/en/"
+          "schedule": "https://ayalgayoga.ch/en/",
+          "pricing": "https://ayalgayoga.ch/en/iyengar-yoga/"
         }
+      },
+      "pricing": {
+        "single": 35,
+        "card_10": 240,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://ayalgayoga.ch/en/iyengar-yoga/",
+        "last_checked": "2026-03-27T17:19:42.668962+00:00"
       }
     },
     {
@@ -1573,13 +1634,21 @@
       "last_scraped": "2026-03-22T11:02:08.638030+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:02:09.401267+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T17:20:30.028353+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.foodchangeseverything.me/",
-          "schedule": "https://www.foodchangeseverything.me/class-schedule"
+          "schedule": "https://www.foodchangeseverything.me/class-schedule",
+          "pricing": "https://www.foodchangeseverything.me/shop"
         }
+      },
+      "pricing": {
+        "single": 15,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.foodchangeseverything.me/shop",
+        "last_checked": "2026-03-27T17:20:30.028353+00:00"
       }
     },
     {
@@ -1906,23 +1975,24 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "monthly": 55.0,
+        "single": 20,
+        "monthly": 20,
         "currency": "CHF",
         "verified": true,
-        "source": "https://gyym.ch/en",
-        "last_checked": "2026-03-22T11:02:32.160570+00:00"
+        "source": "https://gyym.ch/preise-und-services/preise-abo/",
+        "last_checked": "2026-03-27T17:21:18.661264+00:00"
       },
       "scrape_status": "scraped",
       "last_scraped": "2026-03-22T11:02:24.156946+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:02:32.160702+00:00",
-        "last_price_check": "2026-03-22T11:02:32.160702+00:00",
+        "last_price_check": "2026-03-27T17:21:18.661264+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://gyym.ch/en/",
           "schedule": "https://gyym.ch/en/",
-          "pricing": "https://gyym.ch/en"
+          "pricing": "https://gyym.ch/preise-und-services/preise-abo/"
         }
       }
     },

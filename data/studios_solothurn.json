@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-26T23:00:31.090489+00:00",
+  "last_updated": "2026-03-27T13:26:48.696804+00:00",
   "studios": [
     {
       "id": "studio-30-solothurn",
@@ -97,17 +97,17 @@
       "scrape_status": "scraped",
       "last_scraped": "2026-03-22T11:09:36.212800+00:00",
       "pricing": {
+        "single": 20,
+        "card_10": 20,
+        "trial": 20,
         "currency": "CHF",
         "verified": true,
         "source": "https://www.sunshine-yoga.ch/preise",
-        "last_checked": "2026-03-22T11:09:37.150435+00:00",
-        "abo": 145.0,
-        "card_10": 200.0,
-        "trial": 20.0
+        "last_checked": "2026-03-27T13:26:00.825918+00:00"
       },
       "_meta": {
         "last_scraped": "2026-03-22T11:09:37.150494+00:00",
-        "last_price_check": "2026-03-22T11:09:37.150494+00:00",
+        "last_price_check": "2026-03-27T13:26:00.825918+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -429,12 +429,22 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T11:09:58.686610+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T13:26:48.695465+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
-          "website": "https://www.pilateszentrale.ch/"
+          "website": "https://www.pilateszentrale.ch/",
+          "pricing": "https://www.pilateszentrale.ch/preise"
         }
+      },
+      "pricing": {
+        "single": 20,
+        "card_10": 20,
+        "trial": 20,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.pilateszentrale.ch/preise",
+        "last_checked": "2026-03-27T13:26:48.695465+00:00"
       }
     }
   ]

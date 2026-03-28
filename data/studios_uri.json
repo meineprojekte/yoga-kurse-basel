@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-26T22:47:06.267673+00:00",
+  "last_updated": "2026-03-27T13:32:53.095533+00:00",
   "studios": [
     {
       "id": "anantara-yogastudio-altdorf",
@@ -39,16 +39,22 @@
       "last_scraped": "2026-03-22T11:11:25.670612+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:11:27.328212+00:00",
-        "last_price_check": "2026-03-26T22:31:50.935669+00:00",
+        "last_price_check": "2026-03-27T13:32:53.095218+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
-          "website": "https://www.anantara-yogastudio.ch/"
+          "website": "https://www.anantara-yogastudio.ch/",
+          "pricing": "https://www.anantara-yogastudio.ch/preise"
         }
       },
       "pricing": {
-        "verified": false,
-        "currency": "CHF"
+        "single": 15,
+        "card_10": 15,
+        "trial": 15,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.anantara-yogastudio.ch/preise",
+        "last_checked": "2026-03-27T13:32:53.095218+00:00"
       }
     },
     {

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T11:10:26.575825+00:00",
+  "last_updated": "2026-03-27T13:28:48.496925+00:00",
   "studios": [
     {
       "id": "yoga-in-der-altstadt-st-gallen",
@@ -42,12 +42,20 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T11:09:59.196083+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T13:27:10.931385+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
-          "website": "https://www.yoga-in-der-altstadt.ch/"
+          "website": "https://www.yoga-in-der-altstadt.ch/",
+          "pricing": "https://www.yoga-in-der-altstadt.ch/"
         }
+      },
+      "pricing": {
+        "trial": 50,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.yoga-in-der-altstadt.ch/",
+        "last_checked": "2026-03-27T13:27:10.931385+00:00"
       }
     },
     {
@@ -844,12 +852,21 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T11:10:21.199727+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T13:28:46.435700+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
-          "website": "https://www.poweryogastgallen.com/"
+          "website": "https://www.poweryogastgallen.com/",
+          "pricing": "https://www.poweryogastgallen.com/"
         }
+      },
+      "pricing": {
+        "single": 30,
+        "card_10": 30,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.poweryogastgallen.com/",
+        "last_checked": "2026-03-27T13:28:46.435700+00:00"
       }
     },
     {
@@ -947,23 +964,24 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "card_10": 250.0,
+        "single": 275,
+        "card_10": 25,
         "trial": 25,
         "currency": "CHF",
         "verified": true,
-        "source": "https://hotyoga4u.ch",
-        "last_checked": "2026-03-22T11:10:26.575663+00:00"
+        "source": "https://hotyoga4u.ch/",
+        "last_checked": "2026-03-27T13:28:48.496635+00:00"
       },
       "scrape_status": "scraped",
       "last_scraped": "2026-03-22T11:10:24.704812+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:10:26.575809+00:00",
-        "last_price_check": "2026-03-22T11:10:26.575809+00:00",
+        "last_price_check": "2026-03-27T13:28:48.496635+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://hotyoga4u.ch/",
-          "pricing": "https://hotyoga4u.ch"
+          "pricing": "https://hotyoga4u.ch/"
         }
       }
     }

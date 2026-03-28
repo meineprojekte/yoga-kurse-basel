@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-26T23:00:31.090489+00:00",
+  "last_updated": "2026-03-27T13:18:55.394360+00:00",
   "studios": [
     {
       "id": "yogastudio-luzern",
@@ -44,13 +44,22 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T11:07:22.674062+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T13:15:50.206978+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yogastudio.ch/",
-          "schedule": "https://www.yogastudio.ch/stundenplan"
+          "schedule": "https://www.yogastudio.ch/stundenplan",
+          "pricing": "https://www.yogastudio.ch/"
         }
+      },
+      "pricing": {
+        "single": 20,
+        "trial": 20,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.yogastudio.ch/",
+        "last_checked": "2026-03-27T13:15:50.206978+00:00"
       }
     },
     {
@@ -248,13 +257,21 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T11:07:29.416657+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T13:16:17.496382+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
           "website": "https://originalhotyoga.net/",
-          "schedule": "https://www.eversports.ch/s/original-hot-yoga-luzern"
+          "schedule": "https://www.eversports.ch/s/original-hot-yoga-luzern",
+          "pricing": "https://originalhotyoga.net/"
         }
+      },
+      "pricing": {
+        "trial": 50,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://originalhotyoga.net/",
+        "last_checked": "2026-03-27T13:16:17.496382+00:00"
       }
     },
     {
@@ -537,21 +554,21 @@
       "scrape_status": "scraped",
       "last_scraped": "2026-03-22T11:07:50.153263+00:00",
       "pricing": {
+        "trial": 25,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.yogaschuleluzern.ch",
-        "last_checked": "2026-03-22T11:07:52.407852+00:00",
-        "trial": 27.0
+        "source": "https://www.yogaschuleluzern.ch/",
+        "last_checked": "2026-03-27T13:17:57.661643+00:00"
       },
       "_meta": {
         "last_scraped": "2026-03-22T11:07:52.407951+00:00",
-        "last_price_check": "2026-03-22T11:07:52.407951+00:00",
+        "last_price_check": "2026-03-27T13:17:57.661643+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yogaschuleluzern.ch/",
           "schedule": "https://www.yogaschuleluzern.ch/yoga-am-loewengraben-15/",
-          "pricing": "https://www.yogaschuleluzern.ch"
+          "pricing": "https://www.yogaschuleluzern.ch/"
         }
       }
     },
@@ -828,17 +845,21 @@
       "last_scraped": "2026-03-22T11:08:27.093536+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:08:29.115193+00:00",
-        "last_price_check": "2026-03-26T21:57:01.126199+00:00",
+        "last_price_check": "2026-03-27T13:18:55.393831+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.pureyouyoga.ch/",
-          "schedule": "https://www.pureyouyoga.ch/en/abo-preise"
+          "schedule": "https://www.pureyouyoga.ch/en/abo-preise",
+          "pricing": "https://www.pureyouyoga.ch/"
         }
       },
       "pricing": {
-        "verified": false,
-        "currency": "CHF"
+        "single": 12,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.pureyouyoga.ch/",
+        "last_checked": "2026-03-27T13:18:55.393831+00:00"
       }
     },
     {

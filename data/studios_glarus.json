@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T11:06:40.902094+00:00",
+  "last_updated": "2026-03-27T17:27:23.488321+00:00",
   "studios": [
     {
       "id": "yogaamfluss-ennenda",
@@ -40,13 +40,23 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T11:06:37.281666+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T17:27:23.487438+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yoga-am-fluss.ch/",
-          "schedule": "https://www.yoga-am-fluss.ch/angebot/stundenplan/"
+          "schedule": "https://www.yoga-am-fluss.ch/angebot/stundenplan/",
+          "pricing": "https://www.yoga-am-fluss.ch/angebot/preise/"
         }
+      },
+      "pricing": {
+        "single": 20,
+        "card_10": 20,
+        "trial": 28,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.yoga-am-fluss.ch/angebot/preise/",
+        "last_checked": "2026-03-27T17:27:23.487438+00:00"
       }
     },
     {

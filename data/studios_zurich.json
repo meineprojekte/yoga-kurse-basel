@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-26T23:00:31.090489+00:00",
+  "last_updated": "2026-03-27T13:56:11.484486+00:00",
   "studios": [
     {
       "id": "airyoga",
@@ -313,15 +313,15 @@
       "scrape_status": "scraped",
       "last_scraped": "2026-03-22T11:15:24.916989+00:00",
       "pricing": {
+        "trial": 70,
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogastudiozuerich.ch/angebot",
-        "last_checked": "2026-03-22T11:15:30.560118+00:00",
-        "abo": 90.0
+        "last_checked": "2026-03-27T13:45:32.958073+00:00"
       },
       "_meta": {
         "last_scraped": "2026-03-22T11:15:30.560189+00:00",
-        "last_price_check": "2026-03-22T11:15:30.560189+00:00",
+        "last_price_check": "2026-03-27T13:45:32.958073+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -1091,23 +1091,22 @@
       "scrape_status": "scraped",
       "last_scraped": "2026-03-22T11:16:24.546661+00:00",
       "pricing": {
+        "single": 30,
+        "trial": 200,
         "currency": "CHF",
         "verified": true,
-        "source": "https://yoga-spirit.ch/prices",
-        "last_checked": "2026-03-22T11:16:26.155771+00:00",
-        "trial": 25.0,
-        "abo": 25.0,
-        "monthly": 38.0
+        "source": "https://yoga-spirit.ch/preise/",
+        "last_checked": "2026-03-27T13:47:39.837491+00:00"
       },
       "_meta": {
         "last_scraped": "2026-03-22T11:16:26.155841+00:00",
-        "last_price_check": "2026-03-22T11:16:26.155841+00:00",
+        "last_price_check": "2026-03-27T13:47:39.837491+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://yoga-spirit.ch/",
           "schedule": "https://yoga-spirit.ch/",
-          "pricing": "https://yoga-spirit.ch/prices"
+          "pricing": "https://yoga-spirit.ch/preise/"
         }
       }
     },
@@ -1423,17 +1422,22 @@
       "last_scraped": "2026-03-22T11:16:38.491248+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:16:48.040591+00:00",
-        "last_price_check": "2026-03-26T22:38:49.389468+00:00",
+        "last_price_check": "2026-03-27T13:48:16.601105+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yogacity.ch/",
-          "schedule": "https://www.yogacity.ch/"
+          "schedule": "https://www.yogacity.ch/",
+          "pricing": "https://www.yogacity.ch/preise"
         }
       },
       "pricing": {
-        "verified": false,
-        "currency": "CHF"
+        "single": 60,
+        "card_10": 80,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.yogacity.ch/preise",
+        "last_checked": "2026-03-27T13:48:16.601105+00:00"
       }
     },
     {
@@ -1715,17 +1719,18 @@
       "classes": [],
       "scrape_status": "no_data",
       "pricing": {
+        "single": 20,
+        "card_10": 25,
+        "monthly": 80,
+        "trial": 30,
         "currency": "CHF",
         "verified": true,
         "source": "https://www.planetyoga.ch/preise",
-        "last_checked": "2026-03-22T11:17:16.053505+00:00",
-        "monthly": 159.0,
-        "abo": 80.0,
-        "card_10": 235.0
+        "last_checked": "2026-03-27T13:51:29.682672+00:00"
       },
       "_meta": {
         "last_scraped": "2026-03-22T11:17:16.053568+00:00",
-        "last_price_check": "2026-03-22T11:17:16.053568+00:00",
+        "last_price_check": "2026-03-27T13:51:29.682672+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
@@ -1915,13 +1920,23 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T11:17:27.514774+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T13:52:23.519562+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
           "website": "https://yogainabag.com/",
-          "schedule": "https://www.eversports.ch/s/yoga-in-a-bag-altstetten"
+          "schedule": "https://www.eversports.ch/s/yoga-in-a-bag-altstetten",
+          "pricing": "https://yogainabag.com/preise/"
         }
+      },
+      "pricing": {
+        "single": 5,
+        "monthly": 65,
+        "trial": 75,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://yogainabag.com/preise/",
+        "last_checked": "2026-03-27T13:52:23.519562+00:00"
       }
     },
     {
@@ -1965,17 +1980,23 @@
       "last_scraped": "2026-03-22T11:17:28.639977+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:17:35.717812+00:00",
-        "last_price_check": "2026-03-26T22:42:01.334968+00:00",
+        "last_price_check": "2026-03-27T13:52:27.196683+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://yogainabag.com/",
-          "schedule": "https://yogainabag.com/en/studios/"
+          "schedule": "https://yogainabag.com/en/studios/",
+          "pricing": "https://yogainabag.com/preise/"
         }
       },
       "pricing": {
-        "verified": false,
-        "currency": "CHF"
+        "single": 5,
+        "monthly": 65,
+        "trial": 75,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://yogainabag.com/preise/",
+        "last_checked": "2026-03-27T13:52:27.196683+00:00"
       }
     },
     {
@@ -2094,7 +2115,7 @@
       ],
       "_meta": {
         "last_scraped": "2026-03-22T11:17:41.876299+00:00",
-        "last_price_check": "2026-03-26T22:42:07.252328+00:00",
+        "last_price_check": "2026-03-27T13:52:55.026552+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -2108,12 +2129,18 @@
         ],
         "source_urls": {
           "website": "https://www.elevate-studio.ch/",
-          "schedule": "https://www.elevate-studio.ch/"
+          "schedule": "https://www.elevate-studio.ch/",
+          "pricing": "https://www.elevate-studio.ch/prices"
         }
       },
       "pricing": {
-        "verified": false,
-        "currency": "CHF"
+        "single": 5,
+        "card_10": 10,
+        "trial": 21,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.elevate-studio.ch/prices",
+        "last_checked": "2026-03-27T13:52:55.026552+00:00"
       }
     },
     {
@@ -2155,17 +2182,22 @@
       "last_scraped": "2026-03-22T11:17:44.613313+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:17:45.377774+00:00",
-        "last_price_check": "2026-03-26T22:42:09.818169+00:00",
+        "last_price_check": "2026-03-27T13:52:57.043011+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.radiantheartstudio.com/",
-          "schedule": "https://www.radiantheartstudio.com/schedule-1"
+          "schedule": "https://www.radiantheartstudio.com/schedule-1",
+          "pricing": "https://www.radiantheartstudio.com/"
         }
       },
       "pricing": {
-        "verified": false,
-        "currency": "CHF"
+        "single": 50,
+        "card_10": 400,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.radiantheartstudio.com/",
+        "last_checked": "2026-03-27T13:52:57.043011+00:00"
       }
     },
     {
@@ -2696,17 +2728,21 @@
       "last_scraped": "2026-03-22T11:18:15.681391+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:18:21.919277+00:00",
-        "last_price_check": "2026-03-26T22:43:06.648612+00:00",
+        "last_price_check": "2026-03-27T13:55:37.861954+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.flowfabrik.ch/",
-          "schedule": "https://www.flowfabrik.ch/"
+          "schedule": "https://www.flowfabrik.ch/",
+          "pricing": "https://www.flowfabrik.ch/"
         }
       },
       "pricing": {
-        "verified": false,
-        "currency": "CHF"
+        "single": 10,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.flowfabrik.ch/",
+        "last_checked": "2026-03-27T13:55:37.861954+00:00"
       }
     },
     {
@@ -2980,7 +3016,7 @@
       ],
       "_meta": {
         "last_scraped": "2026-03-22T11:18:55.901613+00:00",
-        "last_price_check": "2026-03-26T22:43:15.497039+00:00",
+        "last_price_check": "2026-03-27T13:56:11.483946+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -2998,12 +3034,18 @@
         ],
         "source_urls": {
           "website": "https://yogainabag.com/",
-          "schedule": "https://yogainabag.com/en/studios/winterthur/"
+          "schedule": "https://yogainabag.com/en/studios/winterthur/",
+          "pricing": "https://yogainabag.com/preise/"
         }
       },
       "pricing": {
-        "verified": false,
-        "currency": "CHF"
+        "single": 5,
+        "monthly": 65,
+        "trial": 75,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://yogainabag.com/preise/",
+        "last_checked": "2026-03-27T13:56:11.483946+00:00"
       }
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T11:09:23.043248+00:00",
+  "last_updated": "2026-03-27T13:24:23.666530+00:00",
   "studios": [
     {
       "id": "ayana-yoga-schaffhausen",
@@ -94,15 +94,15 @@
       "scrape_status": "scraped",
       "last_scraped": "2026-03-22T11:09:19.093624+00:00",
       "pricing": {
+        "single": 120,
         "currency": "CHF",
         "verified": true,
         "source": "https://yogalicht.ch/preise",
-        "last_checked": "2026-03-22T11:09:19.751985+00:00",
-        "abo": 300.0
+        "last_checked": "2026-03-27T13:24:23.666303+00:00"
       },
       "_meta": {
         "last_scraped": "2026-03-22T11:09:19.752045+00:00",
-        "last_price_check": "2026-03-22T11:09:19.752045+00:00",
+        "last_price_check": "2026-03-27T13:24:23.666303+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {

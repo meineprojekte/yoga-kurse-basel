@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6B5B95">
+    <link rel="manifest" href="../../manifest.json">
     <title>Yoga in Tessin 2026 — 7 Studios, Kurse &amp; Stundenplan | Yoga Schweiz</title>
     <meta name="description" content="Yoga im Kanton Tessin (TI): 7 Studios, 89 Kurse pro Woche. Bellinzona, Breganzona, Cureglia, Losone, Lugano. Stile: Ashtanga, Hatha, Hatha...">
     <meta name="keywords" content="Yoga Tessin, Yoga TI, Yoga Bellinzona, Yoga Studio Tessin, Yoga Kurse Tessin, Yoga Bellinzona, Yoga Breganzona, Yoga Cureglia, Yoga Losone, Yoga Lugano, Ashtanga, Hatha, Hatha (Iyengar-based alignment), Meditation, Mindfulness, Pilates, Yoga Schweiz">
     <meta name="author" content="YogaSchweiz">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://meineprojekte.github.io/yoga-kurse-basel/kanton/ticino/">
 
     <!-- Hreflang -->
@@ -27,10 +29,12 @@
     <meta property="og:image" content="https://meineprojekte.github.io/yoga-kurse-basel/img/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Yoga Schweiz — Studios und Kurse">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Yoga in Tessin — 7 Studios">
+    <meta name="twitter:image" content="https://meineprojekte.github.io/yoga-kurse-basel/img/og-image.png">
     <meta name="twitter:description" content="Yoga im Kanton Tessin (TI): 7 Studios, 89 Kurse pro Woche. Bellinzona, Breganzona, Cureglia, Losone, Lugano. Stile: Ashtanga, Hatha, Hatha...">
 
     <!-- Schema.org WebPage -->
@@ -137,7 +141,7 @@
     <script type="application/ld+json">
     {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "SportsActivityLocation",
   "name": "Yoga Dinamico e Natural Wellness",
   "address": {
     "@type": "PostalAddress",
@@ -158,7 +162,7 @@
     <script type="application/ld+json">
     {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "SportsActivityLocation",
   "name": "Yogal Lugano - Ashtanga Yoga",
   "address": {
     "@type": "PostalAddress",
@@ -179,7 +183,7 @@
     <script type="application/ld+json">
     {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "SportsActivityLocation",
   "name": "Slow Move Yoga & Wellness",
   "address": {
     "@type": "PostalAddress",
@@ -199,7 +203,7 @@
     <script type="application/ld+json">
     {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "SportsActivityLocation",
   "name": "Yoga Loft - SoulsinNature",
   "address": {
     "@type": "PostalAddress",
@@ -219,7 +223,7 @@
     <script type="application/ld+json">
     {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "SportsActivityLocation",
   "name": "Centro Annapurna",
   "address": {
     "@type": "PostalAddress",
@@ -239,7 +243,7 @@
     <script type="application/ld+json">
     {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "SportsActivityLocation",
   "name": "Yoga Vidya Swiss Locarno",
   "address": {
     "@type": "PostalAddress",
@@ -259,7 +263,7 @@
     <script type="application/ld+json">
     {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "SportsActivityLocation",
   "name": "Tanja Iovene Yoga - Bellinzona",
   "address": {
     "@type": "PostalAddress",
@@ -611,9 +615,12 @@
             .canton-hero h1 { font-size: 1.5rem; }
             .canton-stats { flex-direction: column; gap: 16px; }
         }
+            .skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); background: #6B5B95; color: #fff; padding: 8px 16px; border-radius: 0 0 8px 8px; z-index: 9999; font-size: 0.9rem; text-decoration: none; transition: top 0.2s; }
+        .skip-link:focus { top: 0; }
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
     <!-- Header -->
     <header class="canton-header">
         <div class="canton-header-inner">
@@ -632,6 +639,8 @@
         </div>
     </header>
 
+
+    <main id="main-content">
     <!-- Breadcrumb -->
     <div class="canton-container">
         <nav class="canton-breadcrumb" aria-label="Breadcrumb">
@@ -1437,6 +1446,8 @@
             </div>
         </div>
     </section>
+    </main>
+
 
     <!-- Footer -->
     <footer class="canton-footer">

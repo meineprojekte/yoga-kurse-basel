@@ -1,0 +1,1049 @@
+{
+  "_metadata": {
+    "run_date": "2026-03-27T13:56:11.487915+00:00",
+    "total_needed": 149,
+    "recovered_existing": 3,
+    "newly_scraped": 41,
+    "failed": 105
+  },
+  "results": [
+    {
+      "id": "aloha-yoga-aarau",
+      "canton": "aargau",
+      "status": "scraped",
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": 65,
+      "source": "https://www.alohayoga.ch/preise/"
+    },
+    {
+      "id": "co-yoga-space-aarau",
+      "canton": "aargau",
+      "status": "not_found",
+      "website": "https://coyogaspace.ch/"
+    },
+    {
+      "id": "my-yoga-garden-suhr",
+      "canton": "aargau",
+      "status": "scraped",
+      "single": 1100,
+      "card_10": 30,
+      "monthly": 1100,
+      "trial": null,
+      "source": "https://www.my-yoga-garden.ch/preise"
+    },
+    {
+      "id": "iyengar-yoga-aarau",
+      "canton": "aargau",
+      "status": "not_found",
+      "website": "https://yogaiyengar.ch/"
+    },
+    {
+      "id": "yoga-baden-stefanie-amrein",
+      "canton": "aargau",
+      "status": "not_found",
+      "website": "https://www.yogabaden.ch/"
+    },
+    {
+      "id": "namaste-yoga-baden",
+      "canton": "aargau",
+      "status": "scraped",
+      "single": 30,
+      "card_10": 180,
+      "monthly": null,
+      "trial": 15,
+      "source": "https://www.namaste-yoga-baden.ch/unsere-yoga-kurse/namaste-yoga-baden-preise-und-agbs/"
+    },
+    {
+      "id": "jetzt-yoga-baden",
+      "canton": "aargau",
+      "status": "scraped",
+      "single": 8,
+      "card_10": 38,
+      "monthly": 30,
+      "trial": 8,
+      "source": "https://www.jetzt.yoga/yogakurs-baden"
+    },
+    {
+      "id": "yoga-claudia-appenzell",
+      "canton": "appenzell-ir",
+      "status": "not_found",
+      "website": "https://www.yoga-claudia.ch/"
+    },
+    {
+      "id": "yoga-lotus-liestal",
+      "canton": "basel-landschaft",
+      "status": "scraped",
+      "single": null,
+      "card_10": 30,
+      "monthly": null,
+      "trial": null,
+      "source": "https://yogalotus-liestal.ch/preise-bernadette-sigrist-liestal-baselland/"
+    },
+    {
+      "id": "yoga-werkstatt-liestal",
+      "canton": "basel-landschaft",
+      "status": "not_found",
+      "website": "https://yoga-werkstatt.ch/"
+    },
+    {
+      "id": "jyoti-yoga-liestal",
+      "canton": "basel-landschaft",
+      "status": "scraped",
+      "single": 10,
+      "card_10": 10,
+      "monthly": null,
+      "trial": null,
+      "source": "https://www.jyotiyoga.ch/"
+    },
+    {
+      "id": "yoga-shanti-oberwil",
+      "canton": "basel-landschaft",
+      "status": "not_found",
+      "website": "https://www.yogashanti.ch/"
+    },
+    {
+      "id": "hathayoga-arlesheim",
+      "canton": "basel-landschaft",
+      "status": "not_found",
+      "website": "https://www.hathayoga-basel.ch/"
+    },
+    {
+      "id": "volta-yoga",
+      "canton": "basel",
+      "status": "not_found",
+      "website": "https://en.voltayoga.ch/"
+    },
+    {
+      "id": "meyo-house",
+      "canton": "basel",
+      "status": "scraped",
+      "single": 10,
+      "card_10": 6,
+      "monthly": null,
+      "trial": 6,
+      "source": "https://www.meyohouse.com/preise"
+    },
+    {
+      "id": "yoga-atelier",
+      "canton": "basel",
+      "status": "not_found",
+      "website": "https://www.yoga-atelier-basel.ch/"
+    },
+    {
+      "id": "lotos",
+      "canton": "basel",
+      "status": "not_found",
+      "website": "https://lotosyoga.ch/"
+    },
+    {
+      "id": "yoga-gaertnerhuus",
+      "canton": "basel",
+      "status": "not_found",
+      "website": "https://www.yogaimgaertnerhuus.com"
+    },
+    {
+      "id": "secret-garden",
+      "canton": "basel",
+      "status": "not_found",
+      "website": "https://secretgarden-yoga.ch/en/"
+    },
+    {
+      "id": "erlenyoga",
+      "canton": "basel",
+      "status": "not_found",
+      "website": "https://erlenyoga.ch/"
+    },
+    {
+      "id": "ayalga",
+      "canton": "basel",
+      "status": "not_found",
+      "website": "https://ayalgayoga.ch/en/"
+    },
+    {
+      "id": "kathrin-mathews",
+      "canton": "basel",
+      "status": "not_found",
+      "website": "https://www.kathrinmathews.com/"
+    },
+    {
+      "id": "mysore-club",
+      "canton": "basel",
+      "status": "not_found",
+      "website": "https://www.mysorebasel.ch/"
+    },
+    {
+      "id": "alessia-yoga",
+      "canton": "basel",
+      "status": "not_found",
+      "website": "https://www.alessiayoga.com/"
+    },
+    {
+      "id": "food-changes",
+      "canton": "basel",
+      "status": "not_found",
+      "website": "https://www.foodchangeseverything.me/"
+    },
+    {
+      "id": "mignon",
+      "canton": "basel",
+      "status": "not_found",
+      "website": "https://www.mignonbaby.com/"
+    },
+    {
+      "id": "katerina-wen",
+      "canton": "basel",
+      "status": "not_found",
+      "website": "https://www.katerinawen.com/"
+    },
+    {
+      "id": "gyym",
+      "canton": "basel",
+      "status": "scraped",
+      "single": null,
+      "card_10": null,
+      "monthly": 55,
+      "trial": null,
+      "source": "https://gyym.ch/en/"
+    },
+    {
+      "id": "klubschule",
+      "canton": "basel",
+      "status": "not_found",
+      "website": "https://www.klubschule.ch/"
+    },
+    {
+      "id": "sutra-house",
+      "canton": "basel",
+      "status": "not_found",
+      "website": "https://www.sutra-house.com/"
+    },
+    {
+      "id": "yoba",
+      "canton": "basel",
+      "status": "no_website"
+    },
+    {
+      "id": "yama-yoga-bern",
+      "canton": "bern",
+      "status": "not_found",
+      "website": "https://www.yamabern.ch/"
+    },
+    {
+      "id": "yoga-carmen-bern",
+      "canton": "bern",
+      "status": "scraped",
+      "single": 30,
+      "card_10": 15,
+      "monthly": null,
+      "trial": 15,
+      "source": "https://www.yoga-carmen.ch/yoga-kurs-bern"
+    },
+    {
+      "id": "svarupa-yoga-bern",
+      "canton": "bern",
+      "status": "not_found",
+      "website": "https://svarupa.com/"
+    },
+    {
+      "id": "yogaalaya-bern",
+      "canton": "bern",
+      "status": "not_found",
+      "website": "https://www.yoga-bern.ch/"
+    },
+    {
+      "id": "hot-yoga-christoph-herren",
+      "canton": "bern",
+      "status": "not_found",
+      "website": "https://www.hotyogachristophherren.ch/"
+    },
+    {
+      "id": "yogamarket-bern",
+      "canton": "bern",
+      "status": "scraped",
+      "single": null,
+      "card_10": 140,
+      "monthly": 250,
+      "trial": null,
+      "source": "https://yogamarket.ch/klassen/abos-preise/"
+    },
+    {
+      "id": "hrdayam-bern",
+      "canton": "bern",
+      "status": "not_found",
+      "website": "https://hrdayam.ch/"
+    },
+    {
+      "id": "inside-outside-bern",
+      "canton": "bern",
+      "status": "not_found",
+      "website": "https://www.insideoutside.ch/"
+    },
+    {
+      "id": "openyoga-bern",
+      "canton": "bern",
+      "status": "not_found",
+      "website": "https://www.open-yoga.ch/"
+    },
+    {
+      "id": "grey-rebel-bern",
+      "canton": "bern",
+      "status": "not_found",
+      "website": "https://www.grey-rebel.com/"
+    },
+    {
+      "id": "natha-yoga-bern",
+      "canton": "bern",
+      "status": "scraped",
+      "single": 29,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "source": "https://www.natha-yoga-schweiz.ch/"
+    },
+    {
+      "id": "devi-yoga-bern",
+      "canton": "bern",
+      "status": "scraped",
+      "single": 195,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "source": "https://www.devi-yoga-health.ch/"
+    },
+    {
+      "id": "yogakaleidoskop-bern",
+      "canton": "bern",
+      "status": "not_found",
+      "website": "https://www.innerlightacademy.ch/"
+    },
+    {
+      "id": "energie-yoga-bern",
+      "canton": "bern",
+      "status": "not_found",
+      "website": "https://energieyoga.ch/"
+    },
+    {
+      "id": "yoga-room-koeniz-thun",
+      "canton": "bern",
+      "status": "scraped",
+      "single": 30,
+      "card_10": 30,
+      "monthly": null,
+      "trial": 50,
+      "source": "https://www.yoga-room.ch/preise"
+    },
+    {
+      "id": "yoga-bude-thun",
+      "canton": "bern",
+      "status": "scraped",
+      "single": 29,
+      "card_10": 29,
+      "monthly": null,
+      "trial": 29,
+      "source": "https://www.yogabude.ch/abo-preise"
+    },
+    {
+      "id": "yoga-club-biel",
+      "canton": "bern",
+      "status": "not_found",
+      "website": "https://www.yoga-club.ch/"
+    },
+    {
+      "id": "yogiface-fribourg",
+      "canton": "fribourg",
+      "status": "scraped",
+      "single": 50,
+      "card_10": 350,
+      "monthly": null,
+      "trial": 50,
+      "source": "https://www.yogiface.ch/prix"
+    },
+    {
+      "id": "happinez-yoga-fribourg",
+      "canton": "fribourg",
+      "status": "not_found",
+      "website": "https://www.happinez.ch/"
+    },
+    {
+      "id": "sakinayoga-fribourg",
+      "canton": "fribourg",
+      "status": "not_found",
+      "website": "https://www.sakinayoga.com/"
+    },
+    {
+      "id": "yoga7-geneve",
+      "canton": "geneve",
+      "status": "not_found",
+      "website": "https://yoga7.com/"
+    },
+    {
+      "id": "yoga-flame-geneve",
+      "canton": "geneve",
+      "status": "not_found",
+      "website": "https://yogaflame.ch/"
+    },
+    {
+      "id": "colife-geneve",
+      "canton": "geneve",
+      "status": "scraped",
+      "single": 15,
+      "card_10": null,
+      "monthly": null,
+      "trial": 15,
+      "source": "https://colife.ch/"
+    },
+    {
+      "id": "yoga-nest-carouge",
+      "canton": "geneve",
+      "status": "not_found",
+      "website": "https://yoga-nest.com/"
+    },
+    {
+      "id": "yoginimage-lancy",
+      "canton": "geneve",
+      "status": "not_found",
+      "website": "https://www.yoginimage.ch/"
+    },
+    {
+      "id": "ka-studio-geneve",
+      "canton": "geneve",
+      "status": "scraped",
+      "single": null,
+      "card_10": null,
+      "monthly": 450,
+      "trial": null,
+      "source": "https://www.kastudio.ch/membership"
+    },
+    {
+      "id": "ar-yoga-geneve",
+      "canton": "geneve",
+      "status": "not_found",
+      "website": "https://aryoga.ch/"
+    },
+    {
+      "id": "yoga-sha-geneve",
+      "canton": "geneve",
+      "status": "not_found",
+      "website": "https://yogasha.ch/"
+    },
+    {
+      "id": "la-perle-de-letre",
+      "canton": "geneve",
+      "status": "not_found",
+      "website": "https://www.laperledeletre.com/"
+    },
+    {
+      "id": "yogaamfluss-ennenda",
+      "canton": "glarus",
+      "status": "not_found",
+      "website": "https://www.yoga-am-fluss.ch/"
+    },
+    {
+      "id": "cgworkout-niederurnen",
+      "canton": "glarus",
+      "status": "not_found",
+      "website": "https://www.cgworkout.ch/"
+    },
+    {
+      "id": "raw-yoga-chur",
+      "canton": "graubuenden",
+      "status": "not_found",
+      "website": "https://rawstation.ch/yoga-by-raw-station/"
+    },
+    {
+      "id": "yogaplaza-davos",
+      "canton": "graubuenden",
+      "status": "not_found",
+      "website": "https://www.yogaplazadavos.ch/"
+    },
+    {
+      "id": "pilatesyogajura",
+      "canton": "jura",
+      "status": "not_found",
+      "website": "https://www.pilatesyogajura.com/"
+    },
+    {
+      "id": "yogajura",
+      "canton": "jura",
+      "status": "not_found",
+      "website": "https://www.yogajura.ch/"
+    },
+    {
+      "id": "yogastudio-luzern",
+      "canton": "luzern",
+      "status": "scraped",
+      "single": 20,
+      "card_10": null,
+      "monthly": null,
+      "trial": 20,
+      "source": "https://www.yogastudio.ch/"
+    },
+    {
+      "id": "original-hot-yoga-luzern",
+      "canton": "luzern",
+      "status": "scraped",
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": 50,
+      "source": "https://originalhotyoga.net/"
+    },
+    {
+      "id": "yogagemeinschaft-luzern",
+      "canton": "luzern",
+      "status": "not_found",
+      "website": "https://luzern-yoga.ch/"
+    },
+    {
+      "id": "yogasitz-luzern",
+      "canton": "luzern",
+      "status": "not_found",
+      "website": "https://yogasitz.ch/"
+    },
+    {
+      "id": "om-shanti-luzern",
+      "canton": "luzern",
+      "status": "scraped",
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": 25,
+      "source": "https://www.yogaschuleluzern.ch/"
+    },
+    {
+      "id": "kundalini-yoga-emmen",
+      "canton": "luzern",
+      "status": "not_found",
+      "website": "https://www.yoga-kundalini.net/"
+    },
+    {
+      "id": "pure-you-yoga-horw",
+      "canton": "luzern",
+      "status": "scraped",
+      "single": 12,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "source": "https://www.pureyouyoga.ch/"
+    },
+    {
+      "id": "yoga-veda-luzern",
+      "canton": "luzern",
+      "status": "not_found",
+      "website": "https://www.yoga-veda-ausbildungen.ch/"
+    },
+    {
+      "id": "yogakurse-horw",
+      "canton": "luzern",
+      "status": "not_found",
+      "website": "https://www.yogakurse-horw.ch/"
+    },
+    {
+      "id": "yoga-fabrik-neuchatel",
+      "canton": "neuchatel",
+      "status": "not_found",
+      "website": "https://yoga-fabrik.ch/"
+    },
+    {
+      "id": "parvata-la-chaux-de-fonds",
+      "canton": "neuchatel",
+      "status": "not_found",
+      "website": "https://www.parvata.ch/"
+    },
+    {
+      "id": "banyann-yoga",
+      "canton": "neuchatel",
+      "status": "not_found",
+      "website": "https://www.banyann.ch/"
+    },
+    {
+      "id": "yoga-ayurveda-zentrum-stans",
+      "canton": "nidwalden",
+      "status": "not_found",
+      "website": "https://vedasudha.ch/"
+    },
+    {
+      "id": "gesund-und-munter-stans",
+      "canton": "nidwalden",
+      "status": "not_found",
+      "website": "https://www.gesund-und-munter.ch/"
+    },
+    {
+      "id": "sevencolors-stans",
+      "canton": "nidwalden",
+      "status": "not_found",
+      "website": "https://www.sevencolors.ch/"
+    },
+    {
+      "id": "yoga-ishwari-sarnen",
+      "canton": "obwalden",
+      "status": "scraped",
+      "single": 25,
+      "card_10": 220,
+      "monthly": 100,
+      "trial": 25,
+      "source": "https://www.yoga-ishwari.ch/preise"
+    },
+    {
+      "id": "yogalicht-schaffhausen",
+      "canton": "schaffhausen",
+      "status": "scraped",
+      "single": 120,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "source": "https://yogalicht.ch/preise"
+    },
+    {
+      "id": "yogaschule-narayana-schaffhausen",
+      "canton": "schaffhausen",
+      "status": "not_found",
+      "website": "https://www.yogaschule-narayana.ch/"
+    },
+    {
+      "id": "yogastudio-ganesha-einsiedeln",
+      "canton": "schwyz",
+      "status": "not_found",
+      "website": "https://ganesha-yoga.ch/"
+    },
+    {
+      "id": "studio-30-solothurn",
+      "canton": "solothurn",
+      "status": "not_found",
+      "website": "https://www.studio-30.ch/"
+    },
+    {
+      "id": "sunshine-yoga-solothurn",
+      "canton": "solothurn",
+      "status": "scraped",
+      "single": 20,
+      "card_10": 20,
+      "monthly": null,
+      "trial": 20,
+      "source": "https://www.sunshine-yoga.ch/preise"
+    },
+    {
+      "id": "flavia-tao-yoga-solothurn",
+      "canton": "solothurn",
+      "status": "not_found",
+      "website": "https://www.flaviayoga.com/"
+    },
+    {
+      "id": "yoga-garten-solothurn",
+      "canton": "solothurn",
+      "status": "not_found",
+      "website": "https://yogagarten.ch/"
+    },
+    {
+      "id": "yoga-pilateszentrale-olten",
+      "canton": "solothurn",
+      "status": "scraped",
+      "single": 20,
+      "card_10": 20,
+      "monthly": null,
+      "trial": 20,
+      "source": "https://www.pilateszentrale.ch/preise"
+    },
+    {
+      "id": "yoga-in-der-altstadt-st-gallen",
+      "canton": "st-gallen",
+      "status": "scraped",
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": 50,
+      "source": "https://www.yoga-in-der-altstadt.ch/"
+    },
+    {
+      "id": "studio-8-st-gallen",
+      "canton": "st-gallen",
+      "status": "not_found",
+      "website": "https://studio-8.ch/"
+    },
+    {
+      "id": "bubble-yoga-st-gallen",
+      "canton": "st-gallen",
+      "status": "not_found",
+      "website": "https://bubbleyoga.ch/"
+    },
+    {
+      "id": "rach-yoga-st-gallen",
+      "canton": "st-gallen",
+      "status": "not_found",
+      "website": "https://www.rach-yoga.com/"
+    },
+    {
+      "id": "power-yoga-st-gallen",
+      "canton": "st-gallen",
+      "status": "scraped",
+      "single": 30,
+      "card_10": 30,
+      "monthly": null,
+      "trial": null,
+      "source": "https://www.poweryogastgallen.com/"
+    },
+    {
+      "id": "hot-yoga-4-u-rapperswil",
+      "canton": "st-gallen",
+      "status": "scraped",
+      "single": 275,
+      "card_10": 25,
+      "monthly": null,
+      "trial": 25,
+      "source": "https://hotyoga4u.ch/"
+    },
+    {
+      "id": "yogaplace-frauenfeld",
+      "canton": "thurgau",
+      "status": "not_found",
+      "website": "https://www.yoga-place.com/"
+    },
+    {
+      "id": "feel-yoga-amriswil",
+      "canton": "thurgau",
+      "status": "not_found",
+      "website": "https://www.feelyoga.ch/"
+    },
+    {
+      "id": "miyoga-thurgau",
+      "canton": "thurgau",
+      "status": "not_found",
+      "website": "https://www.miyoga.ch/"
+    },
+    {
+      "id": "yogal-lugano",
+      "canton": "ticino",
+      "status": "scraped",
+      "single": 10,
+      "card_10": 30,
+      "monthly": null,
+      "trial": 30,
+      "source": "https://www.yogalugano.ch/prezzi"
+    },
+    {
+      "id": "slow-move-lugano",
+      "canton": "ticino",
+      "status": "scraped",
+      "single": 40,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "source": "https://slow-move.ch/"
+    },
+    {
+      "id": "soulsinnature-yoga-loft",
+      "canton": "ticino",
+      "status": "not_found",
+      "website": "https://www.soulsinnature.net/yogaloft"
+    },
+    {
+      "id": "centro-annapurna-tenero",
+      "canton": "ticino",
+      "status": "not_found",
+      "website": "https://centroannapurna.ch/"
+    },
+    {
+      "id": "tanja-iovene-yoga-bellinzona",
+      "canton": "ticino",
+      "status": "not_found",
+      "website": "https://www.tanjaioveneyoga.com/classes-bellinzona"
+    },
+    {
+      "id": "anantara-yogastudio-altdorf",
+      "canton": "uri",
+      "status": "scraped",
+      "single": 15,
+      "card_10": 15,
+      "monthly": null,
+      "trial": 15,
+      "source": "https://www.anantara-yogastudio.ch/preise"
+    },
+    {
+      "id": "urvani-yoga-altdorf",
+      "canton": "uri",
+      "status": "no_website"
+    },
+    {
+      "id": "espace-tadasana-sion",
+      "canton": "valais",
+      "status": "not_found",
+      "website": "https://www.tadasana-yoga.ch/"
+    },
+    {
+      "id": "happy-om-valais",
+      "canton": "valais",
+      "status": "not_found",
+      "website": "https://happyom.ch/"
+    },
+    {
+      "id": "isabella-bumann-yoga",
+      "canton": "valais",
+      "status": "not_found",
+      "website": "https://isabellayoga.ch/"
+    },
+    {
+      "id": "the-yogarden",
+      "canton": "vaud",
+      "status": "not_found",
+      "website": "https://www.theyogarden.ch/"
+    },
+    {
+      "id": "yoga-flame-lausanne",
+      "canton": "vaud",
+      "status": "not_found",
+      "website": "https://yogaflame.ch/"
+    },
+    {
+      "id": "yogavaud",
+      "canton": "vaud",
+      "status": "not_found",
+      "website": "https://www.yogavaud.ch/"
+    },
+    {
+      "id": "ashtanga-yoga-lausanne",
+      "canton": "vaud",
+      "status": "not_found",
+      "website": "https://www.ashtanga-yoga-lausanne.com/"
+    },
+    {
+      "id": "imyoga-lausanne",
+      "canton": "vaud",
+      "status": "not_found",
+      "website": "https://imyoga.ch/"
+    },
+    {
+      "id": "yoga-sadhana-lausanne",
+      "canton": "vaud",
+      "status": "not_found",
+      "website": "https://vivre-le-yoga.ch/"
+    },
+    {
+      "id": "terre-du-yoga-vevey",
+      "canton": "vaud",
+      "status": "not_found",
+      "website": "https://www.caroledalmas.com/"
+    },
+    {
+      "id": "sundora-shala-pully",
+      "canton": "vaud",
+      "status": "not_found",
+      "website": "https://www.sundorashala.com/"
+    },
+    {
+      "id": "chinmayi-yoga-baar",
+      "canton": "zug",
+      "status": "not_found",
+      "website": "https://www.chinmayi.ch/"
+    },
+    {
+      "id": "aum-yoga-zug",
+      "canton": "zug",
+      "status": "not_found",
+      "website": "https://www.aumyogastudio.ch/"
+    },
+    {
+      "id": "yoga-studio-zuerich",
+      "canton": "zurich",
+      "status": "scraped",
+      "single": null,
+      "card_10": null,
+      "monthly": null,
+      "trial": 70,
+      "source": "https://www.yogastudiozuerich.ch/angebot"
+    },
+    {
+      "id": "the-soulspace",
+      "canton": "zurich",
+      "status": "not_found",
+      "website": "https://www.thesoulspace.ch/"
+    },
+    {
+      "id": "bikram-yoga-zuerich",
+      "canton": "zurich",
+      "status": "not_found",
+      "website": "https://www.bikramyoga.ch/"
+    },
+    {
+      "id": "yogaholics-united",
+      "canton": "zurich",
+      "status": "not_found",
+      "website": "https://yogaholicsunited.ch/"
+    },
+    {
+      "id": "patanjali-yoga-shala",
+      "canton": "zurich",
+      "status": "not_found",
+      "website": "https://www.patanjaliyoga.ch/"
+    },
+    {
+      "id": "yoga-spirit",
+      "canton": "zurich",
+      "status": "scraped",
+      "single": 30,
+      "card_10": null,
+      "monthly": null,
+      "trial": 200,
+      "source": "https://yoga-spirit.ch/preise/"
+    },
+    {
+      "id": "vvoo",
+      "canton": "zurich",
+      "status": "not_found",
+      "website": "https://vvoo.ch/"
+    },
+    {
+      "id": "yoga-city",
+      "canton": "zurich",
+      "status": "scraped",
+      "single": 60,
+      "card_10": 80,
+      "monthly": null,
+      "trial": null,
+      "source": "https://www.yogacity.ch/preise"
+    },
+    {
+      "id": "soul-city",
+      "canton": "zurich",
+      "status": "not_found",
+      "website": "https://soulcity-zurich.ch/"
+    },
+    {
+      "id": "yoga-nest",
+      "canton": "zurich",
+      "status": "not_found",
+      "website": "https://www.theyoganest.ch/"
+    },
+    {
+      "id": "yoga-culture",
+      "canton": "zurich",
+      "status": "not_found",
+      "website": "https://www.yogaculture.ch/"
+    },
+    {
+      "id": "the-yoga-place",
+      "canton": "zurich",
+      "status": "not_found",
+      "website": "https://www.theyogaplace.ch/"
+    },
+    {
+      "id": "planet-yoga",
+      "canton": "zurich",
+      "status": "scraped",
+      "single": 20,
+      "card_10": 25,
+      "monthly": 80,
+      "trial": 30,
+      "source": "https://www.planetyoga.ch/preise"
+    },
+    {
+      "id": "yogalives",
+      "canton": "zurich",
+      "status": "not_found",
+      "website": "https://www.yogalives.ch/"
+    },
+    {
+      "id": "nandalayoga",
+      "canton": "zurich",
+      "status": "not_found",
+      "website": "https://www.nandalayoga.ch/"
+    },
+    {
+      "id": "yoga-in-a-bag-altstetten",
+      "canton": "zurich",
+      "status": "scraped",
+      "single": 5,
+      "card_10": null,
+      "monthly": 65,
+      "trial": 75,
+      "source": "https://yogainabag.com/preise/"
+    },
+    {
+      "id": "yoga-in-a-bag-albisrieden",
+      "canton": "zurich",
+      "status": "scraped",
+      "single": 5,
+      "card_10": null,
+      "monthly": 65,
+      "trial": 75,
+      "source": "https://yogainabag.com/preise/"
+    },
+    {
+      "id": "aranya-studio",
+      "canton": "zurich",
+      "status": "not_found",
+      "website": "https://www.aranya-studio.ch/"
+    },
+    {
+      "id": "elevate-studio",
+      "canton": "zurich",
+      "status": "scraped",
+      "single": 5,
+      "card_10": 10,
+      "monthly": null,
+      "trial": 21,
+      "source": "https://www.elevate-studio.ch/prices"
+    },
+    {
+      "id": "radiant-heart-studio",
+      "canton": "zurich",
+      "status": "scraped",
+      "single": 50,
+      "card_10": 400,
+      "monthly": null,
+      "trial": null,
+      "source": "https://www.radiantheartstudio.com/"
+    },
+    {
+      "id": "studio-y3",
+      "canton": "zurich",
+      "status": "not_found",
+      "website": "https://www.studioy3.ch/"
+    },
+    {
+      "id": "templeshape",
+      "canton": "zurich",
+      "status": "not_found",
+      "website": "https://templeshape.com/"
+    },
+    {
+      "id": "yoga2day",
+      "canton": "zurich",
+      "status": "not_found",
+      "website": "https://www.yoga2day.ch/"
+    },
+    {
+      "id": "yogagold",
+      "canton": "zurich",
+      "status": "not_found",
+      "website": "https://www.yogagold.net/"
+    },
+    {
+      "id": "flowfabrik-winterthur",
+      "canton": "zurich",
+      "status": "scraped",
+      "single": 10,
+      "card_10": null,
+      "monthly": null,
+      "trial": null,
+      "source": "https://www.flowfabrik.ch/"
+    },
+    {
+      "id": "yoga-academy-winterthur",
+      "canton": "zurich",
+      "status": "not_found",
+      "website": "https://yoga-academy-winterthur.ch/"
+    },
+    {
+      "id": "yoga-in-a-bag-winterthur",
+      "canton": "zurich",
+      "status": "scraped",
+      "single": 5,
+      "card_10": null,
+      "monthly": 65,
+      "trial": 75,
+      "source": "https://yogainabag.com/preise/"
+    }
+  ]
+}

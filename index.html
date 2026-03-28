@@ -39,6 +39,8 @@
     <meta property="og:image" content="https://meineprojekte.github.io/yoga-kurse-basel/img/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Yoga Schweiz — 266 Studios in 26 Kantonen">
+    <meta property="og:image:type" content="image/png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -84,7 +86,13 @@
         "sameAs": "https://en.wikipedia.org/wiki/Switzerland"
       },
       "knowsAbout": ["Yoga", "Vinyasa Yoga", "Hatha Yoga", "Yin Yoga", "Ashtanga Yoga", "Hot Yoga", "Aerial Yoga", "Kundalini Yoga", "Yoga Studios Schweiz"],
-      "knowsLanguage": ["de", "en", "fr", "it"]
+      "knowsLanguage": ["de", "en", "fr", "it"],
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://meineprojekte.github.io/yoga-kurse-basel/img/og-image.png",
+        "width": 1200,
+        "height": 630
+      }
     }
     </script>
     <!-- Schema.org: BreadcrumbList -->
@@ -148,6 +156,7 @@
 
     <!-- Favicon & PWA -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧘</text></svg>">
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.svg">
     <link rel="manifest" href="./manifest.json">
     <meta name="theme-color" content="#6B5B95">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -165,8 +174,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" as="style">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
     <!-- Main Styles -->
     <link rel="stylesheet" href="./css/style.css">
@@ -229,8 +238,8 @@
         <div class="hero-bg"></div>
         <div class="container hero-content">
             <h1 class="hero-title" data-i18n="hero.title">
-                Yoga in der Schweiz<br>
-                <span class="hero-accent">alle Kurse auf einen Blick</span>
+                Yoga Kurse in der Schweiz<br>
+                <span class="hero-accent">Alle Studios auf einen Blick</span>
             </h1>
             <p class="hero-subtitle" data-i18n="hero.subtitle">
                 26 Kantone &bull; Hunderte Studios &bull; Wöchentlich aktualisiert
@@ -271,7 +280,7 @@
             <div class="hero-search">
                 <div class="search-wrapper">
                     <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-                    <input type="search" id="heroSearch" class="search-input" placeholder="Studio, Yoga-Stil oder Quartier suchen..." data-i18n-placeholder="hero.search_placeholder" autocomplete="off">
+                    <input type="search" id="heroSearch" class="search-input" placeholder="Studio, Yoga-Stil oder Quartier suchen..." data-i18n-placeholder="hero.search_placeholder" autocomplete="off" aria-label="Yoga-Studio suchen">
                     <button class="search-clear" id="searchClear" aria-label="Suche löschen" style="display:none">&times;</button>
                 </div>
             </div>
@@ -300,9 +309,33 @@
     <!-- Main Content -->
     <main id="main-content">
         <noscript>
-            <div style="text-align:center;padding:40px 20px;background:#fff3cd;color:#856404;margin:20px;">
-                <h2>JavaScript erforderlich</h2>
-                <p>Diese Website benötigt JavaScript, um die Yoga-Studios und Stundenpläne anzuzeigen. Bitte aktiviere JavaScript in deinem Browser.</p>
+            <div style="text-align:center;padding:40px 20px;background:#fff3cd;color:#856404;margin:20px;border-radius:12px;">
+                <h2>Yoga Studios in der Schweiz</h2>
+                <p>Diese Seite zeigt 37 Yoga-Studios in Basel mit Stundenplan, Preisen und interaktiver Karte. Bitte aktiviere JavaScript für die vollständige Funktionalität einschliesslich Filter, Karte und Stundenplan.</p>
+                <p style="margin-top:16px;font-weight:600;">Yoga in allen 26 Kantonen der Schweiz:</p>
+                <ul style="list-style:none;padding:0;margin:16px auto;max-width:600px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
+                    <li><a href="./kanton/basel-stadt/" style="color:#6B5B95;">Yoga in Basel-Stadt (37)</a></li>
+                    <li><a href="./kanton/zurich/" style="color:#6B5B95;">Yoga in Zürich (46)</a></li>
+                    <li><a href="./kanton/bern/" style="color:#6B5B95;">Yoga in Bern (28)</a></li>
+                    <li><a href="./kanton/luzern/" style="color:#6B5B95;">Yoga in Luzern (16)</a></li>
+                    <li><a href="./kanton/geneve/" style="color:#6B5B95;">Yoga in Genf (19)</a></li>
+                    <li><a href="./kanton/vaud/" style="color:#6B5B95;">Yoga in Waadt (16)</a></li>
+                    <li><a href="./kanton/aargau/" style="color:#6B5B95;">Yoga in Aargau</a></li>
+                    <li><a href="./kanton/st-gallen/" style="color:#6B5B95;">Yoga in St. Gallen</a></li>
+                    <li><a href="./kanton/basel-landschaft/" style="color:#6B5B95;">Yoga in Basel-Landschaft</a></li>
+                    <li><a href="./kanton/solothurn/" style="color:#6B5B95;">Yoga in Solothurn</a></li>
+                    <li><a href="./kanton/ticino/" style="color:#6B5B95;">Yoga in Tessin</a></li>
+                    <li><a href="./kanton/fribourg/" style="color:#6B5B95;">Yoga in Fribourg</a></li>
+                    <li><a href="./kanton/valais/" style="color:#6B5B95;">Yoga in Wallis</a></li>
+                    <li><a href="./kanton/graubuenden/" style="color:#6B5B95;">Yoga in Graubünden</a></li>
+                    <li><a href="./kanton/schaffhausen/" style="color:#6B5B95;">Yoga in Schaffhausen</a></li>
+                    <li><a href="./kanton/thurgau/" style="color:#6B5B95;">Yoga in Thurgau</a></li>
+                    <li><a href="./kanton/schwyz/" style="color:#6B5B95;">Yoga in Schwyz</a></li>
+                    <li><a href="./kanton/zug/" style="color:#6B5B95;">Yoga in Zug</a></li>
+                    <li><a href="./kanton/neuchatel/" style="color:#6B5B95;">Yoga in Neuenburg</a></li>
+                    <li><a href="./kanton/jura/" style="color:#6B5B95;">Yoga in Jura</a></li>
+                </ul>
+                <p style="margin-top:12px;">Beliebte Stile: <a href="./yoga/vinyasa-yoga-basel/" style="color:#6B5B95;">Vinyasa</a> | <a href="./yoga/hatha-yoga-basel/" style="color:#6B5B95;">Hatha</a> | <a href="./yoga/yin-yoga-basel/" style="color:#6B5B95;">Yin</a> | <a href="./yoga/ashtanga-yoga-basel/" style="color:#6B5B95;">Ashtanga</a> | <a href="./yoga/aerial-yoga-basel/" style="color:#6B5B95;">Aerial</a> | <a href="./yoga/hot-yoga-basel/" style="color:#6B5B95;">Hot Yoga</a> | <a href="./yoga/kundalini-yoga-basel/" style="color:#6B5B95;">Kundalini</a></p>
             </div>
         </noscript>
         <!-- Quick Filters Bar -->
@@ -419,25 +452,63 @@
             </div>
         </section>
 
+        <div id="sr-live-region" aria-live="polite" aria-atomic="true" class="sr-only"></div>
+
         <!-- Schedule / Stundenplan -->
         <section class="schedule-section" id="stundenplan">
             <div class="container">
                 <h2 class="section-title" data-i18n="schedule.title">Stundenplan — Kurse nach Tag</h2>
-                <p class="section-subtitle" data-i18n="schedule.subtitle">Wähle einen Tag und sieh alle Yoga-Kurse in Basel mit Uhrzeit, Ort und Lehrer/in</p>
-                <div class="schedule-days" id="scheduleDays">
-                    <button class="day-btn" data-day="Monday">Mo</button>
-                    <button class="day-btn" data-day="Tuesday">Di</button>
-                    <button class="day-btn" data-day="Wednesday">Mi</button>
-                    <button class="day-btn" data-day="Thursday">Do</button>
-                    <button class="day-btn" data-day="Friday">Fr</button>
-                    <button class="day-btn" data-day="Saturday">Sa</button>
-                    <button class="day-btn" data-day="Sunday">So</button>
+                <p class="section-subtitle" data-i18n="schedule.subtitle">Wähle einen Tag und sieh alle Yoga-Kurse mit Uhrzeit, Ort und Lehrer/in</p>
+                <div id="scheduleDays" class="schedule-days" role="tablist" aria-label="Wochentage">
+                    <button class="day-btn" data-day="Monday" role="tab">Mo</button>
+                    <button class="day-btn" data-day="Tuesday" role="tab">Di</button>
+                    <button class="day-btn" data-day="Wednesday" role="tab">Mi</button>
+                    <button class="day-btn" data-day="Thursday" role="tab">Do</button>
+                    <button class="day-btn" data-day="Friday" role="tab">Fr</button>
+                    <button class="day-btn" data-day="Saturday" role="tab">Sa</button>
+                    <button class="day-btn" data-day="Sunday" role="tab">So</button>
                 </div>
                 <div class="schedule-info" id="scheduleInfo" style="display:none">
                     <span id="scheduleCount"></span>
                 </div>
                 <div class="schedule-list" id="scheduleList">
                     <p class="schedule-placeholder" data-i18n="schedule.placeholder">Wähle einen Wochentag oben, um alle Kurse zu sehen.</p>
+                    <!-- Pre-rendered schedule for SEO (Friday sample) — replaced by JS -->
+                    <div id="prerendered-schedule" style="margin-top:16px;">
+                        <p style="font-weight:600;margin-bottom:12px;">Freitag — 46 Kurse in Basel</p>
+                        <div style="display:flex;flex-direction:column;gap:8px;">
+                            <div style="padding:10px 14px;background:var(--color-bg-card,#fff);border-radius:8px;border:1px solid var(--color-border,#e5e5e5);">
+                                <strong>06:45 – 07:45</strong> Vinyasa Yoga (EN) — <em>Niyama Studio for Yoga &amp; Pilates</em>
+                            </div>
+                            <div style="padding:10px 14px;background:var(--color-bg-card,#fff);border-radius:8px;border:1px solid var(--color-border,#e5e5e5);">
+                                <strong>08:30 – 10:00</strong> Kundalini Yoga — <em>Lotos Yoga-Zentrum</em> (Andrea Ledergerber)
+                            </div>
+                            <div style="padding:10px 14px;background:var(--color-bg-card,#fff);border-radius:8px;border:1px solid var(--color-border,#e5e5e5);">
+                                <strong>09:00 – 10:00</strong> Vinyasa Yoga — <em>Meyo House</em> (Doris)
+                            </div>
+                            <div style="padding:10px 14px;background:var(--color-bg-card,#fff);border-radius:8px;border:1px solid var(--color-border,#e5e5e5);">
+                                <strong>09:30 – 10:30</strong> Gentle Hatha — <em>Volta Yoga</em> (Anya)
+                            </div>
+                            <div style="padding:10px 14px;background:var(--color-bg-card,#fff);border-radius:8px;border:1px solid var(--color-border,#e5e5e5);">
+                                <strong>10:00 – 11:30</strong> Open — <em>The Looking Glass Basel</em> (Kristen)
+                            </div>
+                            <div style="padding:10px 14px;background:var(--color-bg-card,#fff);border-radius:8px;border:1px solid var(--color-border,#e5e5e5);">
+                                <strong>12:15 – 13:15</strong> Vinyasa Lunch — <em>Anjali Yoga &amp; Pilates Studio</em> (Savina)
+                            </div>
+                            <div style="padding:10px 14px;background:var(--color-bg-card,#fff);border-radius:8px;border:1px solid var(--color-border,#e5e5e5);">
+                                <strong>12:15 – 13:45</strong> Bikram Hot Yoga — <em>Bikram Yoga Basel</em>
+                            </div>
+                            <div style="padding:10px 14px;background:var(--color-bg-card,#fff);border-radius:8px;border:1px solid var(--color-border,#e5e5e5);">
+                                <strong>17:00 – 18:00</strong> Dynamic Breath X Flow — <em>Anjali Yoga &amp; Pilates Studio</em> (Savina)
+                            </div>
+                            <div style="padding:10px 14px;background:var(--color-bg-card,#fff);border-radius:8px;border:1px solid var(--color-border,#e5e5e5);">
+                                <strong>18:00 – 19:15</strong> Vinyasa Flow — <em>The Looking Glass Basel</em> (Martina)
+                            </div>
+                            <div style="padding:10px 14px;background:var(--color-bg-card,#fff);border-radius:8px;border:1px solid var(--color-border,#e5e5e5);">
+                                <strong>18:15 – 19:30</strong> Meditation X Yin Yoga — <em>Anjali Yoga &amp; Pilates Studio</em> (Savina)
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <p class="schedule-note" data-i18n="schedule.note">* Stundenpläne von 7 Studios mit verfügbaren Daten. Einige Studios verwenden dynamische Buchungssysteme — besuche deren Website für den aktuellen Plan.</p>
             </div>
@@ -459,17 +530,29 @@
                     <table class="comparison-table" id="comparisonTable">
                         <thead>
                             <tr>
-                                <th>#</th>
-                                <th data-i18n="comparison.studio">Studio</th>
-                                <th data-i18n="pricing.single">Einzeleintritt</th>
-                                <th data-i18n="pricing.card_10">10er-Karte</th>
-                                <th data-i18n="pricing.monthly">Monatsabo</th>
-                                <th data-i18n="pricing.trial">Probestunde</th>
-                                <th data-i18n="comparison.styles">Stile</th>
-                                <th data-i18n="comparison.website">Website</th>
+                                <th scope="col">#</th>
+                                <th scope="col" data-sort="name" data-i18n="comparison.studio">Studio</th>
+                                <th scope="col" data-sort="single" data-i18n="pricing.single">Einzeleintritt</th>
+                                <th scope="col" data-sort="card10" data-i18n="pricing.card_10">10er-Karte</th>
+                                <th scope="col" data-sort="monthly" data-i18n="pricing.monthly">Monatsabo</th>
+                                <th scope="col" data-sort="trial" data-i18n="pricing.trial">Probestunde</th>
+                                <th scope="col" data-i18n="comparison.styles">Stile</th>
+                                <th scope="col" data-i18n="comparison.website">Website</th>
                             </tr>
                         </thead>
-                        <tbody id="comparisonBody"></tbody>
+                        <tbody id="comparisonBody">
+                            <!-- Pre-rendered pricing for SEO — replaced by JS -->
+                            <tr class="comp-row-even"><td class="comp-studio" data-label="#">1</td><td class="comp-name" data-label="Studio"><strong>Yoga im Gärtnerhuus</strong> <span class="comp-city">(Basel)</span></td><td class="comp-price" data-label="Einzeleintritt"><strong>CHF 17</strong></td><td class="comp-price" data-label="10er-Karte">CHF 80</td><td class="comp-price" data-label="Monatsabo">CHF 12</td><td class="comp-price" data-label="Probestunde">CHF 45</td><td class="comp-styles" data-label="Stile"><small>Yin, Vinyasa, Kleinkind-Yoga +1</small></td><td class="comp-link" data-label="Link"><a href="https://www.yogaimgaertnerhuus.com" target="_blank" rel="noopener noreferrer">&#8599;</a></td></tr>
+                            <tr class="comp-row-odd"><td class="comp-studio" data-label="#">2</td><td class="comp-name" data-label="Studio"><strong>YOGABLOOM</strong> <span class="comp-city">(Basel)</span></td><td class="comp-price" data-label="Einzeleintritt"><strong>CHF 20</strong></td><td class="comp-price" data-label="10er-Karte">CHF 190</td><td class="comp-price" data-label="Monatsabo">CHF 180</td><td class="comp-price" data-label="Probestunde">CHF 60</td><td class="comp-styles" data-label="Stile"><small>Vinyasa Flow, Ashtanga, Jivamukti +5</small></td><td class="comp-link" data-label="Link"><a href="https://www.yogabloom.ch/" target="_blank" rel="noopener noreferrer">&#8599;</a></td></tr>
+                            <tr class="comp-row-even"><td class="comp-studio" data-label="#">3</td><td class="comp-name" data-label="Studio"><strong>Volta Yoga</strong> <span class="comp-city">(Basel)</span></td><td class="comp-price" data-label="Einzeleintritt"><strong>CHF 20</strong></td><td class="comp-price" data-label="10er-Karte">&mdash;</td><td class="comp-price" data-label="Monatsabo">CHF 20</td><td class="comp-price" data-label="Probestunde">&mdash;</td><td class="comp-styles" data-label="Stile"><small>Vinyasa, Hatha, Yin +2</small></td><td class="comp-link" data-label="Link"><a href="https://en.voltayoga.ch/" target="_blank" rel="noopener noreferrer">&#8599;</a></td></tr>
+                            <tr class="comp-row-odd"><td class="comp-studio" data-label="#">4</td><td class="comp-name" data-label="Studio"><strong>Niyama Studio for Yoga &amp; Pilates</strong> <span class="comp-city">(Basel)</span></td><td class="comp-price" data-label="Einzeleintritt"><strong>CHF 25</strong></td><td class="comp-price" data-label="10er-Karte">CHF 150</td><td class="comp-price" data-label="Monatsabo">CHF 50</td><td class="comp-price" data-label="Probestunde">&mdash;</td><td class="comp-styles" data-label="Stile"><small>Vinyasa, Power Yoga, Yin Yoga +1</small></td><td class="comp-link" data-label="Link"><a href="https://www.niyama-yoga.ch/en/start/" target="_blank" rel="noopener noreferrer">&#8599;</a></td></tr>
+                            <tr class="comp-row-even"><td class="comp-studio" data-label="#">5</td><td class="comp-name" data-label="Studio"><strong>Anjali Yoga &amp; Pilates Studio</strong> <span class="comp-city">(Basel)</span></td><td class="comp-price" data-label="Einzeleintritt"><strong>CHF 25</strong></td><td class="comp-price" data-label="10er-Karte">&mdash;</td><td class="comp-price" data-label="Monatsabo">&mdash;</td><td class="comp-price" data-label="Probestunde">&mdash;</td><td class="comp-styles" data-label="Stile"><small>Yoga, Pilates, Aerial +3</small></td><td class="comp-link" data-label="Link"><a href="https://www.anjali.ch/en" target="_blank" rel="noopener noreferrer">&#8599;</a></td></tr>
+                            <tr class="comp-row-odd"><td class="comp-studio" data-label="#">6</td><td class="comp-name" data-label="Studio"><strong>The Looking Glass Basel</strong> <span class="comp-city">(Basel)</span></td><td class="comp-price" data-label="Einzeleintritt"><strong>CHF 30</strong></td><td class="comp-price" data-label="10er-Karte">CHF 270</td><td class="comp-price" data-label="Monatsabo">CHF 180</td><td class="comp-price" data-label="Probestunde">CHF 60</td><td class="comp-styles" data-label="Stile"><small>Vinyasa, Alignment, Ashtanga-inspired +6</small></td><td class="comp-link" data-label="Link"><a href="https://thelookingglassbasel.com/" target="_blank" rel="noopener noreferrer">&#8599;</a></td></tr>
+                            <tr class="comp-row-even"><td class="comp-studio" data-label="#">7</td><td class="comp-name" data-label="Studio"><strong>Ashtanga Yoga Basel</strong> <span class="comp-city">(Basel)</span></td><td class="comp-price" data-label="Einzeleintritt"><strong>CHF 30</strong></td><td class="comp-price" data-label="10er-Karte">CHF 270</td><td class="comp-price" data-label="Monatsabo">CHF 180</td><td class="comp-price" data-label="Probestunde">CHF 20</td><td class="comp-styles" data-label="Stile"><small>Ashtanga Mysore, Ashtanga Led, Hatha +2</small></td><td class="comp-link" data-label="Link"><a href="https://www.ashtanga-basel.ch/" target="_blank" rel="noopener noreferrer">&#8599;</a></td></tr>
+                            <tr class="comp-row-odd"><td class="comp-studio" data-label="#">8</td><td class="comp-name" data-label="Studio"><strong>mint Basel</strong> <span class="comp-city">(Basel)</span></td><td class="comp-price" data-label="Einzeleintritt"><strong>CHF 30</strong></td><td class="comp-price" data-label="10er-Karte">CHF 200</td><td class="comp-price" data-label="Monatsabo">&mdash;</td><td class="comp-price" data-label="Probestunde">&mdash;</td><td class="comp-styles" data-label="Stile"><small>Vinyasa, Gentle Flow, Yin Yoga +2</small></td><td class="comp-link" data-label="Link"><a href="https://mint-loft.ch/" target="_blank" rel="noopener noreferrer">&#8599;</a></td></tr>
+                            <tr class="comp-row-even"><td class="comp-studio" data-label="#">9</td><td class="comp-name" data-label="Studio"><strong>B.Yoga Basel</strong> <span class="comp-city">(Basel)</span></td><td class="comp-price" data-label="Einzeleintritt"><strong>CHF 35</strong></td><td class="comp-price" data-label="10er-Karte">CHF 315</td><td class="comp-price" data-label="Monatsabo">CHF 220</td><td class="comp-price" data-label="Probestunde">CHF 29.90</td><td class="comp-styles" data-label="Stile"><small>Vinyasa, Ashtanga, Hatha +11</small></td><td class="comp-link" data-label="Link"><a href="https://www.byoga.ch/" target="_blank" rel="noopener noreferrer">&#8599;</a></td></tr>
+                            <tr class="comp-row-odd"><td class="comp-studio" data-label="#">10</td><td class="comp-name" data-label="Studio"><strong>Bikram Yoga Basel</strong> <span class="comp-city">(Basel)</span></td><td class="comp-price" data-label="Einzeleintritt"><strong>CHF 41</strong></td><td class="comp-price" data-label="10er-Karte">CHF 355</td><td class="comp-price" data-label="Monatsabo">CHF 260</td><td class="comp-price" data-label="Probestunde">CHF 55</td><td class="comp-styles" data-label="Stile"><small>Bikram Hot Yoga</small></td><td class="comp-link" data-label="Link"><a href="https://bikramyogabasel.ch/" target="_blank" rel="noopener noreferrer">&#8599;</a></td></tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
@@ -478,9 +561,82 @@
         <!-- Studios Grid -->
         <section class="studios-section" id="studios">
             <div class="container">
-                <h2 class="section-title" data-i18n="studios.title">Yoga-Studios in Basel</h2>
+                <h2 class="section-title" data-i18n="studios.title">Yoga-Studios in der Schweiz</h2>
                 <div class="studios-grid" id="studiosGrid">
                     <p id="loadingMsg" style="grid-column:1/-1;text-align:center;padding:40px;color:#666;">Lade Studios...</p>
+                    <!-- Pre-rendered top 10 Basel studios for SEO — replaced by JS -->
+                    <div id="prerendered-studios" style="grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;">
+                        <article class="studio-card" style="padding:20px;border-radius:12px;border:1px solid var(--color-border,#e5e5e5);background:var(--color-bg-card,#fff);">
+                            <h3>B.Yoga Basel</h3>
+                            <p>Hutgasse 1, 4001 Basel</p>
+                            <p>Stile: Vinyasa, Ashtanga, Hatha, Jivamukti, Kundalini, Flow, Yin, Restorative, Prenatal, Postnatal, Kids, Family, Dharma Yoga, Meditation</p>
+                            <p>Das grösste Yoga-Studio in Basel mit 30-40 Klassen pro Woche in über 12 Stilen. Drop-in willkommen, alle Levels.</p>
+                            <p><a href="https://www.byoga.ch/" target="_blank" rel="noopener noreferrer">Website besuchen</a></p>
+                        </article>
+                        <article class="studio-card" style="padding:20px;border-radius:12px;border:1px solid var(--color-border,#e5e5e5);background:var(--color-bg-card,#fff);">
+                            <h3>Lotos Yoga-Zentrum</h3>
+                            <p>Rutimeyerstrasse 40, 4054 Basel</p>
+                            <p>Stile: Hatha, Yin, Samara, Kundalini, Kids Yoga, Yoga 60+, Rücken-Yoga, Schwangerschaftsyoga, Faszien Yoga, Aerial Yoga, Yoga Therapie</p>
+                            <p>Seit 1994 — das älteste Yoga-Zentrum in Basel. Zwei Räume (Himalaya &amp; Kerala). Teacher Training (200h-750h YCH).</p>
+                            <p><a href="https://lotosyoga.ch/" target="_blank" rel="noopener noreferrer">Website besuchen</a></p>
+                        </article>
+                        <article class="studio-card" style="padding:20px;border-radius:12px;border:1px solid var(--color-border,#e5e5e5);background:var(--color-bg-card,#fff);">
+                            <h3>The Looking Glass Basel</h3>
+                            <p>Feldbergstrasse 1, 4057 Basel</p>
+                            <p>Stile: Vinyasa, Alignment, Ashtanga-inspired, Katonah, Yin, Embodied Flow, Meditation, Kirtan, Pilates</p>
+                            <p>Wunderschönes Studio mit Blick auf den Rhein in Kleinbasel. 7 Tage die Woche geöffnet.</p>
+                            <p><a href="https://thelookingglassbasel.com/" target="_blank" rel="noopener noreferrer">Website besuchen</a></p>
+                        </article>
+                        <article class="studio-card" style="padding:20px;border-radius:12px;border:1px solid var(--color-border,#e5e5e5);background:var(--color-bg-card,#fff);">
+                            <h3>YOGABLOOM</h3>
+                            <p>Pfluggasslein 1, 4001 Basel</p>
+                            <p>Stile: Vinyasa Flow, Ashtanga, Jivamukti, Slow Flow, Yin, Aerial Yoga, Family Yoga, Kids Yoga</p>
+                            <p>Vielfältiges Angebot inkl. Aerial und Family Yoga. Neukundenangebot: 14 Tage unlimited CHF 60.</p>
+                            <p><a href="https://www.yogabloom.ch/" target="_blank" rel="noopener noreferrer">Website besuchen</a></p>
+                        </article>
+                        <article class="studio-card" style="padding:20px;border-radius:12px;border:1px solid var(--color-border,#e5e5e5);background:var(--color-bg-card,#fff);">
+                            <h3>Anjali Yoga &amp; Pilates Studio</h3>
+                            <p>Spalenvorstadt 11, 4051 Basel</p>
+                            <p>Stile: Yoga, Pilates, Aerial, Meditation, Breathwork, Sound Healing</p>
+                            <p>Yoga, Pilates, Aerial und mehr. Keine Anmeldung nötig, auch per Livestream verfügbar.</p>
+                            <p><a href="https://www.anjali.ch/en" target="_blank" rel="noopener noreferrer">Website besuchen</a></p>
+                        </article>
+                        <article class="studio-card" style="padding:20px;border-radius:12px;border:1px solid var(--color-border,#e5e5e5);background:var(--color-bg-card,#fff);">
+                            <h3>Yoga Atelier Basel</h3>
+                            <p>Petersgasse 32, 4051 Basel</p>
+                            <p>Stile: Hatha, Yoga für Rücken, Schwangerschaftsyoga, Postnatal, Yoga 60+, Qigong</p>
+                            <p>Eine Oase der Stille im Herzen der Basler Altstadt. Spezialisiert auf Hatha Yoga und therapeutisches Yoga.</p>
+                            <p><a href="https://www.yoga-atelier-basel.ch/" target="_blank" rel="noopener noreferrer">Website besuchen</a></p>
+                        </article>
+                        <article class="studio-card" style="padding:20px;border-radius:12px;border:1px solid var(--color-border,#e5e5e5);background:var(--color-bg-card,#fff);">
+                            <h3>Volta Yoga</h3>
+                            <p>Aeschenvorstadt 57, 4051 Basel</p>
+                            <p>Stile: Vinyasa, Hatha, Yin, Yoga Nidra, Prenatal</p>
+                            <p>Zwei Studios in Basel, Drop-in, keine Verpflichtungen. Auf Deutsch und Englisch. Prenatal Yoga Mo 18:30, Do 18:00.</p>
+                            <p><a href="https://en.voltayoga.ch/" target="_blank" rel="noopener noreferrer">Website besuchen</a></p>
+                        </article>
+                        <article class="studio-card" style="padding:20px;border-radius:12px;border:1px solid var(--color-border,#e5e5e5);background:var(--color-bg-card,#fff);">
+                            <h3>Ashtanga Yoga Basel</h3>
+                            <p>Spalenring 150, 1. OG, 4055 Basel</p>
+                            <p>Stile: Ashtanga Mysore, Ashtanga Led, Hatha, Restorative, Yoga Nidra</p>
+                            <p>Gemütliche, gut gelegene Shala. Mysore-Stil und geführte Klassen für Anfänger und Fortgeschrittene.</p>
+                            <p><a href="https://www.ashtanga-basel.ch/" target="_blank" rel="noopener noreferrer">Website besuchen</a></p>
+                        </article>
+                        <article class="studio-card" style="padding:20px;border-radius:12px;border:1px solid var(--color-border,#e5e5e5);background:var(--color-bg-card,#fff);">
+                            <h3>mint Basel</h3>
+                            <p>Rebgasse 43, 4058 Basel</p>
+                            <p>Stile: Vinyasa, Gentle Flow, Yin Yoga, Aerial Yoga, Yoga 55+</p>
+                            <p>Yoga für alle Altersgruppen inkl. Yoga 55+. Sommer-Outdoor-Klassen im Wenkenpark Riehen.</p>
+                            <p><a href="https://mint-loft.ch/" target="_blank" rel="noopener noreferrer">Website besuchen</a></p>
+                        </article>
+                        <article class="studio-card" style="padding:20px;border-radius:12px;border:1px solid var(--color-border,#e5e5e5);background:var(--color-bg-card,#fff);">
+                            <h3>Niyama Studio for Yoga &amp; Pilates</h3>
+                            <p>Falknerstrasse 35, 4001 Basel</p>
+                            <p>Stile: Vinyasa, Power Yoga, Yin Yoga, Pilates</p>
+                            <p>Drop-in Yoga &amp; Pilates im Herzen von Basel. Keine Anmeldung nötig.</p>
+                            <p><a href="https://www.niyama-yoga.ch/en/start/" target="_blank" rel="noopener noreferrer">Website besuchen</a></p>
+                        </article>
+                    </div>
                 </div>
                 <div class="no-results" id="noResults" hidden>
                     <div class="no-results-icon">🔍</div>
@@ -494,8 +650,8 @@
         <!-- Yoga Styles Overview -->
         <section class="styles-section" id="stile">
             <div class="container">
-                <h2 class="section-title" data-i18n="styles.title">Yoga-Stile in Basel</h2>
-                <p class="section-subtitle" data-i18n="styles.subtitle">Entdecke die Vielfalt der Yoga-Stile, die in Basel angeboten werden</p>
+                <h2 class="section-title" data-i18n="styles.title">Yoga-Stile in der Schweiz</h2>
+                <p class="section-subtitle" data-i18n="styles.subtitle">Entdecke die Vielfalt der Yoga-Stile, die in der Schweiz angeboten werden</p>
                 <div class="styles-grid" id="stylesGrid"></div>
             </div>
         </section>
@@ -517,57 +673,57 @@
                 <h2 class="section-title" data-i18n="faq.title">Häufige Fragen</h2>
                 <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
                     <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <summary itemprop="name">Welche Yoga-Stile gibt es in Basel?</summary>
+                        <summary itemprop="name">Wie finde ich das richtige Yoga-Studio in der Schweiz?</summary>
                         <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">In Basel werden über 30 verschiedene Yoga-Stile angeboten, darunter Vinyasa, Hatha, Yin, Ashtanga (Mysore & Led), Iyengar, Kundalini, Jivamukti, Bikram/Hot Yoga, Aerial Yoga, Katonah, Embodied Flow, Power Yoga, Restorative, Yoga Nidra, und viele Spezialangebote wie Schwangerschaftsyoga, Yoga 60+, Kids Yoga und therapeutisches Yoga.</p>
+                            <p itemprop="text">Nutze unsere Übersicht mit über 266 Studios in allen 26 Kantonen. Wähle zuerst deinen Kanton, filtere dann nach Yoga-Stil, Quartier oder Besonderheiten wie Drop-in, Englischsprachige Klassen oder Schwangerschaftsyoga. Die interaktive Karte zeigt dir Studios in deiner Nähe. Viele Studios bieten Probestunden oder vergünstigte Einführungswochen an, sodass du verschiedene Angebote testen kannst, bevor du dich entscheidest.</p>
                         </div>
                     </details>
                     <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <summary itemprop="name">Kann ich Yoga ohne Anmeldung besuchen (Drop-in)?</summary>
+                        <summary itemprop="name">Welche Yoga-Stile sind in der Schweiz am beliebtesten?</summary>
                         <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">Ja, viele Studios in Basel bieten Drop-in-Klassen an, bei denen keine Voranmeldung nötig ist. Dazu gehören u.a. B.Yoga, Niyama, Anjali, Volta Yoga und viele andere. Studios wie Bikram Yoga Basel oder YOGABLOOM erfordern hingegen eine Online-Reservierung.</p>
+                            <p itemprop="text">In der Schweiz werden über 30 verschiedene Yoga-Stile angeboten. Die beliebtesten sind Vinyasa (dynamisch, fliessend), Hatha (klassisch, ruhig), Yin (meditativ, tiefe Dehnung), Ashtanga (kraftvoll, strukturiert) und Iyengar (präzise Ausrichtung). Darüber hinaus gibt es spezialisierte Angebote wie Hot Yoga, Aerial Yoga, Kundalini, Jivamukti, Power Yoga, Restorative Yoga, Yoga Nidra sowie Schwangerschaftsyoga, Kinder-Yoga und Yoga 60+.</p>
                         </div>
                     </details>
                     <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <summary itemprop="name">Gibt es Yoga auf Englisch in Basel?</summary>
+                        <summary itemprop="name">Was kostet eine Yogastunde in der Schweiz?</summary>
                         <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">Ja! Viele Studios in Basel bieten Klassen auf Englisch an. Besonders The Looking Glass, B.Yoga, Bikram Yoga Basel, Volta Yoga und Mignon sind bekannt für ihr englischsprachiges Angebot. Die meisten internationalen Lehrer unterrichten auf Englisch.</p>
+                            <p itemprop="text">Die Preise variieren je nach Region und Studio. Einzelstunden kosten in der Schweiz typischerweise CHF 25 bis 45. Zehnerkarten bewegen sich zwischen CHF 230 und CHF 380, Monatsabos mit unbegrenzten Besuchen liegen bei CHF 120 bis CHF 250. In Grossstädten wie Zürich und Genf sind die Preise tendenziell höher als in kleineren Kantonen. Viele Studios bieten Probestunden, Neukundenangebote oder Studierende-Rabatte an.</p>
                         </div>
                     </details>
                     <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <summary itemprop="name">Was kostet Yoga in Basel?</summary>
+                        <summary itemprop="name">Kann ich Yoga ohne Vorkenntnisse beginnen?</summary>
                         <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">Die Preise variieren je nach Studio. Einzelstunden kosten typischerweise CHF 25-41. Viele Studios bieten Abos, 10er-Karten (ca. CHF 250-355), Monatsabos, oder Neukundenangebote an. Einige Studios wie Rin Yoga haben eine gleitende Preisgestaltung, und Alessia Yoga bietet die erste Stunde gratis an.</p>
+                            <p itemprop="text">Ja, absolut! Yoga ist für alle geeignet, unabhängig von Alter, Fitness oder Flexibilität. Viele Studios in der Schweiz bieten spezielle Anfänger-Klassen an, in denen Grundpositionen, Atemtechnik und Yoga-Etikette Schritt für Schritt erklärt werden. Empfehlenswert für den Einstieg sind Hatha, sanftes Vinyasa oder Iyengar Yoga. Die meisten Studios kennzeichnen das Niveau ihrer Klassen klar mit Begriffen wie «Anfänger», «Basics» oder «Level 1».</p>
                         </div>
                     </details>
                     <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <summary itemprop="name">Gibt es Schwangerschaftsyoga (Prenatal) in Basel?</summary>
+                        <summary itemprop="name">Gibt es Yoga auf Englisch in der Schweiz?</summary>
                         <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">Ja, mehrere Studios bieten spezialisiertes Schwangerschaftsyoga an: Yoga Atelier Basel, B.Yoga, Volta Yoga (Mo 18:30, Do 18:00), Claudia Stamm Yoga (Mo 18:00), Mignon (Di 18:15, Do 18:00), und das Lotos Yoga-Zentrum. Mignon bietet auch Mama & Baby Yoga und Postnatal-Yoga an.</p>
+                            <p itemprop="text">Ja! Besonders in internationalen Städten wie Zürich, Basel, Genf und Lausanne bieten viele Studios Klassen auf Englisch an. Die Schweizer Yoga-Szene ist international geprägt, und zahlreiche Lehrerinnen und Lehrer unterrichten zweisprachig. In unserer Studioübersicht kannst du gezielt nach Studios filtern, die englischsprachige Klassen anbieten.</p>
                         </div>
                     </details>
                     <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <summary itemprop="name">Wo finde ich Hot Yoga in Basel?</summary>
+                        <summary itemprop="name">Wie oft sollte ich Yoga machen?</summary>
                         <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p itemprop="text">Das einzige Hot-Yoga-Studio in Basel ist Bikram Yoga Basel an der Amerbachstrasse 66 in Kleinbasel. Die Klassen bestehen aus 26 Hatha-Posen bei 40°C und dauern 90 Minuten. Max. 18 Teilnehmer pro Klasse. Online-Reservierung via Eversports erforderlich.</p>
+                            <p itemprop="text">Für Anfänger empfehlen sich ein bis zwei Klassen pro Woche, um den Körper an die Praxis zu gewöhnen. Fortgeschrittene praktizieren oft drei bis fünf Mal wöchentlich. Bereits eine Stunde pro Woche bringt spürbare Verbesserungen bei Flexibilität, Kraft und Stressabbau. Wichtiger als die Häufigkeit ist die Regelmässigkeit: lieber einmal pro Woche konsequent als sporadisch intensiv. Viele Studios in der Schweiz bieten flexible Drop-in-Optionen oder günstige Monatsabos, die regelmässiges Üben erleichtern.</p>
                         </div>
                     </details>
                 </div>
             </div>
         </section>
 
-        <!-- Yoga Guide Basel — SEO Content Section -->
+        <!-- Yoga Guide Schweiz — SEO Content Section -->
         <section class="guide-section" id="guide">
             <div class="container">
 
                 <h2 class="section-title" id="guideTitle">Yoga Guide — Dein umfassender Wegweiser</h2>
 
                 <div class="guide-content">
-                    <p>Basel hat sich in den letzten Jahren zu einem der lebendigsten Yoga-Standorte der Schweiz entwickelt. Mit über 40 Studios und unabhängigen Lehrerinnen und Lehrern bietet die Stadt am Rheinknie eine beeindruckende Vielfalt an Yoga-Stilen, Kursformaten und Übungsphilosophien. Ob du zum ersten Mal eine Yogamatte ausrollst oder seit Jahren eine fortgeschrittene Ashtanga-Praxis pflegst — in Basel findest du garantiert das passende Angebot.</p>
+                    <p>Die Schweiz hat sich in den letzten Jahren zu einem der vielfältigsten Yoga-Standorte Europas entwickelt. Mit über 266 Studios in allen 26 Kantonen bietet das Land eine beeindruckende Vielfalt an Yoga-Stilen, Kursformaten und Übungsphilosophien. Von der Grossstadt bis zum Bergkanton — überall in der Schweiz findest du qualitativ hochwertige Yoga-Angebote für jedes Niveau.</p>
 
-                    <p>Die Basler Yoga-Szene zeichnet sich durch ihre Offenheit und Diversität aus. In Quartieren wie der <strong>Altstadt</strong>, <strong>Kleinbasel</strong>, <strong>Gundeldingen</strong>, <strong>St. Johann</strong> und <strong>Gellert</strong> gibt es Studios für jeden Geschmack und jedes Budget. Viele Angebote richten sich gezielt an Anfänger und Anfängerinnen, die den Einstieg ins Yoga suchen. Gleichzeitig finden erfahrene Praktizierende anspruchsvolle Mysore-Programme, intensives Hot Yoga bei 40 °C oder kreative Aerial-Yoga-Klassen an Tüchern. Die Community ist international geprägt — zahlreiche Klassen werden auf Deutsch und Englisch unterrichtet, was Basel besonders für Expats und internationale Fachkräfte attraktiv macht.</p>
+                    <p>Die Schweizer Yoga-Szene zeichnet sich durch ihre Mehrsprachigkeit und internationale Ausrichtung aus. In den grossen Zentren wie <strong>Zürich</strong>, <strong>Basel</strong>, <strong>Bern</strong>, <strong>Genf</strong> und <strong>Lausanne</strong> gibt es ein breites Spektrum an Studios für jeden Geschmack und jedes Budget. Viele Angebote richten sich gezielt an Anfänger, die den Einstieg ins Yoga suchen. Gleichzeitig finden erfahrene Praktizierende anspruchsvolle Mysore-Programme, intensives Hot Yoga oder kreative Aerial-Yoga-Klassen. Klassen werden auf Deutsch, Französisch, Italienisch und Englisch angeboten — die Schweizer Yoga-Community ist so international wie das Land selbst.</p>
 
-                    <p>Was die Yoga-Landschaft in Basel zusätzlich besonders macht: Viele Studios bieten flexible Drop-in-Optionen an, sodass du ohne langfristige Verpflichtung verschiedene Stile und Lehrkräfte ausprobieren kannst. Von traditionellem Hatha Yoga über dynamisches Vinyasa Flow bis hin zu meditativem Yin Yoga und therapeutischem Restorative Yoga — die Auswahl ist so vielfältig wie die Stadt selbst. Dieser Guide hilft dir, den Überblick zu behalten und den perfekten Yoga-Kurs in Basel zu finden.</p>
+                    <p>Besonders praktisch: Viele Studios in der Schweiz bieten flexible Drop-in-Optionen an, sodass du ohne langfristige Verpflichtung verschiedene Stile und Lehrkräfte ausprobieren kannst. Von traditionellem Hatha Yoga über dynamisches Vinyasa Flow bis hin zu meditativem Yin Yoga und therapeutischem Restorative Yoga — die Auswahl ist riesig. Dieser Guide hilft dir, den Überblick zu behalten und den perfekten Yoga-Kurs in deinem Kanton zu finden.</p>
 
                     <h3 id="yoga-zahlen">Yoga — Zahlen und Fakten</h3>
                     <div class="guide-stats-grid" id="guideStats">
@@ -585,7 +741,7 @@
 
                         <div class="guide-style-item">
                             <h4>Vinyasa Yoga</h4>
-                            <p>Vinyasa Yoga verbindet Bewegung und Atmung in einem fliessenden, dynamischen Ablauf. Jede Klasse ist anders aufgebaut, was für Abwechslung sorgt und sowohl Kraft als auch Flexibilität fördert. Vinyasa eignet sich hervorragend für alle, die eine körperlich aktive Praxis suchen — vom Einsteiger bis zum Fortgeschrittenen. In Basel ist Vinyasa der am häufigsten angebotene Stil.</p>
+                            <p>Vinyasa Yoga verbindet Bewegung und Atmung in einem fliessenden, dynamischen Ablauf. Jede Klasse ist anders aufgebaut, was für Abwechslung sorgt und sowohl Kraft als auch Flexibilität fördert. Vinyasa eignet sich hervorragend für alle, die eine körperlich aktive Praxis suchen — vom Einsteiger bis zum Fortgeschrittenen. Vinyasa ist der am häufigsten angebotene Yoga-Stil in der Schweiz.</p>
                         </div>
 
                         <div class="guide-style-item">
@@ -620,7 +776,7 @@
 
                         <div class="guide-style-item">
                             <h4>Bikram / Hot Yoga</h4>
-                            <p>Bikram Yoga besteht aus einer festen Sequenz von 26 Hatha-Positionen und zwei Atemübungen, die bei einer Raumtemperatur von 40 °C praktiziert werden. Die Hitze fördert die Durchblutung, steigert die Flexibilität und regt die Entgiftung an. Hot Yoga ist ideal für alle, die eine intensive körperliche Herausforderung suchen und Hitze gut vertragen — in Basel wird es exklusiv bei Bikram Yoga Basel angeboten.</p>
+                            <p>Bikram Yoga besteht aus einer festen Sequenz von 26 Hatha-Positionen und zwei Atemübungen, die bei einer Raumtemperatur von 40 °C praktiziert werden. Die Hitze fördert die Durchblutung, steigert die Flexibilität und regt die Entgiftung an. Hot Yoga ist ideal für alle, die eine intensive körperliche Herausforderung suchen und Hitze gut vertragen. In der Schweiz wird Hot Yoga in mehreren Städten angeboten.</p>
                         </div>
 
                         <div class="guide-style-item">
@@ -635,7 +791,7 @@
 
                         <div class="guide-style-item">
                             <h4>Schwangerschaftsyoga (Prenatal Yoga)</h4>
-                            <p>Schwangerschaftsyoga ist speziell auf die Bedürfnisse werdender Mütter abgestimmt. Die Übungen stärken den Beckenboden, lindern typische Schwangerschaftsbeschwerden wie Rückenschmerzen und bereiten körperlich und mental auf die Geburt vor. In Basel bieten mehrere Studios wie Volta Yoga, Mignon und Claudia Stamm Yoga regelmässige Prenatal-Kurse an.</p>
+                            <p>Schwangerschaftsyoga ist speziell auf die Bedürfnisse werdender Mütter abgestimmt. Die Übungen stärken den Beckenboden, lindern typische Schwangerschaftsbeschwerden wie Rückenschmerzen und bereiten körperlich und mental auf die Geburt vor. In vielen Schweizer Städten bieten Studios regelmässige Prenatal-Kurse an — nutze den Besonderheiten-Filter, um Angebote in deinem Kanton zu finden.</p>
                         </div>
 
                         <div class="guide-style-item">
@@ -645,21 +801,21 @@
 
                     </div>
 
-                    <h3 id="yoga-anfaenger-tipps">Yoga für Anfänger in Basel — Tipps für deinen Einstieg</h3>
+                    <h3 id="yoga-anfaenger-tipps">Yoga für Anfänger in der Schweiz — Tipps für deinen Einstieg</h3>
 
                     <div class="guide-tips">
                         <ol>
                             <li>
                                 <strong>Beginne mit einem Anfängerkurs oder einer Basics-Klasse.</strong>
-                                Viele Basler Studios wie B.Yoga, Niyama oder Anjali bieten spezielle Einführungskurse an, in denen Grundlagen wie Ausrichtung, Atmung und grundlegende Asanas Schritt für Schritt erklärt werden. Das gibt dir Sicherheit, bevor du in offene Klassen einsteigst.
+                                Viele Studios in der Schweiz bieten spezielle Einführungskurse an, in denen Grundlagen wie Ausrichtung, Atmung und grundlegende Asanas Schritt für Schritt erklärt werden. Achte im Stundenplan auf Bezeichnungen wie «Anfänger», «Basics» oder «Level 1» — das gibt dir Sicherheit, bevor du in offene Klassen einsteigst.
                             </li>
                             <li>
                                 <strong>Nutze Schnupper- und Neukundenangebote.</strong>
-                                Viele Studios bieten Probestunden oder vergünstigte Einführungswochen an. Einige — wie Alessia Yoga — schenken dir sogar die erste Stunde. So kannst du verschiedene Studios und Stile testen, ohne gleich ein Abo abzuschliessen.
+                                Viele Studios in der Schweiz bieten Probestunden oder vergünstigte Einführungswochen an. So kannst du verschiedene Studios und Stile testen, ohne gleich ein Abo abzuschliessen. Es lohnt sich, die Websites der Studios direkt zu vergleichen.
                             </li>
                             <li>
                                 <strong>Du brauchst nur bequeme Kleidung und eine offene Einstellung.</strong>
-                                Yogamatten, Blöcke, Gurte und Decken werden in den meisten Basler Studios kostenlos zur Verfügung gestellt. Bringe am besten ein kleines Handtuch und eine Wasserflasche mit. Spezielle Yoga-Kleidung ist nicht nötig — Hauptsache, du kannst dich frei bewegen.
+                                Yogamatten, Blöcke, Gurte und Decken werden in den meisten Schweizer Studios kostenlos zur Verfügung gestellt. Bringe am besten ein kleines Handtuch und eine Wasserflasche mit. Spezielle Yoga-Kleidung ist nicht nötig — Hauptsache, du kannst dich frei bewegen.
                             </li>
                             <li>
                                 <strong>Wähle den richtigen Stil für deine Ziele.</strong>
@@ -667,7 +823,7 @@
                             </li>
                             <li>
                                 <strong>Drop-in oder Kursblock — was ist besser?</strong>
-                                Drop-in-Klassen bieten maximale Flexibilität: Du kommst, wann es dir passt, und zahlst pro Besuch (ca. CHF 25–41). Kursblöcke über mehrere Wochen sind günstiger pro Lektion und bieten den Vorteil eines strukturierten Aufbaus — ideal, wenn du regelmässig am gleichen Tag und zur gleichen Zeit üben möchtest.
+                                Drop-in-Klassen bieten maximale Flexibilität: Du kommst, wann es dir passt, und zahlst pro Besuch (ca. CHF 25–45). Kursblöcke über mehrere Wochen sind günstiger pro Lektion und bieten den Vorteil eines strukturierten Aufbaus — ideal, wenn du regelmässig am gleichen Tag und zur gleichen Zeit üben möchtest.
                             </li>
                             <li>
                                 <strong>Komme 10–15 Minuten vor Kursbeginn.</strong>
@@ -680,80 +836,85 @@
                         </ol>
                     </div>
 
-                    <h3 id="yoga-quartiere-basel">Yoga in Basel nach Quartier</h3>
+                    <h3 id="yoga-staedte-schweiz">Yoga in den grössten Städten der Schweiz</h3>
 
                     <div class="guide-districts">
 
                         <div class="guide-district-item">
-                            <h4>Altstadt / Zentrum</h4>
-                            <p>Im Herzen von Basel, rund um Marktplatz und Barfüsserplatz, findest du einige der etabliertesten Yoga-Studios der Stadt. Die zentrale Lage macht sie ideal für Berufstätige, die vor oder nach der Arbeit üben möchten. Studios wie Niyama und InBalance liegen nur wenige Gehminuten vom Hauptzentrum entfernt und bieten ein breites Spektrum an Stilen von Vinyasa über Yin bis Pilates.</p>
+                            <h4>Yoga in Zürich</h4>
+                            <p>Zürich ist mit über 46 Studios der grösste Yoga-Standort der Schweiz. Die Stadt bietet eine enorme Vielfalt an Stilen — von Vinyasa und Ashtanga über Hot Yoga bis zu Aerial und Kundalini. Besonders in den Kreisen 1, 3, 4 und 5 sowie in Zürich West konzentriert sich das Angebot. Zürich ist auch ein Zentrum für Yoga Teacher Trainings und internationale Workshops. <a href="./kanton/zurich/">Alle Studios in Zürich ansehen</a></p>
                         </div>
 
                         <div class="guide-district-item">
-                            <h4>Kleinbasel</h4>
-                            <p>Auf der anderen Rheinseite hat sich Kleinbasel zu einem kreativen Yoga-Hotspot entwickelt. Hier findest du das einzige Bikram/Hot Yoga Studio der Stadt sowie internationale Studios wie The Looking Glass, das Klassen auf Englisch anbietet. Die Atmosphäre ist urban, divers und besonders bei jüngeren Praktizierenden und Expats beliebt. Die gute Tramanbindung macht Kleinbasel von überall her leicht erreichbar.</p>
+                            <h4>Yoga in Basel</h4>
+                            <p>Basel hat sich mit über 37 Studios zu einem der lebendigsten Yoga-Standorte der Schweiz entwickelt. Die Stadt am Rheinknie zeichnet sich durch ihre internationale Community aus — viele Klassen werden auf Deutsch und Englisch unterrichtet. Von der Altstadt über Kleinbasel bis Gundeldingen findest du Studios für jeden Geschmack, darunter Vinyasa, Hatha, Yin, Ashtanga, Aerial und Hot Yoga. <a href="./kanton/basel-stadt/">Alle Studios in Basel ansehen</a></p>
                         </div>
 
                         <div class="guide-district-item">
-                            <h4>Gundeldingen / SBB-Quartier</h4>
-                            <p>Das Gundeldinger Quartier nahe dem Bahnhof SBB ist eines der lebendigsten Viertel Basels — und das spiegelt sich auch im Yoga-Angebot wider. Studios wie Volta Yoga und weitere Anbieter in der Nähe des Gütergeländes bieten alles von Prenatal-Yoga über dynamisches Vinyasa bis hin zu ruhigem Yin. Die Nähe zum Bahnhof macht dieses Quartier besonders praktisch für Pendlerinnen und Pendler.</p>
+                            <h4>Yoga in Bern</h4>
+                            <p>Die Bundesstadt Bern bietet mit rund 28 Studios ein vielfältiges Yoga-Angebot. In der Altstadt, am Breitenrain und im Länggassquartier findest du Studios mit Schwerpunkten auf Vinyasa, Hatha, Iyengar und Yin Yoga. Bern ist bekannt für seine engagierte Yoga-Community und regelmässige Yoga-Events im Freien, besonders im Sommer an der Aare. <a href="./kanton/bern/">Alle Studios in Bern ansehen</a></p>
                         </div>
 
                         <div class="guide-district-item">
-                            <h4>St. Johann</h4>
-                            <p>St. Johann, mit seiner Nähe zum Novartis Campus und zum Rheinufer, bietet eine wachsende Yoga-Szene. Die Studios hier sind oft etwas kleiner und persönlicher, mit einem starken Gemeinschaftsgefühl. Du findest Angebote von klassischem Hatha bis zu spezialisiertem Kundalini Yoga. Das Quartier ist zudem ein beliebter Standort für Outdoor-Yoga am Rhein in den Sommermonaten.</p>
+                            <h4>Yoga in Luzern</h4>
+                            <p>Luzern bietet mit rund 16 Studios eine wachsende Yoga-Szene in malerischer Umgebung. Die Zentralschweizer Stadt hat Angebote von klassischem Hatha über dynamisches Vinyasa bis zu spezialisiertem Yin und Kundalini Yoga. Die Nähe zu den Bergen macht Luzern auch zu einem beliebten Ort für Yoga-Retreats und Outdoor-Yoga. <a href="./kanton/luzern/">Alle Studios in Luzern ansehen</a></p>
                         </div>
 
                         <div class="guide-district-item">
-                            <h4>Gellert / Bruderholz</h4>
-                            <p>Die ruhigeren Wohnquartiere Gellert und Bruderholz bieten Yoga in entspannter Atmosphäre abseits der Innenstadt. Hier findest du oft kleinere, private Yoga-Räume und erfahrene Lehrerinnen, die in intimem Rahmen unterrichten. Die Angebote reichen von therapeutischem Iyengar Yoga über sanftes Hatha bis zu Yoga für Senioren — ideal für alle, die eine persönliche Betreuung in kleinen Gruppen schätzen.</p>
+                            <h4>Yoga in Genf</h4>
+                            <p>Als internationales Zentrum bietet Genf rund 19 Yoga-Studios mit einem stark mehrsprachigen Angebot — Klassen werden auf Französisch, Englisch und oft auch Deutsch unterrichtet. Die Genfer Yoga-Szene ist besonders bei der internationalen Community beliebt und bietet alles von Vinyasa und Power Yoga bis zu Prenatal- und therapeutischem Yoga. <a href="./kanton/geneve/">Alle Studios in Genf ansehen</a></p>
+                        </div>
+
+                        <div class="guide-district-item">
+                            <h4>Yoga in Lausanne</h4>
+                            <p>Lausanne und der Kanton Waadt bieten mit rund 16 Studios ein breites Yoga-Angebot in der Westschweiz. Die Universitätsstadt am Genfersee verbindet urbane Energie mit natürlicher Schönheit. Das Angebot reicht von Vinyasa und Hatha über Ashtanga bis zu spezialisierten Angeboten wie Yoga für Sportler und Schwangerschaftsyoga. <a href="./kanton/vaud/">Alle Studios in Waadt ansehen</a></p>
                         </div>
 
                     </div>
 
-                    <h3 id="weitere-fragen">Weitere häufige Fragen zu Yoga in Basel</h3>
+                    <h3 id="weitere-fragen">Weitere häufige Fragen zu Yoga in der Schweiz</h3>
 
                     <div class="faq-list">
 
                         <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <summary itemprop="name">Wie viel kostet Yoga in Basel?</summary>
+                            <summary itemprop="name">Welche Preismodelle gibt es für Yoga in der Schweiz?</summary>
                             <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                <p itemprop="text">Die Preise für Yoga in Basel variieren je nach Studio und Format. Eine einzelne Drop-in-Klasse kostet in der Regel zwischen CHF 25 und CHF 41. Zehnerkarten bewegen sich zwischen CHF 250 und CHF 355, was den Einzelpreis deutlich senkt. Monatsabos mit unbegrenzten Besuchen liegen typischerweise bei CHF 150 bis CHF 220. Viele Studios bieten attraktive Neukundenangebote an — etwa zwei Wochen unlimitiert für CHF 50 oder eine kostenlose Probestunde. Studierende und Personen mit schmalem Budget finden bei einzelnen Anbietern auch Klassen mit gleitender Preisgestaltung (Dana-Prinzip) oder Vergünstigungen. Es lohnt sich, die Websites der Studios direkt zu vergleichen, da sich Preise und Aktionen regelmässig ändern.</p>
+                                <p itemprop="text">Schweizer Yoga-Studios bieten verschiedene Preismodelle an. Die gängigsten sind: Einzelstunden (CHF 25–45 pro Klasse), Zehnerkarten (CHF 230–380, senken den Einzelpreis deutlich), Monatsabos mit unbegrenzten Besuchen (CHF 120–250) und Jahresabos. Viele Studios bieten attraktive Neukundenangebote wie vergünstigte Einführungswochen oder eine kostenlose Probestunde. Studierende und Personen mit kleinem Budget finden bei einigen Anbietern auch Klassen mit gleitender Preisgestaltung (Dana-Prinzip). Die Preise variieren regional — in Grossstädten wie Zürich und Genf liegen sie tendenziell höher als in ländlicheren Kantonen.</p>
                             </div>
                         </details>
 
                         <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <summary itemprop="name">Welche Studios in Basel eignen sich besonders für Yoga-Anfänger?</summary>
+                            <summary itemprop="name">Wie finde ich ein anfängerfreundliches Yoga-Studio in der Schweiz?</summary>
                             <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                <p itemprop="text">Basel bietet zahlreiche Studios, die speziell auf Yoga-Anfänger ausgerichtet sind. B.Yoga, Niyama und Anjali haben dedizierte Anfänger-Klassen im Stundenplan, in denen Grundpositionen, Atemtechnik und Yoga-Etikette von Grund auf erklärt werden. Auch das Yoga Atelier Basel und YOGABLOOM sind für ihre einsteigerfreundliche Atmosphäre bekannt. Empfehlenswert sind Stile wie Hatha, sanftes Vinyasa oder Iyengar, da hier die Positionen ausführlich angeleitet werden. Viele Studios kennzeichnen das Niveau ihrer Klassen im Stundenplan klar mit «Anfänger», «Basics» oder «Level 1», sodass du sofort erkennst, welche Klasse für dich geeignet ist.</p>
+                                <p itemprop="text">Die meisten Yoga-Studios in der Schweiz heissen Anfänger willkommen. Achte im Stundenplan auf Klassen mit Bezeichnungen wie «Anfänger», «Basics», «Level 1» oder «Gentle». Empfehlenswerte Stile für den Einstieg sind Hatha (klassisch, ruhig), sanftes Vinyasa oder Iyengar (präzise Ausrichtung mit Hilfsmitteln). Viele Studios bieten auch spezielle Einführungskurse über mehrere Wochen an, in denen Grundpositionen, Atemtechnik und Yoga-Etikette systematisch erklärt werden. Nutze die Filter auf dieser Seite, um Studios in deinem Kanton zu finden, und probiere zunächst eine Schnupperstunde aus.</p>
                             </div>
                         </details>
 
                         <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <summary itemprop="name">In welchen Basler Studios kann ich Yoga ohne Anmeldung (Drop-in) besuchen?</summary>
+                            <summary itemprop="name">Kann ich in der Schweiz Yoga ohne Anmeldung (Drop-in) besuchen?</summary>
                             <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                <p itemprop="text">Viele Yoga-Studios in Basel ermöglichen spontane Besuche ohne Voranmeldung. Studios wie B.Yoga, Niyama, Anjali, Volta Yoga und das Lotos Yoga-Zentrum bieten regelmässig offene Drop-in-Klassen an, bei denen du einfach vorbeikommen kannst. Einige Studios — insbesondere Bikram Yoga Basel und kleinere Anbieter mit begrenzter Teilnehmerzahl — erfordern jedoch eine vorherige Online-Reservierung über Plattformen wie Eversports oder MindBody. Als Faustregel gilt: Grössere Studios mit mehreren Klassen pro Tag bieten häufiger Drop-in an, während spezialisierte Kleingruppen-Angebote eher eine Anmeldung verlangen. Ein kurzer Blick auf die Studio-Website oder ein Anruf genügt, um sicherzugehen.</p>
+                                <p itemprop="text">Ja, viele Yoga-Studios in der Schweiz ermöglichen spontane Besuche ohne Voranmeldung. Grössere Studios mit mehreren Klassen pro Tag bieten häufiger Drop-in an. Einige Studios — insbesondere Hot-Yoga-Anbieter und kleinere Räume mit begrenzter Teilnehmerzahl — erfordern jedoch eine vorherige Online-Reservierung über Plattformen wie Eversports, MindBody oder das jeweilige Studio-Buchungssystem. Als Faustregel: Ein kurzer Blick auf die Studio-Website oder ein Anruf genügt, um sicherzugehen, ob eine Anmeldung nötig ist.</p>
                             </div>
                         </details>
 
                         <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <summary itemprop="name">Wo kann ich Aerial Yoga in Basel machen?</summary>
+                            <summary itemprop="name">Wo finde ich spezialisierte Yoga-Angebote wie Aerial, Hot Yoga oder Prenatal?</summary>
                             <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                <p itemprop="text">Aerial Yoga wird in Basel von mehreren spezialisierten Anbietern unterrichtet. B.Yoga und The Looking Glass gehören zu den bekanntesten Studios mit regelmässigen Aerial-Yoga-Klassen. Beim Aerial Yoga übst du in einem von der Decke hängenden Tuch und erlebst klassische Yoga-Positionen und Umkehrhaltungen aus einer neuen Perspektive. Die meisten Studios bieten spezielle Einführungsklassen für Aerial-Neulinge an — Vorkenntnisse im Yoga sind hilfreich, aber nicht zwingend erforderlich. Da die Teilnehmerzahl durch die Anzahl der vorhandenen Tücher begrenzt ist, empfiehlt sich eine frühzeitige Anmeldung.</p>
+                                <p itemprop="text">Spezialisierte Yoga-Angebote findest du vor allem in den grösseren Städten der Schweiz. Aerial Yoga, bei dem du in hängenden Tüchern übst, wird in Zürich, Basel, Bern und Luzern angeboten. Hot Yoga (Bikram) bei 40 °C gibt es in mehreren Schweizer Städten. Schwangerschaftsyoga (Prenatal) und Postnatal-Yoga werden von vielen Studios landesweit angeboten. Nutze die Besonderheiten-Filter auf dieser Seite, um gezielt nach diesen Angeboten in deinem Kanton zu suchen.</p>
                             </div>
                         </details>
 
                         <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <summary itemprop="name">Gibt es Yoga-Klassen auf Englisch in Basel?</summary>
+                            <summary itemprop="name">In welchen Sprachen werden Yoga-Klassen in der Schweiz unterrichtet?</summary>
                             <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                <p itemprop="text">Ja, Basel bietet ein breites Angebot an englischsprachigen Yoga-Klassen. Studios wie The Looking Glass, B.Yoga, Bikram Yoga Basel und Volta Yoga unterrichten regelmässig auf Englisch. Auch bei Mignon und weiteren Studios mit internationaler Lehrerschaft finden Klassen auf Englisch statt. Viele Lehrerinnen und Lehrer in Basel sind zweisprachig und wechseln flexibel zwischen Deutsch und Englisch — besonders in gemischten Klassen. In der Studioübersicht auf dieser Seite kannst du gezielt nach Studios filtern, die Klassen auf Englisch anbieten. Basel ist als internationale Stadt mit vielen Expats besonders gut aufgestellt für englischsprachige Yoga-Praktizierende.</p>
+                                <p itemprop="text">Die Unterrichtssprache variiert je nach Region. In der Deutschschweiz (Zürich, Basel, Bern, Luzern) werden Klassen primär auf Deutsch und häufig auch auf Englisch angeboten. In der Romandie (Genf, Lausanne, Freiburg) wird auf Französisch und Englisch unterrichtet. Im Tessin finden Klassen auf Italienisch statt. Viele Lehrerinnen und Lehrer sind mehrsprachig und passen die Sprache an die Teilnehmenden an. In unserer Studioübersicht kannst du gezielt nach Studios filtern, die Klassen auf Englisch anbieten.</p>
                             </div>
                         </details>
 
                         <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <summary itemprop="name">Gibt es Yoga für Senioren (60+) in Basel?</summary>
+                            <summary itemprop="name">Gibt es Yoga für Senioren (60+) in der Schweiz?</summary>
                             <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                <p itemprop="text">Ja, mehrere Studios in Basel bieten spezielle Yoga-Klassen für Seniorinnen und Senioren an. Diese Kurse — oft als «Yoga 55+», «Yoga 60+» oder «Sanftes Yoga» bezeichnet — sind auf die Bedürfnisse älterer Teilnehmender zugeschnitten: sanfte Bewegungen, Stuhl-Yoga-Optionen, Gleichgewichtsübungen und gelenkschonende Positionen stehen im Vordergrund. Studios wie das Lotos Yoga-Zentrum und einzelne unabhängige Lehrerinnen haben sich auf diese Zielgruppe spezialisiert. Auch Iyengar Yoga eignet sich durch den Einsatz von Hilfsmitteln besonders gut für ältere Praktizierende. Die Studios sind in der Regel darauf eingestellt, Übungen individuell anzupassen — Yoga kennt kein Alter und ist in jeder Lebensphase wertvoll.</p>
+                                <p itemprop="text">Ja, viele Studios in der Schweiz bieten spezielle Yoga-Klassen für Seniorinnen und Senioren an. Diese Kurse — oft als «Yoga 55+», «Yoga 60+» oder «Sanftes Yoga» bezeichnet — sind auf die Bedürfnisse älterer Teilnehmender zugeschnitten: sanfte Bewegungen, Stuhl-Yoga-Optionen, Gleichgewichtsübungen und gelenkschonende Positionen stehen im Vordergrund. Auch Iyengar Yoga eignet sich durch den Einsatz von Hilfsmitteln besonders gut für ältere Praktizierende. Yoga kennt kein Alter und ist in jeder Lebensphase wertvoll — die Studios sind in der Regel darauf eingestellt, Übungen individuell anzupassen.</p>
                             </div>
                         </details>
 
@@ -802,7 +963,7 @@
         <!-- Canton Cross-Links (internal linking for SEO) -->
         <section class="canton-links-section">
             <div class="container">
-                <h3 class="canton-links-title" data-i18n="cantons.other">Yoga in anderen Kantonen</h3>
+                <h3 class="canton-links-title" data-i18n="cantons.other">Yoga Kurse in allen 26 Kantonen der Schweiz</h3>
                 <div id="cantonCrossLinks" class="canton-cross-links"></div>
             </div>
         </section>
@@ -844,6 +1005,8 @@
                 <div class="footer-links">
                     <h3>Blog</h3>
                     <ul>
+                        <li><a href="./blog/beste-yoga-studios-basel-2026/">Beste Studios Basel</a></li>
+                        <li><a href="./blog/yoga-preise-schweiz-2026/">Yoga Preise Schweiz</a></li>
                         <li><a href="./blog/yoga-fuer-anfaenger/">Yoga für Anfänger</a></li>
                         <li><a href="./blog/yoga-stile-vergleich/">Yoga-Stile Vergleich</a></li>
                         <li><a href="./blog/yoga-in-der-schweiz/">Yoga in der Schweiz</a></li>

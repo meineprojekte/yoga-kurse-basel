@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <!-- White background with rounded corners -->
+  <rect width="180" height="180" rx="36" fill="#fff"/>
+
+  <!-- Lotus flower petals — brand purple -->
+  <g fill="#6B5B95" transform="translate(90,100)">
+    <!-- Center petal -->
+    <ellipse cx="0" cy="-38" rx="10" ry="24"/>
+    <!-- Left petals -->
+    <ellipse cx="-22" cy="-30" rx="10" ry="22" transform="rotate(-30 -22 -30)"/>
+    <ellipse cx="-38" cy="-16" rx="9" ry="20" transform="rotate(-60 -38 -16)"/>
+    <!-- Right petals -->
+    <ellipse cx="22" cy="-30" rx="10" ry="22" transform="rotate(30 22 -30)"/>
+    <ellipse cx="38" cy="-16" rx="9" ry="20" transform="rotate(60 38 -16)"/>
+    <!-- Outer left -->
+    <ellipse cx="-46" cy="0" rx="8" ry="18" transform="rotate(-80 -46 0)"/>
+    <!-- Outer right -->
+    <ellipse cx="46" cy="0" rx="8" ry="18" transform="rotate(80 46 0)"/>
+  </g>
+
+  <!-- Seated figure silhouette on top of lotus -->
+  <g fill="#6B5B95" transform="translate(90,100)">
+    <!-- Head -->
+    <circle cx="0" cy="-62" r="9"/>
+    <!-- Body -->
+    <path d="M-5 -53 L-4 -30 Q-8 -26 -18 -22 Q-22 -20 -18 -16 L-6 -22 L-10 -10 Q-14 -4 -10 0 L0 -6 L10 0 Q14 -4 10 -10 L6 -22 L18 -16 Q22 -20 18 -22 Q8 -26 4 -30 L5 -53 Z"/>
+  </g>
+
+  <!-- Subtle accent arc -->
+  <path d="M50 140 Q90 154 130 140" fill="none" stroke="#D4A373" stroke-width="3" stroke-linecap="round"/>
+</svg>

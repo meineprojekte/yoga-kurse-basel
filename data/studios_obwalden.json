@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T11:09:12.304293+00:00",
+  "last_updated": "2026-03-27T13:24:18.575193+00:00",
   "studios": [
     {
       "id": "goyoga-sarnen",
@@ -97,12 +97,23 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T11:09:12.304269+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T13:24:18.573122+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
-          "website": "https://www.yoga-ishwari.ch/"
+          "website": "https://www.yoga-ishwari.ch/",
+          "pricing": "https://www.yoga-ishwari.ch/preise"
         }
+      },
+      "pricing": {
+        "single": 25,
+        "card_10": 220,
+        "monthly": 100,
+        "trial": 25,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.yoga-ishwari.ch/preise",
+        "last_checked": "2026-03-27T13:24:18.573122+00:00"
       }
     }
   ]

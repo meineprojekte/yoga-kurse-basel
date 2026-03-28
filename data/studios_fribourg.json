@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-26T23:00:31.090489+00:00",
+  "last_updated": "2026-03-27T17:23:55.683239+00:00",
   "studios": [
     {
       "id": "yogiface-fribourg",
@@ -36,18 +36,19 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "trial": 0,
+        "single": 50,
+        "card_10": 350,
+        "trial": 50,
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogiface.ch/prix",
-        "last_checked": "2026-03-22T11:04:07.793330+00:00",
-        "abo": 500.0
+        "last_checked": "2026-03-27T13:00:40.111437+00:00"
       },
       "scrape_status": "scraped",
       "last_scraped": "2026-03-22T11:04:05.503759+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:04:07.793391+00:00",
-        "last_price_check": "2026-03-22T11:04:07.793391+00:00",
+        "last_price_check": "2026-03-27T13:00:40.111437+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -95,16 +96,21 @@
       "last_scraped": "2026-03-22T11:04:08.108419+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:04:09.790236+00:00",
-        "last_price_check": "2026-03-26T21:50:27.632078+00:00",
+        "last_price_check": "2026-03-27T17:23:53.641849+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
-          "website": "https://www.happinez.ch/"
+          "website": "https://www.happinez.ch/",
+          "pricing": "https://www.happinez.ch/shop"
         }
       },
       "pricing": {
-        "verified": false,
-        "currency": "CHF"
+        "single": 19,
+        "trial": 5,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.happinez.ch/shop",
+        "last_checked": "2026-03-27T17:23:53.641849+00:00"
       }
     },
     {
@@ -147,12 +153,21 @@
       "last_scraped": "2026-03-22T11:04:10.182280+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T11:04:10.845871+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T17:23:55.683080+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
-          "website": "https://www.sakinayoga.com/"
+          "website": "https://www.sakinayoga.com/",
+          "pricing": "https://www.sakinayoga.com/tarifs"
         }
+      },
+      "pricing": {
+        "single": 10,
+        "trial": 100,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.sakinayoga.com/tarifs",
+        "last_checked": "2026-03-27T17:23:55.683080+00:00"
       }
     },
     {

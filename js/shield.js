@@ -72,31 +72,6 @@
 
     // --- Protections that DON'T break site functionality ---
 
-    // Anti right-click (except on inputs)
-    document.addEventListener('contextmenu', function (e) {
-        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') return;
-        e.preventDefault();
-    });
-
-    // Anti text selection on data cards (not on inputs/guide)
-    document.addEventListener('selectstart', function (e) {
-        var t = e.target.tagName;
-        if (t === 'INPUT' || t === 'TEXTAREA' || t === 'SELECT') return;
-        if (e.target.closest && (e.target.closest('.guide-content') || e.target.closest('.faq-answer') || e.target.closest('.feedback-form'))) return;
-        e.preventDefault();
-    });
-
-    // Block Ctrl+U (view source), Ctrl+S (save), F12
-    document.addEventListener('keydown', function (e) {
-        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
-        if ((e.ctrlKey || e.metaKey) && (e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S')) e.preventDefault();
-        if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j')) e.preventDefault();
-        if (e.key === 'F12') e.preventDefault();
-    });
-
-    // Anti drag
-    document.addEventListener('dragstart', function (e) { e.preventDefault(); });
-
     // Anti iframe
     if (window.top !== window.self) {
         try { window.top.location = window.self.location; } catch (e) {
@@ -104,14 +79,15 @@
         }
     }
 
-    // Clipboard: append source attribution
+    // Clipboard: append source attribution (non-invasive — keeps original text, appends source)
     document.addEventListener('copy', function (e) {
         if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
         var sel = window.getSelection();
-        if (!sel || sel.toString().length < 20) return;
-        e.preventDefault();
+        if (!sel || sel.toString().length < 80) return;
+        var original = sel.toString();
         if (e.clipboardData) {
-            e.clipboardData.setData('text/plain', sel.toString() + '\n\n[Quelle: YogaSchweiz - Kopieren ohne Genehmigung untersagt]');
+            e.preventDefault();
+            e.clipboardData.setData('text/plain', original + '\n\n— Quelle: yogaschweiz.ch');
         }
     });
 
@@ -158,11 +134,6 @@
     decoyDiv.innerHTML = '<div class="studio-card"><h3 class="studio-name">Phantom Yoga</h3><p>Fake Street 1, 0000 Nowhere</p></div>' +
         '<div class="studio-card"><h3 class="studio-name">Ghost Flow Center</h3><p>Trap Road 2, 0000 Decoy</p></div>';
     document.body.appendChild(decoyDiv);
-
-    // Print protection via CSS
-    var printCSS = document.createElement('style');
-    printCSS.textContent = '@media print{.studio-card,.schedule-row,.guide-comparison-table{display:none!important}body::after{content:"Drucken nicht erlaubt - yogaschweiz online besuchen";display:block;padding:40px;text-align:center;font-size:20px}}';
-    document.head.appendChild(printCSS);
 
     // Console warning
     console.log('%c\u26A0 STOP!', 'color:red;font-size:50px;font-weight:bold;');

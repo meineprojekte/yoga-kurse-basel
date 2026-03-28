@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+
+  <!-- Vinyasa: Warrior I — deep lunge, arms reaching overhead -->
+  <symbol id="yoga-vinyasa" viewBox="0 0 64 64">
+    <circle cx="32" cy="7" r="5" fill="currentColor"/>
+    <path fill="currentColor" d="M30 13h4l1 4 3-2 1.5 2-4.5 3v6l6 5 5 15 4 10h-3l-4-10-5-12-3 4v14h-3V38l-3-4-5 12-4 10h-3l4-10 6-15 6-5v-6l-4.5-3L27 15l3-2z"/>
+  </symbol>
+
+  <!-- Hatha: Vrksasana / Tree pose — standing on one leg, arms joined overhead -->
+  <symbol id="yoga-hatha" viewBox="0 0 64 64">
+    <circle cx="32" cy="6" r="5" fill="currentColor"/>
+    <path fill="currentColor" d="M29 1l3-1 3 1v11h-6zM30 12h4v8l5-2 1 2-6 4v6l2 18h8v3H20v-3h8l2-18v-6l-6-4 1-2 5 2z"/>
+  </symbol>
+
+  <!-- Yin: Paschimottanasana — seated forward fold reaching to toes -->
+  <symbol id="yoga-yin" viewBox="0 0 64 64">
+    <circle cx="26" cy="20" r="4.5" fill="currentColor"/>
+    <path fill="currentColor" d="M28 25l10 3 10-1v3l-10 1-8-1-4 4-2 6h-6l4-10 4-4zM15 42h36v4H15z"/>
+  </symbol>
+
+  <!-- Ashtanga: Chaturanga Dandasana — low plank position -->
+  <symbol id="yoga-ashtanga" viewBox="0 0 64 64">
+    <circle cx="10" cy="25" r="4.5" fill="currentColor"/>
+    <path fill="currentColor" d="M14 30l40-3v4l-40 3v6h-3v-6l-3 6h-3l4-8zM52 27l4-2v4z"/>
+  </symbol>
+
+  <!-- Iyengar: Trikonasana — triangle pose, wide stance, arms in line -->
+  <symbol id="yoga-iyengar" viewBox="0 0 64 64">
+    <circle cx="28" cy="8" r="4.5" fill="currentColor"/>
+    <path fill="currentColor" d="M26 4l2-4 2 4v9h-4zM24 14l-8 18-6 3 1 3 7-3 8-16h4l-2 8v18h-4v3h10v-3h-3V25l4-8zM13 50h40v4H13z"/>
+  </symbol>
+
+  <!-- Kundalini: Sukhasana — cross-legged meditation, hands on knees -->
+  <symbol id="yoga-kundalini" viewBox="0 0 64 64">
+    <circle cx="32" cy="8" r="5" fill="currentColor"/>
+    <path fill="currentColor" d="M29 14h6v16l8 2 6-4 2 2-7 5-9-2v6h10l6 6H14l6-6h10v-6l-9 2-7-5 2-2 6 4 8-2V14z"/>
+  </symbol>
+
+  <!-- Aerial: Figure in fabric hammock, legs in split -->
+  <symbol id="yoga-aerial" viewBox="0 0 64 64">
+    <line x1="28" y1="0" x2="24" y2="30" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+    <line x1="36" y1="0" x2="40" y2="30" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="32" cy="16" r="4" fill="currentColor"/>
+    <path fill="currentColor" d="M30 21h4l2 8-4 4-4-4zM28 30l-8 10-4 6h3l4-5 7-8zM36 30l8 10 4 6h-3l-4-5-7-8zM30 21l-6-2-4-4 2-2 4 3 4 2zM34 21l6-2 4-4-2-2-4 3-4 2z"/>
+  </symbol>
+
+  <!-- Bikram: Dandayamana Dhanurasana — standing bow, leg kicked back, arm forward -->
+  <symbol id="yoga-bikram" viewBox="0 0 64 64">
+    <circle cx="32" cy="8" r="4.5" fill="currentColor"/>
+    <path fill="currentColor" d="M30 13h4l1 6 8-6 2 2-10 8v10l-1 18h-3l-1-18V23l-6-6 2-2 4 4zM36 23l10 10 2-2-10-10z"/>
+  </symbol>
+
+  <!-- Jivamukti: Sirsasana — headstand, legs straight up -->
+  <symbol id="yoga-jivamukti" viewBox="0 0 64 64">
+    <circle cx="32" cy="56" r="5" fill="currentColor"/>
+    <path fill="currentColor" d="M30 51h4V30h3V12l4 6 2-2-6-8h-2V4h-2v4h-2l-6 8 2 2 4-6h3v18h-4z"/>
+  </symbol>
+
+  <!-- Restorative: Supta Baddha Konasana — reclining, supported, relaxed -->
+  <symbol id="yoga-restorative" viewBox="0 0 64 64">
+    <circle cx="10" cy="30" r="4.5" fill="currentColor"/>
+    <path fill="currentColor" d="M14 33l6-2h8l4-4 2 2-4 4H20l-4 2-4 6h-3l5-8zM20 35l30 1v4l-30-1z"/>
+    <ellipse cx="34" cy="40" rx="14" ry="3" fill="currentColor" opacity="0.15"/>
+  </symbol>
+
+  <!-- Prenatal: Gentle seated pose, hands cradling belly area -->
+  <symbol id="yoga-prenatal" viewBox="0 0 64 64">
+    <circle cx="32" cy="8" r="5" fill="currentColor"/>
+    <path fill="currentColor" d="M29 14h6v10l4 4 4-2 1 2-5 3-4-3v8l4 14h-3l-4-14-4 14h-3l4-14v-8l-4 3-5-3 1-2 4 2 4-4z"/>
+    <ellipse cx="32" cy="30" rx="5" ry="4" fill="currentColor" opacity="0.2"/>
+  </symbol>
+
+  <!-- Pilates: The Hundred — supine, legs at 45deg, arms pumping -->
+  <symbol id="yoga-pilates" viewBox="0 0 64 64">
+    <circle cx="14" cy="30" r="4.5" fill="currentColor"/>
+    <path fill="currentColor" d="M18 33l8 1 6-4 2 2-6 5-10-1v6h-3v-9zM26 33l14-14 4-2 1 2-4 3-13 13zM26 35l12-10 4-2 1 2-4 3-11 9z"/>
+  </symbol>
+
+  <!-- Nidra: Savasana — lying flat on back, arms slightly away from body -->
+  <symbol id="yoga-nidra" viewBox="0 0 64 64">
+    <circle cx="8" cy="32" r="4.5" fill="currentColor"/>
+    <path fill="currentColor" d="M13 30h42v4H13zM55 30l4-3v10l-4-3zM18 30l-2-4-4-2 1-2 4 2 3 4zM38 30l-2-4-4-2 1-2 4 2 3 4z"/>
+  </symbol>
+
+  <!-- Default: Tadasana with Anjali Mudra — standing with palms pressed together -->
+  <symbol id="yoga-default" viewBox="0 0 64 64">
+    <circle cx="32" cy="6" r="5" fill="currentColor"/>
+    <path fill="currentColor" d="M30 12h4v10l4 2-1 2-3-1v4l2 18h8v3H20v-3h8l2-18v-4l-3 1-1-2 4-2z"/>
+    <path fill="currentColor" d="M30 20l2 4 2-4v-2h-4z" opacity="0.6"/>
+  </symbol>
+
+</svg>

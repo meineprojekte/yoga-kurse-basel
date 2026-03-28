@@ -43,7 +43,12 @@
       "headline": "Yoga in der Schweiz 2026: Alle 26 Kantone im Überblick",
       "description": "Umfassender Überblick über die Schweizer Yoga-Szene 2026: 266 Studios in allen 26 Kantonen mit Statistiken, Trends und regionalen Besonderheiten.",
       "author": {"@type": "Organization", "name": "Redaktion YogaSchweiz"},
-      "publisher": {"@type": "Organization", "name": "YogaSchweiz", "url": "https://meineprojekte.github.io/yoga-kurse-basel/"},
+      "publisher": {"@type": "Organization", "name": "YogaSchweiz", "url": "https://meineprojekte.github.io/yoga-kurse-basel/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://meineprojekte.github.io/yoga-kurse-basel/img/og-image.png"
+        }
+      },
       "datePublished": "2026-03-21",
       "dateModified": "2026-03-21",
       "mainEntityOfPage": "https://meineprojekte.github.io/yoga-kurse-basel/blog/yoga-in-der-schweiz/",
@@ -218,9 +223,12 @@
         [id] { scroll-margin-top: 80px; }
         select, input { font-size: 16px; }
         @media (max-width: 480px) { .author-box { flex-direction: column; text-align: center; gap: 12px; } }
+        .skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); background: #6B5B95; color: #fff; padding: 8px 16px; border-radius: 0 0 8px 8px; z-index: 9999; font-size: 0.9rem; text-decoration: none; transition: top 0.2s; }
+        .skip-link:focus { top: 0; }
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
 
     <header class="header">
         <div class="header-inner">
@@ -243,7 +251,7 @@
         </nav>
     </div>
 
-    <main class="container">
+    <main id="main-content" class="container">
         <article class="article-content">
 
             <nav class="toc" aria-label="Inhaltsverzeichnis">

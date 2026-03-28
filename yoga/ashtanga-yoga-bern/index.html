@@ -30,6 +30,7 @@
     <meta property="og:image" content="https://meineprojekte.github.io/yoga-kurse-basel/img/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Yoga Schweiz — Studios und Kurse">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -41,7 +42,7 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Article",
+      "@type": "WebPage",
       "headline": "Ashtanga Yoga in Bern",
       "description": "Ashtanga Yoga in Bern: 14 Studios mit Ashtanga Yoga-Kursen. Adressen, Stile und Links. Finde deinen perfekten Kurs.",
       "url": "https://meineprojekte.github.io/yoga-kurse-basel/yoga/ashtanga-yoga-bern/",
@@ -390,9 +391,12 @@
         @media (hover: none) and (pointer: coarse) { .studio-card:hover { transform: none; } .studio-card:active { transform: scale(0.98); transition-duration: 50ms; } .related-link:active { transform: scale(0.95); transition-duration: 50ms; } }
         [id] { scroll-margin-top: 80px; }
         select, input { font-size: 16px; }
+        .skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); background: #6B5B95; color: #fff; padding: 8px 16px; border-radius: 0 0 8px 8px; z-index: 9999; font-size: 0.9rem; text-decoration: none; transition: top 0.2s; }
+        .skip-link:focus { top: 0; }
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
 
     <!-- Header -->
     <header class="header">
@@ -424,7 +428,7 @@
     </section>
 
     <!-- Content -->
-    <main class="content">
+    <main id="main-content" class="content">
 
         <!-- Description -->
         <section class="section description">

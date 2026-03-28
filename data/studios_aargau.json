@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-26T23:00:31.090489+00:00",
+  "last_updated": "2026-03-27T17:17:38.371691+00:00",
   "studios": [
     {
       "id": "aloha-yoga-aarau",
@@ -44,21 +44,23 @@
       "classes": [],
       "scrape_status": "no_data",
       "pricing": {
+        "single": 30,
+        "card_10": 185,
+        "monthly": 329,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.alohayoga.ch/preise",
-        "last_checked": "2026-03-22T10:58:20.130772+00:00",
-        "monthly": 65.0
+        "source": "https://www.alohayoga.ch/einkaufen/",
+        "last_checked": "2026-03-27T17:16:23.284838+00:00"
       },
       "_meta": {
         "last_scraped": "2026-03-22T10:58:20.130918+00:00",
-        "last_price_check": "2026-03-22T10:58:20.130918+00:00",
+        "last_price_check": "2026-03-27T17:16:23.284838+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.alohayoga.ch/",
           "schedule": "https://www.eversports.ch/s/aloha-yoga",
-          "pricing": "https://www.alohayoga.ch/preise"
+          "pricing": "https://www.alohayoga.ch/einkaufen/"
         }
       }
     },
@@ -152,7 +154,7 @@
       ],
       "_meta": {
         "last_scraped": "2026-03-22T10:58:45.517984+00:00",
-        "last_price_check": "2026-03-26T21:37:25.467308+00:00",
+        "last_price_check": "2026-03-27T12:38:56.553044+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -161,12 +163,18 @@
           }
         ],
         "source_urls": {
-          "website": "https://www.my-yoga-garden.ch"
+          "website": "https://www.my-yoga-garden.ch",
+          "pricing": "https://www.my-yoga-garden.ch/preise"
         }
       },
       "pricing": {
-        "verified": false,
-        "currency": "CHF"
+        "single": 1100,
+        "card_10": 30,
+        "monthly": 1100,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.my-yoga-garden.ch/preise",
+        "last_checked": "2026-03-27T12:38:56.553044+00:00"
       }
     },
     {
@@ -207,12 +215,21 @@
       "last_scraped": "2026-03-22T10:58:49.185411+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T10:58:51.750486+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T17:17:38.371472+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
-          "website": "https://yogaiyengar.ch/"
+          "website": "https://yogaiyengar.ch/",
+          "pricing": "https://yogaiyengar.ch/stundenplan"
         }
+      },
+      "pricing": {
+        "single": 35,
+        "trial": 25,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://yogaiyengar.ch/stundenplan",
+        "last_checked": "2026-03-27T17:17:38.371472+00:00"
       }
     },
     {
@@ -315,12 +332,21 @@
       "last_scraped": "2026-03-22T10:59:09.411698+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T10:59:12.001484+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T12:36:34.244055+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
-          "website": "https://mahameru.ch/"
+          "website": "https://mahameru.ch/",
+          "pricing": "https://mahameru.ch/book-now/"
         }
+      },
+      "pricing": {
+        "single": 20,
+        "trial": 20,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://mahameru.ch/book-now/",
+        "last_checked": "2026-03-27T12:36:34.244055+00:00"
       }
     },
     {
@@ -471,12 +497,22 @@
       "scrape_status": "no_data",
       "_meta": {
         "last_scraped": "2026-03-22T10:59:24.581442+00:00",
-        "last_price_check": null,
+        "last_price_check": "2026-03-27T12:39:53.205860+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
-          "website": "https://www.namaste-yoga-baden.ch/"
+          "website": "https://www.namaste-yoga-baden.ch/",
+          "pricing": "https://www.namaste-yoga-baden.ch/unsere-yoga-kurse/namaste-yoga-baden-preise-und-agbs/"
         }
+      },
+      "pricing": {
+        "single": 30,
+        "card_10": 180,
+        "trial": 15,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.namaste-yoga-baden.ch/unsere-yoga-kurse/namaste-yoga-baden-preise-und-agbs/",
+        "last_checked": "2026-03-27T12:39:53.205860+00:00"
       }
     },
     {
@@ -578,16 +614,23 @@
       "last_scraped": "2026-03-22T10:59:27.187319+00:00",
       "_meta": {
         "last_scraped": "2026-03-22T10:59:27.886595+00:00",
-        "last_price_check": "2026-03-26T21:38:55.766182+00:00",
+        "last_price_check": "2026-03-27T12:40:11.199647+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
-          "website": "https://www.jetzt.yoga/"
+          "website": "https://www.jetzt.yoga/",
+          "pricing": "https://www.jetzt.yoga/yogakurs-baden"
         }
       },
       "pricing": {
-        "verified": false,
-        "currency": "CHF"
+        "single": 8,
+        "card_10": 38,
+        "monthly": 30,
+        "trial": 8,
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://www.jetzt.yoga/yogakurs-baden",
+        "last_checked": "2026-03-27T12:40:11.199647+00:00"
       }
     }
   ]
