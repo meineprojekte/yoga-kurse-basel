@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-26T22:22:14.809973+00:00",
+  "last_updated": "2026-04-06T07:53:29.207126+00:00",
   "studios": [
     {
       "id": "yoga-loft-chur",
@@ -41,7 +41,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:06:41.218931+00:00",
+      "last_scraped": "2026-04-06T07:52:26.177896+00:00",
       "detected_booking_links": [
         {
           "platform": "mindbody",
@@ -52,12 +52,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogaloftchur.ch/preise",
-        "last_checked": "2026-03-22T11:06:41.347135+00:00",
+        "last_checked": "2026-04-06T07:52:29.665915+00:00",
         "single": 35.0
       },
       "_meta": {
-        "last_scraped": "2026-03-22T11:06:41.347222+00:00",
-        "last_price_check": "2026-03-22T11:06:41.347222+00:00",
+        "last_scraped": "2026-04-06T07:52:29.665959+00:00",
+        "last_price_check": "2026-04-06T07:52:29.665959+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -114,12 +114,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://yogapyramide.ch/preise",
-        "last_checked": "2026-03-22T11:06:45.062573+00:00"
+        "last_checked": "2026-04-06T07:52:37.554775+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:06:42.470936+00:00",
+      "last_scraped": "2026-04-06T07:52:30.562793+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:06:45.062595+00:00",
+        "last_scraped": "2026-04-06T07:52:37.554802+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -174,12 +174,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://belude.ch/programm.html",
-        "last_checked": "2026-03-22T11:06:47.174634+00:00"
+        "last_checked": "2026-04-06T07:52:40.634435+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:06:45.902039+00:00",
+      "last_scraped": "2026-04-06T07:52:37.692706+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:06:47.174654+00:00",
+        "last_scraped": "2026-04-06T07:52:40.634469+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -226,10 +226,19 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-03-22T11:07:02.309246+00:00",
+        "last_scraped": "2026-04-06T07:53:03.971891+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
-        "booking_links": [],
+        "booking_links": [
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/s/_b2_iQ"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/s/_b2_iQ"
+          }
+        ],
         "source_urls": {
           "website": "https://rawstation.ch/yoga-by-raw-station/",
           "schedule": "https://www.eversports.ch/s/raw-yoga"
@@ -339,10 +348,19 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-03-22T11:07:03.459571+00:00",
+        "last_scraped": "2026-04-06T07:53:10.156720+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
-        "booking_links": [],
+        "booking_links": [
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/s/yogaplaza-davos"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/s/yogaplaza-davos"
+          }
+        ],
         "source_urls": {
           "website": "https://www.yogaplazadavos.ch/",
           "schedule": "https://www.eversports.ch/s/yogaplaza-davos"
@@ -388,9 +406,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:07:05.354587+00:00",
+      "last_scraped": "2026-04-06T07:53:11.141178+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:07:13.939325+00:00",
+        "last_scraped": "2026-04-06T07:53:25.403149+00:00",
         "last_price_check": "2026-03-26T22:22:14.808879+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -405,7 +423,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://yogaloftengadin.ch/prices/",
-        "last_checked": "2026-03-26T22:22:14.808879+00:00"
+        "last_checked": "2026-04-06T07:53:25.403109+00:00"
       }
     },
     {
@@ -449,12 +467,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://acroyoga.group/",
-        "last_checked": "2026-03-26T21:37:22.955099+00:00"
+        "last_checked": "2026-04-06T07:53:29.207077+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:07:15.008855+00:00",
+      "last_scraped": "2026-04-06T07:53:25.674455+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:07:16.240832+00:00",
+        "last_scraped": "2026-04-06T07:53:29.207108+00:00",
         "last_price_check": "2026-03-26T21:37:22.955099+00:00",
         "scrape_status": "scraped",
         "booking_links": [],

@@ -2,6 +2,149 @@
   "last_updated": "2026-03-25T17:23:20.724876+00:00",
   "classes": [
     {
+      "studio_id": "yogaschule-narayana-schaffhausen",
+      "studio_name": "Yogaschule SH (Narayana)",
+      "day": "Sunday",
+      "time_start": "10:00",
+      "time_end": "11:00",
+      "class_name": "18.00 – 19.00",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yogaschule-narayana.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogaschule-narayana-schaffhausen",
+      "studio_name": "Yogaschule SH (Narayana)",
+      "day": "Wednesday",
+      "time_start": "09:00",
+      "time_end": "10:00",
+      "class_name": "Do",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yogaschule-narayana.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogalicht-schaffhausen",
+      "studio_name": "YOGALICHT",
+      "day": "Monday",
+      "time_start": "09:30",
+      "time_end": "10:30",
+      "class_name": "Uhr",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogalicht.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogalicht-schaffhausen",
+      "studio_name": "YOGALICHT",
+      "day": "Monday",
+      "time_start": "12:15",
+      "time_end": "13:15",
+      "class_name": "Uhr",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogalicht.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogalicht-schaffhausen",
+      "studio_name": "YOGALICHT",
+      "day": "Monday",
+      "time_start": "18:00",
+      "time_end": "19:15",
+      "class_name": "Uhr",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogalicht.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogalicht-schaffhausen",
+      "studio_name": "YOGALICHT",
+      "day": "Monday",
+      "time_start": "19:30",
+      "time_end": "20:45",
+      "class_name": "Uhr",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogalicht.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogalicht-schaffhausen",
+      "studio_name": "YOGALICHT",
+      "day": "Tuesday",
+      "time_start": "08:30",
+      "time_end": "09:30",
+      "class_name": "Uhr",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogalicht.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogalicht-schaffhausen",
+      "studio_name": "YOGALICHT",
+      "day": "Tuesday",
+      "time_start": "10:00",
+      "time_end": "11:00",
+      "class_name": "Uhr",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogalicht.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogalicht-schaffhausen",
+      "studio_name": "YOGALICHT",
+      "day": "Tuesday",
+      "time_start": "18:00",
+      "time_end": "19:15",
+      "class_name": "Uhr",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogalicht.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogalicht-schaffhausen",
+      "studio_name": "YOGALICHT",
+      "day": "Tuesday",
+      "time_start": "19:30",
+      "time_end": "20:45",
+      "class_name": "Uhr",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogalicht.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogalicht-schaffhausen",
+      "studio_name": "YOGALICHT",
+      "day": "Tuesday",
+      "time_start": "09:30",
+      "time_end": "11:30",
+      "class_name": "Uhr",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogalicht.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
       "studio_id": "ayana-yoga-schaffhausen",
       "studio_name": "ayana yoga",
       "day": "Monday",
@@ -12,7 +155,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "ayana-yoga-schaffhausen",
@@ -25,7 +168,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "ayana-yoga-schaffhausen",
@@ -38,7 +181,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "ayana-yoga-schaffhausen",
@@ -51,7 +194,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "ayana-yoga-schaffhausen",
@@ -64,7 +207,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "ayana-yoga-schaffhausen",
@@ -77,7 +220,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "ayana-yoga-schaffhausen",
@@ -90,7 +233,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "ayana-yoga-schaffhausen",
@@ -103,7 +246,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "ayana-yoga-schaffhausen",
@@ -116,7 +259,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "ayana-yoga-schaffhausen",
@@ -129,7 +272,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "ayana-yoga-schaffhausen",
@@ -142,7 +285,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "ayana-yoga-schaffhausen",
@@ -155,7 +298,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "ayana-yoga-schaffhausen",
@@ -168,7 +311,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "ayana-yoga-schaffhausen",
@@ -181,7 +324,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "ayana-yoga-schaffhausen",
@@ -194,7 +337,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "ayana-yoga-schaffhausen",
@@ -207,7 +350,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "ayana-yoga-schaffhausen",
@@ -220,154 +363,11 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogaschule-narayana-schaffhausen",
-      "studio_name": "Yogaschule SH (Narayana)",
-      "day": "Sunday",
-      "time_start": "10:00",
-      "time_end": "11:00",
-      "class_name": "18.00 – 19.00",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yogaschule-narayana.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogaschule-narayana-schaffhausen",
-      "studio_name": "Yogaschule SH (Narayana)",
-      "day": "Wednesday",
-      "time_start": "09:00",
-      "time_end": "10:00",
-      "class_name": "Do",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yogaschule-narayana.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogalicht-schaffhausen",
-      "studio_name": "YOGALICHT",
-      "day": "Monday",
-      "time_start": "09:30",
-      "time_end": "10:30",
-      "class_name": "Uhr",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogalicht.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-25"
-    },
-    {
-      "studio_id": "yogalicht-schaffhausen",
-      "studio_name": "YOGALICHT",
-      "day": "Monday",
-      "time_start": "12:15",
-      "time_end": "13:15",
-      "class_name": "Uhr",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogalicht.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-25"
-    },
-    {
-      "studio_id": "yogalicht-schaffhausen",
-      "studio_name": "YOGALICHT",
-      "day": "Monday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Uhr",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogalicht.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-25"
-    },
-    {
-      "studio_id": "yogalicht-schaffhausen",
-      "studio_name": "YOGALICHT",
-      "day": "Monday",
-      "time_start": "19:30",
-      "time_end": "20:45",
-      "class_name": "Uhr",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogalicht.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-25"
-    },
-    {
-      "studio_id": "yogalicht-schaffhausen",
-      "studio_name": "YOGALICHT",
-      "day": "Tuesday",
-      "time_start": "08:30",
-      "time_end": "09:30",
-      "class_name": "Uhr",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogalicht.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-25"
-    },
-    {
-      "studio_id": "yogalicht-schaffhausen",
-      "studio_name": "YOGALICHT",
-      "day": "Tuesday",
-      "time_start": "10:00",
-      "time_end": "11:00",
-      "class_name": "Uhr",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogalicht.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-25"
-    },
-    {
-      "studio_id": "yogalicht-schaffhausen",
-      "studio_name": "YOGALICHT",
-      "day": "Tuesday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Uhr",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogalicht.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-25"
-    },
-    {
-      "studio_id": "yogalicht-schaffhausen",
-      "studio_name": "YOGALICHT",
-      "day": "Tuesday",
-      "time_start": "19:30",
-      "time_end": "20:45",
-      "class_name": "Uhr",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogalicht.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-25"
-    },
-    {
-      "studio_id": "yogalicht-schaffhausen",
-      "studio_name": "YOGALICHT",
-      "day": "Tuesday",
-      "time_start": "09:30",
-      "time_end": "11:30",
-      "class_name": "Uhr",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogalicht.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-25"
+      "last_checked": "2026-04-06"
     }
   ],
   "_meta": {
-    "last_updated": "2026-03-23",
-    "note": "Stundenplan-Daten aus oeffentlichen Quellen. Fuer aktuelle Zeiten siehe Studio-Website."
+    "last_updated": "2026-04-06",
+    "note": "Stundenplan-Daten aus öffentlichen Quellen. Für aktuelle Zeiten siehe Studio-Website."
   }
 }

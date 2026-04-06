@@ -134,69 +134,680 @@
       "last_checked": "2026-03-25"
     },
     {
-      "studio_id": "inside-outside-bern",
-      "studio_name": "Inside Outside yoga, pilates & more",
-      "day": "Thursday",
-      "time_start": "18:00",
-      "time_end": "19:00",
-      "class_name": "Hast du manchmal das Bedürfnis, bestimmte Asanas genauer zu verstehen und im Detail anzuschauen? Oder möchtest du herausfinden, wie sich einzelne Positionen so adaptieren lassen, dass sie zu deinem Körper passen?",
+      "studio_id": "yoga-luna-bern",
+      "studio_name": "Yoga Luna",
+      "day": "Wednesday",
+      "time_start": "32:98",
+      "time_end": "",
+      "class_name": "CHE-12",
       "teacher": "",
       "level": "all",
-      "source": "https://www.eversports.ch/s/inside-outside-yoga-pilates-and-more",
-      "verified": true,
-      "last_checked": "2026-03-25"
+      "source": "https://www.yogaluna.ch/studioklassen",
+      "verified": false,
+      "last_checked": "2026-04-06"
     },
     {
-      "studio_id": "yama-yoga-bern",
-      "studio_name": "YAMA Yoga & Co",
-      "day": "Monday",
-      "time_start": "16:15",
-      "time_end": "17:15",
-      "class_name": "Prenatal Mommy Glow",
-      "teacher": "Linda Eden",
+      "studio_id": "svarupa-yoga-bern",
+      "studio_name": "svarupa yoga bern",
+      "day": "Friday",
+      "time_start": "18:15",
+      "time_end": "20:15",
+      "class_name": "(CET).",
+      "teacher": "",
       "level": "all",
-      "source": "https://www.yamabern.ch/schedule",
-      "verified": true,
-      "last_checked": "2026-03-23"
+      "source": "https://svarupa.com/events-classes/",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogaalaya-bern",
+      "studio_name": "Yogaalaya Bern",
+      "day": "Friday",
+      "time_start": "07:00",
+      "time_end": "08:15",
+      "class_name": "&   08.45 – 10.00",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-bern.ch/en/index.php/schedule/",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogaalaya-bern",
+      "studio_name": "Yogaalaya Bern",
+      "day": "Thursday",
+      "time_start": "17:15",
+      "time_end": "18:30",
+      "class_name": "&  19.00 – 2015",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-bern.ch/en/index.php/schedule/",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogaalaya-bern",
+      "studio_name": "Yogaalaya Bern",
+      "day": "Tuesday",
+      "time_start": "13:45",
+      "time_end": "14:45",
+      "class_name": "Jnana Yoga*",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-bern.ch/en/index.php/schedule/",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogaalaya-bern",
+      "studio_name": "Yogaalaya Bern",
+      "day": "Friday",
+      "time_start": "16:00",
+      "time_end": "17:00",
+      "class_name": "Nada/Bhakti Yoga",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-bern.ch/en/index.php/schedule/",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogamarket-bern",
+      "studio_name": "yogamarket",
+      "day": "Monday",
+      "time_start": "3:26",
+      "time_end": "",
+      "class_name": "20. – 22.MitAlex & Corinne: Deine Praxis im Detail. Wir analysieren Ausric tung, Haltung und Anpassu",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogamarket.ch/klassen/stundenplan/",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogamarket-bern",
+      "studio_name": "yogamarket",
+      "day": "Monday",
+      "time_start": "4:20",
+      "time_end": "",
+      "class_name": "18./19.26MitGéraldine: Budd ismus, Hat a Yoga Pradipika, Tantrismus. Vertiefung inMeditationstec nik",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogamarket.ch/klassen/stundenplan/",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogamarket-bern",
+      "studio_name": "yogamarket",
+      "day": "Monday",
+      "time_start": "5:20",
+      "time_end": "",
+      "class_name": "2./3.26MitCorinne:Sequencing und Unterric tstec niken – wie man kreative und sinnvolle Yogastunden g",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogamarket.ch/klassen/stundenplan/",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogamarket-bern",
+      "studio_name": "yogamarket",
+      "day": "Monday",
+      "time_start": "6:20",
+      "time_end": "",
+      "class_name": "27./28.26Mit Géraldine:Atem- und Reinigungsübungen (Pranayama), um innere Muster zu lösen und Klar e",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogamarket.ch/klassen/stundenplan/",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogamarket-bern",
+      "studio_name": "yogamarket",
+      "day": "Monday",
+      "time_start": "8:20",
+      "time_end": "",
+      "class_name": "22./23.26MitAlex & Team: Alles, was du fürs Unterric ten brauc st – Aufbau von Stunden, Et ik, Marke",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogamarket.ch/klassen/stundenplan/",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogamarket-bern",
+      "studio_name": "yogamarket",
+      "day": "Monday",
+      "time_start": "9:20",
+      "time_end": "",
+      "class_name": "19./20.26MitMarie-Louise & Olivia: Einfü rung in die Welt des Ayurveda. Verbindung von P ilosop ie u",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogamarket.ch/klassen/stundenplan/",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogamarket-bern",
+      "studio_name": "yogamarket",
+      "day": "Monday",
+      "time_start": "18:10",
+      "time_end": "",
+      "class_name": "17./.2016MitFlavia: Band as, Kriyas, Tao Yoga sowie prä- und postnatale Praxis vertiefen die bewusst",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogamarket.ch/klassen/stundenplan/",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "natha-yoga-bern",
+      "studio_name": "Natha Yoga Schweiz",
+      "day": "Monday",
+      "time_start": "18:00",
+      "time_end": "19:30",
+      "class_name": "Natha Yoga für Alle",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.natha-yoga-schweiz.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "natha-yoga-bern",
+      "studio_name": "Natha Yoga Schweiz",
+      "day": "Friday",
+      "time_start": "12:15",
+      "time_end": "13:10",
+      "class_name": "Natha Yoga Restukturierung mit Regula",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.natha-yoga-schweiz.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "natha-yoga-bern",
+      "studio_name": "Natha Yoga Schweiz",
+      "day": "Thursday",
+      "time_start": "12:15",
+      "time_end": "13:15",
+      "class_name": "Yoga Nidra & Veggie Bowl & Tee, mit Andrea",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.natha-yoga-schweiz.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "natha-yoga-bern",
+      "studio_name": "Natha Yoga Schweiz",
+      "day": "Friday",
+      "time_start": "17:45",
+      "time_end": "19:15",
+      "class_name": "Natha Yoga Alle",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.natha-yoga-schweiz.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "natha-yoga-bern",
+      "studio_name": "Natha Yoga Schweiz",
+      "day": "Friday",
+      "time_start": "09:00",
+      "time_end": "10:30",
+      "class_name": "Natha Yoga für Alle",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.natha-yoga-schweiz.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogabern-iyengar",
+      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
+      "day": "Monday",
+      "time_start": "09:15",
+      "time_end": "10:45",
+      "class_name": "* A anmelden",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogabern.ch/de/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogabern-iyengar",
+      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
+      "day": "Monday",
+      "time_start": "16:00",
+      "time_end": "17:15",
+      "class_name": "D anmelden",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogabern.ch/de/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogabern-iyengar",
+      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
+      "day": "Monday",
+      "time_start": "17:45",
+      "time_end": "19:30",
+      "class_name": "*** C anmelden",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogabern.ch/de/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogabern-iyengar",
+      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
+      "day": "Monday",
+      "time_start": "20:00",
+      "time_end": "21:30",
+      "class_name": "* A anmelden",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogabern.ch/de/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogabern-iyengar",
+      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
+      "day": "Sunday",
+      "time_start": "12:15",
+      "time_end": "13:45",
+      "class_name": "* A anmelden",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogabern.ch/de/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogabern-iyengar",
+      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
+      "day": "Sunday",
+      "time_start": "17:45",
+      "time_end": "19:15",
+      "class_name": "** B anmelden",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogabern.ch/de/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogabern-iyengar",
+      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
+      "day": "Sunday",
+      "time_start": "19:45",
+      "time_end": "21:15",
+      "class_name": "* A anmelden",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogabern.ch/de/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogabern-iyengar",
+      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
+      "day": "Wednesday",
+      "time_start": "09:15",
+      "time_end": "10:45",
+      "class_name": "* A anmelden",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogabern.ch/de/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogabern-iyengar",
+      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
+      "day": "Wednesday",
+      "time_start": "17:45",
+      "time_end": "19:15",
+      "class_name": "* A anmelden",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogabern.ch/de/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogabern-iyengar",
+      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
+      "day": "Wednesday",
+      "time_start": "19:45",
+      "time_end": "21:15",
+      "class_name": "** B anmelden",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogabern.ch/de/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogabern-iyengar",
+      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
+      "day": "Thursday",
+      "time_start": "09:15",
+      "time_end": "10:45",
+      "class_name": "* A anmelden",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogabern.ch/de/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogabern-iyengar",
+      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
+      "day": "Thursday",
+      "time_start": "17:15",
+      "time_end": "18:30",
+      "class_name": "* A anmelden",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogabern.ch/de/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogabern-iyengar",
+      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
+      "day": "Thursday",
+      "time_start": "18:45",
+      "time_end": "20:15",
+      "class_name": "* A anmelden",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogabern.ch/de/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogabern-iyengar",
+      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
+      "day": "Friday",
+      "time_start": "07:00",
+      "time_end": "08:15",
+      "class_name": "* A anmelden",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogabern.ch/de/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yogabern-iyengar",
+      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
+      "day": "Friday",
+      "time_start": "09:15",
+      "time_end": "10:45",
+      "class_name": "** B anmelden",
+      "teacher": "",
+      "level": "all",
+      "source": "https://yogabern.ch/de/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-and-more-bern",
+      "studio_name": "Yoga & more",
+      "day": "Monday",
+      "time_start": "10:00",
+      "time_end": "11:10",
+      "class_name": "*Sanftes Yoga über 60mit Marie-Anne Start: 5.1.26*Mittags-move mit C rista ‍Aktives Yoga & Yogaflows",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-and-more.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-and-more-bern",
+      "studio_name": "Yoga & more",
+      "day": "Tuesday",
+      "time_start": "19:00",
+      "time_end": "20:15",
+      "class_name": "*Yoga Kurs mit Anita Banderini anitabanderini.com*Atemt erapie mit Nadja:Ganzer Tagnanasc @gmx.c ‍",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-and-more.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-and-more-bern",
+      "studio_name": "Yoga & more",
+      "day": "Wednesday",
+      "time_start": "09:00",
+      "time_end": "10:30",
+      "class_name": "*Yoga Kurs mit Kate Beck yoga-wit -kate.c *Pilates mit Géraldine Ruckstu l12-13.00 *Yoga Kurs mit Ni",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-and-more.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-and-more-bern",
+      "studio_name": "Yoga & more",
+      "day": "Thursday",
+      "time_start": "08:30",
+      "time_end": "09:30",
+      "class_name": "*Pilates mit Sara Start: 8. Januar 26www.nouris andflow.c *MamaBaby Yoga mit Marie-AnneStart:19.März",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-and-more.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-and-more-bern",
+      "studio_name": "Yoga & more",
+      "day": "Friday",
+      "time_start": "18:30",
+      "time_end": "20:00",
+      "class_name": "‍*Yin Yoga mit AnitaJeder 1. Freitagabend im Monat: anitabanderini.com",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-and-more.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-and-more-bern",
+      "studio_name": "Yoga & more",
+      "day": "Sunday",
+      "time_start": "10:00",
+      "time_end": "11:30",
+      "class_name": "‍*Eltern-Kind-Yoga mit Marie-AnneSonntag, 22. März 2026 & 26. April 2026 ‍Anmeldung erforderlic !‍",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-and-more.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-and-more-bern",
+      "studio_name": "Yoga & more",
+      "day": "Tuesday",
+      "time_start": "2:20",
+      "time_end": "",
+      "class_name": "Vor  30 Ja ren wagte ic die ersten De nungen auf der Yogamatte. Als Le rperson im Zyklus 1 suc te ic",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-and-more.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-club-biel",
+      "studio_name": "Yoga Club Biel-Bienne",
+      "day": "Monday",
+      "time_start": "12:30",
+      "time_end": "13:15",
+      "class_name": "Pilates | Sandra : Yang Yoga | Jonat an : Yin Yoga | Jonat an : Yin Yoga | Jonat an",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-club.ch/yoga/?lang=de",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-club-biel",
+      "studio_name": "Yoga Club Biel-Bienne",
+      "day": "Tuesday",
+      "time_start": "19:30",
+      "time_end": "20:15",
+      "class_name": "Hat a Yoga | Agat e / Ant ony",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-club.ch/yoga/?lang=de",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-club-biel",
+      "studio_name": "Yoga Club Biel-Bienne",
+      "day": "Wednesday",
+      "time_start": "12:30",
+      "time_end": "13:15",
+      "class_name": "Pilates | Sandra : Kids Yoga 6-12 ans | Isabel / Jonat an : Yin Yoga | Jonat an : Yang Yoga | Jonat ",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-club.ch/yoga/?lang=de",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-club-biel",
+      "studio_name": "Yoga Club Biel-Bienne",
+      "day": "Thursday",
+      "time_start": "12:30",
+      "time_end": "13:15",
+      "class_name": "Pilates | Sandra : Pilates | Sandra",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-club.ch/yoga/?lang=de",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-club-biel",
+      "studio_name": "Yoga Club Biel-Bienne",
+      "day": "Friday",
+      "time_start": "11:15",
+      "time_end": "12:00",
+      "class_name": "Yin Yoga | Jonat an",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-club.ch/yoga/?lang=de",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "energie-yoga-bern",
+      "studio_name": "Energie Yoga",
+      "day": "Monday",
+      "time_start": "18:45",
+      "time_end": "19:45",
+      "class_name": "Energie Yoga",
+      "teacher": "Cornelia Baer",
+      "level": "all",
+      "source": "https://energieyoga.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "energie-yoga-bern",
+      "studio_name": "Energie Yoga",
+      "day": "Monday",
+      "time_start": "20:00",
+      "time_end": "21:00",
+      "class_name": "Energie Yoga",
+      "teacher": "Cornelia Baer",
+      "level": "all",
+      "source": "https://energieyoga.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "energie-yoga-bern",
+      "studio_name": "Energie Yoga",
+      "day": "Wednesday",
+      "time_start": "12:15",
+      "time_end": "13:15",
+      "class_name": "Schreibtisch Yoga",
+      "teacher": "Cornelia Baer",
+      "level": "all",
+      "source": "https://energieyoga.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "energie-yoga-bern",
+      "studio_name": "Energie Yoga",
+      "day": "Wednesday",
+      "time_start": "18:45",
+      "time_end": "19:45",
+      "class_name": "Energie Yoga",
+      "teacher": "Cornelia Baer",
+      "level": "all",
+      "source": "https://energieyoga.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "energie-yoga-bern",
+      "studio_name": "Energie Yoga",
+      "day": "Thursday",
+      "time_start": "12:15",
+      "time_end": "13:15",
+      "class_name": "Schreibtisch Yoga",
+      "teacher": "Cornelia Baer",
+      "level": "all",
+      "source": "https://energieyoga.ch/stundenplan",
+      "verified": false,
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yama-yoga-bern",
       "studio_name": "YAMA Yoga & Co",
       "day": "Monday",
-      "time_start": "17:30",
-      "time_end": "18:45",
+      "time_start": "10:00",
+      "time_end": "11:30",
       "class_name": "Hatha Prana",
       "teacher": "Stefania Grassi",
       "level": "all",
       "source": "https://www.yamabern.ch/schedule",
       "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yama-yoga-bern",
-      "studio_name": "YAMA Yoga & Co",
-      "day": "Monday",
-      "time_start": "19:00",
-      "time_end": "20:15",
-      "class_name": "Dynamic Yoga",
-      "teacher": "Linda Eden",
-      "level": "all",
-      "source": "https://www.yamabern.ch/schedule",
-      "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yama-yoga-bern",
       "studio_name": "YAMA Yoga & Co",
       "day": "Tuesday",
       "time_start": "17:45",
-      "time_end": "18:45",
+      "time_end": "19:00",
       "class_name": "Vinyasa Yoga",
       "teacher": "Corina Perreten",
       "level": "all",
       "source": "https://www.yamabern.ch/schedule",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yama-yoga-bern",
@@ -209,7 +820,7 @@
       "level": "all",
       "source": "https://www.yamabern.ch/schedule",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yama-yoga-bern",
@@ -222,7 +833,7 @@
       "level": "all",
       "source": "https://www.yamabern.ch/schedule",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yama-yoga-bern",
@@ -231,37 +842,37 @@
       "time_start": "17:30",
       "time_end": "18:45",
       "class_name": "Vinyasa Yoga",
-      "teacher": "Sina Helbling",
+      "teacher": "Katrin Waclavicek",
       "level": "all",
       "source": "https://www.yamabern.ch/schedule",
       "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yama-yoga-bern",
-      "studio_name": "YAMA Yoga & Co",
-      "day": "Wednesday",
-      "time_start": "19:15",
-      "time_end": "20:30",
-      "class_name": "Vinyasa Yoga",
-      "teacher": "Emilie Murek",
-      "level": "all",
-      "source": "https://www.yamabern.ch/schedule",
-      "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yama-yoga-bern",
       "studio_name": "YAMA Yoga & Co",
       "day": "Thursday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Ashtanga-Vinyasa Flow",
-      "teacher": "Emilie Murek",
+      "time_start": "17:30",
+      "time_end": "18:45",
+      "class_name": "Yoga & Pilates EN",
+      "teacher": "Debbie Moser",
       "level": "all",
       "source": "https://www.yamabern.ch/schedule",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yama-yoga-bern",
+      "studio_name": "YAMA Yoga & Co",
+      "day": "Friday",
+      "time_start": "19:00",
+      "time_end": "21:15",
+      "class_name": "Conscious Connected Breathwork",
+      "teacher": "Simona Augstburger",
+      "level": "all",
+      "source": "https://www.yamabern.ch/schedule",
+      "verified": true,
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yama-yoga-bern",
@@ -274,20 +885,7 @@
       "level": "all",
       "source": "https://www.yamabern.ch/schedule",
       "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yama-yoga-bern",
-      "studio_name": "YAMA Yoga & Co",
-      "day": "Sunday",
-      "time_start": "17:00",
-      "time_end": "18:30",
-      "class_name": "Yin Yoga: Rest & Release",
-      "teacher": "Annina",
-      "level": "all",
-      "source": "https://www.yamabern.ch/schedule",
-      "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yama-yoga-bern",
@@ -300,7 +898,7 @@
       "level": "all",
       "source": "https://www.yamabern.ch/schedule",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yama-yoga-bern",
@@ -313,7 +911,7 @@
       "level": "all",
       "source": "https://www.yamabern.ch/schedule",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yama-yoga-bern",
@@ -326,7 +924,7 @@
       "level": "all",
       "source": "https://www.yamabern.ch/schedule",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yama-yoga-bern",
@@ -339,7 +937,7 @@
       "level": "all",
       "source": "https://www.yamabern.ch/schedule",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yoga-carmen-bern",
@@ -352,7 +950,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/yoga-carmen/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yoga-carmen-bern",
@@ -365,7 +963,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/yoga-carmen/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yoga-carmen-bern",
@@ -378,7 +976,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/yoga-carmen/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yoga-carmen-bern",
@@ -391,7 +989,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/yoga-carmen/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yoga-carmen-bern",
@@ -404,46 +1002,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/yoga-carmen/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogveda-bern",
-      "studio_name": "Yogveda Yoga",
-      "day": "Monday",
-      "time_start": "12:15",
-      "time_end": "13:45",
-      "class_name": "Level 2 Yoga Class. Yoga-Kurs Stufe 2",
-      "teacher": "Shahid Khan",
-      "level": "all",
-      "source": "https://www.yogveda.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogveda-bern",
-      "studio_name": "Yogveda Yoga",
-      "day": "Monday",
-      "time_start": "17:15",
-      "time_end": "18:45",
-      "class_name": "Level 1. Yoga für Anfänger in Bern",
-      "teacher": "Shahid Khan",
-      "level": "all",
-      "source": "https://www.yogveda.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yogveda-bern",
-      "studio_name": "Yogveda Yoga",
-      "day": "Monday",
-      "time_start": "19:00",
-      "time_end": "20:30",
-      "class_name": "Level 3 Yoga Asana Class",
-      "teacher": "Shahid Khan",
-      "level": "all",
-      "source": "https://www.yogveda.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yogveda-bern",
@@ -456,7 +1015,7 @@
       "level": "all",
       "source": "https://www.yogveda.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yogveda-bern",
@@ -469,7 +1028,7 @@
       "level": "all",
       "source": "https://www.yogveda.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yogveda-bern",
@@ -482,7 +1041,7 @@
       "level": "all",
       "source": "https://www.yogveda.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yogveda-bern",
@@ -495,7 +1054,7 @@
       "level": "all",
       "source": "https://www.yogveda.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yogveda-bern",
@@ -508,7 +1067,7 @@
       "level": "all",
       "source": "https://www.yogveda.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yogveda-bern",
@@ -521,7 +1080,7 @@
       "level": "all",
       "source": "https://www.yogveda.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yogveda-bern",
@@ -534,7 +1093,7 @@
       "level": "all",
       "source": "https://www.yogveda.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yogveda-bern",
@@ -547,7 +1106,7 @@
       "level": "all",
       "source": "https://www.yogveda.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yogveda-bern",
@@ -560,7 +1119,7 @@
       "level": "all",
       "source": "https://www.yogveda.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yogveda-bern",
@@ -573,7 +1132,7 @@
       "level": "all",
       "source": "https://www.yogveda.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yogveda-bern",
@@ -586,7 +1145,7 @@
       "level": "all",
       "source": "https://www.yogveda.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yogveda-bern",
@@ -599,7 +1158,7 @@
       "level": "all",
       "source": "https://www.yogveda.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yogveda-bern",
@@ -612,7 +1171,7 @@
       "level": "all",
       "source": "https://www.yogveda.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yogveda-bern",
@@ -625,7 +1184,7 @@
       "level": "all",
       "source": "https://www.yogveda.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "yogveda-bern",
@@ -638,7 +1197,7 @@
       "level": "all",
       "source": "https://www.yogveda.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -651,7 +1210,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -664,7 +1223,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -677,7 +1236,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -690,7 +1249,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -703,7 +1262,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -716,7 +1275,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -729,7 +1288,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -742,7 +1301,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -755,7 +1314,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -768,7 +1327,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -781,7 +1340,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -794,7 +1353,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -807,7 +1366,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -820,7 +1379,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -833,7 +1392,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -846,7 +1405,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -859,7 +1418,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -872,7 +1431,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -885,7 +1444,7 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "iyengar-yoga-bern",
@@ -898,20 +1457,20 @@
       "level": "all",
       "source": "https://www.iyengar-yoga-bern.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "hot-yoga-christoph-herren",
       "studio_name": "Hot Yoga Christoph Herren",
       "day": "Monday",
-      "time_start": "12:15",
-      "time_end": "13:45",
-      "class_name": "Hot Yoga",
+      "time_start": "11:00",
+      "time_end": "12:30",
+      "class_name": "Hot Yoga, Ostermontag",
       "teacher": "Christoph Herren",
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/hot-yoga-christoph-herren/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "hot-yoga-christoph-herren",
@@ -924,7 +1483,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/hot-yoga-christoph-herren/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "hot-yoga-christoph-herren",
@@ -937,7 +1496,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/hot-yoga-christoph-herren/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "hot-yoga-christoph-herren",
@@ -950,7 +1509,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/hot-yoga-christoph-herren/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "hot-yoga-christoph-herren",
@@ -963,7 +1522,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/hot-yoga-christoph-herren/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "hot-yoga-christoph-herren",
@@ -976,7 +1535,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/hot-yoga-christoph-herren/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "hot-yoga-christoph-herren",
@@ -989,7 +1548,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/hot-yoga-christoph-herren/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "hrdayam-bern",
@@ -997,12 +1556,12 @@
       "day": "Monday",
       "time_start": "09:15",
       "time_end": "12:15",
-      "class_name": "09:15ClareJivamukti Open 75minsGerechtigkeitsgasse 77Jivamukti Open 75mins23 March 2026 •",
+      "class_name": "09:15ClareJivamukti Open 75minsCancelledGerechtigkeitsgasse 77Jivamukti Open 75minsCancelled6 April 2026 •",
       "teacher": null,
       "level": "all",
       "source": "https://www.momoyoga.com/hrdayambern/",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "hrdayam-bern",
@@ -1010,12 +1569,12 @@
       "day": "Tuesday",
       "time_start": "09:15",
       "time_end": "12:15",
-      "class_name": "09:15TinaYogaDose for Women to de-stressGerechtigkeitsgasse 77, HrdayamYogaDose for Women to de-stress24 March 2026 •",
+      "class_name": "09:15TinaYogaDose for Women to de-stressCancelledGerechtigkeitsgasse 77, HrdayamYogaDose for Women to de-stressCancelled7 April 2026 •",
       "teacher": null,
       "level": "all",
       "source": "https://www.momoyoga.com/hrdayambern/",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "hrdayam-bern",
@@ -1023,12 +1582,12 @@
       "day": "Wednesday",
       "time_start": "18:30",
       "time_end": "18:30",
-      "class_name": "18:30ClareJivamukti Yoga OpenGerechtigkeitsgasse 77Jivamukti Yoga Open25 March 2026 •",
+      "class_name": "18:30ClareJivamukti Yoga OpenGerechtigkeitsgasse 77Jivamukti Yoga Open8 April 2026 •",
       "teacher": null,
       "level": "all",
       "source": "https://www.momoyoga.com/hrdayambern/",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "hrdayam-bern",
@@ -1036,12 +1595,12 @@
       "day": "Thursday",
       "time_start": "12:15",
       "time_end": "",
-      "class_name": "12:15BobeshYoga OpenGerechtigkeitsgasse 77Yoga Open26 March 2026 •",
+      "class_name": "12:15BobeshYoga OpenGerechtigkeitsgasse 77Yoga Open9 April 2026 •",
       "teacher": null,
       "level": "all",
       "source": "https://www.momoyoga.com/hrdayambern/",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "hrdayam-bern",
@@ -1049,12 +1608,12 @@
       "day": "Friday",
       "time_start": "12:15",
       "time_end": "18:30",
-      "class_name": "12:15CaroleSpiritual Warrior extended (75 Min.) mit Myri / CaroGerechtigkeitsgasse 77Spiritual Warrior extended (75 Min.) mit Myri / Caro27 March 2026 •",
+      "class_name": "12:15CaroleSpiritual Warrior extended (75 Min.) mit Myri / CaroGerechtigkeitsgasse 77Spiritual Warrior extended (75 Min.) mit Myri / Caro10 April 2026 •",
       "teacher": null,
       "level": "all",
       "source": "https://www.momoyoga.com/hrdayambern/",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "hrdayam-bern",
@@ -1062,12 +1621,12 @@
       "day": "Saturday",
       "time_start": "10:00",
       "time_end": "14:00",
-      "class_name": "10:00BinhJEDI Yoga - BIPOC only: Teil der 16. Aktionswoche der Stadt Bern gegen RassismusGerechtigkeitsgasse 77JEDI Yoga - BIPOC only: Teil der 16. Aktionswoche der Stadt Bern gegen Rassismus28 March 2026 •",
+      "class_name": "10:00BinhJivamukti Open XL (Price 90')Gerechtigkeitsgasse 77Jivamukti Open XL (Price 90')11 April 2026 •",
       "teacher": null,
       "level": "all",
       "source": "https://www.momoyoga.com/hrdayambern/",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "hrdayam-bern",
@@ -1075,12 +1634,77 @@
       "day": "Sunday",
       "time_start": "10:00",
       "time_end": "10:00",
-      "class_name": "10:00ClareJivamukti Yoga OpenGerechtigkeitsgasse 77, 3011, Bern., HrdayamJivamukti Yoga Open29 March 2026 •",
+      "class_name": "10:00ClareJivamukti Yoga OpenGerechtigkeitsgasse 77, 3011, Bern., HrdayamJivamukti Yoga Open12 April 2026 •",
       "teacher": null,
       "level": "all",
       "source": "https://www.momoyoga.com/hrdayambern/",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "inside-outside-bern",
+      "studio_name": "Inside Outside yoga, pilates & more",
+      "day": "Monday",
+      "time_start": "18:00",
+      "time_end": "19:00",
+      "class_name": "Vinyasaflow",
+      "teacher": "Jasmin Schluep",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/inside-outside-yoga-pilates-and-more",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "inside-outside-bern",
+      "studio_name": "Inside Outside yoga, pilates & more",
+      "day": "Monday",
+      "time_start": "20:00",
+      "time_end": "21:00",
+      "class_name": "Vinyasaflow",
+      "teacher": "Jasmin Schluep",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/inside-outside-yoga-pilates-and-more",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "inside-outside-bern",
+      "studio_name": "Inside Outside yoga, pilates & more",
+      "day": "Tuesday",
+      "time_start": "17:45",
+      "time_end": "18:45",
+      "class_name": "Schwangerschaftsyoga",
+      "teacher": "Jasmin Schluep",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/inside-outside-yoga-pilates-and-more",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "inside-outside-bern",
+      "studio_name": "Inside Outside yoga, pilates & more",
+      "day": "Monday",
+      "time_start": "18:00",
+      "time_end": "19:00",
+      "class_name": "Vinyasaflow",
+      "teacher": "Jasmin Schluep",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/inside-outside-yoga-pilates-and-more",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "inside-outside-bern",
+      "studio_name": "Inside Outside yoga, pilates & more",
+      "day": "Monday",
+      "time_start": "20:00",
+      "time_end": "21:00",
+      "class_name": "Vinyasaflow",
+      "teacher": "Jasmin Schluep",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/inside-outside-yoga-pilates-and-more",
+      "verified": true,
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1093,20 +1717,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "openyoga-bern",
-      "studio_name": "OpenYoga",
-      "day": "Monday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Yoga",
-      "teacher": "Elisa Malinverni",
-      "level": "all",
-      "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
-      "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1119,7 +1730,20 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "openyoga-bern",
+      "studio_name": "OpenYoga",
+      "day": "Monday",
+      "time_start": "11:00",
+      "time_end": "12:15",
+      "class_name": "Yoga",
+      "teacher": "Nadia Delacombaz",
+      "level": "all",
+      "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1132,7 +1756,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1145,7 +1769,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1158,20 +1782,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "openyoga-bern",
-      "studio_name": "OpenYoga",
-      "day": "Monday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Yoga",
-      "teacher": "Openyoga Team",
-      "level": "all",
-      "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
-      "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1184,7 +1795,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1197,7 +1808,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1210,7 +1821,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1223,7 +1834,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1236,7 +1847,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1249,7 +1860,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1262,7 +1873,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1275,20 +1886,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "openyoga-bern",
-      "studio_name": "OpenYoga",
-      "day": "Wednesday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Yoga",
-      "teacher": "Nicole Steiner",
-      "level": "all",
-      "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
-      "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1301,7 +1899,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1314,7 +1912,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1327,7 +1925,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1340,7 +1938,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1353,7 +1951,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1366,7 +1964,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1379,7 +1977,20 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "openyoga-bern",
+      "studio_name": "OpenYoga",
+      "day": "Thursday",
+      "time_start": "11:00",
+      "time_end": "12:15",
+      "class_name": "Yoga",
+      "teacher": "Antonia Hebbeker",
+      "level": "all",
+      "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1392,7 +2003,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1405,7 +2016,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1418,7 +2029,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1431,7 +2042,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1444,7 +2055,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1457,7 +2068,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1470,7 +2081,20 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "openyoga-bern",
+      "studio_name": "OpenYoga",
+      "day": "Friday",
+      "time_start": "09:00",
+      "time_end": "10:15",
+      "class_name": "Yoga",
+      "teacher": "Nicole Steiner",
+      "level": "all",
+      "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1483,7 +2107,20 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "openyoga-bern",
+      "studio_name": "OpenYoga",
+      "day": "Friday",
+      "time_start": "10:45",
+      "time_end": "11:45",
+      "class_name": "Rückbildungsyoga mit Baby",
+      "teacher": "Fanny Krebs",
+      "level": "all",
+      "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
+      "verified": true,
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1496,7 +2133,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1509,7 +2146,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1522,7 +2159,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1535,7 +2172,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1548,7 +2185,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1561,7 +2198,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1574,7 +2211,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1587,7 +2224,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1600,7 +2237,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1613,7 +2250,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "openyoga-bern",
@@ -1626,1476 +2263,20 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/openyoga/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Monday",
-      "time_start": "07:30",
-      "time_end": "08:30",
-      "class_name": "Morning Flow",
-      "teacher": "Sandra",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Monday",
-      "time_start": "09:00",
-      "time_end": "10:00",
-      "class_name": "GET STRONG - Funktionelles Training für mehr Kraft & Stabilität",
-      "teacher": "Sandra",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Friday",
-      "time_start": "08:00",
-      "time_end": "09:00",
-      "class_name": "Morning Flow",
-      "teacher": "Tamara",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Friday",
-      "time_start": "09:15",
-      "time_end": "10:15",
-      "class_name": "Morning Flow",
-      "teacher": "Tamara",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Friday",
-      "time_start": "12:15",
-      "time_end": "13:00",
-      "class_name": "Mittagsfit",
-      "teacher": "Claudia",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Monday",
-      "time_start": "17:30",
-      "time_end": "18:30",
-      "class_name": "Yoga",
-      "teacher": "Tamara",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Monday",
-      "time_start": "18:45",
-      "time_end": "19:45",
-      "class_name": "Hatha Flow",
-      "teacher": "Tamara",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
+      "studio_id": "grey-rebel-bern",
+      "studio_name": "Grey Rebel Yoga & Kinesiologie",
       "day": "Tuesday",
-      "time_start": "19:00",
-      "time_end": "20:00",
-      "class_name": "Slow Vinyasa",
-      "teacher": "Cancelled",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Wednesday",
-      "time_start": "17:30",
-      "time_end": "18:30",
-      "class_name": "GET STRONG - Funktionelles Training für mehr Kraft & Stabilität",
-      "teacher": "Tamara",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Wednesday",
-      "time_start": "19:00",
-      "time_end": "20:00",
-      "class_name": "Yoga",
-      "teacher": "Tamara",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Friday",
-      "time_start": "18:30",
-      "time_end": "20:30",
-      "class_name": "Yoga & Sound Bath",
-      "teacher": "Tamara",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Monday",
-      "time_start": "07:30",
-      "time_end": "08:30",
-      "class_name": "Morning Flow",
-      "teacher": "Sandra",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Monday",
-      "time_start": "09:00",
-      "time_end": "10:00",
-      "class_name": "GET STRONG - Funktionelles Training für mehr Kraft & Stabilität",
-      "teacher": "Sandra",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Monday",
-      "time_start": "17:30",
-      "time_end": "18:30",
-      "class_name": "Yoga",
-      "teacher": "Tamara",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Monday",
-      "time_start": "18:45",
-      "time_end": "19:45",
-      "class_name": "Hatha Flow",
-      "teacher": "Tamara",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Tuesday",
-      "time_start": "19:00",
-      "time_end": "20:00",
-      "class_name": "Slow Vinyasa",
-      "teacher": "Cancelled",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Wednesday",
-      "time_start": "17:30",
-      "time_end": "18:30",
-      "class_name": "GET STRONG - Funktionelles Training für mehr Kraft & Stabilität",
-      "teacher": "Tamara",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Wednesday",
-      "time_start": "19:00",
-      "time_end": "20:00",
-      "class_name": "Yoga",
-      "teacher": "Tamara",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Friday",
-      "time_start": "08:00",
-      "time_end": "09:00",
-      "class_name": "Morning Flow",
-      "teacher": "Tamara",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Friday",
-      "time_start": "09:15",
-      "time_end": "10:15",
-      "class_name": "Morning Flow",
-      "teacher": "Tamara",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Friday",
-      "time_start": "12:15",
-      "time_end": "13:00",
-      "class_name": "Mittagsfit",
-      "teacher": "Claudia",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "soulspace-koeniz",
-      "studio_name": "Soulspace Koeniz",
-      "day": "Friday",
-      "time_start": "18:30",
-      "time_end": "20:30",
-      "class_name": "Yoga & Sound Bath",
-      "teacher": "Tamara",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/soulspace-koeniz",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Monday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Morning Flow",
-      "teacher": "Selina Howald",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Monday",
-      "time_start": "17:00",
-      "time_end": "18:00",
-      "class_name": "Schwangerschaftsyoga",
-      "teacher": "Helen Gale",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Monday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Yoga Flow",
-      "teacher": "Laura Burns",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Monday",
-      "time_start": "18:30",
-      "time_end": "19:45",
-      "class_name": "Vinyasa Flow",
-      "teacher": "Helen Gale",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Monday",
-      "time_start": "19:30",
-      "time_end": "20:45",
-      "class_name": "Hatha Yoga",
-      "teacher": "Laura Burns",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Tuesday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Yoga für alle",
-      "teacher": "Madeleine Haag",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Tuesday",
-      "time_start": "18:15",
-      "time_end": "19:30",
-      "class_name": "Hatha Flow",
-      "teacher": "Laura Burns",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Wednesday",
-      "time_start": "10:30",
-      "time_end": "12:15",
-      "class_name": "onlineyoga filmen Köniz",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Wednesday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Yin Yoga",
-      "teacher": "Alexandra Costa",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Wednesday",
-      "time_start": "18:30",
-      "time_end": "19:45",
-      "class_name": "Jivamukti Open",
-      "teacher": "Flavia Balsiger",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Wednesday",
-      "time_start": "20:00",
-      "time_end": "21:15",
-      "class_name": "Yin Yoga",
-      "teacher": "Stefanie Giardina",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Thursday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Morning Flow",
-      "teacher": "Olivia Gobeli",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Thursday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Yoga für alle",
-      "teacher": "Laura Burns",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Thursday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Yoga Flow",
-      "teacher": "Laura Burns",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Thursday",
-      "time_start": "18:30",
-      "time_end": "19:45",
-      "class_name": "Vinyasa Flow",
-      "teacher": "Selina Howald",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Friday",
-      "time_start": "06:40",
-      "time_end": "07:40",
-      "class_name": "Privat Einzelunterricht",
-      "teacher": "Laura Burns",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Friday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Morning Flow",
-      "teacher": "Michèle Frey",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Friday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Hatha Yoga",
-      "teacher": "Laura Burns",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Friday",
-      "time_start": "10:30",
-      "time_end": "18:00",
-      "class_name": "Raumvermietung Köniz",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Friday",
-      "time_start": "15:30",
-      "time_end": "16:30",
-      "class_name": "Privat Einzelunterricht",
-      "teacher": "Helen Gale",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Friday",
-      "time_start": "19:00",
-      "time_end": "21:00",
-      "class_name": "Privat Workshop Köniz",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Saturday",
-      "time_start": "08:30",
-      "time_end": "09:30",
-      "class_name": "Rückbildungsyoga",
-      "teacher": "Helen Gale",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Saturday",
-      "time_start": "10:00",
-      "time_end": "11:15",
-      "class_name": "Weekend Flow",
-      "teacher": "Helen Gale",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Sunday",
-      "time_start": "16:30",
-      "time_end": "18:00",
-      "class_name": "Restorative Sunday (Special)",
-      "teacher": "Sarah Hübscher",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Monday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Morning Flow",
-      "teacher": "Selina Howald",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Monday",
-      "time_start": "09:00",
-      "time_end": "10:15",
-      "class_name": "Morning Flow",
-      "teacher": "Maria Ansari",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Monday",
-      "time_start": "17:00",
-      "time_end": "18:00",
-      "class_name": "Schwangerschaftsyoga",
-      "teacher": "Helen Gale",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Monday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Yoga Flow",
-      "teacher": "Laura Burns",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Monday",
-      "time_start": "18:30",
-      "time_end": "19:45",
-      "class_name": "Vinyasa Flow",
-      "teacher": "Helen Gale",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "day": "Monday",
-      "time_start": "19:30",
-      "time_end": "20:45",
-      "class_name": "Hatha Yoga",
-      "teacher": "Laura Burns",
-      "level": "all",
-      "source": "https://www.yoga-room.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Wednesday",
-      "time_start": "09:15",
-      "time_end": "10:30",
-      "class_name": "50plus Yoga / sanfter Flow",
-      "teacher": "Karin Zeller-Germann",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Friday",
-      "time_start": "09:15",
-      "time_end": "10:30",
-      "class_name": "Power Yoga",
-      "teacher": "Karin Zeller-Germann",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Saturday",
-      "time_start": "09:30",
-      "time_end": "10:45",
-      "class_name": "Yoga im Fluss der Elemente (LUFT)",
-      "teacher": "Sarah Wälti",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Wednesday",
-      "time_start": "15:15",
-      "time_end": "16:15",
-      "class_name": "REPLAY Rückblidung",
-      "teacher": "Karin Zeller-Germann",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Wednesday",
-      "time_start": "15:15",
-      "time_end": "16:15",
-      "class_name": "Rückbildung mit/ohne Baby",
-      "teacher": "Karin Zeller-Germann",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Monday",
-      "time_start": "18:30",
-      "time_end": "19:45",
-      "class_name": "Power Yoga",
-      "teacher": "Michael Briner",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Monday",
-      "time_start": "20:00",
-      "time_end": "21:15",
-      "class_name": "Yin Yoga",
-      "teacher": "Michelle Marti",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Tuesday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Yoga Flow",
-      "teacher": "Karin Zeller-Germann",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Tuesday",
-      "time_start": "19:30",
-      "time_end": "20:45",
-      "class_name": "REPLAY Yoga Flow",
-      "teacher": "Karin Zeller-Germann",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Tuesday",
-      "time_start": "19:30",
-      "time_end": "20:45",
-      "class_name": "Yoga Flow",
-      "teacher": "Karin Zeller-Germann",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Wednesday",
-      "time_start": "17:00",
-      "time_end": "18:15",
-      "class_name": "REPLAY Schwangerschaftsyoga",
-      "teacher": "Karin Zeller-Germann",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Wednesday",
-      "time_start": "17:00",
-      "time_end": "18:15",
-      "class_name": "Schwangerschaftsyoga",
-      "teacher": "Karin Zeller-Germann",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Wednesday",
-      "time_start": "18:30",
-      "time_end": "19:45",
-      "class_name": "Yoga Flow",
-      "teacher": "Jenny Spieler",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Thursday",
-      "time_start": "18:30",
-      "time_end": "19:45",
-      "class_name": "Hatha Yoga Flow",
-      "teacher": "Michelle Marti",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Monday",
-      "time_start": "18:30",
-      "time_end": "19:45",
-      "class_name": "Power Yoga",
-      "teacher": "Michael Briner",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Monday",
-      "time_start": "20:00",
-      "time_end": "21:15",
-      "class_name": "Yin Yoga",
-      "teacher": "Michelle Marti",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Tuesday",
-      "time_start": "18:00",
-      "time_end": "19:15",
-      "class_name": "Yoga Flow",
-      "teacher": "Karin Zeller-Germann",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Tuesday",
-      "time_start": "19:30",
-      "time_end": "20:45",
-      "class_name": "REPLAY Yoga Flow",
-      "teacher": "Karin Zeller-Germann",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Tuesday",
-      "time_start": "19:30",
-      "time_end": "20:45",
-      "class_name": "Yoga Flow",
-      "teacher": "Karin Zeller-Germann",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Wednesday",
-      "time_start": "09:15",
-      "time_end": "10:30",
-      "class_name": "50plus Yoga / sanfter Flow",
-      "teacher": "Karin Zeller-Germann",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Wednesday",
-      "time_start": "15:15",
-      "time_end": "16:15",
-      "class_name": "REPLAY Rückblidung",
-      "teacher": "Karin Zeller-Germann",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Wednesday",
-      "time_start": "15:15",
-      "time_end": "16:15",
-      "class_name": "Rückbildung mit/ohne Baby",
-      "teacher": "Karin Zeller-Germann",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Wednesday",
-      "time_start": "17:00",
-      "time_end": "18:15",
-      "class_name": "REPLAY Schwangerschaftsyoga",
-      "teacher": "Karin Zeller-Germann",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Wednesday",
-      "time_start": "17:00",
-      "time_end": "18:15",
-      "class_name": "Schwangerschaftsyoga",
-      "teacher": "Karin Zeller-Germann",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Wednesday",
-      "time_start": "18:30",
-      "time_end": "19:45",
-      "class_name": "Yoga Flow",
-      "teacher": "Jenny Spieler",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Thursday",
-      "time_start": "18:30",
-      "time_end": "19:45",
-      "class_name": "Hatha Yoga Flow",
-      "teacher": "Michelle Marti",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Friday",
-      "time_start": "09:15",
-      "time_end": "10:30",
-      "class_name": "Power Yoga",
-      "teacher": "Karin Zeller-Germann",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "day": "Saturday",
-      "time_start": "09:30",
-      "time_end": "10:45",
-      "class_name": "Yoga im Fluss der Elemente (LUFT)",
-      "teacher": "Sarah Wälti",
-      "level": "all",
-      "source": "https://www.eversports.ch/s/yoga-bude",
-      "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-luna-bern",
-      "studio_name": "Yoga Luna",
-      "day": "Wednesday",
-      "time_start": "32:98",
-      "time_end": "",
-      "class_name": "CHE-12",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yogaluna.ch/impressumdatenschutzerklarung",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "svarupa-yoga-bern",
-      "studio_name": "svarupa yoga bern",
-      "day": "Friday",
-      "time_start": "18:15",
-      "time_end": "20:15",
-      "class_name": "(CET).",
-      "teacher": "",
-      "level": "all",
-      "source": "https://svarupa.com/fundamentals-of-yoga/",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogaalaya-bern",
-      "studio_name": "Yogaalaya Bern",
-      "day": "Friday",
-      "time_start": "07:00",
-      "time_end": "08:15",
-      "class_name": "&   08.45 – 10.00",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yoga-bern.ch/en/index.php/schedule/",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogaalaya-bern",
-      "studio_name": "Yogaalaya Bern",
-      "day": "Thursday",
-      "time_start": "17:15",
-      "time_end": "18:30",
-      "class_name": "&  19.00 – 2015",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yoga-bern.ch/en/index.php/schedule/",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogaalaya-bern",
-      "studio_name": "Yogaalaya Bern",
-      "day": "Tuesday",
-      "time_start": "13:45",
-      "time_end": "14:45",
-      "class_name": "Jnana Yoga*",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yoga-bern.ch/en/index.php/schedule/",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogaalaya-bern",
-      "studio_name": "Yogaalaya Bern",
-      "day": "Friday",
-      "time_start": "16:00",
-      "time_end": "17:00",
-      "class_name": "Nada/Bhakti Yoga",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yoga-bern.ch/en/index.php/schedule/",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogamarket-bern",
-      "studio_name": "yogamarket",
-      "day": "Monday",
-      "time_start": "3:26",
-      "time_end": "",
-      "class_name": "20. – 22.MitAlex & Corinne: Deine Praxis im Detail. Wir analysieren Ausric tung, Haltung und Anpassu",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogamarket.ch/teacher-trainings/200h-teacher-training/",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogamarket-bern",
-      "studio_name": "yogamarket",
-      "day": "Monday",
-      "time_start": "4:20",
-      "time_end": "",
-      "class_name": "18./19.26MitGéraldine: Budd ismus, Hat a Yoga Pradipika, Tantrismus. Vertiefung inMeditationstec nik",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogamarket.ch/teacher-trainings/200h-teacher-training/",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogamarket-bern",
-      "studio_name": "yogamarket",
-      "day": "Monday",
-      "time_start": "5:20",
-      "time_end": "",
-      "class_name": "2./3.26MitCorinne:Sequencing und Unterric tstec niken – wie man kreative und sinnvolle Yogastunden g",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogamarket.ch/teacher-trainings/200h-teacher-training/",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogamarket-bern",
-      "studio_name": "yogamarket",
-      "day": "Monday",
-      "time_start": "6:20",
-      "time_end": "",
-      "class_name": "27./28.26Mit Géraldine:Atem- und Reinigungsübungen (Pranayama), um innere Muster zu lösen und Klar e",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogamarket.ch/teacher-trainings/200h-teacher-training/",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogamarket-bern",
-      "studio_name": "yogamarket",
-      "day": "Monday",
-      "time_start": "8:20",
-      "time_end": "",
-      "class_name": "22./23.26MitAlex & Team: Alles, was du fürs Unterric ten brauc st – Aufbau von Stunden, Et ik, Marke",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogamarket.ch/teacher-trainings/200h-teacher-training/",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogamarket-bern",
-      "studio_name": "yogamarket",
-      "day": "Monday",
-      "time_start": "9:20",
-      "time_end": "",
-      "class_name": "19./20.26MitMarie-Louise & Olivia: Einfü rung in die Welt des Ayurveda. Verbindung von P ilosop ie u",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogamarket.ch/teacher-trainings/200h-teacher-training/",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogamarket-bern",
-      "studio_name": "yogamarket",
-      "day": "Monday",
-      "time_start": "18:10",
-      "time_end": "",
-      "class_name": "17./.2016MitFlavia: Band as, Kriyas, Tao Yoga sowie prä- und postnatale Praxis vertiefen die bewusst",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogamarket.ch/teacher-trainings/200h-teacher-training/",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "natha-yoga-bern",
-      "studio_name": "Natha Yoga Schweiz",
-      "day": "Monday",
       "time_start": "18:00",
       "time_end": "19:30",
-      "class_name": "Natha Yoga für Alle",
-      "teacher": "",
+      "class_name": "Evening Flow 18:00 - 19:30",
+      "teacher": "Maja",
       "level": "all",
-      "source": "https://www.natha-yoga-schweiz.ch/stundenplan",
+      "source": "https://www.grey-rebel.com/schedule",
       "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "natha-yoga-bern",
-      "studio_name": "Natha Yoga Schweiz",
-      "day": "Friday",
-      "time_start": "12:15",
-      "time_end": "13:10",
-      "class_name": "Natha Yoga Restukturierung mit Regula",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.natha-yoga-schweiz.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "natha-yoga-bern",
-      "studio_name": "Natha Yoga Schweiz",
-      "day": "Thursday",
-      "time_start": "12:15",
-      "time_end": "13:15",
-      "class_name": "Yoga Nidra & Veggie Bowl & Tee, mit Andrea",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.natha-yoga-schweiz.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "natha-yoga-bern",
-      "studio_name": "Natha Yoga Schweiz",
-      "day": "Friday",
-      "time_start": "17:45",
-      "time_end": "19:15",
-      "class_name": "Natha Yoga Alle",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.natha-yoga-schweiz.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "natha-yoga-bern",
-      "studio_name": "Natha Yoga Schweiz",
-      "day": "Friday",
-      "time_start": "09:00",
-      "time_end": "10:30",
-      "class_name": "Natha Yoga für Alle",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.natha-yoga-schweiz.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogabern-iyengar",
-      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
-      "day": "Monday",
-      "time_start": "09:15",
-      "time_end": "10:45",
-      "class_name": "* A anmelden",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogabern.ch/kurse",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogabern-iyengar",
-      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
-      "day": "Monday",
-      "time_start": "16:00",
-      "time_end": "17:15",
-      "class_name": "D anmelden",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogabern.ch/kurse",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogabern-iyengar",
-      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
-      "day": "Monday",
-      "time_start": "17:45",
-      "time_end": "19:30",
-      "class_name": "*** C anmelden",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogabern.ch/kurse",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogabern-iyengar",
-      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
-      "day": "Monday",
-      "time_start": "20:00",
-      "time_end": "21:30",
-      "class_name": "* A anmelden",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogabern.ch/kurse",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogabern-iyengar",
-      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
-      "day": "Sunday",
-      "time_start": "12:15",
-      "time_end": "13:45",
-      "class_name": "* A anmelden",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogabern.ch/kurse",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogabern-iyengar",
-      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
-      "day": "Sunday",
-      "time_start": "17:45",
-      "time_end": "19:15",
-      "class_name": "** B anmelden",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogabern.ch/kurse",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogabern-iyengar",
-      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
-      "day": "Sunday",
-      "time_start": "19:45",
-      "time_end": "21:15",
-      "class_name": "* A anmelden",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogabern.ch/kurse",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogabern-iyengar",
-      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
-      "day": "Wednesday",
-      "time_start": "09:15",
-      "time_end": "10:45",
-      "class_name": "* A anmelden",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogabern.ch/kurse",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogabern-iyengar",
-      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
-      "day": "Wednesday",
-      "time_start": "17:45",
-      "time_end": "19:15",
-      "class_name": "* A anmelden",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogabern.ch/kurse",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogabern-iyengar",
-      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
-      "day": "Wednesday",
-      "time_start": "19:45",
-      "time_end": "21:15",
-      "class_name": "** B anmelden",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogabern.ch/kurse",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogabern-iyengar",
-      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
-      "day": "Thursday",
-      "time_start": "09:15",
-      "time_end": "10:45",
-      "class_name": "* A anmelden",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogabern.ch/kurse",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogabern-iyengar",
-      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
-      "day": "Thursday",
-      "time_start": "17:15",
-      "time_end": "18:30",
-      "class_name": "* A anmelden",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogabern.ch/kurse",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogabern-iyengar",
-      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
-      "day": "Thursday",
-      "time_start": "18:45",
-      "time_end": "20:15",
-      "class_name": "* A anmelden",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogabern.ch/kurse",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogabern-iyengar",
-      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
-      "day": "Friday",
-      "time_start": "07:00",
-      "time_end": "08:15",
-      "class_name": "* A anmelden",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogabern.ch/kurse",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yogabern-iyengar",
-      "studio_name": "YOGABERN Iyengar-Yoga-Schule",
-      "day": "Friday",
-      "time_start": "09:15",
-      "time_end": "10:45",
-      "class_name": "** B anmelden",
-      "teacher": "",
-      "level": "all",
-      "source": "https://yogabern.ch/kurse",
-      "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "vayam-yoga-bern",
@@ -3108,7 +2289,7 @@
       "level": "all",
       "source": "https://www.vayamyoga.com/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "vayam-yoga-bern",
@@ -3121,33 +2302,7 @@
       "level": "all",
       "source": "https://www.vayamyoga.com/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "vayam-yoga-bern",
-      "studio_name": "vayam yoga",
-      "day": "Tuesday",
-      "time_start": "17:30",
-      "time_end": "19:00",
-      "class_name": "90min / All levels",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.vayamyoga.com/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "vayam-yoga-bern",
-      "studio_name": "vayam yoga",
-      "day": "Thursday",
-      "time_start": "18:15",
-      "time_end": "19:45",
-      "class_name": "90min / All levels",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.vayamyoga.com/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "vayam-yoga-bern",
@@ -3160,7 +2315,98 @@
       "level": "all",
       "source": "https://www.vayamyoga.com/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "vayam-yoga-bern",
+      "studio_name": "vayam yoga",
+      "day": "Tuesday",
+      "time_start": "17:30",
+      "time_end": "19:00",
+      "class_name": "90min / All levels",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.vayamyoga.com/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "vayam-yoga-bern",
+      "studio_name": "vayam yoga",
+      "day": "Thursday",
+      "time_start": "18:15",
+      "time_end": "19:45",
+      "class_name": "90min / All levels",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.vayamyoga.com/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "vayam-yoga-bern",
+      "studio_name": "vayam yoga",
+      "day": "Tuesday",
+      "time_start": "17:30",
+      "time_end": "19:00",
+      "class_name": "90min / All levels",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.vayamyoga.com/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "vayam-yoga-bern",
+      "studio_name": "vayam yoga",
+      "day": "Thursday",
+      "time_start": "18:15",
+      "time_end": "19:45",
+      "class_name": "90min / All levels",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.vayamyoga.com/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "vayam-yoga-bern",
+      "studio_name": "vayam yoga",
+      "day": "Friday",
+      "time_start": "06:30",
+      "time_end": "07:45",
+      "class_name": "75min / All levels",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.vayamyoga.com/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "vayam-yoga-bern",
+      "studio_name": "vayam yoga",
+      "day": "Friday",
+      "time_start": "08:45",
+      "time_end": "10:15",
+      "class_name": "90min / All levels",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.vayamyoga.com/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "vayam-yoga-bern",
+      "studio_name": "vayam yoga",
+      "day": "Saturday",
+      "time_start": "09:30",
+      "time_end": "10:45",
+      "class_name": "75min / Access Class / All levels",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.vayamyoga.com/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "devi-yoga-bern",
@@ -3173,7 +2419,7 @@
       "level": "all",
       "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
       "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "devi-yoga-bern",
@@ -3182,11 +2428,11 @@
       "time_start": "09:00",
       "time_end": "10:15",
       "class_name": "Gentle Yoga für Alle",
-      "teacher": "Melanie Nohr",
+      "teacher": "Cancelled",
       "level": "all",
       "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
       "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "devi-yoga-bern",
@@ -3195,11 +2441,11 @@
       "time_start": "09:00",
       "time_end": "10:15",
       "class_name": "Prana Flow Yoga",
-      "teacher": "Claudia",
+      "teacher": "Cancelled",
       "level": "all",
       "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
       "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "devi-yoga-bern",
@@ -3208,89 +2454,11 @@
       "time_start": "10:30",
       "time_end": "11:45",
       "class_name": "Schwangerschaftsyoga",
-      "teacher": "Claudia",
+      "teacher": "Cancelled",
       "level": "all",
       "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
       "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "devi-yoga-bern",
-      "studio_name": "DEVI Yoga Atem Therapie",
-      "day": "Tuesday",
-      "time_start": "17:30",
-      "time_end": "18:40",
-      "class_name": "Schwangerschaftsyoga",
-      "teacher": "Claudia",
-      "level": "all",
-      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "devi-yoga-bern",
-      "studio_name": "DEVI Yoga Atem Therapie",
-      "day": "Tuesday",
-      "time_start": "19:00",
-      "time_end": "20:30",
-      "class_name": "Devi Yoga für alle",
-      "teacher": "Pari",
-      "level": "all",
-      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "devi-yoga-bern",
-      "studio_name": "DEVI Yoga Atem Therapie",
-      "day": "Wednesday",
-      "time_start": "18:00",
-      "time_end": "19:20",
-      "class_name": "Schwangerschaftsyoga",
-      "teacher": "Melanie Nohr",
-      "level": "all",
-      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "devi-yoga-bern",
-      "studio_name": "DEVI Yoga Atem Therapie",
-      "day": "Wednesday",
-      "time_start": "19:45",
-      "time_end": "21:00",
-      "class_name": "Yoga-Atem-Entspannung + Satsang/Tee im Anschluss",
-      "teacher": "Melanie Nohr",
-      "level": "all",
-      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "devi-yoga-bern",
-      "studio_name": "DEVI Yoga Atem Therapie",
-      "day": "Thursday",
-      "time_start": "17:45",
-      "time_end": "19:10",
-      "class_name": "HypnoBirthing® | im Devi+Zoom | Atem&Visualisieren",
-      "teacher": "Melanie Nohr",
-      "level": "all",
-      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "devi-yoga-bern",
-      "studio_name": "DEVI Yoga Atem Therapie",
-      "day": "Friday",
-      "time_start": "17:30",
-      "time_end": "19:00",
-      "class_name": "Yoga Nidra am 8.5.26",
-      "teacher": "Melanie Nohr",
-      "level": "all",
-      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
-      "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "devi-yoga-bern",
@@ -3303,20 +2471,72 @@
       "level": "all",
       "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
       "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "devi-yoga-bern",
       "studio_name": "DEVI Yoga Atem Therapie",
-      "day": "Monday",
-      "time_start": "20:00",
-      "time_end": "21:15",
-      "class_name": "YogaFlow zum Wochenbeginn",
-      "teacher": "Janina",
+      "day": "Tuesday",
+      "time_start": "17:30",
+      "time_end": "18:40",
+      "class_name": "Schwangerschaftsyoga",
+      "teacher": "Cancelled",
       "level": "all",
       "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
       "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "devi-yoga-bern",
+      "studio_name": "DEVI Yoga Atem Therapie",
+      "day": "Tuesday",
+      "time_start": "19:00",
+      "time_end": "20:30",
+      "class_name": "Devi Yoga für alle",
+      "teacher": "Pari",
+      "level": "all",
+      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "devi-yoga-bern",
+      "studio_name": "DEVI Yoga Atem Therapie",
+      "day": "Wednesday",
+      "time_start": "18:00",
+      "time_end": "19:20",
+      "class_name": "Schwangerschaftsyoga",
+      "teacher": "Claudia",
+      "level": "all",
+      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "devi-yoga-bern",
+      "studio_name": "DEVI Yoga Atem Therapie",
+      "day": "Wednesday",
+      "time_start": "19:45",
+      "time_end": "21:00",
+      "class_name": "Yoga-Atem-Entspannung + Satsang/Tee im Anschluss",
+      "teacher": "Claudia",
+      "level": "all",
+      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "devi-yoga-bern",
+      "studio_name": "DEVI Yoga Atem Therapie",
+      "day": "Thursday",
+      "time_start": "17:00",
+      "time_end": "18:10",
+      "class_name": "HypnoBirthing® | im Devi+Zoom | Atem&Visualisieren",
+      "teacher": "Claudia",
+      "level": "all",
+      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
+      "verified": true,
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "devi-yoga-bern",
@@ -3324,237 +2544,978 @@
       "day": "Friday",
       "time_start": "17:30",
       "time_end": "19:00",
-      "class_name": "Yoga Nidra | 1x monatlich",
+      "class_name": "YogaNidra | am 08.05.26",
       "teacher": "Melanie Nohr",
       "level": "all",
       "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
       "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
-      "studio_id": "yoga-and-more-bern",
-      "studio_name": "Yoga & more",
+      "studio_id": "devi-yoga-bern",
+      "studio_name": "DEVI Yoga Atem Therapie",
       "day": "Monday",
-      "time_start": "10:00",
-      "time_end": "11:10",
-      "class_name": "*Sanftes Yoga über 60mit Marie-Anne Start: 5.1.26*Mittags-move mit C rista ‍Aktives Yoga & Yogaflows",
-      "teacher": "",
+      "time_start": "18:00",
+      "time_end": "19:30",
+      "class_name": "Iyengar Yoga",
+      "teacher": "Marie-Christine",
       "level": "all",
-      "source": "https://www.yoga-and-more.ch/stundenplan",
+      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
       "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
-      "studio_id": "yoga-and-more-bern",
-      "studio_name": "Yoga & more",
+      "studio_id": "devi-yoga-bern",
+      "studio_name": "DEVI Yoga Atem Therapie",
+      "day": "Tuesday",
+      "time_start": "09:10",
+      "time_end": "10:00",
+      "class_name": "Hormonyoga vorOrt&zuHause",
+      "teacher": "Claudia",
+      "level": "all",
+      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "devi-yoga-bern",
+      "studio_name": "DEVI Yoga Atem Therapie",
+      "day": "Tuesday",
+      "time_start": "17:30",
+      "time_end": "18:40",
+      "class_name": "Schwangerschaftsyoga",
+      "teacher": "Cancelled",
+      "level": "all",
+      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "devi-yoga-bern",
+      "studio_name": "DEVI Yoga Atem Therapie",
       "day": "Tuesday",
       "time_start": "19:00",
-      "time_end": "20:15",
-      "class_name": "*Yoga Kurs mit Anita Banderini anitabanderini.com*Atemt erapie mit Nadja:Ganzer Tagnanasc @gmx.c ‍",
-      "teacher": "",
+      "time_end": "20:30",
+      "class_name": "Devi Yoga für alle",
+      "teacher": "Pari",
       "level": "all",
-      "source": "https://www.yoga-and-more.ch/stundenplan",
+      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
       "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
-      "studio_id": "yoga-and-more-bern",
-      "studio_name": "Yoga & more",
+      "studio_id": "devi-yoga-bern",
+      "studio_name": "DEVI Yoga Atem Therapie",
       "day": "Wednesday",
-      "time_start": "09:00",
-      "time_end": "10:30",
-      "class_name": "*Yoga Kurs mit Kate Beck yoga-wit -kate.c *Pilates mit Géraldine Ruckstu l12-13.00 *Yoga Kurs mit Ni",
-      "teacher": "",
+      "time_start": "18:00",
+      "time_end": "19:20",
+      "class_name": "Schwangerschaftsyoga",
+      "teacher": "Claudia",
       "level": "all",
-      "source": "https://www.yoga-and-more.ch/stundenplan",
+      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
       "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
-      "studio_id": "yoga-and-more-bern",
-      "studio_name": "Yoga & more",
+      "studio_id": "devi-yoga-bern",
+      "studio_name": "DEVI Yoga Atem Therapie",
+      "day": "Wednesday",
+      "time_start": "19:45",
+      "time_end": "21:00",
+      "class_name": "Yoga-Atem-Entspannung + Satsang/Tee im Anschluss",
+      "teacher": "Claudia",
+      "level": "all",
+      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "devi-yoga-bern",
+      "studio_name": "DEVI Yoga Atem Therapie",
       "day": "Thursday",
+      "time_start": "09:00",
+      "time_end": "10:15",
+      "class_name": "Gentle Yoga für Alle",
+      "teacher": "Cancelled",
+      "level": "all",
+      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "devi-yoga-bern",
+      "studio_name": "DEVI Yoga Atem Therapie",
+      "day": "Thursday",
+      "time_start": "17:00",
+      "time_end": "18:10",
+      "class_name": "HypnoBirthing® | im Devi+Zoom | Atem&Visualisieren",
+      "teacher": "Claudia",
+      "level": "all",
+      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "devi-yoga-bern",
+      "studio_name": "DEVI Yoga Atem Therapie",
+      "day": "Friday",
+      "time_start": "09:00",
+      "time_end": "10:15",
+      "class_name": "Prana Flow Yoga",
+      "teacher": "Cancelled",
+      "level": "all",
+      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "devi-yoga-bern",
+      "studio_name": "DEVI Yoga Atem Therapie",
+      "day": "Friday",
+      "time_start": "10:30",
+      "time_end": "11:45",
+      "class_name": "Schwangerschaftsyoga",
+      "teacher": "Cancelled",
+      "level": "all",
+      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "devi-yoga-bern",
+      "studio_name": "DEVI Yoga Atem Therapie",
+      "day": "Friday",
+      "time_start": "17:30",
+      "time_end": "19:00",
+      "class_name": "YogaNidra | am 08.05.26",
+      "teacher": "Melanie Nohr",
+      "level": "all",
+      "source": "https://www.devi-yoga-health.ch/Stundenplan.htm",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "soulspace-koeniz",
+      "studio_name": "Soulspace Koeniz",
+      "day": "Friday",
+      "time_start": "08:00",
+      "time_end": "09:00",
+      "class_name": "Morning Flow",
+      "teacher": "Cancelled",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/soulspace-koeniz",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "soulspace-koeniz",
+      "studio_name": "Soulspace Koeniz",
+      "day": "Friday",
+      "time_start": "09:15",
+      "time_end": "10:15",
+      "class_name": "Morning Flow",
+      "teacher": "Claudia",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/soulspace-koeniz",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "soulspace-koeniz",
+      "studio_name": "Soulspace Koeniz",
+      "day": "Friday",
+      "time_start": "12:15",
+      "time_end": "13:00",
+      "class_name": "Outdoorfit",
+      "teacher": "Claudia",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/soulspace-koeniz",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "soulspace-koeniz",
+      "studio_name": "Soulspace Koeniz",
+      "day": "Monday",
+      "time_start": "17:30",
+      "time_end": "18:30",
+      "class_name": "Yoga",
+      "teacher": "Cancelled",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/soulspace-koeniz",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "soulspace-koeniz",
+      "studio_name": "Soulspace Koeniz",
+      "day": "Monday",
+      "time_start": "18:45",
+      "time_end": "19:45",
+      "class_name": "Hatha Flow",
+      "teacher": "Cancelled",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/soulspace-koeniz",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "soulspace-koeniz",
+      "studio_name": "Soulspace Koeniz",
+      "day": "Tuesday",
+      "time_start": "19:00",
+      "time_end": "20:00",
+      "class_name": "Slow Vinyasa",
+      "teacher": "Simone",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/soulspace-koeniz",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "soulspace-koeniz",
+      "studio_name": "Soulspace Koeniz",
+      "day": "Wednesday",
+      "time_start": "17:30",
+      "time_end": "18:30",
+      "class_name": "athleticflow",
+      "teacher": "Tamara",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/soulspace-koeniz",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "soulspace-koeniz",
+      "studio_name": "Soulspace Koeniz",
+      "day": "Wednesday",
+      "time_start": "19:00",
+      "time_end": "20:00",
+      "class_name": "Yoga",
+      "teacher": "Sandra",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/soulspace-koeniz",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "soulspace-koeniz",
+      "studio_name": "Soulspace Koeniz",
+      "day": "Monday",
+      "time_start": "17:30",
+      "time_end": "18:30",
+      "class_name": "Yoga",
+      "teacher": "Cancelled",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/soulspace-koeniz",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "soulspace-koeniz",
+      "studio_name": "Soulspace Koeniz",
+      "day": "Monday",
+      "time_start": "18:45",
+      "time_end": "19:45",
+      "class_name": "Hatha Flow",
+      "teacher": "Cancelled",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/soulspace-koeniz",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "soulspace-koeniz",
+      "studio_name": "Soulspace Koeniz",
+      "day": "Tuesday",
+      "time_start": "19:00",
+      "time_end": "20:00",
+      "class_name": "Slow Vinyasa",
+      "teacher": "Simone",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/soulspace-koeniz",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "soulspace-koeniz",
+      "studio_name": "Soulspace Koeniz",
+      "day": "Wednesday",
+      "time_start": "17:30",
+      "time_end": "18:30",
+      "class_name": "athleticflow",
+      "teacher": "Tamara",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/soulspace-koeniz",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "soulspace-koeniz",
+      "studio_name": "Soulspace Koeniz",
+      "day": "Wednesday",
+      "time_start": "19:00",
+      "time_end": "20:00",
+      "class_name": "Yoga",
+      "teacher": "Sandra",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/soulspace-koeniz",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "soulspace-koeniz",
+      "studio_name": "Soulspace Koeniz",
+      "day": "Friday",
+      "time_start": "08:00",
+      "time_end": "09:00",
+      "class_name": "Morning Flow",
+      "teacher": "Cancelled",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/soulspace-koeniz",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "soulspace-koeniz",
+      "studio_name": "Soulspace Koeniz",
+      "day": "Friday",
+      "time_start": "09:15",
+      "time_end": "10:15",
+      "class_name": "Morning Flow",
+      "teacher": "Claudia",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/soulspace-koeniz",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "soulspace-koeniz",
+      "studio_name": "Soulspace Koeniz",
+      "day": "Friday",
+      "time_start": "12:15",
+      "time_end": "13:00",
+      "class_name": "Outdoorfit",
+      "teacher": "Claudia",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/soulspace-koeniz",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Monday",
+      "time_start": "09:00",
+      "time_end": "10:15",
+      "class_name": "Morning Flow",
+      "teacher": "Maria Ansari",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Monday",
+      "time_start": "18:00",
+      "time_end": "19:15",
+      "class_name": "Yoga Flow",
+      "teacher": "Laura Burns",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Tuesday",
+      "time_start": "09:00",
+      "time_end": "10:15",
+      "class_name": "Yoga für alle",
+      "teacher": "Madeleine Haag",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Tuesday",
       "time_start": "08:30",
       "time_end": "09:30",
-      "class_name": "*Pilates mit Sara Start: 8. Januar 26www.nouris andflow.c *MamaBaby Yoga mit Marie-AnneStart:19.März",
-      "teacher": "",
+      "class_name": "Privat Einzelunterricht",
+      "teacher": "Laura Burns",
       "level": "all",
-      "source": "https://www.yoga-and-more.ch/stundenplan",
+      "source": "https://www.yoga-room.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
-      "studio_id": "yoga-and-more-bern",
-      "studio_name": "Yoga & more",
-      "day": "Friday",
-      "time_start": "18:30",
-      "time_end": "20:00",
-      "class_name": "‍*Yin Yoga mit AnitaJeder 1. Freitagabend im Monat: anitabanderini.com",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yoga-and-more.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yoga-and-more-bern",
-      "studio_name": "Yoga & more",
-      "day": "Sunday",
-      "time_start": "10:00",
-      "time_end": "11:30",
-      "class_name": "‍*Eltern-Kind-Yoga mit Marie-AnneSonntag, 22. März 2026 & 26. April 2026 ‍Anmeldung erforderlic !‍",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yoga-and-more.ch/stundenplan",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yoga-and-more-bern",
-      "studio_name": "Yoga & more",
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
       "day": "Tuesday",
-      "time_start": "2:20",
-      "time_end": "",
-      "class_name": "Vor  30 Ja ren wagte ic die ersten De nungen auf der Yogamatte. Als Le rperson im Zyklus 1 suc te ic",
-      "teacher": "",
+      "time_start": "18:15",
+      "time_end": "19:30",
+      "class_name": "Hatha Flow",
+      "teacher": "Laura Burns",
       "level": "all",
-      "source": "https://www.yoga-and-more.ch/stundenplan",
+      "source": "https://www.yoga-room.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
-      "studio_id": "yoga-club-biel",
-      "studio_name": "Yoga Club Biel-Bienne",
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Tuesday",
+      "time_start": "19:45",
+      "time_end": "21:00",
+      "class_name": "Slow Flow",
+      "teacher": "Lara Lauper",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Wednesday",
+      "time_start": "10:30",
+      "time_end": "12:15",
+      "class_name": "onlineyoga filmen Köniz",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Wednesday",
+      "time_start": "18:00",
+      "time_end": "19:15",
+      "class_name": "Yin Yoga",
+      "teacher": "Alexandra Costa",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Thursday",
+      "time_start": "09:00",
+      "time_end": "10:15",
+      "class_name": "Morning Flow",
+      "teacher": "Michèle Frey",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Thursday",
+      "time_start": "09:00",
+      "time_end": "10:15",
+      "class_name": "Yoga für alle",
+      "teacher": "Laura Burns",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Thursday",
+      "time_start": "18:00",
+      "time_end": "19:15",
+      "class_name": "Yoga Flow",
+      "teacher": "Laura Burns",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Thursday",
+      "time_start": "18:30",
+      "time_end": "19:45",
+      "class_name": "Vinyasa Flow",
+      "teacher": "Selina Howald",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Friday",
+      "time_start": "09:00",
+      "time_end": "10:15",
+      "class_name": "Morning Flow",
+      "teacher": "Michèle Frey",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Friday",
+      "time_start": "09:00",
+      "time_end": "10:15",
+      "class_name": "Hatha Yoga",
+      "teacher": "Laura Burns",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Saturday",
+      "time_start": "09:30",
+      "time_end": "11:30",
+      "class_name": "Faszien- & Marma-Akupressur  (Special)",
+      "teacher": "Laura Burns",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Saturday",
+      "time_start": "10:00",
+      "time_end": "11:15",
+      "class_name": "Weekend Flow",
+      "teacher": "Madeleine Haag",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Saturday",
+      "time_start": "12:00",
+      "time_end": "17:00",
+      "class_name": "Privat Breathwork Thun",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Sunday",
+      "time_start": "12:00",
+      "time_end": "15:15",
+      "class_name": "Hormonyoga Tanja Forcellini (Workshop)",
+      "teacher": "Guest Teacher",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Sunday",
+      "time_start": "16:30",
+      "time_end": "18:00",
+      "class_name": "Yin Yoga (Special)",
+      "teacher": "Stéphanie Gerber",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
       "day": "Monday",
-      "time_start": "12:30",
-      "time_end": "13:15",
-      "class_name": "Pilates | Sandra : Yang Yoga | Jonat an : Yin Yoga | Jonat an : Yin Yoga | Jonat an",
-      "teacher": "",
+      "time_start": "09:00",
+      "time_end": "10:15",
+      "class_name": "Morning Flow",
+      "teacher": "Selina Howald",
       "level": "all",
-      "source": "https://www.yoga-club.ch/horaire",
+      "source": "https://www.yoga-room.ch/stundenplan",
       "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
-      "studio_id": "yoga-club-biel",
-      "studio_name": "Yoga Club Biel-Bienne",
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Monday",
+      "time_start": "09:00",
+      "time_end": "10:15",
+      "class_name": "Morning Flow",
+      "teacher": "Maria Ansari",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Monday",
+      "time_start": "17:00",
+      "time_end": "18:00",
+      "class_name": "Schwangerschaftsyoga",
+      "teacher": "Alexandra Costa",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Monday",
+      "time_start": "18:00",
+      "time_end": "19:15",
+      "class_name": "Yoga Flow",
+      "teacher": "Laura Burns",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Monday",
+      "time_start": "18:30",
+      "time_end": "19:45",
+      "class_name": "Vinyasa Flow",
+      "teacher": "Michèle Frey",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "day": "Monday",
+      "time_start": "19:30",
+      "time_end": "20:45",
+      "class_name": "Hatha Yoga",
+      "teacher": "Laura Burns",
+      "level": "all",
+      "source": "https://www.yoga-room.ch/stundenplan",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
+      "day": "Wednesday",
+      "time_start": "09:15",
+      "time_end": "10:30",
+      "class_name": "50plus Yoga / sanfter Flow",
+      "teacher": "Karin Zeller-Germann",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/yoga-bude",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
+      "day": "Friday",
+      "time_start": "09:15",
+      "time_end": "10:30",
+      "class_name": "Power Yoga",
+      "teacher": "Karin Zeller-Germann",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/yoga-bude",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
+      "day": "Saturday",
+      "time_start": "09:30",
+      "time_end": "10:45",
+      "class_name": "Yoga Flow",
+      "teacher": "Sarah Wälti",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/yoga-bude",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
+      "day": "Wednesday",
+      "time_start": "15:15",
+      "time_end": "16:15",
+      "class_name": "Rückbildung mit/ohne Baby",
+      "teacher": "Karin Zeller-Germann",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/yoga-bude",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
+      "day": "Tuesday",
+      "time_start": "18:00",
+      "time_end": "19:15",
+      "class_name": "Yoga Flow",
+      "teacher": "Karin Zeller-Germann",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/yoga-bude",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
       "day": "Tuesday",
       "time_start": "19:30",
-      "time_end": "20:15",
-      "class_name": "Hat a Yoga | Agat e / Ant ony",
-      "teacher": "",
+      "time_end": "20:45",
+      "class_name": "REPLAY Yoga Flow",
+      "teacher": "Karin Zeller-Germann",
       "level": "all",
-      "source": "https://www.yoga-club.ch/horaire",
+      "source": "https://www.eversports.ch/s/yoga-bude",
       "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
-      "studio_id": "yoga-club-biel",
-      "studio_name": "Yoga Club Biel-Bienne",
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
+      "day": "Tuesday",
+      "time_start": "19:30",
+      "time_end": "20:45",
+      "class_name": "Yoga Flow",
+      "teacher": "Karin Zeller-Germann",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/yoga-bude",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
       "day": "Wednesday",
-      "time_start": "12:30",
-      "time_end": "13:15",
-      "class_name": "Pilates | Sandra : Kids Yoga 6-12 ans | Isabel / Jonat an : Yin Yoga | Jonat an : Yang Yoga | Jonat ",
-      "teacher": "",
+      "time_start": "17:00",
+      "time_end": "18:15",
+      "class_name": "REPLAY Schwangerschaftsyoga",
+      "teacher": "Karin Zeller-Germann",
       "level": "all",
-      "source": "https://www.yoga-club.ch/horaire",
+      "source": "https://www.eversports.ch/s/yoga-bude",
       "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
-      "studio_id": "yoga-club-biel",
-      "studio_name": "Yoga Club Biel-Bienne",
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
+      "day": "Wednesday",
+      "time_start": "17:00",
+      "time_end": "18:15",
+      "class_name": "Schwangerschaftsyoga",
+      "teacher": "Karin Zeller-Germann",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/yoga-bude",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
+      "day": "Wednesday",
+      "time_start": "18:30",
+      "time_end": "19:45",
+      "class_name": "Yoga meets PILATES",
+      "teacher": "Jenny Spieler",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/yoga-bude",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
       "day": "Thursday",
-      "time_start": "12:30",
-      "time_end": "13:15",
-      "class_name": "Pilates | Sandra : Pilates | Sandra",
-      "teacher": "",
+      "time_start": "18:30",
+      "time_end": "19:45",
+      "class_name": "Yoga Flow",
+      "teacher": "Cancelled",
       "level": "all",
-      "source": "https://www.yoga-club.ch/horaire",
+      "source": "https://www.eversports.ch/s/yoga-bude",
       "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
-      "studio_id": "yoga-club-biel",
-      "studio_name": "Yoga Club Biel-Bienne",
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
+      "day": "Tuesday",
+      "time_start": "18:00",
+      "time_end": "19:15",
+      "class_name": "Yoga Flow",
+      "teacher": "Karin Zeller-Germann",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/yoga-bude",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
+      "day": "Tuesday",
+      "time_start": "19:30",
+      "time_end": "20:45",
+      "class_name": "REPLAY Yoga Flow",
+      "teacher": "Karin Zeller-Germann",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/yoga-bude",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
+      "day": "Tuesday",
+      "time_start": "19:30",
+      "time_end": "20:45",
+      "class_name": "Yoga Flow",
+      "teacher": "Karin Zeller-Germann",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/yoga-bude",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
+      "day": "Wednesday",
+      "time_start": "09:15",
+      "time_end": "10:30",
+      "class_name": "50plus Yoga / sanfter Flow",
+      "teacher": "Karin Zeller-Germann",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/yoga-bude",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
+      "day": "Wednesday",
+      "time_start": "15:15",
+      "time_end": "16:15",
+      "class_name": "Rückbildung mit/ohne Baby",
+      "teacher": "Karin Zeller-Germann",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/yoga-bude",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
+      "day": "Wednesday",
+      "time_start": "17:00",
+      "time_end": "18:15",
+      "class_name": "REPLAY Schwangerschaftsyoga",
+      "teacher": "Karin Zeller-Germann",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/yoga-bude",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
+      "day": "Wednesday",
+      "time_start": "17:00",
+      "time_end": "18:15",
+      "class_name": "Schwangerschaftsyoga",
+      "teacher": "Karin Zeller-Germann",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/yoga-bude",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
+      "day": "Wednesday",
+      "time_start": "18:30",
+      "time_end": "19:45",
+      "class_name": "Yoga meets PILATES",
+      "teacher": "Jenny Spieler",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/yoga-bude",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
+      "day": "Thursday",
+      "time_start": "18:30",
+      "time_end": "19:45",
+      "class_name": "Yoga Flow",
+      "teacher": "Cancelled",
+      "level": "all",
+      "source": "https://www.eversports.ch/s/yoga-bude",
+      "verified": true,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
       "day": "Friday",
-      "time_start": "11:15",
-      "time_end": "12:00",
-      "class_name": "Yin Yoga | Jonat an",
-      "teacher": "",
+      "time_start": "09:15",
+      "time_end": "10:30",
+      "class_name": "Power Yoga",
+      "teacher": "Karin Zeller-Germann",
       "level": "all",
-      "source": "https://www.yoga-club.ch/horaire",
+      "source": "https://www.eversports.ch/s/yoga-bude",
       "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     },
     {
-      "studio_id": "energie-yoga-bern",
-      "studio_name": "Energie Yoga",
-      "day": "Monday",
-      "time_start": "18:45",
-      "time_end": "19:45",
-      "class_name": "Energie Yoga",
-      "teacher": "Cornelia Baer",
+      "studio_id": "yoga-bude-thun",
+      "studio_name": "Yoga Bude",
+      "day": "Saturday",
+      "time_start": "09:30",
+      "time_end": "10:45",
+      "class_name": "Yoga Flow",
+      "teacher": "Sarah Wälti",
       "level": "all",
-      "source": "https://energieyoga.ch/b1.html",
+      "source": "https://www.eversports.ch/s/yoga-bude",
       "verified": true,
-      "last_checked": "2026-03-25"
-    },
-    {
-      "studio_id": "energie-yoga-bern",
-      "studio_name": "Energie Yoga",
-      "day": "Monday",
-      "time_start": "20:00",
-      "time_end": "21:00",
-      "class_name": "Energie Yoga",
-      "teacher": "Cornelia Baer",
-      "level": "all",
-      "source": "https://energieyoga.ch/b1.html",
-      "verified": true,
-      "last_checked": "2026-03-25"
-    },
-    {
-      "studio_id": "energie-yoga-bern",
-      "studio_name": "Energie Yoga",
-      "day": "Wednesday",
-      "time_start": "12:15",
-      "time_end": "13:15",
-      "class_name": "Schreibtisch Yoga",
-      "teacher": "Cornelia Baer",
-      "level": "all",
-      "source": "https://energieyoga.ch/b1.html",
-      "verified": true,
-      "last_checked": "2026-03-25"
-    },
-    {
-      "studio_id": "energie-yoga-bern",
-      "studio_name": "Energie Yoga",
-      "day": "Wednesday",
-      "time_start": "18:45",
-      "time_end": "19:45",
-      "class_name": "Energie Yoga",
-      "teacher": "Cornelia Baer",
-      "level": "all",
-      "source": "https://energieyoga.ch/b1.html",
-      "verified": true,
-      "last_checked": "2026-03-25"
-    },
-    {
-      "studio_id": "energie-yoga-bern",
-      "studio_name": "Energie Yoga",
-      "day": "Thursday",
-      "time_start": "12:15",
-      "time_end": "13:15",
-      "class_name": "Schreibtisch Yoga",
-      "teacher": "Cornelia Baer",
-      "level": "all",
-      "source": "https://energieyoga.ch/b1.html",
-      "verified": true,
-      "last_checked": "2026-03-25"
+      "last_checked": "2026-04-06"
     }
   ],
   "_meta": {
-    "last_updated": "2026-03-23",
-    "note": "Stundenplan-Daten aus oeffentlichen Quellen. Fuer aktuelle Zeiten siehe Studio-Website."
+    "last_updated": "2026-04-06",
+    "note": "Stundenplan-Daten aus öffentlichen Quellen. Für aktuelle Zeiten siehe Studio-Website."
   }
 }

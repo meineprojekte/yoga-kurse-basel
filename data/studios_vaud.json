@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-26T22:36:01.434772+00:00",
+  "last_updated": "2026-04-06T08:07:01.942252+00:00",
   "studios": [
     {
       "id": "ooom-lausanne",
@@ -48,12 +48,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://ooom.ch/tarifs/",
-        "last_checked": "2026-03-22T11:12:00.966956+00:00"
+        "last_checked": "2026-04-06T08:02:05.800637+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:11:54.587201+00:00",
+      "last_scraped": "2026-04-06T08:01:47.906131+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:12:00.966976+00:00",
+        "last_scraped": "2026-04-06T08:02:05.800673+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -116,10 +116,10 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.nuevalunayoga.ch/cours-collectifs-yoga-lausanne/",
-        "last_checked": "2026-03-22T11:12:15.936598+00:00"
+        "last_checked": "2026-04-06T08:02:33.053210+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:12:04.048412+00:00",
+      "last_scraped": "2026-04-06T08:02:08.023318+00:00",
       "detected_booking_links": [
         {
           "platform": "mindbody",
@@ -127,7 +127,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-03-22T11:12:15.936616+00:00",
+        "last_scraped": "2026-04-06T08:02:33.053246+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -184,9 +184,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:12:17.924890+00:00",
+      "last_scraped": "2026-04-06T08:02:33.316764+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:12:18.586277+00:00",
+        "last_scraped": "2026-04-06T08:02:37.465361+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -242,12 +242,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://yogaworks-lausanne.ch/en/prices/",
-        "last_checked": "2026-03-22T11:12:33.460278+00:00"
+        "last_checked": "2026-04-06T08:03:06.644007+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:12:21.024827+00:00",
+      "last_scraped": "2026-04-06T08:02:39.106563+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:12:33.460299+00:00",
+        "last_scraped": "2026-04-06T08:03:06.644043+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -300,17 +300,18 @@
       "lng": 6.6275,
       "active": true,
       "classes": [],
-      "scrape_status": "no_data",
+      "scrape_status": "scraped",
       "_meta": {
-        "last_scraped": "2026-03-22T11:12:34.234595+00:00",
+        "last_scraped": "2026-04-06T08:04:55.583931+00:00",
         "last_price_check": null,
-        "scrape_status": "no_data",
+        "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://yogaflame.ch/",
           "schedule": "https://yogaflame.ch/studios/studio-lausanne/"
         }
-      }
+      },
+      "last_scraped": "2026-04-06T08:03:20.771503+00:00"
     },
     {
       "id": "yogavaud",
@@ -354,7 +355,7 @@
       "scrape_status": "blocked",
       "last_scraped": null,
       "_meta": {
-        "last_scraped": "2026-03-22T11:12:34.832975+00:00",
+        "last_scraped": "2026-04-06T08:04:58.700265+00:00",
         "last_price_check": null,
         "scrape_status": "blocked",
         "booking_links": [],
@@ -411,12 +412,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://myogastudio.ch/schedule-of-classes/classes-and-prices/",
-        "last_checked": "2026-03-22T11:12:50.058981+00:00"
+        "last_checked": "2026-04-06T08:05:28.553255+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:12:37.795814+00:00",
+      "last_scraped": "2026-04-06T08:05:00.916368+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:12:50.058999+00:00",
+        "last_scraped": "2026-04-06T08:05:28.553277+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -470,7 +471,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-03-22T11:12:53.330049+00:00",
+        "last_scraped": "2026-04-06T08:05:33.023995+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [],
@@ -521,9 +522,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:12:53.775338+00:00",
+      "last_scraped": "2026-04-06T08:05:33.618760+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:12:54.556597+00:00",
+        "last_scraped": "2026-04-06T08:05:39.082100+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -569,9 +570,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:13:01.012664+00:00",
+      "last_scraped": "2026-04-06T08:05:42.000114+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:13:10.892380+00:00",
+        "last_scraped": "2026-04-06T08:06:03.476399+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -637,12 +638,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://yogamoves.blueleaf.ch/en/subscriptions/",
-        "last_checked": "2026-03-22T11:13:13.783244+00:00"
+        "last_checked": "2026-04-06T08:06:08.528955+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:13:12.245999+00:00",
+      "last_scraped": "2026-04-06T08:06:04.004392+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:13:13.783265+00:00",
+        "last_scraped": "2026-04-06T08:06:08.528986+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -707,12 +708,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://yogacenter.ch/prix/",
-        "last_checked": "2026-03-22T11:13:34.280037+00:00"
+        "last_checked": "2026-04-06T08:06:42.408286+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:13:16.973009+00:00",
+      "last_scraped": "2026-04-06T08:06:10.946088+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:13:34.280051+00:00",
+        "last_scraped": "2026-04-06T08:06:42.408299+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -807,7 +808,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-03-22T11:13:35.793024+00:00",
+        "last_scraped": "2026-04-06T08:06:44.484911+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [],
@@ -854,9 +855,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:13:36.695831+00:00",
+      "last_scraped": "2026-04-06T08:06:44.710709+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:13:37.674862+00:00",
+        "last_scraped": "2026-04-06T08:06:48.755920+00:00",
         "last_price_check": "2026-03-26T22:36:01.433450+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -867,7 +868,8 @@
       },
       "pricing": {
         "verified": false,
-        "currency": "CHF"
+        "currency": "CHF",
+        "last_checked": "2026-04-06T08:06:48.755890+00:00"
       }
     },
     {
@@ -912,12 +914,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogapourtous-nyon.ch/tarifs/",
-        "last_checked": "2026-03-22T11:14:24.171149+00:00"
+        "last_checked": "2026-04-06T08:07:01.942224+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:13:44.552527+00:00",
+      "last_scraped": "2026-04-06T08:06:49.673096+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:14:24.171167+00:00",
+        "last_scraped": "2026-04-06T08:07:01.942242+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],

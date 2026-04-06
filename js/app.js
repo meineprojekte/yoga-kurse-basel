@@ -1381,9 +1381,15 @@ if ('serviceWorker' in navigator) {
             verifiedBadgeHtml = '<span class="verified-badge">\u2713 ' + t('pricing.verified_badge') + '</span>';
         }
 
+        var distBadgeHtml = '';
+        if (studio._dist !== undefined) {
+            distBadgeHtml = '<span class="studio-badge dist-badge">' + studio._dist + ' km</span>';
+        }
+
         card.innerHTML =
             '<div class="studio-card-header">' +
                 '<h3 class="studio-name">' + escapeHtml(studio.name) + '</h3>' +
+                distBadgeHtml +
                 (studio.drop_in ? '<span class="studio-badge drop-in">Drop-in</span>' : '') +
                 priceBadgeHtml +
                 verifiedBadgeHtml +
@@ -2340,7 +2346,25 @@ if ('serviceWorker' in navigator) {
     // --- PDF Export ---
     function exportPDF() {
         if (typeof window.jspdf === 'undefined') {
-            alert('PDF-Bibliothek wird noch geladen. Bitte versuche es in ein paar Sekunden nochmal.');
+            var pBtn = $('exportPdf');
+            if (pBtn) { pBtn.disabled = true; pBtn.querySelector('span').textContent = '...'; }
+            // Try loading jsPDF again
+            var s = document.createElement('script');
+            s.src = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
+            s.onload = function () {
+                var s2 = document.createElement('script');
+                s2.src = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.4/jspdf.plugin.autotable.min.js';
+                s2.onload = function () {
+                    if (pBtn) { pBtn.disabled = false; pBtn.querySelector('span').textContent = t('results.export_pdf'); }
+                    exportPDF();
+                };
+                document.head.appendChild(s2);
+            };
+            s.onerror = function () {
+                alert('PDF-Bibliothek konnte nicht geladen werden.');
+                if (pBtn) { pBtn.disabled = false; pBtn.querySelector('span').textContent = t('results.export_pdf'); }
+            };
+            document.head.appendChild(s);
             return;
         }
 
@@ -2751,9 +2775,15 @@ if ('serviceWorker' in navigator) {
             }
             withDist.sort(function (a, b) { return a.dist - b.dist; });
             state.filteredStudios = [];
-            for (var j = 0; j < withDist.length; j++) state.filteredStudios.push(withDist[j].studio);
+            for (var j = 0; j < withDist.length; j++) {
+                withDist[j].studio._dist = Math.round(withDist[j].dist * 10) / 10;
+                state.filteredStudios.push(withDist[j].studio);
+            }
             renderStudios();
-            if (btn) { btn.disabled = false; btn.textContent = t('geo.nearby'); }
+            if (btn) {
+                btn.disabled = false;
+                btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> <span>' + t('geo.nearby') + '</span>';
+            }
             if (state.map) {
                 state.map.setView([userLat, userLng], 14);
                 L.circleMarker([userLat, userLng], { radius: 10, color: '#D4A373', fillColor: '#D4A373', fillOpacity: 0.8 })

@@ -3,6 +3,32 @@
   "_notes": "goYoga Sarnen schedule from goyoga.ch/stundenplan-2.html. Yoga Ishwari website returned 403; no schedule extracted. Teacher for goYoga is Petra Kathriner (studio owner).",
   "classes": [
     {
+      "studio_id": "yoga-ishwari-sarnen",
+      "studio_name": "Yoga Ishwari",
+      "day": "Tuesday",
+      "time_start": "08:45",
+      "time_end": "10:00",
+      "class_name": "HATHA-YOGA HATHA-YOGA HATHA-YOGA 03.03.26 / 10.03.26 / 17.03.26 /24.03.26 / 31.03.26 / 07.04.26 /14.",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-ishwari.ch/yoga-klang/yoga-kurse/",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
+      "studio_id": "yoga-ishwari-sarnen",
+      "studio_name": "Yoga Ishwari",
+      "day": "Wednesday",
+      "time_start": "08:45",
+      "time_end": "10:00",
+      "class_name": "HATHA-YOGA(online) 04.03.26 / 11.03.26 / 18.03.26 /25.03.26 / 01.04.26 / 08.04.26 /15.04.26 / 22.04.",
+      "teacher": "",
+      "level": "all",
+      "source": "https://www.yoga-ishwari.ch/yoga-klang/yoga-kurse/",
+      "verified": false,
+      "last_checked": "2026-04-06"
+    },
+    {
       "studio_id": "goyoga-sarnen",
       "studio_name": "goYoga Sarnen",
       "day": "Tuesday",
@@ -13,7 +39,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -26,7 +52,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -39,7 +65,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -52,7 +78,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -65,7 +91,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -78,7 +104,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -91,7 +117,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -104,7 +130,7 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
+      "last_checked": "2026-04-06"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -117,37 +143,11 @@
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
       "verified": true,
-      "last_checked": "2026-03-23"
-    },
-    {
-      "studio_id": "yoga-ishwari-sarnen",
-      "studio_name": "Yoga Ishwari",
-      "day": "Tuesday",
-      "time_start": "08:45",
-      "time_end": "10:00",
-      "class_name": "HATHA-YOGA HATHA-YOGA HATHA-YOGA 03.03.26 / 10.03.26 / 17.03.26 /24.03.26 / 31.03.26 / 07.04.26 /14.",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yoga-ishwari.ch/yoga-klang/yoga-kurse/",
-      "verified": true,
-      "last_checked": "2026-03-24"
-    },
-    {
-      "studio_id": "yoga-ishwari-sarnen",
-      "studio_name": "Yoga Ishwari",
-      "day": "Wednesday",
-      "time_start": "08:45",
-      "time_end": "10:00",
-      "class_name": "HATHA-YOGA(online) 04.03.26 / 11.03.26 / 18.03.26 /25.03.26 / 01.04.26 / 08.04.26 /15.04.26 / 22.04.",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yoga-ishwari.ch/yoga-klang/yoga-kurse/",
-      "verified": true,
-      "last_checked": "2026-03-24"
+      "last_checked": "2026-04-06"
     }
   ],
   "_meta": {
-    "last_updated": "2026-03-23",
-    "note": "Stundenplan-Daten aus oeffentlichen Quellen. Fuer aktuelle Zeiten siehe Studio-Website."
+    "last_updated": "2026-04-06",
+    "note": "Stundenplan-Daten aus öffentlichen Quellen. Für aktuelle Zeiten siehe Studio-Website."
   }
 }

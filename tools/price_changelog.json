@@ -214,5 +214,95 @@
     "old_value": 280,
     "new_value": 340.0,
     "source": "https://www.yoga-in.ch/preise"
+  },
+  {
+    "timestamp": "2026-04-06T00:18:14.054368+00:00",
+    "studio_id": "aloha-yoga-aarau",
+    "canton": "aargau",
+    "field": "pricing.monthly",
+    "old_value": 329,
+    "new_value": 65.0,
+    "source": "https://www.alohayoga.ch/preise"
+  },
+  {
+    "timestamp": "2026-04-06T00:26:07.418911+00:00",
+    "studio_id": "gyym",
+    "canton": "basel",
+    "field": "pricing.monthly",
+    "old_value": 20,
+    "new_value": 55.0,
+    "source": "https://gyym.ch/en"
+  },
+  {
+    "timestamp": "2026-04-06T00:28:06.345668+00:00",
+    "studio_id": "vayam-yoga-bern",
+    "canton": "bern",
+    "field": "pricing.monthly",
+    "old_value": 35.0,
+    "new_value": 250.0,
+    "source": "https://www.vayamyoga.com/preise"
+  },
+  {
+    "timestamp": "2026-04-06T00:37:05.655358+00:00",
+    "studio_id": "om-shanti-luzern",
+    "canton": "luzern",
+    "field": "pricing.trial",
+    "old_value": 25,
+    "new_value": 27.0,
+    "source": "https://www.yogaschuleluzern.ch"
+  },
+  {
+    "timestamp": "2026-04-06T00:40:24.203386+00:00",
+    "studio_id": "sunshine-yoga-solothurn",
+    "canton": "solothurn",
+    "field": "pricing.card_10",
+    "old_value": 20,
+    "new_value": 200.0,
+    "source": "https://www.sunshine-yoga.ch/preise"
+  },
+  {
+    "timestamp": "2026-04-06T00:41:58.418817+00:00",
+    "studio_id": "hot-yoga-4-u-rapperswil",
+    "canton": "st-gallen",
+    "field": "pricing.card_10",
+    "old_value": 25,
+    "new_value": 250.0,
+    "source": "https://hotyoga4u.ch"
+  },
+  {
+    "timestamp": "2026-04-06T00:50:54.799355+00:00",
+    "studio_id": "bikram-yoga-zuerich",
+    "canton": "zurich",
+    "field": "pricing.abo",
+    "old_value": 100.0,
+    "new_value": 150.0,
+    "source": "https://www.bikramyoga.ch"
+  },
+  {
+    "timestamp": "2026-04-06T00:52:12.014744+00:00",
+    "studio_id": "yoga-spirit",
+    "canton": "zurich",
+    "field": "pricing.trial",
+    "old_value": 200,
+    "new_value": 25.0,
+    "source": "https://yoga-spirit.ch/prices"
+  },
+  {
+    "timestamp": "2026-04-06T00:53:15.274313+00:00",
+    "studio_id": "planet-yoga",
+    "canton": "zurich",
+    "field": "pricing.card_10",
+    "old_value": 25,
+    "new_value": 235.0,
+    "source": "https://www.planetyoga.ch/preise"
+  },
+  {
+    "timestamp": "2026-04-06T00:53:15.274346+00:00",
+    "studio_id": "planet-yoga",
+    "canton": "zurich",
+    "field": "pricing.monthly",
+    "old_value": 80,
+    "new_value": 159.0,
+    "source": "https://www.planetyoga.ch/preise"
   }
 ]

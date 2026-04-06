@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-26T23:00:31.090489+00:00",
+  "last_updated": "2026-04-06T07:56:30.003472+00:00",
   "studios": [
     {
       "id": "yoga-fabrik-neuchatel",
@@ -47,9 +47,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:08:37.633721+00:00",
+      "last_scraped": "2026-04-06T07:55:53.048920+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:08:45.627323+00:00",
+        "last_scraped": "2026-04-06T07:56:03.507891+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -98,12 +98,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogashashin.ch/",
-        "last_checked": "2026-03-22T11:08:49.569871+00:00"
+        "last_checked": "2026-04-06T07:56:11.568318+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:08:46.808096+00:00",
+      "last_scraped": "2026-04-06T07:56:04.153805+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:08:49.569887+00:00",
+        "last_scraped": "2026-04-06T07:56:11.568332+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -150,9 +150,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:08:50.904143+00:00",
+      "last_scraped": "2026-04-06T07:56:12.275522+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:08:55.926137+00:00",
+        "last_scraped": "2026-04-06T07:56:25.540235+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -204,9 +204,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:08:57.476307+00:00",
+      "last_scraped": "2026-04-06T07:56:25.805606+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:08:58.157344+00:00",
+        "last_scraped": "2026-04-06T07:56:30.003454+00:00",
         "last_price_check": "2026-03-26T21:59:02.502028+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -217,7 +217,8 @@
       },
       "pricing": {
         "verified": false,
-        "currency": "CHF"
+        "currency": "CHF",
+        "last_checked": "2026-04-06T07:56:30.003420+00:00"
       }
     }
   ]

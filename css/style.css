@@ -909,6 +909,16 @@ select {
     color: #66BB6A;
 }
 
+.studio-badge.dist-badge {
+    background: #E3F2FD;
+    color: #1565C0;
+}
+
+[data-theme="dark"] .studio-badge.dist-badge {
+    background: #0D2137;
+    color: #64B5F6;
+}
+
 .studio-address {
     display: flex;
     align-items: flex-start;

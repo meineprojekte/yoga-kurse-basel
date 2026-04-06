@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-27T17:27:23.488321+00:00",
+  "last_updated": "2026-04-06T07:52:25.925156+00:00",
   "studios": [
     {
       "id": "yogaamfluss-ennenda",
@@ -39,7 +39,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-03-22T11:06:37.281666+00:00",
+        "last_scraped": "2026-04-06T07:52:16.938287+00:00",
         "last_price_check": "2026-03-27T17:27:23.487438+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
@@ -56,7 +56,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yoga-am-fluss.ch/angebot/preise/",
-        "last_checked": "2026-03-27T17:27:23.487438+00:00"
+        "last_checked": "2026-04-06T07:52:16.938262+00:00"
       }
     },
     {
@@ -101,12 +101,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://12yoga.ch/",
-        "last_checked": "2026-03-22T11:06:40.592937+00:00"
+        "last_checked": "2026-04-06T07:52:22.847979+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-03-22T11:06:38.548673+00:00",
+      "last_scraped": "2026-04-06T07:52:17.302088+00:00",
       "_meta": {
-        "last_scraped": "2026-03-22T11:06:40.592954+00:00",
+        "last_scraped": "2026-04-06T07:52:22.848008+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -153,10 +153,19 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-03-22T11:06:40.902076+00:00",
+        "last_scraped": "2026-04-06T07:52:25.925120+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
-        "booking_links": [],
+        "booking_links": [
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/s/VS9wgp"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/s/VS9wgp"
+          }
+        ],
         "source_urls": {
           "website": "https://www.cgworkout.ch/"
         }

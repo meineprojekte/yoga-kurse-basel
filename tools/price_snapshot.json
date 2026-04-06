@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-03-21T23:18:58.454277",
+  "timestamp": "2026-04-06T10:12:54.823488",
   "studios": {
     "airyoga": {
       "name": "AIRYOGA",
       "canton": "zurich",
-      "source": "https://airyoga.ch/de/preise/",
+      "source": "https://www.airyoga.ch/preise",
       "prices": {
         "single": 25,
-        "card_10": 290,
+        "card_10": 120.0,
         "monthly": 200,
         "trial": 75
       }
@@ -26,12 +26,20 @@
     "athayoga": {
       "name": "ATHAYOGA",
       "canton": "zurich",
-      "source": "https://www.athayoga.ch/preise/",
+      "source": "https://www.athayoga.ch/preise",
       "prices": {
         "single": 36,
         "card_10": 270,
         "monthly": 169,
-        "trial": 79
+        "trial": 79.0
+      }
+    },
+    "yoga-studio-zuerich": {
+      "name": "Yoga Studio Zürich",
+      "canton": "zurich",
+      "source": "https://www.yogastudiozuerich.ch/angebot",
+      "prices": {
+        "trial": 70
       }
     },
     "soasana": {
@@ -39,11 +47,23 @@
       "canton": "zurich",
       "source": "https://soasana.ch/prices",
       "prices": {
-        "single": 33,
+        "single": 33.0,
         "card_10": 270,
-        "monthly": 155,
+        "monthly": 155.0,
         "trial": 65
       }
+    },
+    "the-soulspace": {
+      "name": "the SOULSPACE",
+      "canton": "zurich",
+      "source": "",
+      "prices": {}
+    },
+    "bikram-yoga-zuerich": {
+      "name": "Bikram Yoga College of India Zürich",
+      "canton": "zurich",
+      "source": "https://www.bikramyoga.ch",
+      "prices": {}
     },
     "ashtanga-yoga-zurich": {
       "name": "Ashtanga Yoga Zurich",
@@ -58,12 +78,12 @@
     "bodyart-studio": {
       "name": "BODYART Studio Zürich",
       "canton": "zurich",
-      "source": "https://bodyart.studio/en/pricing/",
+      "source": "https://bodyart.studio/en",
       "prices": {
         "single": 34,
         "card_10": 299,
         "monthly": 239,
-        "trial": 25
+        "trial": 40.0
       }
     },
     "das-yoga-haus": {
@@ -85,13 +105,23 @@
         "trial": 75
       }
     },
+    "yoga-spirit": {
+      "name": "Yoga Spirit",
+      "canton": "zurich",
+      "source": "https://yoga-spirit.ch/prices",
+      "prices": {
+        "single": 30,
+        "monthly": 38.0,
+        "trial": 25.0
+      }
+    },
     "yoga-am-zuerichberg": {
       "name": "Yoga am Zürichberg",
       "canton": "zurich",
       "source": "https://www.xn--yoga-zrichberg-lsb.ch/preise",
       "prices": {
         "single": 38,
-        "card_10": 340,
+        "card_10": 250.0,
         "trial": 75
       }
     },
@@ -113,12 +143,83 @@
         "trial": 35
       }
     },
+    "yoga-city": {
+      "name": "Yoga City",
+      "canton": "zurich",
+      "source": "https://www.yogacity.ch/preise",
+      "prices": {
+        "single": 60,
+        "card_10": 80
+      }
+    },
+    "planet-yoga": {
+      "name": "Planet Yoga",
+      "canton": "zurich",
+      "source": "https://www.planetyoga.ch/preise",
+      "prices": {
+        "single": 20,
+        "card_10": 235.0,
+        "monthly": 159.0,
+        "trial": 30
+      }
+    },
+    "nandalayoga": {
+      "name": "nandalayoga",
+      "canton": "zurich",
+      "source": "",
+      "prices": {}
+    },
+    "yoga-in-a-bag-altstetten": {
+      "name": "Yoga in a Bag (Altstetten)",
+      "canton": "zurich",
+      "source": "https://yogainabag.com/preise/",
+      "prices": {
+        "single": 5,
+        "monthly": 65,
+        "trial": 75
+      }
+    },
+    "yoga-in-a-bag-albisrieden": {
+      "name": "Yoga in a Bag (Albisrieden)",
+      "canton": "zurich",
+      "source": "https://yogainabag.com/preise/",
+      "prices": {
+        "single": 5,
+        "monthly": 65,
+        "trial": 75
+      }
+    },
+    "aranya-studio": {
+      "name": "ARANYA Studio",
+      "canton": "zurich",
+      "source": "",
+      "prices": {}
+    },
+    "elevate-studio": {
+      "name": "Elevate Studio",
+      "canton": "zurich",
+      "source": "https://www.elevate-studio.ch/prices",
+      "prices": {
+        "single": 5,
+        "card_10": 10,
+        "trial": 21
+      }
+    },
+    "radiant-heart-studio": {
+      "name": "Radiant Heart Studio",
+      "canton": "zurich",
+      "source": "https://www.radiantheartstudio.com/",
+      "prices": {
+        "single": 50,
+        "card_10": 400
+      }
+    },
     "yoga-by-nora": {
       "name": "YOGA by Nora + Mikkel",
       "canton": "zurich",
       "source": "https://yogabynora.ch/preise",
       "prices": {
-        "single": 27
+        "single": 39.0
       }
     },
     "jio-kundalini-yoga": {
@@ -130,6 +231,12 @@
         "card_10": 300,
         "trial": 20
       }
+    },
+    "yogagold": {
+      "name": "Yogagold",
+      "canton": "zurich",
+      "source": "",
+      "prices": {}
     },
     "project-peace": {
       "name": "Project Peace (Jivamukti Yoga)",
@@ -149,13 +256,61 @@
         "monthly": 300
       }
     },
+    "flowfabrik-winterthur": {
+      "name": "FlowFabrik",
+      "canton": "zurich",
+      "source": "https://www.flowfabrik.ch/",
+      "prices": {
+        "single": 10
+      }
+    },
+    "zanana-living-winterthur": {
+      "name": "Zanana Living Yoga",
+      "canton": "zurich",
+      "source": "https://zanana-living.ch/preise",
+      "prices": {
+        "single": 28,
+        "card_10": 308,
+        "trial": 20
+      }
+    },
     "yoga-in-winterthur": {
       "name": "YOGA.IN",
       "canton": "zurich",
-      "source": "https://www.yoga-in.ch/preise/",
+      "source": "https://www.yoga-in.ch/preise",
       "prices": {
         "single": 35,
-        "card_10": 280
+        "card_10": 340.0
+      }
+    },
+    "yoga-in-a-bag-winterthur": {
+      "name": "Yoga in a Bag (Winterthur)",
+      "canton": "zurich",
+      "source": "https://yogainabag.com/preise/",
+      "prices": {
+        "single": 5,
+        "monthly": 65,
+        "trial": 75
+      }
+    },
+    "yama-yoga-bern": {
+      "name": "YAMA Yoga & Co",
+      "canton": "bern",
+      "source": "https://www.yamabern.ch/plans-pricing",
+      "prices": {
+        "card_10": 5,
+        "monthly": 5,
+        "trial": 65
+      }
+    },
+    "yoga-carmen-bern": {
+      "name": "Yoga Carmen",
+      "canton": "bern",
+      "source": "https://www.yoga-carmen.ch/yoga-kurs-bern",
+      "prices": {
+        "single": 30,
+        "card_10": 15,
+        "trial": 15
       }
     },
     "yoga-luna-bern": {
@@ -169,15 +324,83 @@
         "trial": 50
       }
     },
+    "svarupa-yoga-bern": {
+      "name": "svarupa yoga bern",
+      "canton": "bern",
+      "source": "https://svarupa.com/event/2026-05-10/handstand-workshop/",
+      "prices": {
+        "single": 40
+      }
+    },
+    "yogveda-bern": {
+      "name": "Yogveda Yoga",
+      "canton": "bern",
+      "source": "https://www.yogveda.ch/",
+      "prices": {
+        "single": 30
+      }
+    },
+    "iyengar-yoga-bern": {
+      "name": "Iyengar Yoga Bern",
+      "canton": "bern",
+      "source": "https://www.iyengar-yoga-bern.ch/angebot",
+      "prices": {
+        "single": 35.0,
+        "trial": 25.0
+      }
+    },
+    "hot-yoga-christoph-herren": {
+      "name": "Hot Yoga Christoph Herren",
+      "canton": "bern",
+      "source": "https://www.hotyogachristophherren.ch/angebot-yoga-infrarot",
+      "prices": {
+        "single": 5,
+        "card_10": 38,
+        "monthly": 38,
+        "trial": 38
+      }
+    },
     "hothaus-bern": {
       "name": "HOTHAUS Hot Yoga & Movement Bern",
       "canton": "bern",
       "source": "https://www.hothausyoga.com/pricing",
       "prices": {
-        "single": 38,
+        "single": 40.0,
         "card_10": 350,
-        "monthly": 250,
+        "monthly": 250.0,
         "trial": 50
+      }
+    },
+    "yogamarket-bern": {
+      "name": "yogamarket",
+      "canton": "bern",
+      "source": "https://yogamarket.ch/workshop",
+      "prices": {
+        "single": 23
+      }
+    },
+    "inside-outside-bern": {
+      "name": "Inside Outside yoga, pilates & more",
+      "canton": "bern",
+      "source": "https://www.eversports.ch/s/inside-outside-yoga-pilates-and-more",
+      "prices": {
+        "trial": 30
+      }
+    },
+    "origin8-bern": {
+      "name": "origin8 - yoga, pilates & more",
+      "canton": "bern",
+      "source": "https://origin8.ch/",
+      "prices": {
+        "single": 20
+      }
+    },
+    "natha-yoga-bern": {
+      "name": "Natha Yoga Schweiz",
+      "canton": "bern",
+      "source": "https://www.natha-yoga-schweiz.ch/",
+      "prices": {
+        "single": 29
       }
     },
     "yogabern-iyengar": {
@@ -193,21 +416,49 @@
     "vayam-yoga-bern": {
       "name": "vayam yoga",
       "canton": "bern",
-      "source": "https://www.vayamyoga.com/",
+      "source": "https://www.vayamyoga.com/preise",
       "prices": {
         "single": 37,
         "card_10": 270,
-        "monthly": 250,
+        "monthly": 250.0,
         "trial": 20
+      }
+    },
+    "devi-yoga-bern": {
+      "name": "DEVI Yoga Atem Therapie",
+      "canton": "bern",
+      "source": "https://www.devi-yoga-health.ch/prices",
+      "prices": {
+        "single": 195
+      }
+    },
+    "yogakaleidoskop-bern": {
+      "name": "Yogakaleidoskop",
+      "canton": "bern",
+      "source": "https://www.innerlightacademy.ch/preise",
+      "prices": {
+        "single": 18
       }
     },
     "yoga-and-more-bern": {
       "name": "Yoga & more",
       "canton": "bern",
-      "source": "https://www.yoga-and-more.ch/",
+      "source": "https://www.yoga-and-more.ch",
       "prices": {
-        "single": 33,
+        "single": 33.0,
+        "card_10": 290.0,
         "trial": 0
+      }
+    },
+    "energie-yoga-bern": {
+      "name": "Energie Yoga",
+      "canton": "bern",
+      "source": "https://energieyoga.ch/b3b.html",
+      "prices": {
+        "single": 25,
+        "card_10": 25,
+        "monthly": 50,
+        "trial": 25
       }
     },
     "soulspace-koeniz": {
@@ -220,6 +471,35 @@
         "trial": 20
       }
     },
+    "yoga-room-koeniz-thun": {
+      "name": "yoga room",
+      "canton": "bern",
+      "source": "https://www.yoga-room.ch/preise",
+      "prices": {
+        "single": 30,
+        "card_10": 30,
+        "trial": 50
+      }
+    },
+    "yoga-bude-thun": {
+      "name": "Yoga Bude",
+      "canton": "bern",
+      "source": "https://www.yogabude.ch/abo-preise",
+      "prices": {
+        "single": 29,
+        "card_10": 29,
+        "trial": 29
+      }
+    },
+    "yogastudio-luzern": {
+      "name": "Yogastudio Luzern",
+      "canton": "luzern",
+      "source": "https://www.yogastudio.ch/",
+      "prices": {
+        "single": 20,
+        "trial": 20
+      }
+    },
     "liv-lab": {
       "name": "LIV lab Luzern",
       "canton": "luzern",
@@ -229,6 +509,22 @@
         "card_10": 303,
         "monthly": 343,
         "trial": 80
+      }
+    },
+    "ashtanga-luzern": {
+      "name": "Ashtanga Yoga Luzern",
+      "canton": "luzern",
+      "source": "https://ashtanga-luzern.ch/prices",
+      "prices": {
+        "single": 500.0
+      }
+    },
+    "original-hot-yoga-luzern": {
+      "name": "Original Hot Yoga Luzern",
+      "canton": "luzern",
+      "source": "https://originalhotyoga.net/",
+      "prices": {
+        "trial": 50
       }
     },
     "mii-ruum": {
@@ -244,18 +540,26 @@
     "studio-fayo": {
       "name": "Studio Fayo",
       "canton": "luzern",
-      "source": "https://studiofayo.com/",
+      "source": "https://studiofayo.com",
       "prices": {
-        "single": 34,
+        "single": 34.0,
         "card_10": 300
+      }
+    },
+    "om-shanti-luzern": {
+      "name": "Om Shanti Yogaschule Luzern",
+      "canton": "luzern",
+      "source": "https://www.yogaschuleluzern.ch",
+      "prices": {
+        "trial": 27.0
       }
     },
     "yogaraum-luzern": {
       "name": "Yogaraum Luzern",
       "canton": "luzern",
-      "source": "https://www.yogaraum-luzern.ch/",
+      "source": "https://www.yogaraum-luzern.ch",
       "prices": {
-        "single": 30,
+        "single": 120.0,
         "card_10": 250,
         "trial": 25
       }
@@ -278,13 +582,47 @@
         "trial": 0
       }
     },
+    "pure-you-yoga-horw": {
+      "name": "Pure You Yoga",
+      "canton": "luzern",
+      "source": "https://www.pureyouyoga.ch/",
+      "prices": {
+        "single": 12
+      }
+    },
+    "yogakurse-horw": {
+      "name": "Yogakurse Horw - Myriam Bühler",
+      "canton": "luzern",
+      "source": "",
+      "prices": {}
+    },
+    "anantara-yogastudio-altdorf": {
+      "name": "Anantara Yogastudio",
+      "canton": "uri",
+      "source": "https://www.anantara-yogastudio.ch/preise",
+      "prices": {
+        "single": 15,
+        "card_10": 15,
+        "trial": 15
+      }
+    },
+    "flow-altdorf": {
+      "name": "Flow Altdorf",
+      "canton": "uri",
+      "source": "https://www.flow-altdorf.ch/",
+      "prices": {
+        "single": 25,
+        "card_10": 225,
+        "trial": 0
+      }
+    },
     "heyoga-schwyz": {
       "name": "heyoga",
       "canton": "schwyz",
-      "source": "https://www.heyoga.ch/preise/",
+      "source": "https://www.heyoga.ch/preise",
       "prices": {
         "single": 30,
-        "card_10": 270,
+        "card_10": 300.0,
         "trial": 0
       }
     },
@@ -304,6 +642,39 @@
         "single": 29,
         "card_10": 261,
         "trial": 20
+      }
+    },
+    "yoga-ishwari-sarnen": {
+      "name": "Yoga Ishwari",
+      "canton": "obwalden",
+      "source": "https://www.yoga-ishwari.ch/preise",
+      "prices": {
+        "single": 25,
+        "card_10": 220,
+        "monthly": 100,
+        "trial": 25
+      }
+    },
+    "gesund-und-munter-stans": {
+      "name": "Gesund & Munter - Hatha-Yoga und Pilates Studio",
+      "canton": "nidwalden",
+      "source": "",
+      "prices": {}
+    },
+    "sevencolors-stans": {
+      "name": "sevencolors",
+      "canton": "nidwalden",
+      "source": "",
+      "prices": {}
+    },
+    "yogaamfluss-ennenda": {
+      "name": "YOGAamFLUSS",
+      "canton": "glarus",
+      "source": "https://www.yoga-am-fluss.ch/angebot/preise/",
+      "prices": {
+        "single": 20,
+        "card_10": 20,
+        "trial": 28
       }
     },
     "12yoga-ennenda": {
@@ -330,7 +701,27 @@
       "canton": "fribourg",
       "source": "https://www.yogiface.ch/prix",
       "prices": {
-        "trial": 0
+        "single": 50,
+        "card_10": 350,
+        "trial": 50
+      }
+    },
+    "happinez-yoga-fribourg": {
+      "name": "Happinez Yoga Fribourg",
+      "canton": "fribourg",
+      "source": "https://www.happinez.ch/shop",
+      "prices": {
+        "single": 19,
+        "trial": 5
+      }
+    },
+    "sakinayoga-fribourg": {
+      "name": "Sakinayoga",
+      "canton": "fribourg",
+      "source": "https://www.sakinayoga.com/tarifs",
+      "prices": {
+        "single": 10,
+        "trial": 100
       }
     },
     "yoga-nicole-fribourg": {
@@ -343,14 +734,36 @@
         "trial": 10
       }
     },
+    "studio-30-solothurn": {
+      "name": "Studio 30 - Yoga und Pilates",
+      "canton": "solothurn",
+      "source": "",
+      "prices": {}
+    },
+    "sunshine-yoga-solothurn": {
+      "name": "Sunshine Yoga",
+      "canton": "solothurn",
+      "source": "https://www.sunshine-yoga.ch/preise",
+      "prices": {
+        "single": 20,
+        "card_10": 200.0,
+        "trial": 20.0
+      }
+    },
     "diamond-yoga-solothurn": {
       "name": "The Diamond of Yoga",
       "canton": "solothurn",
-      "source": "https://www.diamond-yoga.ch/",
+      "source": "https://www.diamond-yoga.ch",
       "prices": {
         "single": 23,
-        "trial": 0
+        "trial": 23.0
       }
+    },
+    "flavia-tao-yoga-solothurn": {
+      "name": "Flavia Tao Yoga",
+      "canton": "solothurn",
+      "source": "",
+      "prices": {}
     },
     "om-yogaroom-solothurn": {
       "name": "OM yogaroom",
@@ -370,6 +783,16 @@
         "card_10": 280,
         "monthly": 215,
         "trial": 25
+      }
+    },
+    "yoga-pilateszentrale-olten": {
+      "name": "Yoga & Pilateszentrale",
+      "canton": "solothurn",
+      "source": "https://www.pilateszentrale.ch/preise",
+      "prices": {
+        "single": 20,
+        "card_10": 20,
+        "trial": 20
       }
     },
     "byoga": {
@@ -397,11 +820,19 @@
     "niyama": {
       "name": "Niyama Studio for Yoga & Pilates",
       "canton": "basel-stadt",
-      "source": "https://www.niyama-yoga.ch/en/prices/",
+      "source": "https://www.niyama-yoga.ch/en/start/preise",
       "prices": {
         "single": 25,
-        "card_10": 220,
-        "monthly": 195
+        "card_10": 150.0,
+        "monthly": 50.0
+      }
+    },
+    "anjali": {
+      "name": "Anjali Yoga & Pilates Studio",
+      "canton": "basel-stadt",
+      "source": "https://www.anjali.ch/en",
+      "prices": {
+        "single": 25
       }
     },
     "yogabloom": {
@@ -415,6 +846,15 @@
         "trial": 60
       }
     },
+    "volta-yoga": {
+      "name": "Volta Yoga",
+      "canton": "basel-stadt",
+      "source": "https://en.voltayoga.ch/preiseundabos",
+      "prices": {
+        "single": 20,
+        "monthly": 20
+      }
+    },
     "bikram": {
       "name": "Bikram Yoga Basel",
       "canton": "basel-stadt",
@@ -424,6 +864,24 @@
         "card_10": 355,
         "monthly": 260,
         "trial": 55
+      }
+    },
+    "meyo-house": {
+      "name": "MEYO HOUSE",
+      "canton": "basel-stadt",
+      "source": "https://www.meyohouse.com/preise",
+      "prices": {
+        "single": 10,
+        "card_10": 6,
+        "trial": 6
+      }
+    },
+    "yoga-atelier": {
+      "name": "Yoga Atelier Basel",
+      "canton": "basel-stadt",
+      "source": "https://www.yoga-atelier-basel.ch/workshops/",
+      "prices": {
+        "single": 24.04
       }
     },
     "ashtanga-basel": {
@@ -437,13 +895,42 @@
         "trial": 20
       }
     },
+    "lotos": {
+      "name": "Lotos Yoga-Zentrum",
+      "canton": "basel-stadt",
+      "source": "https://lotosyoga.ch/kosten-der-yoga-therapie-ausbildung/",
+      "prices": {
+        "single": 960,
+        "trial": 960
+      }
+    },
+    "yoga-gaertnerhuus": {
+      "name": "Yoga im Gärtnerhuus",
+      "canton": "basel-stadt",
+      "source": "https://www.yogaimgaertnerhuus.com/pricing-plans/list",
+      "prices": {
+        "single": 17,
+        "card_10": 80,
+        "monthly": 12,
+        "trial": 45
+      }
+    },
+    "secret-garden": {
+      "name": "Secret Garden Yoga Studio",
+      "canton": "basel-stadt",
+      "source": "https://secretgarden-yoga.ch/en/product/10er-paket/",
+      "prices": {
+        "single": 250,
+        "card_10": 200
+      }
+    },
     "mint": {
       "name": "mint Basel",
       "canton": "basel-stadt",
-      "source": "https://mint-loft.ch/preise/",
+      "source": "https://mint-loft.ch/preise",
       "prices": {
         "single": 30,
-        "card_10": 250
+        "card_10": 200.0
       }
     },
     "exhale": {
@@ -467,19 +954,45 @@
     "iyengar-gerbergaesslein": {
       "name": "Iyengar Yoga — Gerbergässlein",
       "canton": "basel-stadt",
-      "source": "https://gerbergaesslein-yoga.ch/preise/",
+      "source": "https://gerbergaesslein-yoga.ch/preise",
       "prices": {
-        "single": 36,
+        "single": 30.0,
         "trial": 20
+      }
+    },
+    "ayalga": {
+      "name": "Ayalga Yoga (Iyengar)",
+      "canton": "basel-stadt",
+      "source": "https://ayalgayoga.ch/en/iyengar-yoga/",
+      "prices": {
+        "single": 35,
+        "card_10": 240
+      }
+    },
+    "yoga-now": {
+      "name": "Yoga Now Basel (Iyengar)",
+      "canton": "basel-stadt",
+      "source": "https://www.yoganow-basel.ch/preise",
+      "prices": {
+        "single": 42.0,
+        "card_10": 400.0
       }
     },
     "rin-yoga": {
       "name": "Rin Yoga — Rinny Biberstein",
       "canton": "basel-stadt",
-      "source": "https://rin.yoga/",
+      "source": "https://rin.yoga",
       "prices": {
         "single": 30,
         "card_10": 200
+      }
+    },
+    "food-changes": {
+      "name": "Food Changes Everything — Vanessa Gatelein",
+      "canton": "basel-stadt",
+      "source": "https://www.foodchangeseverything.me/shop",
+      "prices": {
+        "single": 15
       }
     },
     "claudia-stamm": {
@@ -503,19 +1016,37 @@
     "fitnesspark": {
       "name": "Fitnesspark Basel Heuwaage (Migros)",
       "canton": "basel-stadt",
-      "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/prices/",
+      "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/preise",
       "prices": {
-        "single": 39,
-        "card_10": 355,
-        "monthly": 123
+        "single": 131.0,
+        "card_10": 220.0,
+        "monthly": 10.0
       }
     },
     "gyym": {
       "name": "GYYM Health & Fitness",
       "canton": "basel-stadt",
-      "source": "https://gyym.ch/en/",
+      "source": "https://gyym.ch/en",
       "prices": {
-        "monthly": 55
+        "single": 20,
+        "monthly": 55.0
+      }
+    },
+    "yoga-lotus-liestal": {
+      "name": "Yoga Lotus Liestal",
+      "canton": "basel-landschaft",
+      "source": "https://www.eversports.ch/s/yoga-lotus-liestal",
+      "prices": {
+        "single": 27,
+        "trial": 27
+      }
+    },
+    "yoga-werkstatt-liestal": {
+      "name": "Yoga Werkstatt",
+      "canton": "basel-landschaft",
+      "source": "https://yoga-werkstatt.ch/stundenplan/",
+      "prices": {
+        "card_10": 30
       }
     },
     "balanced-power-studios-liestal": {
@@ -525,6 +1056,15 @@
       "prices": {
         "single": 28,
         "card_10": 260
+      }
+    },
+    "jyoti-yoga-liestal": {
+      "name": "Jyoti Yoga",
+      "canton": "basel-landschaft",
+      "source": "https://www.jyotiyoga.ch/",
+      "prices": {
+        "single": 10,
+        "card_10": 10
       }
     },
     "bethsabe-yoga-bottmingen": {
@@ -547,12 +1087,30 @@
         "trial": 0
       }
     },
+    "yoga-shanti-oberwil": {
+      "name": "yoga shanti",
+      "canton": "basel-landschaft",
+      "source": "https://www.yogashanti.ch/stundenplan-preise/",
+      "prices": {
+        "single": 24
+      }
+    },
     "ebe-wellness-oberwil": {
       "name": "ebe-wellness Yoga",
       "canton": "basel-landschaft",
       "source": "https://ebe-wellness.ch/preise-yoga/",
       "prices": {
         "single": 26
+      }
+    },
+    "hathayoga-arlesheim": {
+      "name": "Hatha Yoga Arlesheim",
+      "canton": "basel-landschaft",
+      "source": "https://www.hathayoga-basel.ch/preise-und-agb/",
+      "prices": {
+        "single": 20,
+        "card_10": 20,
+        "trial": 20
       }
     },
     "koerpergeheimnis-pratteln": {
@@ -575,6 +1133,22 @@
         "trial": 20
       }
     },
+    "yogalicht-schaffhausen": {
+      "name": "YOGALICHT",
+      "canton": "schaffhausen",
+      "source": "https://yogalicht.ch/preise",
+      "prices": {
+        "single": 120
+      }
+    },
+    "yogaar-herisau": {
+      "name": "YOGAAR",
+      "canton": "appenzell-ar",
+      "source": "https://www.yogaar.ch/preise",
+      "prices": {
+        "single": 25
+      }
+    },
     "studio-mond-appenzell": {
       "name": "studio mond",
       "canton": "appenzell-ir",
@@ -583,6 +1157,24 @@
         "single": 30,
         "card_10": 280,
         "trial": 0
+      }
+    },
+    "yoga-claudia-appenzell": {
+      "name": "Claudia Hauri - Yoga und Ayurveda",
+      "canton": "appenzell-ir",
+      "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
+      "prices": {
+        "single": 10,
+        "card_10": 10,
+        "trial": 10
+      }
+    },
+    "yoga-in-der-altstadt-st-gallen": {
+      "name": "Yoga in der Altstadt",
+      "canton": "st-gallen",
+      "source": "https://www.yoga-in-der-altstadt.ch/",
+      "prices": {
+        "trial": 50
       }
     },
     "lineupyoga-st-gallen": {
@@ -604,6 +1196,15 @@
         "card_10": 200
       }
     },
+    "power-yoga-st-gallen": {
+      "name": "Power Yoga St. Gallen",
+      "canton": "st-gallen",
+      "source": "https://www.poweryogastgallen.com/",
+      "prices": {
+        "single": 30,
+        "card_10": 30
+      }
+    },
     "yogaloft-rapperswil-jona": {
       "name": "YOGALOFT Rapperswil-Jona",
       "canton": "st-gallen",
@@ -616,10 +1217,19 @@
     "hot-yoga-4-u-rapperswil": {
       "name": "HOT YOGA 4 U",
       "canton": "st-gallen",
-      "source": "https://hotyoga4u.ch/",
+      "source": "https://hotyoga4u.ch",
       "prices": {
-        "card_10": 275,
+        "single": 275,
+        "card_10": 250.0,
         "trial": 25
+      }
+    },
+    "yoga-loft-chur": {
+      "name": "Yoga Loft Chur",
+      "canton": "graubuenden",
+      "source": "https://www.yogaloftchur.ch/preise",
+      "prices": {
+        "single": 35.0
       }
     },
     "yoga-pyramide-chur": {
@@ -640,6 +1250,52 @@
         "single": 27
       }
     },
+    "yoga-loft-engadin-samedan": {
+      "name": "Yoga Loft Engadin",
+      "canton": "graubuenden",
+      "source": "https://yogaloftengadin.ch/prices/",
+      "prices": {
+        "single": 35,
+        "card_10": 333
+      }
+    },
+    "acroyoga-group-chur": {
+      "name": "Acroyoga Group Graubünden",
+      "canton": "graubuenden",
+      "source": "https://acroyoga.group/",
+      "prices": {
+        "single": 5
+      }
+    },
+    "aloha-yoga-aarau": {
+      "name": "aloha yoga Aarau",
+      "canton": "aargau",
+      "source": "https://www.alohayoga.ch/preise",
+      "prices": {
+        "single": 30,
+        "card_10": 185,
+        "monthly": 65.0
+      }
+    },
+    "my-yoga-garden-suhr": {
+      "name": "My Yoga Garden",
+      "canton": "aargau",
+      "source": "https://www.my-yoga-garden.ch/preise",
+      "prices": {
+        "single": 1100,
+        "card_10": 30,
+        "monthly": 1100
+      }
+    },
+    "iyengar-yoga-aarau": {
+      "name": "Iyengar Yoga Aarau",
+      "canton": "aargau",
+      "source": "https://yogaiyengar.ch/stundenplan",
+      "prices": {
+        "single": 35,
+        "trial": 25
+      }
+    },
     "aurum-raum-fuer-yoga-aarau": {
       "name": "AURUM Raum für Yoga",
       "canton": "aargau",
@@ -650,14 +1306,33 @@
         "trial": 35
       }
     },
+    "yoga-mahameru-aarau": {
+      "name": "Yoga Mahameru",
+      "canton": "aargau",
+      "source": "https://mahameru.ch/book-now/",
+      "prices": {
+        "single": 20,
+        "trial": 20
+      }
+    },
     "manta-yoga-pilates-rombach": {
       "name": "Manta Yoga & Pilates",
       "canton": "aargau",
-      "source": "https://manta-yoga-pilates.ch/",
+      "source": "https://manta-yoga-pilates.ch",
       "prices": {
         "single": 25,
         "card_10": 240,
-        "trial": 0
+        "trial": 25.0
+      }
+    },
+    "namaste-yoga-baden": {
+      "name": "Namaste Yoga Baden",
+      "canton": "aargau",
+      "source": "https://www.namaste-yoga-baden.ch/unsere-yoga-kurse/namaste-yoga-baden-preise-und-agbs/",
+      "prices": {
+        "single": 30,
+        "card_10": 180,
+        "trial": 15
       }
     },
     "hieryoga-baden": {
@@ -665,9 +1340,20 @@
       "canton": "aargau",
       "source": "https://hieryoga.ch/preise",
       "prices": {
-        "single": 32,
+        "single": 29.0,
         "card_10": 290,
         "monthly": 139
+      }
+    },
+    "jetzt-yoga-baden": {
+      "name": "jetzt. YOGA Baden",
+      "canton": "aargau",
+      "source": "https://www.jetzt.yoga/yogakurs-baden",
+      "prices": {
+        "single": 8,
+        "card_10": 38,
+        "monthly": 30,
+        "trial": 8
       }
     },
     "gymayo-frauenfeld": {
@@ -685,8 +1371,8 @@
       "canton": "thurgau",
       "source": "https://www.yogagrenzenlos.com/preise",
       "prices": {
-        "single": 26,
-        "card_10": 245,
+        "single": 150.0,
+        "card_10": 470.0,
         "monthly": 130,
         "trial": 13
       }
@@ -694,10 +1380,10 @@
     "yoga-asana-kreuzlingen": {
       "name": "Yoga Asana",
       "canton": "thurgau",
-      "source": "https://www.yoga-asana.ch/",
+      "source": "https://www.yoga-asana.ch",
       "prices": {
-        "single": 30,
-        "card_10": 270,
+        "single": 32.0,
+        "card_10": 300.0,
         "trial": 10
       }
     },
@@ -709,6 +1395,32 @@
         "single": 35,
         "card_10": 270,
         "trial": 17
+      }
+    },
+    "yoga-dinamico-lugano": {
+      "name": "Yoga Dinamico e Natural Wellness",
+      "canton": "ticino",
+      "source": "https://www.yogadinamico.ch/prezzi.html",
+      "prices": {
+        "single": 30
+      }
+    },
+    "yogal-lugano": {
+      "name": "Yogal Lugano - Ashtanga Yoga",
+      "canton": "ticino",
+      "source": "https://www.yogalugano.ch/prezzi",
+      "prices": {
+        "single": 10,
+        "card_10": 30,
+        "trial": 30
+      }
+    },
+    "slow-move-lugano": {
+      "name": "Slow Move Yoga & Wellness",
+      "canton": "ticino",
+      "source": "https://slow-move.ch/",
+      "prices": {
+        "single": 40
       }
     },
     "yoga-vidya-swiss-locarno": {
@@ -781,6 +1493,12 @@
         "trial": 20
       }
     },
+    "sundora-shala-pully": {
+      "name": "SunDora Shala",
+      "canton": "vaud",
+      "source": "",
+      "prices": {}
+    },
     "yoga-pour-tous-nyon": {
       "name": "Yoga Pour Tous Nyon",
       "canton": "vaud",
@@ -789,6 +1507,12 @@
         "single": 30
       }
     },
+    "espace-tadasana-sion": {
+      "name": "Espace Tadasana",
+      "canton": "valais",
+      "source": "",
+      "prices": {}
+    },
     "yoga-shashin-neuchatel": {
       "name": "Yoga Shashin",
       "canton": "neuchatel",
@@ -796,6 +1520,31 @@
       "prices": {
         "single": 30,
         "trial": 25
+      }
+    },
+    "banyann-yoga": {
+      "name": "Banyann Yoga",
+      "canton": "neuchatel",
+      "source": "",
+      "prices": {}
+    },
+    "yoga7-geneve": {
+      "name": "Yoga7",
+      "canton": "geneve",
+      "source": "https://yoga7.com/cours-hebdomadaires/",
+      "prices": {
+        "single": 20,
+        "card_10": 20,
+        "monthly": 20
+      }
+    },
+    "yoga-flame-geneve": {
+      "name": "Yoga Flame Genève",
+      "canton": "geneve",
+      "source": "https://yogaflame.ch/classes/private-sessions/",
+      "prices": {
+        "single": 25,
+        "card_10": 150
       }
     },
     "yoga-lab-geneve": {
@@ -808,6 +1557,16 @@
         "monthly": 195
       }
     },
+    "fancy-yoga-geneve": {
+      "name": "Fancy Yoga",
+      "canton": "geneve",
+      "source": "https://www.fancy.yoga/tarifs",
+      "prices": {
+        "single": 40,
+        "card_10": 340,
+        "trial": 35
+      }
+    },
     "sakura-yoga-geneve": {
       "name": "The Sakura Yoga",
       "canton": "geneve",
@@ -816,6 +1575,15 @@
         "single": 30,
         "monthly": 180,
         "trial": 30
+      }
+    },
+    "colife-geneve": {
+      "name": "COLIFE",
+      "canton": "geneve",
+      "source": "https://colife.ch/",
+      "prices": {
+        "single": 15,
+        "trial": 15
       }
     },
     "sol-studio-geneve": {
@@ -859,6 +1627,40 @@
         "trial": 30
       }
     },
+    "deva-yoga-carouge": {
+      "name": "DEVA Yoga",
+      "canton": "geneve",
+      "source": "https://deva-yoga.ch/tarifs/",
+      "prices": {
+        "single": 30
+      }
+    },
+    "yoginimage-lancy": {
+      "name": "Yoginimage",
+      "canton": "geneve",
+      "source": "https://www.yoginimage.ch/planning-et-tarif",
+      "prices": {
+        "card_10": 20,
+        "trial": 20
+      }
+    },
+    "ka-studio-geneve": {
+      "name": "ka studio",
+      "canton": "geneve",
+      "source": "https://www.kastudio.ch/membership",
+      "prices": {
+        "monthly": 450
+      }
+    },
+    "ar-yoga-geneve": {
+      "name": "ar'Yoga Genève",
+      "canton": "geneve",
+      "source": "https://aryoga.ch",
+      "prices": {
+        "single": 25,
+        "monthly": 15.0
+      }
+    },
     "yoga-geneve-studio": {
       "name": "Yoga Genève Studio",
       "canton": "geneve",
@@ -867,6 +1669,30 @@
         "single": 35,
         "card_10": 270
       }
+    },
+    "yoga-sha-geneve": {
+      "name": "Yoga Sha",
+      "canton": "geneve",
+      "source": "https://yogasha.ch/",
+      "prices": {
+        "card_10": 30,
+        "monthly": 140
+      }
+    },
+    "la-perle-de-letre": {
+      "name": "La Perle de l'Être",
+      "canton": "geneve",
+      "source": "https://www.laperledeletre.com/page-vierge-1",
+      "prices": {
+        "card_10": 10,
+        "trial": 10
+      }
+    },
+    "pilatesyogajura": {
+      "name": "PilatesYogaJura",
+      "canton": "jura",
+      "source": "",
+      "prices": {}
     },
     "yogajura": {
       "name": "YogaJura.ch",
@@ -879,7 +1705,7 @@
     "elevea-yoga-delemont": {
       "name": "Elevea Yoga",
       "canton": "jura",
-      "source": "https://eleveayoga.com/",
+      "source": "https://eleveayoga.com",
       "prices": {
         "single": 18,
         "card_10": 160
