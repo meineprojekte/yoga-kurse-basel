@@ -75,10 +75,14 @@
       "phone": "+41 78 623 06 43",
       "email": "",
       "styles": [
+        "Pilates",
         "Hatha Yoga",
-        "Pilates"
+        "Pranayama"
       ],
-      "teachers": [],
+      "teachers": [
+        "Franziska von Hoff",
+        "Susanna Koopmann"
+      ],
       "description": "Studio 8 in St. Gallen bietet Hatha Yoga, Pilates, Personal Training, Hypnose und Spiraldynamik an. Ein vielseitiges Angebot für Körper und Geist.",
       "booking_platform": "SportsNow",
       "drop_in": true,
@@ -95,7 +99,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:58:25.988009+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T07:58:28.491220+00:00",
         "last_price_check": null,
@@ -104,6 +108,16 @@
         "source_urls": {
           "website": "https://studio-8.ch/"
         }
+      },
+      "pricing": {
+        "currency": "CHF",
+        "single": 25,
+        "trial": 0,
+        "annual": 960,
+        "verified": true,
+        "source": "https://studio-8.ch",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "60min CHF 22, 75min CHF 25. Trimester CHF 335. Annual CHF 960. Trial free."
       }
     },
     {
@@ -147,7 +161,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:58:30.587519+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -200,6 +214,16 @@
           "website": "https://bubbleyoga.ch/",
           "schedule": "https://bubbleyoga.ch/events/calendar/"
         }
+      },
+      "pricing": {
+        "currency": "CHF",
+        "single": 28,
+        "trial": 35,
+        "drop_in": 28,
+        "verified": true,
+        "source": "https://bubbleyoga.ch",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "Welcome 2-for-1 CHF 35. Intro 1mo unlimited CHF 85."
       }
     },
     {
@@ -218,11 +242,14 @@
       "phone": "+41 76 529 78 36",
       "email": "rachyogahk@gmail.com",
       "styles": [
-        "Vinyasa",
-        "Hatha Yoga"
+        "Hatha",
+        "Hatha Yoga",
+        "Prenatal Yoga",
+        "Vinyasa"
       ],
       "teachers": [
-        "Rachel Rauchfuss"
+        "Rachel Rauchfuss",
+        "Rachel"
       ],
       "description": "Zentral gelegenes Yogastudio nahe dem Bahnhof St. Gallen. Bietet Gruppen- und Privatyogakurse, Vinyasa-Hatha-basierte Klassen für alle Stufen.",
       "booking_platform": "Momoyoga",
@@ -240,7 +267,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:58:40.882543+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "detected_booking_links": [
         {
           "platform": "momoyoga",
@@ -693,6 +720,18 @@
           "website": "https://www.rach-yoga.com/",
           "schedule": "https://www.momoyoga.com/rachyoga/schedule"
         }
+      },
+      "pricing": {
+        "currency": "CHF",
+        "single": 35,
+        "trial": 20,
+        "ten_pack": 230,
+        "monthly": 110,
+        "drop_in": 35,
+        "verified": true,
+        "source": "https://rach-yoga.com",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "5er group CHF 130. Online single CHF 17. Private CHF 120."
       }
     },
     {
@@ -862,13 +901,15 @@
         }
       },
       "pricing": {
-        "single": 30,
-        "card_10": 30,
         "currency": "CHF",
+        "single": 30,
+        "ten_pack": 250,
+        "drop_in": 30,
         "verified": true,
-        "source": "https://www.poweryogastgallen.com/",
-        "last_checked": "2026-04-06T07:58:59.181743+00:00"
-      }
+        "source": "https://poweryogastgallen.com",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00"
+      },
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00"
     },
     {
       "id": "yogaloft-rapperswil-jona",

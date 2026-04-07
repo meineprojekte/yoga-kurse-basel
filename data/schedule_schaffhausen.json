@@ -1,32 +1,6 @@
 {
-  "last_updated": "2026-03-25T17:23:20.724876+00:00",
+  "last_updated": "2026-04-07T01:13:15.000839+00:00",
   "classes": [
-    {
-      "studio_id": "yogaschule-narayana-schaffhausen",
-      "studio_name": "Yogaschule SH (Narayana)",
-      "day": "Sunday",
-      "time_start": "10:00",
-      "time_end": "11:00",
-      "class_name": "18.00 – 19.00",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yogaschule-narayana.ch/stundenplan",
-      "verified": false,
-      "last_checked": "2026-04-06"
-    },
-    {
-      "studio_id": "yogaschule-narayana-schaffhausen",
-      "studio_name": "Yogaschule SH (Narayana)",
-      "day": "Wednesday",
-      "time_start": "09:00",
-      "time_end": "10:00",
-      "class_name": "Do",
-      "teacher": "",
-      "level": "all",
-      "source": "https://www.yogaschule-narayana.ch/stundenplan",
-      "verified": false,
-      "last_checked": "2026-04-06"
-    },
     {
       "studio_id": "yogalicht-schaffhausen",
       "studio_name": "YOGALICHT",
@@ -364,6 +338,84 @@
       "source": "https://www.sportsnow.ch/providers/ayana-yoga/schedule?locale=de",
       "verified": true,
       "last_checked": "2026-04-06"
+    },
+    {
+      "day": "Tuesday",
+      "time_start": "10:00",
+      "time_end": "11:00",
+      "class_name": "Yoga",
+      "teacher": "Franziska Wipf",
+      "level": "all",
+      "source": "https://yogaschule-narayana.ch",
+      "studio_id": "yogaschule-narayana-schaffhausen",
+      "studio_name": "Yogaschule SH (Narayana)",
+      "verified": true,
+      "last_checked": "2026-04-07"
+    },
+    {
+      "day": "Tuesday",
+      "time_start": "18:00",
+      "time_end": "19:00",
+      "class_name": "Yoga",
+      "teacher": "Franziska Wipf",
+      "level": "all",
+      "source": "https://yogaschule-narayana.ch",
+      "studio_id": "yogaschule-narayana-schaffhausen",
+      "studio_name": "Yogaschule SH (Narayana)",
+      "verified": true,
+      "last_checked": "2026-04-07"
+    },
+    {
+      "day": "Tuesday",
+      "time_start": "19:45",
+      "time_end": "20:45",
+      "class_name": "Yoga",
+      "teacher": "Franziska Wipf",
+      "level": "all",
+      "source": "https://yogaschule-narayana.ch",
+      "studio_id": "yogaschule-narayana-schaffhausen",
+      "studio_name": "Yogaschule SH (Narayana)",
+      "verified": true,
+      "last_checked": "2026-04-07"
+    },
+    {
+      "day": "Wednesday",
+      "time_start": "09:00",
+      "time_end": "10:00",
+      "class_name": "Yoga",
+      "teacher": "Franziska Wipf",
+      "level": "all",
+      "source": "https://yogaschule-narayana.ch",
+      "studio_id": "yogaschule-narayana-schaffhausen",
+      "studio_name": "Yogaschule SH (Narayana)",
+      "verified": true,
+      "last_checked": "2026-04-07"
+    },
+    {
+      "day": "Thursday",
+      "time_start": "09:30",
+      "time_end": "10:30",
+      "class_name": "Yoga",
+      "teacher": "Franziska Wipf",
+      "level": "all",
+      "source": "https://yogaschule-narayana.ch",
+      "studio_id": "yogaschule-narayana-schaffhausen",
+      "studio_name": "Yogaschule SH (Narayana)",
+      "verified": true,
+      "last_checked": "2026-04-07"
+    },
+    {
+      "day": "Thursday",
+      "time_start": "18:30",
+      "time_end": "19:30",
+      "class_name": "Yoga",
+      "teacher": "Franziska Wipf",
+      "level": "all",
+      "source": "https://yogaschule-narayana.ch",
+      "studio_id": "yogaschule-narayana-schaffhausen",
+      "studio_name": "Yogaschule SH (Narayana)",
+      "verified": true,
+      "last_checked": "2026-04-07"
     }
   ],
   "_meta": {

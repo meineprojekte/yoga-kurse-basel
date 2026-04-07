@@ -1465,16 +1465,20 @@
       "phone": "+41 79 104 28 28",
       "email": "",
       "styles": [
-        "Hatha",
-        "Tantra Hatha",
-        "Yin",
+        "Hatha Flow",
         "Vinyasa",
+        "Meditation",
+        "Hatha Tantra",
+        "Tantra Hatha",
         "Katonah",
-        "Sound Bath",
-        "Breathwork"
+        "Somatic Movement",
+        "Hatha",
+        "Breathwork",
+        "Yin",
+        "Sound Bath"
       ],
-      "description": "Yogastudio und Café an der Langstrasse. 90% handgefertigte Einrichtung aus recycelten Materialien. Yoga & Brunch Events jeden 2. Sonntag.",
-      "booking_platform": "Eversports",
+      "description": "Yoga studio at Dienerstrasse 10, Zurich. Hatha, Vinyasa, Yin & Meditation, Breathwork. Bsport booking.",
+      "booking_platform": "bsport",
       "drop_in": true,
       "languages": [
         "Deutsch",
@@ -1486,13 +1490,17 @@
         "Yoga & Brunch Events",
         "Duschen"
       ],
-      "teachers": [],
+      "teachers": [
+        "Sinah",
+        "Erica",
+        "Renata"
+      ],
       "lat": 47.3775,
       "lng": 8.5285,
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T08:09:59.945716+00:00",
+      "last_scraped": "2026-04-06T16:37:02.969734+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T08:10:04.194892+00:00",
         "last_price_check": null,
@@ -2233,17 +2241,36 @@
       "phone": "",
       "email": "",
       "styles": [
-        "Vinyasa Flow",
-        "Yin",
         "Yinyasa",
+        "SWEAT Yoga",
+        "Breathwork",
         "Yoga Nidra",
+        "Yin Yoga",
         "Prenatal",
-        "Barre"
+        "Prenatal Yoga",
+        "Ashtanga Vinyasa",
+        "Vinyasa Flow",
+        "Cecilia Jane Method",
+        "Kundalini",
+        "Barre",
+        "Yin"
       ],
       "teachers": [
+        "Jill",
+        "Cecilia",
+        "Stephanie",
+        "Vanessa",
+        "Yaiza",
+        "Jenny",
+        "Yannick",
+        "Vanessa Salome",
+        "Lea",
+        "Noemi",
+        "Adriana",
+        "Carla",
         "Cecilia Jane"
       ],
-      "description": "Kleines, minimalistisches Boutique-Yogastudio im Kreis 3. Alle Klassen auf Englisch mit kuratierten Playlisten.",
+      "description": "Boutique yoga studio at Weststrasse 138, Zurich. Signature Cecilia Jane Method plus Vinyasa, Ashtanga, Yin, Breathwork.",
       "booking_platform": "ClassPass",
       "drop_in": true,
       "languages": [
@@ -2259,7 +2286,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T08:11:17.908146+00:00",
+      "last_scraped": "2026-04-06T16:37:02.969734+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T08:11:22.018012+00:00",
         "last_price_check": null,
@@ -2403,11 +2430,23 @@
       "phone": "",
       "email": "",
       "styles": [
+        "Pilates",
         "Vinyasa",
-        "Hatha"
+        "Handstand",
+        "Bootcamp",
+        "HIIT",
+        "Power Yoga",
+        "Hatha Yoga",
+        "Vinyasa Flow",
+        "Hatha",
+        "Breathwork"
       ],
-      "teachers": [],
-      "description": "Boutique-Studio in Wiedikon mit familiärer Atmosphäre. Abo-Optionen ab CHF 99/Mt. Vinyasa und Hatha Yoga.",
+      "teachers": [
+        "Nadine",
+        "Lena",
+        "Michelle"
+      ],
+      "description": "Health Temple in Wiedikon & Airport. Yoga, Pilates, HIIT, Breathwork, Cold Plunge. Small groups 6-12.",
       "booking_platform": "website",
       "drop_in": true,
       "languages": [
@@ -2422,7 +2461,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T08:11:37.561837+00:00",
+      "last_scraped": "2026-04-06T16:37:02.969734+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T08:11:48.359427+00:00",
         "last_price_check": null,
@@ -2432,6 +2471,18 @@
           "website": "https://templeshape.com/",
           "schedule": "https://templeshape.com/en/templeshape-studio-wiedikon/yoga-in-wiedikon-zurich/"
         }
+      },
+      "pricing": {
+        "currency": "CHF",
+        "single": 30,
+        "trial": 15,
+        "ten_pack": 270,
+        "monthly": 179,
+        "drop_in": 30,
+        "intro_offer": "10 days unlimited CHF 79",
+        "verified": true,
+        "source": "https://templeshape.com/",
+        "last_checked": "2026-04-06T16:37:02.969734+00:00"
       }
     },
     {

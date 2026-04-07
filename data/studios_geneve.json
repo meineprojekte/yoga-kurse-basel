@@ -17,12 +17,21 @@
       "phone": "",
       "email": "",
       "styles": [
-        "Hatha",
         "Yoga Séniors",
+        "Hatha",
+        "Yoga Santé du Dos",
+        "Meditation",
         "Yoga sur chaise",
-        "Meditation"
+        "Yoga sur Chaise",
+        "Hatha avancé",
+        "Hatha Yoga"
       ],
-      "teachers": [],
+      "teachers": [
+        "Elodie",
+        "Carine",
+        "Carole",
+        "Severine"
+      ],
       "description": "Le plus ancien centre de yoga en Suisse romande, fondé en 1957. Un collège de professeurs certifiés propose une riche variété de cours quotidiens et des ateliers thématiques le week-end.",
       "booking_platform": "website",
       "drop_in": true,
@@ -51,14 +60,18 @@
         }
       },
       "pricing": {
-        "single": 20,
-        "card_10": 20,
-        "monthly": 20,
         "currency": "CHF",
+        "single": 35,
+        "ten_pack": 350,
+        "monthly": 240,
+        "annual": 980,
+        "drop_in": 35,
         "verified": true,
-        "source": "https://yoga7.com/cours-hebdomadaires/",
-        "last_checked": "2026-04-06T07:47:24.256754+00:00"
-      }
+        "source": "https://yoga7.com",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "Online single CHF 20. 5-pack CHF 175. Reduced 10-pack CHF 320."
+      },
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00"
     },
     {
       "id": "innercityoga",
@@ -253,12 +266,14 @@
       "phone": "+41 79 524 68 63",
       "email": "iris@fancy.yoga",
       "styles": [
+        "Yin Yoga",
         "Hatha",
-        "Vinyasa",
-        "Yin",
+        "Pilates",
+        "Boxing Workout",
         "Kundalini",
+        "Yin",
         "Barre",
-        "Pilates"
+        "Vinyasa"
       ],
       "teachers": [],
       "description": "Studio de yoga et Pilates dans la Vieille-Ville de Genève. Cours collectifs et privés, massages disponibles.",
@@ -279,7 +294,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:48:38.123752+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T07:48:42.245405+00:00",
         "last_price_check": "2026-03-26T23:00:31.090489+00:00",
@@ -292,13 +307,13 @@
         }
       },
       "pricing": {
-        "single": 40,
-        "card_10": 340,
-        "trial": 35,
         "currency": "CHF",
+        "single": 40,
+        "ten_pack": 400,
+        "drop_in": 40,
         "verified": true,
-        "source": "https://www.fancy.yoga/tarifs",
-        "last_checked": "2026-04-06T07:48:42.245368+00:00"
+        "source": "https://www.fancy.yoga",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00"
       }
     },
     {
@@ -383,11 +398,13 @@
       "email": "contact@colife.ch",
       "styles": [
         "Hatha",
-        "Vinyasa",
+        "Meditation",
         "Ashtanga",
         "Yin Yang",
+        "Kundalini",
         "Pilates",
-        "Meditation",
+        "Yin",
+        "Vinyasa",
         "Yoga Nidra"
       ],
       "teachers": [],
@@ -410,7 +427,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:48:49.257951+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T07:49:08.105869+00:00",
         "last_price_check": "2026-03-27T13:06:01.977556+00:00",
@@ -423,12 +440,12 @@
         }
       },
       "pricing": {
-        "single": 15,
-        "trial": 15,
         "currency": "CHF",
-        "verified": true,
-        "source": "https://colife.ch/",
-        "last_checked": "2026-04-06T07:49:08.105830+00:00"
+        "trial": 45,
+        "verified": false,
+        "source": "https://colife.ch",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "3 trial classes CHF 45. A la carte, ~CHF 25-27/class in bulk. 35+ classes/week."
       }
     },
     {
@@ -447,12 +464,23 @@
       "phone": "",
       "email": "",
       "styles": [
-        "Vinyasa",
+        "Yin Yoga",
+        "Sol Former",
+        "Hatha",
         "Ashtanga",
+        "Yoga Sculpt",
         "Prenatal",
-        "Sol Former"
+        "Pilates",
+        "Vinyasa"
       ],
-      "teachers": [],
+      "teachers": [
+        "Olesya",
+        "Eric",
+        "Lyly",
+        "Emma",
+        "Ornella",
+        "Dounia"
+      ],
       "description": "Espace holistique au centre de Genève dédié à la communauté. Sol Yoga, Sol Former (reformer Pilates), thérapies Renata França et Sol Café.",
       "booking_platform": "website",
       "drop_in": true,
@@ -471,17 +499,18 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 35,
-        "card_10": 310,
-        "monthly": 250,
-        "trial": 20,
         "currency": "CHF",
+        "single": 35,
+        "trial": 20,
+        "monthly": 250,
+        "drop_in": 35,
         "verified": true,
-        "source": "https://solstudio.ch/sol-yoga/",
-        "last_checked": "2026-04-06T07:49:26.538014+00:00"
+        "source": "https://solstudio.ch",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "5-pack CHF 165, 10-pack CHF 310, 15-pack CHF 445, 20-pack CHF 540."
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:49:11.708830+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T07:49:26.538045+00:00",
         "last_price_check": null,
@@ -509,9 +538,10 @@
       "phone": "+41 22 700 41 20",
       "email": "info@swisspilatesandyoga.com",
       "styles": [
-        "Pilates",
-        "Yoga",
         "Hatha",
+        "Reformer Pilates",
+        "Yoga",
+        "Pilates",
         "Vinyasa"
       ],
       "teachers": [],
@@ -532,15 +562,17 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 38,
-        "monthly": 299,
         "currency": "CHF",
+        "single": 38,
+        "monthly": 140,
+        "drop_in": 38,
         "verified": true,
-        "source": "https://swisspilatesandyoga.com/tarifs/",
-        "last_checked": "2026-04-06T07:49:45.072475+00:00"
+        "source": "https://swisspilatesandyoga.com",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "Monthly 1x/wk CHF 140 (annual). Unlimited CHF 299/mo. 12-pass CHF 360."
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:49:28.585083+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T07:49:45.072515+00:00",
         "last_price_check": null,
@@ -778,7 +810,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:50:13.553071+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T07:50:43.820370+00:00",
         "last_price_check": null,
@@ -788,6 +820,14 @@
           "website": "https://yoga-nest.com/",
           "schedule": "https://yoga-nest.com/community/yoga-classes/"
         }
+      },
+      "pricing": {
+        "currency": "CHF",
+        "single": 100,
+        "verified": true,
+        "source": "https://yoga-nest.com",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "Private 75min CHF 100. Semi-private 2p CHF 60/each. Sound healing CHF 115. 6-pack sound CHF 575."
       }
     },
     {
@@ -832,7 +872,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:50:44.067180+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T07:50:48.328915+00:00",
         "last_price_check": "2026-03-27T17:26:00.801921+00:00",
@@ -845,12 +885,13 @@
         }
       },
       "pricing": {
-        "card_10": 20,
-        "trial": 20,
         "currency": "CHF",
+        "trial": 20,
+        "annual": 1190,
         "verified": true,
-        "source": "https://www.yoginimage.ch/planning-et-tarif",
-        "last_checked": "2026-04-06T07:50:48.328877+00:00"
+        "source": "https://yoginimage.ch",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "Trial 60/75min CHF 20, 120min CHF 30. Annual 1-2x/wk CHF 1190. Reduced CHF 1015. Senior CHF 884."
       }
     },
     {
@@ -869,8 +910,9 @@
       "phone": "+41 79 688 31 32",
       "email": "bonjour@kastudio.ch",
       "styles": [
-        "Yoga",
-        "Pilates Reformer"
+        "Reformer Pilates",
+        "Pilates Reformer",
+        "Yoga"
       ],
       "teachers": [],
       "description": "Studio moderne aux Eaux-Vives proposant yoga, Pilates reformer, sauna, bain froid et services de récupération. Ouvert 7j/7 de 7h à 20h.",
@@ -892,7 +934,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:50:48.575654+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T07:50:52.881481+00:00",
         "last_price_check": "2026-03-27T17:26:15.016803+00:00",
@@ -905,11 +947,14 @@
         }
       },
       "pricing": {
-        "monthly": 450,
         "currency": "CHF",
+        "monthly": 450,
+        "annual": 5400,
+        "drop_in": null,
         "verified": true,
-        "source": "https://www.kastudio.ch/membership",
-        "last_checked": "2026-04-06T07:50:52.881453+00:00"
+        "source": "https://kastudio.ch",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "Discovery pass CHF 450/mo one-time. Annual prepaid CHF 5400/yr (CHF 450/mo). Monthly CHF 490/mo."
       }
     },
     {
@@ -1055,8 +1100,9 @@
       "phone": "",
       "email": "shahrazad_chida@yahoo.com",
       "styles": [
+        "Vinyasa Flow",
         "Kundalini",
-        "Vinyasa Flow"
+        "Kundalini Yoga"
       ],
       "teachers": [
         "Shahrazad Chida"
@@ -1076,7 +1122,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:51:42.055764+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T07:52:09.727890+00:00",
         "last_price_check": "2026-03-27T17:27:06.582795+00:00",

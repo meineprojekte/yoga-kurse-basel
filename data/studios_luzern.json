@@ -488,7 +488,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:54:24.929332+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "detected_booking_links": [
         {
           "platform": "fitogram",
@@ -509,6 +509,17 @@
           "website": "https://yogasitz.ch/",
           "schedule": "https://yogasitz.ch/index.php/angebot/kursanmeldung_veranstaltungen/"
         }
+      },
+      "pricing": {
+        "currency": "CHF",
+        "single": 35,
+        "trial": 30,
+        "ten_pack": 320,
+        "drop_in": 35,
+        "verified": true,
+        "source": "https://yogasitz.ch",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "10er Hatha Flow CHF 320, InBalance CHF 300. 20er Hatha CHF 580. 7-month validity."
       }
     },
     {
@@ -528,9 +539,10 @@
       "email": "info@yogaschule-luzern.ch",
       "styles": [
         "Hatha",
-        "Vinyasa",
+        "Meditation",
         "Yin",
-        "Meditation"
+        "Hatha Yoga",
+        "Vinyasa"
       ],
       "teachers": [
         "Remo Soland"
@@ -552,13 +564,15 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:54:31.530612+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "pricing": {
-        "trial": 27.0,
         "currency": "CHF",
+        "single": 27,
+        "trial": 25,
         "verified": true,
-        "source": "https://www.yogaschuleluzern.ch",
-        "last_checked": "2026-04-06T07:54:36.303356+00:00"
+        "source": "https://yogaschuleluzern.ch",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "CHF 27-30/lesson per quarter"
       },
       "_meta": {
         "last_scraped": "2026-04-06T07:54:36.303577+00:00",
@@ -770,9 +784,12 @@
       "phone": "",
       "email": "",
       "styles": [
-        "Kundalini",
+        "Mantra",
         "Meditation",
-        "Mantra"
+        "Schwangerschaftsyoga",
+        "Kundalini",
+        "Kundalini Yoga",
+        "Rückbildung"
       ],
       "teachers": [],
       "description": "Kundalini Yoga mit Körperübungen, Atemtechniken, Meditation, Mantrasingen und Entspannung im Gemeinschaftsraum Wogeno.",
@@ -790,7 +807,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:55:22.837347+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T07:55:34.223793+00:00",
         "last_price_check": null,
@@ -800,6 +817,15 @@
           "website": "https://www.yoga-kundalini.net/",
           "schedule": "https://www.yoga-kundalini.net/"
         }
+      },
+      "pricing": {
+        "currency": "CHF",
+        "single": null,
+        "trial": 20,
+        "verified": true,
+        "source": "https://yoga-kundalini.net",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "12-class block CHF 360 (CHF 30/class). Trial CHF 20. Student 20% off."
       }
     },
     {

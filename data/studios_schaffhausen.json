@@ -131,7 +131,9 @@
         "Hatha",
         "Meditation"
       ],
-      "teachers": [],
+      "teachers": [
+        "Franziska Wipf"
+      ],
       "description": "Yogaschule auf dem höchsten Punkt des Emmersbergs in Schaffhausen. Charmanter Raum im Dachgeschoss eines 100-jährigen Hauses.",
       "booking_platform": "",
       "drop_in": true,
@@ -146,7 +148,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:57:13.750421+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T07:57:18.188404+00:00",
         "last_price_check": null,

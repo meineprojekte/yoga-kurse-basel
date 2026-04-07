@@ -79,12 +79,21 @@
       "phone": "+41 78 737 73 05",
       "email": "",
       "styles": [
-        "Vinyasa",
+        "Yin Yoga",
         "Hatha",
-        "Yin",
+        "Prenatal Yoga",
         "Pilates",
         "Trauma-informed Yoga",
-        "Sound Bath"
+        "Vinyasa Flow",
+        "Restorative",
+        "Sculpt",
+        "Yin Yang",
+        "Power Vinyasa",
+        "Slow Vinyasa",
+        "Sound Bath",
+        "Yin",
+        "Vinyasa",
+        "Yoga Nidra"
       ],
       "teachers": [
         "Sofia Dubois",
@@ -109,17 +118,20 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 30,
-        "card_10": 270,
-        "monthly": 180,
-        "trial": 20,
         "currency": "CHF",
+        "single": 30,
+        "trial": 20,
+        "ten_pack": 270,
+        "monthly": 180,
+        "annual": 1500,
+        "drop_in": 30,
         "verified": true,
-        "source": "https://www.nuevalunayoga.ch/cours-collectifs-yoga-lausanne/",
-        "last_checked": "2026-04-06T08:02:33.053210+00:00"
+        "source": "https://nuevalunayoga.ch",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "5-pack CHF 140. 20-pack CHF 480. Unlimited 3mo CHF 450, 6mo CHF 840."
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T08:02:08.023318+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "detected_booking_links": [
         {
           "platform": "mindbody",
@@ -158,16 +170,24 @@
       "phone": "+41 77 915 77 64",
       "email": "",
       "styles": [
+        "Yoga Therapy",
+        "Postnatal Yoga",
+        "Yogatherapy",
         "Vinyasa",
-        "Hatha",
-        "Prenatal",
         "Postnatal",
         "Qi Gong",
-        "Yoga Therapy",
-        "Bols chantants"
+        "Bols chantants",
+        "Prenatal",
+        "Prenatal Yoga",
+        "Kundalini",
+        "Hatha"
       ],
-      "teachers": [],
-      "description": "Salle de yoga lumineuse de 40 m² au 4ème étage en plein centre de Lausanne. Variété de cours incluant Qi Gong et yoga thérapeutique.",
+      "teachers": [
+        "Lionel",
+        "Fantine",
+        "Roxane"
+      ],
+      "description": "Yoga studio at Rue de l'Ale 25, Lausanne. Vinyasa, Hatha, Kundalini, Pre/Postnatal. Multiple independent teachers.",
       "booking_platform": "website",
       "drop_in": true,
       "languages": [
@@ -184,7 +204,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T08:02:33.316764+00:00",
+      "last_scraped": "2026-04-06T16:37:02.969734+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T08:02:37.465361+00:00",
         "last_price_check": null,
@@ -273,18 +293,23 @@
       "phone": "",
       "email": "lausanne@yogaflame.ch",
       "styles": [
-        "Hot Yoga",
-        "Bikram",
-        "Ashtanga",
-        "Vinyasa Flow",
-        "Yin",
         "Hot Pilates",
         "Forrest Yoga",
-        "Yoga Nidra"
+        "Barkan Flow",
+        "Barre",
+        "Yoga Nidra",
+        "Power Flow",
+        "Ashtanga",
+        "Vinyasa Flow",
+        "Yoga Sculpt",
+        "Yin",
+        "Bikram",
+        "Hot Yoga",
+        "Rocket"
       ],
       "teachers": [],
-      "description": "Le premier studio de Hot Yoga en Suisse. Bikram, Ashtanga, Vinyasa, Yin et Hot Pilates à 5 min de la gare de Lausanne.",
-      "booking_platform": "Mindbody",
+      "description": "Hot Yoga Studio in Lausanne (Grancy) and Geneva. Bikram, Ashtanga, Vinyasa, Hot Pilates. 25+ classes/week.",
+      "booking_platform": "mindbody",
       "drop_in": true,
       "languages": [
         "Français",
@@ -311,7 +336,20 @@
           "schedule": "https://yogaflame.ch/studios/studio-lausanne/"
         }
       },
-      "last_scraped": "2026-04-06T08:03:20.771503+00:00"
+      "last_scraped": "2026-04-06T16:37:02.969734+00:00",
+      "pricing": {
+        "currency": "CHF",
+        "single": 40,
+        "monthly": 320,
+        "ten_pack": 350,
+        "intro_offer": "14 days unlimited CHF 87",
+        "annual": 2000,
+        "drop_in": 40,
+        "verified": true,
+        "source": "https://yogaflame.ch/",
+        "last_checked": "2026-04-06T16:37:02.969734+00:00",
+        "notes": "15% discount for students/seniors/disability"
+      }
     },
     {
       "id": "yogavaud",
@@ -350,7 +388,7 @@
       ],
       "lat": 46.527,
       "lng": 6.645,
-      "active": true,
+      "active": false,
       "classes": [],
       "scrape_status": "blocked",
       "last_scraped": null,
@@ -362,7 +400,9 @@
         "source_urls": {
           "website": "https://www.yogavaud.ch/",
           "schedule": "https://www.yogavaud.ch/"
-        }
+        },
+        "deactivated": "2026-04-06T16:37:02.969734+00:00",
+        "deactivated_reason": "Domain parked/for sale, studio no longer exists"
       }
     },
     {
@@ -449,11 +489,16 @@
       "phone": "+41 76 378 76 81",
       "email": "contact@ashtanga-yoga-lausanne.com",
       "styles": [
+        "Meditation",
+        "Mysore",
+        "Ashtanga Mysore",
         "Ashtanga Vinyasa",
-        "Mysore"
+        "Ashtanga Led",
+        "Vinyasa Krama",
+        "Pranayama"
       ],
       "teachers": [],
-      "description": "Cours de Mysore Style Ashtanga Vinyasa Yoga du lundi au vendredi de 6h à 9h, tous niveaux. Cours d'introduction et cours guidés.",
+      "description": "Ashtanga yoga studio since 2014. Mysore style Mon-Fri 6-9 AM, led classes, pranayama. Rue Chaucrau 3, Lausanne.",
       "booking_platform": "website",
       "drop_in": true,
       "languages": [
@@ -479,7 +524,15 @@
           "website": "https://www.ashtanga-yoga-lausanne.com/",
           "schedule": "https://en.ashtanga-yoga-lausanne.com/cours-horaire"
         }
-      }
+      },
+      "pricing": {
+        "currency": "CHF",
+        "verified": false,
+        "source": "https://www.ashtanga-yoga-lausanne.com/tarifs-cours-yoga-lausanne",
+        "last_checked": "2026-04-06T16:37:02.969734+00:00",
+        "notes": "Subscription tiers: CHF 260, 490, 940, 1800"
+      },
+      "last_scraped": "2026-04-06T16:37:02.969734+00:00"
     },
     {
       "id": "imyoga-lausanne",
@@ -497,12 +550,13 @@
       "phone": "+41 79 691 26 58",
       "email": "info@imyoga.ch",
       "styles": [
+        "Vinyasa Yoga",
         "Hatha",
-        "Vinyasa",
-        "Sivananda",
         "Yin Yoga Nidra",
         "HIIT",
-        "Pilates"
+        "Pilates",
+        "Sivananda",
+        "Vinyasa"
       ],
       "teachers": [],
       "description": "Studio de yoga situé dans le prestigieux Hôtel Royal Savoy de Lausanne. Cours collectifs de Vinyasa adaptés à tous, cours privés disponibles.",
@@ -522,7 +576,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T08:05:33.618760+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T08:05:39.082100+00:00",
         "last_price_check": null,
@@ -532,6 +586,16 @@
           "website": "https://imyoga.ch/",
           "schedule": "https://imyoga.ch/en/schedule"
         }
+      },
+      "pricing": {
+        "currency": "CHF",
+        "single": 35,
+        "ten_pack": 315,
+        "monthly": 190,
+        "drop_in": 35,
+        "verified": true,
+        "source": "https://imyoga.ch",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00"
       }
     },
     {
@@ -550,10 +614,14 @@
       "phone": "+41 76 584 92 51",
       "email": "info@vivre-le-yoga.ch",
       "styles": [
-        "Hatha"
+        "Yogatherapy",
+        "Hatha",
+        "Hatha Yoga",
+        "Meditation"
       ],
       "teachers": [
-        "Maria Rosaria Spano"
+        "Maria Rosaria Spano",
+        "Maria Rosaria"
       ],
       "description": "Atelier de yoga au coeur du quartier de Malley à Lausanne. Large gamme de cours et d'horaires pour la pratique du hatha yoga.",
       "booking_platform": "",
@@ -570,7 +638,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T08:05:42.000114+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T08:06:03.476399+00:00",
         "last_price_check": null,
@@ -580,6 +648,16 @@
           "website": "https://vivre-le-yoga.ch/",
           "schedule": "https://vivre-le-yoga.ch/"
         }
+      },
+      "pricing": {
+        "currency": "CHF",
+        "single": 40,
+        "trial": 30,
+        "ten_pack": 350,
+        "verified": true,
+        "source": "https://vivre-le-yoga.ch",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "1x/wk 12 weeks CHF 360. 2x/wk CHF 540. Online 10-pack CHF 230. Drop-in online CHF 25."
       }
     },
     {
@@ -676,14 +754,15 @@
       "email": "info@yogacenter.ch",
       "styles": [
         "Hatha",
-        "Vinyasa",
+        "Meditation",
+        "Hatha Yoga",
         "Acro Yoga",
-        "Yoga Nidra",
-        "Meditation"
+        "Vinyasa",
+        "Yoga Nidra"
       ],
       "teachers": [
-        "Patrick Nolfo",
-        "Didier Aigroz"
+        "Didier Aigroz",
+        "Patrick Nolfo"
       ],
       "description": "Première école de yoga de la Riviera Suisse depuis 2001. Affiliée Fédération Suisse Yoga et Yoga Alliance USA. Studios à Montreux et Vevey.",
       "booking_platform": "Mindbody",
@@ -703,15 +782,16 @@
       "active": true,
       "classes": [],
       "pricing": {
+        "currency": "CHF",
         "single": 35,
         "trial": 20,
-        "currency": "CHF",
         "verified": true,
-        "source": "https://yogacenter.ch/prix/",
-        "last_checked": "2026-04-06T08:06:42.408286+00:00"
+        "source": "https://yogacenter.ch",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "12-pack CHF 350, 24-pack CHF 595, 36-pack CHF 720."
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T08:06:10.946088+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T08:06:42.408299+00:00",
         "last_price_check": null,
@@ -834,11 +914,19 @@
       "phone": "+41 76 310 68 36",
       "email": "info@sundorashala.com",
       "styles": [
+        "Yin Yoga",
         "Hatha",
-        "Vinyasa Flow",
-        "Power Vinyasa"
+        "Power Vinyasa",
+        "Vinyasa Flow"
       ],
-      "teachers": [],
+      "teachers": [
+        "Dorota",
+        "Marine Brustlein",
+        "Laurent",
+        "Pamela Ranieri",
+        "John Wolstenholme",
+        "Nathalie Baudin"
+      ],
       "description": "Studio de qualité à Pully spécialisé dans les petits groupes. Yoga, mouvement et bien-être dans un cadre intime.",
       "booking_platform": "website",
       "drop_in": true,
@@ -855,7 +943,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T08:06:44.710709+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T08:06:48.755920+00:00",
         "last_price_check": "2026-03-26T22:36:01.433450+00:00",
@@ -867,9 +955,12 @@
         }
       },
       "pricing": {
-        "verified": false,
         "currency": "CHF",
-        "last_checked": "2026-04-06T08:06:48.755890+00:00"
+        "single": 35,
+        "drop_in": 35,
+        "verified": true,
+        "source": "https://sundorashala.com",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00"
       }
     },
     {

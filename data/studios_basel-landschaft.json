@@ -359,6 +359,8 @@
       "phone": "+41 79 460 76 36",
       "email": "info@yogashanti.ch",
       "styles": [
+        "Yoga meets Pilates",
+        "Meditation",
         "Yoga"
       ],
       "teachers": [
@@ -387,12 +389,14 @@
         }
       },
       "pricing": {
-        "single": 24,
         "currency": "CHF",
+        "single": 24,
         "verified": true,
-        "source": "https://www.yogashanti.ch/stundenplan-preise/",
-        "last_checked": "2026-04-06T07:40:03.911197+00:00"
-      }
+        "source": "https://yogashanti.ch",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "CHF 24/lesson per quarter (10-12 lessons)"
+      },
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00"
     },
     {
       "id": "ebe-wellness-oberwil",

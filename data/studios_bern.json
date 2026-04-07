@@ -401,9 +401,14 @@
       "phone": "+41 79 122 50 40",
       "email": "suresh.kumar@yoga-bern.ch",
       "styles": [
-        "Hatha Yoga",
+        "Meditation",
+        "Mantra Yoga",
+        "Yoga Therapy",
+        "Pranayama",
+        "Kundalini Yoga",
         "Traditional Indian Yoga",
-        "Yoga Therapy"
+        "Hatha Yoga",
+        "Kriya Yoga"
       ],
       "teachers": [
         "Suresh Kumar"
@@ -432,7 +437,8 @@
           "website": "https://www.yoga-bern.ch/",
           "schedule": "https://www.yoga-bern.ch/en/index.php/schedule/"
         }
-      }
+      },
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00"
     },
     {
       "id": "hot-yoga-christoph-herren",
@@ -717,10 +723,20 @@
       "phone": "",
       "email": "info@hrdayam.ch",
       "styles": [
-        "Jivamukti Yoga"
+        "Yin Yoga",
+        "Jivamukti",
+        "Iyengar",
+        "Jivamukti Yoga",
+        "Yoga Nidra"
       ],
       "teachers": [
-        "Clare Nicholls"
+        "Bobesh Dhuri",
+        "Binh Tschan",
+        "Clare Nicholls",
+        "Carole Schaer",
+        "Pavlo Bublyk",
+        "Nadine Guldimann",
+        "Tina Scaringi"
       ],
       "description": "Non-Profit Jivamukti Yoga Studio in der Altstadt. Alle Klassen mit 'Pay what you can'-Option.",
       "booking_platform": "Momoyoga",
@@ -739,7 +755,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:45:12.301656+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "detected_booking_links": [
         {
           "platform": "momoyoga",
@@ -1624,6 +1640,13 @@
           "website": "https://hrdayam.ch/",
           "schedule": "https://www.momoyoga.com/hrdayambern/"
         }
+      },
+      "pricing": {
+        "currency": "CHF",
+        "verified": true,
+        "source": "https://hrdayam.ch",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "Pay-what-you-can (non-profit)"
       }
     },
     {
@@ -1704,13 +1727,34 @@
       "phone": "+41 78 699 70 15",
       "email": "info@open-yoga.ch",
       "styles": [
-        "Vinyasa",
-        "Hatha",
         "Yin Yoga",
-        "Ashtanga"
+        "Hatha",
+        "Ashtanga",
+        "Yin & Yoga Nidra",
+        "Athletic Yoga",
+        "Schwangerschaftsyoga",
+        "Yoga",
+        "Ashtanga Mysore",
+        "Vinyasa"
       ],
       "teachers": [
-        "Dominic Abplanalp"
+        "Elisa",
+        "Dominic",
+        "Antonia",
+        "Christina E.",
+        "Marco",
+        "Sabine-Maria",
+        "Dominic Abplanalp",
+        "Niamh",
+        "Nastassja",
+        "Katrin",
+        "Martina",
+        "Adriana",
+        "Nicole",
+        "Micha",
+        "Myrta",
+        "Jessica",
+        "Christina W."
       ],
       "description": "Yogastudio im Zentrum von Bern seit 2013 mit zwei Standorten in der Altstadt.",
       "booking_platform": "SportsNow",
@@ -1736,7 +1780,20 @@
           "website": "https://www.open-yoga.ch/",
           "schedule": "https://www.open-yoga.ch/de/stundenplan.html"
         }
-      }
+      },
+      "pricing": {
+        "currency": "CHF",
+        "single": 30,
+        "trial": 50,
+        "monthly": 210,
+        "annual": 2200,
+        "drop_in": 30,
+        "verified": true,
+        "source": "https://open-yoga.ch",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "75min CHF 30. 11er-Abo 75min CHF 300. 6mo unlimited CHF 1150. Reduced rates for students/seniors."
+      },
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00"
     },
     {
       "id": "origin8-bern",
@@ -1761,7 +1818,7 @@
         "Slings Myofascial Training"
       ],
       "teachers": [],
-      "description": "Yoga, Pilates und Slings (Myofasziales Training) ergaenzen sich im origin8 perfekt.",
+      "description": "Studio currently on pause (origin8 macht pause). Ashtanga, Vinyasa, Yin & Yang.",
       "booking_platform": "SportsNow",
       "drop_in": true,
       "languages": [
@@ -1788,12 +1845,13 @@
         }
       },
       "pricing": {
-        "single": 20,
         "currency": "CHF",
-        "verified": true,
-        "source": "https://origin8.ch/",
-        "last_checked": "2026-04-06T07:45:36.512233+00:00"
-      }
+        "verified": false,
+        "source": "https://origin8.ch",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "Einstiegstraining CHF 90 (one-time). Online CHF 20/session. Currently on pause."
+      },
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00"
     },
     {
       "id": "grey-rebel-bern",

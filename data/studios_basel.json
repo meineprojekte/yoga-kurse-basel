@@ -1044,7 +1044,7 @@
       ],
       "lat": 47.568,
       "lng": 7.602,
-      "active": true,
+      "active": false,
       "classes": [],
       "scrape_status": "scraped",
       "last_scraped": "2026-04-06T07:41:48.811457+00:00",
@@ -1056,7 +1056,9 @@
         "source_urls": {
           "website": "https://erlenyoga.ch/",
           "schedule": "https://erlenyoga.ch/"
-        }
+        },
+        "deactivated": "2026-04-06T16:37:02.969734+00:00",
+        "deactivated_reason": "Website is private/503, studio possibly closed"
       }
     },
     {
@@ -1166,7 +1168,7 @@
         "last_checked": "2026-04-06T07:42:00.498784+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:41:57.765198+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T07:42:00.498820+00:00",
         "last_price_check": null,
@@ -1860,12 +1862,28 @@
       "phone": "+41 61 421 54 54",
       "email": "",
       "styles": [
-        "Yoga",
+        "Yin Yoga",
         "Therapeutisches Yoga",
+        "Craniosacral",
+        "Yin Yang Yoga",
+        "Hormonyoga",
+        "MBSR",
         "MBSR/MSC",
-        "Craniosacral"
+        "Yoga",
+        "Hatha Yoga",
+        "Hatha Flow"
       ],
-      "teachers": [],
+      "teachers": [
+        "Celine",
+        "Vanessa",
+        "Tatiana",
+        "Ilonka",
+        "Manuela",
+        "Ilo",
+        "Claude",
+        "Sara",
+        "Gunter"
+      ],
       "description": "Yoga, Therapie und Achtsamkeitskurse in Bottmingen bei Basel.",
       "hours": "",
       "booking_platform": "website",
@@ -1883,16 +1901,20 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 35,
-        "card_10": 290,
-        "trial": 30,
         "currency": "CHF",
+        "single": 35,
+        "trial": 30,
+        "ten_pack": 290,
+        "monthly": null,
+        "annual": 1350,
+        "drop_in": 35,
         "verified": true,
-        "source": "https://www.bethsabe.ch/yoga-stundenplan",
-        "last_checked": "2026-04-06T07:43:37.105962+00:00"
+        "source": "https://bethsabe.ch",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "Student 15% discount. 60min CHF 25, 90min CHF 35. 10er 60min CHF 210, 10er 90min CHF 290. Annual unlimited CHF 1350, limited 1x/wk CHF 990."
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:43:33.071356+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T07:43:37.105994+00:00",
         "last_price_check": null,
@@ -1920,8 +1942,11 @@
       "phone": "",
       "email": "",
       "styles": [
+        "Yoga",
+        "Kundalini Yoga",
+        "Pilates",
         "Hatha Yoga",
-        "Pilates"
+        "Power Yoga"
       ],
       "teachers": [],
       "description": "Drei-stöckiges Fitnesscenter mit Yoga-Klassen, Wellness, 5 Saunen und Relaxpool.",
@@ -1943,16 +1968,18 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 131.0,
-        "card_10": 220.0,
-        "monthly": 10.0,
         "currency": "CHF",
+        "single": 39,
+        "ten_pack": 355,
+        "monthly": 112,
+        "annual": 1270,
+        "drop_in": 39,
         "verified": true,
-        "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/preise",
-        "last_checked": "2026-04-06T07:43:50.740147+00:00"
+        "source": "https://fitnesspark.ch",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:43:37.749499+00:00",
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T07:43:50.740199+00:00",
         "last_price_check": "2026-04-06T07:43:50.740199+00:00",
@@ -2039,14 +2066,22 @@
       "phone": "",
       "email": "",
       "styles": [
-        "Hatha Yoga",
+        "Postnatal Yoga",
+        "Senior Yoga",
+        "Vinyasa",
+        "Yoga Nidra",
+        "Yin Yoga",
         "Power Yoga",
-        "Vinyasa"
+        "Hatha Yoga",
+        "Faszien Yoga",
+        "Prenatal Yoga",
+        "Vinyasa Flow",
+        "Aerial Yoga"
       ],
       "teachers": [],
-      "description": "Yoga-Kurse als Teil des Migros-Erwachsenenbildungsprogramms. Flexibles Wertabo-System.",
+      "description": "Die grösste Yogaschule der Schweiz. Kurse über Abo-Modell buchbar via klubschule.ch.",
       "hours": "",
-      "booking_platform": "website",
+      "booking_platform": "klubschule",
       "drop_in": false,
       "languages": [
         "Deutsch"
@@ -2061,7 +2096,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-06T07:44:08.302483+00:00",
+      "last_scraped": "2026-04-06T16:37:02.969734+00:00",
       "_meta": {
         "last_scraped": "2026-04-06T07:44:13.208310+00:00",
         "last_price_check": null,
@@ -2128,7 +2163,7 @@
         "Yoga Retreats"
       ],
       "teachers": [],
-      "description": "Kein reguläres Studio — Retreat-Venue. Beheizter Aussenpool, Sauna, Dampfbad. Seit 2020.",
+      "description": "Retreat venue in Riehen hosting visiting yoga teachers. Events and multi-day retreats, not regular weekly classes.",
       "hours": "",
       "booking_platform": "website",
       "drop_in": false,
@@ -2137,10 +2172,12 @@
         "English"
       ],
       "special_features": [
+        "Architektur",
+        "events-only",
+        "retreat-venue",
         "Retreats",
-        "Pool",
         "Sauna",
-        "Architektur"
+        "Pool"
       ],
       "category": "retreat",
       "lat": 47.577,
@@ -2189,7 +2226,7 @@
       "special_features": [],
       "lat": 47.5455,
       "lng": 7.583,
-      "active": true,
+      "active": false,
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
@@ -2197,7 +2234,9 @@
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [],
-        "source_urls": {}
+        "source_urls": {},
+        "deactivated": "2026-04-06T16:37:02.969734+00:00",
+        "deactivated_reason": "No website, no online presence, unreachable"
       }
     },
     {

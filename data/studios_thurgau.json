@@ -101,7 +101,16 @@
           "website": "https://www.yoga-place.com/",
           "schedule": "https://www.eversports.ch/s/yogaplace"
         }
-      }
+      },
+      "pricing": {
+        "currency": "CHF",
+        "single": 22,
+        "verified": true,
+        "source": "https://yoga-place.com",
+        "last_checked": "2026-04-07T01:13:15.000839+00:00",
+        "notes": "75min CHF 22. 10er/20er Abo available. 20% discount AHV/IV/students."
+      },
+      "last_scraped": "2026-04-07T01:13:15.000839+00:00"
     },
     {
       "id": "yoga-grenzenlos-kreuzlingen",
