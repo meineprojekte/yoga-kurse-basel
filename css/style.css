@@ -95,6 +95,11 @@
     --color-overlay: rgba(0, 0, 0, 0.7);
 }
 
+/* --- Noscript fallback links --- */
+noscript a {
+    color: var(--color-primary);
+}
+
 /* --- Anti-scraping: prevent text selection on data content --- */
 .studio-card,
 .studio-name,

@@ -910,30 +910,30 @@ if ('serviceWorker' in navigator) {
     }
 
     // --- Comparison Table Sorting (#11) ---
-    var comparisonStudiosData = [];
-
     function initComparisonSort() {
         var table = document.querySelector('.comparison-table');
         if (!table) return;
         var headers = table.querySelectorAll('th[data-sort]');
-        headers.forEach(function (th) {
-            // Remove old listener by cloning (idempotent re-init)
-            var newTh = th.cloneNode(true);
-            th.parentNode.replaceChild(newTh, th);
-            newTh.style.cursor = 'pointer';
-            newTh.addEventListener('click', function () {
-                var key = this.dataset.sort;
-                var currentDir = this.classList.contains('sort-asc') ? 'asc' :
-                                 this.classList.contains('sort-desc') ? 'desc' : 'none';
-                // Reset all headers
-                var allHeaders = table.querySelectorAll('th[data-sort]');
-                allHeaders.forEach(function (h) { h.classList.remove('sort-asc', 'sort-desc'); });
-                // Toggle direction
-                var newDir = currentDir === 'asc' ? 'desc' : 'asc';
-                this.classList.add('sort-' + newDir);
-                sortComparisonTable(key, newDir);
-            });
-        });
+        for (var hi = 0; hi < headers.length; hi++) {
+            (function (th) {
+                // Remove old listener by cloning (idempotent re-init)
+                var newTh = th.cloneNode(true);
+                th.parentNode.replaceChild(newTh, th);
+                newTh.style.cursor = 'pointer';
+                newTh.addEventListener('click', function () {
+                    var key = this.dataset.sort;
+                    var currentDir = this.classList.contains('sort-asc') ? 'asc' :
+                                     this.classList.contains('sort-desc') ? 'desc' : 'none';
+                    // Reset all headers
+                    var allHeaders = table.querySelectorAll('th[data-sort]');
+                    for (var hj = 0; hj < allHeaders.length; hj++) { allHeaders[hj].classList.remove('sort-asc', 'sort-desc'); }
+                    // Toggle direction
+                    var newDir = currentDir === 'asc' ? 'desc' : 'asc';
+                    this.classList.add('sort-' + newDir);
+                    sortComparisonTable(key, newDir);
+                });
+            })(headers[hi]);
+        }
     }
 
     function sortComparisonTable(key, direction) {
@@ -2697,7 +2697,7 @@ if ('serviceWorker' in navigator) {
                 };
                 xhr.onerror = function () {
                     if (btn) { btn.disabled = false; btn.textContent = t('feedback.send'); }
-                    alert('Fehler beim Senden. Bitte versuche es nochmal.');
+                    alert(t('feedback.error') || 'Fehler beim Senden. Bitte versuche es nochmal.');
                 };
                 xhr.send(JSON.stringify({ type: type, name: name || 'Anonym', message: message }));
             });
