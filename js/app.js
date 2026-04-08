@@ -580,6 +580,15 @@ if ('serviceWorker' in navigator) {
         return div.innerHTML;
     }
 
+    function linkRel(url) {
+        if (!url) return 'noopener noreferrer';
+        var booking = ['eversports.', 'classpass.', 'mindbody', 'momoyoga.', 'fitogram.'];
+        for (var i = 0; i < booking.length; i++) {
+            if (url.indexOf(booking[i]) !== -1) return 'sponsored noopener noreferrer';
+        }
+        return 'nofollow noopener noreferrer';
+    }
+
     function $(id) {
         return document.getElementById(id);
     }
@@ -911,7 +920,7 @@ if ('serviceWorker' in navigator) {
             html += '<td class="comp-styles" data-label="' + lblStyles + '"><small>' + escapeHtml(styles) + '</small></td>';
             html += '<td class="comp-link" data-label="Link">';
             if (sourceUrl) {
-                html += '<a href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noopener noreferrer" class="comp-website-link" title="' + t('comparison.visit') + '">';
+                html += '<a href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="' + linkRel(sourceUrl) + '" class="comp-website-link" title="' + t('comparison.visit') + '">';
                 html += '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>';
                 html += '</a>';
             }
@@ -1562,7 +1571,7 @@ if ('serviceWorker' in navigator) {
                 pricingTitleHtml += ' <span class="verified-badge verified-badge-inline">\u2713</span>';
             }
             if (studio.pricing.source) {
-                pricingTitleHtml = '<a href="' + escapeHtml(studio.pricing.source) + '" target="_blank" rel="noopener noreferrer" class="pricing-title-link">' + pricingTitleHtml + '</a>';
+                pricingTitleHtml = '<a href="' + escapeHtml(studio.pricing.source) + '" target="_blank" rel="' + linkRel(studio.pricing.source) + '" class="pricing-title-link">' + pricingTitleHtml + '</a>';
             }
             var pricingDisclaimerHtml = '';
             if (studio.pricing.source) {
@@ -1574,7 +1583,7 @@ if ('serviceWorker' in navigator) {
                 } else if (state.dataLastUpdated) {
                     lastCheckedDate = formatDateStr(state.dataLastUpdated);
                 }
-                pricingDisclaimerHtml = t('pricing.prices_from') + ' <a href="' + escapeHtml(studio.pricing.source) + '" target="_blank" rel="noopener noreferrer" class="data-source-link">' + escapeHtml(sourceHost) + '</a>' +
+                pricingDisclaimerHtml = t('pricing.prices_from') + ' <a href="' + escapeHtml(studio.pricing.source) + '" target="_blank" rel="' + linkRel(studio.pricing.source) + '" class="data-source-link">' + escapeHtml(sourceHost) + '</a>' +
                     (lastCheckedDate ? ' \u2014 ' + t('sources.last_checked') + ': ' + lastCheckedDate : '');
             } else {
                 pricingDisclaimerHtml = t('pricing.disclaimer');
@@ -1595,17 +1604,17 @@ if ('serviceWorker' in navigator) {
         if (studio.website) {
             var websiteHost = '';
             try { websiteHost = new URL(studio.website).hostname.replace('www.', ''); } catch (e) { websiteHost = studio.website; }
-            html += '<div class="data-source-item"><span class="data-source-prefix">\u251c</span> ' + t('sources.website') + ': <a href="' + escapeHtml(studio.website) + '" target="_blank" rel="noopener noreferrer" class="data-source-link">' + escapeHtml(websiteHost) + ' \u2197</a></div>';
+            html += '<div class="data-source-item"><span class="data-source-prefix">\u251c</span> ' + t('sources.website') + ': <a href="' + escapeHtml(studio.website) + '" target="_blank" rel="' + linkRel(studio.website) + '" class="data-source-link">' + escapeHtml(websiteHost) + ' \u2197</a></div>';
         }
         if (studio.schedule_url && studio.schedule_url !== studio.website) {
             var schedHost = '';
             try { schedHost = new URL(studio.schedule_url).hostname.replace('www.', ''); } catch (e) { schedHost = studio.schedule_url; }
-            html += '<div class="data-source-item"><span class="data-source-prefix">\u251c</span> ' + t('sources.schedule') + ': <a href="' + escapeHtml(studio.schedule_url) + '" target="_blank" rel="noopener noreferrer" class="data-source-link">' + escapeHtml(schedHost) + ' \u2197</a></div>';
+            html += '<div class="data-source-item"><span class="data-source-prefix">\u251c</span> ' + t('sources.schedule') + ': <a href="' + escapeHtml(studio.schedule_url) + '" target="_blank" rel="' + linkRel(studio.schedule_url) + '" class="data-source-link">' + escapeHtml(schedHost) + ' \u2197</a></div>';
         }
         if (studio.pricing && studio.pricing.verified && studio.pricing.source) {
             var priceHost = '';
             try { priceHost = new URL(studio.pricing.source).hostname.replace('www.', ''); } catch (e) { priceHost = studio.pricing.source; }
-            html += '<div class="data-source-item"><span class="data-source-prefix">\u251c</span> ' + t('sources.pricing') + ': <a href="' + escapeHtml(studio.pricing.source) + '" target="_blank" rel="noopener noreferrer" class="data-source-link">' + escapeHtml(priceHost) + ' \u2197</a></div>';
+            html += '<div class="data-source-item"><span class="data-source-prefix">\u251c</span> ' + t('sources.pricing') + ': <a href="' + escapeHtml(studio.pricing.source) + '" target="_blank" rel="' + linkRel(studio.pricing.source) + '" class="data-source-link">' + escapeHtml(priceHost) + ' \u2197</a></div>';
         }
         var lastChecked = '';
         if (studio._meta && studio._meta.last_scraped) {
@@ -1620,12 +1629,12 @@ if ('serviceWorker' in navigator) {
 
         html += '<div class="modal-actions">';
         if (studio.website) {
-            html += '<a href="' + escapeHtml(studio.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-primary">' + t('modal.website') + '</a>';
+            html += '<a href="' + escapeHtml(studio.website) + '" target="_blank" rel="' + linkRel(studio.website) + '" class="btn btn-primary">' + t('modal.website') + '</a>';
         }
         if (studio.schedule_url) {
             var isEversports = studio.schedule_url.indexOf('eversports') !== -1;
             var schedBtnLabel = isEversports ? t('schedule.view_on_eversports') : t('schedule.official_schedule');
-            html += '<a href="' + escapeHtml(studio.schedule_url) + '" target="_blank" rel="noopener noreferrer" class="btn btn-schedule">' + schedBtnLabel + ' \u2192</a>';
+            html += '<a href="' + escapeHtml(studio.schedule_url) + '" target="_blank" rel="' + linkRel(studio.schedule_url) + '" class="btn btn-schedule">' + schedBtnLabel + ' \u2192</a>';
         }
         html += '</div>';
 
@@ -2091,7 +2100,7 @@ if ('serviceWorker' in navigator) {
                     var eLinkUrl = ems2.schedule_url || ems2.website;
                     emptyHtml += '<div class="more-studios-card">' +
                         '<span class="more-studios-name">' + escapeHtml(ems2.name) + '</span>' +
-                        '<a href="' + escapeHtml(eLinkUrl) + '" target="_blank" rel="noopener noreferrer" class="more-studios-btn">' +
+                        '<a href="' + escapeHtml(eLinkUrl) + '" target="_blank" rel="' + linkRel(eLinkUrl) + '" class="more-studios-btn">' +
                         t('schedule.view_schedule') + ' \u2192</a>' +
                         '</div>';
                 }
@@ -2167,7 +2176,7 @@ if ('serviceWorker' in navigator) {
             var studioRef = studioLookup[c.studio_id];
             var sourceLink = '';
             if (studioRef && studioRef.schedule_url) {
-                sourceLink = '<a href="' + escapeHtml(studioRef.schedule_url) + '" target="_blank" rel="noopener noreferrer" class="schedule-source-link" title="' + t('schedule.visit_website') + '"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>';
+                sourceLink = '<a href="' + escapeHtml(studioRef.schedule_url) + '" target="_blank" rel="' + linkRel(studioRef.schedule_url) + '" class="schedule-source-link" title="' + t('schedule.visit_website') + '"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>';
             }
 
             studiosWithSchedule[c.studio_id] = true;
@@ -2202,7 +2211,7 @@ if ('serviceWorker' in navigator) {
                 var linkUrl = ms2.schedule_url || ms2.website;
                 html += '<div class="more-studios-card">' +
                     '<span class="more-studios-name">' + escapeHtml(ms2.name) + '</span>' +
-                    '<a href="' + escapeHtml(linkUrl) + '" target="_blank" rel="noopener noreferrer" class="more-studios-btn">' +
+                    '<a href="' + escapeHtml(linkUrl) + '" target="_blank" rel="' + linkRel(linkUrl) + '" class="more-studios-btn">' +
                     t('schedule.view_schedule') + ' \u2192</a>' +
                     '</div>';
             }
@@ -2348,7 +2357,7 @@ if ('serviceWorker' in navigator) {
                 '<strong style="font-size:14px;">' + escapeHtml(studio.name) + '</strong><br>' +
                 '<span style="font-size:12px;color:#666;">' + escapeHtml(addressText) + '</span><br>' +
                 '<span style="font-size:11px;color:#6B5B95;">' + studio.styles.slice(0, 3).join(', ') + (studio.styles.length > 3 ? '...' : '') + '</span><br>' +
-                (studio.website ? '<a href="' + escapeHtml(studio.website) + '" target="_blank" rel="noopener noreferrer" style="font-size:12px;">Website &rarr;</a>' : '') +
+                (studio.website ? '<a href="' + escapeHtml(studio.website) + '" target="_blank" rel="' + linkRel(studio.website) + '" style="font-size:12px;">Website &rarr;</a>' : '') +
                 '</div>';
 
             L.marker([studio.lat, studio.lng], { icon: yogaIcon })

@@ -260,7 +260,9 @@ def generate_studio_cards(studios):
         contact_html = ""
         contact_parts = []
         if website:
-            contact_parts.append(f'<a href="{escape(website)}" target="_blank" rel="noopener noreferrer" class="studio-link">Website</a>')
+            booking_platforms = ['eversports.', 'classpass.', 'mindbody', 'momoyoga.', 'fitogram.']
+            rel_val = 'sponsored noopener noreferrer' if any(bp in website for bp in booking_platforms) else 'nofollow noopener noreferrer'
+            contact_parts.append(f'<a href="{escape(website)}" target="_blank" rel="{rel_val}" class="studio-link">Website</a>')
         if phone:
             contact_parts.append(f'<a href="tel:{escape(phone)}" class="studio-link">{escape(phone)}</a>')
         if email:
@@ -405,8 +407,64 @@ def generate_schema_local_business(studios):
         if hours:
             biz["openingHours"] = hours
 
+        pricing = studio.get("pricing", {})
+        if isinstance(pricing, dict) and pricing.get("single"):
+            single = pricing["single"]
+            cur = pricing.get("currency", "CHF")
+            biz["priceRange"] = f"{cur} {single} (Einzellektion)"
+
         businesses.append(biz)
     return businesses
+
+
+def generate_faq_schema(canton_name, canton_abbr, num_studios, num_classes, styles, cities, studios):
+    """Generate FAQPage schema with location-specific Q&A."""
+    # Compute price range from studios with pricing
+    prices = [s["pricing"]["single"] for s in studios
+              if isinstance(s.get("pricing"), dict) and s["pricing"].get("single")
+              and isinstance(s["pricing"]["single"], (int, float)) and s["pricing"]["single"] < 100]
+    price_info = ""
+    if prices:
+        price_info = f" Die Preise für eine Einzellektion liegen zwischen CHF {min(prices)} und CHF {max(prices)}."
+
+    top_styles = ", ".join(styles[:5]) if styles else "diverse Stile"
+    top_cities = ", ".join(cities[:4]) if cities else canton_name
+
+    faqs = [
+        {
+            "q": f"Wie viele Yoga-Studios gibt es im Kanton {canton_name}?",
+            "a": f"Im Kanton {canton_name} ({canton_abbr}) sind aktuell {num_studios} Yoga-Studios mit insgesamt {num_classes} wöchentlichen Kursen gelistet. Diese Daten werden wöchentlich aktualisiert."
+        },
+        {
+            "q": f"Welche Yoga-Stile werden in {canton_name} angeboten?",
+            "a": f"Die Studios in {canton_name} bieten unter anderem folgende Stile an: {top_styles}. Insgesamt sind {len(styles)} verschiedene Yoga-Stile vertreten."
+        },
+        {
+            "q": f"Was kostet eine Yoga-Stunde in {canton_name}?",
+            "a": f"Die Preise variieren je nach Studio und Angebot.{price_info} Viele Studios bieten Probeangebote, 10er-Karten und Monatsabos an."
+        },
+        {
+            "q": f"In welchen Städten gibt es Yoga-Studios im Kanton {canton_name}?",
+            "a": f"Yoga-Studios finden Sie u.a. in {top_cities}. Alle Standorte mit Adressen und Kontaktdaten sind auf dieser Seite aufgelistet."
+        }
+    ]
+
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": faq["q"],
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": faq["a"]
+                }
+            }
+            for faq in faqs
+        ]
+    }
+    return json.dumps(schema, ensure_ascii=False, indent=2)
 
 
 def generate_page(canton, studios, classes, all_cantons):
@@ -456,6 +514,7 @@ def generate_page(canton, studios, classes, all_cantons):
         ]
     }, ensure_ascii=False, indent=2)
 
+    from datetime import date
     schema_webpage = json.dumps({
         "@context": "https://schema.org",
         "@type": "WebPage",
@@ -464,6 +523,7 @@ def generate_page(canton, studios, classes, all_cantons):
         "url": f"{BASE_URL}/kanton/{canton_id}/",
         "isPartOf": {"@type": "WebSite", "url": f"{BASE_URL}/"},
         "inLanguage": "de",
+        "dateModified": date.today().isoformat(),
         "about": {
             "@type": "Thing",
             "name": "Yoga",
@@ -475,6 +535,8 @@ def generate_page(canton, studios, classes, all_cantons):
     local_biz_scripts = ""
     for biz in local_businesses:
         local_biz_scripts += f'\n    <script type="application/ld+json">\n    {json.dumps(biz, ensure_ascii=False, indent=2)}\n    </script>'
+
+    schema_faq = generate_faq_schema(canton_name, canton_abbr, num_studios, num_classes, all_styles, cities, studios)
 
     # Content sections
     studio_cards_html = generate_studio_cards(studios)
@@ -556,6 +618,10 @@ def generate_page(canton, studios, classes, all_cantons):
     {schema_itemlist}
     </script>
     <!-- Schema.org LocalBusiness (per studio) -->{local_biz_scripts}
+    <!-- Schema.org FAQPage -->
+    <script type="application/ld+json">
+    {schema_faq}
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧘</text></svg>">

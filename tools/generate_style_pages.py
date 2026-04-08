@@ -10,6 +10,7 @@ import os
 import re
 import html
 from collections import defaultdict
+from datetime import date
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
@@ -379,6 +380,8 @@ def generate_page_html(style, city, matching_studios, all_styles, all_cities):
         "url": "{BASE_URL}/"
       }},
       "inLanguage": "de",
+      "datePublished": "2026-03-21",
+      "dateModified": "{date.today().isoformat()}",
       "about": {{
         "@type": "Thing",
         "name": "{style_name}"
