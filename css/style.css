@@ -101,27 +101,7 @@ noscript a {
 }
 
 /* --- Anti-scraping: prevent text selection on data content --- */
-.studio-card,
-.studio-name,
-.studio-address,
-.studio-description,
-.studio-styles,
-.schedule-row,
-.guide-comparison-table,
-.guide-stats-grid {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-/* Allow selection on interactive elements */
-input, textarea, select, .search-input, .faq-answer, .guide-content p, .guide-content li {
-    -webkit-user-select: text;
-    -moz-user-select: text;
-    -ms-user-select: text;
-    user-select: text;
-}
+/* user-select: removed — preventing text selection violates WCAG accessibility */
 
 /* --- Core Web Vitals: content-visibility for below-the-fold sections --- */
 .map-section,
@@ -679,7 +659,7 @@ select {
     gap: var(--spacing-sm);
     overflow-x: auto;
     scrollbar-width: none;
-    -ms-overflow-style: none;
+    /* -ms-overflow-style removed: IE/Edge Legacy no longer supported */
     flex: 1;
     padding: 2px 0;
 }
@@ -1627,7 +1607,7 @@ select {
 /* --- Guide Comparison Table --- */
 .guide-comparison-table {
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    /* -webkit-overflow-scrolling removed: native since iOS 13 */
     margin-bottom: var(--spacing-xl);
     border-radius: var(--radius-md);
     border: 1px solid var(--color-border-light);
@@ -1877,7 +1857,8 @@ select {
     max-width: 320px;
 }
 
-.footer-links h3 {
+.footer-links h3,
+.footer-links .footer-heading {
     font-size: 14px;
     font-weight: 600;
     color: var(--color-text);
@@ -2683,7 +2664,7 @@ body.modal-open {
 .filters-quick,
 .guide-comparison-table,
 .schedule-list {
-    -webkit-overflow-scrolling: touch;
+    /* -webkit-overflow-scrolling removed: native since iOS 13 */
 }
 
 /* --- Ensure footer links are easily tappable on mobile --- */
@@ -2903,7 +2884,8 @@ textarea:focus:not(:focus-visible) {
         font-size: 11px;
     }
 
-    .footer-links h3 {
+    .footer-links h3,
+    .footer-links .footer-heading {
         font-size: 13px;
     }
 
@@ -3192,8 +3174,8 @@ body {
 .schedule-days {
     overflow-x: auto;
     scrollbar-width: none;
-    -ms-overflow-style: none;
-    -webkit-overflow-scrolling: touch;
+    /* -ms-overflow-style removed: IE/Edge Legacy no longer supported */
+    /* -webkit-overflow-scrolling removed: native since iOS 13 */
 }
 
 .schedule-days::-webkit-scrollbar {
@@ -3217,8 +3199,8 @@ body {
     .canton-cross-links {
         overflow-x: auto;
         scrollbar-width: none;
-        -ms-overflow-style: none;
-        -webkit-overflow-scrolling: touch;
+        /* -ms-overflow-style removed: IE/Edge Legacy no longer supported */
+        /* -webkit-overflow-scrolling removed: native since iOS 13 */
         flex-wrap: nowrap;
         padding-bottom: 4px;
     }
@@ -3324,7 +3306,7 @@ html {
 
 .comparison-table-wrapper {
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    /* -webkit-overflow-scrolling removed: native since iOS 13 */
     border-radius: 0;
     border: 3px solid #6B5B95;
     background: var(--surface);
@@ -3392,12 +3374,14 @@ html {
     background: rgba(212, 163, 115, 0.05);
 }
 
-.comparison-table tbody tr:hover {
-    background: rgba(107, 91, 149, 0.12) !important;
+.comparison-table tbody tr.comp-row-even:hover,
+.comparison-table tbody tr.comp-row-odd:hover {
+    background: rgba(107, 91, 149, 0.12);
 }
 
-[data-theme="dark"] .comparison-table tbody tr:hover {
-    background: rgba(212, 163, 115, 0.12) !important;
+[data-theme="dark"] .comparison-table tbody tr.comp-row-even:hover,
+[data-theme="dark"] .comparison-table tbody tr.comp-row-odd:hover {
+    background: rgba(212, 163, 115, 0.12);
 }
 
 .comp-studio {
@@ -3408,8 +3392,8 @@ html {
     font-size: 0.85rem;
 }
 
-.comp-name {
-    text-align: left !important;
+.comparison-table .comp-name {
+    text-align: left;
 }
 
 .comp-name strong {
@@ -3423,9 +3407,9 @@ html {
     font-weight: 400;
 }
 
-.comp-price {
+.comparison-table .comp-price {
     font-variant-numeric: tabular-nums;
-    text-align: right !important;
+    text-align: right;
     white-space: nowrap;
     font-weight: 500;
 }
@@ -3436,8 +3420,8 @@ html {
     font-weight: 700;
 }
 
-.comp-styles {
-    text-align: left !important;
+.comparison-table .comp-styles {
+    text-align: left;
     max-width: 160px;
 }
 

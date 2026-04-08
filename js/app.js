@@ -96,8 +96,10 @@ if ('serviceWorker' in navigator) {
             'feedback.message': 'Deine Nachricht',
             'feedback.send': 'Feedback senden',
             'feedback.thanks': 'Vielen Dank für dein Feedback! Wir werden es so schnell wie möglich berücksichtigen.',
+            'feedback.error': 'Fehler beim Senden. Bitte versuche es nochmal.',
             'feedback.name_placeholder': 'Dein Name',
             'feedback.message_placeholder': 'Schreib uns dein Feedback...',
+            'error.load_failed': 'Daten konnten nicht geladen werden. Bitte lade die Seite neu.',
             'geo.nearby': 'In der Nähe',
             'canton.select': 'Wähle deinen Kanton:',
             'canton.choose': 'Kanton wählen...',
@@ -216,8 +218,10 @@ if ('serviceWorker' in navigator) {
             'feedback.message': 'Your message',
             'feedback.send': 'Send feedback',
             'feedback.thanks': 'Thank you for your feedback! We will consider it as soon as possible.',
+            'feedback.error': 'Error sending feedback. Please try again.',
             'feedback.name_placeholder': 'Your name',
             'feedback.message_placeholder': 'Write your feedback...',
+            'error.load_failed': 'Data could not be loaded. Please reload the page.',
             'geo.nearby': 'Nearby',
             'canton.select': 'Choose your canton:',
             'canton.choose': 'Select canton...',
@@ -336,8 +340,10 @@ if ('serviceWorker' in navigator) {
             'feedback.message': 'Il tuo messaggio',
             'feedback.send': 'Invia feedback',
             'feedback.thanks': 'Grazie per il tuo feedback! Lo prenderemo in considerazione al pi\u00f9 presto.',
+            'feedback.error': 'Errore nell\'invio. Riprova.',
             'feedback.name_placeholder': 'Il tuo nome',
             'feedback.message_placeholder': 'Scrivi il tuo feedback...',
+            'error.load_failed': 'Impossibile caricare i dati. Ricarica la pagina.',
             'geo.nearby': 'Nelle vicinanze',
             'canton.select': 'Scegli il tuo cantone:',
             'canton.choose': 'Seleziona cantone...',
@@ -456,8 +462,10 @@ if ('serviceWorker' in navigator) {
             'feedback.message': 'Ton message',
             'feedback.send': 'Envoyer le feedback',
             'feedback.thanks': 'Merci pour ton feedback ! Nous le prendrons en compte d\u00e8s que possible.',
+            'feedback.error': 'Erreur lors de l\'envoi. Veuillez réessayer.',
             'feedback.name_placeholder': 'Ton nom',
             'feedback.message_placeholder': 'Écris-nous ton feedback...',
+            'error.load_failed': 'Les données n\'ont pas pu être chargées. Veuillez recharger la page.',
             'geo.nearby': 'À proximité',
             'canton.select': 'Choisis ton canton :',
             'canton.choose': 'Sélectionner un canton...',
@@ -553,9 +561,15 @@ if ('serviceWorker' in navigator) {
         // Reverse the string, then base64 decode
         var reversed = '';
         for (var i = enc.length - 1; i >= 0; i--) reversed += enc[i];
-        var decoded = atob(reversed);
-        // Handle UTF-8
-        try { return decodeURIComponent(escape(decoded)); } catch (e) { return decoded; }
+        var bytes = atob(reversed);
+        // Decode UTF-8 without deprecated escape()
+        try {
+            var pct = '';
+            for (var i = 0; i < bytes.length; i++) {
+                pct += '%' + ('00' + bytes.charCodeAt(i).toString(16)).slice(-2);
+            }
+            return decodeURIComponent(pct);
+        } catch (e) { return bytes; }
     }
 
     // --- Utility ---
@@ -890,10 +904,10 @@ if ('serviceWorker' in navigator) {
             html += '<td class="comp-name" data-label="Studio"><strong>' + escapeHtml(s.name) + '</strong>';
             if (addr) html += ' <span class="comp-city">(' + escapeHtml(addr) + ')</span>';
             html += '</td>';
-            html += '<td class="comp-price" data-label="' + lblSingle + '">' + (p.single ? '<strong>CHF ' + p.single + '</strong>' : '—') + '</td>';
-            html += '<td class="comp-price" data-label="' + lbl10 + '">' + (p.card_10 ? 'CHF ' + p.card_10 : '—') + '</td>';
-            html += '<td class="comp-price" data-label="' + lblMonthly + '">' + (p.monthly ? 'CHF ' + p.monthly : '—') + '</td>';
-            html += '<td class="comp-price" data-label="' + lblTrial + '">' + (p.trial !== undefined && p.trial !== null ? (p.trial === 0 ? 'Gratis' : 'CHF ' + p.trial) : '—') + '</td>';
+            html += '<td class="comp-price" data-label="' + lblSingle + '">' + (p.single ? '<strong>CHF ' + escapeHtml(String(p.single)) + '</strong>' : '—') + '</td>';
+            html += '<td class="comp-price" data-label="' + lbl10 + '">' + (p.card_10 ? 'CHF ' + escapeHtml(String(p.card_10)) : '—') + '</td>';
+            html += '<td class="comp-price" data-label="' + lblMonthly + '">' + (p.monthly ? 'CHF ' + escapeHtml(String(p.monthly)) : '—') + '</td>';
+            html += '<td class="comp-price" data-label="' + lblTrial + '">' + (p.trial !== undefined && p.trial !== null ? (p.trial === 0 ? 'Gratis' : 'CHF ' + escapeHtml(String(p.trial))) : '—') + '</td>';
             html += '<td class="comp-styles" data-label="' + lblStyles + '"><small>' + escapeHtml(styles) + '</small></td>';
             html += '<td class="comp-link" data-label="Link">';
             if (sourceUrl) {
@@ -1177,7 +1191,7 @@ if ('serviceWorker' in navigator) {
                     if (data2 && data2.studios) {
                         onStudiosLoaded(data2);
                     } else {
-                        showError('Daten konnten nicht geladen werden.');
+                        showError(t('error.load_failed') || 'Daten konnten nicht geladen werden. Bitte lade die Seite neu.');
                     }
                 });
             }
@@ -1567,10 +1581,10 @@ if ('serviceWorker' in navigator) {
             }
             html += '<div class="modal-section"><h3>' + pricingTitleHtml + '</h3>' +
                 '<table class="pricing-table">' +
-                '<tr><td>' + t('pricing.single') + '</td><td>' + cur + ' ' + studio.pricing.single + '</td></tr>' +
-                (studio.pricing.card_10 ? '<tr><td>' + t('pricing.card_10') + '</td><td>' + cur + ' ' + studio.pricing.card_10 + '</td></tr>' : '') +
-                (studio.pricing.monthly ? '<tr><td>' + t('pricing.monthly') + '</td><td>' + cur + ' ' + studio.pricing.monthly + '</td></tr>' : '') +
-                (studio.pricing.trial ? '<tr><td>' + t('pricing.trial') + '</td><td>' + cur + ' ' + studio.pricing.trial + '</td></tr>' : '') +
+                '<tr><td>' + t('pricing.single') + '</td><td>' + escapeHtml(cur + ' ' + studio.pricing.single) + '</td></tr>' +
+                (studio.pricing.card_10 ? '<tr><td>' + t('pricing.card_10') + '</td><td>' + escapeHtml(cur + ' ' + studio.pricing.card_10) + '</td></tr>' : '') +
+                (studio.pricing.monthly ? '<tr><td>' + t('pricing.monthly') + '</td><td>' + escapeHtml(cur + ' ' + studio.pricing.monthly) + '</td></tr>' : '') +
+                (studio.pricing.trial ? '<tr><td>' + t('pricing.trial') + '</td><td>' + escapeHtml(cur + ' ' + studio.pricing.trial) + '</td></tr>' : '') +
                 '</table>' +
                 '<p class="pricing-note">' + pricingDisclaimerHtml + '</p>' +
                 '</div>';
@@ -2146,7 +2160,7 @@ if ('serviceWorker' in navigator) {
 
             var classPricing = studioPricingMap[c.studio_id];
             var priceHtml = classPricing
-                ? '<span class="schedule-price-badge">' + (classPricing.currency || 'CHF') + ' ' + classPricing.single + '</span>'
+                ? '<span class="schedule-price-badge">' + escapeHtml((classPricing.currency || 'CHF') + ' ' + classPricing.single) + '</span>'
                 : '<span class="schedule-price-na">\u2014</span>';
 
             // Source link for studio
@@ -2504,6 +2518,12 @@ if ('serviceWorker' in navigator) {
             if (span) span.textContent = t('fav_only');
             favFilterBtn.setAttribute('aria-label', t('show_fav_only'));
         }
+        // Update lang toggle aria-label
+        var langBtn = $('langToggle');
+        if (langBtn) {
+            var langLabels = { de: 'Sprache wechseln', en: 'Change language', it: 'Cambia lingua', fr: 'Changer de langue' };
+            langBtn.setAttribute('aria-label', langLabels[state.lang] || langLabels.de);
+        }
         // Re-render schedule if a day is selected
         var activeDay = document.querySelector('#scheduleDays .day-btn.active');
         if (activeDay) renderSchedule(activeDay.getAttribute('data-day'));
@@ -2661,12 +2681,16 @@ if ('serviceWorker' in navigator) {
             viewGridBtn.addEventListener('click', function () {
                 gridEl.classList.remove('list-view');
                 viewGridBtn.classList.add('active');
+                viewGridBtn.setAttribute('aria-pressed', 'true');
                 viewListBtn.classList.remove('active');
+                viewListBtn.setAttribute('aria-pressed', 'false');
             });
             viewListBtn.addEventListener('click', function () {
                 gridEl.classList.add('list-view');
                 viewListBtn.classList.add('active');
+                viewListBtn.setAttribute('aria-pressed', 'true');
                 viewGridBtn.classList.remove('active');
+                viewGridBtn.setAttribute('aria-pressed', 'false');
             });
         }
 
@@ -2676,15 +2700,33 @@ if ('serviceWorker' in navigator) {
 
         // Feedback form - sends to Google Sheets
         var feedbackForm = $('feedbackForm');
+        var feedbackFormLoadTime = Date.now();
+        var feedbackSubmitted = false;
         if (feedbackForm) {
             feedbackForm.addEventListener('submit', function (e) {
                 e.preventDefault();
+
+                // Honeypot: bots fill hidden fields
+                var honeypot = $('feedbackWebsite');
+                if (honeypot && honeypot.value) return;
+
+                // Rate limit: only one submission per session
+                if (feedbackSubmitted) return;
+
+                // Timing: reject if submitted faster than 3 seconds (bot behavior)
+                if (Date.now() - feedbackFormLoadTime < 3000) return;
+
                 var type = $('feedbackType') ? $('feedbackType').value : '';
                 var name = $('feedbackName') ? $('feedbackName').value : '';
                 var message = $('feedbackMessage') ? $('feedbackMessage').value : '';
                 if (!message.trim()) return;
 
+                // Basic length validation
+                if (message.length > 5000 || (name && name.length > 200)) return;
+
+                feedbackSubmitted = true;
                 var btn = feedbackForm.querySelector('button[type="submit"]');
+                var btnOrigText = btn ? btn.textContent : '';
                 if (btn) { btn.disabled = true; btn.textContent = '...'; }
 
                 var xhr = new XMLHttpRequest();
@@ -2693,10 +2735,14 @@ if ('serviceWorker' in navigator) {
                 xhr.onload = function () {
                     feedbackForm.style.display = 'none';
                     var success = $('feedbackSuccess');
-                    if (success) success.style.display = '';
+                    if (success) {
+                        success.style.display = '';
+                        success.setAttribute('role', 'status');
+                    }
                 };
                 xhr.onerror = function () {
-                    if (btn) { btn.disabled = false; btn.textContent = t('feedback.send'); }
+                    feedbackSubmitted = false;
+                    if (btn) { btn.disabled = false; btn.textContent = btnOrigText || t('feedback.send'); }
                     alert(t('feedback.error') || 'Fehler beim Senden. Bitte versuche es nochmal.');
                 };
                 xhr.send(JSON.stringify({ type: type, name: name || 'Anonym', message: message }));
@@ -2953,11 +2999,13 @@ if ('serviceWorker' in navigator) {
     // Hook analytics into existing actions
 
     // Canton switch tracking
-    var origSwitchCanton = switchCanton;
-    switchCanton = function (cantonId, skipPush) {
-        analytics.trackCanton(cantonId);
-        origSwitchCanton(cantonId, skipPush);
-    };
+    if (typeof switchCanton === 'function') {
+        var origSwitchCanton = switchCanton;
+        switchCanton = function (cantonId, skipPush) {
+            analytics.trackCanton(cantonId);
+            origSwitchCanton(cantonId, skipPush);
+        };
+    }
     // Re-expose
     window.findNearestStudios = findNearestStudios;
     window.promptInstall = promptInstall;
