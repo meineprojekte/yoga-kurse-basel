@@ -64,36 +64,50 @@ CANTON_DESCRIPTIONS = {
         "Zürich ist das pulsierende Zentrum der Schweizer Yoga-Szene. Als grösste Stadt des Landes bietet der Kanton eine beeindruckende Vielfalt an Yoga-Studios — von etablierten Schulen in der Altstadt bis hin zu modernen Boutique-Studios im Kreis 4 und 5. Ob Power Vinyasa in einem Loft mit Blick über die Dächer, meditatives Yin Yoga am Zürichsee oder traditionelles Ashtanga in einem historischen Gebäude — hier findet jeder seinen Stil.",
         "Die Yoga-Community in Zürich ist international geprägt. Viele Studios bieten Kurse auf Deutsch und Englisch an, manche auch auf Französisch oder Spanisch. Besonders beliebt sind Lunch-Yoga-Klassen im Geschäftsviertel, After-Work-Sessions und Wochenend-Workshops mit internationalen Gastlehrern. Die Stadt zieht regelmässig bekannte Yoga-Lehrer aus aller Welt an.",
         "Neben der Stadt Zürich bieten auch Winterthur, Uster, Wädenswil und weitere Gemeinden im Kanton ein breites Yoga-Angebot. Besonders im Sommer locken Outdoor-Yoga-Events am See und in den Parks. Von Anfängerkursen bis zu Teacher Trainings — der Kanton Zürich lässt keine Wünsche offen.",
-        "Mit über 40 Studios und Hunderten von wöchentlichen Klassen ist Zürich der ideale Ort, um Yoga in all seinen Facetten zu erleben. Viele Studios bieten Drop-in-Klassen an, sodass auch Besucher und Durchreisende spontan auf die Matte können."
+        "Die beliebtesten Yoga-Stile in Zürich sind Vinyasa Flow, Hatha Yoga und Yin Yoga. Aber auch spezialisierte Richtungen wie Ashtanga in der Mysore-Tradition, Iyengar mit Fokus auf Alignment, Kundalini Yoga und Hot Yoga (Bikram) haben in Zürich eine treue Anhängerschaft. Mehrere Studios bieten zudem therapeutisches Yoga, Yoga für Schwangere und Yoga für Kinder an — das Angebot wächst stetig.",
+        "Wer zum ersten Mal ein Yoga-Studio in Zürich besucht, findet in den meisten Studios Probeabonnements oder vergünstigte Einstiegsangebote. Viele Studios haben offene Klassen ohne Voranmeldung (Drop-in), was den Einstieg besonders einfach macht. Die Preise für eine Einzellektion liegen je nach Studio zwischen CHF 25 und CHF 40. Zehnerkarten und Monatsabos bieten deutliche Ersparnisse für regelmässige Besucher.",
+        "Zürich hat sich auch als Standort für Yoga-Lehrerausbildungen (Teacher Training) etabliert. Mehrere Studios bieten 200-Stunden und 500-Stunden Yoga-Alliance-zertifizierte Ausbildungen an, die angehenden Lehrern eine fundierte Grundlage bieten. Internationale Lehrer kommen regelmässig für Workshops und Intensives in die Stadt.",
+        "Mit über 40 Studios und Hunderten von wöchentlichen Klassen ist Zürich der ideale Ort, um Yoga in all seinen Facetten zu erleben. Die kurzen Wege dank exzellentem öffentlichem Verkehr machen es leicht, verschiedene Studios und Stile auszuprobieren — ob in der Langstrasse, in Oerlikon oder am See."
     ],
     "bern": [
         "Die Bundesstadt Bern verbindet Geschichte mit einer lebendigen Yoga-Kultur. In der UNESCO-Welterbe-Altstadt und den umliegenden Quartieren finden sich zahlreiche Studios, die von traditionellem Hatha bis zu modernem Aerial Yoga alles anbieten. Die entspannte Atmosphäre der Stadt spiegelt sich in der Yoga-Szene wider — hier geht es weniger um Trends als um echte Praxis.",
         "Bern ist bekannt für seine starke Iyengar-Yoga-Tradition und eine wachsende Kundalini-Szene. Viele Studios legen Wert auf kleine Gruppen und persönliche Betreuung. Neben der Hauptstadt bieten auch Thun, Biel/Bienne, Burgdorf und Langenthal ein vielfältiges Angebot. Die zweisprachige Region (Deutsch/Französisch) macht das Angebot besonders zugänglich.",
-        "Besonders reizvoll ist Yoga in Bern durch die Nähe zur Natur. Yoga-Retreats im Berner Oberland, Meditationskurse mit Blick auf Eiger, Mönch und Jungfrau oder Yoga am Thunersee — die Region verbindet urbanes Angebot mit alpiner Ruhe. Der Kanton Bern ist ein perfekter Ort für alle, die Yoga und Natur verbinden möchten."
+        "Besonders reizvoll ist Yoga in Bern durch die Nähe zur Natur. Yoga-Retreats im Berner Oberland, Meditationskurse mit Blick auf Eiger, Mönch und Jungfrau oder Yoga am Thunersee — die Region verbindet urbanes Angebot mit alpiner Ruhe. Der Kanton Bern ist ein perfekter Ort für alle, die Yoga und Natur verbinden möchten.",
+        "Die Preise für Yoga-Kurse in Bern sind etwas günstiger als in Zürich und Genf. Eine Einzellektion kostet zwischen CHF 20 und CHF 35, und viele Studios bieten Einsteiger-Specials an — etwa eine Woche unlimitiert für CHF 30–50. Wer sich langfristig binden möchte, findet bei vielen Studios attraktive Monatsabos zwischen CHF 120 und CHF 200.",
+        "Anfänger finden in Bern ein besonders einladendes Umfeld. Die Berner Yogaszene legt grossen Wert auf Achtsamkeit und Qualität statt Grösse und Tempo. Viele Lehrer sind in der Kripalu-, Sivananda- oder Iyengar-Tradition ausgebildet und bieten einen präzisen, anatomisch fundierten Unterricht. Ob sanftes Restorative Yoga für Stressabbau oder kraftvolles Power Yoga für Fitness — Bern hat für jeden das passende Angebot."
     ],
     "luzern": [
         "Luzern, die Leuchtenstadt am Vierwaldstättersee, bietet eine wunderbar inspirierende Kulisse für Yoga. Die Kombination aus Seeblick, Bergpanorama und mittelalterlicher Altstadt schafft eine einzigartige Atmosphäre für die Praxis. Studios in der Nähe des Sees nutzen das natürliche Licht und die Ruhe des Wassers als Teil ihres Konzepts.",
         "Die Yoga-Szene in Luzern ist vielfältig und wächst stetig. Von dynamischem Vinyasa Flow über sanftes Yin Yoga bis zu therapeutischem Yoga — die Studios decken ein breites Spektrum ab. Besonders beliebt sind Yoga-Kurse für Berufstätige sowie Angebote für Senioren. Auch in Kriens, Emmen und Horw finden sich engagierte Yoga-Lehrer.",
         "Im Sommer locken Outdoor-Yoga-Sessions am See und auf den umliegenden Bergen. Luzern ist zudem ein beliebter Ausgangspunkt für Yoga-Retreats in der Zentralschweiz. Die Stadt verbindet städtisches Flair mit der Gelassenheit der Innerschweiz — ideal für eine bewusste Yoga-Praxis.",
-        "Mit rund 16 Studios bietet der Kanton Luzern ein kompaktes, aber hochwertiges Angebot. Viele Lehrer haben internationale Ausbildungen und bringen frische Impulse in die lokale Szene."
+        "Mit rund 16 Studios bietet der Kanton Luzern ein kompaktes, aber hochwertiges Angebot. Viele Lehrer haben internationale Ausbildungen und bringen frische Impulse in die lokale Szene.",
+        "Yoga-Anfänger in Luzern profitieren von der persönlichen Atmosphäre der Studios. Im Gegensatz zu den anonymen Grossstadt-Studios kennen die Lehrer hier ihre Schüler persönlich und können auf individuelle Bedürfnisse eingehen. Beliebte Einstiegsstile sind Hatha Yoga für eine solide Grundlage und Yin Yoga für tiefe Entspannung. Eine Einzellektion kostet in Luzern CHF 20 bis CHF 35.",
+        "Die kulturelle Vielfalt Luzerns — von der klassischen Musik (KKL) über die Fasnacht bis zur innovativen Kunstszene — bereichert auch das Yoga-Angebot. Einige Studios verbinden Yoga mit Klang (Sound Healing), Meditation oder Atemarbeit (Breathwork). Die Stadt bietet damit ein ganzheitliches Wellness-Angebot, das über die reine Yoga-Praxis hinausgeht."
     ],
     "basel-stadt": [
-        "Basel-Stadt ist die Wiege dieses Projekts und verfügt über eine der dichtesten Yoga-Landschaften der Schweiz. Auf kleinem Raum vereint der Stadtkanton über 35 Studios mit einem unglaublich vielfältigen Angebot. Vom eleganten Studio mit Rheinblick bis zum gemütlichen Quartier-Studio in Kleinbasel — die Yogaszene in Basel ist so bunt wie die Stadt selbst.",
+        "Basel-Stadt ist die Wiege dieses Projekts und verfügt über eine der dichtesten Yoga-Landschaften der Schweiz. Auf kleinem Raum vereint der Stadtkanton über 30 Studios mit einem unglaublich vielfältigen Angebot. Vom eleganten Studio mit Rheinblick bis zum gemütlichen Quartier-Studio in Kleinbasel — die Yogaszene in Basel ist so bunt wie die Stadt selbst.",
         "Besonders bemerkenswert ist die internationale Ausrichtung der Basler Yoga-Studios. Dank der Grenznähe zu Deutschland und Frankreich und der Präsenz internationaler Organisationen wie Novartis, Roche und der Universität Basel unterrichten viele Studios auf Deutsch und Englisch. Stile wie Jivamukti, Katonah und Embodied Flow, die man sonst nur in Grossstädten findet, sind hier vertreten.",
         "Die Basler Yoga-Community zeichnet sich durch Offenheit und Zusammenarbeit aus. Regelmässige Events wie Yoga am Rhein, Community-Klassen und Workshops bringen Praktizierende zusammen. Viele Studios bieten Drop-in-Klassen an, was Basel besonders gastfreundlich für Yoga-Reisende macht.",
-        "Von Ashtanga und Iyengar über Vinyasa und Hot Yoga bis zu Prenatal und Kinderyoga — Basel bietet für jede Lebensphase und jeden Geschmack das passende Angebot. Die kurzen Wege in der kompakten Stadt machen es leicht, verschiedene Studios und Stile auszuprobieren."
+        "Von Ashtanga und Iyengar über Vinyasa und Hot Yoga bis zu Prenatal und Kinderyoga — Basel bietet für jede Lebensphase und jeden Geschmack das passende Angebot. Die kurzen Wege in der kompakten Stadt machen es leicht, verschiedene Studios und Stile auszuprobieren.",
+        "Für Yoga-Anfänger in Basel empfiehlt es sich, zuerst einen Hatha- oder Vinyasa-Einsteigerkurs zu besuchen. Viele Studios wie B.Yoga, Yogawald und Lotos Yoga-Zentrum bieten spezielle Beginner-Klassen an, in denen Grundhaltungen (Asanas), Atemtechniken (Pranayama) und Entspannung geduldig erklärt werden. Die meisten Studios bieten eine kostenlose Probestunde oder ein vergünstigtes Intro-Paket an.",
+        "Die Preise für Yoga in Basel liegen bei CHF 20 bis 40 für eine Einzellektion. Wer regelmässig praktiziert, spart mit einer 10er-Karte (CHF 200–350) oder einem Monatsabo (CHF 150–250). Einige Studios wie das Yoga-Studio Breath in Kleinbasel bieten auch Solidaritätspreise an, damit Yoga für alle zugänglich bleibt. Buchungsplattformen wie Eversports vereinfachen die Reservierung.",
+        "Neben klassischen Indoor-Studios hat Basel auch eine lebendige Outdoor-Yoga-Szene. Im Sommer finden am Rheinufer, im Schützenmattpark und auf dem Münsterplatz regelmässig kostenlose oder kostengünstige Community-Yoga-Sessions statt. Die Rheinschwimmen-Kultur und die entspannte Atmosphäre machen Basel zu einem einzigartigen Ort, um Yoga im Freien zu erleben."
     ],
     "geneve": [
         "Genf, die internationale Stadt am Lac Léman, bietet eine kosmopolitische Yoga-Szene. Die Präsenz internationaler Organisationen wie der UNO, des IKRK und zahlreicher multinationaler Unternehmen hat eine vielfältige Community geschaffen, die sich auch in den Yoga-Studios widerspiegelt. Kurse werden häufig auf Französisch, Englisch und manchmal auch auf weiteren Sprachen angeboten.",
         "Die Yoga-Studios in Genf zeichnen sich durch hohe Qualität und internationale Standards aus. Von klassischem Hatha und Ashtanga über Bikram und Hot Yoga bis zu innovativen Formaten wie Yoga mit Live-Musik — das Angebot ist so vielfältig wie die Stadt selbst. Besonders beliebt sind Studios in den Quartieren Eaux-Vives, Plainpalais und Carouge.",
         "Am Ufer des Genfersees und in den Parks der Stadt finden im Sommer zahlreiche Outdoor-Yoga-Events statt. Genf ist zudem ein Zentrum für Yoga-Ausbildungen und Workshops mit internationalen Gastlehrern. Die Stadt verbindet französische Lebensart mit schweizerischer Präzision — eine perfekte Mischung für eine bewusste Yoga-Praxis.",
-        "Mit rund 19 Studios bietet Genf eines der grössten Yoga-Angebote der Romandie. Die Vielfalt der Stile und die Internationalität machen die Stadt zu einem besonderen Yoga-Standort in der Schweiz."
+        "Mit rund 18 Studios bietet Genf eines der grössten Yoga-Angebote der Romandie. Die Vielfalt der Stile und die Internationalität machen die Stadt zu einem besonderen Yoga-Standort in der Schweiz.",
+        "Für Anfänger in Genf gibt es zahlreiche Einstiegsmöglichkeiten. Die meisten Studios bieten Cours d'initiation oder Beginner-Serien an, die über 4–8 Wochen die Grundlagen von Hatha oder Vinyasa Yoga vermitteln. Preise für eine Einzellektion liegen bei CHF 25 bis CHF 40, Monatsabos bei CHF 150 bis CHF 250. Viele Studios akzeptieren Buchungen über ClassPass.",
+        "Genf zeichnet sich auch durch spezialisierte Angebote aus: Yoga für Diplomaten und internationale Fachkräfte, Yoga-Therapie bei chronischen Beschwerden, Prenatal- und Postpartum-Yoga sowie Yoga für Senioren. Mehrere Studios bieten zudem Corporate-Yoga-Programme an, die in den Büros internationaler Organisationen stattfinden. Die Stadt ist ein Schmelztiegel der Yoga-Traditionen."
     ],
     "vaud": [
         "Der Kanton Waadt mit seiner Hauptstadt Lausanne bietet eine lebendige Yoga-Szene am Genfersee. Lausanne, die olympische Hauptstadt, verbindet Sport und Wohlbefinden auf natürliche Weise. Die hügelige Topografie der Stadt und der Blick auf den See und die Alpen schaffen eine inspirierende Umgebung für die Yoga-Praxis.",
         "Neben Lausanne bieten auch Montreux, Vevey, Nyon und Morges ein breites Yoga-Angebot. Die Weinberge des Lavaux (UNESCO-Welterbe) bilden eine traumhafte Kulisse für Yoga-Retreats und Outdoor-Sessions. Die Szene ist mehrheitlich französischsprachig, viele Studios bieten aber auch Kurse auf Englisch an.",
         "Von klassischem Hatha über dynamisches Vinyasa bis zu Kundalini und Yoga Nidra — die Waadtländer Studios decken ein breites Spektrum ab. Besonders beliebt sind Yoga-Angebote in Kombination mit Wandern, Segeln oder Weinverkostungen. Der Kanton Waadt verbindet Genuss mit Achtsamkeit.",
-        "Mit 16 Studios ist das Angebot in der Waadt vielfältig und gut verteilt. Die Nähe zur Natur und die kulturelle Vielfalt der Region machen den Kanton zu einem attraktiven Yoga-Standort."
+        "Mit 16 Studios ist das Angebot in der Waadt vielfältig und gut verteilt. Die Nähe zur Natur und die kulturelle Vielfalt der Region machen den Kanton zu einem attraktiven Yoga-Standort.",
+        "Für Neueinsteiger bieten die Waadtländer Studios oft vergünstigte Einstiegswochen oder Schnupperstunden an. Die Preise liegen etwas unter dem Genfer Niveau: Eine Einzellektion kostet CHF 22 bis CHF 35, und Monatsabos sind ab CHF 120 erhältlich. Die entspannte, unkomplizierte Atmosphäre der Romande-Studios macht den Einstieg besonders angenehm.",
+        "Lausanne hat sich zudem als Zentrum für Yoga-Events in der Westschweiz etabliert. Das jährliche Yoga-Festival am Genfersee, Workshops mit internationalen Lehrern und Yoga-Brunches in den Cafés der Stadt ziehen Praktizierende aus der ganzen Region an. Der Kanton Waadt verbindet französische Gelassenheit mit schweizerischer Qualität — eine ideale Kombination für die Yoga-Praxis."
     ],
     "uri": [
         "Der Kanton Uri, im Herzen der Schweiz gelegen, bietet Yoga in einer atemberaubenden Berglandschaft. Obwohl der Kanton klein ist, hat sich hier eine engagierte Yoga-Community entwickelt. In Altdorf, dem Hauptort, finden Yoga-Begeisterte verschiedene Angebote von Hatha über Vinyasa bis zu Meditation und Breathwork.",
@@ -467,6 +481,89 @@ def generate_faq_schema(canton_name, canton_abbr, num_studios, num_classes, styl
     return json.dumps(schema, ensure_ascii=False, indent=2)
 
 
+DAY_TO_SCHEMA = {
+    "Monday": "https://schema.org/Monday",
+    "Tuesday": "https://schema.org/Tuesday",
+    "Wednesday": "https://schema.org/Wednesday",
+    "Thursday": "https://schema.org/Thursday",
+    "Friday": "https://schema.org/Friday",
+    "Saturday": "https://schema.org/Saturday",
+    "Sunday": "https://schema.org/Sunday"
+}
+
+
+def generate_event_schema(classes, studios, canton_name):
+    """Generate Event schema for recurring yoga classes (max 25 per canton)."""
+    if not classes:
+        return ""
+
+    studio_map = {s["id"]: s for s in studios}
+    events = []
+
+    # Pick up to 25 diverse classes (spread across studios)
+    selected = classes[:25]
+
+    for c in selected:
+        studio = studio_map.get(c.get("studio_id"), {})
+        addr = studio.get("addresses", [{}])[0] if studio.get("addresses") else {}
+        day = c.get("day", "Monday")
+
+        event = {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": c.get("class_name", "Yoga"),
+            "description": f'{c.get("class_name", "Yoga")} bei {c.get("studio_name", "")} in {canton_name}',
+            "eventSchedule": {
+                "@type": "Schedule",
+                "byDay": DAY_TO_SCHEMA.get(day, day),
+                "startTime": c.get("time_start", ""),
+                "endTime": c.get("time_end", ""),
+                "repeatFrequency": "P1W"
+            },
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "location": {
+                "@type": "Place",
+                "name": c.get("studio_name", ""),
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": addr.get("street", ""),
+                    "postalCode": addr.get("zip", ""),
+                    "addressLocality": addr.get("city", ""),
+                    "addressCountry": "CH"
+                }
+            },
+            "organizer": {
+                "@type": "Organization",
+                "name": c.get("studio_name", ""),
+            }
+        }
+
+        if studio.get("website"):
+            event["url"] = studio["website"]
+            event["organizer"]["url"] = studio["website"]
+
+        if c.get("teacher"):
+            event["performer"] = {"@type": "Person", "name": c["teacher"]}
+
+        pricing = studio.get("pricing", {})
+        if isinstance(pricing, dict) and pricing.get("single"):
+            event["offers"] = {
+                "@type": "Offer",
+                "price": str(pricing["single"]),
+                "priceCurrency": pricing.get("currency", "CHF"),
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2026-01-01"
+            }
+
+        events.append(event)
+
+    scripts = ""
+    for ev in events:
+        scripts += f'\n    <script type="application/ld+json">\n    {json.dumps(ev, ensure_ascii=False, indent=2)}\n    </script>'
+    return scripts
+
+
 def generate_page(canton, studios, classes, all_cantons):
     """Generate the full HTML page for a canton."""
     canton_id = canton["id"]
@@ -537,11 +634,55 @@ def generate_page(canton, studios, classes, all_cantons):
         local_biz_scripts += f'\n    <script type="application/ld+json">\n    {json.dumps(biz, ensure_ascii=False, indent=2)}\n    </script>'
 
     schema_faq = generate_faq_schema(canton_name, canton_abbr, num_studios, num_classes, all_styles, cities, studios)
+    event_scripts = generate_event_schema(classes, studios, canton_name)
 
     # Content sections
     studio_cards_html = generate_studio_cards(studios)
     schedule_html = generate_schedule_table(classes)
     other_cantons_html = generate_other_cantons_links(all_cantons, canton_id)
+
+    # Related content links — style pages + blog posts
+    city_slug_map = {
+        "Basel": "basel", "Zürich": "zuerich", "Bern": "bern",
+        "Genf": "genf", "Genève": "genf", "Lausanne": "lausanne", "Luzern": "luzern"
+    }
+    style_slug_map = {
+        "Vinyasa": "vinyasa", "Hatha": "hatha", "Yin": "yin", "Ashtanga": "ashtanga",
+        "Hot": "hot", "Aerial": "aerial", "Kundalini": "kundalini", "Power": "power",
+        "Restorative": "restorative", "Schwangerschaftsyoga": "schwangerschafts"
+    }
+    main_city = cities[0] if cities else ""
+    city_slug = city_slug_map.get(main_city, "")
+    style_links = []
+    if city_slug:
+        for style in all_styles[:6]:
+            slug = style_slug_map.get(style, "")
+            if slug:
+                style_links.append(f'<a href="../../yoga/{slug}-yoga-{city_slug}/">{escape(style)} Yoga {escape(main_city)}</a>')
+
+    blog_links = [
+        '<a href="../../blog/yoga-fuer-anfaenger/">Yoga für Anfänger — Der komplette Guide</a>',
+        '<a href="../../blog/yoga-stile-vergleich/">Alle Yoga-Stile im Vergleich</a>',
+        '<a href="../../blog/yoga-preise-schweiz-2026/">Yoga-Preise Schweiz 2026</a>',
+    ]
+    if canton_id == "basel-stadt" or canton_id == "basel-landschaft":
+        blog_links.insert(0, '<a href="../../blog/beste-yoga-studios-basel-2026/">Die 15 besten Yoga-Studios in Basel</a>')
+    elif canton_id == "zurich":
+        blog_links.insert(0, '<a href="../../blog/beste-yoga-studios-zuerich-2026/">Die besten Yoga-Studios in Zürich</a>')
+
+    related_html = ""
+    if style_links or blog_links:
+        items = ""
+        for sl in style_links:
+            items += f'<li>{sl}</li>\n'
+        for bl in blog_links:
+            items += f'<li>{bl}</li>\n'
+        related_html = f'''<section class="related-content">
+    <div class="canton-container">
+        <h2>Weiterführende Artikel</h2>
+        <ul class="related-links">{items}</ul>
+    </div>
+</section>'''
 
     # Description paragraphs
     desc_html = "\n".join(f'<p>{escape(p)}</p>' for p in desc_paragraphs)
@@ -622,14 +763,13 @@ def generate_page(canton, studios, classes, all_cantons):
     <script type="application/ld+json">
     {schema_faq}
     </script>
+    <!-- Schema.org Events (recurring yoga classes) -->{event_scripts}
 
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧘</text></svg>">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Fonts (self-hosted) -->
+    <link rel="stylesheet" href="../../css/fonts.css">
 
     <!-- Main site CSS -->
     <link rel="stylesheet" href="../../css/style.css">
@@ -840,6 +980,40 @@ def generate_page(canton, studios, classes, all_cantons):
             font-weight: 500;
             color: #6B5B95;
         }}
+        .related-content {{
+            padding: 40px 0;
+            border-top: 2px solid #E8E8E8;
+        }}
+        .related-content h2 {{
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.4rem;
+            color: #6B5B95;
+            margin-bottom: 16px;
+        }}
+        .related-links {{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }}
+        .related-links li {{
+            background: #F3F0F8;
+            border-radius: 8px;
+        }}
+        .related-links a {{
+            display: block;
+            padding: 8px 16px;
+            color: #6B5B95;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }}
+        .related-links a:hover {{
+            background: #6B5B95;
+            color: #fff;
+            border-radius: 8px;
+        }}
         .other-cantons {{
             background: #F8F6FC;
             padding: 48px 0;
@@ -1020,6 +1194,8 @@ def generate_page(canton, studios, classes, all_cantons):
             {schedule_html}
         </div>
     </section>
+
+    {related_html}
 
     <!-- Other Cantons -->
     <section class="other-cantons" id="andere-kantone">

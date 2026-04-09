@@ -417,9 +417,7 @@ def generate_page_html(style, city, matching_studios, all_styles, all_cities):
     }}
     </script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/fonts.css">
 
     <style>
         :root {{
@@ -760,6 +758,16 @@ def generate_page_html(style, city, matching_studios, all_styles, all_cities):
             <h2>{escape(style_name)} in anderen St&auml;dten</h2>
             <div class="related-grid">
                 {other_city_links}
+            </div>
+        </section>
+
+        <!-- Blog articles -->
+        <section class="section">
+            <h2>Lesenswerte Artikel</h2>
+            <div class="related-grid">
+                <a href="../../blog/yoga-stile-vergleich/" class="related-link">Yoga-Stile im Vergleich</a>
+                <a href="../../blog/yoga-fuer-anfaenger/" class="related-link">Yoga f&uuml;r Anf&auml;nger</a>
+                <a href="../../blog/yoga-preise-schweiz-2026/" class="related-link">Yoga-Preise Schweiz 2026</a>
             </div>
         </section>
 
