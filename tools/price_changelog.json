@@ -304,5 +304,32 @@
     "old_value": 80,
     "new_value": 159.0,
     "source": "https://www.planetyoga.ch/preise"
+  },
+  {
+    "timestamp": "2026-04-09T10:09:12.920613+00:00",
+    "studio_id": "fitnesspark",
+    "canton": "basel",
+    "field": "pricing.single",
+    "old_value": 39,
+    "new_value": 131.0,
+    "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/preise"
+  },
+  {
+    "timestamp": "2026-04-09T10:09:12.920658+00:00",
+    "studio_id": "fitnesspark",
+    "canton": "basel",
+    "field": "pricing.monthly",
+    "old_value": 112,
+    "new_value": 10.0,
+    "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/preise"
+  },
+  {
+    "timestamp": "2026-04-09T10:24:15.345644+00:00",
+    "studio_id": "om-shanti-luzern",
+    "canton": "luzern",
+    "field": "pricing.trial",
+    "old_value": 25,
+    "new_value": 27.0,
+    "source": "https://www.yogaschuleluzern.ch"
   }
 ]

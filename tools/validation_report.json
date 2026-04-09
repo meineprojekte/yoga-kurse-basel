@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-04-06T10:12:54.827211",
+  "timestamp": "2026-04-09T10:49:07.375401",
   "summary": {
     "total_studios": 266,
-    "total_active": 249,
-    "total_with_pricing": 186,
-    "total_classes": 2389,
+    "total_active": 246,
+    "total_with_pricing": 203,
+    "total_classes": 2536,
     "cantons_loaded": 26,
-    "anomalies_found": 67,
-    "warnings_found": 287,
+    "anomalies_found": 64,
+    "warnings_found": 284,
     "price_changes_found": 0,
     "first_run": false
   },
@@ -255,18 +255,6 @@
     {
       "type": "price_out_of_range",
       "severity": "high",
-      "studio_id": "sakinayoga-fribourg",
-      "studio_name": "Sakinayoga",
-      "canton": "fribourg",
-      "field": "pricing.trial",
-      "value": 100,
-      "expected_range": "0-80",
-      "source": "https://www.sakinayoga.com/tarifs",
-      "message": "trial CHF 100 ist ausserhalb des normalen Bereichs (CHF 0-80)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
       "studio_id": "yoga-pilateszentrale-olten",
       "studio_name": "Yoga & Pilateszentrale",
       "canton": "solothurn",
@@ -435,18 +423,6 @@
     {
       "type": "price_out_of_range",
       "severity": "high",
-      "studio_id": "power-yoga-st-gallen",
-      "studio_name": "Power Yoga St. Gallen",
-      "canton": "st-gallen",
-      "field": "pricing.card_10",
-      "value": 30,
-      "expected_range": "80-500",
-      "source": "https://www.poweryogastgallen.com/",
-      "message": "card_10 CHF 30 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
       "studio_id": "hot-yoga-4-u-rapperswil",
       "studio_name": "HOT YOGA 4 U",
       "canton": "st-gallen",
@@ -567,38 +543,14 @@
     {
       "type": "price_out_of_range",
       "severity": "high",
-      "studio_id": "yoga7-geneve",
-      "studio_name": "Yoga7",
+      "studio_id": "yoga-nest-carouge",
+      "studio_name": "Yoga Nest",
       "canton": "geneve",
-      "field": "pricing.card_10",
-      "value": 20,
-      "expected_range": "80-500",
-      "source": "https://yoga7.com/cours-hebdomadaires/",
-      "message": "card_10 CHF 20 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "yoga7-geneve",
-      "studio_name": "Yoga7",
-      "canton": "geneve",
-      "field": "pricing.monthly",
-      "value": 20,
-      "expected_range": "50-400",
-      "source": "https://yoga7.com/cours-hebdomadaires/",
-      "message": "monthly CHF 20 ist ausserhalb des normalen Bereichs (CHF 50-400)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "yoginimage-lancy",
-      "studio_name": "Yoginimage",
-      "canton": "geneve",
-      "field": "pricing.card_10",
-      "value": 20,
-      "expected_range": "80-500",
-      "source": "https://www.yoginimage.ch/planning-et-tarif",
-      "message": "card_10 CHF 20 ist ausserhalb des normalen Bereichs (CHF 80-500)"
+      "field": "pricing.single",
+      "value": 100,
+      "expected_range": "10-60",
+      "source": "https://yoga-nest.com",
+      "message": "single CHF 100 ist ausserhalb des normalen Bereichs (CHF 10-60)"
     },
     {
       "type": "price_out_of_range",
@@ -609,7 +561,7 @@
       "field": "pricing.monthly",
       "value": 450,
       "expected_range": "50-400",
-      "source": "https://www.kastudio.ch/membership",
+      "source": "https://kastudio.ch",
       "message": "monthly CHF 450 ist ausserhalb des normalen Bereichs (CHF 50-400)"
     },
     {
@@ -787,6 +739,16 @@
       "field": "time_end",
       "value": "12:30-1:30",
       "message": "Endzeit 1:30 liegt vor Startzeit 12:30 für Yogaworks - Saturday, March 21 – (Thursday)"
+    },
+    {
+      "type": "end_before_start",
+      "severity": "high",
+      "studio_id": "imyoga-lausanne",
+      "studio_name": "IMYOGA Lausanne",
+      "canton": "vaud",
+      "field": "time_end",
+      "value": "18:30-12:15",
+      "message": "Endzeit 12:15 liegt vor Startzeit 18:30 für IMYOGA Lausanne - Monday Yin Yoga Nidra -19:30Tuesday Vinyasa Yoga -13:15Tuesday Vinyasa Yoga -19:30Wednesday HIIT Circuit Training -19:15Wednesday Pilates -20:30Thursday Vinyasa Yoga -19:30Friday Pilates -19:00Saturday Yoga at the lake - at Guinguette de Vidy (in the summer)Sunday Vinyasa Yoga (Saturday)"
     }
   ],
   "warnings": [
@@ -1091,6 +1053,18 @@
       "message": "Probepreis CHF 50 ist höher als Einzeleintritt CHF 40.0"
     },
     {
+      "type": "trial_exceeds_single",
+      "severity": "medium",
+      "studio_id": "openyoga-bern",
+      "studio_name": "OpenYoga",
+      "canton": "bern",
+      "field": "pricing.trial vs pricing.single",
+      "value": 50,
+      "expected_range": "<= 30",
+      "source": "https://open-yoga.ch",
+      "message": "Probepreis CHF 50 ist höher als Einzeleintritt CHF 30"
+    },
+    {
       "type": "price_ratio_unusual",
       "severity": "medium",
       "studio_id": "yogabern-iyengar",
@@ -1225,6 +1199,18 @@
     {
       "type": "price_ratio_unusual",
       "severity": "medium",
+      "studio_id": "sevencolors-stans",
+      "studio_name": "sevencolors",
+      "canton": "nidwalden",
+      "field": "pricing.monthly / pricing.single",
+      "value": 3.75,
+      "expected_range": "4-10x",
+      "source": "https://sevencolors.ch",
+      "message": "Monatsabo/Einzeleintritt Verhältnis 3.8x (erwartet 4-10x)"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
       "studio_id": "yogaamfluss-ennenda",
       "studio_name": "YOGAamFLUSS",
       "canton": "glarus",
@@ -1245,18 +1231,6 @@
       "expected_range": "<= 20",
       "source": "https://www.yoga-am-fluss.ch/angebot/preise/",
       "message": "Probepreis CHF 28 ist höher als Einzeleintritt CHF 20"
-    },
-    {
-      "type": "trial_exceeds_single",
-      "severity": "medium",
-      "studio_id": "sakinayoga-fribourg",
-      "studio_name": "Sakinayoga",
-      "canton": "fribourg",
-      "field": "pricing.trial vs pricing.single",
-      "value": 100,
-      "expected_range": "<= 10",
-      "source": "https://www.sakinayoga.com/tarifs",
-      "message": "Probepreis CHF 100 ist höher als Einzeleintritt CHF 10"
     },
     {
       "type": "price_ratio_unusual",
@@ -1513,6 +1487,30 @@
     {
       "type": "trial_exceeds_single",
       "severity": "medium",
+      "studio_id": "bubble-yoga-st-gallen",
+      "studio_name": "Bubble Yoga",
+      "canton": "st-gallen",
+      "field": "pricing.trial vs pricing.single",
+      "value": 35,
+      "expected_range": "<= 28",
+      "source": "https://bubbleyoga.ch",
+      "message": "Probepreis CHF 35 ist höher als Einzeleintritt CHF 28"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "rach-yoga-st-gallen",
+      "studio_name": "RACH Yoga",
+      "canton": "st-gallen",
+      "field": "pricing.monthly / pricing.single",
+      "value": 3.14,
+      "expected_range": "4-10x",
+      "source": "https://rach-yoga.com",
+      "message": "Monatsabo/Einzeleintritt Verhältnis 3.1x (erwartet 4-10x)"
+    },
+    {
+      "type": "trial_exceeds_single",
+      "severity": "medium",
       "studio_id": "lineupyoga-st-gallen",
       "studio_name": "LINEUPYOGA",
       "canton": "st-gallen",
@@ -1533,18 +1531,6 @@
       "expected_range": "7-12x",
       "source": "https://123yoga.ch/courses/",
       "message": "10er-Karte/Einzeleintritt Verhältnis 6.7x (erwartet 7-12x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "power-yoga-st-gallen",
-      "studio_name": "Power Yoga St. Gallen",
-      "canton": "st-gallen",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 1.0,
-      "expected_range": "7-12x",
-      "source": "https://www.poweryogastgallen.com/",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 1.0x (erwartet 7-12x)"
     },
     {
       "type": "price_ratio_unusual",
@@ -1693,30 +1679,6 @@
     {
       "type": "price_ratio_unusual",
       "severity": "medium",
-      "studio_id": "yoga7-geneve",
-      "studio_name": "Yoga7",
-      "canton": "geneve",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 1.0,
-      "expected_range": "7-12x",
-      "source": "https://yoga7.com/cours-hebdomadaires/",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 1.0x (erwartet 7-12x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "yoga7-geneve",
-      "studio_name": "Yoga7",
-      "canton": "geneve",
-      "field": "pricing.monthly / pricing.single",
-      "value": 1.0,
-      "expected_range": "4-10x",
-      "source": "https://yoga7.com/cours-hebdomadaires/",
-      "message": "Monatsabo/Einzeleintritt Verhältnis 1.0x (erwartet 4-10x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
       "studio_id": "yoga-flame-geneve",
       "studio_name": "Yoga Flame Genève",
       "canton": "geneve",
@@ -1725,6 +1687,18 @@
       "expected_range": "7-12x",
       "source": "https://yogaflame.ch/classes/private-sessions/",
       "message": "10er-Karte/Einzeleintritt Verhältnis 6.0x (erwartet 7-12x)"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "swiss-pilates-yoga-geneve",
+      "studio_name": "Swiss Pilates and Yoga",
+      "canton": "geneve",
+      "field": "pricing.monthly / pricing.single",
+      "value": 3.68,
+      "expected_range": "4-10x",
+      "source": "https://swisspilatesandyoga.com",
+      "message": "Monatsabo/Einzeleintritt Verhältnis 3.7x (erwartet 4-10x)"
     },
     {
       "type": "price_ratio_unusual",
@@ -1819,26 +1793,6 @@
       "field": "duration",
       "value": "705 min",
       "message": "Kursdauer 705 Min. ausserhalb 30-180 Min. für Yoga in a Bag (Winterthur) - +41 44 203 66 96 (Sunday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "athayoga",
-      "studio_name": "ATHAYOGA",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "210 min",
-      "message": "Kursdauer 210 Min. ausserhalb 30-180 Min. für ATHAYOGA - YOGA & BRUNCH @ SAMIGO Rooftop (Monday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "athayoga",
-      "studio_name": "ATHAYOGA",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "210 min",
-      "message": "Kursdauer 210 Min. ausserhalb 30-180 Min. für ATHAYOGA - YOGA & BRUNCH @ SAMIGO Rooftop (Monday)"
     },
     {
       "type": "invalid_time",
@@ -1957,8 +1911,8 @@
       "studio_name": "ARANYA Studio",
       "canton": "zurich",
       "field": "duration",
-      "value": "660 min",
-      "message": "Kursdauer 660 Min. ausserhalb 30-180 Min. für ARANYA Studio - Ostermontag (Monday)"
+      "value": "270 min",
+      "message": "Kursdauer 270 Min. ausserhalb 30-180 Min. für ARANYA Studio - krnk (Thursday)"
     },
     {
       "type": "unusual_duration",
@@ -1967,8 +1921,98 @@
       "studio_name": "ARANYA Studio",
       "canton": "zurich",
       "field": "duration",
-      "value": "210 min",
-      "message": "Kursdauer 210 Min. ausserhalb 30-180 Min. für ARANYA Studio - reeny & nilay <3 (Tuesday)"
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Thursday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Friday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Friday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Sunday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Sunday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
     },
     {
       "type": "unusual_duration",
@@ -2038,67 +2082,7 @@
       "canton": "zurich",
       "field": "duration",
       "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Friday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Sunday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Thursday)"
     },
     {
       "type": "invalid_time",
@@ -2229,16 +2213,6 @@
       "field": "duration",
       "value": "300 min",
       "message": "Kursdauer 300 Min. ausserhalb 30-180 Min. für yoga room - Privat Breathwork Thun (Saturday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "canton": "bern",
-      "field": "duration",
-      "value": "195 min",
-      "message": "Kursdauer 195 Min. ausserhalb 30-180 Min. für yoga room - Hormonyoga Tanja Forcellini (Workshop) (Sunday)"
     },
     {
       "type": "unusual_duration",
@@ -2671,16 +2645,6 @@
       "message": "Kursdauer 210 Min. ausserhalb 30-180 Min. für Yoga Loft - SoulsinNature - Sessione privata di Breathwork Cureglia (Monday)"
     },
     {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "soulsinnature-yoga-loft",
-      "studio_name": "Yoga Loft - SoulsinNature",
-      "canton": "ticino",
-      "field": "duration",
-      "value": "210 min",
-      "message": "Kursdauer 210 Min. ausserhalb 30-180 Min. für Yoga Loft - SoulsinNature - Sessione privata di Breathwork Cureglia (Monday)"
-    },
-    {
       "type": "invalid_time",
       "severity": "medium",
       "studio_id": "tanja-iovene-yoga-bellinzona",
@@ -2749,36 +2713,6 @@
       "field": "time_start",
       "value": "4:00",
       "message": "Kurszeit 4:00 ausserhalb 05:00-23:00 für Yogaworks - Saturday, February 28 – (Thursday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "imyoga-lausanne",
-      "studio_name": "IMYOGA Lausanne",
-      "canton": "vaud",
-      "field": "time_start",
-      "value": "",
-      "message": "Ungültige Startzeit '' für IMYOGA Lausanne - INTERNATIONAL YOGA DAY \\u2013 June 21, 2026 at Blatterwiese (Chinawiese) by Lake Zurich (Thursday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "imyoga-lausanne",
-      "studio_name": "IMYOGA Lausanne",
-      "canton": "vaud",
-      "field": "time_start",
-      "value": "",
-      "message": "Ungültige Startzeit '' für IMYOGA Lausanne - Yin Yoga Nidra @Hotel Royal Savoy Lausanne (Wednesday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "banyann-yoga",
-      "studio_name": "Banyann Yoga",
-      "canton": "neuchatel",
-      "field": "duration",
-      "value": "1265 min",
-      "message": "Kursdauer 1265 Min. ausserhalb 30-180 Min. für Banyann Yoga - s) (Wednesday)"
     },
     {
       "type": "invalid_time",
@@ -2933,12 +2867,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yogalives",
+      "studio_id": "yogagold",
       "studio_name": "Yogalives",
       "canton": "zurich",
       "field": "address",
       "value": "giesshübelstrasse 62b, 8045",
-      "message": "Gleiche Adresse 'giesshübelstrasse 62b, 8045' bei Studios: yogalives, yogagold"
+      "message": "Gleiche Adresse 'giesshübelstrasse 62b, 8045' bei Studios: yogagold, yogalives"
     },
     {
       "type": "duplicate_coordinates",
@@ -3243,12 +3177,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yogagemeinschaft-luzern",
+      "studio_id": "yoga-mit-herz",
       "studio_name": "Yogagemeinschaft Luzern",
       "canton": "luzern",
       "field": "address",
       "value": "hirschengraben 13a, 6003",
-      "message": "Gleiche Adresse 'hirschengraben 13a, 6003' bei Studios: yogagemeinschaft-luzern, yoga-mit-herz"
+      "message": "Gleiche Adresse 'hirschengraben 13a, 6003' bei Studios: yoga-mit-herz, yogagemeinschaft-luzern"
     },
     {
       "type": "duplicate_address",
@@ -3393,22 +3327,22 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yogabloom",
+      "studio_id": "food-changes",
       "studio_name": "YOGABLOOM",
       "canton": "basel-stadt",
       "field": "address",
       "value": "pfluggasslein 1, 4001",
-      "message": "Gleiche Adresse 'pfluggasslein 1, 4001' bei Studios: yogabloom, food-changes"
+      "message": "Gleiche Adresse 'pfluggasslein 1, 4001' bei Studios: food-changes, yogabloom"
     },
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "ayalga",
+      "studio_id": "mysore-club",
       "studio_name": "Ayalga Yoga (Iyengar)",
       "canton": "basel-stadt",
       "field": "address",
       "value": "basel, ",
-      "message": "Gleiche Adresse 'basel, ' bei Studios: ayalga, klubschule, katerina-wen, kathrin-mathews, yoga-now, mysore-club"
+      "message": "Gleiche Adresse 'basel, ' bei Studios: mysore-club, katerina-wen, kathrin-mathews, klubschule, yoga-now, ayalga"
     },
     {
       "type": "duplicate_coordinates",
@@ -3743,12 +3677,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "ashtanga-yoga-lausanne",
+      "studio_id": "yogaworks-lausanne",
       "studio_name": "Yogaworks",
       "canton": "vaud",
       "field": "address",
       "value": "rue chaucrau 3-5, 1003",
-      "message": "Gleiche Adresse 'rue chaucrau 3-5, 1003' bei Studios: ashtanga-yoga-lausanne, yogaworks-lausanne"
+      "message": "Gleiche Adresse 'rue chaucrau 3-5, 1003' bei Studios: yogaworks-lausanne, ashtanga-yoga-lausanne"
     },
     {
       "type": "duplicate_coordinates",
