@@ -7,6 +7,10 @@ on:
     - cron: '0 6 * * 4'
   workflow_dispatch: # Allow manual trigger
 
+concurrency:
+  group: scrape-studios
+  cancel-in-progress: false
+
 permissions:
   contents: write
   issues: write
@@ -104,6 +108,7 @@ jobs:
           for a in highs:
               print(f\"- **{a.get('type', 'unknown')}** in {a.get('canton', '?')}: {a.get('message', 'no details')}\")
           ")
+          gh label create "data-quality" --description "Data quality issues" --color "D93F0B" 2>/dev/null || true
           gh issue create \
             --title "Data anomaly: ${{ steps.anomalies.outputs.high_count }} high-severity issue(s) detected" \
             --body "$(cat <<EOF

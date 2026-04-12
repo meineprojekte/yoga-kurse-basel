@@ -548,9 +548,16 @@ if ('serviceWorker' in navigator) {
         'uri': { studios: 'studios_uri.json', schedule: 'schedule_uri.json' }
     };
 
-    // Read saved preferences
+    // Read saved preferences — URL ?lang= parameter takes priority
     try {
-        state.lang = localStorage.getItem('yogabasel-lang') || 'de';
+        var urlParams = new URLSearchParams(window.location.search);
+        var urlLang = urlParams.get('lang');
+        if (urlLang && ['de', 'en', 'fr', 'it'].indexOf(urlLang) !== -1) {
+            state.lang = urlLang;
+            try { localStorage.setItem('yogabasel-lang', urlLang); } catch (e) {}
+        } else {
+            state.lang = localStorage.getItem('yogabasel-lang') || 'de';
+        }
         state.theme = localStorage.getItem('yogabasel-theme') || 'light';
     } catch (e) {
         // localStorage not available
