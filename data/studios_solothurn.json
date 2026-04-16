@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-13T11:36:39.698900+00:00",
+  "last_updated": "2026-04-16T11:12:20.257353+00:00",
   "studios": [
     {
       "id": "studio-30-solothurn",
@@ -41,9 +41,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-13T11:35:24.696752+00:00",
+      "last_scraped": "2026-04-16T11:11:01.485517+00:00",
       "_meta": {
-        "last_scraped": "2026-04-13T11:35:28.741885+00:00",
+        "last_scraped": "2026-04-16T11:11:06.605703+00:00",
         "last_price_check": "2026-03-26T22:00:56.036248+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -54,7 +54,7 @@
       "pricing": {
         "verified": false,
         "currency": "CHF",
-        "last_checked": "2026-04-13T11:35:28.741874+00:00"
+        "last_checked": "2026-04-16T11:11:06.605688+00:00"
       }
     },
     {
@@ -96,7 +96,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-13T11:35:28.947808+00:00",
+      "last_scraped": "2026-04-16T11:11:06.940476+00:00",
       "pricing": {
         "single": 20,
         "card_10": 200.0,
@@ -104,12 +104,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.sunshine-yoga.ch/preise",
-        "last_checked": "2026-04-13T11:35:32.404970+00:00",
+        "last_checked": "2026-04-16T11:11:13.839288+00:00",
         "abo": 145.0
       },
       "_meta": {
-        "last_scraped": "2026-04-13T11:35:32.405037+00:00",
-        "last_price_check": "2026-04-13T11:35:32.405037+00:00",
+        "last_scraped": "2026-04-16T11:11:13.839371+00:00",
+        "last_price_check": "2026-04-16T11:11:13.839371+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -159,13 +159,13 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.diamond-yoga.ch",
-        "last_checked": "2026-04-13T11:35:38.611122+00:00"
+        "last_checked": "2026-04-16T11:11:20.321489+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-13T11:35:33.058331+00:00",
+      "last_scraped": "2026-04-16T11:11:14.401599+00:00",
       "_meta": {
-        "last_scraped": "2026-04-13T11:35:38.611250+00:00",
-        "last_price_check": "2026-04-13T11:35:38.611250+00:00",
+        "last_scraped": "2026-04-16T11:11:20.321600+00:00",
+        "last_price_check": "2026-04-16T11:11:20.321600+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -209,9 +209,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-13T11:35:38.835340+00:00",
+      "last_scraped": "2026-04-16T11:11:20.618200+00:00",
       "_meta": {
-        "last_scraped": "2026-04-13T11:35:42.910776+00:00",
+        "last_scraped": "2026-04-16T11:11:26.485697+00:00",
         "last_price_check": "2026-03-26T22:00:58.593827+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -222,7 +222,7 @@
       "pricing": {
         "verified": false,
         "currency": "CHF",
-        "last_checked": "2026-04-13T11:35:42.910761+00:00"
+        "last_checked": "2026-04-16T11:11:26.485670+00:00"
       }
     },
     {
@@ -269,12 +269,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.om-yogaroom.ch/",
-        "last_checked": "2026-04-13T11:35:54.212003+00:00"
+        "last_checked": "2026-04-16T11:11:36.262865+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-13T11:35:43.817330+00:00",
+      "last_scraped": "2026-04-16T11:11:27.209346+00:00",
       "_meta": {
-        "last_scraped": "2026-04-13T11:35:54.212016+00:00",
+        "last_scraped": "2026-04-16T11:11:36.262885+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -321,9 +321,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-13T11:35:54.958048+00:00",
+      "last_scraped": "2026-04-16T11:11:36.963173+00:00",
       "_meta": {
-        "last_scraped": "2026-04-13T11:36:06.667797+00:00",
+        "last_scraped": "2026-04-16T11:11:47.529333+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -339,7 +339,7 @@
         "drop_in": 25,
         "verified": true,
         "source": "https://yogagarten.ch",
-        "last_checked": "2026-04-13T11:36:06.667785+00:00"
+        "last_checked": "2026-04-16T11:11:47.529318+00:00"
       }
     },
     {
@@ -392,12 +392,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://downtownyoga.ch/kurse-preise/",
-        "last_checked": "2026-04-13T11:36:32.777539+00:00"
+        "last_checked": "2026-04-16T11:12:12.366018+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-13T11:36:09.240131+00:00",
+      "last_scraped": "2026-04-16T11:11:49.269779+00:00",
       "_meta": {
-        "last_scraped": "2026-04-13T11:36:32.777552+00:00",
+        "last_scraped": "2026-04-16T11:12:12.366034+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -441,7 +441,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-04-13T11:36:39.698893+00:00",
+        "last_scraped": "2026-04-16T11:12:20.257343+00:00",
         "last_price_check": "2026-03-27T13:26:48.695465+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
@@ -457,7 +457,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.pilateszentrale.ch/preise",
-        "last_checked": "2026-04-13T11:36:39.698881+00:00"
+        "last_checked": "2026-04-16T11:12:20.257326+00:00"
       }
     }
   ]
