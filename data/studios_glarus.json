@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-16T11:02:30.246389+00:00",
+  "last_updated": "2026-04-20T11:26:31.310222+00:00",
   "studios": [
     {
       "id": "yogaamfluss-ennenda",
@@ -39,7 +39,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-04-16T11:02:13.940707+00:00",
+        "last_scraped": "2026-04-20T11:26:14.722713+00:00",
         "last_price_check": "2026-03-27T17:27:23.487438+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
@@ -56,7 +56,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yoga-am-fluss.ch/angebot/preise/",
-        "last_checked": "2026-04-16T11:02:13.940691+00:00"
+        "last_checked": "2026-04-20T11:26:14.722692+00:00"
       }
     },
     {
@@ -101,12 +101,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://12yoga.ch/",
-        "last_checked": "2026-04-16T11:02:26.671541+00:00"
+        "last_checked": "2026-04-20T11:26:27.886153+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-16T11:02:15.122864+00:00",
+      "last_scraped": "2026-04-20T11:26:15.733398+00:00",
       "_meta": {
-        "last_scraped": "2026-04-16T11:02:26.671560+00:00",
+        "last_scraped": "2026-04-20T11:26:27.886172+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -153,10 +153,14 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-04-16T11:02:30.246367+00:00",
+        "last_scraped": "2026-04-20T11:26:31.310206+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/s/VS9wgp"
+          },
           {
             "platform": "eversports",
             "url": "https://www.eversports.ch/s/VS9wgp"

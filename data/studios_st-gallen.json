@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-16T11:13:33.031559+00:00",
+  "last_updated": "2026-04-20T11:37:52.982127+00:00",
   "studios": [
     {
       "id": "yoga-in-der-altstadt-st-gallen",
@@ -41,7 +41,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-04-16T11:12:23.520181+00:00",
+        "last_scraped": "2026-04-20T11:36:35.822832+00:00",
         "last_price_check": "2026-03-27T13:27:10.931385+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
@@ -55,7 +55,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yoga-in-der-altstadt.ch/",
-        "last_checked": "2026-04-16T11:12:23.520161+00:00"
+        "last_checked": "2026-04-20T11:36:35.822814+00:00"
       },
       "sportsnow_slug": "yoga-in-der-altstadt-gmbh"
     },
@@ -99,9 +99,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-16T11:12:24.313259+00:00",
+      "last_scraped": "2026-04-20T11:36:37.074015+00:00",
       "_meta": {
-        "last_scraped": "2026-04-16T11:12:28.339827+00:00",
+        "last_scraped": "2026-04-20T11:36:41.183611+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -116,7 +116,7 @@
         "annual": 960,
         "verified": true,
         "source": "https://studio-8.ch",
-        "last_checked": "2026-04-16T11:12:28.339807+00:00",
+        "last_checked": "2026-04-20T11:36:41.183589+00:00",
         "notes": "60min CHF 22, 75min CHF 25. Trimester CHF 335. Annual CHF 960. Trial free."
       }
     },
@@ -161,7 +161,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-16T11:12:31.296950+00:00",
+      "last_scraped": "2026-04-20T11:36:44.116323+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -169,11 +169,7 @@
         },
         {
           "platform": "eversports",
-          "url": "https://www.eversports.ch/widget/w/Phxx7y?list=event"
-        },
-        {
-          "platform": "eversports",
-          "url": "https://www.eversports.ch/org/activity/2b67ba69-0266-4a07-8e69-53a6aa900d9a"
+          "url": "https://www.eversports.ch/org/activity/2a8e0976-3baf-4cee-a129-850ad9d615d1"
         },
         {
           "platform": "eversports",
@@ -181,11 +177,19 @@
         },
         {
           "platform": "eversports",
-          "url": "https://www.eversports.ch/org/activity/65730649-6007-46e1-9643-c183cb092e77"
+          "url": "https://www.eversports.ch/org/activity/9320aba0-9468-495f-bb39-a478a00b6163"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/org/activity/9320aba0-9468-495f-bb39-a478a00b6163"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/org/activity/5a441ac3-f8f3-4637-9bca-5a442c07f5e6"
         }
       ],
       "_meta": {
-        "last_scraped": "2026-04-16T11:12:42.138924+00:00",
+        "last_scraped": "2026-04-20T11:36:54.812710+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -195,11 +199,7 @@
           },
           {
             "platform": "eversports",
-            "url": "https://www.eversports.ch/widget/w/Phxx7y?list=event"
-          },
-          {
-            "platform": "eversports",
-            "url": "https://www.eversports.ch/org/activity/2b67ba69-0266-4a07-8e69-53a6aa900d9a"
+            "url": "https://www.eversports.ch/org/activity/2a8e0976-3baf-4cee-a129-850ad9d615d1"
           },
           {
             "platform": "eversports",
@@ -207,7 +207,15 @@
           },
           {
             "platform": "eversports",
-            "url": "https://www.eversports.ch/org/activity/65730649-6007-46e1-9643-c183cb092e77"
+            "url": "https://www.eversports.ch/org/activity/9320aba0-9468-495f-bb39-a478a00b6163"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/org/activity/9320aba0-9468-495f-bb39-a478a00b6163"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/org/activity/5a441ac3-f8f3-4637-9bca-5a442c07f5e6"
           }
         ],
         "source_urls": {
@@ -222,7 +230,7 @@
         "drop_in": 28,
         "verified": true,
         "source": "https://bubbleyoga.ch",
-        "last_checked": "2026-04-16T11:12:42.138904+00:00",
+        "last_checked": "2026-04-20T11:36:54.812691+00:00",
         "notes": "Welcome 2-for-1 CHF 35. Intro 1mo unlimited CHF 85."
       }
     },
@@ -267,223 +275,223 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-16T11:12:43.352038+00:00",
+      "last_scraped": "2026-04-20T11:36:55.953480+00:00",
       "detected_booking_links": [
         {
           "platform": "momoyoga",
-          "url": "mailto:?\n                               &SUBJECT=Vinyasa Hatha Mix ( EN ) - Zoom Live on 13 April at 10:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20834752/Vinyasa-Hatha-Mix-EN-Zoom-Live"
+          "url": "mailto:?\n                               &SUBJECT=Vinyasa Hatha Mix ( EN ) - Zoom Live on 20 April at 10:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20903126/Vinyasa-Hatha-Mix-EN-Zoom-Live"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20834752/Vinyasa-Hatha-Mix-EN-Zoom-Live"
+          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20903126/Vinyasa-Hatha-Mix-EN-Zoom-Live"
         },
         {
           "platform": "momoyoga",
-          "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20834752/Vinyasa-Hatha-Mix-EN-Zoom-Live"
+          "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20903126/Vinyasa-Hatha-Mix-EN-Zoom-Live"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20834752/Vinyasa-Hatha-Mix-EN-Zoom-Live"
+          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20903126/Vinyasa-Hatha-Mix-EN-Zoom-Live"
         },
         {
           "platform": "momoyoga",
-          "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20834752/Vinyasa-Hatha-Mix-EN-Zoom-Live"
+          "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20903126/Vinyasa-Hatha-Mix-EN-Zoom-Live"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.momoyoga.com/rachyoga/lesson/20834752/Vinyasa-Hatha-Mix-EN-Zoom-Live"
+          "url": "https://www.momoyoga.com/rachyoga/lesson/20903126/Vinyasa-Hatha-Mix-EN-Zoom-Live"
         },
         {
           "platform": "momoyoga",
-          "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 13 April at 13:30\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/22741943/Private-Yoga-Class"
+          "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 20 April at 13:30\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/22741944/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/22741943/Private-Yoga-Class"
+          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/22741944/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/22741943/Private-Yoga-Class"
+          "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/22741944/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/22741943/Private-Yoga-Class"
+          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/22741944/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/22741943/Private-Yoga-Class"
+          "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/22741944/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.momoyoga.com/rachyoga/lesson/22741943/Private-Yoga-Class"
+          "url": "https://www.momoyoga.com/rachyoga/lesson/22741944/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "mailto:?\n                               &SUBJECT=Private Prenatal Yoga on 14 April at 10:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20843144/Private-Prenatal-Yoga"
+          "url": "mailto:?\n                               &SUBJECT=Private Prenatal Yoga on 21 April at 10:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20912207/Private-Prenatal-Yoga"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20843144/Private-Prenatal-Yoga"
+          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20912207/Private-Prenatal-Yoga"
         },
         {
           "platform": "momoyoga",
-          "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20843144/Private-Prenatal-Yoga"
+          "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20912207/Private-Prenatal-Yoga"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20843144/Private-Prenatal-Yoga"
+          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20912207/Private-Prenatal-Yoga"
         },
         {
           "platform": "momoyoga",
-          "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20843144/Private-Prenatal-Yoga"
+          "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20912207/Private-Prenatal-Yoga"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.momoyoga.com/rachyoga/lesson/20843144/Private-Prenatal-Yoga"
+          "url": "https://www.momoyoga.com/rachyoga/lesson/20912207/Private-Prenatal-Yoga"
         },
         {
           "platform": "momoyoga",
-          "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 14 April at 12:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20842397/Private-Yoga-Class"
+          "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 21 April at 12:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20911462/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20842397/Private-Yoga-Class"
+          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20911462/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20842397/Private-Yoga-Class"
+          "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20911462/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20842397/Private-Yoga-Class"
+          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20911462/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20842397/Private-Yoga-Class"
+          "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20911462/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.momoyoga.com/rachyoga/lesson/20842397/Private-Yoga-Class"
+          "url": "https://www.momoyoga.com/rachyoga/lesson/20911462/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 15 April at 18:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20853475/Private-Yoga-Class"
+          "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 22 April at 18:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20921001/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20853475/Private-Yoga-Class"
+          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20921001/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20853475/Private-Yoga-Class"
+          "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20921001/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20853475/Private-Yoga-Class"
+          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20921001/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20853475/Private-Yoga-Class"
+          "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20921001/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.momoyoga.com/rachyoga/lesson/20853475/Private-Yoga-Class"
+          "url": "https://www.momoyoga.com/rachyoga/lesson/20921001/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "mailto:?\n                               &SUBJECT=Vinyasa Flow Yoga ( EN ) - Studio Group Class on 15 April at 19:45\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20854022/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
+          "url": "mailto:?\n                               &SUBJECT=Vinyasa Flow Yoga ( EN ) - Studio Group Class on 22 April at 19:45\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20921548/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20854022/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
+          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20921548/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20854022/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
+          "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20921548/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20854022/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
+          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20921548/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20854022/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
+          "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20921548/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.momoyoga.com/rachyoga/lesson/20854022/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
+          "url": "https://www.momoyoga.com/rachyoga/lesson/20921548/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 16 April at 11:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20869464/Private-Yoga-Class"
+          "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 23 April at 11:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20934999/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20869464/Private-Yoga-Class"
+          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20934999/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20869464/Private-Yoga-Class"
+          "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20934999/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20869464/Private-Yoga-Class"
+          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20934999/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20869464/Private-Yoga-Class"
+          "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20934999/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.momoyoga.com/rachyoga/lesson/20869464/Private-Yoga-Class"
+          "url": "https://www.momoyoga.com/rachyoga/lesson/20934999/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 17 April at 14:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20879852/Private-Yoga-Class"
+          "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 24 April at 14:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20946406/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20879852/Private-Yoga-Class"
+          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20946406/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20879852/Private-Yoga-Class"
+          "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20946406/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20879852/Private-Yoga-Class"
+          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20946406/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20879852/Private-Yoga-Class"
+          "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20946406/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.momoyoga.com/rachyoga/lesson/20879852/Private-Yoga-Class"
+          "url": "https://www.momoyoga.com/rachyoga/lesson/20946406/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 17 April at 18:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20880154/Private-Yoga-Class"
+          "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 24 April at 18:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20946707/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20880154/Private-Yoga-Class"
+          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20946707/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20880154/Private-Yoga-Class"
+          "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20946707/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20880154/Private-Yoga-Class"
+          "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20946707/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20880154/Private-Yoga-Class"
+          "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20946707/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
-          "url": "https://www.momoyoga.com/rachyoga/lesson/20880154/Private-Yoga-Class"
+          "url": "https://www.momoyoga.com/rachyoga/lesson/20946707/Private-Yoga-Class"
         },
         {
           "platform": "momoyoga",
@@ -491,225 +499,225 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-04-16T11:12:50.595965+00:00",
+        "last_scraped": "2026-04-20T11:37:03.354902+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
           {
             "platform": "momoyoga",
-            "url": "mailto:?\n                               &SUBJECT=Vinyasa Hatha Mix ( EN ) - Zoom Live on 13 April at 10:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20834752/Vinyasa-Hatha-Mix-EN-Zoom-Live"
+            "url": "mailto:?\n                               &SUBJECT=Vinyasa Hatha Mix ( EN ) - Zoom Live on 20 April at 10:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20903126/Vinyasa-Hatha-Mix-EN-Zoom-Live"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20834752/Vinyasa-Hatha-Mix-EN-Zoom-Live"
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20903126/Vinyasa-Hatha-Mix-EN-Zoom-Live"
           },
           {
             "platform": "momoyoga",
-            "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20834752/Vinyasa-Hatha-Mix-EN-Zoom-Live"
+            "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20903126/Vinyasa-Hatha-Mix-EN-Zoom-Live"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20834752/Vinyasa-Hatha-Mix-EN-Zoom-Live"
+            "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20903126/Vinyasa-Hatha-Mix-EN-Zoom-Live"
           },
           {
             "platform": "momoyoga",
-            "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20834752/Vinyasa-Hatha-Mix-EN-Zoom-Live"
+            "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20903126/Vinyasa-Hatha-Mix-EN-Zoom-Live"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.momoyoga.com/rachyoga/lesson/20834752/Vinyasa-Hatha-Mix-EN-Zoom-Live"
+            "url": "https://www.momoyoga.com/rachyoga/lesson/20903126/Vinyasa-Hatha-Mix-EN-Zoom-Live"
           },
           {
             "platform": "momoyoga",
-            "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 13 April at 13:30\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/22741943/Private-Yoga-Class"
+            "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 20 April at 13:30\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/22741944/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/22741943/Private-Yoga-Class"
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/22741944/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/22741943/Private-Yoga-Class"
+            "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/22741944/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/22741943/Private-Yoga-Class"
+            "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/22741944/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/22741943/Private-Yoga-Class"
+            "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/22741944/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.momoyoga.com/rachyoga/lesson/22741943/Private-Yoga-Class"
+            "url": "https://www.momoyoga.com/rachyoga/lesson/22741944/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "mailto:?\n                               &SUBJECT=Private Prenatal Yoga on 14 April at 10:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20843144/Private-Prenatal-Yoga"
+            "url": "mailto:?\n                               &SUBJECT=Private Prenatal Yoga on 21 April at 10:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20912207/Private-Prenatal-Yoga"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20843144/Private-Prenatal-Yoga"
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20912207/Private-Prenatal-Yoga"
           },
           {
             "platform": "momoyoga",
-            "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20843144/Private-Prenatal-Yoga"
+            "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20912207/Private-Prenatal-Yoga"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20843144/Private-Prenatal-Yoga"
+            "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20912207/Private-Prenatal-Yoga"
           },
           {
             "platform": "momoyoga",
-            "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20843144/Private-Prenatal-Yoga"
+            "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20912207/Private-Prenatal-Yoga"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.momoyoga.com/rachyoga/lesson/20843144/Private-Prenatal-Yoga"
+            "url": "https://www.momoyoga.com/rachyoga/lesson/20912207/Private-Prenatal-Yoga"
           },
           {
             "platform": "momoyoga",
-            "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 14 April at 12:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20842397/Private-Yoga-Class"
+            "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 21 April at 12:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20911462/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20842397/Private-Yoga-Class"
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20911462/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20842397/Private-Yoga-Class"
+            "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20911462/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20842397/Private-Yoga-Class"
+            "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20911462/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20842397/Private-Yoga-Class"
+            "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20911462/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.momoyoga.com/rachyoga/lesson/20842397/Private-Yoga-Class"
+            "url": "https://www.momoyoga.com/rachyoga/lesson/20911462/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 15 April at 18:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20853475/Private-Yoga-Class"
+            "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 22 April at 18:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20921001/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20853475/Private-Yoga-Class"
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20921001/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20853475/Private-Yoga-Class"
+            "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20921001/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20853475/Private-Yoga-Class"
+            "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20921001/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20853475/Private-Yoga-Class"
+            "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20921001/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.momoyoga.com/rachyoga/lesson/20853475/Private-Yoga-Class"
+            "url": "https://www.momoyoga.com/rachyoga/lesson/20921001/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "mailto:?\n                               &SUBJECT=Vinyasa Flow Yoga ( EN ) - Studio Group Class on 15 April at 19:45\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20854022/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
+            "url": "mailto:?\n                               &SUBJECT=Vinyasa Flow Yoga ( EN ) - Studio Group Class on 22 April at 19:45\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20921548/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20854022/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20921548/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20854022/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
+            "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20921548/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20854022/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
+            "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20921548/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20854022/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
+            "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20921548/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.momoyoga.com/rachyoga/lesson/20854022/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
+            "url": "https://www.momoyoga.com/rachyoga/lesson/20921548/Vinyasa-Flow-Yoga-EN-Studio-Group-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 16 April at 11:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20869464/Private-Yoga-Class"
+            "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 23 April at 11:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20934999/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20869464/Private-Yoga-Class"
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20934999/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20869464/Private-Yoga-Class"
+            "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20934999/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20869464/Private-Yoga-Class"
+            "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20934999/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20869464/Private-Yoga-Class"
+            "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20934999/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.momoyoga.com/rachyoga/lesson/20869464/Private-Yoga-Class"
+            "url": "https://www.momoyoga.com/rachyoga/lesson/20934999/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 17 April at 14:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20879852/Private-Yoga-Class"
+            "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 24 April at 14:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20946406/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20879852/Private-Yoga-Class"
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20946406/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20879852/Private-Yoga-Class"
+            "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20946406/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20879852/Private-Yoga-Class"
+            "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20946406/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20879852/Private-Yoga-Class"
+            "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20946406/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.momoyoga.com/rachyoga/lesson/20879852/Private-Yoga-Class"
+            "url": "https://www.momoyoga.com/rachyoga/lesson/20946406/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 17 April at 18:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20880154/Private-Yoga-Class"
+            "url": "mailto:?\n                               &SUBJECT=Private Yoga Class on 24 April at 18:00\n                               &BODY=https://www.momoyoga.com/rachyoga/lesson/20946707/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20880154/Private-Yoga-Class"
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.momoyoga.com/rachyoga/lesson/20946707/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20880154/Private-Yoga-Class"
+            "url": "https://twitter.com/intent/tweet?url=https://www.momoyoga.com/rachyoga/lesson/20946707/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20880154/Private-Yoga-Class"
+            "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.momoyoga.com/rachyoga/lesson/20946707/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20880154/Private-Yoga-Class"
+            "url": "https://api.whatsapp.com/send?text=https://www.momoyoga.com/rachyoga/lesson/20946707/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
-            "url": "https://www.momoyoga.com/rachyoga/lesson/20880154/Private-Yoga-Class"
+            "url": "https://www.momoyoga.com/rachyoga/lesson/20946707/Private-Yoga-Class"
           },
           {
             "platform": "momoyoga",
@@ -730,7 +738,7 @@
         "drop_in": 35,
         "verified": true,
         "source": "https://rach-yoga.com",
-        "last_checked": "2026-04-16T11:12:50.595944+00:00",
+        "last_checked": "2026-04-20T11:37:03.354881+00:00",
         "notes": "5er group CHF 130. Online single CHF 17. Private CHF 120."
       }
     },
@@ -775,12 +783,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.lineupyoga.ch/yoga-preise-abos",
-        "last_checked": "2026-04-16T11:12:55.600324+00:00"
+        "last_checked": "2026-04-20T11:37:08.365971+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-16T11:12:51.031861+00:00",
+      "last_scraped": "2026-04-20T11:37:03.748329+00:00",
       "_meta": {
-        "last_scraped": "2026-04-16T11:12:55.600344+00:00",
+        "last_scraped": "2026-04-20T11:37:08.365989+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -827,10 +835,10 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://123yoga.ch/courses/",
-        "last_checked": "2026-04-16T11:13:03.140170+00:00"
+        "last_checked": "2026-04-20T11:37:20.929161+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-16T11:12:56.864666+00:00",
+      "last_scraped": "2026-04-20T11:37:14.303885+00:00",
       "detected_booking_links": [
         {
           "platform": "fitogram",
@@ -838,7 +846,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-04-16T11:13:03.140185+00:00",
+        "last_scraped": "2026-04-20T11:37:20.929179+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -891,7 +899,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-04-16T11:13:10.900906+00:00",
+        "last_scraped": "2026-04-20T11:37:28.977370+00:00",
         "last_price_check": "2026-03-27T13:28:46.435700+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
@@ -907,7 +915,7 @@
         "drop_in": 30,
         "verified": true,
         "source": "https://poweryogastgallen.com",
-        "last_checked": "2026-04-16T11:13:10.900888+00:00"
+        "last_checked": "2026-04-20T11:37:28.977354+00:00"
       },
       "last_scraped": "2026-04-07T01:13:15.000839+00:00"
     },
@@ -955,12 +963,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogaloft.ch/angebot2.php",
-        "last_checked": "2026-04-16T11:13:20.424275+00:00"
+        "last_checked": "2026-04-20T11:37:38.967014+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-16T11:13:11.613999+00:00",
+      "last_scraped": "2026-04-20T11:37:29.992983+00:00",
       "_meta": {
-        "last_scraped": "2026-04-16T11:13:20.424289+00:00",
+        "last_scraped": "2026-04-20T11:37:38.967036+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -1012,13 +1020,13 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://hotyoga4u.ch",
-        "last_checked": "2026-04-16T11:13:33.031418+00:00"
+        "last_checked": "2026-04-20T11:37:52.982017+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-16T11:13:21.742403+00:00",
+      "last_scraped": "2026-04-20T11:37:40.665554+00:00",
       "_meta": {
-        "last_scraped": "2026-04-16T11:13:33.031545+00:00",
-        "last_price_check": "2026-04-16T11:13:33.031545+00:00",
+        "last_scraped": "2026-04-20T11:37:52.982116+00:00",
+        "last_price_check": "2026-04-20T11:37:52.982116+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
