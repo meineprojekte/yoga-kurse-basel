@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-04-23T11:44:22.308875",
+  "timestamp": "2026-04-27T09:02:41.083859",
   "summary": {
     "total_studios": 266,
     "total_active": 246,
     "total_with_pricing": 203,
-    "total_classes": 2554,
+    "total_classes": 2514,
     "cantons_loaded": 26,
-    "anomalies_found": 64,
-    "warnings_found": 281,
+    "anomalies_found": 63,
+    "warnings_found": 289,
     "price_changes_found": 0,
     "first_run": false
   },
@@ -250,18 +250,6 @@
       "value": 20,
       "expected_range": "80-500",
       "source": "https://www.yoga-am-fluss.ch/angebot/preise/",
-      "message": "card_10 CHF 20 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "yoga-pilateszentrale-olten",
-      "studio_name": "Yoga & Pilateszentrale",
-      "canton": "solothurn",
-      "field": "pricing.card_10",
-      "value": 20,
-      "expected_range": "80-500",
-      "source": "https://www.pilateszentrale.ch/preise",
       "message": "card_10 CHF 20 ist ausserhalb des normalen Bereichs (CHF 80-500)"
     },
     {
@@ -618,7 +606,7 @@
       "canton": "bern",
       "field": "time_end",
       "value": "18:30-18:30",
-      "message": "Endzeit 18:30 liegt vor Startzeit 18:30 für Hrdayam - Jivamukti Yoga Bern - 18:30BinhJivamukti Yoga OpenGerechtigkeitsgasse 77Jivamukti Yoga Open22 April 2026 • (Wednesday)"
+      "message": "Endzeit 18:30 liegt vor Startzeit 18:30 für Hrdayam - Jivamukti Yoga Bern - 18:30ClareJivamukti Yoga OpenGerechtigkeitsgasse 77Jivamukti Yoga Open29 April 2026 • (Wednesday)"
     },
     {
       "type": "end_before_start",
@@ -628,7 +616,7 @@
       "canton": "bern",
       "field": "time_end",
       "value": "10:00-10:00",
-      "message": "Endzeit 10:00 liegt vor Startzeit 10:00 für Hrdayam - Jivamukti Yoga Bern - 10:00ClareJivamukti Yoga OpenGerechtigkeitsgasse 77, 3011, Bern., HrdayamJivamukti Yoga Open26 April 2026 • (Sunday)"
+      "message": "Endzeit 10:00 liegt vor Startzeit 10:00 für Hrdayam - Jivamukti Yoga Bern - 10:00ClareJivamukti Yoga OpenGerechtigkeitsgasse 77, 3011, Bern., HrdayamJivamukti Yoga Open3 May 2026 • (Sunday)"
     },
     {
       "type": "end_before_start",
@@ -1239,10 +1227,10 @@
       "studio_name": "Yoga & Pilateszentrale",
       "canton": "solothurn",
       "field": "pricing.card_10 / pricing.single",
-      "value": 1.0,
+      "value": 14.5,
       "expected_range": "7-12x",
       "source": "https://www.pilateszentrale.ch/preise",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 1.0x (erwartet 7-12x)"
+      "message": "10er-Karte/Einzeleintritt Verhältnis 14.5x (erwartet 7-12x)"
     },
     {
       "type": "trial_exceeds_single",
@@ -1911,86 +1899,6 @@
       "studio_name": "ARANYA Studio",
       "canton": "zurich",
       "field": "duration",
-      "value": "240 min",
-      "message": "Kursdauer 240 Min. ausserhalb 30-180 Min. für ARANYA Studio - Admin (Thursday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Thursday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Thursday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Friday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Friday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "420 min",
-      "message": "Kursdauer 420 Min. ausserhalb 30-180 Min. für ARANYA Studio - Gapi Massage (Friday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Sunday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Sunday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
       "value": "15 min",
       "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
     },
@@ -2095,6 +2003,86 @@
       "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Thursday)"
     },
     {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "660 min",
+      "message": "Kursdauer 660 Min. ausserhalb 30-180 Min. für ARANYA Studio - Klettern Jura (Friday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Sunday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Sunday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
+    },
+    {
       "type": "invalid_time",
       "severity": "medium",
       "studio_id": "yoga-luna-bern",
@@ -2185,6 +2173,16 @@
       "message": "Ungültige Endzeit '' für Yoga & more - Vor  30 Ja ren wagte ic die ersten De nungen auf der Yogamatte. Als Le rperson im Zyklus 1 suc te ic (Tuesday)"
     },
     {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "yogveda-bern",
+      "studio_name": "Yogveda Yoga",
+      "canton": "bern",
+      "field": "duration",
+      "value": "300 min",
+      "message": "Kursdauer 300 Min. ausserhalb 30-180 Min. für Yogveda Yoga - Das Zwerchfell (Saturday)"
+    },
+    {
       "type": "invalid_time",
       "severity": "medium",
       "studio_id": "hrdayam-bern",
@@ -2192,7 +2190,7 @@
       "canton": "bern",
       "field": "time_end",
       "value": "",
-      "message": "Ungültige Endzeit '' für Hrdayam - Jivamukti Yoga Bern - 12:15BobeshYoga OpenGerechtigkeitsgasse 77Yoga Open23 April 2026 • (Thursday)"
+      "message": "Ungültige Endzeit '' für Hrdayam - Jivamukti Yoga Bern - 12:15BobeshYoga OpenGerechtigkeitsgasse 77Yoga Open30 April 2026 • (Thursday)"
     },
     {
       "type": "unusual_duration",
@@ -2202,7 +2200,7 @@
       "canton": "bern",
       "field": "duration",
       "value": "375 min",
-      "message": "Kursdauer 375 Min. ausserhalb 30-180 Min. für Hrdayam - Jivamukti Yoga Bern - 12:15MyrielleJivamukti Spiritual Warrior (75 Min.) mit Myri / CaroGerechtigkeitsgasse 77Jivamukti Spiritual Warrior (75 Min.) mit Myri / Caro24 April 2026 • (Friday)"
+      "message": "Kursdauer 375 Min. ausserhalb 30-180 Min. für Hrdayam - Jivamukti Yoga Bern - 12:15MyrielleJivamukti Spiritual Warrior (75 Min.) mit Myri / CaroGerechtigkeitsgasse 77Jivamukti Spiritual Warrior (75 Min.) mit Myri / Caro1 May 2026 • (Friday)"
     },
     {
       "type": "unusual_duration",
@@ -2212,7 +2210,17 @@
       "canton": "bern",
       "field": "duration",
       "value": "240 min",
-      "message": "Kursdauer 240 Min. ausserhalb 30-180 Min. für Hrdayam - Jivamukti Yoga Bern - 10:00BinhJivamukti Open XL (Price 90')Gerechtigkeitsgasse 77Jivamukti Open XL (Price 90')25 April 2026 • (Saturday)"
+      "message": "Kursdauer 240 Min. ausserhalb 30-180 Min. für Hrdayam - Jivamukti Yoga Bern - 10:00BinhJedi Yoga XL - BIPOC onlyGerechtigkeitsgasse 77Jedi Yoga XL - BIPOC only2 May 2026 • (Saturday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "yoga-room-koeniz-thun",
+      "studio_name": "yoga room",
+      "canton": "bern",
+      "field": "duration",
+      "value": "300 min",
+      "message": "Kursdauer 300 Min. ausserhalb 30-180 Min. für yoga room - Privat Breathwork Thun (Sunday)"
     },
     {
       "type": "unusual_duration",
@@ -2532,7 +2540,7 @@
       "canton": "st-gallen",
       "field": "duration",
       "value": "210 min",
-      "message": "Kursdauer 210 Min. ausserhalb 30-180 Min. für RACH Yoga - 10:00RachelVinyasa Hatha Mix ( EN ) - Zoom LiveOnlineVinyasa Hatha Mix ( EN ) - Zoom LiveOnline20 April 2026 • (Monday)"
+      "message": "Kursdauer 210 Min. ausserhalb 30-180 Min. für RACH Yoga - 10:00RachelVinyasa Hatha Mix ( EN ) - Zoom LiveOnlineVinyasa Hatha Mix ( EN ) - Zoom LiveOnline27 April 2026 • (Monday)"
     },
     {
       "type": "invalid_time",
@@ -2542,7 +2550,7 @@
       "canton": "st-gallen",
       "field": "time_end",
       "value": "",
-      "message": "Ungültige Endzeit '' für RACH Yoga - 11:00RachelPrivate Yoga ClassClient's HomePrivate Yoga Class23 April 2026 • (Thursday)"
+      "message": "Ungültige Endzeit '' für RACH Yoga - 11:00RachelPrivate Yoga ClassClient's HomePrivate Yoga Class30 April 2026 • (Thursday)"
     },
     {
       "type": "unusual_duration",
@@ -2552,7 +2560,7 @@
       "canton": "st-gallen",
       "field": "duration",
       "value": "240 min",
-      "message": "Kursdauer 240 Min. ausserhalb 30-180 Min. für RACH Yoga - 14:00RachelPrivate Yoga ClassClient's HomePrivate Yoga Class24 April 2026 • (Friday)"
+      "message": "Kursdauer 240 Min. ausserhalb 30-180 Min. für RACH Yoga - 14:00RachelPrivate Yoga ClassClient's HomePrivate Yoga Class1 May 2026 • (Friday)"
     },
     {
       "type": "invalid_time",
@@ -2603,6 +2611,66 @@
       "field": "time_end",
       "value": "",
       "message": "Ungültige Endzeit '' für Manta Yoga & Pilates - .2026Von  – ca.  Kosten 89.- inkl. Snacks, Getränke und Unterlagen. Anmeldung: 076 569 66 64 (Sunday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "co-yoga-space-aarau",
+      "studio_name": "co yoga space",
+      "canton": "aargau",
+      "field": "duration",
+      "value": "450 min",
+      "message": "Kursdauer 450 Min. ausserhalb 30-180 Min. für co yoga space - The Art of Rebozo work & Sobadas (Saturday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "co-yoga-space-aarau",
+      "studio_name": "co yoga space",
+      "canton": "aargau",
+      "field": "duration",
+      "value": "450 min",
+      "message": "Kursdauer 450 Min. ausserhalb 30-180 Min. für co yoga space - The Art of Rebozo work & Sobadas (Sunday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "co-yoga-space-aarau",
+      "studio_name": "co yoga space",
+      "canton": "aargau",
+      "field": "duration",
+      "value": "420 min",
+      "message": "Kursdauer 420 Min. ausserhalb 30-180 Min. für co yoga space - Raum nicht verfügbar (Friday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "co-yoga-space-aarau",
+      "studio_name": "co yoga space",
+      "canton": "aargau",
+      "field": "duration",
+      "value": "420 min",
+      "message": "Kursdauer 420 Min. ausserhalb 30-180 Min. für co yoga space - Raum nicht verfügbar (Friday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "co-yoga-space-aarau",
+      "studio_name": "co yoga space",
+      "canton": "aargau",
+      "field": "duration",
+      "value": "450 min",
+      "message": "Kursdauer 450 Min. ausserhalb 30-180 Min. für co yoga space - The Art of Rebozo work & Sobadas (Saturday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "co-yoga-space-aarau",
+      "studio_name": "co yoga space",
+      "canton": "aargau",
+      "field": "duration",
+      "value": "450 min",
+      "message": "Kursdauer 450 Min. ausserhalb 30-180 Min. für co yoga space - The Art of Rebozo work & Sobadas (Sunday)"
     },
     {
       "type": "unusual_duration",
@@ -3007,12 +3075,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "hot-yoga-bern",
+      "studio_id": "vayam-yoga-bern",
       "studio_name": "Hot Yoga Bern",
       "canton": "bern",
       "field": "address",
       "value": "bubenbergplatz 8, 3011",
-      "message": "Gleiche Adresse 'bubenbergplatz 8, 3011' bei Studios: hot-yoga-bern, hothaus-bern, vayam-yoga-bern"
+      "message": "Gleiche Adresse 'bubenbergplatz 8, 3011' bei Studios: vayam-yoga-bern, hot-yoga-bern, hothaus-bern"
     },
     {
       "type": "duplicate_coordinates",
@@ -3137,12 +3205,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "ashtanga-luzern",
+      "studio_id": "yoga-mit-herz",
       "studio_name": "Ashtanga Yoga Luzern",
       "canton": "luzern",
       "field": "address",
       "value": "weggisgasse 31, 6004",
-      "message": "Gleiche Adresse 'weggisgasse 31, 6004' bei Studios: ashtanga-luzern, yoga-mit-herz"
+      "message": "Gleiche Adresse 'weggisgasse 31, 6004' bei Studios: yoga-mit-herz, ashtanga-luzern"
     },
     {
       "type": "duplicate_address",
@@ -3297,22 +3365,22 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "food-changes",
+      "studio_id": "yogabloom",
       "studio_name": "YOGABLOOM",
       "canton": "basel-stadt",
       "field": "address",
       "value": "pfluggasslein 1, 4001",
-      "message": "Gleiche Adresse 'pfluggasslein 1, 4001' bei Studios: food-changes, yogabloom"
+      "message": "Gleiche Adresse 'pfluggasslein 1, 4001' bei Studios: yogabloom, food-changes"
     },
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "ayalga",
+      "studio_id": "kathrin-mathews",
       "studio_name": "Ayalga Yoga (Iyengar)",
       "canton": "basel-stadt",
       "field": "address",
       "value": "basel, ",
-      "message": "Gleiche Adresse 'basel, ' bei Studios: ayalga, mysore-club, yoga-now, kathrin-mathews, katerina-wen, klubschule"
+      "message": "Gleiche Adresse 'basel, ' bei Studios: kathrin-mathews, yoga-now, ayalga, katerina-wen, mysore-club, klubschule"
     },
     {
       "type": "duplicate_coordinates",
@@ -3587,12 +3655,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yogaplaza-davos",
+      "studio_id": "flux2motus-davos",
       "studio_name": "flux2motus - Yoga & Massage",
       "canton": "graubuenden",
       "field": "address",
       "value": "mattastrasse 6, 7270",
-      "message": "Gleiche Adresse 'mattastrasse 6, 7270' bei Studios: yogaplaza-davos, flux2motus-davos"
+      "message": "Gleiche Adresse 'mattastrasse 6, 7270' bei Studios: flux2motus-davos, yogaplaza-davos"
     },
     {
       "type": "duplicate_coordinates",
@@ -3647,12 +3715,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "ashtanga-yoga-lausanne",
+      "studio_id": "yogaworks-lausanne",
       "studio_name": "Yogaworks",
       "canton": "vaud",
       "field": "address",
       "value": "rue chaucrau 3-5, 1003",
-      "message": "Gleiche Adresse 'rue chaucrau 3-5, 1003' bei Studios: ashtanga-yoga-lausanne, yogaworks-lausanne"
+      "message": "Gleiche Adresse 'rue chaucrau 3-5, 1003' bei Studios: yogaworks-lausanne, ashtanga-yoga-lausanne"
     },
     {
       "type": "duplicate_coordinates",

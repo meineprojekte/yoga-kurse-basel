@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-23T11:35:19.083445+00:00",
+  "last_updated": "2026-04-27T08:53:51.123606+00:00",
   "studios": [
     {
       "id": "ooom-lausanne",
@@ -48,12 +48,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://ooom.ch/tarifs/",
-        "last_checked": "2026-04-23T11:31:21.486256+00:00"
+        "last_checked": "2026-04-27T08:48:59.205431+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-23T11:31:03.816327+00:00",
+      "last_scraped": "2026-04-27T08:48:40.487036+00:00",
       "_meta": {
-        "last_scraped": "2026-04-23T11:31:21.486275+00:00",
+        "last_scraped": "2026-04-27T08:48:59.205450+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -127,11 +127,11 @@
         "drop_in": 30,
         "verified": true,
         "source": "https://nuevalunayoga.ch",
-        "last_checked": "2026-04-23T11:32:00.225885+00:00",
+        "last_checked": "2026-04-27T08:49:37.130353+00:00",
         "notes": "5-pack CHF 140. 20-pack CHF 480. Unlimited 3mo CHF 450, 6mo CHF 840."
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-23T11:31:24.870150+00:00",
+      "last_scraped": "2026-04-27T08:49:02.536061+00:00",
       "detected_booking_links": [
         {
           "platform": "mindbody",
@@ -139,7 +139,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-04-23T11:32:00.225898+00:00",
+        "last_scraped": "2026-04-27T08:49:37.130370+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -204,9 +204,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-23T11:32:01.279387+00:00",
+      "last_scraped": "2026-04-27T08:49:37.537205+00:00",
       "_meta": {
-        "last_scraped": "2026-04-23T11:32:06.388744+00:00",
+        "last_scraped": "2026-04-27T08:49:40.912700+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -262,12 +262,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://yogaworks-lausanne.ch/en/prices/",
-        "last_checked": "2026-04-23T11:32:42.203781+00:00"
+        "last_checked": "2026-04-27T08:51:12.668709+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-23T11:32:09.293133+00:00",
+      "last_scraped": "2026-04-27T08:49:48.719217+00:00",
       "_meta": {
-        "last_scraped": "2026-04-23T11:32:42.203801+00:00",
+        "last_scraped": "2026-04-27T08:51:12.668728+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -327,7 +327,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-04-23T11:32:44.897448+00:00",
+        "last_scraped": "2026-04-27T08:51:15.254736+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -347,7 +347,7 @@
         "drop_in": 40,
         "verified": true,
         "source": "https://yogaflame.ch/",
-        "last_checked": "2026-04-23T11:32:44.897433+00:00",
+        "last_checked": "2026-04-27T08:51:15.254725+00:00",
         "notes": "15% discount for students/seniors/disability"
       }
     },
@@ -452,12 +452,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://myogastudio.ch/schedule-of-classes/classes-and-prices/",
-        "last_checked": "2026-04-23T11:33:12.129127+00:00"
+        "last_checked": "2026-04-27T08:51:39.156751+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-23T11:32:47.621503+00:00",
+      "last_scraped": "2026-04-27T08:51:17.156991+00:00",
       "_meta": {
-        "last_scraped": "2026-04-23T11:33:12.129147+00:00",
+        "last_scraped": "2026-04-27T08:51:39.156769+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -516,7 +516,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-04-23T11:33:16.545629+00:00",
+        "last_scraped": "2026-04-27T08:51:43.735922+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [],
@@ -529,7 +529,7 @@
         "currency": "CHF",
         "verified": false,
         "source": "https://www.ashtanga-yoga-lausanne.com/tarifs-cours-yoga-lausanne",
-        "last_checked": "2026-04-23T11:33:16.545608+00:00",
+        "last_checked": "2026-04-27T08:51:43.735905+00:00",
         "notes": "Subscription tiers: CHF 260, 490, 940, 1800"
       },
       "last_scraped": "2026-04-06T16:37:02.969734+00:00"
@@ -576,9 +576,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-23T11:33:17.103285+00:00",
+      "last_scraped": "2026-04-27T08:51:44.378036+00:00",
       "_meta": {
-        "last_scraped": "2026-04-23T11:33:22.128343+00:00",
+        "last_scraped": "2026-04-27T08:51:49.699386+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -595,7 +595,7 @@
         "drop_in": 35,
         "verified": true,
         "source": "https://imyoga.ch",
-        "last_checked": "2026-04-23T11:33:22.128325+00:00"
+        "last_checked": "2026-04-27T08:51:49.699372+00:00"
       }
     },
     {
@@ -638,9 +638,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-23T11:33:30.060274+00:00",
+      "last_scraped": "2026-04-27T08:51:56.685305+00:00",
       "_meta": {
-        "last_scraped": "2026-04-23T11:33:55.744310+00:00",
+        "last_scraped": "2026-04-27T08:52:31.281272+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -656,7 +656,7 @@
         "ten_pack": 350,
         "verified": true,
         "source": "https://vivre-le-yoga.ch",
-        "last_checked": "2026-04-23T11:33:55.744291+00:00",
+        "last_checked": "2026-04-27T08:52:31.281254+00:00",
         "notes": "1x/wk 12 weeks CHF 360. 2x/wk CHF 540. Online 10-pack CHF 230. Drop-in online CHF 25."
       }
     },
@@ -716,12 +716,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://yogamoves.blueleaf.ch/en/subscriptions/",
-        "last_checked": "2026-04-23T11:34:04.434138+00:00"
+        "last_checked": "2026-04-27T08:52:39.781322+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-23T11:33:57.154356+00:00",
+      "last_scraped": "2026-04-27T08:52:32.742161+00:00",
       "_meta": {
-        "last_scraped": "2026-04-23T11:34:04.434157+00:00",
+        "last_scraped": "2026-04-27T08:52:39.781335+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -787,13 +787,13 @@
         "trial": 20,
         "verified": true,
         "source": "https://yogacenter.ch",
-        "last_checked": "2026-04-23T11:34:49.342829+00:00",
+        "last_checked": "2026-04-27T08:53:25.474077+00:00",
         "notes": "12-pack CHF 350, 24-pack CHF 595, 36-pack CHF 720."
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-23T11:34:08.044528+00:00",
+      "last_scraped": "2026-04-27T08:52:46.826970+00:00",
       "_meta": {
-        "last_scraped": "2026-04-23T11:34:49.342845+00:00",
+        "last_scraped": "2026-04-27T08:53:25.474091+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -888,7 +888,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-04-23T11:34:53.711451+00:00",
+        "last_scraped": "2026-04-27T08:53:29.247440+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [],
@@ -943,9 +943,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-23T11:34:54.977357+00:00",
+      "last_scraped": "2026-04-27T08:53:29.433462+00:00",
       "_meta": {
-        "last_scraped": "2026-04-23T11:34:59.446797+00:00",
+        "last_scraped": "2026-04-27T08:53:33.013722+00:00",
         "last_price_check": "2026-03-26T22:36:01.433450+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -960,7 +960,7 @@
         "drop_in": 35,
         "verified": true,
         "source": "https://sundorashala.com",
-        "last_checked": "2026-04-23T11:34:59.446780+00:00"
+        "last_checked": "2026-04-27T08:53:33.013707+00:00"
       }
     },
     {
@@ -1005,12 +1005,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogapourtous-nyon.ch/tarifs/",
-        "last_checked": "2026-04-23T11:35:19.083416+00:00"
+        "last_checked": "2026-04-27T08:53:51.123578+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-23T11:35:01.487245+00:00",
+      "last_scraped": "2026-04-27T08:53:34.882760+00:00",
       "_meta": {
-        "last_scraped": "2026-04-23T11:35:19.083435+00:00",
+        "last_scraped": "2026-04-27T08:53:51.123596+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],

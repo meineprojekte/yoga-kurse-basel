@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-23T11:15:09.800675+00:00",
+  "last_updated": "2026-04-27T08:30:56.165094+00:00",
   "studios": [
     {
       "id": "yogaamfluss-ennenda",
@@ -37,11 +37,11 @@
       "lng": 9.0714,
       "active": true,
       "classes": [],
-      "scrape_status": "no_data",
+      "scrape_status": "scraped",
       "_meta": {
-        "last_scraped": "2026-04-23T11:14:51.349487+00:00",
+        "last_scraped": "2026-04-27T08:30:35.241025+00:00",
         "last_price_check": "2026-03-27T17:27:23.487438+00:00",
-        "scrape_status": "no_data",
+        "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yoga-am-fluss.ch/",
@@ -56,8 +56,9 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yoga-am-fluss.ch/angebot/preise/",
-        "last_checked": "2026-04-23T11:14:51.349471+00:00"
-      }
+        "last_checked": "2026-04-27T08:30:35.241011+00:00"
+      },
+      "last_scraped": "2026-04-27T08:30:28.429661+00:00"
     },
     {
       "id": "12yoga-ennenda",
@@ -101,12 +102,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://12yoga.ch/",
-        "last_checked": "2026-04-23T11:15:06.365142+00:00"
+        "last_checked": "2026-04-27T08:30:49.640916+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-23T11:14:52.582197+00:00",
+      "last_scraped": "2026-04-27T08:30:36.581666+00:00",
       "_meta": {
-        "last_scraped": "2026-04-23T11:15:06.365158+00:00",
+        "last_scraped": "2026-04-27T08:30:49.640937+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -151,49 +152,28 @@
       "lng": 9.0556,
       "active": true,
       "classes": [],
-      "scrape_status": "no_data",
+      "scrape_status": "scraped",
       "_meta": {
-        "last_scraped": "2026-04-23T11:15:09.800647+00:00",
+        "last_scraped": "2026-04-27T08:30:56.165075+00:00",
         "last_price_check": null,
-        "scrape_status": "no_data",
+        "scrape_status": "scraped",
         "booking_links": [
           {
             "platform": "eversports",
-            "url": "https://www.eversports.ch/s/VS9wgp"
-          },
-          {
-            "platform": "eversports",
-            "url": "https://www.eversports.ch/s/VS9wgp"
-          },
-          {
-            "platform": "eversports",
-            "url": "https://www.eversports.ch/s/VS9wgp"
-          },
-          {
-            "platform": "eversports",
-            "url": "https://www.eversports.ch/s/VS9wgp"
-          },
-          {
-            "platform": "eversports",
-            "url": "https://www.eversports.ch/s/VS9wgp"
-          },
-          {
-            "platform": "eversports",
-            "url": "https://www.eversports.ch/s/VS9wgp"
-          },
-          {
-            "platform": "eversports",
-            "url": "https://www.eversports.ch/s/VS9wgp"
-          },
-          {
-            "platform": "eversports",
-            "url": "https://www.eversports.ch/s/VS9wgp"
+            "url": "https://www.eversports.ch/widget/w/VS9wgp"
           }
         ],
         "source_urls": {
           "website": "https://www.cgworkout.ch/"
         }
-      }
+      },
+      "last_scraped": "2026-04-27T08:30:50.302285+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "eversports",
+          "url": "https://www.eversports.ch/widget/w/VS9wgp"
+        }
+      ]
     }
   ]
 }

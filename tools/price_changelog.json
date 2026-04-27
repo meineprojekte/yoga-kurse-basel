@@ -331,5 +331,23 @@
     "old_value": 25,
     "new_value": 27.0,
     "source": "https://www.yogaschuleluzern.ch"
+  },
+  {
+    "timestamp": "2026-04-27T08:41:10.347455+00:00",
+    "studio_id": "yoga-ishwari-sarnen",
+    "canton": "obwalden",
+    "field": "pricing.trial",
+    "old_value": 25,
+    "new_value": 20.0,
+    "source": "https://www.yoga-ishwari.ch/preise"
+  },
+  {
+    "timestamp": "2026-04-27T08:43:20.595007+00:00",
+    "studio_id": "yoga-pilateszentrale-olten",
+    "canton": "solothurn",
+    "field": "pricing.card_10",
+    "old_value": 20,
+    "new_value": 290.0,
+    "source": "https://www.pilateszentrale.ch/preise"
   }
 ]
