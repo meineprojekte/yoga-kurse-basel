@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-27T08:35:46.827776+00:00",
+  "last_updated": "2026-04-30T08:25:11.131104+00:00",
   "studios": [
     {
       "id": "yoga-loft-chur",
@@ -41,7 +41,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-27T08:30:57.051130+00:00",
+      "last_scraped": "2026-04-30T08:23:46.115280+00:00",
       "detected_booking_links": [
         {
           "platform": "mindbody",
@@ -52,12 +52,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogaloftchur.ch/preise",
-        "last_checked": "2026-04-27T08:31:02.163688+00:00",
+        "last_checked": "2026-04-30T08:23:49.904738+00:00",
         "single": 35.0
       },
       "_meta": {
-        "last_scraped": "2026-04-27T08:31:02.163748+00:00",
-        "last_price_check": "2026-04-27T08:31:02.163748+00:00",
+        "last_scraped": "2026-04-30T08:23:49.904799+00:00",
+        "last_price_check": "2026-04-30T08:23:49.904799+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -114,12 +114,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://yogapyramide.ch/preise",
-        "last_checked": "2026-04-27T08:31:20.136547+00:00"
+        "last_checked": "2026-04-30T08:24:03.874713+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-27T08:31:04.019546+00:00",
+      "last_scraped": "2026-04-30T08:23:51.334507+00:00",
       "_meta": {
-        "last_scraped": "2026-04-27T08:31:20.136566+00:00",
+        "last_scraped": "2026-04-30T08:24:03.874733+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -174,12 +174,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://belude.ch/programm.html",
-        "last_checked": "2026-04-27T08:34:39.499633+00:00"
+        "last_checked": "2026-04-30T08:24:10.762064+00:00"
       },
-      "scrape_status": "no_data",
-      "last_scraped": "2026-04-23T11:15:34.708526+00:00",
+      "scrape_status": "scraped",
+      "last_scraped": "2026-04-30T08:24:04.592493+00:00",
       "_meta": {
-        "last_scraped": "2026-04-27T08:34:39.499652+00:00",
+        "last_scraped": "2026-04-30T08:24:10.762085+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -226,10 +226,14 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-04-27T08:35:11.105260+00:00",
+        "last_scraped": "2026-04-30T08:24:49.348264+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/s/_b2_iQ"
+          },
           {
             "platform": "eversports",
             "url": "https://www.eversports.ch/s/_b2_iQ"
@@ -374,54 +378,117 @@
       "lng": 9.835,
       "active": true,
       "classes": [],
-      "scrape_status": "no_data",
+      "scrape_status": "scraped",
       "_meta": {
-        "last_scraped": "2026-04-27T08:35:18.001018+00:00",
+        "last_scraped": "2026-04-30T08:24:56.311999+00:00",
         "last_price_check": null,
-        "scrape_status": "no_data",
+        "scrape_status": "scraped",
         "booking_links": [
           {
             "platform": "eversports",
-            "url": "https://www.eversports.ch/s/yogaplaza-davos"
+            "url": "https://www.eversportscorporate.com/corporate-sports/"
           },
           {
             "platform": "eversports",
-            "url": "https://www.eversports.ch/s/yogaplaza-davos"
+            "url": "https://www.eversportscorporate.com/corporate-sports/"
           },
           {
             "platform": "eversports",
-            "url": "https://www.eversports.ch/s/yogaplaza-davos"
+            "url": "https://www.eversportsmanager.com/de/partner-werden/?utm_source=Referrals&utm_medium=marketplace-for-studios&utm_campaign=mp-b2b-landingpage"
           },
           {
             "platform": "eversports",
-            "url": "https://www.eversports.ch/s/yogaplaza-davos"
+            "url": "https://www.eversportsmanager.com/de/uber-uns/"
           },
           {
             "platform": "eversports",
-            "url": "https://www.eversports.ch/s/yogaplaza-davos"
+            "url": "https://blog.eversports.com/?utm_source=marketplace&utm_medium=footer_link&utm_campaign=b2c_blog_footer_link"
           },
           {
             "platform": "eversports",
-            "url": "https://www.eversports.ch/s/yogaplaza-davos"
+            "url": "https://www.eversportsmanager.com/de/uber-uns/#jobs"
           },
           {
             "platform": "eversports",
-            "url": "https://www.eversports.ch/s/yogaplaza-davos"
+            "url": "https://www.eversportscorporate.com/"
           },
           {
             "platform": "eversports",
-            "url": "https://www.eversports.ch/s/yogaplaza-davos"
+            "url": "https://www.eversportsmanager.com/de/partner-werden/?utm_source=Referrals&utm_medium=marketplace-website-footer&utm_campaign=mp-b2b-landingpage"
           },
           {
             "platform": "eversports",
-            "url": "https://www.eversports.ch/s/yogaplaza-davos"
+            "url": "https://www.eversportsmanager.com/de/preise/?utm_source=Referrals&utm_medium=marketplace-pricing-footer&utm_campaign=mp-b2b-pricingpage"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportsmanager.com/de/demo/?utm_source=Referrals&utm_medium=marketplace-demo-footer&utm_campaign=mp-b2b-demopage"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.facebook.com/eversports"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.instagram.com/eversports_official/"
           }
         ],
         "source_urls": {
           "website": "https://www.yogaplazadavos.ch/",
           "schedule": "https://www.eversports.ch/s/yogaplaza-davos"
         }
-      }
+      },
+      "last_scraped": "2026-04-30T08:24:49.710778+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportscorporate.com/corporate-sports/"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportscorporate.com/corporate-sports/"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/partner-werden/?utm_source=Referrals&utm_medium=marketplace-for-studios&utm_campaign=mp-b2b-landingpage"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/uber-uns/"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://blog.eversports.com/?utm_source=marketplace&utm_medium=footer_link&utm_campaign=b2c_blog_footer_link"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/uber-uns/#jobs"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportscorporate.com/"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/partner-werden/?utm_source=Referrals&utm_medium=marketplace-website-footer&utm_campaign=mp-b2b-landingpage"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/preise/?utm_source=Referrals&utm_medium=marketplace-pricing-footer&utm_campaign=mp-b2b-pricingpage"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/demo/?utm_source=Referrals&utm_medium=marketplace-demo-footer&utm_campaign=mp-b2b-demopage"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.facebook.com/eversports"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.instagram.com/eversports_official/"
+        }
+      ]
     },
     {
       "id": "yoga-loft-engadin-samedan",
@@ -461,10 +528,10 @@
       "lng": 9.872,
       "active": true,
       "classes": [],
-      "scrape_status": "scraped",
+      "scrape_status": "no_data",
       "last_scraped": "2026-04-27T08:35:20.376335+00:00",
       "_meta": {
-        "last_scraped": "2026-04-27T08:35:32.161012+00:00",
+        "last_scraped": "2026-04-30T08:25:00.140301+00:00",
         "last_price_check": "2026-03-26T22:22:14.808879+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -479,7 +546,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://yogaloftengadin.ch/prices/",
-        "last_checked": "2026-04-27T08:35:32.160998+00:00"
+        "last_checked": "2026-04-30T08:25:00.140284+00:00"
       }
     },
     {
@@ -523,12 +590,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://acroyoga.group/",
-        "last_checked": "2026-04-27T08:35:46.827747+00:00"
+        "last_checked": "2026-04-30T08:25:11.131080+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-27T08:35:33.462090+00:00",
+      "last_scraped": "2026-04-30T08:25:00.914403+00:00",
       "_meta": {
-        "last_scraped": "2026-04-27T08:35:46.827763+00:00",
+        "last_scraped": "2026-04-30T08:25:11.131095+00:00",
         "last_price_check": "2026-03-26T21:37:22.955099+00:00",
         "scrape_status": "scraped",
         "booking_links": [],

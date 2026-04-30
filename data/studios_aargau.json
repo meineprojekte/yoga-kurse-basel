@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-27T08:09:48.703117+00:00",
+  "last_updated": "2026-04-30T08:08:20.066816+00:00",
   "studios": [
     {
       "id": "aloha-yoga-aarau",
@@ -42,7 +42,7 @@
       "lng": 8.0444,
       "active": true,
       "classes": [],
-      "scrape_status": "no_data",
+      "scrape_status": "scraped",
       "pricing": {
         "single": 30,
         "card_10": 185,
@@ -50,28 +50,60 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.alohayoga.ch/preise",
-        "last_checked": "2026-04-27T08:07:08.739445+00:00"
+        "last_checked": "2026-04-30T08:02:56.447482+00:00"
       },
       "_meta": {
-        "last_scraped": "2026-04-27T08:07:08.739512+00:00",
-        "last_price_check": "2026-04-27T08:07:08.739512+00:00",
-        "scrape_status": "no_data",
+        "last_scraped": "2026-04-30T08:02:56.447569+00:00",
+        "last_price_check": "2026-04-30T08:02:56.447569+00:00",
+        "scrape_status": "scraped",
         "booking_links": [
           {
             "platform": "eversports",
-            "url": "https://www.eversports.ch/s/aloha-yoga"
+            "url": "https://www.eversportscorporate.com/corporate-sports/"
           },
           {
             "platform": "eversports",
-            "url": "https://www.eversports.ch/s/aloha-yoga"
+            "url": "https://www.eversportscorporate.com/corporate-sports/"
           },
           {
             "platform": "eversports",
-            "url": "https://www.eversports.ch/s/aloha-yoga"
+            "url": "https://www.eversportsmanager.com/de/partner-werden/?utm_source=Referrals&utm_medium=marketplace-for-studios&utm_campaign=mp-b2b-landingpage"
           },
           {
             "platform": "eversports",
-            "url": "https://www.eversports.ch/s/aloha-yoga"
+            "url": "https://www.eversportsmanager.com/de/uber-uns/"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://blog.eversports.com/?utm_source=marketplace&utm_medium=footer_link&utm_campaign=b2c_blog_footer_link"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportsmanager.com/de/uber-uns/#jobs"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportscorporate.com/"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportsmanager.com/de/partner-werden/?utm_source=Referrals&utm_medium=marketplace-website-footer&utm_campaign=mp-b2b-landingpage"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportsmanager.com/de/preise/?utm_source=Referrals&utm_medium=marketplace-pricing-footer&utm_campaign=mp-b2b-pricingpage"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportsmanager.com/de/demo/?utm_source=Referrals&utm_medium=marketplace-demo-footer&utm_campaign=mp-b2b-demopage"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.facebook.com/eversports"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.instagram.com/eversports_official/"
           }
         ],
         "source_urls": {
@@ -79,7 +111,58 @@
           "schedule": "https://www.eversports.ch/s/aloha-yoga",
           "pricing": "https://www.alohayoga.ch/preise"
         }
-      }
+      },
+      "last_scraped": "2026-04-30T08:02:50.676600+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportscorporate.com/corporate-sports/"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportscorporate.com/corporate-sports/"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/partner-werden/?utm_source=Referrals&utm_medium=marketplace-for-studios&utm_campaign=mp-b2b-landingpage"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/uber-uns/"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://blog.eversports.com/?utm_source=marketplace&utm_medium=footer_link&utm_campaign=b2c_blog_footer_link"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/uber-uns/#jobs"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportscorporate.com/"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/partner-werden/?utm_source=Referrals&utm_medium=marketplace-website-footer&utm_campaign=mp-b2b-landingpage"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/preise/?utm_source=Referrals&utm_medium=marketplace-pricing-footer&utm_campaign=mp-b2b-pricingpage"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/demo/?utm_source=Referrals&utm_medium=marketplace-demo-footer&utm_campaign=mp-b2b-demopage"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.facebook.com/eversports"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.instagram.com/eversports_official/"
+        }
+      ]
     },
     {
       "id": "co-yoga-space-aarau",
@@ -114,17 +197,117 @@
       "lng": 8.05,
       "active": true,
       "classes": [],
-      "scrape_status": "no_data",
+      "scrape_status": "scraped",
       "_meta": {
-        "last_scraped": "2026-04-27T08:07:36.122444+00:00",
+        "last_scraped": "2026-04-30T08:03:24.359305+00:00",
         "last_price_check": null,
-        "scrape_status": "no_data",
-        "booking_links": [],
+        "scrape_status": "scraped",
+        "booking_links": [
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportscorporate.com/corporate-sports/"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportscorporate.com/corporate-sports/"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportsmanager.com/de/partner-werden/?utm_source=Referrals&utm_medium=marketplace-for-studios&utm_campaign=mp-b2b-landingpage"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportsmanager.com/de/uber-uns/"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://blog.eversports.com/?utm_source=marketplace&utm_medium=footer_link&utm_campaign=b2c_blog_footer_link"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportsmanager.com/de/uber-uns/#jobs"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportscorporate.com/"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportsmanager.com/de/partner-werden/?utm_source=Referrals&utm_medium=marketplace-website-footer&utm_campaign=mp-b2b-landingpage"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportsmanager.com/de/preise/?utm_source=Referrals&utm_medium=marketplace-pricing-footer&utm_campaign=mp-b2b-pricingpage"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportsmanager.com/de/demo/?utm_source=Referrals&utm_medium=marketplace-demo-footer&utm_campaign=mp-b2b-demopage"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.facebook.com/eversports"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.instagram.com/eversports_official/"
+          }
+        ],
         "source_urls": {
           "website": "https://coyogaspace.ch/",
           "schedule": "https://www.eversports.ch/s/co-yoga-space"
         }
-      }
+      },
+      "last_scraped": "2026-04-30T08:02:57.261268+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportscorporate.com/corporate-sports/"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportscorporate.com/corporate-sports/"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/partner-werden/?utm_source=Referrals&utm_medium=marketplace-for-studios&utm_campaign=mp-b2b-landingpage"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/uber-uns/"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://blog.eversports.com/?utm_source=marketplace&utm_medium=footer_link&utm_campaign=b2c_blog_footer_link"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/uber-uns/#jobs"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportscorporate.com/"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/partner-werden/?utm_source=Referrals&utm_medium=marketplace-website-footer&utm_campaign=mp-b2b-landingpage"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/preise/?utm_source=Referrals&utm_medium=marketplace-pricing-footer&utm_campaign=mp-b2b-pricingpage"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/demo/?utm_source=Referrals&utm_medium=marketplace-demo-footer&utm_campaign=mp-b2b-demopage"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.facebook.com/eversports"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.instagram.com/eversports_official/"
+        }
+      ]
     },
     {
       "id": "my-yoga-garden-suhr",
@@ -162,7 +345,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-27T08:07:37.304040+00:00",
+      "last_scraped": "2026-04-30T08:03:25.348666+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -174,7 +357,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-04-27T08:07:41.626257+00:00",
+        "last_scraped": "2026-04-30T08:03:29.278468+00:00",
         "last_price_check": "2026-03-27T12:38:56.553044+00:00",
         "scrape_status": "scraped",
         "booking_links": [
@@ -199,7 +382,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.my-yoga-garden.ch/preise",
-        "last_checked": "2026-04-27T08:07:41.626244+00:00"
+        "last_checked": "2026-04-30T08:03:29.278451+00:00"
       }
     },
     {
@@ -237,9 +420,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-27T08:07:43.151390+00:00",
+      "last_scraped": "2026-04-30T08:03:31.786544+00:00",
       "_meta": {
-        "last_scraped": "2026-04-27T08:07:58.127738+00:00",
+        "last_scraped": "2026-04-30T08:03:45.195876+00:00",
         "last_price_check": "2026-03-27T17:17:38.371472+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -254,7 +437,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://yogaiyengar.ch/stundenplan",
-        "last_checked": "2026-04-27T08:07:58.127721+00:00"
+        "last_checked": "2026-04-30T08:03:45.195861+00:00"
       }
     },
     {
@@ -302,12 +485,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://raum-fuer-yoga.ch/preise",
-        "last_checked": "2026-04-27T08:08:34.906593+00:00"
+        "last_checked": "2026-04-30T08:04:09.627660+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-27T08:08:04.143505+00:00",
+      "last_scraped": "2026-04-30T08:03:47.276033+00:00",
       "_meta": {
-        "last_scraped": "2026-04-27T08:08:34.906608+00:00",
+        "last_scraped": "2026-04-30T08:04:09.627674+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -353,10 +536,10 @@
       "lng": 8.049,
       "active": true,
       "classes": [],
-      "scrape_status": "scraped",
+      "scrape_status": "no_data",
       "last_scraped": "2026-04-27T08:08:37.302306+00:00",
       "_meta": {
-        "last_scraped": "2026-04-27T08:08:47.120261+00:00",
+        "last_scraped": "2026-04-30T08:07:29.678086+00:00",
         "last_price_check": "2026-03-27T12:36:34.244055+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -371,7 +554,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://mahameru.ch/book-now/",
-        "last_checked": "2026-04-27T08:08:47.120248+00:00"
+        "last_checked": "2026-04-30T08:07:29.678066+00:00"
       }
     },
     {
@@ -414,13 +597,13 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://manta-yoga-pilates.ch",
-        "last_checked": "2026-04-27T08:09:19.138188+00:00"
+        "last_checked": "2026-04-30T08:07:54.643745+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-27T08:08:52.828616+00:00",
+      "last_scraped": "2026-04-30T08:07:31.814910+00:00",
       "_meta": {
-        "last_scraped": "2026-04-27T08:09:19.138290+00:00",
-        "last_price_check": "2026-04-27T08:09:19.138290+00:00",
+        "last_scraped": "2026-04-30T08:07:54.643840+00:00",
+        "last_price_check": "2026-04-30T08:07:54.643840+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -466,9 +649,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-27T08:09:21.851615+00:00",
+      "last_scraped": "2026-04-30T08:07:55.676020+00:00",
       "_meta": {
-        "last_scraped": "2026-04-27T08:09:31.646567+00:00",
+        "last_scraped": "2026-04-30T08:08:03.738404+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -521,7 +704,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-04-27T08:09:34.411441+00:00",
+        "last_scraped": "2026-04-30T08:08:07.673754+00:00",
         "last_price_check": "2026-03-27T12:39:53.205860+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
@@ -537,7 +720,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.namaste-yoga-baden.ch/unsere-yoga-kurse/namaste-yoga-baden-preise-und-agbs/",
-        "last_checked": "2026-04-27T08:09:34.411425+00:00"
+        "last_checked": "2026-04-30T08:08:07.673741+00:00"
       }
     },
     {
@@ -588,14 +771,14 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://hieryoga.ch/preise",
-        "last_checked": "2026-04-27T08:09:42.853607+00:00",
+        "last_checked": "2026-04-30T08:08:14.331166+00:00",
         "abo": 290.0
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-27T08:09:35.654874+00:00",
+      "last_scraped": "2026-04-30T08:08:08.549965+00:00",
       "_meta": {
-        "last_scraped": "2026-04-27T08:09:42.853673+00:00",
-        "last_price_check": "2026-04-27T08:09:42.853673+00:00",
+        "last_scraped": "2026-04-30T08:08:14.331228+00:00",
+        "last_price_check": "2026-04-30T08:08:14.331228+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -636,9 +819,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-27T08:09:43.742300+00:00",
+      "last_scraped": "2026-04-30T08:08:15.989171+00:00",
       "_meta": {
-        "last_scraped": "2026-04-27T08:09:48.703109+00:00",
+        "last_scraped": "2026-04-30T08:08:20.066808+00:00",
         "last_price_check": "2026-03-27T12:40:11.199647+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -655,7 +838,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.jetzt.yoga/yogakurs-baden",
-        "last_checked": "2026-04-27T08:09:48.703097+00:00"
+        "last_checked": "2026-04-30T08:08:20.066796+00:00"
       }
     }
   ]

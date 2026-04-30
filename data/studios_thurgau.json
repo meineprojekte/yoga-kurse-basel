@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-27T08:46:20.277467+00:00",
+  "last_updated": "2026-04-30T08:40:22.035793+00:00",
   "studios": [
     {
       "id": "gymayo-frauenfeld",
@@ -41,12 +41,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://gymayo.ch/angebot/preise",
-        "last_checked": "2026-04-27T08:45:09.640641+00:00"
+        "last_checked": "2026-04-30T08:39:14.530711+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-27T08:44:59.728850+00:00",
+      "last_scraped": "2026-04-30T08:39:07.338411+00:00",
       "_meta": {
-        "last_scraped": "2026-04-27T08:45:09.640656+00:00",
+        "last_scraped": "2026-04-30T08:39:14.530725+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -91,12 +91,61 @@
       "lng": 8.904,
       "active": true,
       "classes": [],
-      "scrape_status": "no_data",
+      "scrape_status": "scraped",
       "_meta": {
-        "last_scraped": "2026-04-27T08:45:13.830650+00:00",
+        "last_scraped": "2026-04-30T08:39:18.341358+00:00",
         "last_price_check": null,
-        "scrape_status": "no_data",
-        "booking_links": [],
+        "scrape_status": "scraped",
+        "booking_links": [
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportscorporate.com/corporate-sports/"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportscorporate.com/corporate-sports/"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportsmanager.com/de/partner-werden/?utm_source=Referrals&utm_medium=marketplace-for-studios&utm_campaign=mp-b2b-landingpage"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportsmanager.com/de/uber-uns/"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://blog.eversports.com/?utm_source=marketplace&utm_medium=footer_link&utm_campaign=b2c_blog_footer_link"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportsmanager.com/de/uber-uns/#jobs"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportscorporate.com/"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportsmanager.com/de/partner-werden/?utm_source=Referrals&utm_medium=marketplace-website-footer&utm_campaign=mp-b2b-landingpage"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportsmanager.com/de/preise/?utm_source=Referrals&utm_medium=marketplace-pricing-footer&utm_campaign=mp-b2b-pricingpage"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.eversportsmanager.com/de/demo/?utm_source=Referrals&utm_medium=marketplace-demo-footer&utm_campaign=mp-b2b-demopage"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.facebook.com/eversports"
+          },
+          {
+            "platform": "eversports",
+            "url": "https://www.instagram.com/eversports_official/"
+          }
+        ],
         "source_urls": {
           "website": "https://www.yoga-place.com/",
           "schedule": "https://www.eversports.ch/s/yogaplace"
@@ -107,10 +156,60 @@
         "single": 22,
         "verified": true,
         "source": "https://yoga-place.com",
-        "last_checked": "2026-04-27T08:45:13.830635+00:00",
+        "last_checked": "2026-04-30T08:39:18.341343+00:00",
         "notes": "75min CHF 22. 10er/20er Abo available. 20% discount AHV/IV/students."
       },
-      "last_scraped": "2026-04-07T01:13:15.000839+00:00"
+      "last_scraped": "2026-04-30T08:39:15.269106+00:00",
+      "detected_booking_links": [
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportscorporate.com/corporate-sports/"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportscorporate.com/corporate-sports/"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/partner-werden/?utm_source=Referrals&utm_medium=marketplace-for-studios&utm_campaign=mp-b2b-landingpage"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/uber-uns/"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://blog.eversports.com/?utm_source=marketplace&utm_medium=footer_link&utm_campaign=b2c_blog_footer_link"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/uber-uns/#jobs"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportscorporate.com/"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/partner-werden/?utm_source=Referrals&utm_medium=marketplace-website-footer&utm_campaign=mp-b2b-landingpage"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/preise/?utm_source=Referrals&utm_medium=marketplace-pricing-footer&utm_campaign=mp-b2b-pricingpage"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.eversportsmanager.com/de/demo/?utm_source=Referrals&utm_medium=marketplace-demo-footer&utm_campaign=mp-b2b-demopage"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.facebook.com/eversports"
+        },
+        {
+          "platform": "eversports",
+          "url": "https://www.instagram.com/eversports_official/"
+        }
+      ]
     },
     {
       "id": "yoga-grenzenlos-kreuzlingen",
@@ -163,10 +262,10 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogagrenzenlos.com/preise",
-        "last_checked": "2026-04-27T08:45:18.956131+00:00"
+        "last_checked": "2026-04-30T08:39:21.853540+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-27T08:45:14.234156+00:00",
+      "last_scraped": "2026-04-30T08:39:18.534593+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -178,8 +277,8 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-04-27T08:45:18.956217+00:00",
-        "last_price_check": "2026-04-27T08:45:18.956217+00:00",
+        "last_scraped": "2026-04-30T08:39:21.853600+00:00",
+        "last_price_check": "2026-04-30T08:39:21.853600+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -242,13 +341,13 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yoga-asana.ch",
-        "last_checked": "2026-04-27T08:45:33.804222+00:00"
+        "last_checked": "2026-04-30T08:39:46.115923+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-27T08:45:20.825598+00:00",
+      "last_scraped": "2026-04-30T08:39:36.968689+00:00",
       "_meta": {
-        "last_scraped": "2026-04-27T08:45:33.804312+00:00",
-        "last_price_check": "2026-04-27T08:45:33.804312+00:00",
+        "last_scraped": "2026-04-30T08:39:46.116018+00:00",
+        "last_price_check": "2026-04-30T08:39:46.116018+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -298,12 +397,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.soma-yoga.ch/preise",
-        "last_checked": "2026-04-27T08:45:40.120861+00:00"
+        "last_checked": "2026-04-30T08:39:50.372565+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-27T08:45:34.376545+00:00",
+      "last_scraped": "2026-04-30T08:39:46.402359+00:00",
       "_meta": {
-        "last_scraped": "2026-04-27T08:45:40.120878+00:00",
+        "last_scraped": "2026-04-30T08:39:50.372575+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -351,9 +450,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-27T08:45:45.467443+00:00",
+      "last_scraped": "2026-04-30T08:39:53.463876+00:00",
       "_meta": {
-        "last_scraped": "2026-04-27T08:46:14.221420+00:00",
+        "last_scraped": "2026-04-30T08:40:17.596303+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -401,9 +500,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-27T08:46:15.015735+00:00",
+      "last_scraped": "2026-04-30T08:40:17.931797+00:00",
       "_meta": {
-        "last_scraped": "2026-04-27T08:46:20.277451+00:00",
+        "last_scraped": "2026-04-30T08:40:22.035778+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
