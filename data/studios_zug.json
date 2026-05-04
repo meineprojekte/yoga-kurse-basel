@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-30T08:50:38.343505+00:00",
+  "last_updated": "2026-05-04T08:55:17.165366+00:00",
   "studios": [
     {
       "id": "yogaflowzug",
@@ -47,12 +47,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.sportsnow.ch/go/yogaflowzug/prices?locale=de",
-        "last_checked": "2026-04-30T08:46:48.437511+00:00"
+        "last_checked": "2026-05-04T08:54:09.557274+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-30T08:46:33.921709+00:00",
+      "last_scraped": "2026-05-04T08:53:56.069366+00:00",
       "_meta": {
-        "last_scraped": "2026-04-30T08:46:48.437524+00:00",
+        "last_scraped": "2026-05-04T08:54:09.557290+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -172,9 +172,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-04-30T08:46:49.422464+00:00",
+      "last_scraped": "2026-05-04T08:54:10.699770+00:00",
       "_meta": {
-        "last_scraped": "2026-04-30T08:47:18.101568+00:00",
+        "last_scraped": "2026-05-04T08:54:52.751079+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -217,10 +217,10 @@
       "lng": 8.5163,
       "active": true,
       "classes": [],
-      "scrape_status": "no_data",
+      "scrape_status": "blocked",
       "last_scraped": null,
       "_meta": {
-        "last_scraped": "2026-04-30T08:50:38.343487+00:00",
+        "last_scraped": "2026-05-04T08:55:17.165341+00:00",
         "last_price_check": null,
         "scrape_status": "blocked",
         "booking_links": [],
