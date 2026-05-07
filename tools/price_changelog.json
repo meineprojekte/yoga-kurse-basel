@@ -358,5 +358,23 @@
     "old_value": 239,
     "new_value": 160.0,
     "source": "https://bodyart.studio/en"
+  },
+  {
+    "timestamp": "2026-05-07T08:37:35.349122+00:00",
+    "studio_id": "yogastudio-luzern",
+    "canton": "luzern",
+    "field": "pricing.single",
+    "old_value": 20,
+    "new_value": 80.0,
+    "source": "https://www.yogastudio.ch/preise"
+  },
+  {
+    "timestamp": "2026-05-07T08:46:47.966781+00:00",
+    "studio_id": "yoga-in-der-altstadt-st-gallen",
+    "canton": "st-gallen",
+    "field": "pricing.abo",
+    "old_value": 50.0,
+    "new_value": 99.0,
+    "source": "https://www.yoga-in-der-altstadt.ch"
   }
 ]

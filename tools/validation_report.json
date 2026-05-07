@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-05-04T09:02:43.268021",
+  "timestamp": "2026-05-07T09:06:43.724808",
   "summary": {
     "total_studios": 266,
     "total_active": 246,
     "total_with_pricing": 203,
-    "total_classes": 2609,
+    "total_classes": 2588,
     "cantons_loaded": 26,
-    "anomalies_found": 63,
+    "anomalies_found": 64,
     "warnings_found": 283,
     "price_changes_found": 0,
     "first_run": false
@@ -203,6 +203,18 @@
       "expected_range": "80-500",
       "source": "https://www.yogabude.ch/abo-preise",
       "message": "card_10 CHF 29 ist ausserhalb des normalen Bereichs (CHF 80-500)"
+    },
+    {
+      "type": "price_out_of_range",
+      "severity": "high",
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "canton": "luzern",
+      "field": "pricing.single",
+      "value": 80.0,
+      "expected_range": "10-60",
+      "source": "https://www.yogastudio.ch/preise",
+      "message": "single CHF 80.0 ist ausserhalb des normalen Bereichs (CHF 10-60)"
     },
     {
       "type": "price_out_of_range",
@@ -1127,6 +1139,18 @@
     {
       "type": "price_ratio_unusual",
       "severity": "medium",
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "canton": "luzern",
+      "field": "pricing.monthly / pricing.single",
+      "value": 1.0,
+      "expected_range": "4-10x",
+      "source": "https://www.yogastudio.ch/preise",
+      "message": "Monatsabo/Einzeleintritt Verhältnis 1.0x (erwartet 4-10x)"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
       "studio_id": "liv-lab",
       "studio_name": "LIV lab Luzern",
       "canton": "luzern",
@@ -1783,6 +1807,26 @@
       "message": "Kursdauer 705 Min. ausserhalb 30-180 Min. für Yoga in a Bag (Winterthur) - +41 44 203 66 96 (Sunday)"
     },
     {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "vvoo",
+      "studio_name": "VVOO Yoga Studio & Wellness Shop",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "240 min",
+      "message": "Kursdauer 240 Min. ausserhalb 30-180 Min. für VVOO Yoga Studio & Wellness Shop - SHOOTING AYLIN (Monday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "vvoo",
+      "studio_name": "VVOO Yoga Studio & Wellness Shop",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "240 min",
+      "message": "Kursdauer 240 Min. ausserhalb 30-180 Min. für VVOO Yoga Studio & Wellness Shop - SHOOTING AYLIN (Monday)"
+    },
+    {
       "type": "invalid_time",
       "severity": "medium",
       "studio_id": "iyengar-yoga-zuerich",
@@ -1891,96 +1935,6 @@
       "field": "time_end",
       "value": "",
       "message": "Ungültige Endzeit '' für Iyengar Yoga Zürich - 10:30FrancescaM&FPräsenz&This email address is being protected from spambots. You need JavaScript enabled to view it. (Friday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Tuesday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Wednesday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Wednesday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Wednesday)"
     },
     {
       "type": "unusual_duration",
@@ -2101,6 +2055,66 @@
       "field": "duration",
       "value": "15 min",
       "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Monday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "210 min",
+      "message": "Kursdauer 210 Min. ausserhalb 30-180 Min. für ARANYA Studio - transport matten + hühn (Tuesday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Tuesday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "240 min",
+      "message": "Kursdauer 240 Min. ausserhalb 30-180 Min. für ARANYA Studio - matten abholen ca. 7.30 (Wednesday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Wednesday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Wednesday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "630 min",
+      "message": "Kursdauer 630 Min. ausserhalb 30-180 Min. für ARANYA Studio - Auffahrt (Thursday)"
     },
     {
       "type": "invalid_time",
@@ -2845,12 +2859,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yogagold",
+      "studio_id": "yogalives",
       "studio_name": "Yogalives",
       "canton": "zurich",
       "field": "address",
       "value": "giesshübelstrasse 62b, 8045",
-      "message": "Gleiche Adresse 'giesshübelstrasse 62b, 8045' bei Studios: yogagold, yogalives"
+      "message": "Gleiche Adresse 'giesshübelstrasse 62b, 8045' bei Studios: yogalives, yogagold"
     },
     {
       "type": "duplicate_coordinates",
@@ -3015,12 +3029,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "hot-yoga-bern",
+      "studio_id": "hothaus-bern",
       "studio_name": "Hot Yoga Bern",
       "canton": "bern",
       "field": "address",
       "value": "bubenbergplatz 8, 3011",
-      "message": "Gleiche Adresse 'bubenbergplatz 8, 3011' bei Studios: hot-yoga-bern, hothaus-bern, vayam-yoga-bern"
+      "message": "Gleiche Adresse 'bubenbergplatz 8, 3011' bei Studios: hothaus-bern, hot-yoga-bern, vayam-yoga-bern"
     },
     {
       "type": "duplicate_coordinates",
@@ -3135,32 +3149,32 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yoga-veda-luzern",
+      "studio_id": "yogastudio-luzern",
       "studio_name": "Yogastudio Luzern",
       "canton": "luzern",
       "field": "address",
       "value": "werkhofstrasse 18, 6005",
-      "message": "Gleiche Adresse 'werkhofstrasse 18, 6005' bei Studios: yoga-veda-luzern, yogastudio-luzern"
+      "message": "Gleiche Adresse 'werkhofstrasse 18, 6005' bei Studios: yogastudio-luzern, yoga-veda-luzern"
     },
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yoga-mit-herz",
+      "studio_id": "ashtanga-luzern",
       "studio_name": "Ashtanga Yoga Luzern",
       "canton": "luzern",
       "field": "address",
       "value": "weggisgasse 31, 6004",
-      "message": "Gleiche Adresse 'weggisgasse 31, 6004' bei Studios: yoga-mit-herz, ashtanga-luzern"
+      "message": "Gleiche Adresse 'weggisgasse 31, 6004' bei Studios: ashtanga-luzern, yoga-mit-herz"
     },
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yoga-mit-herz",
+      "studio_id": "yogagemeinschaft-luzern",
       "studio_name": "Yogagemeinschaft Luzern",
       "canton": "luzern",
       "field": "address",
       "value": "hirschengraben 13a, 6003",
-      "message": "Gleiche Adresse 'hirschengraben 13a, 6003' bei Studios: yoga-mit-herz, yogagemeinschaft-luzern"
+      "message": "Gleiche Adresse 'hirschengraben 13a, 6003' bei Studios: yogagemeinschaft-luzern, yoga-mit-herz"
     },
     {
       "type": "duplicate_address",
@@ -3315,12 +3329,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "katerina-wen",
+      "studio_id": "ayalga",
       "studio_name": "Ayalga Yoga (Iyengar)",
       "canton": "basel-stadt",
       "field": "address",
       "value": "basel, ",
-      "message": "Gleiche Adresse 'basel, ' bei Studios: katerina-wen, kathrin-mathews, yoga-now, ayalga, klubschule, mysore-club"
+      "message": "Gleiche Adresse 'basel, ' bei Studios: ayalga, mysore-club, kathrin-mathews, klubschule, yoga-now, katerina-wen"
     },
     {
       "type": "duplicate_coordinates",
@@ -3595,12 +3609,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yogaplaza-davos",
+      "studio_id": "flux2motus-davos",
       "studio_name": "flux2motus - Yoga & Massage",
       "canton": "graubuenden",
       "field": "address",
       "value": "mattastrasse 6, 7270",
-      "message": "Gleiche Adresse 'mattastrasse 6, 7270' bei Studios: yogaplaza-davos, flux2motus-davos"
+      "message": "Gleiche Adresse 'mattastrasse 6, 7270' bei Studios: flux2motus-davos, yogaplaza-davos"
     },
     {
       "type": "duplicate_coordinates",
@@ -3655,12 +3669,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "ashtanga-yoga-lausanne",
+      "studio_id": "yogaworks-lausanne",
       "studio_name": "Yogaworks",
       "canton": "vaud",
       "field": "address",
       "value": "rue chaucrau 3-5, 1003",
-      "message": "Gleiche Adresse 'rue chaucrau 3-5, 1003' bei Studios: ashtanga-yoga-lausanne, yogaworks-lausanne"
+      "message": "Gleiche Adresse 'rue chaucrau 3-5, 1003' bei Studios: yogaworks-lausanne, ashtanga-yoga-lausanne"
     },
     {
       "type": "duplicate_coordinates",
