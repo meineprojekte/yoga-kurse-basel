@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T08:16:49.672872+00:00",
+  "last_updated": "2026-05-11T09:02:39.518358+00:00",
   "studios": [
     {
       "id": "aloha-yoga-aarau",
@@ -50,11 +50,11 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.alohayoga.ch/preise",
-        "last_checked": "2026-05-07T08:14:02.474856+00:00"
+        "last_checked": "2026-05-11T08:59:23.630685+00:00"
       },
       "_meta": {
-        "last_scraped": "2026-05-07T08:14:02.474928+00:00",
-        "last_price_check": "2026-05-07T08:14:02.474928+00:00",
+        "last_scraped": "2026-05-11T08:59:23.630753+00:00",
+        "last_price_check": "2026-05-11T08:59:23.630753+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -112,7 +112,7 @@
           "pricing": "https://www.alohayoga.ch/preise"
         }
       },
-      "last_scraped": "2026-05-07T08:13:56.389734+00:00",
+      "last_scraped": "2026-05-11T08:59:19.079696+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -199,7 +199,7 @@
       "classes": [],
       "scrape_status": "scraped",
       "_meta": {
-        "last_scraped": "2026-05-07T08:14:38.597230+00:00",
+        "last_scraped": "2026-05-11T09:00:44.683204+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -257,7 +257,7 @@
           "schedule": "https://www.eversports.ch/s/co-yoga-space"
         }
       },
-      "last_scraped": "2026-05-07T08:14:04.587052+00:00",
+      "last_scraped": "2026-05-11T08:59:24.343243+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -345,25 +345,21 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-07T08:14:38.958286+00:00",
+      "last_scraped": "2026-05-11T09:00:45.996177+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
-          "url": "https://www.eversports.ch/e/event/nObylsj"
+          "url": "https://www.eversports.ch/e/workshop/RQRfhWH"
         }
       ],
       "_meta": {
-        "last_scraped": "2026-05-07T08:14:45.437910+00:00",
+        "last_scraped": "2026-05-11T09:00:52.267948+00:00",
         "last_price_check": "2026-03-27T12:38:56.553044+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
             "platform": "eversports",
-            "url": "https://www.eversports.ch/e/event/nObylsj"
-          },
-          {
-            "platform": "eversports",
-            "url": "https://www.eversports.ch/s/my-yoga-garden"
+            "url": "https://www.eversports.ch/e/workshop/RQRfhWH"
           }
         ],
         "source_urls": {
@@ -378,7 +374,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.my-yoga-garden.ch/preise",
-        "last_checked": "2026-05-07T08:14:45.437895+00:00"
+        "last_checked": "2026-05-11T09:00:52.267931+00:00"
       }
     },
     {
@@ -416,9 +412,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-07T08:14:48.114053+00:00",
+      "last_scraped": "2026-05-11T09:00:54.312051+00:00",
       "_meta": {
-        "last_scraped": "2026-05-07T08:15:04.467390+00:00",
+        "last_scraped": "2026-05-11T09:01:10.855610+00:00",
         "last_price_check": "2026-03-27T17:17:38.371472+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -433,7 +429,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://yogaiyengar.ch/stundenplan",
-        "last_checked": "2026-05-07T08:15:04.467375+00:00"
+        "last_checked": "2026-05-11T09:01:10.855591+00:00"
       }
     },
     {
@@ -481,12 +477,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://raum-fuer-yoga.ch/preise",
-        "last_checked": "2026-05-07T08:15:34.245375+00:00"
+        "last_checked": "2026-05-11T09:01:33.936384+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-07T08:15:07.590008+00:00",
+      "last_scraped": "2026-05-11T09:01:13.453796+00:00",
       "_meta": {
-        "last_scraped": "2026-05-07T08:15:34.245391+00:00",
+        "last_scraped": "2026-05-11T09:01:33.936396+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -533,9 +529,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-07T08:15:36.833827+00:00",
+      "last_scraped": "2026-05-11T09:01:36.507738+00:00",
       "_meta": {
-        "last_scraped": "2026-05-07T08:15:47.509591+00:00",
+        "last_scraped": "2026-05-11T09:01:48.863130+00:00",
         "last_price_check": "2026-03-27T12:36:34.244055+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -550,7 +546,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://mahameru.ch/book-now/",
-        "last_checked": "2026-05-07T08:15:47.509575+00:00"
+        "last_checked": "2026-05-11T09:01:48.863120+00:00"
       }
     },
     {
@@ -593,13 +589,13 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://manta-yoga-pilates.ch",
-        "last_checked": "2026-05-07T08:16:19.910880+00:00"
+        "last_checked": "2026-05-11T09:02:13.718665+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-07T08:15:51.057836+00:00",
+      "last_scraped": "2026-05-11T09:01:51.904098+00:00",
       "_meta": {
-        "last_scraped": "2026-05-07T08:16:19.910970+00:00",
-        "last_price_check": "2026-05-07T08:16:19.910970+00:00",
+        "last_scraped": "2026-05-11T09:02:13.718743+00:00",
+        "last_price_check": "2026-05-11T09:02:13.718743+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -645,9 +641,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-07T08:16:21.291680+00:00",
+      "last_scraped": "2026-05-11T09:02:14.657304+00:00",
       "_meta": {
-        "last_scraped": "2026-05-07T08:16:29.645511+00:00",
+        "last_scraped": "2026-05-11T09:02:22.170967+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -700,7 +696,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-05-07T08:16:34.164007+00:00",
+        "last_scraped": "2026-05-11T09:02:26.081008+00:00",
         "last_price_check": "2026-03-27T12:39:53.205860+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
@@ -716,7 +712,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.namaste-yoga-baden.ch/unsere-yoga-kurse/namaste-yoga-baden-preise-und-agbs/",
-        "last_checked": "2026-05-07T08:16:34.163989+00:00"
+        "last_checked": "2026-05-11T09:02:26.080997+00:00"
       }
     },
     {
@@ -767,14 +763,14 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://hieryoga.ch/preise",
-        "last_checked": "2026-05-07T08:16:42.311592+00:00",
+        "last_checked": "2026-05-11T09:02:32.972205+00:00",
         "abo": 290.0
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-07T08:16:35.501500+00:00",
+      "last_scraped": "2026-05-11T09:02:27.177510+00:00",
       "_meta": {
-        "last_scraped": "2026-05-07T08:16:42.311650+00:00",
-        "last_price_check": "2026-05-07T08:16:42.311650+00:00",
+        "last_scraped": "2026-05-11T09:02:32.972262+00:00",
+        "last_price_check": "2026-05-11T09:02:32.972262+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -815,9 +811,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-07T08:16:43.704061+00:00",
+      "last_scraped": "2026-05-11T09:02:34.908837+00:00",
       "_meta": {
-        "last_scraped": "2026-05-07T08:16:49.672855+00:00",
+        "last_scraped": "2026-05-11T09:02:39.518350+00:00",
         "last_price_check": "2026-03-27T12:40:11.199647+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -834,7 +830,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.jetzt.yoga/yogakurs-baden",
-        "last_checked": "2026-05-07T08:16:49.672840+00:00"
+        "last_checked": "2026-05-11T09:02:39.518336+00:00"
       }
     }
   ]
