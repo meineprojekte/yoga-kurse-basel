@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-11T09:13:26.722882+00:00",
+  "last_updated": "2026-05-18T10:00:41.803142+00:00",
   "studios": [
     {
       "id": "yogiface-fribourg",
@@ -42,14 +42,14 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogiface.ch/prix",
-        "last_checked": "2026-05-11T09:13:04.775371+00:00",
+        "last_checked": "2026-05-18T09:57:10.608610+00:00",
         "abo": 500.0
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-11T09:12:53.421568+00:00",
+      "last_scraped": "2026-05-18T09:56:58.030113+00:00",
       "_meta": {
-        "last_scraped": "2026-05-11T09:13:04.775443+00:00",
-        "last_price_check": "2026-05-11T09:13:04.775443+00:00",
+        "last_scraped": "2026-05-18T09:57:10.608705+00:00",
+        "last_price_check": "2026-05-18T09:57:10.608705+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -94,9 +94,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-11T09:13:05.000594+00:00",
+      "last_scraped": "2026-05-18T09:57:11.072017+00:00",
       "_meta": {
-        "last_scraped": "2026-05-11T09:13:09.827054+00:00",
+        "last_scraped": "2026-05-18T09:57:17.760920+00:00",
         "last_price_check": "2026-03-27T17:23:53.641849+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -111,7 +111,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.happinez.ch/shop",
-        "last_checked": "2026-05-11T09:13:09.827041+00:00"
+        "last_checked": "2026-05-18T09:57:17.760905+00:00"
       }
     },
     {
@@ -151,9 +151,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-11T09:13:10.064987+00:00",
+      "last_scraped": "2026-05-18T09:57:18.082160+00:00",
       "_meta": {
-        "last_scraped": "2026-05-11T09:13:13.409415+00:00",
+        "last_scraped": "2026-05-18T09:57:22.062127+00:00",
         "last_price_check": "2026-03-27T17:23:55.683080+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -166,7 +166,7 @@
         "currency": "CHF",
         "verified": false,
         "source": "https://sakinayoga.com",
-        "last_checked": "2026-05-11T09:13:13.409404+00:00",
+        "last_checked": "2026-05-18T09:57:22.062112+00:00",
         "notes": "3-5 week sessions CHF 100-130. Online CHF 10/class (30min), CHF 15 (45min Fri). Trial donation-based."
       }
     },
@@ -210,12 +210,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yoga-nicole.ch/kurse-cours/preise-tarifs",
-        "last_checked": "2026-05-11T09:13:26.722858+00:00"
+        "last_checked": "2026-05-18T10:00:41.803108+00:00"
       },
-      "scrape_status": "scraped",
+      "scrape_status": "no_data",
       "last_scraped": "2026-05-11T09:13:14.528754+00:00",
       "_meta": {
-        "last_scraped": "2026-05-11T09:13:26.722873+00:00",
+        "last_scraped": "2026-05-18T10:00:41.803129+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
