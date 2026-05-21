@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-18T10:20:08.393171+00:00",
+  "last_updated": "2026-05-21T09:22:51.298704+00:00",
   "studios": [
     {
       "id": "yogastudio-luzern",
@@ -43,8 +43,8 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-05-18T10:15:05.886403+00:00",
-        "last_price_check": "2026-05-18T10:15:05.886403+00:00",
+        "last_scraped": "2026-05-21T09:19:43.777782+00:00",
+        "last_price_check": "2026-05-21T09:19:43.777782+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
         "source_urls": {
@@ -59,7 +59,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogastudio.ch/preise",
-        "last_checked": "2026-05-18T10:15:05.886336+00:00",
+        "last_checked": "2026-05-21T09:19:43.777719+00:00",
         "monthly": 80.0,
         "abo": 80.0
       }
@@ -124,10 +124,10 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.livlab.ch/en/prices",
-        "last_checked": "2026-05-18T10:15:16.788690+00:00"
+        "last_checked": "2026-05-21T09:19:51.275440+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-18T10:15:07.407427+00:00",
+      "last_scraped": "2026-05-21T09:19:44.513494+00:00",
       "detected_booking_links": [
         {
           "platform": "mindbody",
@@ -139,7 +139,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-05-18T10:15:16.788710+00:00",
+        "last_scraped": "2026-05-21T09:19:51.275459+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -198,17 +198,17 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-18T10:15:18.295726+00:00",
+      "last_scraped": "2026-05-21T09:19:52.503345+00:00",
       "pricing": {
         "currency": "CHF",
         "verified": true,
         "source": "https://ashtanga-luzern.ch/prices",
-        "last_checked": "2026-05-18T10:15:28.735398+00:00",
+        "last_checked": "2026-05-21T09:20:00.265546+00:00",
         "single": 500.0
       },
       "_meta": {
-        "last_scraped": "2026-05-18T10:15:28.735482+00:00",
-        "last_price_check": "2026-05-18T10:15:28.735482+00:00",
+        "last_scraped": "2026-05-21T09:20:00.265605+00:00",
+        "last_price_check": "2026-05-21T09:20:00.265605+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -258,7 +258,7 @@
       "classes": [],
       "scrape_status": "scraped",
       "_meta": {
-        "last_scraped": "2026-05-18T10:15:33.486411+00:00",
+        "last_scraped": "2026-05-21T09:20:04.300449+00:00",
         "last_price_check": "2026-03-27T13:16:17.496382+00:00",
         "scrape_status": "scraped",
         "booking_links": [
@@ -322,9 +322,9 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://originalhotyoga.net/",
-        "last_checked": "2026-05-18T10:15:33.486392+00:00"
+        "last_checked": "2026-05-21T09:20:04.300430+00:00"
       },
-      "last_scraped": "2026-05-18T10:15:29.893294+00:00",
+      "last_scraped": "2026-05-21T09:20:00.897853+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -427,11 +427,11 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://mii-ruum.ch/kurse1/preise",
-        "last_checked": "2026-05-18T10:17:16.629295+00:00"
+        "last_checked": "2026-05-21T09:20:12.350183+00:00"
       },
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-05-18T10:17:16.629310+00:00",
+        "last_scraped": "2026-05-21T09:20:12.350204+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [],
@@ -481,7 +481,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-05-18T10:17:23.377578+00:00",
+        "last_scraped": "2026-05-21T09:20:16.888948+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [],
@@ -534,13 +534,13 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://studiofayo.com",
-        "last_checked": "2026-05-18T10:17:48.207138+00:00"
+        "last_checked": "2026-05-21T09:20:37.812300+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-18T10:17:25.659121+00:00",
+      "last_scraped": "2026-05-21T09:20:18.835593+00:00",
       "_meta": {
-        "last_scraped": "2026-05-18T10:17:48.207247+00:00",
-        "last_price_check": "2026-05-18T10:17:48.207247+00:00",
+        "last_scraped": "2026-05-21T09:20:37.812416+00:00",
+        "last_price_check": "2026-05-21T09:20:37.812416+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -590,7 +590,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-18T10:17:50.048477+00:00",
+      "last_scraped": "2026-05-21T09:20:39.028425+00:00",
       "detected_booking_links": [
         {
           "platform": "fitogram",
@@ -598,7 +598,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-05-18T10:18:01.034541+00:00",
+        "last_scraped": "2026-05-21T09:20:47.342066+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -620,7 +620,7 @@
         "drop_in": 35,
         "verified": true,
         "source": "https://yogasitz.ch",
-        "last_checked": "2026-05-18T10:18:01.034519+00:00",
+        "last_checked": "2026-05-21T09:20:47.342046+00:00",
         "notes": "10er Hatha Flow CHF 320, InBalance CHF 300. 20er Hatha CHF 580. 7-month validity."
       }
     },
@@ -666,19 +666,19 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-18T10:18:02.459333+00:00",
+      "last_scraped": "2026-05-21T09:20:48.753528+00:00",
       "pricing": {
         "currency": "CHF",
         "single": 27,
         "trial": 27.0,
         "verified": true,
         "source": "https://www.yogaschuleluzern.ch",
-        "last_checked": "2026-05-18T10:18:12.415584+00:00",
+        "last_checked": "2026-05-21T09:20:57.103693+00:00",
         "notes": "CHF 27-30/lesson per quarter"
       },
       "_meta": {
-        "last_scraped": "2026-05-18T10:18:12.415717+00:00",
-        "last_price_check": "2026-05-18T10:18:12.415717+00:00",
+        "last_scraped": "2026-05-21T09:20:57.103789+00:00",
+        "last_price_check": "2026-05-21T09:20:57.103789+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -733,13 +733,13 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogaraum-luzern.ch",
-        "last_checked": "2026-05-18T10:18:28.909923+00:00"
+        "last_checked": "2026-05-21T09:21:17.673698+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-18T10:18:15.507171+00:00",
+      "last_scraped": "2026-05-21T09:21:00.815765+00:00",
       "_meta": {
-        "last_scraped": "2026-05-18T10:18:28.910041+00:00",
-        "last_price_check": "2026-05-18T10:18:28.910041+00:00",
+        "last_scraped": "2026-05-21T09:21:17.673795+00:00",
+        "last_price_check": "2026-05-21T09:21:17.673795+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -798,11 +798,11 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogamitherz.com/Angebot/Preise/",
-        "last_checked": "2026-05-18T10:18:35.857161+00:00"
+        "last_checked": "2026-05-21T09:21:23.244215+00:00"
       },
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-05-18T10:18:35.857183+00:00",
+        "last_scraped": "2026-05-21T09:21:23.244237+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [],
@@ -855,12 +855,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.derraum.ch/yoga-kurse-mit-verena-naepflin-in-horw/",
-        "last_checked": "2026-05-18T10:19:09.466474+00:00"
+        "last_checked": "2026-05-21T09:21:53.295474+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-18T10:18:39.735463+00:00",
+      "last_scraped": "2026-05-21T09:21:27.526940+00:00",
       "_meta": {
-        "last_scraped": "2026-05-18T10:19:09.466492+00:00",
+        "last_scraped": "2026-05-21T09:21:53.295496+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -909,9 +909,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-18T10:19:10.468383+00:00",
+      "last_scraped": "2026-05-21T09:21:54.126531+00:00",
       "_meta": {
-        "last_scraped": "2026-05-18T10:19:31.448276+00:00",
+        "last_scraped": "2026-05-21T09:22:24.908416+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -926,7 +926,7 @@
         "trial": 20,
         "verified": true,
         "source": "https://yoga-kundalini.net",
-        "last_checked": "2026-05-18T10:19:31.448256+00:00",
+        "last_checked": "2026-05-21T09:22:24.908380+00:00",
         "notes": "12-class block CHF 360 (CHF 30/class). Trial CHF 20. Student 20% off."
       }
     },
@@ -970,9 +970,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-18T10:19:34.034225+00:00",
+      "last_scraped": "2026-05-21T09:22:26.242862+00:00",
       "_meta": {
-        "last_scraped": "2026-05-18T10:19:44.635476+00:00",
+        "last_scraped": "2026-05-21T09:22:32.254528+00:00",
         "last_price_check": "2026-03-27T13:18:55.393831+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -987,7 +987,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.pureyouyoga.ch/",
-        "last_checked": "2026-05-18T10:19:44.635463+00:00"
+        "last_checked": "2026-05-21T09:22:32.254508+00:00"
       }
     },
     {
@@ -1036,9 +1036,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-18T10:19:46.174188+00:00",
+      "last_scraped": "2026-05-21T09:22:33.743119+00:00",
       "_meta": {
-        "last_scraped": "2026-05-18T10:20:04.195917+00:00",
+        "last_scraped": "2026-05-21T09:22:47.501566+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -1088,9 +1088,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-18T10:20:04.400410+00:00",
+      "last_scraped": "2026-05-21T09:22:47.964509+00:00",
       "_meta": {
-        "last_scraped": "2026-05-18T10:20:08.393157+00:00",
+        "last_scraped": "2026-05-21T09:22:51.298692+00:00",
         "last_price_check": "2026-03-26T21:57:38.367642+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -1102,7 +1102,7 @@
       "pricing": {
         "verified": false,
         "currency": "CHF",
-        "last_checked": "2026-05-18T10:20:08.393130+00:00"
+        "last_checked": "2026-05-21T09:22:51.298671+00:00"
       }
     }
   ]
