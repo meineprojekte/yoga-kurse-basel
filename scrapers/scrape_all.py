@@ -1748,8 +1748,10 @@ def update_studio_data(canton_files, changelog, schedule_files, verification_dat
             studio['_meta'] = build_meta(studio, scrape_result, pricing_result)
 
         # Update file-level timestamps
-        data['last_updated'] = datetime.now(timezone.utc).isoformat()
+        now_iso = datetime.now(timezone.utc).isoformat()
         now_date = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+        data['last_updated'] = now_iso
+        sched_data['last_updated'] = now_iso  # keep top-level in sync with _meta (was frozen)
         sched_data['_meta'] = {
             'last_updated': now_date,
             'note': 'Stundenplan-Daten aus öffentlichen Quellen. Für aktuelle Zeiten siehe Studio-Website.',

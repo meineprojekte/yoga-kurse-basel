@@ -254,16 +254,38 @@ def load_studios(file_key):
     return [s for s in studios if s.get("active", True)]
 
 
-def studio_matches_style(studio, style):
-    """Check if a studio offers a given style (fuzzy matching)."""
-    studio_styles = [s.lower().strip() for s in studio.get("styles", [])]
-    # Also check special_features for some styles
-    features = [f.lower().strip() for f in studio.get("special_features", [])]
-    all_terms = studio_styles + features
+# Distinctive root keywords per style. A studio matches a style only if one of
+# these roots appears INSIDE one of the studio's own style/feature tags (forward
+# substring). This avoids the old false positives where a plain "Vinyasa" studio
+# was counted as "Hot Yoga" merely because the match term "hot vinyasa" contains
+# the word "vinyasa" (reverse substring). Keep roots distinctive and >=3 chars.
+CORE_TERMS = {
+    "vinyasa": ["vinyasa"],
+    "hatha": ["hatha"],
+    "yin": ["yin"],
+    "ashtanga": ["ashtanga", "mysore"],
+    "hot": ["hot yoga", "bikram", "hot vinyasa", "inferno hot"],
+    "kundalini": ["kundalini"],
+    "power": ["power"],
+    "aerial": ["aerial", "fly high", "antigravity"],
+    "prenatal": ["prenatal", "pränatal", "schwangerschaft", "pregnan", "mama"],
+    "restorative": ["restorative"],
+}
 
-    for term in style["match_terms"]:
-        for studio_term in all_terms:
-            if term.lower() in studio_term or studio_term in term.lower():
+
+def studio_matches_style(studio, style):
+    """Check if a studio actually offers a given style.
+
+    Matches a distinctive root keyword as a substring of the studio's OWN style
+    or feature tags (forward only). A studio that just lists "Vinyasa" is NOT
+    treated as Hot Yoga, because no hot root ("hot yoga"/"bikram"/...) appears in
+    the tag "vinyasa"."""
+    terms = [s.lower().strip() for s in studio.get("styles", [])]
+    terms += [f.lower().strip() for f in studio.get("special_features", [])]
+    roots = CORE_TERMS.get(style["description_key"], [style["name"].lower()])
+    for t in terms:
+        for r in roots:
+            if r in t:
                 return True
     return False
 
@@ -308,8 +330,30 @@ def generate_page_html(style, city, matching_studios, all_styles, all_cities):
     desc_data = STYLE_DESCRIPTIONS[style["description_key"]]
     city_why = desc_data["why_city"].get(city_slug, desc_data["why_city"].get("zuerich", ""))
 
-    title = f"{style_name} in {city_name} — Alle Studios & Kurse | Yoga Schweiz"
-    meta_desc = f"{style_name} in {city_name}: {num_studios} Studio{'s' if num_studios != 1 else ''} mit {style_name}-Kursen. Adressen, Stile und Links. Finde deinen perfekten Kurs."
+    # Data-driven, page-unique content: name the real studios that offer this
+    # style in this city (makes every page genuinely distinct, not a template).
+    studio_names_raw = [s.get("name", "") for s in matching_studios if s.get("name")]
+    esc_names = [escape(n) for n in studio_names_raw]  # for direct HTML insertion
+    if len(esc_names) == 1:
+        names_txt = esc_names[0]
+    elif len(esc_names) <= 4:
+        names_txt = ", ".join(esc_names[:-1]) + " und " + esc_names[-1]
+    else:
+        names_txt = ", ".join(esc_names[:4]) + f" und {len(esc_names) - 4} weitere"
+    plural = "s" if num_studios != 1 else ""
+    if num_studios == 1:
+        unique_intro = (f"In {escape(city_name)} bietet aktuell {names_txt} {escape(style_name)} an. "
+                        f"Unten findest du die Adresse, den Link zum Stundenplan und die weiteren Stile des Studios.")
+    else:
+        unique_intro = (f"In {escape(city_name)} bieten unter anderem {names_txt} {escape(style_name)} an. "
+                        f"Unten findest du alle {num_studios} Studios mit Adresse, Stundenplan-Link und weiteren angebotenen Stilen.")
+
+    title = f"{style_name} in {city_name} — {num_studios} Studio{plural} & Kurse | Yoga Schweiz"
+    # meta_desc stays RAW here; it is escape()d at each point of use (meta tags + JSON-LD).
+    top_studio = studio_names_raw[0] if studio_names_raw else ""
+    meta_desc = (f"{style_name} in {city_name}: {num_studios} Studio{plural} mit {style_name}-Kursen"
+                 + (f", u. a. {top_studio}" if top_studio else "")
+                 + f". Adressen, Stundenplan & Links — finde deinen {style_name}-Kurs in {city_name}.")
     meta_keywords = f"{style_name} {city_name}, {style['name']} Yoga {city_name}, {style['name']} Yoga Schweiz, Yoga {city_name}"
 
     # Build studio cards
@@ -731,6 +775,7 @@ def generate_page_html(style, city, matching_studios, all_styles, all_cities):
         <!-- Description -->
         <section class="section description">
             <h2>&Uuml;ber {escape(style_name)}</h2>
+            <p>{unique_intro}</p>
             <p>{desc_data['what']}</p>
             <p>{city_why}</p>
             <p><strong>F&uuml;r wen:</strong> {desc_data['who']}</p>
@@ -814,6 +859,24 @@ def main():
                 pages_to_generate.append((style, city, matching))
 
     print(f"\n  Found {len(pages_to_generate)} style+city combinations with studios\n")
+
+    # Remove orphaned pages: a style+city dir that exists on disk but no longer
+    # has any matching studio (e.g. after a data change) would otherwise linger
+    # with stale content and stay in the sitemap. Only touch {style}-{city} dirs.
+    import shutil
+    valid_folders = {f"{s['url_slug']}-{c['url_slug']}" for (s, c, _) in pages_to_generate}
+    all_style_slugs = {s["url_slug"] for s in STYLES}
+    all_city_slugs = {c["url_slug"] for c in CITIES}
+    if os.path.isdir(OUTPUT_DIR):
+        for entry in sorted(os.listdir(OUTPUT_DIR)):
+            path = os.path.join(OUTPUT_DIR, entry)
+            if not os.path.isdir(path):
+                continue
+            looks_like_style_city = any(
+                entry == f"{ss}-{cs}" for ss in all_style_slugs for cs in all_city_slugs)
+            if looks_like_style_city and entry not in valid_folders:
+                shutil.rmtree(path)
+                print(f"  removed orphan (0 studios): yoga/{entry}/")
 
     # Filter related links to only existing pages
     existing_style_slugs_per_city = defaultdict(list)

@@ -1226,7 +1226,7 @@ if ('serviceWorker' in navigator) {
             state.filteredStudios = state.studios.slice();
             populateStyleFilter(data.styles_index || []);
             populateDistrictFilter();
-            if ($('studioCount')) $('studioCount').textContent = state.studios.length + '+';
+            // Hero "Studios" is a national stat (246+) set statically in HTML; do not shrink it to the per-canton count.
             if ($('totalCount')) $('totalCount').textContent = state.studios.length;
             console.log('[YogaSchweiz] Loaded', state.studios.length, 'studios for', state.currentCanton);
         } catch (e) { console.error('[YogaSchweiz] Error in data prep:', e); }

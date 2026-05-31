@@ -39,6 +39,16 @@ jobs:
       - name: Run scraper (all cantons)
         run: python scrapers/scrape_all.py
 
+      - name: Encrypt data files (regenerate .enc.json served to the public)
+        run: python tools/encrypt_data.py
+
+      - name: Regenerate static pages and sitemap from fresh data
+        run: |
+          python tools/generate_canton_pages.py
+          python tools/generate_style_pages.py
+          python tools/update_homepage_counts.py
+          python tools/generate_sitemap.py
+
       - name: Run data validation
         id: validate
         run: |
@@ -81,18 +91,15 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet data/ tools/price_changelog.json tools/validation_report.json 2>/dev/null || echo "changed=true" >> $GITHUB_OUTPUT
+          git add -A data kanton yoga index.html sitemap.xml tools/price_changelog.json tools/validation_report.json 2>/dev/null || true
+          git diff --cached --quiet 2>/dev/null || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push changes
         if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "Yoga Basel Bot"
           git config user.email "bot@yogakursebasel.ch"
-          git add data/studios_*.json
-          git add data/schedule_*.json
-          git add tools/price_changelog.json || true
-          git add tools/validation_report.json || true
-          git commit -m "chore: update studio data $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git commit -m "chore: update studio data + regenerate pages $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
 
       - name: Create issue for high-severity anomalies
