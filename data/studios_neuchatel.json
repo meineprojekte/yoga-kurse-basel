@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-28T10:25:38.877737+00:00",
+  "last_updated": "2026-06-01T11:41:04.547472+00:00",
   "studios": [
     {
       "id": "yoga-fabrik-neuchatel",
@@ -46,10 +46,10 @@
       "lng": 6.9293,
       "active": true,
       "classes": [],
-      "scrape_status": "no_data",
-      "last_scraped": "2026-05-25T10:17:43.270852+00:00",
+      "scrape_status": "scraped",
+      "last_scraped": "2026-06-01T11:40:10.961112+00:00",
       "_meta": {
-        "last_scraped": "2026-05-28T10:22:01.103757+00:00",
+        "last_scraped": "2026-06-01T11:40:24.140482+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -64,7 +64,7 @@
         "monthly": null,
         "verified": true,
         "source": "https://yoga-fabrik.ch",
-        "last_checked": "2026-05-28T10:22:01.103726+00:00",
+        "last_checked": "2026-06-01T11:40:24.140462+00:00",
         "notes": "5-pack CHF 140. 12-pack CHF 315. 24-pack CHF 580. Unlimited 3mo CHF 490, 6mo CHF 850, 12mo CHF 1400."
       }
     },
@@ -107,12 +107,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogashashin.ch/",
-        "last_checked": "2026-05-28T10:22:13.414019+00:00"
+        "last_checked": "2026-06-01T11:40:37.518463+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-28T10:22:02.129774+00:00",
+      "last_scraped": "2026-06-01T11:40:25.243315+00:00",
       "_meta": {
-        "last_scraped": "2026-05-28T10:22:13.414034+00:00",
+        "last_scraped": "2026-06-01T11:40:37.518476+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -158,10 +158,10 @@
       "lng": 6.8322,
       "active": true,
       "classes": [],
-      "scrape_status": "no_data",
-      "last_scraped": "2026-05-25T10:18:12.566622+00:00",
+      "scrape_status": "scraped",
+      "last_scraped": "2026-06-01T11:40:39.058804+00:00",
       "_meta": {
-        "last_scraped": "2026-05-28T10:25:32.787193+00:00",
+        "last_scraped": "2026-06-01T11:40:58.775031+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -213,9 +213,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-05-28T10:25:33.107014+00:00",
+      "last_scraped": "2026-06-01T11:41:00.020358+00:00",
       "_meta": {
-        "last_scraped": "2026-05-28T10:25:38.877730+00:00",
+        "last_scraped": "2026-06-01T11:41:04.547462+00:00",
         "last_price_check": "2026-03-26T21:59:02.502028+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -229,7 +229,7 @@
         "single": null,
         "verified": true,
         "source": "https://banyann.ch",
-        "last_checked": "2026-05-28T10:25:38.877716+00:00",
+        "last_checked": "2026-06-01T11:41:04.547443+00:00",
         "notes": "Semester CHF 390. Annual CHF 730. Private CHF 60. 10% student/senior discount."
       }
     }

@@ -385,5 +385,14 @@
     "old_value": 150.0,
     "new_value": 250.0,
     "source": "https://www.niyama-yoga.ch/en/start/preise"
+  },
+  {
+    "timestamp": "2026-06-01T11:44:39.898897+00:00",
+    "studio_id": "yoga-in-der-altstadt-st-gallen",
+    "canton": "st-gallen",
+    "field": "pricing.abo",
+    "old_value": 99.0,
+    "new_value": 50.0,
+    "source": "https://www.yoga-in-der-altstadt.ch"
   }
 ]
