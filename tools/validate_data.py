@@ -168,7 +168,7 @@ def validate_prices(studios):
             if not (lo <= value <= hi):
                 anomalies.append({
                     "type": "price_out_of_range",
-                    "severity": "high",
+                    "severity": "medium",  # clean_data.py nulls impossible values; the rest are just unusual (review, don't alert)
                     "studio_id": sid,
                     "studio_name": sname,
                     "canton": canton_id,

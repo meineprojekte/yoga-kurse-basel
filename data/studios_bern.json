@@ -55,8 +55,8 @@
         }
       },
       "pricing": {
-        "card_10": 5,
-        "monthly": 5,
+        "card_10": null,
+        "monthly": null,
         "trial": 65,
         "currency": "CHF",
         "verified": true,
@@ -124,7 +124,7 @@
       },
       "pricing": {
         "single": 30,
-        "card_10": 15,
+        "card_10": null,
         "trial": 15,
         "currency": "CHF",
         "verified": true,
@@ -489,8 +489,8 @@
       },
       "pricing": {
         "single": 5,
-        "card_10": 38,
-        "monthly": 38,
+        "card_10": null,
+        "monthly": null,
         "trial": 38,
         "currency": "CHF",
         "verified": true,
@@ -2271,7 +2271,7 @@
       "scrape_status": "no_data",
       "last_scraped": "2026-05-28T09:56:32.369857+00:00",
       "pricing": {
-        "single": 195,
+        "single": null,
         "currency": "CHF",
         "verified": true,
         "source": "https://www.devi-yoga-health.ch/prices",
@@ -2466,7 +2466,7 @@
       },
       "pricing": {
         "single": 25,
-        "card_10": 25,
+        "card_10": null,
         "monthly": 50,
         "trial": 25,
         "currency": "CHF",
@@ -2696,7 +2696,7 @@
       },
       "pricing": {
         "single": 30,
-        "card_10": 30,
+        "card_10": null,
         "trial": 50,
         "currency": "CHF",
         "verified": true,
@@ -2810,7 +2810,7 @@
       },
       "pricing": {
         "single": 29,
-        "card_10": 29,
+        "card_10": null,
         "trial": 29,
         "currency": "CHF",
         "verified": true,

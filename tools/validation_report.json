@@ -1,32 +1,20 @@
 {
-  "timestamp": "2026-06-01T12:05:56.121277",
+  "timestamp": "2026-06-02T20:20:33.731940",
   "summary": {
     "total_studios": 266,
     "total_active": 246,
     "total_with_pricing": 203,
-    "total_classes": 2596,
+    "total_classes": 2529,
     "cantons_loaded": 26,
-    "anomalies_found": 64,
-    "warnings_found": 285,
-    "price_changes_found": 0,
+    "anomalies_found": 10,
+    "warnings_found": 228,
+    "price_changes_found": 8,
     "first_run": false
   },
   "anomalies": [
     {
       "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "yoga-spirit",
-      "studio_name": "Yoga Spirit",
-      "canton": "zurich",
-      "field": "pricing.monthly",
-      "value": 38.0,
-      "expected_range": "50-400",
-      "source": "https://yoga-spirit.ch/prices",
-      "message": "monthly CHF 38.0 ist ausserhalb des normalen Bereichs (CHF 50-400)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
+      "severity": "medium",
       "studio_id": "yoga-in-a-bag-altstetten",
       "studio_name": "Yoga in a Bag (Altstetten)",
       "canton": "zurich",
@@ -38,7 +26,7 @@
     },
     {
       "type": "price_out_of_range",
-      "severity": "high",
+      "severity": "medium",
       "studio_id": "yoga-in-a-bag-albisrieden",
       "studio_name": "Yoga in a Bag (Albisrieden)",
       "canton": "zurich",
@@ -50,7 +38,7 @@
     },
     {
       "type": "price_out_of_range",
-      "severity": "high",
+      "severity": "medium",
       "studio_id": "elevate-studio",
       "studio_name": "Elevate Studio",
       "canton": "zurich",
@@ -62,19 +50,7 @@
     },
     {
       "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "elevate-studio",
-      "studio_name": "Elevate Studio",
-      "canton": "zurich",
-      "field": "pricing.card_10",
-      "value": 10,
-      "expected_range": "80-500",
-      "source": "https://www.elevate-studio.ch/prices",
-      "message": "card_10 CHF 10 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
+      "severity": "medium",
       "studio_id": "yoga-in-a-bag-winterthur",
       "studio_name": "Yoga in a Bag (Winterthur)",
       "canton": "zurich",
@@ -86,43 +62,7 @@
     },
     {
       "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "yama-yoga-bern",
-      "studio_name": "YAMA Yoga & Co",
-      "canton": "bern",
-      "field": "pricing.card_10",
-      "value": 5,
-      "expected_range": "80-500",
-      "source": "https://www.yamabern.ch/plans-pricing",
-      "message": "card_10 CHF 5 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "yama-yoga-bern",
-      "studio_name": "YAMA Yoga & Co",
-      "canton": "bern",
-      "field": "pricing.monthly",
-      "value": 5,
-      "expected_range": "50-400",
-      "source": "https://www.yamabern.ch/plans-pricing",
-      "message": "monthly CHF 5 ist ausserhalb des normalen Bereichs (CHF 50-400)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "yoga-carmen-bern",
-      "studio_name": "Yoga Carmen",
-      "canton": "bern",
-      "field": "pricing.card_10",
-      "value": 15,
-      "expected_range": "80-500",
-      "source": "https://www.yoga-carmen.ch/yoga-kurs-bern",
-      "message": "card_10 CHF 15 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
+      "severity": "medium",
       "studio_id": "hot-yoga-christoph-herren",
       "studio_name": "Hot Yoga Christoph Herren",
       "canton": "bern",
@@ -134,79 +74,7 @@
     },
     {
       "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "hot-yoga-christoph-herren",
-      "studio_name": "Hot Yoga Christoph Herren",
-      "canton": "bern",
-      "field": "pricing.card_10",
-      "value": 38,
-      "expected_range": "80-500",
-      "source": "https://www.hotyogachristophherren.ch/angebot-yoga-infrarot",
-      "message": "card_10 CHF 38 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "hot-yoga-christoph-herren",
-      "studio_name": "Hot Yoga Christoph Herren",
-      "canton": "bern",
-      "field": "pricing.monthly",
-      "value": 38,
-      "expected_range": "50-400",
-      "source": "https://www.hotyogachristophherren.ch/angebot-yoga-infrarot",
-      "message": "monthly CHF 38 ist ausserhalb des normalen Bereichs (CHF 50-400)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "devi-yoga-bern",
-      "studio_name": "DEVI Yoga Atem Therapie",
-      "canton": "bern",
-      "field": "pricing.single",
-      "value": 195,
-      "expected_range": "10-60",
-      "source": "https://www.devi-yoga-health.ch/prices",
-      "message": "single CHF 195 ist ausserhalb des normalen Bereichs (CHF 10-60)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "energie-yoga-bern",
-      "studio_name": "Energie Yoga",
-      "canton": "bern",
-      "field": "pricing.card_10",
-      "value": 25,
-      "expected_range": "80-500",
-      "source": "https://energieyoga.ch/b3b.html",
-      "message": "card_10 CHF 25 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "canton": "bern",
-      "field": "pricing.card_10",
-      "value": 30,
-      "expected_range": "80-500",
-      "source": "https://www.yoga-room.ch/preise",
-      "message": "card_10 CHF 30 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "canton": "bern",
-      "field": "pricing.card_10",
-      "value": 29,
-      "expected_range": "80-500",
-      "source": "https://www.yogabude.ch/abo-preise",
-      "message": "card_10 CHF 29 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
+      "severity": "medium",
       "studio_id": "yogastudio-luzern",
       "studio_name": "Yogastudio Luzern",
       "canton": "luzern",
@@ -218,223 +86,7 @@
     },
     {
       "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "ashtanga-luzern",
-      "studio_name": "Ashtanga Yoga Luzern",
-      "canton": "luzern",
-      "field": "pricing.single",
-      "value": 500.0,
-      "expected_range": "10-60",
-      "source": "https://ashtanga-luzern.ch/prices",
-      "message": "single CHF 500.0 ist ausserhalb des normalen Bereichs (CHF 10-60)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "yogaraum-luzern",
-      "studio_name": "Yogaraum Luzern",
-      "canton": "luzern",
-      "field": "pricing.single",
-      "value": 120.0,
-      "expected_range": "10-60",
-      "source": "https://www.yogaraum-luzern.ch",
-      "message": "single CHF 120.0 ist ausserhalb des normalen Bereichs (CHF 10-60)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "anantara-yogastudio-altdorf",
-      "studio_name": "Anantara Yogastudio",
-      "canton": "uri",
-      "field": "pricing.card_10",
-      "value": 15,
-      "expected_range": "80-500",
-      "source": "https://www.anantara-yogastudio.ch/preise",
-      "message": "card_10 CHF 15 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "yogaamfluss-ennenda",
-      "studio_name": "YOGAamFLUSS",
-      "canton": "glarus",
-      "field": "pricing.card_10",
-      "value": 20,
-      "expected_range": "80-500",
-      "source": "https://www.yoga-am-fluss.ch/angebot/preise/",
-      "message": "card_10 CHF 20 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "volta-yoga",
-      "studio_name": "Volta Yoga",
-      "canton": "basel-stadt",
-      "field": "pricing.monthly",
-      "value": 20,
-      "expected_range": "50-400",
-      "source": "https://en.voltayoga.ch/preiseundabos",
-      "message": "monthly CHF 20 ist ausserhalb des normalen Bereichs (CHF 50-400)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "meyo-house",
-      "studio_name": "MEYO HOUSE",
-      "canton": "basel-stadt",
-      "field": "pricing.card_10",
-      "value": 6,
-      "expected_range": "80-500",
-      "source": "https://www.meyohouse.com/preise",
-      "message": "card_10 CHF 6 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "lotos",
-      "studio_name": "Lotos Yoga-Zentrum",
-      "canton": "basel-stadt",
-      "field": "pricing.single",
-      "value": 960,
-      "expected_range": "10-60",
-      "source": "https://lotosyoga.ch/kosten-der-yoga-therapie-ausbildung/",
-      "message": "single CHF 960 ist ausserhalb des normalen Bereichs (CHF 10-60)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "lotos",
-      "studio_name": "Lotos Yoga-Zentrum",
-      "canton": "basel-stadt",
-      "field": "pricing.trial",
-      "value": 960,
-      "expected_range": "0-80",
-      "source": "https://lotosyoga.ch/kosten-der-yoga-therapie-ausbildung/",
-      "message": "trial CHF 960 ist ausserhalb des normalen Bereichs (CHF 0-80)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "yoga-gaertnerhuus",
-      "studio_name": "Yoga im Gärtnerhuus",
-      "canton": "basel-stadt",
-      "field": "pricing.monthly",
-      "value": 12,
-      "expected_range": "50-400",
-      "source": "https://www.yogaimgaertnerhuus.com/pricing-plans/list",
-      "message": "monthly CHF 12 ist ausserhalb des normalen Bereichs (CHF 50-400)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "secret-garden",
-      "studio_name": "Secret Garden Yoga Studio",
-      "canton": "basel-stadt",
-      "field": "pricing.single",
-      "value": 250,
-      "expected_range": "10-60",
-      "source": "https://secretgarden-yoga.ch/en/product/10er-paket/",
-      "message": "single CHF 250 ist ausserhalb des normalen Bereichs (CHF 10-60)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "fitnesspark",
-      "studio_name": "Fitnesspark Basel Heuwaage (Migros)",
-      "canton": "basel-stadt",
-      "field": "pricing.single",
-      "value": 131.0,
-      "expected_range": "10-60",
-      "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/preise",
-      "message": "single CHF 131.0 ist ausserhalb des normalen Bereichs (CHF 10-60)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "fitnesspark",
-      "studio_name": "Fitnesspark Basel Heuwaage (Migros)",
-      "canton": "basel-stadt",
-      "field": "pricing.monthly",
-      "value": 10.0,
-      "expected_range": "50-400",
-      "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/preise",
-      "message": "monthly CHF 10.0 ist ausserhalb des normalen Bereichs (CHF 50-400)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "yoga-werkstatt-liestal",
-      "studio_name": "Yoga Werkstatt",
-      "canton": "basel-landschaft",
-      "field": "pricing.card_10",
-      "value": 30,
-      "expected_range": "80-500",
-      "source": "https://yoga-werkstatt.ch/stundenplan/",
-      "message": "card_10 CHF 30 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "jyoti-yoga-liestal",
-      "studio_name": "Jyoti Yoga",
-      "canton": "basel-landschaft",
-      "field": "pricing.card_10",
-      "value": 10,
-      "expected_range": "80-500",
-      "source": "https://www.jyotiyoga.ch/",
-      "message": "card_10 CHF 10 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "hathayoga-arlesheim",
-      "studio_name": "Hatha Yoga Arlesheim",
-      "canton": "basel-landschaft",
-      "field": "pricing.card_10",
-      "value": 20,
-      "expected_range": "80-500",
-      "source": "https://www.hathayoga-basel.ch/preise-und-agb/",
-      "message": "card_10 CHF 20 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "yogalicht-schaffhausen",
-      "studio_name": "YOGALICHT",
-      "canton": "schaffhausen",
-      "field": "pricing.single",
-      "value": 120,
-      "expected_range": "10-60",
-      "source": "https://yogalicht.ch/preise",
-      "message": "single CHF 120 ist ausserhalb des normalen Bereichs (CHF 10-60)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "yoga-claudia-appenzell",
-      "studio_name": "Claudia Hauri - Yoga und Ayurveda",
-      "canton": "appenzell-ir",
-      "field": "pricing.card_10",
-      "value": 10,
-      "expected_range": "80-500",
-      "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
-      "message": "card_10 CHF 10 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "hot-yoga-4-u-rapperswil",
-      "studio_name": "HOT YOGA 4 U",
-      "canton": "st-gallen",
-      "field": "pricing.single",
-      "value": 275,
-      "expected_range": "10-60",
-      "source": "https://hotyoga4u.ch",
-      "message": "single CHF 275 ist ausserhalb des normalen Bereichs (CHF 10-60)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
+      "severity": "medium",
       "studio_id": "acroyoga-group-chur",
       "studio_name": "Acroyoga Group Graubünden",
       "canton": "graubuenden",
@@ -446,43 +98,7 @@
     },
     {
       "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "my-yoga-garden-suhr",
-      "studio_name": "My Yoga Garden",
-      "canton": "aargau",
-      "field": "pricing.single",
-      "value": 1100,
-      "expected_range": "10-60",
-      "source": "https://www.my-yoga-garden.ch/preise",
-      "message": "single CHF 1100 ist ausserhalb des normalen Bereichs (CHF 10-60)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "my-yoga-garden-suhr",
-      "studio_name": "My Yoga Garden",
-      "canton": "aargau",
-      "field": "pricing.card_10",
-      "value": 30,
-      "expected_range": "80-500",
-      "source": "https://www.my-yoga-garden.ch/preise",
-      "message": "card_10 CHF 30 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "my-yoga-garden-suhr",
-      "studio_name": "My Yoga Garden",
-      "canton": "aargau",
-      "field": "pricing.monthly",
-      "value": 1100,
-      "expected_range": "50-400",
-      "source": "https://www.my-yoga-garden.ch/preise",
-      "message": "monthly CHF 1100 ist ausserhalb des normalen Bereichs (CHF 50-400)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
+      "severity": "medium",
       "studio_id": "jetzt-yoga-baden",
       "studio_name": "jetzt. YOGA Baden",
       "canton": "aargau",
@@ -494,55 +110,7 @@
     },
     {
       "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "jetzt-yoga-baden",
-      "studio_name": "jetzt. YOGA Baden",
-      "canton": "aargau",
-      "field": "pricing.card_10",
-      "value": 38,
-      "expected_range": "80-500",
-      "source": "https://www.jetzt.yoga/yogakurs-baden",
-      "message": "card_10 CHF 38 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "jetzt-yoga-baden",
-      "studio_name": "jetzt. YOGA Baden",
-      "canton": "aargau",
-      "field": "pricing.monthly",
-      "value": 30,
-      "expected_range": "50-400",
-      "source": "https://www.jetzt.yoga/yogakurs-baden",
-      "message": "monthly CHF 30 ist ausserhalb des normalen Bereichs (CHF 50-400)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "yoga-grenzenlos-kreuzlingen",
-      "studio_name": "yoga grenzenlos",
-      "canton": "thurgau",
-      "field": "pricing.single",
-      "value": 150.0,
-      "expected_range": "10-60",
-      "source": "https://www.yogagrenzenlos.com/preise",
-      "message": "single CHF 150.0 ist ausserhalb des normalen Bereichs (CHF 10-60)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "yogal-lugano",
-      "studio_name": "Yogal Lugano - Ashtanga Yoga",
-      "canton": "ticino",
-      "field": "pricing.card_10",
-      "value": 30,
-      "expected_range": "80-500",
-      "source": "https://www.yogalugano.ch/prezzi",
-      "message": "card_10 CHF 30 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
+      "severity": "medium",
       "studio_id": "yoga-nest-carouge",
       "studio_name": "Yoga Nest",
       "canton": "geneve",
@@ -554,7 +122,7 @@
     },
     {
       "type": "price_out_of_range",
-      "severity": "high",
+      "severity": "medium",
       "studio_id": "ka-studio-geneve",
       "studio_name": "ka studio",
       "canton": "geneve",
@@ -563,192 +131,6 @@
       "expected_range": "50-400",
       "source": "https://kastudio.ch",
       "message": "monthly CHF 450 ist ausserhalb des normalen Bereichs (CHF 50-400)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "ar-yoga-geneve",
-      "studio_name": "ar'Yoga Genève",
-      "canton": "geneve",
-      "field": "pricing.monthly",
-      "value": 15.0,
-      "expected_range": "50-400",
-      "source": "https://aryoga.ch",
-      "message": "monthly CHF 15.0 ist ausserhalb des normalen Bereichs (CHF 50-400)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "yoga-sha-geneve",
-      "studio_name": "Yoga Sha",
-      "canton": "geneve",
-      "field": "pricing.card_10",
-      "value": 30,
-      "expected_range": "80-500",
-      "source": "https://yogasha.ch/",
-      "message": "card_10 CHF 30 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "high",
-      "studio_id": "la-perle-de-letre",
-      "studio_name": "La Perle de l'Être",
-      "canton": "geneve",
-      "field": "pricing.card_10",
-      "value": 10,
-      "expected_range": "80-500",
-      "source": "https://www.laperledeletre.com/page-vierge-1",
-      "message": "card_10 CHF 10 ist ausserhalb des normalen Bereichs (CHF 80-500)"
-    },
-    {
-      "type": "end_before_start",
-      "severity": "high",
-      "studio_id": "das-yoga-haus",
-      "studio_name": "Das Yoga Haus",
-      "canton": "zurich",
-      "field": "time_end",
-      "value": "9:30-7:30",
-      "message": "Endzeit 7:30 liegt vor Startzeit 9:30 für Das Yoga Haus - 28. März, –19:30DAS YOGA HAUS (Tuesday)"
-    },
-    {
-      "type": "end_before_start",
-      "severity": "high",
-      "studio_id": "hrdayam-bern",
-      "studio_name": "Hrdayam - Jivamukti Yoga Bern",
-      "canton": "bern",
-      "field": "time_end",
-      "value": "18:30-18:30",
-      "message": "Endzeit 18:30 liegt vor Startzeit 18:30 für Hrdayam - Jivamukti Yoga Bern - 18:30ClareJivamukti Yoga OpenGerechtigkeitsgasse 77Jivamukti Yoga Open3 June 2026 • (Wednesday)"
-    },
-    {
-      "type": "end_before_start",
-      "severity": "high",
-      "studio_id": "hrdayam-bern",
-      "studio_name": "Hrdayam - Jivamukti Yoga Bern",
-      "canton": "bern",
-      "field": "time_end",
-      "value": "10:00-10:00",
-      "message": "Endzeit 10:00 liegt vor Startzeit 10:00 für Hrdayam - Jivamukti Yoga Bern - 10:00ClareJivamukti Yoga OpenGerechtigkeitsgasse 77, 3011, Bern., HrdayamJivamukti Yoga Open7 June 2026 • (Sunday)"
-    },
-    {
-      "type": "end_before_start",
-      "severity": "high",
-      "studio_id": "slow-move-lugano",
-      "studio_name": "Slow Move Yoga & Wellness",
-      "canton": "ticino",
-      "field": "time_end",
-      "value": "18:30-18:30",
-      "message": "Endzeit 18:30 liegt vor Startzeit 18:30 für Slow Move Yoga & Wellness - 23 March 2026 • (Saturday)"
-    },
-    {
-      "type": "end_before_start",
-      "severity": "high",
-      "studio_id": "slow-move-lugano",
-      "studio_name": "Slow Move Yoga & Wellness",
-      "canton": "ticino",
-      "field": "time_end",
-      "value": "18:15-18:15",
-      "message": "Endzeit 18:15 liegt vor Startzeit 18:15 für Slow Move Yoga & Wellness - Yoga for Beginners (Saturday)"
-    },
-    {
-      "type": "end_before_start",
-      "severity": "high",
-      "studio_id": "slow-move-lugano",
-      "studio_name": "Slow Move Yoga & Wellness",
-      "canton": "ticino",
-      "field": "time_end",
-      "value": "19:30-19:30",
-      "message": "Endzeit 19:30 liegt vor Startzeit 19:30 für Slow Move Yoga & Wellness - 24 March 2026 • (Saturday)"
-    },
-    {
-      "type": "end_before_start",
-      "severity": "high",
-      "studio_id": "slow-move-lugano",
-      "studio_name": "Slow Move Yoga & Wellness",
-      "canton": "ticino",
-      "field": "time_end",
-      "value": "09:30-09:30",
-      "message": "Endzeit 09:30 liegt vor Startzeit 09:30 für Slow Move Yoga & Wellness - 25 March 2026 • (Saturday)"
-    },
-    {
-      "type": "end_before_start",
-      "severity": "high",
-      "studio_id": "slow-move-lugano",
-      "studio_name": "Slow Move Yoga & Wellness",
-      "canton": "ticino",
-      "field": "time_end",
-      "value": "18:30-18:30",
-      "message": "Endzeit 18:30 liegt vor Startzeit 18:30 für Slow Move Yoga & Wellness - Gentle Yoga (Saturday)"
-    },
-    {
-      "type": "end_before_start",
-      "severity": "high",
-      "studio_id": "slow-move-lugano",
-      "studio_name": "Slow Move Yoga & Wellness",
-      "canton": "ticino",
-      "field": "time_end",
-      "value": "18:30-18:30",
-      "message": "Endzeit 18:30 liegt vor Startzeit 18:30 für Slow Move Yoga & Wellness - 26 March 2026 • (Saturday)"
-    },
-    {
-      "type": "end_before_start",
-      "severity": "high",
-      "studio_id": "slow-move-lugano",
-      "studio_name": "Slow Move Yoga & Wellness",
-      "canton": "ticino",
-      "field": "time_end",
-      "value": "09:30-09:30",
-      "message": "Endzeit 09:30 liegt vor Startzeit 09:30 für Slow Move Yoga & Wellness - 27 March 2026 • (Saturday)"
-    },
-    {
-      "type": "end_before_start",
-      "severity": "high",
-      "studio_id": "slow-move-lugano",
-      "studio_name": "Slow Move Yoga & Wellness",
-      "canton": "ticino",
-      "field": "time_end",
-      "value": "18:15-18:15",
-      "message": "Endzeit 18:15 liegt vor Startzeit 18:15 für Slow Move Yoga & Wellness - Yin Yoga (Saturday)"
-    },
-    {
-      "type": "end_before_start",
-      "severity": "high",
-      "studio_id": "slow-move-lugano",
-      "studio_name": "Slow Move Yoga & Wellness",
-      "canton": "ticino",
-      "field": "time_end",
-      "value": "09:30-09:30",
-      "message": "Endzeit 09:30 liegt vor Startzeit 09:30 für Slow Move Yoga & Wellness - 29 March 2026 • (Saturday)"
-    },
-    {
-      "type": "end_before_start",
-      "severity": "high",
-      "studio_id": "yogaworks-lausanne",
-      "studio_name": "Yogaworks",
-      "canton": "vaud",
-      "field": "time_end",
-      "value": "12:30-1:30",
-      "message": "Endzeit 1:30 liegt vor Startzeit 12:30 für Yogaworks - CHAT & CHAIWhat is Karma? How does it work? – Explanations – Questions & AnswersSaturday, March 21 – (Wednesday)"
-    },
-    {
-      "type": "end_before_start",
-      "severity": "high",
-      "studio_id": "yogaworks-lausanne",
-      "studio_name": "Yogaworks",
-      "canton": "vaud",
-      "field": "time_end",
-      "value": "12:30-1:30",
-      "message": "Endzeit 1:30 liegt vor Startzeit 12:30 für Yogaworks - Saturday, March 21 – (Thursday)"
-    },
-    {
-      "type": "end_before_start",
-      "severity": "high",
-      "studio_id": "imyoga-lausanne",
-      "studio_name": "IMYOGA Lausanne",
-      "canton": "vaud",
-      "field": "time_end",
-      "value": "18:30-12:15",
-      "message": "Endzeit 12:15 liegt vor Startzeit 18:30 für IMYOGA Lausanne - Monday Yin Yoga Nidra -19:30Tuesday Vinyasa Yoga -13:15Tuesday Vinyasa Yoga -19:30Wednesday HIIT Circuit Training -19:15Wednesday Pilates -20:30Thursday Vinyasa Yoga -19:30Friday Pilates -19:00Saturday Yoga at the lake - at Guinguette de Vidy (in the summer)Sunday Vinyasa Yoga (Saturday)"
     }
   ],
   "warnings": [
@@ -835,18 +217,6 @@
       "expected_range": "<= 29",
       "source": "https://www.dasyogahaus-dubs.ch/preise",
       "message": "Probepreis CHF 75 ist höher als Einzeleintritt CHF 29"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "yoga-spirit",
-      "studio_name": "Yoga Spirit",
-      "canton": "zurich",
-      "field": "pricing.monthly / pricing.single",
-      "value": 1.27,
-      "expected_range": "4-10x",
-      "source": "https://yoga-spirit.ch/prices",
-      "message": "Monatsabo/Einzeleintritt Verhältnis 1.3x (erwartet 4-10x)"
     },
     {
       "type": "price_ratio_unusual",
@@ -945,18 +315,6 @@
       "message": "Probepreis CHF 75 ist höher als Einzeleintritt CHF 5"
     },
     {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "elevate-studio",
-      "studio_name": "Elevate Studio",
-      "canton": "zurich",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 2.0,
-      "expected_range": "7-12x",
-      "source": "https://www.elevate-studio.ch/prices",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 2.0x (erwartet 7-12x)"
-    },
-    {
       "type": "trial_exceeds_single",
       "severity": "medium",
       "studio_id": "elevate-studio",
@@ -1003,18 +361,6 @@
       "expected_range": "<= 5",
       "source": "https://yogainabag.com/preise/",
       "message": "Probepreis CHF 75 ist höher als Einzeleintritt CHF 5"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "yoga-carmen-bern",
-      "studio_name": "Yoga Carmen",
-      "canton": "bern",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 0.5,
-      "expected_range": "7-12x",
-      "source": "https://www.yoga-carmen.ch/yoga-kurs-bern",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 0.5x (erwartet 7-12x)"
     },
     {
       "type": "trial_exceeds_single",
@@ -1082,35 +428,11 @@
       "studio_id": "energie-yoga-bern",
       "studio_name": "Energie Yoga",
       "canton": "bern",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 1.0,
-      "expected_range": "7-12x",
-      "source": "https://energieyoga.ch/b3b.html",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 1.0x (erwartet 7-12x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "energie-yoga-bern",
-      "studio_name": "Energie Yoga",
-      "canton": "bern",
       "field": "pricing.monthly / pricing.single",
       "value": 2.0,
       "expected_range": "4-10x",
       "source": "https://energieyoga.ch/b3b.html",
       "message": "Monatsabo/Einzeleintritt Verhältnis 2.0x (erwartet 4-10x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "canton": "bern",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 1.0,
-      "expected_range": "7-12x",
-      "source": "https://www.yoga-room.ch/preise",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 1.0x (erwartet 7-12x)"
     },
     {
       "type": "trial_exceeds_single",
@@ -1123,18 +445,6 @@
       "expected_range": "<= 30",
       "source": "https://www.yoga-room.ch/preise",
       "message": "Probepreis CHF 50 ist höher als Einzeleintritt CHF 30"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "yoga-bude-thun",
-      "studio_name": "Yoga Bude",
-      "canton": "bern",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 1.0,
-      "expected_range": "7-12x",
-      "source": "https://www.yogabude.ch/abo-preise",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 1.0x (erwartet 7-12x)"
     },
     {
       "type": "price_ratio_unusual",
@@ -1187,30 +497,6 @@
     {
       "type": "price_ratio_unusual",
       "severity": "medium",
-      "studio_id": "yogaraum-luzern",
-      "studio_name": "Yogaraum Luzern",
-      "canton": "luzern",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 2.08,
-      "expected_range": "7-12x",
-      "source": "https://www.yogaraum-luzern.ch",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 2.1x (erwartet 7-12x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "anantara-yogastudio-altdorf",
-      "studio_name": "Anantara Yogastudio",
-      "canton": "uri",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 1.0,
-      "expected_range": "7-12x",
-      "source": "https://www.anantara-yogastudio.ch/preise",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 1.0x (erwartet 7-12x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
       "studio_id": "sevencolors-stans",
       "studio_name": "sevencolors",
       "canton": "nidwalden",
@@ -1219,18 +505,6 @@
       "expected_range": "4-10x",
       "source": "https://sevencolors.ch",
       "message": "Monatsabo/Einzeleintritt Verhältnis 3.8x (erwartet 4-10x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "yogaamfluss-ennenda",
-      "studio_name": "YOGAamFLUSS",
-      "canton": "glarus",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 1.0,
-      "expected_range": "7-12x",
-      "source": "https://www.yoga-am-fluss.ch/angebot/preise/",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 1.0x (erwartet 7-12x)"
     },
     {
       "type": "trial_exceeds_single",
@@ -1293,18 +567,6 @@
       "message": "Probepreis CHF 60 ist höher als Einzeleintritt CHF 20"
     },
     {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "volta-yoga",
-      "studio_name": "Volta Yoga",
-      "canton": "basel-stadt",
-      "field": "pricing.monthly / pricing.single",
-      "value": 1.0,
-      "expected_range": "4-10x",
-      "source": "https://en.voltayoga.ch/preiseundabos",
-      "message": "Monatsabo/Einzeleintritt Verhältnis 1.0x (erwartet 4-10x)"
-    },
-    {
       "type": "trial_exceeds_single",
       "severity": "medium",
       "studio_id": "bikram",
@@ -1319,18 +581,6 @@
     {
       "type": "price_ratio_unusual",
       "severity": "medium",
-      "studio_id": "meyo-house",
-      "studio_name": "MEYO HOUSE",
-      "canton": "basel-stadt",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 0.6,
-      "expected_range": "7-12x",
-      "source": "https://www.meyohouse.com/preise",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 0.6x (erwartet 7-12x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
       "studio_id": "yoga-gaertnerhuus",
       "studio_name": "Yoga im Gärtnerhuus",
       "canton": "basel-stadt",
@@ -1339,18 +589,6 @@
       "expected_range": "7-12x",
       "source": "https://www.yogaimgaertnerhuus.com/pricing-plans/list",
       "message": "10er-Karte/Einzeleintritt Verhältnis 4.7x (erwartet 7-12x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "yoga-gaertnerhuus",
-      "studio_name": "Yoga im Gärtnerhuus",
-      "canton": "basel-stadt",
-      "field": "pricing.monthly / pricing.single",
-      "value": 0.71,
-      "expected_range": "4-10x",
-      "source": "https://www.yogaimgaertnerhuus.com/pricing-plans/list",
-      "message": "Monatsabo/Einzeleintritt Verhältnis 0.7x (erwartet 4-10x)"
     },
     {
       "type": "trial_exceeds_single",
@@ -1363,18 +601,6 @@
       "expected_range": "<= 17",
       "source": "https://www.yogaimgaertnerhuus.com/pricing-plans/list",
       "message": "Probepreis CHF 45 ist höher als Einzeleintritt CHF 17"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "secret-garden",
-      "studio_name": "Secret Garden Yoga Studio",
-      "canton": "basel-stadt",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 0.8,
-      "expected_range": "7-12x",
-      "source": "https://secretgarden-yoga.ch/en/product/10er-paket/",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 0.8x (erwartet 7-12x)"
     },
     {
       "type": "price_ratio_unusual",
@@ -1415,30 +641,6 @@
     {
       "type": "price_ratio_unusual",
       "severity": "medium",
-      "studio_id": "fitnesspark",
-      "studio_name": "Fitnesspark Basel Heuwaage (Migros)",
-      "canton": "basel-stadt",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 1.68,
-      "expected_range": "7-12x",
-      "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/preise",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 1.7x (erwartet 7-12x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "fitnesspark",
-      "studio_name": "Fitnesspark Basel Heuwaage (Migros)",
-      "canton": "basel-stadt",
-      "field": "pricing.monthly / pricing.single",
-      "value": 0.08,
-      "expected_range": "4-10x",
-      "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/preise",
-      "message": "Monatsabo/Einzeleintritt Verhältnis 0.1x (erwartet 4-10x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
       "studio_id": "gyym",
       "studio_name": "GYYM Health & Fitness",
       "canton": "basel-stadt",
@@ -1447,42 +649,6 @@
       "expected_range": "4-10x",
       "source": "https://gyym.ch/en",
       "message": "Monatsabo/Einzeleintritt Verhältnis 2.8x (erwartet 4-10x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "jyoti-yoga-liestal",
-      "studio_name": "Jyoti Yoga",
-      "canton": "basel-landschaft",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 1.0,
-      "expected_range": "7-12x",
-      "source": "https://www.jyotiyoga.ch/",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 1.0x (erwartet 7-12x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "hathayoga-arlesheim",
-      "studio_name": "Hatha Yoga Arlesheim",
-      "canton": "basel-landschaft",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 1.0,
-      "expected_range": "7-12x",
-      "source": "https://www.hathayoga-basel.ch/preise-und-agb/",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 1.0x (erwartet 7-12x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "yoga-claudia-appenzell",
-      "studio_name": "Claudia Hauri - Yoga und Ayurveda",
-      "canton": "appenzell-ir",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 1.0,
-      "expected_range": "7-12x",
-      "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 1.0x (erwartet 7-12x)"
     },
     {
       "type": "trial_exceeds_single",
@@ -1535,18 +701,6 @@
     {
       "type": "price_ratio_unusual",
       "severity": "medium",
-      "studio_id": "hot-yoga-4-u-rapperswil",
-      "studio_name": "HOT YOGA 4 U",
-      "canton": "st-gallen",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 0.91,
-      "expected_range": "7-12x",
-      "source": "https://hotyoga4u.ch",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 0.9x (erwartet 7-12x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
       "studio_id": "aloha-yoga-aarau",
       "studio_name": "aloha yoga Aarau",
       "canton": "aargau",
@@ -1571,30 +725,6 @@
     {
       "type": "price_ratio_unusual",
       "severity": "medium",
-      "studio_id": "my-yoga-garden-suhr",
-      "studio_name": "My Yoga Garden",
-      "canton": "aargau",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 0.03,
-      "expected_range": "7-12x",
-      "source": "https://www.my-yoga-garden.ch/preise",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 0.0x (erwartet 7-12x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "my-yoga-garden-suhr",
-      "studio_name": "My Yoga Garden",
-      "canton": "aargau",
-      "field": "pricing.monthly / pricing.single",
-      "value": 1.0,
-      "expected_range": "4-10x",
-      "source": "https://www.my-yoga-garden.ch/preise",
-      "message": "Monatsabo/Einzeleintritt Verhältnis 1.0x (erwartet 4-10x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
       "studio_id": "namaste-yoga-baden",
       "studio_name": "Namaste Yoga Baden",
       "canton": "aargau",
@@ -1603,66 +733,6 @@
       "expected_range": "7-12x",
       "source": "https://www.namaste-yoga-baden.ch/unsere-yoga-kurse/namaste-yoga-baden-preise-und-agbs/",
       "message": "10er-Karte/Einzeleintritt Verhältnis 6.0x (erwartet 7-12x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "jetzt-yoga-baden",
-      "studio_name": "jetzt. YOGA Baden",
-      "canton": "aargau",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 4.75,
-      "expected_range": "7-12x",
-      "source": "https://www.jetzt.yoga/yogakurs-baden",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 4.8x (erwartet 7-12x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "jetzt-yoga-baden",
-      "studio_name": "jetzt. YOGA Baden",
-      "canton": "aargau",
-      "field": "pricing.monthly / pricing.single",
-      "value": 3.75,
-      "expected_range": "4-10x",
-      "source": "https://www.jetzt.yoga/yogakurs-baden",
-      "message": "Monatsabo/Einzeleintritt Verhältnis 3.8x (erwartet 4-10x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "yoga-grenzenlos-kreuzlingen",
-      "studio_name": "yoga grenzenlos",
-      "canton": "thurgau",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 3.13,
-      "expected_range": "7-12x",
-      "source": "https://www.yogagrenzenlos.com/preise",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 3.1x (erwartet 7-12x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "yoga-grenzenlos-kreuzlingen",
-      "studio_name": "yoga grenzenlos",
-      "canton": "thurgau",
-      "field": "pricing.monthly / pricing.single",
-      "value": 0.87,
-      "expected_range": "4-10x",
-      "source": "https://www.yogagrenzenlos.com/preise",
-      "message": "Monatsabo/Einzeleintritt Verhältnis 0.9x (erwartet 4-10x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "yogal-lugano",
-      "studio_name": "Yogal Lugano - Ashtanga Yoga",
-      "canton": "ticino",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 3.0,
-      "expected_range": "7-12x",
-      "source": "https://www.yogalugano.ch/prezzi",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 3.0x (erwartet 7-12x)"
     },
     {
       "type": "trial_exceeds_single",
@@ -1711,28 +781,6 @@
       "expected_range": "4-10x",
       "source": "https://www.yoga-shambala.ch/horaires-tarifs.html",
       "message": "Monatsabo/Einzeleintritt Verhältnis 3.3x (erwartet 4-10x)"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "ar-yoga-geneve",
-      "studio_name": "ar'Yoga Genève",
-      "canton": "geneve",
-      "field": "pricing.monthly / pricing.single",
-      "value": 0.6,
-      "expected_range": "4-10x",
-      "source": "https://aryoga.ch",
-      "message": "Monatsabo/Einzeleintritt Verhältnis 0.6x (erwartet 4-10x)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "yoga-culture",
-      "studio_name": "Yoga Culture",
-      "canton": "zurich",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für Yoga Culture - Wo:Hotel Seerose HallwilerseeWann:.2026–.2026 zeit (Sunday)"
     },
     {
       "type": "invalid_time",
@@ -1793,116 +841,6 @@
       "field": "duration",
       "value": "705 min",
       "message": "Kursdauer 705 Min. ausserhalb 30-180 Min. für Yoga in a Bag (Winterthur) - +41 44 203 66 96 (Sunday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "iyengar-yoga-zuerich",
-      "studio_name": "Iyengar Yoga Zürich",
-      "canton": "zurich",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für Iyengar Yoga Zürich - 18:30AnnetteM (Monday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "iyengar-yoga-zuerich",
-      "studio_name": "Iyengar Yoga Zürich",
-      "canton": "zurich",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für Iyengar Yoga Zürich - 20:30AnnetteM (Monday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "iyengar-yoga-zuerich",
-      "studio_name": "Iyengar Yoga Zürich",
-      "canton": "zurich",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für Iyengar Yoga Zürich - 13:45AnnetteM (Tuesday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "iyengar-yoga-zuerich",
-      "studio_name": "Iyengar Yoga Zürich",
-      "canton": "zurich",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für Iyengar Yoga Zürich - 19:30FrancescaMPräsenz&This email address is being protected from spambots. You need JavaScript enabled to view it. (Tuesday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "iyengar-yoga-zuerich",
-      "studio_name": "Iyengar Yoga Zürich",
-      "canton": "zurich",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für Iyengar Yoga Zürich - 13:45StankaM (Wednesday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "iyengar-yoga-zuerich",
-      "studio_name": "Iyengar Yoga Zürich",
-      "canton": "zurich",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für Iyengar Yoga Zürich - 18:30FrancescaMPräsenz&This email address is being protected from spambots. You need JavaScript enabled to view it. (Wednesday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "iyengar-yoga-zuerich",
-      "studio_name": "Iyengar Yoga Zürich",
-      "canton": "zurich",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für Iyengar Yoga Zürich - 20:30FrancescaFPräsenz&This email address is being protected from spambots. You need JavaScript enabled to view it. (Wednesday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "iyengar-yoga-zuerich",
-      "studio_name": "Iyengar Yoga Zürich",
-      "canton": "zurich",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für Iyengar Yoga Zürich - 11:15FrancescaGPräsenz (Thursday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "iyengar-yoga-zuerich",
-      "studio_name": "Iyengar Yoga Zürich",
-      "canton": "zurich",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für Iyengar Yoga Zürich - 18:30FrancescaF&LPräsenz&This email address is being protected from spambots. You need JavaScript enabled to view it. (Thursday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "iyengar-yoga-zuerich",
-      "studio_name": "Iyengar Yoga Zürich",
-      "canton": "zurich",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für Iyengar Yoga Zürich - 20:30FrancescaMPräsenz&This email address is being protected from spambots. You need JavaScript enabled to view it. (Thursday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "iyengar-yoga-zuerich",
-      "studio_name": "Iyengar Yoga Zürich",
-      "canton": "zurich",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für Iyengar Yoga Zürich - 10:30FrancescaM&FPräsenz&This email address is being protected from spambots. You need JavaScript enabled to view it. (Friday)"
     },
     {
       "type": "unusual_duration",
@@ -2132,67 +1070,7 @@
       "canton": "bern",
       "field": "time_end",
       "value": "",
-      "message": "Ungültige Endzeit '' für yogamarket - 20. – 22.MitAlex & Corinne: Deine Praxis im Detail. Wir analysieren Ausric tung, Haltung und Anpassu (Monday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "yogamarket-bern",
-      "studio_name": "yogamarket",
-      "canton": "bern",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für yogamarket - 18./19.26MitGéraldine: Budd ismus, Hat a Yoga Pradipika, Tantrismus. Vertiefung inMeditationstec nik (Monday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "yogamarket-bern",
-      "studio_name": "yogamarket",
-      "canton": "bern",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für yogamarket - 2./3.26MitCorinne:Sequencing und Unterric tstec niken – wie man kreative und sinnvolle Yogastunden g (Monday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "yogamarket-bern",
-      "studio_name": "yogamarket",
-      "canton": "bern",
-      "field": "time_end",
-      "value": "",
       "message": "Ungültige Endzeit '' für yogamarket - 27./28.26Mit Géraldine:Atem- und Reinigungsübungen (Pranayama), um innere Muster zu lösen und Klar e (Monday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "yogamarket-bern",
-      "studio_name": "yogamarket",
-      "canton": "bern",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für yogamarket - 22./23.26MitAlex & Team: Alles, was du fürs Unterric ten brauc st – Aufbau von Stunden, Et ik, Marke (Monday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "yogamarket-bern",
-      "studio_name": "yogamarket",
-      "canton": "bern",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für yogamarket - 19./20.26MitMarie-Louise & Olivia: Einfü rung in die Welt des Ayurveda. Verbindung von P ilosop ie u (Monday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "yogamarket-bern",
-      "studio_name": "yogamarket",
-      "canton": "bern",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für yogamarket - 17./.2016MitFlavia: Band as, Kriyas, Tao Yoga sowie prä- und postnatale Praxis vertiefen die bewusst (Monday)"
     },
     {
       "type": "invalid_time",
@@ -2283,36 +1161,6 @@
       "field": "duration",
       "value": "5 min",
       "message": "Kursdauer 5 Min. ausserhalb 30-180 Min. für Hot Yoga Christoph Herren - FERIEN 06.07. - 19.07.26 (Sunday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "hrdayam-bern",
-      "studio_name": "Hrdayam - Jivamukti Yoga Bern",
-      "canton": "bern",
-      "field": "duration",
-      "value": "375 min",
-      "message": "Kursdauer 375 Min. ausserhalb 30-180 Min. für Hrdayam - Jivamukti Yoga Bern - 12:15BobeshYoga OpenGerechtigkeitsgasse 77Yoga Open4 June 2026 • (Thursday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "hrdayam-bern",
-      "studio_name": "Hrdayam - Jivamukti Yoga Bern",
-      "canton": "bern",
-      "field": "duration",
-      "value": "375 min",
-      "message": "Kursdauer 375 Min. ausserhalb 30-180 Min. für Hrdayam - Jivamukti Yoga Bern - 12:15CaroleJivamukti Spiritual Warrior (75 Min.) mit Myri / CaroGerechtigkeitsgasse 77Jivamukti Spiritual Warrior (75 Min.) mit Myri / Caro5 June 2026 • (Friday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "hrdayam-bern",
-      "studio_name": "Hrdayam - Jivamukti Yoga Bern",
-      "canton": "bern",
-      "field": "duration",
-      "value": "240 min",
-      "message": "Kursdauer 240 Min. ausserhalb 30-180 Min. für Hrdayam - Jivamukti Yoga Bern - 10:00BinhJivamukti Open XL - Jedi BIPoC onlyGerechtigkeitsgasse 77Jivamukti Open XL - Jedi BIPoC only6 June 2026 • (Saturday)"
     },
     {
       "type": "unusual_duration",
@@ -2537,16 +1385,6 @@
     {
       "type": "invalid_time",
       "severity": "medium",
-      "studio_id": "rin-yoga",
-      "studio_name": "Rin Yoga — Rinny Biberstein",
-      "canton": "basel-stadt",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für Rin Yoga — Rinny Biberstein - Yoga and Writing Workshop in Basel, SwitzerlandStep into a journey woven with the essence of the four elements, in harmony and awkward grace with the natural rhythm of the seasons.From spring’s energy of growth, to summer’s fire of transformation, autumn’s call to release, and winter’s deep stillness, each workshop offers a space to ground, move, and express in a safe space and in community. Rooted in embodied yoga and reflective writing, this is an invitation to return to your center, let your thoughts flow onto paper, and reconnect with your creative voice, season by season.Seasonal cycle 2025:Spring: Wood, Growth, 23.03.25Summer: Fire, Transformation, 22.06.25Autumn: Metal, Letting Go, 14.09.25Winter: Water, Stillness, 21.12.25Time: - 14:00The most beautiful ideas grow from deep roots, ignited by your inner fire, shaped by the wisdom to let go, and nurtured in the stillness of rest.Root into your body.Soften into stillness.Let the words find you.This is a space to build the foundation for what wants to emerge.Through embodied movement and conscious writing, you’ll tune into the rhythm beneath the noise, where movement becomes meditation, and your pen becomes a pathway.Creative flow begins in the body.Your story starts here.We use various yoga methods and creative writing practices, because putting words on paper and anchoring them in the body creates a world where anything is possible.The aim is to be curious and playful with language and movement. We will explore new perspectives and tune into desire, intuition, and imagination.An open and receptive body supports this process. We'll practice grounding and harmonizing yoga sequences in between writing explorations.Energy begins to flow and existing blockages in the body or mind are dissolved. Insights, reflections and ideas pour out onto the page with ease.Embodied yoga, meditation, and creative writing come together to guide you into a state of flow and deep self-expression.Perfect for:Yogis, writers, creatives, and anyone looking to reconnect with their inner voice.No prior yoga or writing experience needed, just curiosity.This is for you if you’re searching for:Yoga and writing retreat Switzerlandcreative writing workshop Baselembodied yoga for creativitywriting in flow mind-body connection workshopCost per workshop(you can attend singular ones, includes follow up materials)Low income: CHF 110.–General price: CHF 130.–Supporter: CHF 150.–Or, book our complete package, all four workshops, and you are guaranteed a place:All four workshops (complete package): CHF 468.–(Includes guaranteed spot + follow-up materials)Bring a friend or sibling and receive 10% off your workshop fee.Payment: we ask you to please prepay via Twint or bank transfer or cash onsight.What to bring:A curious spirit and a willingness to exploreA notebook & your favorite penComfortable clothes & warm socks (optional)What we provide:water and tea, snacks & a cozy atmosphereA take-home piece of our seasonal mandalaAfter each workshop: a guided meditation and two writing prompts via email to deepen your vision at homeWorkshops will be held in German, with live English translation available, please let us know in advance.Location:Raum für Mehr, Schlüsselberg 10, Basel, SwitzerlandRegister via email:rin@rin.yogasandra@engelbrecht.liLimited to 10 participants, register early to save your spot.Register via text message or call:Rinny+41 76 589 98 29Our workshops are open to all. We offer a sliding scale and are happy to find a solution if cost is a barrier. Just reach out. (Tuesday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
       "studio_id": "katerina-wen",
       "studio_name": "Katerina Wen — Infinite Body Yoga",
       "canton": "basel-stadt",
@@ -2563,36 +1401,6 @@
       "field": "time_start",
       "value": "",
       "message": "Ungültige Startzeit '' für Katerina Wen — Infinite Body Yoga - Infinite Flow Sunday (Tuesday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "rach-yoga-st-gallen",
-      "studio_name": "RACH Yoga",
-      "canton": "st-gallen",
-      "field": "duration",
-      "value": "210 min",
-      "message": "Kursdauer 210 Min. ausserhalb 30-180 Min. für RACH Yoga - 10:00RachelVinyasa Hatha Mix ( EN ) - Zoom LiveOnlineVinyasa Hatha Mix ( EN ) - Zoom LiveOnline1 June 2026 • (Monday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "rach-yoga-st-gallen",
-      "studio_name": "RACH Yoga",
-      "canton": "st-gallen",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für RACH Yoga - 11:00RachelPrivate Yoga ClassClient's HomePrivate Yoga Class4 June 2026 • (Thursday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "rach-yoga-st-gallen",
-      "studio_name": "RACH Yoga",
-      "canton": "st-gallen",
-      "field": "duration",
-      "value": "240 min",
-      "message": "Kursdauer 240 Min. ausserhalb 30-180 Min. für RACH Yoga - 14:00RachelPrivate Yoga ClassClient's HomePrivate Yoga Class5 June 2026 • (Friday)"
     },
     {
       "type": "invalid_time",
@@ -2693,26 +1501,6 @@
       "field": "time_start",
       "value": "",
       "message": "Ungültige Startzeit '' für Tanja Iovene Yoga - Bellinzona - Private Yoga Thalwil (Monday)"
-    },
-    {
-      "type": "unusual_class_time",
-      "severity": "low",
-      "studio_id": "yogaworks-lausanne",
-      "studio_name": "Yogaworks",
-      "canton": "vaud",
-      "field": "time_start",
-      "value": "4:00",
-      "message": "Kurszeit 4:00 ausserhalb 05:00-23:00 für Yogaworks - SOPHRO – YOGAGoing beyond the stage of merely doing posturesSaturday, February 28 – (Wednesday)"
-    },
-    {
-      "type": "unusual_class_time",
-      "severity": "low",
-      "studio_id": "yogaworks-lausanne",
-      "studio_name": "Yogaworks",
-      "canton": "vaud",
-      "field": "time_start",
-      "value": "1:30",
-      "message": "Kurszeit 1:30 ausserhalb 05:00-23:00 für Yogaworks - WORKSHOPCore strengthening and inversionSaturday, March 7 – (Wednesday)"
     },
     {
       "type": "unusual_class_time",
@@ -2835,54 +1623,24 @@
       "message": "Ungültige Endzeit '' für Yoginimage - Saturday, June 22, 202 AM PMGoogle CalendarICS (Sunday)"
     },
     {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "yoga-geneve-studio",
-      "studio_name": "Yoga Genève Studio",
-      "canton": "geneve",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für Yoga Genève Studio - Hot Pilatessc eduletimer60 minsJai Gopal istoryTerminéHot PilatesJai Gopalsc eduletimer60 mins istor (Monday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "yoga-geneve-studio",
-      "studio_name": "Yoga Genève Studio",
-      "canton": "geneve",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für Yoga Genève Studio - Hot Yoga 26 & 2 Bikram Yogasc eduletimer90 minsJai Gopal istoryTerminéHot Yoga 26 & 2 Bikram YogaJai (Tuesday)"
-    },
-    {
-      "type": "invalid_time",
-      "severity": "medium",
-      "studio_id": "yoga-geneve-studio",
-      "studio_name": "Yoga Genève Studio",
-      "canton": "geneve",
-      "field": "time_end",
-      "value": "",
-      "message": "Ungültige Endzeit '' für Yoga Genève Studio - Hot Yoga 26 & 2 Bikram Yogasc eduletimer90 minsJai Gopalevent_availableS'inscrireHot Yoga 26 & 2 Bik (Thursday)"
-    },
-    {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yoga-am-hottingerplatz",
+      "studio_id": "yoga-culture",
       "studio_name": "Yoga Culture",
       "canton": "zurich",
       "field": "address",
       "value": "hottingerstrasse 35, 8032",
-      "message": "Gleiche Adresse 'hottingerstrasse 35, 8032' bei Studios: yoga-am-hottingerplatz, yoga-culture"
+      "message": "Gleiche Adresse 'hottingerstrasse 35, 8032' bei Studios: yoga-culture, yoga-am-hottingerplatz"
     },
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yogalives",
+      "studio_id": "yogagold",
       "studio_name": "Yogalives",
       "canton": "zurich",
       "field": "address",
       "value": "giesshübelstrasse 62b, 8045",
-      "message": "Gleiche Adresse 'giesshübelstrasse 62b, 8045' bei Studios: yogalives, yogagold"
+      "message": "Gleiche Adresse 'giesshübelstrasse 62b, 8045' bei Studios: yogagold, yogalives"
     },
     {
       "type": "duplicate_coordinates",
@@ -3047,12 +1805,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "vayam-yoga-bern",
+      "studio_id": "hot-yoga-bern",
       "studio_name": "Hot Yoga Bern",
       "canton": "bern",
       "field": "address",
       "value": "bubenbergplatz 8, 3011",
-      "message": "Gleiche Adresse 'bubenbergplatz 8, 3011' bei Studios: vayam-yoga-bern, hot-yoga-bern, hothaus-bern"
+      "message": "Gleiche Adresse 'bubenbergplatz 8, 3011' bei Studios: hot-yoga-bern, vayam-yoga-bern, hothaus-bern"
     },
     {
       "type": "duplicate_coordinates",
@@ -3167,42 +1925,42 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yogastudio-luzern",
+      "studio_id": "yoga-veda-luzern",
       "studio_name": "Yogastudio Luzern",
       "canton": "luzern",
       "field": "address",
       "value": "werkhofstrasse 18, 6005",
-      "message": "Gleiche Adresse 'werkhofstrasse 18, 6005' bei Studios: yogastudio-luzern, yoga-veda-luzern"
+      "message": "Gleiche Adresse 'werkhofstrasse 18, 6005' bei Studios: yoga-veda-luzern, yogastudio-luzern"
+    },
+    {
+      "type": "duplicate_address",
+      "severity": "medium",
+      "studio_id": "ashtanga-luzern",
+      "studio_name": "Ashtanga Yoga Luzern",
+      "canton": "luzern",
+      "field": "address",
+      "value": "weggisgasse 31, 6004",
+      "message": "Gleiche Adresse 'weggisgasse 31, 6004' bei Studios: ashtanga-luzern, yoga-mit-herz"
     },
     {
       "type": "duplicate_address",
       "severity": "medium",
       "studio_id": "yoga-mit-herz",
-      "studio_name": "Ashtanga Yoga Luzern",
-      "canton": "luzern",
-      "field": "address",
-      "value": "weggisgasse 31, 6004",
-      "message": "Gleiche Adresse 'weggisgasse 31, 6004' bei Studios: yoga-mit-herz, ashtanga-luzern"
-    },
-    {
-      "type": "duplicate_address",
-      "severity": "medium",
-      "studio_id": "yogagemeinschaft-luzern",
       "studio_name": "Yogagemeinschaft Luzern",
       "canton": "luzern",
       "field": "address",
       "value": "hirschengraben 13a, 6003",
-      "message": "Gleiche Adresse 'hirschengraben 13a, 6003' bei Studios: yogagemeinschaft-luzern, yoga-mit-herz"
+      "message": "Gleiche Adresse 'hirschengraben 13a, 6003' bei Studios: yoga-mit-herz, yogagemeinschaft-luzern"
     },
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yogakurse-horw",
+      "studio_id": "pure-you-yoga-horw",
       "studio_name": "Pure You Yoga",
       "canton": "luzern",
       "field": "address",
       "value": "kantonsstrasse 100, 6048",
-      "message": "Gleiche Adresse 'kantonsstrasse 100, 6048' bei Studios: yogakurse-horw, pure-you-yoga-horw"
+      "message": "Gleiche Adresse 'kantonsstrasse 100, 6048' bei Studios: pure-you-yoga-horw, yogakurse-horw"
     },
     {
       "type": "duplicate_coordinates",
@@ -3337,22 +2095,22 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yogabloom",
+      "studio_id": "food-changes",
       "studio_name": "YOGABLOOM",
       "canton": "basel-stadt",
       "field": "address",
       "value": "pfluggasslein 1, 4001",
-      "message": "Gleiche Adresse 'pfluggasslein 1, 4001' bei Studios: yogabloom, food-changes"
+      "message": "Gleiche Adresse 'pfluggasslein 1, 4001' bei Studios: food-changes, yogabloom"
     },
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "kathrin-mathews",
+      "studio_id": "yoga-now",
       "studio_name": "Ayalga Yoga (Iyengar)",
       "canton": "basel-stadt",
       "field": "address",
       "value": "basel, ",
-      "message": "Gleiche Adresse 'basel, ' bei Studios: kathrin-mathews, ayalga, yoga-now, mysore-club, katerina-wen, klubschule"
+      "message": "Gleiche Adresse 'basel, ' bei Studios: yoga-now, mysore-club, klubschule, ayalga, katerina-wen, kathrin-mathews"
     },
     {
       "type": "duplicate_coordinates",
@@ -3765,5 +2523,110 @@
       "message": "Sehr nahe Koordinaten: 'PilatesYogaJura' und 'YogaJura.ch' (< 100m Abstand)"
     }
   ],
-  "price_changes": []
+  "price_changes": [
+    {
+      "type": "price_change",
+      "severity": "medium",
+      "studio_id": "bodyart-studio",
+      "studio_name": "BODYART Studio Zürich",
+      "canton": "zurich",
+      "field": "pricing.monthly",
+      "old_value": 239,
+      "new_value": 160.0,
+      "change_pct": 33.1,
+      "source": "https://bodyart.studio/en/preise",
+      "message": "monthly geändert von CHF 239 auf CHF 160.0 (+33%)"
+    },
+    {
+      "type": "price_change",
+      "severity": "high",
+      "studio_id": "yogastudio-luzern",
+      "studio_name": "Yogastudio Luzern",
+      "canton": "luzern",
+      "field": "pricing.single",
+      "old_value": 20,
+      "new_value": 80.0,
+      "change_pct": 300.0,
+      "source": "https://www.yogastudio.ch/preise",
+      "message": "single geändert von CHF 20 auf CHF 80.0 (+300%)"
+    },
+    {
+      "type": "price_change",
+      "severity": "high",
+      "studio_id": "yoga-pilateszentrale-olten",
+      "studio_name": "Yoga & Pilateszentrale",
+      "canton": "solothurn",
+      "field": "pricing.card_10",
+      "old_value": 20,
+      "new_value": 290.0,
+      "change_pct": 1350.0,
+      "source": "https://www.pilateszentrale.ch/preise",
+      "message": "card_10 geändert von CHF 20 auf CHF 290.0 (+1350%)"
+    },
+    {
+      "type": "price_change",
+      "severity": "high",
+      "studio_id": "niyama",
+      "studio_name": "Niyama Studio for Yoga & Pilates",
+      "canton": "basel-stadt",
+      "field": "pricing.card_10",
+      "old_value": 150.0,
+      "new_value": 250.0,
+      "change_pct": 66.7,
+      "source": "https://www.niyama-yoga.ch/en/start/preise",
+      "message": "card_10 geändert von CHF 150.0 auf CHF 250.0 (+67%)"
+    },
+    {
+      "type": "price_change",
+      "severity": "high",
+      "studio_id": "yoga7-geneve",
+      "studio_name": "Yoga7",
+      "canton": "geneve",
+      "field": "pricing.single",
+      "old_value": 20,
+      "new_value": 35,
+      "change_pct": 75.0,
+      "source": "https://yoga7.com",
+      "message": "single geändert von CHF 20 auf CHF 35 (+75%)"
+    },
+    {
+      "type": "price_change",
+      "severity": "high",
+      "studio_id": "yoga7-geneve",
+      "studio_name": "Yoga7",
+      "canton": "geneve",
+      "field": "pricing.monthly",
+      "old_value": 20,
+      "new_value": 240,
+      "change_pct": 1100.0,
+      "source": "https://yoga7.com",
+      "message": "monthly geändert von CHF 20 auf CHF 240 (+1100%)"
+    },
+    {
+      "type": "price_change",
+      "severity": "high",
+      "studio_id": "colife-geneve",
+      "studio_name": "COLIFE",
+      "canton": "geneve",
+      "field": "pricing.trial",
+      "old_value": 15,
+      "new_value": 45,
+      "change_pct": 200.0,
+      "source": "https://colife.ch",
+      "message": "trial geändert von CHF 15 auf CHF 45 (+200%)"
+    },
+    {
+      "type": "price_change",
+      "severity": "high",
+      "studio_id": "swiss-pilates-yoga-geneve",
+      "studio_name": "Swiss Pilates and Yoga",
+      "canton": "geneve",
+      "field": "pricing.monthly",
+      "old_value": 299,
+      "new_value": 140,
+      "change_pct": 53.2,
+      "source": "https://swisspilatesandyoga.com",
+      "message": "monthly geändert von CHF 299 auf CHF 140 (+53%)"
+    }
+  ]
 }

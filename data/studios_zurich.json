@@ -1100,7 +1100,7 @@
         "source": "https://yoga-spirit.ch/prices",
         "last_checked": "2026-06-01T12:01:05.265468+00:00",
         "abo": 25.0,
-        "monthly": 38.0
+        "monthly": null
       },
       "_meta": {
         "last_scraped": "2026-06-01T12:01:05.265533+00:00",
@@ -2460,7 +2460,7 @@
       },
       "pricing": {
         "single": 5,
-        "card_10": 10,
+        "card_10": null,
         "trial": 21,
         "currency": "CHF",
         "verified": true,

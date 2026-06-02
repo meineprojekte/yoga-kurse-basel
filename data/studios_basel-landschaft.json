@@ -212,7 +212,7 @@
         }
       },
       "pricing": {
-        "card_10": 30,
+        "card_10": null,
         "currency": "CHF",
         "verified": true,
         "source": "https://yoga-werkstatt.ch/stundenplan/",
@@ -418,7 +418,7 @@
       },
       "pricing": {
         "single": 10,
-        "card_10": 10,
+        "card_10": null,
         "currency": "CHF",
         "verified": true,
         "source": "https://www.jyotiyoga.ch/",
@@ -707,7 +707,7 @@
       },
       "pricing": {
         "single": 20,
-        "card_10": 20,
+        "card_10": null,
         "trial": 20,
         "currency": "CHF",
         "verified": true,

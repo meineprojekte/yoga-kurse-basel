@@ -723,11 +723,9 @@ def generate_page(canton, studios, classes, all_cantons):
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{BASE_URL}/kanton/{canton_id}/">
 
-    <!-- Hreflang -->
-    <link rel="alternate" hreflang="de" href="{BASE_URL}/kanton/{canton_id}/">
-    <link rel="alternate" hreflang="en" href="{BASE_URL}/kanton/{canton_id}/?lang=en">
-    <link rel="alternate" hreflang="it" href="{BASE_URL}/kanton/{canton_id}/?lang=it">
-    <link rel="alternate" hreflang="fr" href="{BASE_URL}/kanton/{canton_id}/?lang=fr">
+    <!-- Hreflang: content is German (Switzerland); no real EN/IT/FR translations exist,
+         so only de-CH + x-default are declared (the ?lang= alternates were false). -->
+    <link rel="alternate" hreflang="de-CH" href="{BASE_URL}/kanton/{canton_id}/">
     <link rel="alternate" hreflang="x-default" href="{BASE_URL}/kanton/{canton_id}/">
 
     <!-- Open Graph -->

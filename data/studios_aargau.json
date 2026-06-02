@@ -384,9 +384,9 @@
         }
       },
       "pricing": {
-        "single": 1100,
-        "card_10": 30,
-        "monthly": 1100,
+        "single": null,
+        "card_10": null,
+        "monthly": null,
         "currency": "CHF",
         "verified": true,
         "source": "https://www.my-yoga-garden.ch/preise",
@@ -840,8 +840,8 @@
       },
       "pricing": {
         "single": 8,
-        "card_10": 38,
-        "monthly": 30,
+        "card_10": null,
+        "monthly": null,
         "trial": 8,
         "currency": "CHF",
         "verified": true,

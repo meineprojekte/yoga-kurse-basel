@@ -39,6 +39,9 @@ jobs:
       - name: Run scraper (all cantons)
         run: python scrapers/scrape_all.py
 
+      - name: Clean scraped data (drop corrupt classes, null impossible prices)
+        run: python tools/clean_data.py
+
       - name: Encrypt data files (regenerate .enc.json served to the public)
         run: python tools/encrypt_data.py
 

@@ -204,7 +204,7 @@
         "verified": true,
         "source": "https://ashtanga-luzern.ch/prices",
         "last_checked": "2026-06-01T11:37:07.050400+00:00",
-        "single": 500.0
+        "single": null
       },
       "_meta": {
         "last_scraped": "2026-06-01T11:37:07.050485+00:00",
@@ -727,7 +727,7 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 120.0,
+        "single": null,
         "card_10": 250,
         "trial": 25,
         "currency": "CHF",

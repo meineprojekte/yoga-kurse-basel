@@ -462,7 +462,7 @@
       },
       "pricing": {
         "single": 20,
-        "monthly": 20,
+        "monthly": null,
         "currency": "CHF",
         "verified": true,
         "source": "https://en.voltayoga.ch/preiseundabos",
@@ -597,7 +597,7 @@
       },
       "pricing": {
         "single": 10,
-        "card_10": 6,
+        "card_10": null,
         "trial": 6,
         "currency": "CHF",
         "verified": true,
@@ -795,8 +795,8 @@
         }
       },
       "pricing": {
-        "single": 960,
-        "trial": 960,
+        "single": null,
+        "trial": null,
         "currency": "CHF",
         "verified": true,
         "source": "https://lotosyoga.ch/kosten-der-yoga-therapie-ausbildung/",
@@ -858,7 +858,7 @@
       "pricing": {
         "single": 17,
         "card_10": 80,
-        "monthly": 12,
+        "monthly": null,
         "trial": 45,
         "currency": "CHF",
         "verified": true,
@@ -922,7 +922,7 @@
         }
       },
       "pricing": {
-        "single": 250,
+        "single": null,
         "card_10": 200,
         "currency": "CHF",
         "verified": true,
@@ -2006,9 +2006,9 @@
       "classes": [],
       "pricing": {
         "currency": "CHF",
-        "single": 131.0,
+        "single": null,
         "ten_pack": 355,
-        "monthly": 10.0,
+        "monthly": null,
         "annual": 1270,
         "drop_in": 39,
         "verified": true,
