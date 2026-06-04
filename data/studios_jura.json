@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-01T11:36:36.781341+00:00",
+  "last_updated": "2026-06-04T10:08:42.282351+00:00",
   "studios": [
     {
       "id": "pilatesyogajura",
@@ -40,9 +40,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-06-01T11:36:23.501868+00:00",
+      "last_scraped": "2026-06-04T10:08:25.004245+00:00",
       "_meta": {
-        "last_scraped": "2026-06-01T11:36:28.413988+00:00",
+        "last_scraped": "2026-06-04T10:08:30.188264+00:00",
         "last_price_check": "2026-03-26T21:55:47.240153+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -55,7 +55,7 @@
         "single": 15,
         "verified": false,
         "source": "https://www.pilatesyogajura.com/tarifs",
-        "last_checked": "2026-06-01T11:36:28.413975+00:00",
+        "last_checked": "2026-06-04T10:08:30.188239+00:00",
         "notes": "Summer price 15 CHF on site. Regular season pricing unknown."
       }
     },
@@ -102,12 +102,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogajura.ch/",
-        "last_checked": "2026-06-01T11:36:32.883224+00:00"
+        "last_checked": "2026-06-04T10:08:35.283816+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-06-01T11:36:28.913014+00:00",
+      "last_scraped": "2026-06-04T10:08:30.762072+00:00",
       "_meta": {
-        "last_scraped": "2026-06-01T11:36:32.883242+00:00",
+        "last_scraped": "2026-06-04T10:08:35.283837+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -153,14 +153,14 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://eleveayoga.com",
-        "last_checked": "2026-06-01T11:36:36.781312+00:00",
+        "last_checked": "2026-06-04T10:08:42.282051+00:00",
         "abo": 160.0
       },
-      "scrape_status": "no_data",
-      "last_scraped": "2026-04-06T07:53:39.371774+00:00",
+      "scrape_status": "scraped",
+      "last_scraped": "2026-06-04T10:08:35.762620+00:00",
       "_meta": {
-        "last_scraped": "2026-06-01T11:36:36.781329+00:00",
-        "last_price_check": "2026-04-06T07:53:43.463235+00:00",
+        "last_scraped": "2026-06-04T10:08:42.282341+00:00",
+        "last_price_check": "2026-06-04T10:08:42.282341+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
