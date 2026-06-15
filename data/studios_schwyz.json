@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-11T10:34:49.458571+00:00",
+  "last_updated": "2026-06-15T12:15:53.202069+00:00",
   "studios": [
     {
       "id": "heyoga-schwyz",
@@ -48,11 +48,11 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.heyoga.ch/preise",
-        "last_checked": "2026-06-11T10:34:29.742858+00:00",
+        "last_checked": "2026-06-15T12:15:36.706889+00:00",
         "abo": 140.0
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-06-11T10:34:23.501083+00:00",
+      "last_scraped": "2026-06-15T12:15:30.314079+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -68,8 +68,8 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-06-11T10:34:29.742933+00:00",
-        "last_price_check": "2026-06-11T10:34:29.742933+00:00",
+        "last_scraped": "2026-06-15T12:15:36.706953+00:00",
+        "last_price_check": "2026-06-15T12:15:36.706953+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -132,9 +132,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-06-11T10:34:30.692766+00:00",
+      "last_scraped": "2026-06-15T12:15:37.391775+00:00",
       "_meta": {
-        "last_scraped": "2026-06-11T10:34:40.296708+00:00",
+        "last_scraped": "2026-06-15T12:15:46.116799+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -183,12 +183,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yoga8.ch/",
-        "last_checked": "2026-06-11T10:34:49.458549+00:00"
+        "last_checked": "2026-06-15T12:15:53.202040+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-06-11T10:34:41.198843+00:00",
+      "last_scraped": "2026-06-15T12:15:46.855271+00:00",
       "_meta": {
-        "last_scraped": "2026-06-11T10:34:49.458563+00:00",
+        "last_scraped": "2026-06-15T12:15:53.202059+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
