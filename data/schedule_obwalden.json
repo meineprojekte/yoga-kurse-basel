@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-25T09:10:39.037253+00:00",
+  "last_updated": "2026-06-29T10:52:51.024713+00:00",
   "_notes": "goYoga Sarnen schedule from goyoga.ch/stundenplan-2.html. Yoga Ishwari website returned 403; no schedule extracted. Teacher for goYoga is Petra Kathriner (studio owner).",
   "classes": [
     {
@@ -13,7 +13,7 @@
       "level": "all",
       "source": "https://www.yoga-ishwari.ch/yoga-klang/yoga-kurse/",
       "verified": false,
-      "last_checked": "2026-06-25"
+      "last_checked": "2026-06-29"
     },
     {
       "studio_id": "yoga-ishwari-sarnen",
@@ -26,7 +26,7 @@
       "level": "all",
       "source": "https://www.yoga-ishwari.ch/yoga-klang/yoga-kurse/",
       "verified": false,
-      "last_checked": "2026-06-25"
+      "last_checked": "2026-06-29"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -38,8 +38,8 @@
       "teacher": "Petra Kathriner",
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
-      "verified": true,
-      "last_checked": "2026-06-25"
+      "verified": false,
+      "last_checked": "2026-06-29"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -51,8 +51,8 @@
       "teacher": "Petra Kathriner",
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
-      "verified": true,
-      "last_checked": "2026-06-25"
+      "verified": false,
+      "last_checked": "2026-06-29"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -64,8 +64,8 @@
       "teacher": "Petra Kathriner",
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
-      "verified": true,
-      "last_checked": "2026-06-25"
+      "verified": false,
+      "last_checked": "2026-06-29"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -77,8 +77,8 @@
       "teacher": "Petra Kathriner",
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
-      "verified": true,
-      "last_checked": "2026-06-25"
+      "verified": false,
+      "last_checked": "2026-06-29"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -90,8 +90,8 @@
       "teacher": "Petra Kathriner",
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
-      "verified": true,
-      "last_checked": "2026-06-25"
+      "verified": false,
+      "last_checked": "2026-06-29"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -103,8 +103,8 @@
       "teacher": "Petra Kathriner",
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
-      "verified": true,
-      "last_checked": "2026-06-25"
+      "verified": false,
+      "last_checked": "2026-06-29"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -116,8 +116,8 @@
       "teacher": "Petra Kathriner",
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
-      "verified": true,
-      "last_checked": "2026-06-25"
+      "verified": false,
+      "last_checked": "2026-06-29"
     },
     {
       "studio_id": "goyoga-sarnen",
@@ -129,12 +129,12 @@
       "teacher": "Petra Kathriner",
       "level": "all",
       "source": "https://www.sportsnow.ch/providers/goyoga-sarnen/schedule?locale=de",
-      "verified": true,
-      "last_checked": "2026-06-25"
+      "verified": false,
+      "last_checked": "2026-06-29"
     }
   ],
   "_meta": {
-    "last_updated": "2026-06-25",
+    "last_updated": "2026-06-29",
     "note": "Stundenplan-Daten aus öffentlichen Quellen. Für aktuelle Zeiten siehe Studio-Website."
   }
 }
