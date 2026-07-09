@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-06T10:25:24.563502+00:00",
+  "last_updated": "2026-07-09T09:46:52.701008+00:00",
   "studios": [
     {
       "id": "studio-30-solothurn",
@@ -41,9 +41,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-07-06T10:24:08.412598+00:00",
+      "last_scraped": "2026-07-09T09:45:41.035661+00:00",
       "_meta": {
-        "last_scraped": "2026-07-06T10:24:11.433159+00:00",
+        "last_scraped": "2026-07-09T09:45:44.282398+00:00",
         "last_price_check": "2026-03-26T22:00:56.036248+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -54,7 +54,7 @@
       "pricing": {
         "verified": false,
         "currency": "CHF",
-        "last_checked": "2026-07-06T10:24:11.433141+00:00"
+        "last_checked": "2026-07-09T09:45:44.282377+00:00"
       }
     },
     {
@@ -96,7 +96,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-07-06T10:24:11.739676+00:00",
+      "last_scraped": "2026-07-09T09:45:44.517528+00:00",
       "pricing": {
         "single": 20,
         "card_10": 200.0,
@@ -104,12 +104,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.sunshine-yoga.ch/preise",
-        "last_checked": "2026-07-06T10:24:14.436125+00:00",
+        "last_checked": "2026-07-09T09:45:48.110326+00:00",
         "abo": 145.0
       },
       "_meta": {
-        "last_scraped": "2026-07-06T10:24:14.436208+00:00",
-        "last_price_check": "2026-07-06T10:24:14.436208+00:00",
+        "last_scraped": "2026-07-09T09:45:48.110389+00:00",
+        "last_price_check": "2026-07-09T09:45:48.110389+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -159,13 +159,13 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.diamond-yoga.ch",
-        "last_checked": "2026-07-06T10:24:18.783435+00:00"
+        "last_checked": "2026-07-09T09:45:52.843980+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-07-06T10:24:14.850209+00:00",
+      "last_scraped": "2026-07-09T09:45:48.545259+00:00",
       "_meta": {
-        "last_scraped": "2026-07-06T10:24:18.783531+00:00",
-        "last_price_check": "2026-07-06T10:24:18.783531+00:00",
+        "last_scraped": "2026-07-09T09:45:52.844068+00:00",
+        "last_price_check": "2026-07-09T09:45:52.844068+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -209,9 +209,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-07-06T10:24:18.989133+00:00",
+      "last_scraped": "2026-07-09T09:45:53.834153+00:00",
       "_meta": {
-        "last_scraped": "2026-07-06T10:24:22.726806+00:00",
+        "last_scraped": "2026-07-09T09:45:57.486595+00:00",
         "last_price_check": "2026-03-26T22:00:58.593827+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -222,7 +222,7 @@
       "pricing": {
         "verified": false,
         "currency": "CHF",
-        "last_checked": "2026-07-06T10:24:22.726797+00:00"
+        "last_checked": "2026-07-09T09:45:57.486575+00:00"
       }
     },
     {
@@ -269,12 +269,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.om-yogaroom.ch/",
-        "last_checked": "2026-07-06T10:24:31.521432+00:00"
+        "last_checked": "2026-07-09T09:46:05.903319+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-07-06T10:24:23.333831+00:00",
+      "last_scraped": "2026-07-09T09:45:58.136762+00:00",
       "_meta": {
-        "last_scraped": "2026-07-06T10:24:31.521445+00:00",
+        "last_scraped": "2026-07-09T09:46:05.903339+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -321,9 +321,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-07-06T10:24:32.488696+00:00",
+      "last_scraped": "2026-07-09T09:46:06.897385+00:00",
       "_meta": {
-        "last_scraped": "2026-07-06T10:24:43.878766+00:00",
+        "last_scraped": "2026-07-09T09:46:19.012265+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -339,7 +339,7 @@
         "drop_in": 25,
         "verified": true,
         "source": "https://yogagarten.ch",
-        "last_checked": "2026-07-06T10:24:43.878756+00:00"
+        "last_checked": "2026-07-09T09:46:19.012247+00:00"
       }
     },
     {
@@ -392,12 +392,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://downtownyoga.ch/kurse-preise/",
-        "last_checked": "2026-07-06T10:25:16.224993+00:00"
+        "last_checked": "2026-07-09T09:46:46.235348+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-07-06T10:24:45.564222+00:00",
+      "last_scraped": "2026-07-09T09:46:20.708399+00:00",
       "_meta": {
-        "last_scraped": "2026-07-06T10:25:16.225005+00:00",
+        "last_scraped": "2026-07-09T09:46:46.235369+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -441,8 +441,8 @@
       "classes": [],
       "scrape_status": "scraped",
       "_meta": {
-        "last_scraped": "2026-07-06T10:25:24.563493+00:00",
-        "last_price_check": "2026-07-06T10:25:24.563493+00:00",
+        "last_scraped": "2026-07-09T09:46:52.701000+00:00",
+        "last_price_check": "2026-07-09T09:46:52.701000+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -457,9 +457,9 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.pilateszentrale.ch/preise",
-        "last_checked": "2026-07-06T10:25:24.563409+00:00"
+        "last_checked": "2026-07-09T09:46:52.700936+00:00"
       },
-      "last_scraped": "2026-07-06T10:25:17.007503+00:00"
+      "last_scraped": "2026-07-09T09:46:47.004682+00:00"
     }
   ]
 }
