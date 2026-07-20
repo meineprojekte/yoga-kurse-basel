@@ -5,6 +5,7 @@ on:
     # 2x per week: Monday 6:00 UTC + Thursday 6:00 UTC
     - cron: '0 6 * * 1'
     - cron: '0 6 * * 4'
+  workflow_dispatch:
   workflow_dispatch: # Allow manual trigger
 
 concurrency:
