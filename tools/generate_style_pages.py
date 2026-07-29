@@ -17,6 +17,14 @@ DATA_DIR = os.path.join(BASE_DIR, "data")
 OUTPUT_DIR = os.path.join(BASE_DIR, "yoga")
 BASE_URL = "https://meineprojekte.github.io/yoga-kurse-basel"
 
+# A style+city page listing only one or two studios has no substance of its own —
+# it repeats the style description and points at studios the canton page already
+# covers. Google reads such pages as thin/duplicate ("Crawled - currently not
+# indexed") and the whole site's quality signal suffers. Below this threshold the
+# page is still built and stays linked (users reaching it get real content), but
+# it is noindex,follow and generate_sitemap.py drops it from the sitemap.
+MIN_STUDIOS_FOR_INDEX = 3
+
 # --- City definitions: city_name, canton_id, file_key, url_slug ---
 CITIES = [
     {"name": "Zürich",   "canton_id": "zurich",      "file_key": "zurich",      "url_slug": "zuerich"},
@@ -326,6 +334,8 @@ def generate_page_html(style, city, matching_studios, all_styles, all_cities):
     page_url = f"{BASE_URL}/yoga/{folder_name}/"
     canton_url = f"{BASE_URL}/kanton/{city['canton_id']}/"
     num_studios = len(matching_studios)
+    robots_directive = ("index, follow" if num_studios >= MIN_STUDIOS_FOR_INDEX
+                        else "noindex, follow")
 
     desc_data = STYLE_DESCRIPTIONS[style["description_key"]]
     city_why = desc_data["why_city"].get(city_slug, desc_data["why_city"].get("zuerich", ""))
@@ -395,7 +405,7 @@ def generate_page_html(style, city, matching_studios, all_styles, all_cities):
     <meta name="description" content="{escape(meta_desc)}">
     <meta name="keywords" content="{escape(meta_keywords)}">
     <meta name="author" content="YogaSchweiz">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="{robots_directive}">
     <link rel="canonical" href="{page_url}">
 
     <!-- Open Graph -->
@@ -881,7 +891,10 @@ def main():
     # Filter related links to only existing pages
     existing_style_slugs_per_city = defaultdict(list)
     existing_city_slugs_per_style = defaultdict(list)
-    for s_slug, c_slug in existing_combos:
+    # sorted(): existing_combos is a set, so iterating it raw ordered the related-link
+    # blocks differently on every run. That rewrote all 54 pages each scrape and bumped
+    # their sitemap lastmod, telling Google "changed" when nothing had.
+    for s_slug, c_slug in sorted(existing_combos):
         # Find the style and city objects
         style_obj = next((s for s in STYLES if s["url_slug"] == s_slug), None)
         city_obj = next((c for c in CITIES if c["url_slug"] == c_slug), None)

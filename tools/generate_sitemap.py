@@ -6,7 +6,7 @@ and listed deleted pages. lastmod per URL = the file's last git commit date,
 or today if the file has uncommitted changes (i.e. it changed in this run).
 Wired into .github/workflows/scrape.yml so it stays correct automatically.
 """
-import os, glob, subprocess, datetime
+import os, glob, re, subprocess, datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://meineprojekte.github.io/yoga-kurse-basel"
@@ -52,15 +52,33 @@ def url_for(rel):
     return BASE + "/" if d == "" else f"{BASE}/{d}/"
 
 
+NOINDEX_RE = re.compile(
+    r'<meta[^>]+name=["\']robots["\'][^>]+content=["\'][^"\']*noindex', re.I)
+
+
+def is_noindex(rel):
+    """A page that tells Google not to index it must not be advertised in the
+    sitemap — the two signals would contradict each other."""
+    try:
+        with open(os.path.join(ROOT, rel), encoding="utf-8", errors="ignore") as f:
+            return bool(NOINDEX_RE.search(f.read(4000)))
+    except OSError:
+        return False
+
+
 def main():
     seen = set()
     entries = []
+    skipped = 0
     for pattern, prio, freq in GROUPS:
         for rel in sorted(glob.glob(os.path.join(ROOT, pattern))):
             rel = os.path.relpath(rel, ROOT)
             if rel in seen:
                 continue
             seen.add(rel)
+            if is_noindex(rel):
+                skipped += 1
+                continue
             entries.append((url_for(rel), lastmod(rel), prio, freq))
 
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
@@ -75,7 +93,7 @@ def main():
     lines.append("</urlset>")
     with open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
-    print(f"sitemap.xml: {len(entries)} URLs")
+    print(f"sitemap.xml: {len(entries)} URLs ({skipped} noindex pages skipped)")
 
 
 if __name__ == "__main__":
