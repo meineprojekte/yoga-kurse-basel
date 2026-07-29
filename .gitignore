@@ -7,3 +7,8 @@ node_modules/
 *.log
 venv/
 .venv/
+
+# Search Console exports dropped in the repo root for analysis. This repo is the
+# published web root, so anything committed here is world-readable.
+https___meineprojekte/
+*Search Console*/
