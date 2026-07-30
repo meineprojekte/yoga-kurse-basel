@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-27T09:55:49.891060+00:00",
+  "last_updated": "2026-07-30T08:28:42.393458+00:00",
   "studios": [
     {
       "id": "yoga-loft-chur",
@@ -41,7 +41,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-07-27T09:54:05.130468+00:00",
+      "last_scraped": "2026-07-30T08:26:56.732004+00:00",
       "detected_booking_links": [
         {
           "platform": "mindbody",
@@ -52,12 +52,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogaloftchur.ch/preise",
-        "last_checked": "2026-07-27T09:54:09.818187+00:00",
+        "last_checked": "2026-07-30T08:27:00.771102+00:00",
         "single": 35.0
       },
       "_meta": {
-        "last_scraped": "2026-07-27T09:54:09.818310+00:00",
-        "last_price_check": "2026-07-27T09:54:09.818310+00:00",
+        "last_scraped": "2026-07-30T08:27:00.771213+00:00",
+        "last_price_check": "2026-07-30T08:27:00.771213+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -114,12 +114,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://yogapyramide.ch/preise",
-        "last_checked": "2026-07-27T09:54:28.188867+00:00"
+        "last_checked": "2026-07-30T08:27:19.207966+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-07-27T09:54:11.144342+00:00",
+      "last_scraped": "2026-07-30T08:27:03.398410+00:00",
       "_meta": {
-        "last_scraped": "2026-07-27T09:54:28.188883+00:00",
+        "last_scraped": "2026-07-30T08:27:19.207982+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -174,12 +174,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://belude.ch/programm.html",
-        "last_checked": "2026-07-27T09:54:37.845800+00:00"
+        "last_checked": "2026-07-30T08:27:28.657754+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-07-27T09:54:29.049541+00:00",
+      "last_scraped": "2026-07-30T08:27:20.180272+00:00",
       "_meta": {
-        "last_scraped": "2026-07-27T09:54:37.845813+00:00",
+        "last_scraped": "2026-07-30T08:27:28.657770+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -226,10 +226,14 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-07-27T09:55:01.982100+00:00",
+        "last_scraped": "2026-07-30T08:27:52.665795+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [
+          {
+            "platform": "eversports",
+            "url": "https://www.eversports.ch/s/_b2_iQ"
+          },
           {
             "platform": "eversports",
             "url": "https://www.eversports.ch/s/_b2_iQ"
@@ -476,17 +480,17 @@
       "classes": [],
       "scrape_status": "scraped",
       "_meta": {
-        "last_scraped": "2026-07-27T09:55:12.672391+00:00",
+        "last_scraped": "2026-07-30T08:28:04.035622+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
           {
             "platform": "eversports",
-            "url": "https://www.eversportscorporate.com/corporate-sports/"
+            "url": "https://www.eversportsmanager.com/de-CH/eversports-corporate"
           },
           {
             "platform": "eversports",
-            "url": "https://www.eversportscorporate.com/corporate-sports/"
+            "url": "https://www.eversportsmanager.com/de-CH/eversports-corporate"
           },
           {
             "platform": "eversports",
@@ -506,7 +510,7 @@
           },
           {
             "platform": "eversports",
-            "url": "https://www.eversportscorporate.com/"
+            "url": "https://www.eversportsmanager.com/de-CH/eversports-corporate/"
           },
           {
             "platform": "eversports",
@@ -534,15 +538,15 @@
           "schedule": "https://www.eversports.ch/s/yogaplaza-davos"
         }
       },
-      "last_scraped": "2026-07-27T09:55:02.989526+00:00",
+      "last_scraped": "2026-07-30T08:27:53.266944+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
-          "url": "https://www.eversportscorporate.com/corporate-sports/"
+          "url": "https://www.eversportsmanager.com/de-CH/eversports-corporate"
         },
         {
           "platform": "eversports",
-          "url": "https://www.eversportscorporate.com/corporate-sports/"
+          "url": "https://www.eversportsmanager.com/de-CH/eversports-corporate"
         },
         {
           "platform": "eversports",
@@ -562,7 +566,7 @@
         },
         {
           "platform": "eversports",
-          "url": "https://www.eversportscorporate.com/"
+          "url": "https://www.eversportsmanager.com/de-CH/eversports-corporate/"
         },
         {
           "platform": "eversports",
@@ -625,9 +629,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-07-27T09:55:14.810743+00:00",
+      "last_scraped": "2026-07-30T08:28:05.579229+00:00",
       "_meta": {
-        "last_scraped": "2026-07-27T09:55:35.530434+00:00",
+        "last_scraped": "2026-07-30T08:28:26.442905+00:00",
         "last_price_check": "2026-03-26T22:22:14.808879+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -642,7 +646,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://yogaloftengadin.ch/prices/",
-        "last_checked": "2026-07-27T09:55:35.530417+00:00"
+        "last_checked": "2026-07-30T08:28:26.442890+00:00"
       }
     },
     {
@@ -686,12 +690,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://acroyoga.group/",
-        "last_checked": "2026-07-27T09:55:49.891036+00:00"
+        "last_checked": "2026-07-30T08:28:42.393430+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-07-27T09:55:36.795315+00:00",
+      "last_scraped": "2026-07-30T08:28:27.896814+00:00",
       "_meta": {
-        "last_scraped": "2026-07-27T09:55:49.891052+00:00",
+        "last_scraped": "2026-07-30T08:28:42.393448+00:00",
         "last_price_check": "2026-03-26T21:37:22.955099+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
