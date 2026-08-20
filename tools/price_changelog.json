@@ -412,5 +412,23 @@
     "old_value": 350.0,
     "new_value": 200.0,
     "source": "https://www.yogalives.ch"
+  },
+  {
+    "timestamp": "2026-08-20T06:35:22.088343+00:00",
+    "studio_id": "yoga-luna-bern",
+    "canton": "bern",
+    "field": "pricing.monthly",
+    "old_value": 220,
+    "new_value": 159.0,
+    "source": "https://www.yogaluna.ch/preise"
+  },
+  {
+    "timestamp": "2026-08-20T06:59:21.940258+00:00",
+    "studio_id": "sundora-shala-pully",
+    "canton": "vaud",
+    "field": "pricing.single",
+    "old_value": 35,
+    "new_value": 180.0,
+    "source": "https://www.sundorashala.com"
   }
 ]
