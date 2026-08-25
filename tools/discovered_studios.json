@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-25T14:38:46Z",
+ "generated": "2026-08-25T15:03:53Z",
  "count": 12,
  "note": "Coda da rivedere. Inserimento: tools/merge_discovered.py",
  "studios": [
@@ -77,7 +77,7 @@
    "price_url": "https://www.yogaspacelugano.ch/prezzi/",
    "addresses": [
     {
-     "street": "YOGA SPACE\nVia Canova 18",
+     "street": "Via Canova 18",
      "zip": "6900",
      "city": "Lugano",
      "label": ""
@@ -162,23 +162,24 @@
    "needs_review": true
   },
   {
-   "id": "yoga-sion",
    "name": "Yoga Sion",
    "canton": "valais",
    "website": "https://www.yogasion.ch/",
-   "schedule_url": "https://www.yogasion.ch/",
+   "error": "scaduto dopo 75s"
+  },
+  {
+   "id": "le-yoga-que-j-aime",
+   "name": "Le Yoga que j'aime",
+   "canton": "valais",
+   "website": "https://leyogaquejaime.ch/",
+   "schedule_url": "https://leyogaquejaime.ch/cours-de-yoga/",
    "price_url": "",
    "addresses": [],
-   "phone": "",
-   "email": "",
-   "styles": [
-    "Vinyasa",
-    "Hatha",
-    "Power Yoga",
-    "Flow"
-   ],
-   "description": "Venez essayer le yoga avec moi. Cela fait du bien de bouger son corps. Je souhaite à toutes et à tous la cordiale bienvenue à mon cours de Yoga.",
-   "booking_platform": "woocommerce",
+   "phone": "+41 77 463 57 93",
+   "email": "contact@leyogaquejaime.ch",
+   "styles": [],
+   "description": "Essayez gratuitement un cours de yoga à Martigny | Découvrez également les stages du Yoga que j'aime | Un Yoga doux et méditatif | 077 463 57 93 |",
+   "booking_platform": "wordpress",
    "lat": null,
    "lng": null,
    "active": true,
@@ -190,40 +191,8 @@
    "hours": "",
    "scrape_status": "discovered",
    "discovered_at": "2026-08-25",
-   "needs_review": true
-  },
-  {
-   "id": "le-yoga-que-j-aime",
-   "name": "Le Yoga que j'aime",
-   "canton": "valais",
-   "website": "https://leyogaquejaime.ch/",
-   "schedule_url": "https://leyogaquejaime.ch/cours-de-yoga/",
-   "price_url": "",
-   "addresses": [
-    {
-     "street": "Gare 1",
-     "zip": "1920",
-     "city": "Martigny",
-     "label": ""
-    }
-   ],
-   "phone": "+41 77 463 57 93",
-   "email": "contact@leyogaquejaime.ch",
-   "styles": [],
-   "description": "Essayez gratuitement un cours de yoga à Martigny | Découvrez également les stages du Yoga que j'aime | Un Yoga doux et méditatif | 077 463 57 93 |",
-   "booking_platform": "wordpress",
-   "lat": 46.10197448730469,
-   "lng": 7.073562145233154,
-   "active": true,
-   "teachers": [],
-   "classes": [],
-   "languages": [],
-   "special_features": [],
-   "drop_in": null,
-   "hours": "",
-   "scrape_status": "discovered",
-   "discovered_at": "2026-08-25",
-   "needs_review": true
+   "needs_review": true,
+   "rendered": true
   },
   {
    "id": "yogabrielle",
@@ -234,7 +203,7 @@
    "price_url": "https://yogabrielle.ch/tarifs-2/",
    "addresses": [
     {
-     "street": "Grand-Champsec 23",
+     "street": "Rue du Grand-Champsec 23",
      "zip": "1950",
      "city": "Sion",
      "label": ""
@@ -266,8 +235,8 @@
    "schedule_url": "https://pranayoga-sh.ch/kurse/",
    "price_url": "https://pranayoga-sh.ch/angebot-fuer-schwangere/",
    "addresses": [],
-   "phone": "",
-   "email": "",
+   "phone": "079 820 17 49",
+   "email": "info@pranayoga-sh.ch",
    "styles": [
     "Vinyasa",
     "Hatha",
@@ -289,7 +258,8 @@
    "hours": "",
    "scrape_status": "discovered",
    "discovered_at": "2026-08-25",
-   "needs_review": true
+   "needs_review": true,
+   "rendered": true
   },
   {
    "id": "yoga-sansaar",
@@ -300,7 +270,7 @@
    "price_url": "https://www.yogasansaar.ch/de/preise",
    "addresses": [
     {
-     "street": "Impressum\nYoga Sansaar\nIndustriestrasse 47",
+     "street": "Industriestrasse 47",
      "zip": "6300",
      "city": "Zug",
      "label": ""
@@ -314,8 +284,8 @@
    ],
    "description": "Gruppenunterricht, Privatstunden (Personal Training), Kinderyoga",
    "booking_platform": "website",
-   "lat": null,
-   "lng": null,
+   "lat": 47.18258285522461,
+   "lng": 8.521524429321289,
    "active": true,
    "teachers": [],
    "classes": [],

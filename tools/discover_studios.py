@@ -22,11 +22,13 @@ Uso:
     python3 tools/discover_studios.py --url https://studio.ch --canton ticino
 """
 import argparse
+import contextlib
 import glob
 import json
 import os
 import re
 import sys
+import signal
 import time
 import urllib.parse
 import urllib.request
@@ -34,6 +36,10 @@ import urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, 'data')
 OUT = os.path.join(ROOT, 'tools', 'discovered_studios.json')
+
+# Tetti di tempo per studio. Meglio una scheda incompleta che un giro fermo.
+BUDGET_STUDIO = 75      # analisi normale (home + sondaggi + geocodifica)
+BUDGET_RENDER = 60      # secondo tentativo col browser reale
 
 # webfetch, se disponibile, da' cascata + cortesia + robots; altrimenti requests.
 sys.path.insert(0, os.path.join(os.path.dirname(ROOT), 'accesso a pagine online'))
@@ -80,6 +86,39 @@ SWISS_ADDR = re.compile(
     r'(\d{4})\s+([A-ZÀ-Ü][A-Za-zÀ-ÿ\-\' ]{2,25})', re.I)
 
 
+class _Scaduto(Exception):
+    pass
+
+
+@contextlib.contextmanager
+def limite(seconds):
+    """Tetto di tempo assoluto su un blocco di codice.
+
+    Serve perche' il timeout di una libreria di rete non e' una garanzia: nella
+    cascata capita che curl_cffi o cloudscraper restino appesi su una connessione
+    stabilita, con timeout impostato e ignorato. Senza questa guardia un singolo
+    sito ostinato blocca l'intero giro (successo gia' visto: fermo su uno studio
+    per minuti, CPU a zero e cinque socket aperti).
+
+    SIGALRM interrompe anche le chiamate bloccanti in C. Unix-only, mono-thread —
+    che e' esattamente il contesto di questo strumento.
+    """
+    if not hasattr(signal, 'SIGALRM'):
+        yield
+        return
+
+    def _scatta(signum, frame):
+        raise _Scaduto()
+
+    precedente = signal.signal(signal.SIGALRM, _scatta)
+    signal.setitimer(signal.ITIMER_REAL, seconds)
+    try:
+        yield
+    finally:
+        signal.setitimer(signal.ITIMER_REAL, 0)
+        signal.signal(signal.SIGALRM, precedente)
+
+
 def slugify(name):
     s = name.lower()
     for a, b in (('ä', 'ae'), ('ö', 'oe'), ('ü', 'ue'), ('à', 'a'), ('è', 'e'),
@@ -105,25 +144,38 @@ def existing_index():
 
 
 class Client:
+    """Due profili di rete, non uno.
+
+    La pagina principale merita pazienza: e' il dato che ci interessa. I *sondaggi*
+    (i percorsi /kontakt, /impressum... tentati alla cieca) no: la maggior parte
+    e' un 404, e concedere loro 25s x 3 tentativi ciascuno significa spendere
+    minuti su un singolo studio lento. Timeout corto e nessun retry.
+    """
+
     def __init__(self, contact=None):
         if HAVE_WEBFETCH:
             cfg = FetchConfig.for_locale('de-CH', 'Europe/Zurich')
             cfg.contact = contact
             cfg.min_delay_per_host = 1.5      # discovery non ha fretta
             self.f = Fetcher(cfg)
+            probe_cfg = cfg.clone(timeout=6.0, max_retries=0,
+                                  render_timeout=12.0, min_delay_per_host=0.8)
+            self.probe = Fetcher(probe_cfg)
         else:
-            self.f = None
+            self.f = self.probe = None
 
-    def get(self, url, render=False):
-        """(html, url_finale) oppure (None, motivo)."""
+    def get(self, url, render=False, probe=False):
+        """(html, url_finale) oppure (None, motivo). `probe`: tentativo alla cieca."""
         if self.f is not None:
-            r = self.f.fetch(url, render=True if render else None)
+            client = self.probe if probe else self.f
+            r = client.fetch(url, render=True if render else None)
             if not r.ok:
                 return None, (r.block_reason or r.error or f'status {r.status}')
             return r.full_html, r.url
         import requests
         try:
-            r = requests.get(url, timeout=20, headers={'User-Agent': 'Mozilla/5.0 (webfetch discovery)'})
+            r = requests.get(url, timeout=6 if probe else 20,
+                             headers={'User-Agent': 'Mozilla/5.0 (webfetch discovery)'})
             return (r.text, r.url) if r.status_code < 400 else (None, f'status {r.status_code}')
         except Exception as e:
             return None, f'{type(e).__name__}'
@@ -224,8 +276,11 @@ def profile(client, name, url, canton, render=False):
         candidate = origin + path
         if candidate not in tried:
             tried.append(candidate)
+    deadline = time.time() + 45      # budget per studio: nessun sito blocca il giro
     for cu in tried:
-        chtml, curl = client.get(cu, render=render)
+        if time.time() > deadline:
+            break
+        chtml, curl = client.get(cu, render=render, probe=True)
         if not chtml:
             continue
         chunk = client.text(chtml, curl)
@@ -305,11 +360,25 @@ def main():
         if host in domains or (c.get('name') or '').lower().strip() in names:
             skipped += 1
             continue
-        rec = profile(client, c.get('name') or host, url, c.get('canton', ''))
+        nome = c.get('name') or host
+        try:
+            with limite(BUDGET_STUDIO):
+                rec = profile(client, nome, url, c.get('canton', ''))
+        except _Scaduto:
+            rec = {'name': nome, 'canton': c.get('canton', ''), 'website': url,
+                   'error': f'scaduto dopo {BUDGET_STUDIO}s'}
+        except Exception as e:
+            rec = {'name': nome, 'canton': c.get('canton', ''), 'website': url,
+                   'error': f'{type(e).__name__}: {e}'}
+
         # Wix/Squarespace & co. rendono indirizzo e recapiti via JavaScript: se la
         # scheda e' rimasta vuota, vale la pena riprovare con un browser vero.
         if not rec.get('error') and not rec.get('addresses'):
-            retry = profile(client, c.get('name') or host, url, c.get('canton', ''), render=True)
+            try:
+                with limite(BUDGET_RENDER):
+                    retry = profile(client, nome, url, c.get('canton', ''), render=True)
+            except Exception as e:      # include _Scaduto
+                retry = {'error': f'render non riuscito: {type(e).__name__}'}
             if not retry.get('error') and (retry.get('addresses') or retry.get('phone')
                                            or len(retry.get('styles') or []) > len(rec.get('styles') or [])):
                 retry['id'] = rec['id']
