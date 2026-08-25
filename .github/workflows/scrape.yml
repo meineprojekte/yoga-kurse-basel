@@ -41,7 +41,7 @@ jobs:
         run: |
           pip install -r scrapers/requirements.txt
           pip install curl_cffi cloudscraper || echo "Optional deps install warning (non-fatal)"
-          npm ci --no-audit --no-fund
+          npm ci --no-audit --no-fund || echo "npm ci fallito: la build asset verra' saltata (i dati si aggiornano lo stesso)"
 
       - name: Run scraper (all cantons)
         run: python scrapers/scrape_all.py
@@ -65,8 +65,17 @@ jobs:
 
       # index.html carica js/app.min.js e css/style.min.css: se non si
       # ricostruiscono, qualunque modifica ai sorgenti resta invisibile online.
+      # Non fatale di proposito: se la minificazione si rompe, il sito serve gli
+      # asset precedenti — sgradevole ma innocuo. Bloccare qui significherebbe
+      # invece non aggiornare piu' orari e prezzi, che e' il valore del sito.
       - name: Rebuild minified assets (js/app.min.js, css/style.min.css)
-        run: bash tools/build.sh
+        continue-on-error: true
+        run: |
+          if [ -x node_modules/.bin/terser ]; then
+            bash tools/build.sh
+          else
+            echo "toolchain npm assente: salto la build asset"
+          fi
 
       - name: Run data validation
         id: validate

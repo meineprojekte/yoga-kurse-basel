@@ -76,21 +76,34 @@ def build_rows(studios):
 
 
 def main():
+    # Questo script gira nella stessa pipeline che aggiorna orari e prezzi. Se
+    # qualcosa qui non torna si esce SENZA errore: il fallback resta quello di
+    # prima (vecchio ma valido) e soprattutto il commit dei dati va avanti.
+    # Fallire qui vorrebbe dire bloccare l'aggiornamento dell'intero sito per un
+    # blocco di HTML che il JavaScript sostituisce comunque dopo mezzo secondo.
     if not os.path.exists(PRICES):
-        raise SystemExit('data/prices_all.json mancante: lancia prima build_price_index.py')
-    data = json.load(open(PRICES, encoding='utf-8'))
+        print('data/prices_all.json mancante: salto il fallback (lancia build_price_index.py)')
+        return
+    try:
+        data = json.load(open(PRICES, encoding='utf-8'))
+    except Exception as e:
+        print(f'indice prezzi illeggibile ({e}): salto il fallback')
+        return
     studios = data.get('studios', [])
     if not studios:
-        raise SystemExit('indice prezzi vuoto: non tocco index.html')
+        print('indice prezzi vuoto: non tocco index.html')
+        return
 
     html = open(INDEX, encoding='utf-8').read()
     open_at = html.find(TBODY_OPEN)
     if open_at < 0:
-        raise SystemExit('<tbody id="comparisonBody"> non trovato in index.html')
+        print('<tbody id="comparisonBody"> non trovato in index.html: salto')
+        return
     body_start = open_at + len(TBODY_OPEN)
     close_at = html.find(TBODY_CLOSE, body_start)
     if close_at < 0:
-        raise SystemExit('</tbody> di chiusura non trovato')
+        print('</tbody> di chiusura non trovato: salto')
+        return
 
     cantons = len({s['canton'] for s in studios[:TOP_N]})
     block = ('\n' + IND + START + '\n' +
