@@ -1107,8 +1107,22 @@ def scrape_generic_schedule(studio):
 
 PRICE_PAGE_PATHS = ['/preise', '/prices', '/pricing', '/tarife', '/prix', '/angebot']
 
-# Regex to find CHF amounts
-CHF_PATTERN = re.compile(r'CHF\s*(\d+[\.,]?\d*)', re.IGNORECASE)
+# Regex to find CHF amounts.
+#
+# Copre le forme svizzere reali, non solo "CHF 35": "Fr. 35.-", "35 CHF",
+# "CHF 35.–", "35.-". Prima si perdeva la maggior parte dei listini scritti
+# all'uso locale.
+#
+# Trappola: in tedesco `Fr.` = Franken ma `Fr` = Freitag. "Hot Yoga Fr 16.30 Uhr"
+# veniva letto come CHF 16.30. Per questo la forma con prefisso esige il PUNTO
+# (`Fr.`), e ogni importo seguito da un marcatore d'orario viene scartato.
+CHF_PATTERN = re.compile(
+    r'(?:CHF|Fr\.)\s*(\d{1,4}(?:[\.,]\d{1,2})?)'      # CHF 35 / Fr. 35.50
+    r'|(\d{1,4}(?:[\.,]\d{1,2})?)\s*(?:CHF\b|Fr\.)',  # 35 CHF / 35 Fr.
+    re.IGNORECASE)
+
+# Un importo seguito da questi non e' un prezzo ma un orario o una durata.
+_NON_PREZZO = re.compile(r'^\s*(?:uhr|h\b|:\d|min\b|minuten|std\b|stunden)', re.IGNORECASE)
 
 # Keywords that help classify a price (German, French, English)
 PRICE_KEYWORDS = {
@@ -1185,43 +1199,89 @@ def _extract_prices_from_soup(soup):
     """
     Extract categorized prices from a BeautifulSoup document.
 
-    Looks at text blocks containing CHF amounts and checks surrounding text
-    for pricing keywords to classify each price.
-    """
-    prices = {}
+    Come funziona, e perche' cosi'.
 
+    La versione precedente prendeva come contesto il testo del *nonno* nel DOM e
+    assegnava l'ultima corrispondenza trovata. Su una pagina prezzi densa il nonno
+    contiene l'intero listino: bastava che da qualche parte ci fosse la parola
+    "Einzellektion" perche' un numero qualunque le venisse attribuito. Caso reale
+    (hotyogachristophherren.ch): "Wasser CHF 5.-" e' diventato il prezzo
+    d'ingresso di uno studio che chiede CHF 38.
+
+    Ora, per ogni importo:
+      1. si sale dagli antenati partendo dal piu' PICCOLO (parent, poi su, max 4),
+         e ci si ferma al primo che contiene una parola-chiave di categoria;
+      2. si misura la distanza in caratteri fra la parola-chiave e l'importo;
+      3. per ogni categoria vince la coppia piu' VICINA, non l'ultima incontrata.
+
+    Cosi' "Wasser CHF 5.-" resta senza categoria (nel suo elemento non c'e' nessuna
+    parola-chiave) invece di rubare quella di un'altra riga.
+    """
     body = soup.find('body')
     if not body:
-        return prices
+        return {}
 
-    for element in body.find_all(string=CHF_PATTERN):
-        parent = element.parent
-        if not parent:
-            continue
+    # categoria -> (distanza, importo). Vince la distanza minore.
+    migliori = {}
 
-        grandparent = parent.parent if parent.parent else parent
-        context_text = grandparent.get_text(separator=' ', strip=True).lower()
-        context = context_text
+    for node in body.find_all(string=CHF_PATTERN):
+        testo = str(node)
 
-        amounts = CHF_PATTERN.findall(element)
-
-        for amount_str in amounts:
+        for m in CHF_PATTERN.finditer(testo):
+            grezzo = m.group(1) or m.group(2)
+            if grezzo is None:
+                continue
+            coda = testo[m.end():]
+            if _NON_PREZZO.match(coda):       # "16.30 Uhr" e' un orario
+                continue
+            # Un importo attaccato a un numero piu' lungo non e' un prezzo: e' la
+            # coda di un IBAN o di un conto. Caso reale su byoga.ch:
+            # "KONTO: 14-816162-5 CHF IBAN:" veniva letto come CHF 5.
+            testa = testo[:m.start()]
+            if testa[-1:].isdigit() or testa[-1:] == '-':
+                continue
             try:
-                amount = float(amount_str.replace(',', '.'))
+                amount = float(grezzo.replace(',', '.'))
             except ValueError:
                 continue
-
             if amount < 5 or amount > 500:
                 continue
 
-            for category, keywords in PRICE_KEYWORDS.items():
-                if any(kw in context for kw in keywords):
-                    if category == 'abo' and any(k in prices for k in ['monthly', 'card_10']):
-                        continue
-                    prices[category] = amount
+            # 1) l'antenato piu' piccolo che porta una parola-chiave
+            elemento = node.parent
+            for _ in range(4):
+                if elemento is None:
                     break
+                contesto = elemento.get_text(separator=' ', strip=True).lower()
+                trovate = [(cat, kw) for cat, kws in PRICE_KEYWORDS.items()
+                           for kw in kws if kw in contesto]
+                if trovate:
+                    _classifica(contesto, trovate, amount, migliori)
+                    break
+                elemento = elemento.parent
 
-    return prices
+    return {cat: amount for cat, (_dist, amount) in migliori.items()}
+
+
+def _classifica(contesto, trovate, amount, migliori):
+    """Assegna l'importo alla categoria la cui parola-chiave gli sta piu' vicino."""
+    # dove compare l'importo dentro il contesto (prima occorrenza plausibile)
+    testo_importo = f'{amount:g}'
+    pos_importo = contesto.find(testo_importo)
+    if pos_importo < 0:
+        pos_importo = len(contesto) // 2      # non localizzabile: distanza neutra
+
+    for cat, kw in trovate:
+        pos_kw = contesto.find(kw)
+        if pos_kw < 0:
+            continue
+        distanza = abs(pos_kw - pos_importo)
+        # 'abo' e' generico: cede il passo alle categorie specifiche
+        if cat == 'abo' and any(k in migliori for k in ('monthly', 'card_10')):
+            continue
+        precedente = migliori.get(cat)
+        if precedente is None or distanza < precedente[0]:
+            migliori[cat] = (distanza, amount)
 
 
 # ---------------------------------------------------------------------------

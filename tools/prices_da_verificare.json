@@ -1,0 +1,174 @@
+{
+ "count": 14,
+ "note": "Prezzi esclusi dal confronto perche' implausibili. Da controllare sul sito dello studio.",
+ "studios": [
+  {
+   "name": "Acroyoga Group Graubünden",
+   "canton": "graubuenden",
+   "motivo": "ingresso CHF 5: sotto il minimo plausibile (12)",
+   "url": "https://acroyoga.group/",
+   "pricing": {
+    "single": 5,
+    "card_10": null,
+    "monthly": null,
+    "trial": null
+   }
+  },
+  {
+   "name": "Claudia Hauri - Yoga und Ayurveda",
+   "canton": "appenzell-ir",
+   "motivo": "ingresso CHF 10: sotto il minimo plausibile (12)",
+   "url": "https://www.yoga-claudia.ch/kursangebote/appenzell",
+   "pricing": {
+    "single": 10,
+    "card_10": null,
+    "monthly": null,
+    "trial": 10
+   }
+  },
+  {
+   "name": "Elevate Studio",
+   "canton": "zurich",
+   "motivo": "ingresso CHF 5: sotto il minimo plausibile (12)",
+   "url": "https://www.elevate-studio.ch/prices",
+   "pricing": {
+    "single": 5,
+    "card_10": null,
+    "monthly": null,
+    "trial": 21
+   }
+  },
+  {
+   "name": "FlowFabrik",
+   "canton": "zurich",
+   "motivo": "ingresso CHF 10: sotto il minimo plausibile (12)",
+   "url": "https://www.flowfabrik.ch/",
+   "pricing": {
+    "single": 10,
+    "card_10": null,
+    "monthly": null,
+    "trial": null
+   }
+  },
+  {
+   "name": "Hot Yoga Christoph Herren",
+   "canton": "bern",
+   "motivo": "ingresso CHF 5: sotto il minimo plausibile (12)",
+   "url": "https://www.hotyogachristophherren.ch/angebot-yoga-infrarot",
+   "pricing": {
+    "single": 5,
+    "card_10": null,
+    "monthly": null,
+    "trial": 38
+   }
+  },
+  {
+   "name": "Jyoti Yoga",
+   "canton": "basel-landschaft",
+   "motivo": "ingresso CHF 10: sotto il minimo plausibile (12)",
+   "url": "https://www.jyotiyoga.ch/",
+   "pricing": {
+    "single": 10,
+    "card_10": null,
+    "monthly": null,
+    "trial": null
+   }
+  },
+  {
+   "name": "MEYO HOUSE",
+   "canton": "basel-stadt",
+   "motivo": "ingresso CHF 10: sotto il minimo plausibile (12)",
+   "url": "https://www.meyohouse.com/preise",
+   "pricing": {
+    "single": 10,
+    "card_10": null,
+    "monthly": null,
+    "trial": 6
+   }
+  },
+  {
+   "name": "Yoga & Pilateszentrale",
+   "canton": "solothurn",
+   "motivo": "10er CHF 290.0 > 12x l'ingresso (CHF 20): categorie scambiate",
+   "url": "https://www.pilateszentrale.ch/preise",
+   "pricing": {
+    "single": 20,
+    "card_10": 290.0,
+    "monthly": null,
+    "trial": 20
+   }
+  },
+  {
+   "name": "Yoga City",
+   "canton": "zurich",
+   "motivo": "10er CHF 80 < 2x l'ingresso (CHF 60): categorie scambiate",
+   "url": "https://www.yogacity.ch/preise",
+   "pricing": {
+    "single": 60,
+    "card_10": 80,
+    "monthly": null,
+    "trial": null
+   }
+  },
+  {
+   "name": "Yoga in a Bag (Albisrieden)",
+   "canton": "zurich",
+   "motivo": "ingresso CHF 5: sotto il minimo plausibile (12)",
+   "url": "https://yogainabag.com/preise/",
+   "pricing": {
+    "single": 5,
+    "card_10": null,
+    "monthly": 65,
+    "trial": 75
+   }
+  },
+  {
+   "name": "Yoga in a Bag (Altstetten)",
+   "canton": "zurich",
+   "motivo": "ingresso CHF 5: sotto il minimo plausibile (12)",
+   "url": "https://yogainabag.com/preise/",
+   "pricing": {
+    "single": 5,
+    "card_10": null,
+    "monthly": 65,
+    "trial": 75
+   }
+  },
+  {
+   "name": "Yoga in a Bag (Winterthur)",
+   "canton": "zurich",
+   "motivo": "ingresso CHF 5: sotto il minimo plausibile (12)",
+   "url": "https://yogainabag.com/preise/",
+   "pricing": {
+    "single": 5,
+    "card_10": null,
+    "monthly": 65,
+    "trial": 75
+   }
+  },
+  {
+   "name": "Yogal Lugano - Ashtanga Yoga",
+   "canton": "ticino",
+   "motivo": "ingresso CHF 10: sotto il minimo plausibile (12)",
+   "url": "https://www.yogalugano.ch/prezzi",
+   "pricing": {
+    "single": 10,
+    "card_10": null,
+    "monthly": null,
+    "trial": 30
+   }
+  },
+  {
+   "name": "jetzt. YOGA Baden",
+   "canton": "aargau",
+   "motivo": "ingresso CHF 8: sotto il minimo plausibile (12)",
+   "url": "https://www.jetzt.yoga/yogakurs-baden",
+   "pricing": {
+    "single": 8,
+    "card_10": null,
+    "monthly": null,
+    "trial": 8
+   }
+  }
+ ]
+}
