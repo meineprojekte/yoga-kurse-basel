@@ -515,7 +515,10 @@ if ('serviceWorker' in navigator) {
         markers: [],
         currentCanton: 'basel-stadt',
         favoritesOnly: false,
-        modalTrigger: null
+        modalTrigger: null,
+        // Indice NAZIONALE dei prezzi (data/prices_all.json), indipendente dal
+        // cantone selezionato: la tabella di confronto deve mostrarli tutti.
+        priceIndex: null
     };
 
     // Canton data file mapping
@@ -747,6 +750,7 @@ if ('serviceWorker' in navigator) {
 
         var cantonToLoad = detectedCanton || savedCanton || 'basel-stadt';
         switchCanton(cantonToLoad);
+        loadPriceIndex();   // tabella prezzi nazionale, indipendente dal cantone
 
         updateLastUpdated();
         console.log('[YogaSchweiz] Init complete. Canton:', cantonToLoad);
@@ -888,11 +892,37 @@ if ('serviceWorker' in navigator) {
         var tbody = $('comparisonBody');
         if (!tbody) return;
 
-        var studiosWithPrice = state.studios.filter(function(s) {
-            return s.active !== false && s.pricing && s.pricing.verified && s.pricing.single;
-        }).sort(function(a, b) {
-            return (a.pricing.single || 999) - (b.pricing.single || 999);
-        });
+        // Preferisci l'indice nazionale; se non e' (ancora) disponibile ripiega sul
+        // cantone caricato, cosi' la tabella non resta mai vuota.
+        var studiosWithPrice;
+        if (state.priceIndex && state.priceIndex.length) {
+            studiosWithPrice = state.priceIndex.map(function (r) {
+                return {
+                    name: r.name,
+                    styles: r.styles || [],
+                    stylesTotal: (r.styles || []).length + (r.styles_more || 0),
+                    city: r.city,
+                    website: r.url,
+                    pricing: {
+                        single: r.single, card_10: r.card_10,
+                        monthly: r.monthly, trial: r.trial, source: r.url
+                    }
+                };
+            });
+        } else {
+            studiosWithPrice = state.studios.filter(function(s) {
+                return s.active !== false && s.pricing && s.pricing.verified && s.pricing.single;
+            }).map(function (s) {
+                var st = s.styles || [];
+                return {
+                    name: s.name, styles: st.slice(0, 3), stylesTotal: st.length,
+                    city: (s.addresses && s.addresses[0]) ? s.addresses[0].city : '',
+                    website: s.website, pricing: s.pricing
+                };
+            }).sort(function(a, b) {
+                return (a.pricing.single || 999) - (b.pricing.single || 999);
+            });
+        }
 
         if (studiosWithPrice.length === 0) {
             tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;padding:30px;color:#888;">' + t('comparison.no_data') + '</td></tr>';
@@ -909,9 +939,10 @@ if ('serviceWorker' in navigator) {
         for (var i = 0; i < studiosWithPrice.length; i++) {
             var s = studiosWithPrice[i];
             var p = s.pricing;
-            var addr = s.addresses && s.addresses[0] ? s.addresses[0].city : '';
+            var addr = s.city || '';
             var styles = (s.styles || []).slice(0, 3).join(', ');
-            if (s.styles && s.styles.length > 3) styles += ' +' + (s.styles.length - 3);
+            var extra = (s.stylesTotal || 0) - Math.min(3, (s.styles || []).length);
+            if (extra > 0) styles += ' +' + extra;
             var sourceUrl = p.source || s.website || '';
             var rowClass = i % 2 === 0 ? 'comp-row-even' : 'comp-row-odd';
 
@@ -1212,6 +1243,30 @@ if ('serviceWorker' in navigator) {
                 });
             }
         });
+    }
+
+    // Carica UNA volta l'indice nazionale dei prezzi. La tabella "Preisvergleich"
+    // promette tutti gli studi con prezzo verificato: prima leggeva state.studios,
+    // che contiene un solo cantone, e ne mostrava ~13%.
+    function loadPriceIndex() {
+        if (state.priceIndex) return;
+        loadJSON('./data/prices_all.enc.json', function (data, err) {
+            if (data && data.studios && data.studios.length) {
+                state.priceIndex = data.studios;
+            } else {
+                loadJSON('./data/prices_all.json', function (d2) {
+                    if (d2 && d2.studios && d2.studios.length) state.priceIndex = d2.studios;
+                    if (state.priceIndex) safeRenderComparison();
+                });
+                return;
+            }
+            safeRenderComparison();
+        });
+    }
+
+    function safeRenderComparison() {
+        try { renderComparisonTable(); }
+        catch (e) { console.error('[YogaSchweiz] renderComparisonTable:', e); }
     }
 
     function onStudiosLoaded(data) {

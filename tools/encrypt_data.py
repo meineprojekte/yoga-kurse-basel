@@ -11,7 +11,10 @@ def encrypt(json_str):
 def main():
     count = 0
     for f in sorted(os.listdir(DATA_DIR)):
-        if (f.startswith('studios_') or f.startswith('schedule_')) and f.endswith('.json') and '.enc.' not in f:
+        # prices_all.json e' l'indice nazionale dei prezzi (build_price_index.py):
+        # va cifrato come gli altri, altrimenti il front-end non lo trova.
+        if ((f.startswith('studios_') or f.startswith('schedule_') or f == 'prices_all.json')
+                and f.endswith('.json') and '.enc.' not in f):
             path = os.path.join(DATA_DIR, f)
             with open(path, 'r', encoding='utf-8') as fh:
                 content = fh.read()

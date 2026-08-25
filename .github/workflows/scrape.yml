@@ -31,16 +31,26 @@ jobs:
           cache: 'pip'
           cache-dependency-path: scrapers/requirements.txt
 
+      - name: Set up Node (per la build degli asset minificati)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
       - name: Install dependencies
         run: |
           pip install -r scrapers/requirements.txt
           pip install curl_cffi cloudscraper || echo "Optional deps install warning (non-fatal)"
+          npm ci --no-audit --no-fund
 
       - name: Run scraper (all cantons)
         run: python scrapers/scrape_all.py
 
       - name: Clean scraped data (drop corrupt classes, null impossible prices)
         run: python tools/clean_data.py
+
+      - name: Build national price index (data/prices_all.json)
+        run: python tools/build_price_index.py
 
       - name: Encrypt data files (regenerate .enc.json served to the public)
         run: python tools/encrypt_data.py
@@ -49,8 +59,14 @@ jobs:
         run: |
           python tools/generate_canton_pages.py
           python tools/generate_style_pages.py
+          python tools/update_price_prerender.py
           python tools/update_homepage_counts.py
           python tools/generate_sitemap.py
+
+      # index.html carica js/app.min.js e css/style.min.css: se non si
+      # ricostruiscono, qualunque modifica ai sorgenti resta invisibile online.
+      - name: Rebuild minified assets (js/app.min.js, css/style.min.css)
+        run: bash tools/build.sh
 
       - name: Run data validation
         id: validate
@@ -94,7 +110,7 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git add -A data kanton yoga index.html sitemap.xml tools/price_changelog.json tools/validation_report.json 2>/dev/null || true
+          git add -A data kanton yoga index.html index.min.html sitemap.xml js css tools/price_changelog.json tools/validation_report.json 2>/dev/null || true
           git diff --cached --quiet 2>/dev/null || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push changes
