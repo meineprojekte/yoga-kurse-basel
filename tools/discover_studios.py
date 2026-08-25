@@ -66,9 +66,18 @@ CONTACT_WORDS = re.compile(r'kontakt|contact|contatt|impressum|ueber-uns|about',
 
 EMAIL = re.compile(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}')
 PHONE = re.compile(r'(?:\+41|0041|\b0)\s?(?:\(0\))?\s?\d{2}[\s./-]?\d{3}[\s./-]?\d{2}[\s./-]?\d{2}')
+# Indirizzo svizzero. Invece di "qualsiasi parola seguita da un numero" (che si
+# mangiava il testo davanti: "Kontakt Via Pico 28", "Impressum\nYoga Sansaar\n..."),
+# la via si ancora al suo tipo: o comincia con Via/Rue/Route/... o finisce in
+# -strasse/-gasse/-weg/-platz. E' quello che rende un indirizzo riconoscibile
+# nelle quattro lingue nazionali.
+_STREET_PREFIX = (r'(?:Via|Viale|Vicolo|Corso|Strada|Piazza|Rue|Route|Avenue|Av\.|Chemin|'
+                  r'Ch\.|Place|Quai|Boulevard|Impasse|Sentier)')
+_STREET_SUFFIX = r'[\wÀ-ÿ.\-]*(?:strasse|str\.|gasse|weg|platz|allee|ring|steig|halde|matte)'
 SWISS_ADDR = re.compile(
-    r'([A-ZÀ-Ü][\wÀ-ÿ.\-]*(?:\s+[A-ZÀ-Ü\d][\wÀ-ÿ.\-]*){0,3}\s+\d+[a-z]?)\s*,?\s*'
-    r'(\d{4})\s+([A-ZÀ-Ü][A-Za-zÀ-ÿ\-\' ]{2,25})')
+    r'\b((?:' + _STREET_PREFIX + r'\s+[\wÀ-ÿ.\-]+(?:\s+[\wÀ-ÿ.\-]+)?'
+    r'|' + _STREET_SUFFIX + r')\s+\d+[a-zA-Z]?)\s*[,\n]\s*'
+    r'(\d{4})\s+([A-ZÀ-Ü][A-Za-zÀ-ÿ\-\' ]{2,25})', re.I)
 
 
 def slugify(name):
