@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-25T13:58:32.609325+00:00",
+  "last_updated": "2026-08-27T17:08:45.225727+00:00",
   "studios": [
     {
       "id": "yoga-lotus-liestal",
@@ -43,7 +43,7 @@
       "classes": [],
       "scrape_status": "scraped",
       "_meta": {
-        "last_scraped": "2026-08-25T13:57:04.021908+00:00",
+        "last_scraped": "2026-08-27T17:07:19.154196+00:00",
         "last_price_check": "2026-03-27T17:18:42.837843+00:00",
         "scrape_status": "scraped",
         "booking_links": [
@@ -108,9 +108,9 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.eversports.ch/s/yoga-lotus-liestal",
-        "last_checked": "2026-08-25T13:57:04.021887+00:00"
+        "last_checked": "2026-08-27T17:07:19.154181+00:00"
       },
-      "last_scraped": "2026-08-25T13:56:37.002609+00:00",
+      "last_scraped": "2026-08-27T17:06:52.807486+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -200,9 +200,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T13:57:04.128911+00:00",
+      "last_scraped": "2026-08-27T17:07:19.366661+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T13:57:13.666421+00:00",
+        "last_scraped": "2026-08-27T17:07:28.752566+00:00",
         "last_price_check": "2026-03-27T17:19:04.965836+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -216,7 +216,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://yoga-werkstatt.ch/stundenplan/",
-        "last_checked": "2026-08-25T13:57:13.666403+00:00"
+        "last_checked": "2026-08-27T17:07:28.752547+00:00"
       }
     },
     {
@@ -254,16 +254,16 @@
       "classes": [],
       "pricing": {
         "single": 28,
-        "card_10": 260,
+        "card_10": null,
         "currency": "CHF",
         "verified": true,
         "source": "https://www.balancedpower.ch/preise",
-        "last_checked": "2026-08-25T13:57:23.322364+00:00"
+        "last_checked": "2026-08-27T17:07:34.059149+00:00"
       },
       "scrape_status": "scraped",
       "_meta": {
-        "last_scraped": "2026-08-25T13:57:23.322386+00:00",
-        "last_price_check": null,
+        "last_scraped": "2026-08-27T17:07:34.059255+00:00",
+        "last_price_check": "2026-08-27T17:07:34.059255+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -317,10 +317,11 @@
         ],
         "source_urls": {
           "website": "https://www.balancedpower.ch/",
-          "schedule": "https://www.eversports.ch/s/balanced-power-studios-gmbh"
+          "schedule": "https://www.eversports.ch/s/balanced-power-studios-gmbh",
+          "pricing": "https://www.balancedpower.ch/preise"
         }
       },
-      "last_scraped": "2026-08-25T13:57:14.399405+00:00",
+      "last_scraped": "2026-08-27T17:07:29.189253+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -405,9 +406,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T13:57:23.579340+00:00",
+      "last_scraped": "2026-08-27T17:07:34.338692+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T13:57:27.156598+00:00",
+        "last_scraped": "2026-08-27T17:07:37.764873+00:00",
         "last_price_check": "2026-03-27T12:43:35.351959+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -422,7 +423,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.jyotiyoga.ch/",
-        "last_checked": "2026-08-25T13:57:27.156577+00:00"
+        "last_checked": "2026-08-27T17:07:37.764854+00:00"
       }
     },
     {
@@ -471,12 +472,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.bethsabe.ch/yoga-stundenplan",
-        "last_checked": "2026-08-25T13:57:32.342385+00:00"
+        "last_checked": "2026-08-27T17:07:42.225220+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T13:57:27.697271+00:00",
+      "last_scraped": "2026-08-27T17:07:38.223717+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T13:57:32.342406+00:00",
+        "last_scraped": "2026-08-27T17:07:42.225236+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -529,12 +530,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yoga.nordemann.ch/yoga-kurse-oberwil-online-yoga-preise-probelektion",
-        "last_checked": "2026-08-25T13:57:52.258988+00:00"
+        "last_checked": "2026-08-27T17:08:02.694214+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T13:57:36.204103+00:00",
+      "last_scraped": "2026-08-27T17:07:46.663293+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T13:57:52.259005+00:00",
+        "last_scraped": "2026-08-27T17:08:02.694236+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -579,7 +580,7 @@
       "classes": [],
       "scrape_status": "scraped",
       "_meta": {
-        "last_scraped": "2026-08-25T13:57:59.543168+00:00",
+        "last_scraped": "2026-08-27T17:08:09.935521+00:00",
         "last_price_check": "2026-03-27T17:19:07.209305+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -593,10 +594,10 @@
         "single": 24,
         "verified": true,
         "source": "https://yogashanti.ch",
-        "last_checked": "2026-08-25T13:57:59.543150+00:00",
+        "last_checked": "2026-08-27T17:08:09.935506+00:00",
         "notes": "CHF 24/lesson per quarter (10-12 lessons)"
       },
-      "last_scraped": "2026-08-25T13:57:52.738125+00:00"
+      "last_scraped": "2026-08-27T17:08:03.386562+00:00"
     },
     {
       "id": "ebe-wellness-oberwil",
@@ -639,12 +640,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://ebe-wellness.ch/preise-yoga/",
-        "last_checked": "2026-08-25T13:58:13.164450+00:00"
+        "last_checked": "2026-08-27T17:08:24.559245+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T13:58:00.816401+00:00",
+      "last_scraped": "2026-08-27T17:08:11.488921+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T13:58:13.164467+00:00",
+        "last_scraped": "2026-08-27T17:08:24.559260+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -696,7 +697,7 @@
       "classes": [],
       "scrape_status": "scraped",
       "_meta": {
-        "last_scraped": "2026-08-25T13:58:20.255782+00:00",
+        "last_scraped": "2026-08-27T17:08:32.247181+00:00",
         "last_price_check": "2026-03-27T17:19:11.355432+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -712,9 +713,9 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.hathayoga-basel.ch/preise-und-agb/",
-        "last_checked": "2026-08-25T13:58:20.255765+00:00"
+        "last_checked": "2026-08-27T17:08:32.247158+00:00"
       },
-      "last_scraped": "2026-08-25T13:58:13.572832+00:00"
+      "last_scraped": "2026-08-27T17:08:25.087084+00:00"
     },
     {
       "id": "koerpergeheimnis-pratteln",
@@ -754,23 +755,24 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 25,
-        "card_10": 220,
+        "single": 25.0,
+        "card_10": 220.0,
         "trial": 0,
         "currency": "CHF",
         "verified": true,
         "source": "https://koerpergeheimnis.ch/angebot",
-        "last_checked": "2026-08-25T13:58:32.609300+00:00"
+        "last_checked": "2026-08-27T17:08:45.225654+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T13:58:21.408759+00:00",
+      "last_scraped": "2026-08-27T17:08:33.412662+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T13:58:32.609318+00:00",
-        "last_price_check": null,
+        "last_scraped": "2026-08-27T17:08:45.225718+00:00",
+        "last_price_check": "2026-08-27T17:08:45.225718+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
-          "website": "https://koerpergeheimnis.ch/"
+          "website": "https://koerpergeheimnis.ch/",
+          "pricing": "https://koerpergeheimnis.ch/angebot"
         }
       }
     }

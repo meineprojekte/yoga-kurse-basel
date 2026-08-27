@@ -1,41 +1,17 @@
 {
-  "timestamp": "2026-08-25T14:37:45.523363",
+  "timestamp": "2026-08-27T17:45:05.285994",
   "summary": {
     "total_studios": 266,
     "total_active": 246,
-    "total_with_pricing": 204,
-    "total_classes": 2419,
+    "total_with_pricing": 206,
+    "total_classes": 2403,
     "cantons_loaded": 26,
-    "anomalies_found": 11,
-    "warnings_found": 222,
+    "anomalies_found": 9,
+    "warnings_found": 229,
     "price_changes_found": 0,
     "first_run": false
   },
   "anomalies": [
-    {
-      "type": "price_out_of_range",
-      "severity": "medium",
-      "studio_id": "yoga-in-a-bag-altstetten",
-      "studio_name": "Yoga in a Bag (Altstetten)",
-      "canton": "zurich",
-      "field": "pricing.single",
-      "value": 5,
-      "expected_range": "10-60",
-      "source": "https://yogainabag.com/preise/",
-      "message": "single CHF 5 ist ausserhalb des normalen Bereichs (CHF 10-60)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "medium",
-      "studio_id": "yoga-in-a-bag-albisrieden",
-      "studio_name": "Yoga in a Bag (Albisrieden)",
-      "canton": "zurich",
-      "field": "pricing.single",
-      "value": 5,
-      "expected_range": "10-60",
-      "source": "https://yogainabag.com/preise/",
-      "message": "single CHF 5 ist ausserhalb des normalen Bereichs (CHF 10-60)"
-    },
     {
       "type": "price_out_of_range",
       "severity": "medium",
@@ -46,18 +22,6 @@
       "value": 5,
       "expected_range": "10-60",
       "source": "https://www.elevate-studio.ch/prices",
-      "message": "single CHF 5 ist ausserhalb des normalen Bereichs (CHF 10-60)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "medium",
-      "studio_id": "yoga-in-a-bag-winterthur",
-      "studio_name": "Yoga in a Bag (Winterthur)",
-      "canton": "zurich",
-      "field": "pricing.single",
-      "value": 5,
-      "expected_range": "10-60",
-      "source": "https://yogainabag.com/preise/",
       "message": "single CHF 5 ist ausserhalb des normalen Bereichs (CHF 10-60)"
     },
     {
@@ -75,18 +39,6 @@
     {
       "type": "price_out_of_range",
       "severity": "medium",
-      "studio_id": "yogastudio-luzern",
-      "studio_name": "Yogastudio Luzern",
-      "canton": "luzern",
-      "field": "pricing.single",
-      "value": 80.0,
-      "expected_range": "10-60",
-      "source": "https://www.yogastudio.ch/preise",
-      "message": "single CHF 80.0 ist ausserhalb des normalen Bereichs (CHF 10-60)"
-    },
-    {
-      "type": "price_out_of_range",
-      "severity": "medium",
       "studio_id": "anjali",
       "studio_name": "Anjali Yoga & Pilates Studio",
       "canton": "basel-stadt",
@@ -95,6 +47,18 @@
       "expected_range": "10-60",
       "source": "https://www.anjali.ch/en",
       "message": "single CHF 68.0 ist ausserhalb des normalen Bereichs (CHF 10-60)"
+    },
+    {
+      "type": "price_out_of_range",
+      "severity": "medium",
+      "studio_id": "yoga-loft-engadin-samedan",
+      "studio_name": "Yoga Loft Engadin",
+      "canton": "graubuenden",
+      "field": "pricing.monthly",
+      "value": 44.0,
+      "expected_range": "50-400",
+      "source": "https://yogaloftengadin.ch/prices",
+      "message": "monthly CHF 44.0 ist ausserhalb des normalen Bereichs (CHF 50-400)"
     },
     {
       "type": "price_out_of_range",
@@ -119,6 +83,18 @@
       "expected_range": "10-60",
       "source": "https://www.jetzt.yoga/yogakurs-baden",
       "message": "single CHF 8 ist ausserhalb des normalen Bereichs (CHF 10-60)"
+    },
+    {
+      "type": "price_out_of_range",
+      "severity": "medium",
+      "studio_id": "sundora-shala-pully",
+      "studio_name": "SunDora Shala",
+      "canton": "vaud",
+      "field": "pricing.trial",
+      "value": 120.0,
+      "expected_range": "0-80",
+      "source": "https://www.sundorashala.com",
+      "message": "trial CHF 120.0 ist ausserhalb des normalen Bereichs (CHF 0-80)"
     },
     {
       "type": "price_out_of_range",
@@ -209,18 +185,6 @@
     {
       "type": "trial_exceeds_single",
       "severity": "medium",
-      "studio_id": "bodyart-studio",
-      "studio_name": "BODYART Studio Zürich",
-      "canton": "zurich",
-      "field": "pricing.trial vs pricing.single",
-      "value": 40.0,
-      "expected_range": "<= 34",
-      "source": "https://bodyart.studio/en",
-      "message": "Probepreis CHF 40.0 ist höher als Einzeleintritt CHF 34"
-    },
-    {
-      "type": "trial_exceeds_single",
-      "severity": "medium",
       "studio_id": "das-yoga-haus-dubs",
       "studio_name": "Das Yoga Haus Dubs",
       "canton": "zurich",
@@ -229,6 +193,18 @@
       "expected_range": "<= 29",
       "source": "https://www.dasyogahaus-dubs.ch/preise",
       "message": "Probepreis CHF 75 ist höher als Einzeleintritt CHF 29"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "yoga-spirit",
+      "studio_name": "Yoga Spirit",
+      "canton": "zurich",
+      "field": "pricing.monthly / pricing.single",
+      "value": 11.67,
+      "expected_range": "4-10x",
+      "source": "https://yoga-spirit.ch/prices",
+      "message": "Monatsabo/Einzeleintritt Verhältnis 11.7x (erwartet 4-10x)"
     },
     {
       "type": "price_ratio_unusual",
@@ -250,9 +226,9 @@
       "canton": "zurich",
       "field": "pricing.trial vs pricing.single",
       "value": 75,
-      "expected_range": "<= 38",
+      "expected_range": "<= 38.0",
       "source": "https://www.xn--yoga-zrichberg-lsb.ch/preise",
-      "message": "Probepreis CHF 75 ist höher als Einzeleintritt CHF 38"
+      "message": "Probepreis CHF 75 ist höher als Einzeleintritt CHF 38.0"
     },
     {
       "type": "price_ratio_unusual",
@@ -267,28 +243,28 @@
       "message": "10er-Karte/Einzeleintritt Verhältnis 1.3x (erwartet 7-12x)"
     },
     {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "planet-yoga",
+      "studio_name": "Planet Yoga",
+      "canton": "zurich",
+      "field": "pricing.card_10 / pricing.single",
+      "value": 4.25,
+      "expected_range": "7-12x",
+      "source": "https://www.planetyoga.ch/preise",
+      "message": "10er-Karte/Einzeleintritt Verhältnis 4.2x (erwartet 7-12x)"
+    },
+    {
       "type": "trial_exceeds_single",
       "severity": "medium",
       "studio_id": "planet-yoga",
       "studio_name": "Planet Yoga",
       "canton": "zurich",
       "field": "pricing.trial vs pricing.single",
-      "value": 30,
+      "value": 80.0,
       "expected_range": "<= 20",
       "source": "https://www.planetyoga.ch/preise",
-      "message": "Probepreis CHF 30 ist höher als Einzeleintritt CHF 20"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "yoga-in-a-bag-altstetten",
-      "studio_name": "Yoga in a Bag (Altstetten)",
-      "canton": "zurich",
-      "field": "pricing.monthly / pricing.single",
-      "value": 13.0,
-      "expected_range": "4-10x",
-      "source": "https://yogainabag.com/preise/",
-      "message": "Monatsabo/Einzeleintritt Verhältnis 13.0x (erwartet 4-10x)"
+      "message": "Probepreis CHF 80.0 ist höher als Einzeleintritt CHF 20"
     },
     {
       "type": "trial_exceeds_single",
@@ -298,21 +274,9 @@
       "canton": "zurich",
       "field": "pricing.trial vs pricing.single",
       "value": 75,
-      "expected_range": "<= 5",
-      "source": "https://yogainabag.com/preise/",
-      "message": "Probepreis CHF 75 ist höher als Einzeleintritt CHF 5"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "yoga-in-a-bag-albisrieden",
-      "studio_name": "Yoga in a Bag (Albisrieden)",
-      "canton": "zurich",
-      "field": "pricing.monthly / pricing.single",
-      "value": 13.0,
-      "expected_range": "4-10x",
-      "source": "https://yogainabag.com/preise/",
-      "message": "Monatsabo/Einzeleintritt Verhältnis 13.0x (erwartet 4-10x)"
+      "expected_range": "<= 35.0",
+      "source": "https://yogainabag.com/preise",
+      "message": "Probepreis CHF 75 ist höher als Einzeleintritt CHF 35.0"
     },
     {
       "type": "trial_exceeds_single",
@@ -322,9 +286,9 @@
       "canton": "zurich",
       "field": "pricing.trial vs pricing.single",
       "value": 75,
-      "expected_range": "<= 5",
-      "source": "https://yogainabag.com/preise/",
-      "message": "Probepreis CHF 75 ist höher als Einzeleintritt CHF 5"
+      "expected_range": "<= 35.0",
+      "source": "https://yogainabag.com/preise",
+      "message": "Probepreis CHF 75 ist höher als Einzeleintritt CHF 35.0"
     },
     {
       "type": "trial_exceeds_single",
@@ -351,18 +315,6 @@
       "message": "Monatsabo/Einzeleintritt Verhältnis 10.7x (erwartet 4-10x)"
     },
     {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "yoga-in-a-bag-winterthur",
-      "studio_name": "Yoga in a Bag (Winterthur)",
-      "canton": "zurich",
-      "field": "pricing.monthly / pricing.single",
-      "value": 13.0,
-      "expected_range": "4-10x",
-      "source": "https://yogainabag.com/preise/",
-      "message": "Monatsabo/Einzeleintritt Verhältnis 13.0x (erwartet 4-10x)"
-    },
-    {
       "type": "trial_exceeds_single",
       "severity": "medium",
       "studio_id": "yoga-in-a-bag-winterthur",
@@ -370,9 +322,9 @@
       "canton": "zurich",
       "field": "pricing.trial vs pricing.single",
       "value": 75,
-      "expected_range": "<= 5",
-      "source": "https://yogainabag.com/preise/",
-      "message": "Probepreis CHF 75 ist höher als Einzeleintritt CHF 5"
+      "expected_range": "<= 35.0",
+      "source": "https://yogainabag.com/preise",
+      "message": "Probepreis CHF 75 ist höher als Einzeleintritt CHF 35.0"
     },
     {
       "type": "trial_exceeds_single",
@@ -406,9 +358,9 @@
       "canton": "bern",
       "field": "pricing.trial vs pricing.single",
       "value": 50,
-      "expected_range": "<= 40.0",
+      "expected_range": "<= 38.0",
       "source": "https://www.hothausyoga.com/pricing",
-      "message": "Probepreis CHF 50 ist höher als Einzeleintritt CHF 40.0"
+      "message": "Probepreis CHF 50 ist höher als Einzeleintritt CHF 38.0"
     },
     {
       "type": "trial_exceeds_single",
@@ -465,10 +417,10 @@
       "studio_name": "Yogastudio Luzern",
       "canton": "luzern",
       "field": "pricing.monthly / pricing.single",
-      "value": 1.0,
+      "value": 3.2,
       "expected_range": "4-10x",
       "source": "https://www.yogastudio.ch/preise",
-      "message": "Monatsabo/Einzeleintritt Verhältnis 1.0x (erwartet 4-10x)"
+      "message": "Monatsabo/Einzeleintritt Verhältnis 3.2x (erwartet 4-10x)"
     },
     {
       "type": "price_ratio_unusual",
@@ -507,6 +459,18 @@
       "message": "Probepreis CHF 60 ist höher als Einzeleintritt CHF 35"
     },
     {
+      "type": "trial_exceeds_single",
+      "severity": "medium",
+      "studio_id": "yoga-ishwari-sarnen",
+      "studio_name": "Yoga Ishwari",
+      "canton": "obwalden",
+      "field": "pricing.trial vs pricing.single",
+      "value": 30.0,
+      "expected_range": "<= 25",
+      "source": "https://www.yoga-ishwari.ch/preise",
+      "message": "Probepreis CHF 30.0 ist höher als Einzeleintritt CHF 25"
+    },
+    {
       "type": "price_ratio_unusual",
       "severity": "medium",
       "studio_id": "sevencolors-stans",
@@ -533,14 +497,26 @@
     {
       "type": "price_ratio_unusual",
       "severity": "medium",
-      "studio_id": "yoga-pilateszentrale-olten",
-      "studio_name": "Yoga & Pilateszentrale",
+      "studio_id": "sunshine-yoga-solothurn",
+      "studio_name": "Sunshine Yoga",
       "canton": "solothurn",
       "field": "pricing.card_10 / pricing.single",
-      "value": 14.5,
+      "value": 13.5,
       "expected_range": "7-12x",
-      "source": "https://www.pilateszentrale.ch/preise",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 14.5x (erwartet 7-12x)"
+      "source": "https://www.sunshine-yoga.ch/preise",
+      "message": "10er-Karte/Einzeleintritt Verhältnis 13.5x (erwartet 7-12x)"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "looking-glass",
+      "studio_name": "The Looking Glass Basel",
+      "canton": "basel-stadt",
+      "field": "pricing.card_10 / pricing.single",
+      "value": 18.0,
+      "expected_range": "7-12x",
+      "source": "https://thelookingglassbasel.com/pricing",
+      "message": "10er-Karte/Einzeleintritt Verhältnis 18.0x (erwartet 7-12x)"
     },
     {
       "type": "trial_exceeds_single",
@@ -549,22 +525,34 @@
       "studio_name": "The Looking Glass Basel",
       "canton": "basel-stadt",
       "field": "pricing.trial vs pricing.single",
-      "value": 60,
-      "expected_range": "<= 30",
+      "value": 60.0,
+      "expected_range": "<= 15.0",
       "source": "https://thelookingglassbasel.com/pricing",
-      "message": "Probepreis CHF 60 ist höher als Einzeleintritt CHF 30"
+      "message": "Probepreis CHF 60.0 ist höher als Einzeleintritt CHF 15.0"
     },
     {
       "type": "price_ratio_unusual",
       "severity": "medium",
-      "studio_id": "niyama",
-      "studio_name": "Niyama Studio for Yoga & Pilates",
+      "studio_id": "yogabloom",
+      "studio_name": "YOGABLOOM",
+      "canton": "basel-stadt",
+      "field": "pricing.card_10 / pricing.single",
+      "value": 19.0,
+      "expected_range": "7-12x",
+      "source": "https://www.yogabloom.ch/pricing",
+      "message": "10er-Karte/Einzeleintritt Verhältnis 19.0x (erwartet 7-12x)"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "yogabloom",
+      "studio_name": "YOGABLOOM",
       "canton": "basel-stadt",
       "field": "pricing.monthly / pricing.single",
-      "value": 2.0,
+      "value": 13.5,
       "expected_range": "4-10x",
-      "source": "https://www.niyama-yoga.ch/en/start/preise",
-      "message": "Monatsabo/Einzeleintritt Verhältnis 2.0x (erwartet 4-10x)"
+      "source": "https://www.yogabloom.ch/pricing",
+      "message": "Monatsabo/Einzeleintritt Verhältnis 13.5x (erwartet 4-10x)"
     },
     {
       "type": "trial_exceeds_single",
@@ -574,9 +562,9 @@
       "canton": "basel-stadt",
       "field": "pricing.trial vs pricing.single",
       "value": 60,
-      "expected_range": "<= 20",
+      "expected_range": "<= 10.0",
       "source": "https://www.yogabloom.ch/pricing",
-      "message": "Probepreis CHF 60 ist höher als Einzeleintritt CHF 20"
+      "message": "Probepreis CHF 60 ist höher als Einzeleintritt CHF 10.0"
     },
     {
       "type": "trial_exceeds_single",
@@ -587,7 +575,7 @@
       "field": "pricing.trial vs pricing.single",
       "value": 55,
       "expected_range": "<= 41",
-      "source": "https://bikramyogabasel.ch/",
+      "source": "https://bikramyogabasel.ch/prices",
       "message": "Probepreis CHF 55 ist höher als Einzeleintritt CHF 41"
     },
     {
@@ -613,18 +601,6 @@
       "expected_range": "<= 17",
       "source": "https://www.yogaimgaertnerhuus.com/pricing-plans/list",
       "message": "Probepreis CHF 45 ist höher als Einzeleintritt CHF 17"
-    },
-    {
-      "type": "price_ratio_unusual",
-      "severity": "medium",
-      "studio_id": "mint",
-      "studio_name": "mint Basel",
-      "canton": "basel-stadt",
-      "field": "pricing.card_10 / pricing.single",
-      "value": 6.67,
-      "expected_range": "7-12x",
-      "source": "https://mint-loft.ch/preise",
-      "message": "10er-Karte/Einzeleintritt Verhältnis 6.7x (erwartet 7-12x)"
     },
     {
       "type": "price_ratio_unusual",
@@ -713,6 +689,30 @@
     {
       "type": "price_ratio_unusual",
       "severity": "medium",
+      "studio_id": "power-yoga-st-gallen",
+      "studio_name": "Power Yoga St. Gallen",
+      "canton": "st-gallen",
+      "field": "pricing.monthly / pricing.single",
+      "value": 11.67,
+      "expected_range": "4-10x",
+      "source": "https://www.poweryogastgallen.com",
+      "message": "Monatsabo/Einzeleintritt Verhältnis 11.7x (erwartet 4-10x)"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "yoga-loft-engadin-samedan",
+      "studio_name": "Yoga Loft Engadin",
+      "canton": "graubuenden",
+      "field": "pricing.monthly / pricing.single",
+      "value": 1.26,
+      "expected_range": "4-10x",
+      "source": "https://yogaloftengadin.ch/prices",
+      "message": "Monatsabo/Einzeleintritt Verhältnis 1.3x (erwartet 4-10x)"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
       "studio_id": "aloha-yoga-aarau",
       "studio_name": "aloha yoga Aarau",
       "canton": "aargau",
@@ -735,6 +735,18 @@
       "message": "Monatsabo/Einzeleintritt Verhältnis 2.2x (erwartet 4-10x)"
     },
     {
+      "type": "trial_exceeds_single",
+      "severity": "medium",
+      "studio_id": "aurum-raum-fuer-yoga-aarau",
+      "studio_name": "AURUM Raum für Yoga",
+      "canton": "aargau",
+      "field": "pricing.trial vs pricing.single",
+      "value": 55.0,
+      "expected_range": "<= 40",
+      "source": "https://raum-fuer-yoga.ch/preise",
+      "message": "Probepreis CHF 55.0 ist höher als Einzeleintritt CHF 40"
+    },
+    {
       "type": "price_ratio_unusual",
       "severity": "medium",
       "studio_id": "namaste-yoga-baden",
@@ -747,16 +759,76 @@
       "message": "10er-Karte/Einzeleintritt Verhältnis 6.0x (erwartet 7-12x)"
     },
     {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "yoga-grenzenlos-kreuzlingen",
+      "studio_name": "yoga grenzenlos",
+      "canton": "thurgau",
+      "field": "pricing.card_10 / pricing.single",
+      "value": 4.12,
+      "expected_range": "7-12x",
+      "source": "https://www.yogagrenzenlos.com/preise",
+      "message": "10er-Karte/Einzeleintritt Verhältnis 4.1x (erwartet 7-12x)"
+    },
+    {
+      "type": "trial_exceeds_single",
+      "severity": "medium",
+      "studio_id": "yoga-grenzenlos-kreuzlingen",
+      "studio_name": "yoga grenzenlos",
+      "canton": "thurgau",
+      "field": "pricing.trial vs pricing.single",
+      "value": 40.0,
+      "expected_range": "<= 24.0",
+      "source": "https://www.yogagrenzenlos.com/preise",
+      "message": "Probepreis CHF 40.0 ist höher als Einzeleintritt CHF 24.0"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "yogal-lugano",
+      "studio_name": "Yogal Lugano - Ashtanga Yoga",
+      "canton": "ticino",
+      "field": "pricing.monthly / pricing.single",
+      "value": 30.0,
+      "expected_range": "4-10x",
+      "source": "https://www.yogalugano.ch/prices",
+      "message": "Monatsabo/Einzeleintritt Verhältnis 30.0x (erwartet 4-10x)"
+    },
+    {
       "type": "trial_exceeds_single",
       "severity": "medium",
       "studio_id": "yogal-lugano",
       "studio_name": "Yogal Lugano - Ashtanga Yoga",
       "canton": "ticino",
       "field": "pricing.trial vs pricing.single",
-      "value": 30,
+      "value": 30.0,
       "expected_range": "<= 10",
-      "source": "https://www.yogalugano.ch/prezzi",
-      "message": "Probepreis CHF 30 ist höher als Einzeleintritt CHF 10"
+      "source": "https://www.yogalugano.ch/prices",
+      "message": "Probepreis CHF 30.0 ist höher als Einzeleintritt CHF 10"
+    },
+    {
+      "type": "price_ratio_unusual",
+      "severity": "medium",
+      "studio_id": "sundora-shala-pully",
+      "studio_name": "SunDora Shala",
+      "canton": "vaud",
+      "field": "pricing.card_10 / pricing.single",
+      "value": 4.7,
+      "expected_range": "7-12x",
+      "source": "https://www.sundorashala.com",
+      "message": "10er-Karte/Einzeleintritt Verhältnis 4.7x (erwartet 7-12x)"
+    },
+    {
+      "type": "trial_exceeds_single",
+      "severity": "medium",
+      "studio_id": "sundora-shala-pully",
+      "studio_name": "SunDora Shala",
+      "canton": "vaud",
+      "field": "pricing.trial vs pricing.single",
+      "value": 120.0,
+      "expected_range": "<= 33.0",
+      "source": "https://www.sundorashala.com",
+      "message": "Probepreis CHF 120.0 ist höher als Einzeleintritt CHF 33.0"
     },
     {
       "type": "price_ratio_unusual",
@@ -853,76 +925,6 @@
       "field": "duration",
       "value": "705 min",
       "message": "Kursdauer 705 Min. ausserhalb 30-180 Min. für Yoga in a Bag (Winterthur) - +41 44 203 66 96 (Sunday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Tuesday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Tuesday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Tuesday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Tuesday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Wednesday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Wednesday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "aranya-studio",
-      "studio_name": "ARANYA Studio",
-      "canton": "zurich",
-      "field": "duration",
-      "value": "15 min",
-      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Wednesday)"
     },
     {
       "type": "unusual_duration",
@@ -1055,6 +1057,76 @@
       "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Tuesday)"
     },
     {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Wednesday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Wednesday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Wednesday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "330 min",
+      "message": "Kursdauer 330 Min. ausserhalb 30-180 Min. für ARANYA Studio - Admin (Thursday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "300 min",
+      "message": "Kursdauer 300 Min. ausserhalb 30-180 Min. für ARANYA Studio - packen (Thursday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Thursday)"
+    },
+    {
+      "type": "unusual_duration",
+      "severity": "medium",
+      "studio_id": "aranya-studio",
+      "studio_name": "ARANYA Studio",
+      "canton": "zurich",
+      "field": "duration",
+      "value": "15 min",
+      "message": "Kursdauer 15 Min. ausserhalb 30-180 Min. für ARANYA Studio - BUCHUNG GRUPPENRAUM (Thursday)"
+    },
+    {
       "type": "invalid_time",
       "severity": "medium",
       "studio_id": "yoga-luna-bern",
@@ -1083,16 +1155,6 @@
       "field": "time_end",
       "value": "",
       "message": "Ungültige Endzeit '' für Yoga & more - Vor  30 Ja ren wagte ic die ersten De nungen auf der Yogamatte. Als Le rperson im Zyklus 1 suc te ic (Tuesday)"
-    },
-    {
-      "type": "unusual_duration",
-      "severity": "medium",
-      "studio_id": "yoga-room-koeniz-thun",
-      "studio_name": "yoga room",
-      "canton": "bern",
-      "field": "duration",
-      "value": "240 min",
-      "message": "Kursdauer 240 Min. ausserhalb 30-180 Min. für yoga room - online yoga aufnahme🔻 (Wednesday)"
     },
     {
       "type": "unusual_duration",
@@ -1577,22 +1639,22 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yoga-culture",
+      "studio_id": "yoga-am-hottingerplatz",
       "studio_name": "Yoga Culture",
       "canton": "zurich",
       "field": "address",
       "value": "hottingerstrasse 35, 8032",
-      "message": "Gleiche Adresse 'hottingerstrasse 35, 8032' bei Studios: yoga-culture, yoga-am-hottingerplatz"
+      "message": "Gleiche Adresse 'hottingerstrasse 35, 8032' bei Studios: yoga-am-hottingerplatz, yoga-culture"
     },
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "yogalives",
+      "studio_id": "yogagold",
       "studio_name": "Yogalives",
       "canton": "zurich",
       "field": "address",
       "value": "giesshübelstrasse 62b, 8045",
-      "message": "Gleiche Adresse 'giesshübelstrasse 62b, 8045' bei Studios: yogalives, yogagold"
+      "message": "Gleiche Adresse 'giesshübelstrasse 62b, 8045' bei Studios: yogagold, yogalives"
     },
     {
       "type": "duplicate_coordinates",
@@ -2057,12 +2119,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "ayalga",
+      "studio_id": "klubschule",
       "studio_name": "Ayalga Yoga (Iyengar)",
       "canton": "basel-stadt",
       "field": "address",
       "value": "basel, ",
-      "message": "Gleiche Adresse 'basel, ' bei Studios: ayalga, kathrin-mathews, mysore-club, katerina-wen, klubschule, yoga-now"
+      "message": "Gleiche Adresse 'basel, ' bei Studios: klubschule, katerina-wen, mysore-club, ayalga, kathrin-mathews, yoga-now"
     },
     {
       "type": "duplicate_coordinates",
@@ -2337,12 +2399,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "flux2motus-davos",
+      "studio_id": "yogaplaza-davos",
       "studio_name": "flux2motus - Yoga & Massage",
       "canton": "graubuenden",
       "field": "address",
       "value": "mattastrasse 6, 7270",
-      "message": "Gleiche Adresse 'mattastrasse 6, 7270' bei Studios: flux2motus-davos, yogaplaza-davos"
+      "message": "Gleiche Adresse 'mattastrasse 6, 7270' bei Studios: yogaplaza-davos, flux2motus-davos"
     },
     {
       "type": "duplicate_coordinates",
@@ -2397,12 +2459,12 @@
     {
       "type": "duplicate_address",
       "severity": "medium",
-      "studio_id": "ashtanga-yoga-lausanne",
+      "studio_id": "yogaworks-lausanne",
       "studio_name": "Yogaworks",
       "canton": "vaud",
       "field": "address",
       "value": "rue chaucrau 3-5, 1003",
-      "message": "Gleiche Adresse 'rue chaucrau 3-5, 1003' bei Studios: ashtanga-yoga-lausanne, yogaworks-lausanne"
+      "message": "Gleiche Adresse 'rue chaucrau 3-5, 1003' bei Studios: yogaworks-lausanne, ashtanga-yoga-lausanne"
     },
     {
       "type": "duplicate_coordinates",

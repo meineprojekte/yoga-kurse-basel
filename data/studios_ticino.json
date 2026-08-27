@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-25T14:24:27.485602+00:00",
+  "last_updated": "2026-08-27T17:33:03.408390+00:00",
   "studios": [
     {
       "id": "yoga-dinamico-lugano",
@@ -42,9 +42,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T14:23:25.247997+00:00",
+      "last_scraped": "2026-08-27T17:32:16.422148+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T14:23:34.761832+00:00",
+        "last_scraped": "2026-08-27T17:32:25.341666+00:00",
         "last_price_check": "2026-03-26T23:00:31.090489+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -58,7 +58,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogadinamico.ch/prezzi.html",
-        "last_checked": "2026-08-25T14:23:34.761814+00:00"
+        "last_checked": "2026-08-27T17:32:25.341648+00:00"
       }
     },
     {
@@ -95,26 +95,27 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T14:23:35.635065+00:00",
+      "last_scraped": "2026-08-27T17:32:25.572625+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T14:23:39.773935+00:00",
-        "last_price_check": "2026-03-27T13:30:50.049471+00:00",
+        "last_scraped": "2026-08-27T17:32:28.680921+00:00",
+        "last_price_check": "2026-08-27T17:32:28.680921+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yogalugano.ch/",
           "schedule": "https://www.yogalugano.ch/schedule",
-          "pricing": "https://www.yogalugano.ch/prezzi"
+          "pricing": "https://www.yogalugano.ch/prices"
         }
       },
       "pricing": {
         "single": 10,
         "card_10": null,
-        "trial": 30,
+        "trial": 30.0,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.yogalugano.ch/prezzi",
-        "last_checked": "2026-08-25T14:23:39.773916+00:00"
+        "source": "https://www.yogalugano.ch/prices",
+        "last_checked": "2026-08-27T17:32:28.680833+00:00",
+        "monthly": 300.0
       }
     },
     {
@@ -154,9 +155,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T14:23:42.417911+00:00",
+      "last_scraped": "2026-08-27T17:32:29.983947+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T14:23:48.243291+00:00",
+        "last_scraped": "2026-08-27T17:32:36.605771+00:00",
         "last_price_check": "2026-03-27T13:30:52.548687+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -171,7 +172,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://slow-move.ch/",
-        "last_checked": "2026-08-25T14:23:48.243271+00:00"
+        "last_checked": "2026-08-27T17:32:36.605756+00:00"
       }
     },
     {
@@ -213,9 +214,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T14:23:48.490723+00:00",
+      "last_scraped": "2026-08-27T17:32:36.824939+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T14:24:10.066977+00:00",
+        "last_scraped": "2026-08-27T17:32:46.089419+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -229,7 +230,7 @@
         "trial": 10,
         "verified": true,
         "source": "https://soulsinnature.net",
-        "last_checked": "2026-08-25T14:24:10.066957+00:00",
+        "last_checked": "2026-08-27T17:32:46.089403+00:00",
         "notes": "9-lesson carnet CHF 225. Lido CHF 18."
       }
     },
@@ -271,9 +272,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T14:24:10.726132+00:00",
+      "last_scraped": "2026-08-27T17:32:46.749277+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T14:24:17.200425+00:00",
+        "last_scraped": "2026-08-27T17:32:53.168613+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -322,12 +323,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogavidyaswiss.ch/Prezzi",
-        "last_checked": "2026-08-25T14:24:23.238319+00:00"
+        "last_checked": "2026-08-27T17:32:59.254987+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T14:24:18.201456+00:00",
+      "last_scraped": "2026-08-27T17:32:54.173245+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T14:24:23.238336+00:00",
+        "last_scraped": "2026-08-27T17:32:59.255029+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -372,9 +373,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T14:24:23.482199+00:00",
+      "last_scraped": "2026-08-27T17:32:59.377327+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T14:24:27.485576+00:00",
+        "last_scraped": "2026-08-27T17:33:03.408369+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],

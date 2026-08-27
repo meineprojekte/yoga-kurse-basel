@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-25T14:23:24.591167+00:00",
+  "last_updated": "2026-08-27T17:32:15.655921+00:00",
   "studios": [
     {
       "id": "gymayo-frauenfeld",
@@ -41,12 +41,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://gymayo.ch/angebot/preise",
-        "last_checked": "2026-08-25T14:22:25.104917+00:00"
+        "last_checked": "2026-08-27T17:31:14.348948+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T14:22:17.902225+00:00",
+      "last_scraped": "2026-08-27T17:31:07.341553+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T14:22:25.104937+00:00",
+        "last_scraped": "2026-08-27T17:31:14.348962+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -93,7 +93,7 @@
       "classes": [],
       "scrape_status": "scraped",
       "_meta": {
-        "last_scraped": "2026-08-25T14:22:29.904825+00:00",
+        "last_scraped": "2026-08-27T17:31:19.370260+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -156,10 +156,10 @@
         "single": 22,
         "verified": true,
         "source": "https://yoga-place.com",
-        "last_checked": "2026-08-25T14:22:29.904805+00:00",
+        "last_checked": "2026-08-27T17:31:19.370237+00:00",
         "notes": "75min CHF 22. 10er/20er Abo available. 20% discount AHV/IV/students."
       },
-      "last_scraped": "2026-08-25T14:22:26.241729+00:00",
+      "last_scraped": "2026-08-27T17:31:15.013919+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -255,17 +255,17 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": null,
-        "card_10": 470.0,
+        "single": 24.0,
+        "card_10": 99.0,
         "monthly": 130,
-        "trial": 13,
+        "trial": 40.0,
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogagrenzenlos.com/preise",
-        "last_checked": "2026-08-25T14:22:34.390473+00:00"
+        "last_checked": "2026-08-27T17:31:23.629978+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T14:22:30.083278+00:00",
+      "last_scraped": "2026-08-27T17:31:19.578285+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -277,8 +277,8 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-08-25T14:22:34.390553+00:00",
-        "last_price_check": "2026-08-25T14:22:34.390553+00:00",
+        "last_scraped": "2026-08-27T17:31:23.630163+00:00",
+        "last_price_check": "2026-08-27T17:31:23.630163+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -335,19 +335,19 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 32.0,
+        "single": 25.0,
         "card_10": 300.0,
-        "trial": 10,
+        "trial": 10.0,
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yoga-asana.ch",
-        "last_checked": "2026-08-25T14:22:46.277148+00:00"
+        "last_checked": "2026-08-27T17:31:36.100244+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T14:22:36.044567+00:00",
+      "last_scraped": "2026-08-27T17:31:25.316586+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T14:22:46.277243+00:00",
-        "last_price_check": "2026-08-25T14:22:46.277243+00:00",
+        "last_scraped": "2026-08-27T17:31:36.100407+00:00",
+        "last_price_check": "2026-08-27T17:31:36.100407+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -397,12 +397,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.soma-yoga.ch/preise",
-        "last_checked": "2026-08-25T14:22:51.370269+00:00"
+        "last_checked": "2026-08-27T17:31:41.134882+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T14:22:46.604515+00:00",
+      "last_scraped": "2026-08-27T17:31:36.475091+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T14:22:51.370289+00:00",
+        "last_scraped": "2026-08-27T17:31:41.134895+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -450,9 +450,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T14:22:56.143863+00:00",
+      "last_scraped": "2026-08-27T17:31:47.056440+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T14:23:19.618221+00:00",
+        "last_scraped": "2026-08-27T17:32:10.912902+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -500,9 +500,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T14:23:19.944049+00:00",
+      "last_scraped": "2026-08-27T17:32:11.112954+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T14:23:24.591142+00:00",
+        "last_scraped": "2026-08-27T17:32:15.655899+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],

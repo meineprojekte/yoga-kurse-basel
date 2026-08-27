@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-25T13:56:36.135359+00:00",
+  "last_updated": "2026-08-27T17:06:52.041257+00:00",
   "studios": [
     {
       "id": "studio-mond-appenzell",
@@ -42,24 +42,25 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 30,
-        "card_10": 280,
+        "single": 30.0,
+        "card_10": 280.0,
         "trial": 0,
         "currency": "CHF",
         "verified": true,
-        "source": "https://studiomond.ch/preise/",
-        "last_checked": "2026-08-25T13:56:14.681083+00:00"
+        "source": "https://studiomond.ch/preise",
+        "last_checked": "2026-08-27T17:06:30.072418+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T13:55:37.479779+00:00",
+      "last_scraped": "2026-08-27T17:06:13.183248+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T13:56:14.681101+00:00",
-        "last_price_check": null,
+        "last_scraped": "2026-08-27T17:06:30.072483+00:00",
+        "last_price_check": "2026-08-27T17:06:30.072483+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://studiomond.ch/",
-          "schedule": "https://studiomond.ch/yoga-studio/"
+          "schedule": "https://studiomond.ch/yoga-studio/",
+          "pricing": "https://studiomond.ch/preise"
         }
       }
     },
@@ -99,9 +100,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T13:56:16.975736+00:00",
+      "last_scraped": "2026-08-27T17:06:32.907789+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T13:56:36.135350+00:00",
+        "last_scraped": "2026-08-27T17:06:52.041248+00:00",
         "last_price_check": "2026-03-27T17:17:56.286810+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -118,7 +119,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yoga-claudia.ch/kursangebote/appenzell",
-        "last_checked": "2026-08-25T13:56:36.135332+00:00"
+        "last_checked": "2026-08-27T17:06:52.041233+00:00"
       }
     },
     {

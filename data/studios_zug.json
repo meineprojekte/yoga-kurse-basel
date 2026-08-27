@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-25T14:29:56.745854+00:00",
+  "last_updated": "2026-08-27T17:38:02.932623+00:00",
   "studios": [
     {
       "id": "yogaflowzug",
@@ -40,25 +40,27 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 30,
-        "card_10": 260,
+        "single": 25.0,
+        "card_10": 200.0,
         "monthly": 250,
-        "trial": 20,
+        "trial": 20.0,
         "currency": "CHF",
         "verified": true,
-        "source": "https://www.sportsnow.ch/go/yogaflowzug/prices?locale=de",
-        "last_checked": "2026-08-25T14:28:56.469510+00:00"
+        "source": "https://www.yogaflowzug.ch/preise",
+        "last_checked": "2026-08-27T17:37:04.211437+00:00",
+        "abo": 75.0
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T14:28:36.502124+00:00",
+      "last_scraped": "2026-08-27T17:36:57.422363+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T14:28:56.469529+00:00",
-        "last_price_check": null,
+        "last_scraped": "2026-08-27T17:37:04.211611+00:00",
+        "last_price_check": "2026-08-27T17:37:04.211611+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
           "website": "https://www.yogaflowzug.ch/",
-          "schedule": "https://www.yogaflowzug.ch/en/class-schedule/"
+          "schedule": "https://www.yogaflowzug.ch/en/class-schedule/",
+          "pricing": "https://www.yogaflowzug.ch/preise"
         }
       }
     },
@@ -172,9 +174,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-25T14:28:57.589905+00:00",
+      "last_scraped": "2026-08-27T17:37:05.540512+00:00",
       "_meta": {
-        "last_scraped": "2026-08-25T14:29:30.870933+00:00",
+        "last_scraped": "2026-08-27T17:37:36.140848+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -220,7 +222,7 @@
       "scrape_status": "blocked",
       "last_scraped": null,
       "_meta": {
-        "last_scraped": "2026-08-25T14:29:56.745831+00:00",
+        "last_scraped": "2026-08-27T17:38:02.932599+00:00",
         "last_price_check": null,
         "scrape_status": "blocked",
         "booking_links": [],
