@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-27T17:33:13.737768+00:00",
+  "last_updated": "2026-08-31T12:49:24.436115+00:00",
   "studios": [
     {
       "id": "anantara-yogastudio-altdorf",
@@ -36,9 +36,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-27T17:33:03.702108+00:00",
+      "last_scraped": "2026-08-31T12:49:09.103807+00:00",
       "_meta": {
-        "last_scraped": "2026-08-27T17:33:07.340949+00:00",
+        "last_scraped": "2026-08-31T12:49:16.469114+00:00",
         "last_price_check": "2026-03-27T13:32:53.095218+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -54,7 +54,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.anantara-yogastudio.ch/preise",
-        "last_checked": "2026-08-27T17:33:07.340934+00:00"
+        "last_checked": "2026-08-31T12:49:16.469098+00:00"
       }
     },
     {
@@ -96,10 +96,10 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-08-27T17:33:07.639560+00:00",
+      "last_scraped": "2026-08-31T12:49:16.734372+00:00",
       "_meta": {
-        "last_scraped": "2026-08-27T17:33:11.737489+00:00",
-        "last_price_check": "2026-08-27T17:33:11.737489+00:00",
+        "last_scraped": "2026-08-31T12:49:22.435867+00:00",
+        "last_price_check": "2026-08-31T12:49:22.435867+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -109,12 +109,12 @@
       },
       "pricing": {
         "single": null,
-        "card_10": 225.0,
+        "card_10": null,
         "trial": 0,
         "currency": "CHF",
         "verified": true,
         "source": "https://www.flow-altdorf.ch",
-        "last_checked": "2026-08-27T17:33:11.737331+00:00"
+        "last_checked": "2026-08-31T12:49:22.435756+00:00"
       }
     },
     {
@@ -152,7 +152,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-08-27T17:33:13.737751+00:00",
+        "last_scraped": "2026-08-31T12:49:24.436101+00:00",
         "last_price_check": null,
         "scrape_status": "no_data",
         "booking_links": [],
