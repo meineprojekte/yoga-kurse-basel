@@ -907,5 +907,41 @@
     "old_value": 225.0,
     "new_value": 25.0,
     "source": "https://www.flow-altdorf.ch"
+  },
+  {
+    "timestamp": "2026-09-03T10:31:44.385303+00:00",
+    "studio_id": "yoga-luna-bern",
+    "canton": "bern",
+    "field": "pricing.single",
+    "old_value": 30,
+    "new_value": 27.0,
+    "source": "https://www.yogaluna.ch/preise"
+  },
+  {
+    "timestamp": "2026-09-03T10:50:12.641604+00:00",
+    "studio_id": "mii-ruum",
+    "canton": "luzern",
+    "field": "pricing.monthly",
+    "old_value": 240,
+    "new_value": 18.0,
+    "source": "https://mii-ruum.ch"
+  },
+  {
+    "timestamp": "2026-09-03T10:50:12.641670+00:00",
+    "studio_id": "mii-ruum",
+    "canton": "luzern",
+    "field": "pricing.trial",
+    "old_value": 60,
+    "new_value": 18.0,
+    "source": "https://mii-ruum.ch"
+  },
+  {
+    "timestamp": "2026-09-03T11:08:07.211042+00:00",
+    "studio_id": "airyoga",
+    "canton": "zurich",
+    "field": "pricing.monthly",
+    "old_value": 200.0,
+    "new_value": 120.0,
+    "source": "https://www.airyoga.ch/preise"
   }
 ]
