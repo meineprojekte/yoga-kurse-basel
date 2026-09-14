@@ -23,6 +23,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # Storia completa: generate_sitemap.py ricava <lastmod> da 'git log -1'
+          # per file. Col clone shallow di default (depth 1) quel comando non
+          # restituisce nulla per i file non toccati dall'ultimo commit, e lo
+          # script ripiega su oggi — cosi' pagine ferme da mesi (about,
+          # datenschutz, kanton/, blog) dichiaravano a Google di essere appena
+          # cambiate. Erano 11 URL su 78 con data falsa a ogni esecuzione.
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
