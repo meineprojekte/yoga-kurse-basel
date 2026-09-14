@@ -1342,12 +1342,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -1648,7 +1655,7 @@
     <p class="studio-address">Glarnerstrasse 20, 8755 Ennenda (Glarus)</p>
     <p class="studio-desc">Yogastudio in Ennenda/Glarus mit Yvonne Gabriel. Vinyasa-Flow, Yin Yoga, Senioren Yoga und Mittags-Flow in verschiedenen Kurszeiten.</p>
     <div class="studio-styles"><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Yin</span><span class="style-badge">Yin/Yang</span><span class="style-badge">Senioren Yoga</span><span class="style-badge">Mittags-Flow</span></div>
-    <div class="studio-contact"><a href="https://www.yoga-am-fluss.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 574 58 37" class="studio-link">+41 79 574 58 37</a></div>
+    <div class="studio-contact"><a href="https://www.yoga-am-fluss.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 574 58 37" class="canton-contact-link">+41 79 574 58 37</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Senioren Yoga</span></div>
 </div>
@@ -1659,7 +1666,7 @@
     <p class="studio-address">Fabrikstrasse 9, 8755 Ennenda (Glarus) <span class="addr-label">(Hänggiturm)</span></p>
     <p class="studio-desc">Yogastudio im Hänggiturm in Ennenda/Glarus seit 2005. Krankenkassen-anerkannt (QualiCert). Kinder- und Teenyoga, Schwangerschaftsyoga.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Kinder Yoga</span><span class="style-badge">Teen Yoga</span><span class="style-badge">Schwangerschaftsyoga</span></div>
-    <div class="studio-contact"><a href="https://12yoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 707 57 30" class="studio-link">+41 79 707 57 30</a></div>
+    <div class="studio-contact"><a href="https://12yoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 707 57 30" class="canton-contact-link">+41 79 707 57 30</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Krankenkassen-anerkannt (QualiCert)</span><span class="feature-badge">Kinder Yoga</span><span class="feature-badge">Seit 2005</span></div>
 </div>
@@ -1670,7 +1677,7 @@
     <p class="studio-address">Im Fennen 15, 8867 Niederurnen</p>
     <p class="studio-desc">Pole- und Yoga-Studio in Niederurnen (Glarus Nord). Yoga, Polefitness, Aerial Hoop und Stretching in kleinen Gruppen. Krankenkassen-anerkannt.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Stretching</span></div>
-    <div class="studio-contact"><a href="https://www.cgworkout.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 76 815 64 10" class="studio-link">+41 76 815 64 10</a> &middot; <a href="mailto:cgpoleworkout@gmail.com" class="studio-link">cgpoleworkout@gmail.com</a></div>
+    <div class="studio-contact"><a href="https://www.cgworkout.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 815 64 10" class="canton-contact-link">+41 76 815 64 10</a> &middot; <a href="mailto:cgpoleworkout@gmail.com" class="canton-contact-link">cgpoleworkout@gmail.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Polefitness</span><span class="feature-badge">Aerial Hoop</span><span class="feature-badge">Krankenkassen-anerkannt</span><span class="feature-badge">Kleine Gruppen</span></div>
 </div>

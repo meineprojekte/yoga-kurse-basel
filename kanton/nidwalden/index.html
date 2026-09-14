@@ -739,12 +739,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -1045,7 +1052,7 @@
     <p class="studio-address">Engelbergstrasse 28, 6370 Stans</p>
     <p class="studio-desc">Yoga und Ayurveda Zentrum in Stans, gegründet 2006. Yoga- und Ayurveda-Unterricht, Seminare und indische Kulturprogramme unter der Leitung von George Theruvel.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Ayurveda Yoga</span></div>
-    <div class="studio-contact"><a href="https://vedasudha.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 41 610 50 11" class="studio-link">+41 41 610 50 11</a> &middot; <a href="mailto:info@vedasudha.ch" class="studio-link">info@vedasudha.ch</a></div>
+    <div class="studio-contact"><a href="https://vedasudha.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 41 610 50 11" class="canton-contact-link">+41 41 610 50 11</a> &middot; <a href="mailto:info@vedasudha.ch" class="canton-contact-link">info@vedasudha.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Ayurveda-Behandlungen</span><span class="feature-badge">Seminare</span><span class="feature-badge">Indische Kulturprogramme</span></div>
 </div>
@@ -1056,7 +1063,7 @@
     <p class="studio-address">St. Klararain 1, 6370 Stans <span class="addr-label">(Historisches Kloster St. Klara, 2. OG)</span></p>
     <p class="studio-desc">Hatha-Yoga und Pilates Studio im historischen Kloster St. Klara in Stans. PilatesAllegro, Reformer, Personal-Training und Gefäss-Therapie.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Pilates</span><span class="style-badge">PilatesAllegro</span></div>
-    <div class="studio-contact"><a href="https://www.gesund-und-munter.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 41 612 06 13" class="studio-link">+41 41 612 06 13</a></div>
+    <div class="studio-contact"><a href="https://www.gesund-und-munter.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 41 612 06 13" class="canton-contact-link">+41 41 612 06 13</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Historischer Standort im Kloster</span><span class="feature-badge">Reformer</span><span class="feature-badge">Personal-Training</span></div>
 </div>
@@ -1067,7 +1074,7 @@
     <p class="studio-address">6370 Stans</p>
     <p class="studio-desc">Yoga-Kurse in Stans und Wilen/Sarnen. Von Hatha-Yoga bis Power-Yoga, im Studio, zu Hause oder am Arbeitsplatz. Zertifizierte Yogalehrerin, Fitness-Coach und Life-Coach.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Power Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.sevencolors.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://www.sevencolors.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Yoga am Arbeitsplatz</span><span class="feature-badge">Individuelles Coaching</span><span class="feature-badge">Life Coaching</span></div>
 </div>

@@ -1458,12 +1458,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -1764,7 +1771,7 @@
     <p class="studio-address">Freiestrasse 8, 3. OG, 8500 Frauenfeld <span class="addr-label">(Haus zum Schwert)</span></p>
     <p class="studio-desc">Traditionsreiche Yogaschule in Frauenfeld, gegründet 1955. Das Studio befindet sich im Haus zum Schwert im 3. Stock. Ca. 5-6 Gehminuten vom Bahnhof entfernt.</p>
     <div class="studio-styles"><span class="style-badge">Hatha Yoga</span></div>
-    <div class="studio-contact"><a href="https://gymayo.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 52 721 76 40" class="studio-link">+41 52 721 76 40</a> &middot; <a href="mailto:info@gymayo.ch" class="studio-link">info@gymayo.ch</a></div>
+    <div class="studio-contact"><a href="https://gymayo.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 52 721 76 40" class="canton-contact-link">+41 52 721 76 40</a> &middot; <a href="mailto:info@gymayo.ch" class="canton-contact-link">info@gymayo.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Seit 1955</span><span class="feature-badge">Traditionsreichste Yogaschule der Schweiz</span></div>
 </div>
@@ -1775,7 +1782,7 @@
     <p class="studio-address">Oststrasse 8A, 8500 Frauenfeld <span class="addr-label">(Frauenfeld Ost)</span></p>
     <p class="studio-desc">Modernes Yogastudio in Frauenfeld Ost mit täglichen Klassen und verschiedenen Lehrer:innen. Direkt hinter dem Tower neben der Pizzeria Little Italy gelegen.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Postnatal Yoga</span><span class="style-badge">Kinder Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.yoga-place.com/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 76 468 36 68" class="studio-link">+41 76 468 36 68</a> &middot; <a href="mailto:info@yoga-place.com" class="studio-link">info@yoga-place.com</a></div>
+    <div class="studio-contact"><a href="https://www.yoga-place.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 468 36 68" class="canton-contact-link">+41 76 468 36 68</a> &middot; <a href="mailto:info@yoga-place.com" class="canton-contact-link">info@yoga-place.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Postnatal Yoga</span><span class="feature-badge">Kinder Yoga</span><span class="feature-badge">Workshops</span></div>
 </div>
@@ -1786,7 +1793,7 @@
     <p class="studio-address">Hauptstrasse 10, 8280 Kreuzlingen</p>
     <p class="studio-desc">Yogastudio direkt auf der Grenze Kreuzlingen-Konstanz. 1-4 Yogaklassen pro Tag. Probelektionen jederzeit ohne Voranmeldung möglich. Workshops, Retreats und zertifizierte Yogalehrer-Ausbildungen.</p>
     <div class="studio-styles"><span class="style-badge">Hatha Yoga</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Anusara Inspired</span><span class="style-badge">Ashtanga Inspired</span><span class="style-badge">Kundalini</span><span class="style-badge">Senioren Yoga</span><span class="style-badge">Teen Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.yogagrenzenlos.com/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 76 742 11 10" class="studio-link">+41 76 742 11 10</a> &middot; <a href="mailto:info@yogagrenzenlos.com" class="studio-link">info@yogagrenzenlos.com</a></div>
+    <div class="studio-contact"><a href="https://www.yogagrenzenlos.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 742 11 10" class="canton-contact-link">+41 76 742 11 10</a> &middot; <a href="mailto:info@yogagrenzenlos.com" class="canton-contact-link">info@yogagrenzenlos.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Grenzlage CH/DE</span><span class="feature-badge">Yogalehrer-Ausbildung</span><span class="feature-badge">Senioren Yoga</span><span class="feature-badge">Teen Yoga</span><span class="feature-badge">Probelektion ohne Anmeldung</span></div>
 </div>
@@ -1797,7 +1804,7 @@
     <p class="studio-address">Gartenstrasse 1, 8280 Kreuzlingen</p>
     <p class="studio-desc">Yoga Studio in Kreuzlingen mit vielfältigem Angebot von Vinyasa Flow über Spiraldynamik bis hin zu Aerial und Yin Yoga.</p>
     <div class="studio-styles"><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Spiraldynamik</span><span class="style-badge">Aerial Yoga</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Fuss Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.yoga-asana.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 327 72 59" class="studio-link">+41 79 327 72 59</a> &middot; <a href="mailto:info@yoga-asana.ch" class="studio-link">info@yoga-asana.ch</a></div>
+    <div class="studio-contact"><a href="https://www.yoga-asana.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 327 72 59" class="canton-contact-link">+41 79 327 72 59</a> &middot; <a href="mailto:info@yoga-asana.ch" class="canton-contact-link">info@yoga-asana.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Aerial Yoga</span><span class="feature-badge">Spiraldynamik</span><span class="feature-badge">Fuss Yoga</span></div>
 </div>
@@ -1808,7 +1815,7 @@
     <p class="studio-address">Bahnhofstrasse 24b, 8570 Weinfelden</p>
     <p class="studio-desc">Grosszügiger, freundlicher Raum im Zentrum von Weinfelden mit abwechslungsreichem Angebot für Einsteiger und erfahrene Praktizierende. Wenige Gehminuten vom Bahnhof entfernt.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.soma-yoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 651 37 62" class="studio-link">+41 79 651 37 62</a> &middot; <a href="mailto:rita.schneider@soma-yoga.ch" class="studio-link">rita.schneider@soma-yoga.ch</a></div>
+    <div class="studio-contact"><a href="https://www.soma-yoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 651 37 62" class="canton-contact-link">+41 79 651 37 62</a> &middot; <a href="mailto:rita.schneider@soma-yoga.ch" class="canton-contact-link">rita.schneider@soma-yoga.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Massage</span></div>
 </div>
@@ -1819,7 +1826,7 @@
     <p class="studio-address">Buchenhölzlistrasse 4b, 8580 Amriswil</p>
     <p class="studio-desc">Yoga &amp; Ayurveda Studio in Amriswil, geführt von Roland und Anita Haag. Gruppenklassen mit Körperhaltungen, Atemtechniken und aktiver Tiefenentspannung. Auch Yoga-Ausbildungszentrum.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Ayurveda</span></div>
-    <div class="studio-contact"><a href="https://www.feelyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 811 68 75" class="studio-link">+41 79 811 68 75</a> &middot; <a href="mailto:info@feelyoga.ch" class="studio-link">info@feelyoga.ch</a></div>
+    <div class="studio-contact"><a href="https://www.feelyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 811 68 75" class="canton-contact-link">+41 79 811 68 75</a> &middot; <a href="mailto:info@feelyoga.ch" class="canton-contact-link">info@feelyoga.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Ayurveda</span><span class="feature-badge">Yoga Ausbildungszentrum</span><span class="feature-badge">Personal Training</span></div>
 </div>
@@ -1830,7 +1837,7 @@
     <p class="studio-address">8500 Frauenfeld <span class="addr-label">(Standorte in Frauenfeld, Amriswil, Weinfelden)</span></p>
     <p class="studio-desc">Yoga mit Michaela Meresi in Thurgau und Zürich. Zertifizierte Yogalehrerin (500h) mit Klassen in Frauenfeld, Amriswil und Weinfelden sowie regelmässigen Workshops und Retreats.</p>
     <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Hatha Yoga</span><span class="style-badge">Yoga Nidra</span></div>
-    <div class="studio-contact"><a href="https://www.miyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://www.miyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Workshops</span><span class="feature-badge">Retreats</span><span class="feature-badge">Mehrere Standorte</span></div>
 </div>

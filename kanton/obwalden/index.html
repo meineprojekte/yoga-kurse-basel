@@ -762,12 +762,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -1068,7 +1075,7 @@
     <p class="studio-address">Pilatusstrasse 6, 6060 Sarnen</p>
     <p class="studio-desc">Yoga-Studio in Sarnen mit Power Yoga, Hatha-Vinyasa Kursen, Yoga-Events und Privatlektionen. Auch Yoga am Sarnersee.</p>
     <div class="studio-styles"><span class="style-badge">Power Yoga</span><span class="style-badge">Hatha-Vinyasa</span></div>
-    <div class="studio-contact"><a href="https://goyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="mailto:petra@goyoga.ch" class="studio-link">petra@goyoga.ch</a></div>
+    <div class="studio-contact"><a href="https://goyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:petra@goyoga.ch" class="canton-contact-link">petra@goyoga.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Yoga am Sarnersee</span><span class="feature-badge">Yoga-Events</span><span class="feature-badge">Privatlektionen</span></div>
 </div>
@@ -1079,7 +1086,7 @@
     <p class="studio-address">6062 Wilen (Sarnen)</p>
     <p class="studio-desc">Yoga und Klang in Wilen bei Sarnen, Obwalden. Hatha-Yoga, Yin-Yoga, Yoga-Nidra, Tiefenentspannung, Mantrasingen, Klangmassage und Klangtherapie.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Yin</span><span class="style-badge">Yoga Nidra</span><span class="style-badge">Mantrasingen</span></div>
-    <div class="studio-contact"><a href="https://www.yoga-ishwari.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://www.yoga-ishwari.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Klangmassage</span><span class="feature-badge">Klangtherapie</span><span class="feature-badge">Mantrasingen</span></div>
 </div>

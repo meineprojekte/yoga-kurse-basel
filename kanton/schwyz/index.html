@@ -1410,12 +1410,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -1716,7 +1723,7 @@
     <p class="studio-address">6430 Schwyz <span class="addr-label">(Im Herzen von Schwyz)</span></p>
     <p class="studio-desc">Yogaschule im Herzen von Schwyz mit traditionellem Yoga, bereichert durch zeitgenössische Methoden. Ganzheitliches Angebot inkl. Ayurveda-Massagen, Ernährungsberatung und Cranio-Sacral-Therapie.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yin</span><span class="style-badge">Yoga &amp; Klang</span><span class="style-badge">Satsang &amp; Kirtan</span></div>
-    <div class="studio-contact"><a href="https://www.heyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://www.heyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Ayurveda-Massagen</span><span class="feature-badge">Ernährungsberatung</span><span class="feature-badge">Cranio-Sacral-Therapie</span><span class="feature-badge">Psychologische Beratung</span></div>
 </div>
@@ -1727,7 +1734,7 @@
     <p class="studio-address">Allmeindstrasse 15, 8840 Einsiedeln</p>
     <p class="studio-desc">Yogastudio in Einsiedeln, gegründet von Birgit Koch (seit 2003 Yoga-Leidenschaft). Entspannte Atmosphäre für alle Altersgruppen und Erfahrungsstufen.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Rücken Yoga</span><span class="style-badge">Yin</span><span class="style-badge">Flow</span></div>
-    <div class="studio-contact"><a href="https://ganesha-yoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 637 42 64" class="studio-link">+41 79 637 42 64</a> &middot; <a href="mailto:birgit@ganesha-yoga.ch" class="studio-link">birgit@ganesha-yoga.ch</a></div>
+    <div class="studio-contact"><a href="https://ganesha-yoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 637 42 64" class="canton-contact-link">+41 79 637 42 64</a> &middot; <a href="mailto:birgit@ganesha-yoga.ch" class="canton-contact-link">birgit@ganesha-yoga.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Duschen</span><span class="feature-badge">Parkplatz</span><span class="feature-badge">Shop</span><span class="feature-badge">Wellness</span><span class="feature-badge">Kartenzahlung</span></div>
 </div>
@@ -1738,7 +1745,7 @@
     <p class="studio-address">Hauptstrasse 68, 8840 Einsiedeln <span class="addr-label">(Haus Falken, 1. OG, Seminarraum)</span></p>
     <p class="studio-desc">Yoga-Kurse, Privatlektionen und Business-Yoga. Wöchentliche Gruppenkurse in Einsiedeln (Haus Falken), Richterswil, Ingenbohl und Alpthal/Brunni. Kleine Gruppen bis 9 Personen.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span></div>
-    <div class="studio-contact"><a href="https://www.yoga8.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 466 48 10" class="studio-link">+41 79 466 48 10</a> &middot; <a href="mailto:hallo@yoga8.ch" class="studio-link">hallo@yoga8.ch</a></div>
+    <div class="studio-contact"><a href="https://www.yoga8.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 466 48 10" class="canton-contact-link">+41 79 466 48 10</a> &middot; <a href="mailto:hallo@yoga8.ch" class="canton-contact-link">hallo@yoga8.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Business-Yoga</span><span class="feature-badge">Privatlektionen</span><span class="feature-badge">Kleine Gruppen</span></div>
 </div>

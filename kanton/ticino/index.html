@@ -1505,12 +1505,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -1811,7 +1818,7 @@
     <p class="studio-address">Via Luganetto 4, 6962 Viganello (Lugano) <span class="addr-label">(3° piano)</span></p>
     <p class="studio-desc">Centro di yoga e benessere naturale a Viganello-Lugano con un team di insegnanti esperti. Offre corsi, eventi, ritiri e formazione per insegnanti.</p>
     <div class="studio-styles"><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Ashtanga</span><span class="style-badge">Hatha</span><span class="style-badge">Yin</span><span class="style-badge">Restorative</span></div>
-    <div class="studio-contact"><a href="https://www.yogadinamico.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 76 756 01 74" class="studio-link">+41 76 756 01 74</a> &middot; <a href="mailto:info@yogadinamico.ch" class="studio-link">info@yogadinamico.ch</a></div>
+    <div class="studio-contact"><a href="https://www.yogadinamico.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 756 01 74" class="canton-contact-link">+41 76 756 01 74</a> &middot; <a href="mailto:info@yogadinamico.ch" class="canton-contact-link">info@yogadinamico.ch</a></div>
     <p class="studio-languages">Sprachen: Italiano, English</p>
     <div class="studio-features"><span class="feature-badge">Teacher Training</span><span class="feature-badge">Massaggi</span><span class="feature-badge">Ritiri</span><span class="feature-badge">Yoga al Parco</span></div>
 </div>
@@ -1822,7 +1829,7 @@
     <p class="studio-address">Via Dott. G. Polar 50, 6932 Breganzona</p>
     <p class="studio-desc">Studio dedicato allo yoga Ashtanga a Breganzona, vicino a Lugano.</p>
     <div class="studio-styles"><span class="style-badge">Ashtanga</span></div>
-    <div class="studio-contact"><a href="https://www.yogalugano.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 76 385 04 74" class="studio-link">+41 76 385 04 74</a> &middot; <a href="mailto:anna@yogalugano.ch" class="studio-link">anna@yogalugano.ch</a></div>
+    <div class="studio-contact"><a href="https://www.yogalugano.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 385 04 74" class="canton-contact-link">+41 76 385 04 74</a> &middot; <a href="mailto:anna@yogalugano.ch" class="canton-contact-link">anna@yogalugano.ch</a></div>
     <p class="studio-languages">Sprachen: Italiano, English</p>
     <div class="studio-features"><span class="feature-badge">Ritiri</span></div>
 </div>
@@ -1833,7 +1840,7 @@
     <p class="studio-address">Via Pico 29, 6900 Lugano</p>
     <p class="studio-desc">Studio yoga premium a Lugano con corsi per tutti i livelli e massaggi esclusivi per il benessere.</p>
     <div class="studio-styles"><span class="style-badge">Yin Yoga</span><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span></div>
-    <div class="studio-contact"><a href="https://slow-move.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://slow-move.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Italiano, English</p>
     <div class="studio-features"><span class="feature-badge">Massaggi</span><span class="feature-badge">Wellness</span></div>
 </div>
@@ -1844,7 +1851,7 @@
     <p class="studio-address">Via Pianello 6b, 6944 Cureglia <span class="addr-label">(2° piano, nucleo vecchio)</span></p>
     <p class="studio-desc">Yoga Loft accogliente a Cureglia (Lugano) con yoga, meditazione, rilassamento profondo, bagni di gong e sessioni di Breathwork.</p>
     <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Hatha</span><span class="style-badge">Yin</span><span class="style-badge">Meditation</span></div>
-    <div class="studio-contact"><a href="https://www.soulsinnature.net/yogaloft" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://www.soulsinnature.net/yogaloft" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Italiano, English</p>
     <div class="studio-features"><span class="feature-badge">Bagni di Gong</span><span class="feature-badge">Breathwork</span><span class="feature-badge">Eventi nella Natura</span></div>
 </div>
@@ -1855,7 +1862,7 @@
     <p class="studio-address">Via San Gottardo, 6598 Tenero</p>
     <p class="studio-desc">Centro yoga nella regione di Locarno con corsi per tutti i livelli, bambini e madre/figlio, meditazione vipassana e pilates.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Yoga per bambini</span><span class="style-badge">Vipassana Meditation</span><span class="style-badge">Mindfulness</span><span class="style-badge">Pilates</span></div>
-    <div class="studio-contact"><a href="https://centroannapurna.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://centroannapurna.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Italiano</p>
     <div class="studio-features"><span class="feature-badge">Sala disponibile per workshop</span><span class="feature-badge">Parcheggio</span></div>
 </div>
@@ -1866,7 +1873,7 @@
     <p class="studio-address">Via dei Pioppi 10, 6616 Losone <span class="addr-label">(Stabile Bazzi, locale n. 3)</span></p>
     <p class="studio-desc">Studio Yoga Vidya a Losone (Locarno) con parcheggio gratuito in strada.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Yoga Vidya</span></div>
-    <div class="studio-contact"><a href="https://www.yogavidyaswiss.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://www.yogavidyaswiss.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Italiano</p>
     <div class="studio-features"><span class="feature-badge">Yoga in azienda</span></div>
 </div>
@@ -1877,7 +1884,7 @@
     <p class="studio-address">Piazza Nosetto 3, 6500 Bellinzona <span class="addr-label">(Centro Armonia)</span></p>
     <p class="studio-desc">Lezioni di Hatha Yoga basate sull&#x27;allineamento secondo gli insegnamenti di B.K.S. Iyengar. Mercoledì 9:00-10:30.</p>
     <div class="studio-styles"><span class="style-badge">Hatha (Iyengar-based alignment)</span></div>
-    <div class="studio-contact"><a href="https://www.tanjaioveneyoga.com/classes-bellinzona" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://www.tanjaioveneyoga.com/classes-bellinzona" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Italiano, English</p>
     <div class="studio-features"><span class="feature-badge">Yoga terapeutico</span><span class="feature-badge">Yoga per sportivi</span></div>
 </div>

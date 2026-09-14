@@ -1602,12 +1602,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -1908,7 +1915,7 @@
     <p class="studio-address">Flösserstrasse 7, 5000 Aarau <span class="addr-label">(Flösserplatz)</span></p>
     <p class="studio-desc">Yoga Studio im Herzen von Aarau mit einem vielfältigen Angebot für jeden Stil und jede Altersgruppe. Helles Studio mit Holzboden, Einzel- und Gruppenlektionen. Kernteam aus 6 Yogalehrerinnen mit Fachkompetenz in Ayurveda, Anatomie, Pranayama und Psychologie.</p>
     <div class="studio-styles"><span class="style-badge">Hatha Yoga</span><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Pilates</span><span class="style-badge">Prenatal Yoga</span><span class="style-badge">Kinder Yoga</span><span class="style-badge">Breathwork</span></div>
-    <div class="studio-contact"><a href="https://www.alohayoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 638 60 38" class="studio-link">+41 79 638 60 38</a> &middot; <a href="mailto:info@alohayoga.ch" class="studio-link">info@alohayoga.ch</a></div>
+    <div class="studio-contact"><a href="https://www.alohayoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 638 60 38" class="canton-contact-link">+41 79 638 60 38</a> &middot; <a href="mailto:info@alohayoga.ch" class="canton-contact-link">info@alohayoga.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Yoga Academy</span><span class="feature-badge">Prenatal Yoga</span><span class="feature-badge">Kinder Yoga</span><span class="feature-badge">Privatlektionen</span></div>
 </div>
@@ -1919,7 +1926,7 @@
     <p class="studio-address">Buchserstrasse 15, 5000 Aarau <span class="addr-label">(Aeschbachquartier)</span></p>
     <p class="studio-desc">Top ausgestattetes Yoga Studio im urbanen Aeschbachquartier in Aarau, direkt am Oehler Park. 112 m² grosser Raum mit zurückhaltendem und hochwertigem Ambiente. Yogalehrende können den Raum auf selbstständiger Basis mieten.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span></div>
-    <div class="studio-contact"><a href="https://coyogaspace.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="mailto:namaste@coyogaspace.ch" class="studio-link">namaste@coyogaspace.ch</a></div>
+    <div class="studio-contact"><a href="https://coyogaspace.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:namaste@coyogaspace.ch" class="canton-contact-link">namaste@coyogaspace.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Raumvermietung für Yogalehrende</span><span class="feature-badge">Parkhaus Aeschbachhalle</span></div>
 </div>
@@ -1930,7 +1937,7 @@
     <p class="studio-address">Bachstrasse 33, 5034 Suhr</p>
     <p class="studio-desc">Helles, stimmungsvolles Yogastudio nur 10 Minuten vom Bahnhof Aarau und 5 Minuten vom Zentrum Suhr entfernt. Gegründet 2018, bietet Hatha Yoga, Yin Yoga, Meditation, Workshops und Retreats für alle Stufen, 7 Tage die Woche.</p>
     <div class="studio-styles"><span class="style-badge">Hatha Yoga</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Meditation</span></div>
-    <div class="studio-contact"><a href="https://www.my-yoga-garden.ch" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="mailto:mail@my-yoga-garden.ch" class="studio-link">mail@my-yoga-garden.ch</a></div>
+    <div class="studio-contact"><a href="https://www.my-yoga-garden.ch" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:mail@my-yoga-garden.ch" class="canton-contact-link">mail@my-yoga-garden.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Workshops</span><span class="feature-badge">Yoga Retreats</span></div>
 </div>
@@ -1941,7 +1948,7 @@
     <p class="studio-address">Laurenzentorgasse 16, 5. OG, 5000 Aarau</p>
     <p class="studio-desc">Einziges Iyengar Yoga-Studio in Aarau mit Fokus auf Alignment, Asana und Pranayama. Zertifiziertes Iyengar Yoga in schönen Räumlichkeiten.</p>
     <div class="studio-styles"><span class="style-badge">Iyengar Yoga</span></div>
-    <div class="studio-contact"><a href="https://yogaiyengar.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="mailto:info@yogaiyengar.ch" class="studio-link">info@yogaiyengar.ch</a></div>
+    <div class="studio-contact"><a href="https://yogaiyengar.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:info@yogaiyengar.ch" class="canton-contact-link">info@yogaiyengar.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Zertifiziertes Iyengar Yoga</span></div>
 </div>
@@ -1952,7 +1959,7 @@
     <p class="studio-address">Rain 65, 5000 Aarau</p>
     <p class="studio-desc">Erstes Yogastudio in Aarau, 2004 von Pascale Schmid eröffnet. Über 23 Jahre Erfahrung. Bietet Kundalini Yoga, Hatha Yoga und Inspirationen, Yoga-Workshops und Gong-Meditationen.</p>
     <div class="studio-styles"><span class="style-badge">Kundalini Yoga</span><span class="style-badge">Hatha Yoga</span><span class="style-badge">Gong Meditation</span></div>
-    <div class="studio-contact"><a href="https://raum-fuer-yoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 703 19 88" class="studio-link">+41 79 703 19 88</a> &middot; <a href="mailto:info@raum-fuer-yoga.ch" class="studio-link">info@raum-fuer-yoga.ch</a></div>
+    <div class="studio-contact"><a href="https://raum-fuer-yoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 703 19 88" class="canton-contact-link">+41 79 703 19 88</a> &middot; <a href="mailto:info@raum-fuer-yoga.ch" class="canton-contact-link">info@raum-fuer-yoga.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Gong Meditation</span><span class="feature-badge">Workshops</span><span class="feature-badge">Retreats</span></div>
 </div>
@@ -1963,7 +1970,7 @@
     <p class="studio-address">Laurenzenvorstadt 69, 5000 Aarau</p>
     <p class="studio-desc">Seit 2013 fundiertes Yoga-Angebot in Aarau: inspirierende Kurse, Workshops und Retreats mit viel Herz für Jung und Alt. Klassisches Hatha Yoga, sanftes Gentle Yoga, Yin Yoga, Yoga Nidra und Pilates.</p>
     <div class="studio-styles"><span class="style-badge">Hatha Yoga</span><span class="style-badge">Gentle Yoga</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Yoga Nidra</span><span class="style-badge">Pilates</span></div>
-    <div class="studio-contact"><a href="https://mahameru.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 78 819 86 84" class="studio-link">+41 78 819 86 84</a> &middot; <a href="mailto:info@mahameru.ch" class="studio-link">info@mahameru.ch</a></div>
+    <div class="studio-contact"><a href="https://mahameru.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 819 86 84" class="canton-contact-link">+41 78 819 86 84</a> &middot; <a href="mailto:info@mahameru.ch" class="canton-contact-link">info@mahameru.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Workshops</span><span class="feature-badge">Retreats</span></div>
 </div>
@@ -1974,7 +1981,7 @@
     <p class="studio-address">Rainstrasse 2, 5022 Rombach <span class="addr-label">(ASS Fitness &amp; Wellness)</span></p>
     <p class="studio-desc">Yoga und Pilates Studio in Rombach bei Aarau, geführt von Claudia Manta-Prainer im ASS Fitness &amp; Wellness Center.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Pilates</span></div>
-    <div class="studio-contact"><a href="https://manta-yoga-pilates.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 76 569 66 64" class="studio-link">+41 76 569 66 64</a> &middot; <a href="mailto:info@manta-yoga-pilates.ch" class="studio-link">info@manta-yoga-pilates.ch</a></div>
+    <div class="studio-contact"><a href="https://manta-yoga-pilates.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 569 66 64" class="canton-contact-link">+41 76 569 66 64</a> &middot; <a href="mailto:info@manta-yoga-pilates.ch" class="canton-contact-link">info@manta-yoga-pilates.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     
 </div>
@@ -1985,7 +1992,7 @@
     <p class="studio-address">Bruggerstrasse 37A, 5400 Baden <span class="addr-label">(Merker Areal)</span></p>
     <p class="studio-desc">Erste Iyengar Yoga-Schule im Kanton Aargau, 2003 persönlich von BKS Iyengar zertifiziert. Nur 3 Gehminuten vom Bahnhof Baden entfernt. Stefanies Unterricht umfasst dank über 30 Jahren kontinuierlichem Studium alle Aspekte des Yoga.</p>
     <div class="studio-styles"><span class="style-badge">Iyengar Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.yogabaden.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="mailto:kontakt@yogabaden.ch" class="studio-link">kontakt@yogabaden.ch</a></div>
+    <div class="studio-contact"><a href="https://www.yogabaden.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:kontakt@yogabaden.ch" class="canton-contact-link">kontakt@yogabaden.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Zertifizierte Iyengar Yoga Schule</span><span class="feature-badge">Über 30 Jahre Erfahrung</span></div>
 </div>
@@ -1996,7 +2003,7 @@
     <p class="studio-address">Kronengasse 20F, 5400 Baden <span class="addr-label">(Altstadt)</span></p>
     <p class="studio-desc">Vielfältige Yoga-Schule in der Altstadt von Baden an der Limmat. Bietet verschiedene Yogastile, Schwangerschaftsyoga, Rückbildung, Workshops, Retreats und alternative Therapien. 7 Gehminuten vom Bahnhof, 12 Minuten vom Thermalbad fortyseven.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Schwangerschaftsyoga</span><span class="style-badge">Rückbildung</span><span class="style-badge">Meditation</span><span class="style-badge">MBSR</span><span class="style-badge">Feldenkrais</span></div>
-    <div class="studio-contact"><a href="https://www.namaste-yoga-baden.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="mailto:namasteyoga-baden@outlook.com" class="studio-link">namasteyoga-baden@outlook.com</a></div>
+    <div class="studio-contact"><a href="https://www.namaste-yoga-baden.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:namasteyoga-baden@outlook.com" class="canton-contact-link">namasteyoga-baden@outlook.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Schwangerschaftsyoga</span><span class="feature-badge">Rückbildung</span><span class="feature-badge">Alternative Therapien</span><span class="feature-badge">Raumvermietung</span></div>
 </div>
@@ -2007,7 +2014,7 @@
     <p class="studio-address">Dynamostrasse 17, 5400 Baden</p>
     <p class="studio-desc">Modernes Yogastudio in Baden, nur 3 Minuten vom Bahnhof entfernt. 10 erfahrene Yogalehrer:innen bieten täglich verschiedene Klassen an, von Hatha über Vinyasa und Yin bis zu Aerial Yoga und Hormonyoga.</p>
     <div class="studio-styles"><span class="style-badge">Hatha Yoga</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Yoga Nidra</span><span class="style-badge">Aerial Yoga</span><span class="style-badge">Hormonyoga</span><span class="style-badge">Antara</span><span class="style-badge">Pilates</span></div>
-    <div class="studio-contact"><a href="https://hieryoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://hieryoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Aerial Yoga</span><span class="feature-badge">Hormonyoga</span><span class="feature-badge">10 Yogalehrer:innen</span></div>
 </div>
@@ -2018,7 +2025,7 @@
     <p class="studio-address">Hahnrainweg 7, 5400 Baden</p>
     <p class="studio-desc">Yogastudio in einer der charmantesten Gassen der Limmatstadt Baden, nur 2 Gehminuten vom Bahnhof entfernt.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.jetzt.yoga/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://www.jetzt.yoga/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     
 </div>

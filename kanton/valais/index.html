@@ -460,12 +460,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -766,7 +773,7 @@
     <p class="studio-address">Route des Fournaises 49, 1950 Sion</p>
     <p class="studio-desc">Salle de yoga à Sion proposant des cours en studio et en ligne, ainsi que des cours de yoga et méditation sonore à Sion et Anzère. Espace disponible à la location.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yin</span><span class="style-badge">Méditation sonore</span></div>
-    <div class="studio-contact"><a href="https://www.tadasana-yoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 78 732 53 52" class="studio-link">+41 78 732 53 52</a> &middot; <a href="mailto:hello@tadasana-yoga.ch" class="studio-link">hello@tadasana-yoga.ch</a></div>
+    <div class="studio-contact"><a href="https://www.tadasana-yoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 732 53 52" class="canton-contact-link">+41 78 732 53 52</a> &middot; <a href="mailto:hello@tadasana-yoga.ch" class="canton-contact-link">hello@tadasana-yoga.ch</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     <div class="studio-features"><span class="feature-badge">Location de salle</span><span class="feature-badge">Cours en ligne</span><span class="feature-badge">Méditation sonore</span></div>
 </div>
@@ -777,7 +784,7 @@
     <p class="studio-address">1958 Uvrier / Grône <span class="addr-label">(Valais central)</span></p>
     <p class="studio-desc">Cours de yoga et pilates en Valais central, entre Sion et Sierre, avec Valérie Magnin. Yoga pour adultes et enfants, gestion des émotions et respiration.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Pilates</span><span class="style-badge">Méditation</span><span class="style-badge">Mindfulness</span></div>
-    <div class="studio-contact"><a href="https://happyom.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://happyom.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     <div class="studio-features"><span class="feature-badge">Yoga enfants</span><span class="feature-badge">Gestion des émotions</span></div>
 </div>
@@ -788,7 +795,7 @@
     <p class="studio-address">Stadelweg 27, 3906 Saas-Fee <span class="addr-label">(Workshops auch in Visp und Brig)</span></p>
     <p class="studio-desc">Yogalehrerin im Wallis mit regelmässigen Workshops in Visp und Brig sowie Retreats in Saas-Fee. Auch Yogatherapie und Online-Kurse.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yin</span><span class="style-badge">Yoga Therapy</span></div>
-    <div class="studio-contact"><a href="https://isabellayoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 78 790 13 98" class="studio-link">+41 78 790 13 98</a> &middot; <a href="mailto:isabellabumann@gmx.ch" class="studio-link">isabellabumann@gmx.ch</a></div>
+    <div class="studio-contact"><a href="https://isabellayoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 790 13 98" class="canton-contact-link">+41 78 790 13 98</a> &middot; <a href="mailto:isabellabumann@gmx.ch" class="canton-contact-link">isabellabumann@gmx.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Yogatherapie</span><span class="feature-badge">Retreats in Saas-Fee</span><span class="feature-badge">Online-Kurse</span></div>
 </div>

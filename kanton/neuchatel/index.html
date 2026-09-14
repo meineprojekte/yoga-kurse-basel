@@ -1126,12 +1126,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -1432,7 +1439,7 @@
     <p class="studio-address">Chemin des Grands-Pins 6, 2000 Neuchâtel <span class="addr-label">(Studio Côte)</span></p><p class="studio-address">Rue du Seyon 9, 2000 Neuchâtel <span class="addr-label">(Studio Seyon)</span></p>
     <p class="studio-desc">Studio de yoga à Neuchâtel avec deux emplacements et une trentaine de cours par semaine. Styles variés dans un environnement serein, lumineux et chaleureux.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Ashtanga</span><span class="style-badge">Yin</span><span class="style-badge">Vinyasa</span><span class="style-badge">Pilates</span><span class="style-badge">Yogalates</span><span class="style-badge">Jivamukti</span></div>
-    <div class="studio-contact"><a href="https://yoga-fabrik.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 405 14 15" class="studio-link">+41 79 405 14 15</a> &middot; <a href="mailto:info@yoga-fabrik.ch" class="studio-link">info@yoga-fabrik.ch</a></div>
+    <div class="studio-contact"><a href="https://yoga-fabrik.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 405 14 15" class="canton-contact-link">+41 79 405 14 15</a> &middot; <a href="mailto:info@yoga-fabrik.ch" class="canton-contact-link">info@yoga-fabrik.ch</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     <div class="studio-features"><span class="feature-badge">Deux studios</span><span class="feature-badge">30 cours par semaine</span></div>
 </div>
@@ -1443,7 +1450,7 @@
     <p class="studio-address">Faubourg de l&#x27;Hôpital 31, 2000 Neuchâtel</p>
     <p class="studio-desc">Studio de yoga à Neuchâtel offrant des cours de Hatha, Vinyasa, Yin et méditation. Contact par SMS ou WhatsApp.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Yin</span><span class="style-badge">Méditation</span></div>
-    <div class="studio-contact"><a href="https://www.yogashashin.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 78 691 80 67" class="studio-link">+41 78 691 80 67</a></div>
+    <div class="studio-contact"><a href="https://www.yogashashin.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 691 80 67" class="canton-contact-link">+41 78 691 80 67</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     
 </div>
@@ -1454,7 +1461,7 @@
     <p class="studio-address">Rue des Musées 60, 2ème étage, 2300 La Chaux-de-Fonds <span class="addr-label">(Code d&#x27;entrée: 2983#)</span></p>
     <p class="studio-desc">Cours de Hatha et Raja Yoga à La Chaux-de-Fonds et en ligne. Coaching de vie et professionnel, services de doula, hypnose, massages et développement personnel.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Raja Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.parvata.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 32 913 18 13" class="studio-link">+41 32 913 18 13</a> &middot; <a href="mailto:info@parvata.ch" class="studio-link">info@parvata.ch</a></div>
+    <div class="studio-contact"><a href="https://www.parvata.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 32 913 18 13" class="canton-contact-link">+41 32 913 18 13</a> &middot; <a href="mailto:info@parvata.ch" class="canton-contact-link">info@parvata.ch</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     <div class="studio-features"><span class="feature-badge">Coaching</span><span class="feature-badge">Doula</span><span class="feature-badge">Hypnose</span><span class="feature-badge">Massages</span><span class="feature-badge">Cours en ligne</span></div>
 </div>
@@ -1465,7 +1472,7 @@
     <p class="studio-address">Rue du Grenier 24, 2300 La Chaux-de-Fonds</p><p class="studio-address">Avenue des Alpes 18, 2000 Neuchâtel <span class="addr-label">(Temple des Valangines)</span></p>
     <p class="studio-desc">Ecole de yoga proposant des cours collectifs et privés à La Chaux-de-Fonds et Neuchâtel. Cours pour enfants et yoga-thérapie.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Méditation</span><span class="style-badge">Yoga-thérapie</span></div>
-    <div class="studio-contact"><a href="https://www.banyann.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 382 83 29" class="studio-link">+41 79 382 83 29</a> &middot; <a href="mailto:celine.heimo@banyann.ch" class="studio-link">celine.heimo@banyann.ch</a></div>
+    <div class="studio-contact"><a href="https://www.banyann.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 382 83 29" class="canton-contact-link">+41 79 382 83 29</a> &middot; <a href="mailto:celine.heimo@banyann.ch" class="canton-contact-link">celine.heimo@banyann.ch</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     <div class="studio-features"><span class="feature-badge">Yoga enfants</span><span class="feature-badge">Yoga-thérapie</span><span class="feature-badge">Cours privés</span></div>
 </div>

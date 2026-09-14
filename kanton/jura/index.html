@@ -597,12 +597,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -903,7 +910,7 @@
     <p class="studio-address">Rue Emile-Boéchat 5, 2800 Delémont</p>
     <p class="studio-desc">Vinyasa Yoga &amp; Pilates in Delémont and Porrentruy. 14 classes/week. Qualitop certified. Run by Angela Willemin-Monaco since 2009.</p>
     <div class="studio-styles"><span class="style-badge">Ashtanga</span><span class="style-badge">Pilates</span><span class="style-badge">Yoga</span><span class="style-badge">Vinyasa Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.pilatesyogajura.com/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 78 615 09 24" class="studio-link">+41 78 615 09 24</a> &middot; <a href="mailto:pilatesyogajura@gmail.com" class="studio-link">pilatesyogajura@gmail.com</a></div>
+    <div class="studio-contact"><a href="https://www.pilatesyogajura.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 615 09 24" class="canton-contact-link">+41 78 615 09 24</a> &middot; <a href="mailto:pilatesyogajura@gmail.com" class="canton-contact-link">pilatesyogajura@gmail.com</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     <div class="studio-features"><span class="feature-badge">Nutrition</span><span class="feature-badge">Ayurveda</span><span class="feature-badge">Personal Training</span><span class="feature-badge">Deux sites (Delémont et Porrentruy)</span></div>
 </div>
@@ -914,7 +921,7 @@
     <p class="studio-address">2800 Delémont</p><p class="studio-address">2900 Porrentruy</p>
     <p class="studio-desc">Cours de Hatha Yoga dans le Jura suisse depuis 2008, à Delémont et Porrentruy. Discipline combinant postures, exercices de respiration, relaxation, méditation et travail sur les énergies. Diplômé de l&#x27;Ecole Supérieure de Yoga de Lausanne.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span></div>
-    <div class="studio-contact"><a href="https://www.yogajura.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 32 422 55 18" class="studio-link">+41 32 422 55 18</a></div>
+    <div class="studio-contact"><a href="https://www.yogajura.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 32 422 55 18" class="canton-contact-link">+41 32 422 55 18</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     <div class="studio-features"><span class="feature-badge">Reconnu par Yoga Suisse</span></div>
 </div>
@@ -925,7 +932,7 @@
     <p class="studio-address">2827 Mervelier <span class="addr-label">(Vallée de Delémont)</span></p>
     <p class="studio-desc">Studio de Vinyasa Yoga cosy dans la vallée de Delémont, fondé par Noémie. Cours pour ralentir et se reconnecter avec son corps.</p>
     <div class="studio-styles"><span class="style-badge">Vinyasa</span></div>
-    <div class="studio-contact"><a href="https://eleveayoga.com/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://eleveayoga.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     
 </div>

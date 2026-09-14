@@ -1526,12 +1526,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -1832,7 +1839,7 @@
     <p class="studio-address">Bleichestrasse 11, 9000 St. Gallen</p>
     <p class="studio-desc">Yoga &amp; Ayurveda Studio in der Altstadt von St. Gallen. Verbindet die Essenz von traditionellem Yoga und Ayurveda mit moderner Medizin. Geführt von erfahrenen Instruktorinnen, zertifizierte Yogatherapie.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Ayurveda</span><span class="style-badge">Yin Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.yoga-in-der-altstadt.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 771 28 86" class="studio-link">+41 79 771 28 86</a> &middot; <a href="mailto:info@yoga-in-der-altstadt.ch" class="studio-link">info@yoga-in-der-altstadt.ch</a></div>
+    <div class="studio-contact"><a href="https://www.yoga-in-der-altstadt.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 771 28 86" class="canton-contact-link">+41 79 771 28 86</a> &middot; <a href="mailto:info@yoga-in-der-altstadt.ch" class="canton-contact-link">info@yoga-in-der-altstadt.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Ayurveda</span><span class="feature-badge">Yogatherapie</span><span class="feature-badge">Yoga-Ferien in der Toskana/Lombardei</span></div>
 </div>
@@ -1843,7 +1850,7 @@
     <p class="studio-address">Teufener Strasse 3, 9000 St. Gallen</p>
     <p class="studio-desc">Studio 8 in St. Gallen bietet Hatha Yoga, Pilates, Personal Training, Hypnose und Spiraldynamik an. Ein vielseitiges Angebot für Körper und Geist.</p>
     <div class="studio-styles"><span class="style-badge">Pilates</span><span class="style-badge">Hatha Yoga</span><span class="style-badge">Pranayama</span></div>
-    <div class="studio-contact"><a href="https://studio-8.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 78 623 06 43" class="studio-link">+41 78 623 06 43</a></div>
+    <div class="studio-contact"><a href="https://studio-8.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 623 06 43" class="canton-contact-link">+41 78 623 06 43</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Spiraldynamik</span><span class="feature-badge">Hypnose</span><span class="feature-badge">Personal Training</span></div>
 </div>
@@ -1854,7 +1861,7 @@
     <p class="studio-address">Kirchgasse 12, 9000 St. Gallen</p>
     <p class="studio-desc">Yoga- und Meditationsstudio, Ausbildungsakademie und Community Hub in St. Gallen und online. Nur wenige Schritte vom Marktplatz entfernt. Ein offener und warmer Raum zum Bewegen, Aufladen und Verbinden.</p>
     <div class="studio-styles"><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Hatha Yoga</span><span class="style-badge">Breathwork</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Myofascial Release</span><span class="style-badge">Meditation</span></div>
-    <div class="studio-contact"><a href="https://bubbleyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 77 483 58 65" class="studio-link">+41 77 483 58 65</a> &middot; <a href="mailto:hello@bubbleyoga.ch" class="studio-link">hello@bubbleyoga.ch</a></div>
+    <div class="studio-contact"><a href="https://bubbleyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 77 483 58 65" class="canton-contact-link">+41 77 483 58 65</a> &middot; <a href="mailto:hello@bubbleyoga.ch" class="canton-contact-link">hello@bubbleyoga.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Yoga Ausbildung</span><span class="feature-badge">Community Hub</span><span class="feature-badge">Online Klassen</span></div>
 </div>
@@ -1865,7 +1872,7 @@
     <p class="studio-address">Vadianstrasse 24, 9000 St. Gallen</p>
     <p class="studio-desc">Zentral gelegenes Yogastudio nahe dem Bahnhof St. Gallen. Bietet Gruppen- und Privatyogakurse, Vinyasa-Hatha-basierte Klassen für alle Stufen.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Hatha Yoga</span><span class="style-badge">Prenatal Yoga</span><span class="style-badge">Vinyasa</span></div>
-    <div class="studio-contact"><a href="https://www.rach-yoga.com/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 76 529 78 36" class="studio-link">+41 76 529 78 36</a> &middot; <a href="mailto:rachyogahk@gmail.com" class="studio-link">rachyogahk@gmail.com</a></div>
+    <div class="studio-contact"><a href="https://www.rach-yoga.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 529 78 36" class="canton-contact-link">+41 76 529 78 36</a> &middot; <a href="mailto:rachyogahk@gmail.com" class="canton-contact-link">rachyogahk@gmail.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Privatlektionen</span><span class="feature-badge">Semi-Private Klassen</span></div>
 </div>
@@ -1876,7 +1883,7 @@
     <p class="studio-address">Linsebühlstrasse 94, 9000 St. Gallen</p>
     <p class="studio-desc">Yogastudio im Stadtzentrum von St. Gallen mit modernem, abwechslungsreichem und authentischem Yoga-Angebot.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.lineupyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 78 718 79 29" class="studio-link">+41 78 718 79 29</a></div>
+    <div class="studio-contact"><a href="https://www.lineupyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 718 79 29" class="canton-contact-link">+41 78 718 79 29</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Workshops</span></div>
 </div>
@@ -1887,7 +1894,7 @@
     <p class="studio-address">Haldenstrasse 5, 9000 St. Gallen</p>
     <p class="studio-desc">Yogastudio von Dimitrij Itten, zentral gelegen an der Haldenstrasse in St. Gallen.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span></div>
-    <div class="studio-contact"><a href="https://123yoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 76 201 97 27" class="studio-link">+41 76 201 97 27</a></div>
+    <div class="studio-contact"><a href="https://123yoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 201 97 27" class="canton-contact-link">+41 76 201 97 27</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     
 </div>
@@ -1898,7 +1905,7 @@
     <p class="studio-address">Hintere Bahnhofstrasse 5, 9000 St. Gallen <span class="addr-label">(Moving Studio)</span></p>
     <p class="studio-desc">Englischsprachiges Power Yoga Studio in St. Gallen. Katie Hunter ist 500h Yoga Alliance zertifizierte Lehrerin mit langjähriger Yoga-Erfahrung aus London.</p>
     <div class="studio-styles"><span class="style-badge">Power Yoga</span><span class="style-badge">Deep Flow Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.poweryogastgallen.com/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 325 97 95" class="studio-link">+41 79 325 97 95</a> &middot; <a href="mailto:poweryogastgallen@gmail.com" class="studio-link">poweryogastgallen@gmail.com</a></div>
+    <div class="studio-contact"><a href="https://www.poweryogastgallen.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 325 97 95" class="canton-contact-link">+41 79 325 97 95</a> &middot; <a href="mailto:poweryogastgallen@gmail.com" class="canton-contact-link">poweryogastgallen@gmail.com</a></div>
     <p class="studio-languages">Sprachen: English</p>
     <div class="studio-features"><span class="feature-badge">English-speaking classes</span></div>
 </div>
@@ -1909,7 +1916,7 @@
     <p class="studio-address">Holzwiesstrasse 37, 8645 Jona <span class="addr-label">(Alte Spinnerei Brändlin)</span></p>
     <p class="studio-desc">Gegründet im April 2009 von Lina und Michael Thurnherr. Verschiedene Yogastile wie Anusara, Vinyasa Flow und traditionelles Hatha Yoga mit professionell ausgebildeten Lehrer:innen. Im Hochparterre der alten Spinnerei Brändlin.</p>
     <div class="studio-styles"><span class="style-badge">Anusara Yoga</span><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Hatha Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.yogaloft.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 76 344 50 44" class="studio-link">+41 76 344 50 44</a> &middot; <a href="mailto:hello@yogaloft.ch" class="studio-link">hello@yogaloft.ch</a></div>
+    <div class="studio-contact"><a href="https://www.yogaloft.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 344 50 44" class="canton-contact-link">+41 76 344 50 44</a> &middot; <a href="mailto:hello@yogaloft.ch" class="canton-contact-link">hello@yogaloft.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Workshops</span><span class="feature-badge">Yoga Retreats</span></div>
 </div>
@@ -1920,7 +1927,7 @@
     <p class="studio-address">Hauptplatz 9, 1. OG, 8640 Rapperswil</p>
     <p class="studio-desc">Hot Yoga Kurse in Rapperswil in einem beheizten Raum. Kleine Klassen in schönem Altbau-Studio. Gratis Probelektionen verfügbar. Entspannte und persönliche Atmosphäre.</p>
     <div class="studio-styles"><span class="style-badge">Hot Yoga</span></div>
-    <div class="studio-contact"><a href="https://hotyoga4u.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://hotyoga4u.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Hot Yoga</span><span class="feature-badge">Gratis Probelektion</span><span class="feature-badge">Kleine Klassen</span></div>
 </div>

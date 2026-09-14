@@ -1150,12 +1150,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -1456,7 +1463,7 @@
     <p class="studio-address">Mühlegasse 18h, 6340 Baar <span class="addr-label">(Victoria Areal)</span></p>
     <p class="studio-desc">Buntes und spielerisches Yoga-Angebot in Baar im historischen Victoria Areal. Heller Raum mit hoher Holzdecke. Kurse auf Deutsch, auch auf Englisch.</p>
     <div class="studio-styles"><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Hatha Yoga Flow</span><span class="style-badge">Aerial Yoga</span><span class="style-badge">Hatha</span><span class="style-badge">Yin</span></div>
-    <div class="studio-contact"><a href="https://www.yogaflowzug.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 756 55 16" class="studio-link">+41 79 756 55 16</a> &middot; <a href="mailto:info@yogaflowzug.ch" class="studio-link">info@yogaflowzug.ch</a></div>
+    <div class="studio-contact"><a href="https://www.yogaflowzug.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 756 55 16" class="canton-contact-link">+41 79 756 55 16</a> &middot; <a href="mailto:info@yogaflowzug.ch" class="canton-contact-link">info@yogaflowzug.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Aerial Yoga</span><span class="feature-badge">Family Yoga</span></div>
 </div>
@@ -1467,7 +1474,7 @@
     <p class="studio-address">Altgasse 50, 6340 Baar</p>
     <p class="studio-desc">Yoga und Kinesiologie Praxis in Baar, zwei Zugstationen vom Bahnhof Zug entfernt. Alignment-basiertes Hatha Yoga und Iyengar Yoga mit Gianna Garofalo.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Iyengar</span></div>
-    <div class="studio-contact"><a href="https://www.chinmayi.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://www.chinmayi.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Kinesiologie</span></div>
 </div>
@@ -1478,7 +1485,7 @@
     <p class="studio-address">6300 Zug</p>
     <p class="studio-desc">Iyengar Yoga Studio in Zug, eröffnet im Januar 2024. Heller, renovierter Raum mit 81 m², Platz für bis zu 20 Teilnehmer. Gratis Parkplätze.</p>
     <div class="studio-styles"><span class="style-badge">Iyengar Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.aumyogastudio.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://www.aumyogastudio.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: English, Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Gratis Parkplätze</span><span class="feature-badge">Top-Yogamaterialien</span></div>
 </div>

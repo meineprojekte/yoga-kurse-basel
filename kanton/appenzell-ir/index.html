@@ -837,12 +837,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -1143,7 +1150,7 @@
     <p class="studio-address">Zielstrasse 8a, 9050 Appenzell</p>
     <p class="studio-desc">Modernes, lichtdurchflutetes Yogastudio in Appenzell mit breitem Angebot an Yogastilen und ganzheitlichen Bewegungsformen. Workshops und Retreats zu Yoga, Frauengesundheit und Breathwork. Krankenkassen-anerkannt und swiss active Mitglied.</p>
     <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Yin</span><span class="style-badge">Hatha</span><span class="style-badge">Restorative Vinyasa</span><span class="style-badge">Meditation</span></div>
-    <div class="studio-contact"><a href="https://studiomond.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://studiomond.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Krankenkassen-anerkannt</span><span class="feature-badge">Workshops</span><span class="feature-badge">Retreats</span><span class="feature-badge">Frauengesundheit</span><span class="feature-badge">Breathwork</span></div>
 </div>
@@ -1154,7 +1161,7 @@
     <p class="studio-address">Unterer Schöttler 12, 9050 Appenzell</p>
     <p class="studio-desc">Yoga und Ayurveda in Appenzell und Oberriet. Diplomierte Yogalehrerin (Yoga Schweiz) und zertifizierte Ayurveda Ernährungsberaterin. Gruppen- und Einzelunterricht.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Schwangerschaftsyoga</span></div>
-    <div class="studio-contact"><a href="https://www.yoga-claudia.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 71 787 48 20" class="studio-link">+41 71 787 48 20</a> &middot; <a href="mailto:info@yoga-claudia.ch" class="studio-link">info@yoga-claudia.ch</a></div>
+    <div class="studio-contact"><a href="https://www.yoga-claudia.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 71 787 48 20" class="canton-contact-link">+41 71 787 48 20</a> &middot; <a href="mailto:info@yoga-claudia.ch" class="canton-contact-link">info@yoga-claudia.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Ayurveda Ernährungsberatung</span><span class="feature-badge">Auch Standort in Oberriet</span><span class="feature-badge">Online-Kurse</span></div>
 </div>

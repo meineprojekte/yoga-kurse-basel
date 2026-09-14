@@ -1303,12 +1303,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -1609,7 +1616,7 @@
     <p class="studio-address">Hauptgasse 30, 2. OG, 4500 Solothurn <span class="addr-label">(Altstadt)</span></p>
     <p class="studio-desc">Yoga- und Pilatesstudio in der Altstadt von Solothurn. Abwechslungsreiches Kursprogramm von Gentle Yoga am Mittag bis Strong Vinyasa am Abend. Beide Leiterinnen tragen das EMfit Qualitätslabel. Melanie ist Mitglied von Yoga Schweiz, Janine von BGB Schweiz.</p>
     <div class="studio-styles"><span class="style-badge">Gentle Yoga</span><span class="style-badge">Vinyasa Yoga</span><span class="style-badge">Pilates</span></div>
-    <div class="studio-contact"><a href="https://www.studio-30.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://www.studio-30.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">EMfit Qualitätslabel</span><span class="feature-badge">Krankenkassen anerkannt</span><span class="feature-badge">Lift vorhanden</span></div>
 </div>
@@ -1620,7 +1627,7 @@
     <p class="studio-address">Hans-Huber-Strasse 37A, 4500 Solothurn</p>
     <p class="studio-desc">Sunshine Yoga in Solothurn bietet Hatha-Vinyasa Yoga, Hatha Yoga, Yin Yoga, Yoga Nidra sowie Workshops und Retreats an.</p>
     <div class="studio-styles"><span class="style-badge">Hatha-Vinyasa Yoga</span><span class="style-badge">Hatha Yoga</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Yoga Nidra</span></div>
-    <div class="studio-contact"><a href="https://www.sunshine-yoga.ch" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 76 573 22 05" class="studio-link">+41 76 573 22 05</a></div>
+    <div class="studio-contact"><a href="https://www.sunshine-yoga.ch" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 573 22 05" class="canton-contact-link">+41 76 573 22 05</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Workshops</span><span class="feature-badge">Retreats</span></div>
 </div>
@@ -1631,7 +1638,7 @@
     <p class="studio-address">Weissensteinstrasse 81, 3. OG, 4500 Solothurn</p>
     <p class="studio-desc">Yoga Studio in Solothurn mit Parkplätzen direkt vor dem Studio. Erste Probelektion gratis. Kurse am Dienstag und Donnerstag, geeignet für Anfänger und Fortgeschrittene.</p>
     <div class="studio-styles"><span class="style-badge">Anusara Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.diamond-yoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="mailto:andrea@diamond-yoga.ch" class="studio-link">andrea@diamond-yoga.ch</a></div>
+    <div class="studio-contact"><a href="https://www.diamond-yoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:andrea@diamond-yoga.ch" class="canton-contact-link">andrea@diamond-yoga.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Gratis Probelektion</span><span class="feature-badge">Parkplätze vorhanden</span></div>
 </div>
@@ -1642,7 +1649,7 @@
     <p class="studio-address">Gibelinstrasse 10, 4500 Solothurn <span class="addr-label">(Atelier Solothurn)</span></p>
     <p class="studio-desc">TAO Yoga in Solothurn, unterrichtet seit 2002 in Solothurn und Aarau. Flavia bietet Tao Yoga Kurse im Atelier Solothurn an.</p>
     <div class="studio-styles"><span class="style-badge">Tao Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.flaviayoga.com/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 78 716 33 08" class="studio-link">+41 78 716 33 08</a> &middot; <a href="mailto:info@flaviayoga.com" class="studio-link">info@flaviayoga.com</a></div>
+    <div class="studio-contact"><a href="https://www.flaviayoga.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 716 33 08" class="canton-contact-link">+41 78 716 33 08</a> &middot; <a href="mailto:info@flaviayoga.com" class="canton-contact-link">info@flaviayoga.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Über 20 Jahre Erfahrung</span></div>
 </div>
@@ -1653,7 +1660,7 @@
     <p class="studio-address">Kirschbaumstrasse 98, 4500 Solothurn</p>
     <p class="studio-desc">Privates Yoga-, Massage- und Therapiestudio in Solothurn. Unterricht in kleinen Gruppen mit persönlicher Atmosphäre.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Massage</span><span class="style-badge">Therapie</span></div>
-    <div class="studio-contact"><a href="https://www.om-yogaroom.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 228 02 67" class="studio-link">+41 79 228 02 67</a> &middot; <a href="mailto:omyogaroom@bluewin.ch" class="studio-link">omyogaroom@bluewin.ch</a></div>
+    <div class="studio-contact"><a href="https://www.om-yogaroom.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 228 02 67" class="canton-contact-link">+41 79 228 02 67</a> &middot; <a href="mailto:omyogaroom@bluewin.ch" class="canton-contact-link">omyogaroom@bluewin.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Kleine Gruppen</span><span class="feature-badge">Massage</span><span class="feature-badge">Therapie</span></div>
 </div>
@@ -1664,7 +1671,7 @@
     <p class="studio-address">Patriotenweg 9, 4500 Solothurn</p>
     <p class="studio-desc">Yoga Garten Solothurn bietet wöchentliche Yoga Flow Stunden sowie Online Yogakurse, Yoga Privatstunden, Yoga-Events und Yoga-Retreats.</p>
     <div class="studio-styles"><span class="style-badge">Yoga Flow</span></div>
-    <div class="studio-contact"><a href="https://yogagarten.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="mailto:info@yogagarten.ch" class="studio-link">info@yogagarten.ch</a></div>
+    <div class="studio-contact"><a href="https://yogagarten.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:info@yogagarten.ch" class="canton-contact-link">info@yogagarten.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Online Yogakurse</span><span class="feature-badge">Privatstunden</span><span class="feature-badge">Yoga-Events</span><span class="feature-badge">Retreats</span></div>
 </div>
@@ -1675,7 +1682,7 @@
     <p class="studio-address">Hauptgasse 21, 4600 Olten</p>
     <p class="studio-desc">DownTown Yoga in Olten versteht Yoga als ganzheitliche Verbindung, bei der körperliche, geistige und spirituelle Gesundheit positiv beeinflusst, trainiert und erhalten werden. Anmeldung mindestens 24 Stunden vorher erforderlich.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Pilates</span><span class="style-badge">bodyART</span><span class="style-badge">Core Workout</span><span class="style-badge">Prenatal</span><span class="style-badge">Postnatal</span><span class="style-badge">Zumba</span></div>
-    <div class="studio-contact"><a href="https://downtownyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 319 60 71" class="studio-link">+41 79 319 60 71</a></div>
+    <div class="studio-contact"><a href="https://downtownyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 319 60 71" class="canton-contact-link">+41 79 319 60 71</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">bodyART</span><span class="feature-badge">Prenatal/Postnatal</span><span class="feature-badge">Workshops</span><span class="feature-badge">Massage</span></div>
 </div>
@@ -1686,7 +1693,7 @@
     <p class="studio-address">Ziegelackerstrasse 5, 4600 Olten</p>
     <p class="studio-desc">Yoga- und Pilatesstudio in Olten. Erreichbar mit ÖV: Bus 501 oder 505 bis Haltestelle Bornblick, oder ca. 13 Minuten Fussweg vom Bahnhof Olten.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Pilates</span></div>
-    <div class="studio-contact"><a href="https://www.pilateszentrale.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 456 27 69" class="studio-link">+41 79 456 27 69</a> &middot; <a href="mailto:caroline@pilateszentrale.ch" class="studio-link">caroline@pilateszentrale.ch</a></div>
+    <div class="studio-contact"><a href="https://www.pilateszentrale.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 456 27 69" class="canton-contact-link">+41 79 456 27 69</a> &middot; <a href="mailto:caroline@pilateszentrale.ch" class="canton-contact-link">caroline@pilateszentrale.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     
 </div>

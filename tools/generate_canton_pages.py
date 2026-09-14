@@ -276,11 +276,11 @@ def generate_studio_cards(studios):
         if website:
             booking_platforms = ['eversports.', 'classpass.', 'mindbody', 'momoyoga.', 'fitogram.']
             rel_val = 'sponsored noopener noreferrer' if any(bp in website for bp in booking_platforms) else 'nofollow noopener noreferrer'
-            contact_parts.append(f'<a href="{escape(website)}" target="_blank" rel="{rel_val}" class="studio-link">Website</a>')
+            contact_parts.append(f'<a href="{escape(website)}" target="_blank" rel="{rel_val}" class="canton-contact-link">Website</a>')
         if phone:
-            contact_parts.append(f'<a href="tel:{escape(phone)}" class="studio-link">{escape(phone)}</a>')
+            contact_parts.append(f'<a href="tel:{escape(phone)}" class="canton-contact-link">{escape(phone)}</a>')
         if email:
-            contact_parts.append(f'<a href="mailto:{escape(email)}" class="studio-link">{escape(email)}</a>')
+            contact_parts.append(f'<a href="mailto:{escape(email)}" class="canton-contact-link">{escape(email)}</a>')
         if contact_parts:
             contact_html = f'<div class="studio-contact">{" &middot; ".join(contact_parts)}</div>'
 
@@ -895,12 +895,19 @@ def generate_page(canton, studios, classes, all_cantons):
             margin: 10px 0;
             font-size: 0.9rem;
         }}
-        .studio-link {{
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {{
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }}
-        .studio-link:hover {{
+        .canton-contact-link:hover {{
             color: #D4A373;
             text-decoration: underline;
         }}

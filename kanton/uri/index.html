@@ -1018,12 +1018,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -1324,7 +1331,7 @@
     <p class="studio-address">Schiesshüttenweg 6, 6460 Altdorf</p>
     <p class="studio-desc">Ruhiges Yogastudio in Altdorf, Uri, mit Fokus auf ganzheitliche Gesundheit und Achtsamkeit. Hatha, Vinyasa Flow, Yin, Pilates und Meditation.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Yin</span><span class="style-badge">Pilates</span><span class="style-badge">Meditation</span></div>
-    <div class="studio-contact"><a href="https://www.anantara-yogastudio.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 77 531 28 39" class="studio-link">+41 77 531 28 39</a> &middot; <a href="mailto:info@anantara-yogastudio.ch" class="studio-link">info@anantara-yogastudio.ch</a></div>
+    <div class="studio-contact"><a href="https://www.anantara-yogastudio.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 77 531 28 39" class="canton-contact-link">+41 77 531 28 39</a> &middot; <a href="mailto:info@anantara-yogastudio.ch" class="canton-contact-link">info@anantara-yogastudio.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     
 </div>
@@ -1335,7 +1342,7 @@
     <p class="studio-address">6460 Altdorf</p>
     <p class="studio-desc">Ganzheitlicher Raum für Yoga, Workshops und Healing im Herzen von Uri. Angebote umfassen Yoga, Klangtherapie, Breathwork, Reiki, Hypnotherapie, Massage und mehr. Shared Space mit flexiblen Mietoptionen.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Breathwork</span><span class="style-badge">Meditation</span></div>
-    <div class="studio-contact"><a href="https://www.flow-altdorf.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://www.flow-altdorf.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Klangtherapie</span><span class="feature-badge">Reiki</span><span class="feature-badge">Hypnotherapie</span><span class="feature-badge">Shared Space</span></div>
 </div>
@@ -1346,7 +1353,7 @@
     <p class="studio-address">Gurtenmundstrasse 31, 6460 Altdorf</p>
     <p class="studio-desc">Yoga und Fitness Studio in Altdorf, Uri.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Fitness</span></div>
-    <div class="studio-contact"><a href="tel:+41 79 934 14 39" class="studio-link">+41 79 934 14 39</a></div>
+    <div class="studio-contact"><a href="tel:+41 79 934 14 39" class="canton-contact-link">+41 79 934 14 39</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Fitness</span></div>
 </div>

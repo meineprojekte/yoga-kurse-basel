@@ -335,12 +335,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -641,7 +648,7 @@
     <p class="studio-address">Schwänberg 2676, 9100 Herisau</p>
     <p class="studio-desc">Authentisches, ehrliches Yoga in Herisau und St. Gallen mit Roberta Alder (geb. 1985 in Appenzell). Atmung steht im Zentrum der Praxis.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span></div>
-    <div class="studio-contact"><a href="https://www.yogaar.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 78 634 80 89" class="studio-link">+41 78 634 80 89</a></div>
+    <div class="studio-contact"><a href="https://www.yogaar.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 634 80 89" class="canton-contact-link">+41 78 634 80 89</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Auch Studio in St. Gallen</span></div>
 </div>

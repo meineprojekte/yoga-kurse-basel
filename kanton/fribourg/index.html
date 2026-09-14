@@ -1416,12 +1416,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -1722,7 +1729,7 @@
     <p class="studio-address">Route de la Fonderie 6, 1700 Fribourg <span class="addr-label">(Proche de la gare)</span></p>
     <p class="studio-desc">Studio de yoga au centre-ville de Fribourg, à proximité de la gare. Cours de yoga dynamique et restaurateur pour débutants et avancés.</p>
     <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Ashtanga</span><span class="style-badge">Yin</span></div>
-    <div class="studio-contact"><a href="https://www.yogiface.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://www.yogiface.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     
 </div>
@@ -1733,7 +1740,7 @@
     <p class="studio-address">Impasse de la Cour Robert 3, 1700 Fribourg</p>
     <p class="studio-desc">Ecole de yoga authentique à Fribourg proposant cours de yoga, méditation et yoga nidra en présentiel et en ligne.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Méditation</span><span class="style-badge">Yoga Nidra</span></div>
-    <div class="studio-contact"><a href="https://www.happinez.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 419 74 17" class="studio-link">+41 79 419 74 17</a> &middot; <a href="mailto:info@happinez.ch" class="studio-link">info@happinez.ch</a></div>
+    <div class="studio-contact"><a href="https://www.happinez.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 419 74 17" class="canton-contact-link">+41 79 419 74 17</a> &middot; <a href="mailto:info@happinez.ch" class="canton-contact-link">info@happinez.ch</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     <div class="studio-features"><span class="feature-badge">Yoga Nidra</span><span class="feature-badge">Cours en ligne</span></div>
 </div>
@@ -1744,7 +1751,7 @@
     <p class="studio-address">1700 Fribourg</p>
     <p class="studio-desc">Cours de yoga, immersions, home yogas et yoga thérapie à Fribourg depuis 2010. Cours en groupe ou privés, FeetUp.</p>
     <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Hatha</span></div>
-    <div class="studio-contact"><a href="https://www.sakinayoga.com/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://www.sakinayoga.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     <div class="studio-features"><span class="feature-badge">Yoga Thérapie</span><span class="feature-badge">Immersions</span><span class="feature-badge">Home Yoga</span><span class="feature-badge">FeetUp</span></div>
 </div>
@@ -1755,7 +1762,7 @@
     <p class="studio-address">Derrière-les-Remparts 12, 1700 Fribourg <span class="addr-label">(Centre d&#x27;animations de l&#x27;Arsen&#x27;Alt)</span></p>
     <p class="studio-desc">Cours de Triyoga à Fribourg. Entrée possible à tout moment. Cours de yoga en plein air au Murtentor en été.</p>
     <div class="studio-styles"><span class="style-badge">Triyoga</span></div>
-    <div class="studio-contact"><a href="https://www.yoga-nicole.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 78 769 94 15" class="studio-link">+41 78 769 94 15</a> &middot; <a href="mailto:yoga.nicole@gmx.ch" class="studio-link">yoga.nicole@gmx.ch</a></div>
+    <div class="studio-contact"><a href="https://www.yoga-nicole.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 769 94 15" class="canton-contact-link">+41 78 769 94 15</a> &middot; <a href="mailto:yoga.nicole@gmx.ch" class="canton-contact-link">yoga.nicole@gmx.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch, Français</p>
     <div class="studio-features"><span class="feature-badge">Outdoor Yoga</span></div>
 </div>

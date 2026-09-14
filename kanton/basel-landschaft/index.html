@@ -1553,12 +1553,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -1859,7 +1866,7 @@
     <p class="studio-address">Wasserturmplatz 5, 4410 Liestal</p>
     <p class="studio-desc">Yoga Studio am Wasserturmplatz Liestal mit Gruppen- und Privatlektionen, Workshops und Retreats. Spezialisiert auch auf traumasensitives Yoga und Yoga für Krebspatienten. Ergänzt durch Coaching, Ayurveda, Aromatherapie und Massage.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Trauma-sensitives Yoga</span><span class="style-badge">Yoga für Krebspatienten</span></div>
-    <div class="studio-contact"><a href="https://yogalotus-liestal.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 366 20 26" class="studio-link">+41 79 366 20 26</a> &middot; <a href="mailto:info@yogalotus-liestal.ch" class="studio-link">info@yogalotus-liestal.ch</a></div>
+    <div class="studio-contact"><a href="https://yogalotus-liestal.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 366 20 26" class="canton-contact-link">+41 79 366 20 26</a> &middot; <a href="mailto:info@yogalotus-liestal.ch" class="canton-contact-link">info@yogalotus-liestal.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Trauma-sensitives Yoga</span><span class="feature-badge">Yoga für Krebspatienten</span><span class="feature-badge">Ayurveda</span><span class="feature-badge">Aromatherapie</span><span class="feature-badge">Coaching</span></div>
 </div>
@@ -1870,7 +1877,7 @@
     <p class="studio-address">Fischmarkt 34, 4410 Liestal <span class="addr-label">(Im Herzen von Liestal)</span></p>
     <p class="studio-desc">Jivamukti Yoga mit Jenny in Liestal seit 2010. Die harmonisierende Kraft des Jivamukti Vinyasa Flow. Gratis Probelektionen verfügbar.</p>
     <div class="studio-styles"><span class="style-badge">Jivamukti Yoga</span><span class="style-badge">Vinyasa Flow</span></div>
-    <div class="studio-contact"><a href="https://yoga-werkstatt.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 78 828 61 11" class="studio-link">+41 78 828 61 11</a> &middot; <a href="mailto:yogawerkstatt@gmail.com" class="studio-link">yogawerkstatt@gmail.com</a></div>
+    <div class="studio-contact"><a href="https://yoga-werkstatt.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 828 61 11" class="canton-contact-link">+41 78 828 61 11</a> &middot; <a href="mailto:yogawerkstatt@gmail.com" class="canton-contact-link">yogawerkstatt@gmail.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Jivamukti Yoga</span><span class="feature-badge">Gratis Probelektion</span><span class="feature-badge">Raumvermietung</span></div>
 </div>
@@ -1881,7 +1888,7 @@
     <p class="studio-address">Seestrasse 12, 4410 Liestal</p>
     <p class="studio-desc">Zentral gelegenes Pilates &amp; Yoga Studio in Liestal. Platz für 9 Teilnehmende bei Yoga und 7 bei Pilates Reformer. Eingang durch den Carport unter dem Gebäude.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Pilates Reformer</span></div>
-    <div class="studio-contact"><a href="https://www.balancedpower.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 78 662 04 96" class="studio-link">+41 78 662 04 96</a> &middot; <a href="mailto:hello@balancedpower.ch" class="studio-link">hello@balancedpower.ch</a></div>
+    <div class="studio-contact"><a href="https://www.balancedpower.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 662 04 96" class="canton-contact-link">+41 78 662 04 96</a> &middot; <a href="mailto:hello@balancedpower.ch" class="canton-contact-link">hello@balancedpower.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Pilates Reformer</span></div>
 </div>
@@ -1892,7 +1899,7 @@
     <p class="studio-address">4410 Liestal <span class="addr-label">(Städtli Liestal)</span></p>
     <p class="studio-desc">Kundalini Yoga Studio im Städtli von Liestal. Kurse am Dienstag 18:30 Uhr und Donnerstag 8:30 Uhr.</p>
     <div class="studio-styles"><span class="style-badge">Kundalini Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.jyotiyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://www.jyotiyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Kundalini Yoga</span></div>
 </div>
@@ -1903,7 +1910,7 @@
     <p class="studio-address">Baslerstrasse 8, 4103 Bottmingen</p>
     <p class="studio-desc">Interdisziplinäres Yoga-Zentrum in Bottmingen, seit 1978 in der Region Basel. Bietet Achtsamkeitskurse (MSC/MBSR), Yoga, therapeutisches Yoga, Physiotherapie, Craniosacral-Therapie, Workshops, Retreats sowie Coaching und Beratung.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Therapeutisches Yoga</span><span class="style-badge">MBSR</span><span class="style-badge">MSC</span></div>
-    <div class="studio-contact"><a href="https://www.bethsabe.ch" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 61 421 54 54" class="studio-link">+41 61 421 54 54</a></div>
+    <div class="studio-contact"><a href="https://www.bethsabe.ch" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 61 421 54 54" class="canton-contact-link">+41 61 421 54 54</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Therapeutisches Yoga</span><span class="feature-badge">MBSR/MSC</span><span class="feature-badge">Physiotherapie</span><span class="feature-badge">Craniosacral-Therapie</span><span class="feature-badge">Seit 1978</span></div>
 </div>
@@ -1914,7 +1921,7 @@
     <p class="studio-address">Langegasse 60, 4104 Oberwil</p>
     <p class="studio-desc">Zeitgenössisches Yoga in Oberwil bei Basel. Verschiedene Yogastile von aktiv bis ruhig. 8 Minuten Fussweg von der Tramhaltestelle Oberwil Zentrum.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Slow Yoga</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Yoga Nidra</span></div>
-    <div class="studio-contact"><a href="https://www.yoga.nordemann.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 61 401 23 65" class="studio-link">+41 61 401 23 65</a></div>
+    <div class="studio-contact"><a href="https://www.yoga.nordemann.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 61 401 23 65" class="canton-contact-link">+41 61 401 23 65</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Zeitgenössisches Yoga</span></div>
 </div>
@@ -1925,7 +1932,7 @@
     <p class="studio-address">Weiherweg 4, 4104 Oberwil</p>
     <p class="studio-desc">Yogastudio in Oberwil, Baselland. Öffentliche Parkplätze auf der gegenüberliegenden Seite des Flusses, gegenüber der Jugi.</p>
     <div class="studio-styles"><span class="style-badge">Yoga meets Pilates</span><span class="style-badge">Meditation</span><span class="style-badge">Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.yogashanti.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 460 76 36" class="studio-link">+41 79 460 76 36</a> &middot; <a href="mailto:info@yogashanti.ch" class="studio-link">info@yogashanti.ch</a></div>
+    <div class="studio-contact"><a href="https://www.yogashanti.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 460 76 36" class="canton-contact-link">+41 79 460 76 36</a> &middot; <a href="mailto:info@yogashanti.ch" class="canton-contact-link">info@yogashanti.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     
 </div>
@@ -1936,7 +1943,7 @@
     <p class="studio-address">Mühlemattstrasse 22, 4104 Oberwil <span class="addr-label">(Mühlematt Center)</span></p>
     <p class="studio-desc">Yoga in ruhiger Atmosphäre im lichtdurchfluteten Raum in Oberwil bei Basel. Regelmässige Kurse, Workshops und Privatlektionen. Jederzeit Einstieg möglich, einzelne Lektionen buchbar. Auch Online via Zoom verfügbar.</p>
     <div class="studio-styles"><span class="style-badge">Slow Flow Yoga</span><span class="style-badge">Yin Yoga</span></div>
-    <div class="studio-contact"><a href="https://ebe-wellness.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 79 560 09 76" class="studio-link">+41 79 560 09 76</a> &middot; <a href="mailto:info@ebe-wellness.ch" class="studio-link">info@ebe-wellness.ch</a></div>
+    <div class="studio-contact"><a href="https://ebe-wellness.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 560 09 76" class="canton-contact-link">+41 79 560 09 76</a> &middot; <a href="mailto:info@ebe-wellness.ch" class="canton-contact-link">info@ebe-wellness.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Online Yoga via Zoom</span><span class="feature-badge">Aquafit</span><span class="feature-badge">Yoga Retreats im Schwarzwald</span><span class="feature-badge">Keine Kursbindung</span></div>
 </div>
@@ -1947,7 +1954,7 @@
     <p class="studio-address">Altenmatteweg 9, 4144 Arlesheim</p>
     <p class="studio-desc">Yoga Studio in Arlesheim mit Einzel- und Gruppenunterricht. Spezialisiert auf Hatha Yoga, Schwangerschaftsyoga, Rückbildungsyoga und Yogatherapie. Auch Online-Kurse verfügbar.</p>
     <div class="studio-styles"><span class="style-badge">Hatha Yoga</span><span class="style-badge">Schwangerschaftsyoga</span><span class="style-badge">Rückbildungsyoga</span><span class="style-badge">Yogatherapie</span></div>
-    <div class="studio-contact"><a href="https://www.hathayoga-basel.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://www.hathayoga-basel.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Schwangerschaftsyoga</span><span class="feature-badge">Rückbildungsyoga</span><span class="feature-badge">Yogatherapie</span><span class="feature-badge">Online Kurse</span></div>
 </div>
@@ -1958,7 +1965,7 @@
     <p class="studio-address">Hardstrasse 42, 4133 Pratteln</p>
     <p class="studio-desc">Pilates &amp; Yoga Studio in Pratteln, nahe der Autobahnausfahrt Schweizerhalle/IKEA-Kreisel. Bietet Pilates, Mat-Class, Hatha-Yoga, Power-Yoga, Yin-Yoga, Gruppenkurse und Personal Training.</p>
     <div class="studio-styles"><span class="style-badge">Hatha Yoga</span><span class="style-badge">Power Yoga</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Pilates</span></div>
-    <div class="studio-contact"><a href="https://koerpergeheimnis.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="mailto:anuschka@koerpergeheimnis.ch" class="studio-link">anuschka@koerpergeheimnis.ch</a></div>
+    <div class="studio-contact"><a href="https://koerpergeheimnis.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:anuschka@koerpergeheimnis.ch" class="canton-contact-link">anuschka@koerpergeheimnis.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Personal Training</span></div>
 </div>

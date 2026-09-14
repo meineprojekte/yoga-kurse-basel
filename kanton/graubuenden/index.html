@@ -1415,12 +1415,19 @@
             margin: 10px 0;
             font-size: 0.9rem;
         }
-        .studio-link {
+        /* Named canton-* on purpose: css/style.css already owns .studio-link for
+           the JS-rendered cards on the homepage, where it is a 44px-tall flex tap
+           target. Reusing that name here turned each of the three inline contact
+           links into a block, so Website / phone / e-mail stacked one per line
+           with the &middot; separators stranded on lines of their own. Same
+           specificity, so the inline block below could not win: it only declares
+           colour and weight, and display: flex kept applying. */
+        .canton-contact-link {
             color: #6B5B95;
             text-decoration: none;
             font-weight: 500;
         }
-        .studio-link:hover {
+        .canton-contact-link:hover {
             color: #D4A373;
             text-decoration: underline;
         }
@@ -1721,7 +1728,7 @@
     <p class="studio-address">Bahnhofplatz 10, 7001 Chur <span class="addr-label">(Zentrumsnah)</span></p>
     <p class="studio-desc">Yoga Loft im Zentrum von Chur nahe dem Bahnhof. Abwechslungsreiches Yogaangebot mit wöchentlichen Lektionen, Kursen, Workshops, Schwangerschaftsyoga und Massagen. Birthlight-zertifiziert.</p>
     <div class="studio-styles"><span class="style-badge">Yin Yoga</span><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Schwangerschaftsyoga</span></div>
-    <div class="studio-contact"><a href="https://www.yogaloftchur.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 76 731 58 15" class="studio-link">+41 76 731 58 15</a> &middot; <a href="mailto:info@yogaloftchur.ch" class="studio-link">info@yogaloftchur.ch</a></div>
+    <div class="studio-contact"><a href="https://www.yogaloftchur.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 731 58 15" class="canton-contact-link">+41 76 731 58 15</a> &middot; <a href="mailto:info@yogaloftchur.ch" class="canton-contact-link">info@yogaloftchur.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Schwangerschaftsyoga</span><span class="feature-badge">Birthlight zertifiziert</span><span class="feature-badge">Naturheilkunde-Massagen</span><span class="feature-badge">Workshops</span></div>
 </div>
@@ -1732,7 +1739,7 @@
     <p class="studio-address">Rabengasse 10, 7000 Chur <span class="addr-label">(Altstadt)</span></p>
     <p class="studio-desc">Yoga Pyramide mitten in der Altstadt von Chur - ein Ort der Ruhe und Stille. Workshops und regelmässige Kurse.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span></div>
-    <div class="studio-contact"><a href="https://yogapyramide.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 81 641 36 41" class="studio-link">+41 81 641 36 41</a> &middot; <a href="mailto:info@yogapyramide.ch" class="studio-link">info@yogapyramide.ch</a></div>
+    <div class="studio-contact"><a href="https://yogapyramide.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 81 641 36 41" class="canton-contact-link">+41 81 641 36 41</a> &middot; <a href="mailto:info@yogapyramide.ch" class="canton-contact-link">info@yogapyramide.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Workshops</span><span class="feature-badge">Altstadt-Lage</span></div>
 </div>
@@ -1743,7 +1750,7 @@
     <p class="studio-address">Reichsgasse 25, 7000 Chur</p>
     <p class="studio-desc">Fortlaufende Kurse in Yoga, Yoga &amp; Klang, Klangreisen und klangvollem Zentrieren in Chur. Auch Seminarraum-Vermietung.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Yoga &amp; Klang</span><span class="style-badge">Aerial Yoga</span><span class="style-badge">Taichi</span><span class="style-badge">Qigong</span></div>
-    <div class="studio-contact"><a href="https://belude.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 77 406 52 30" class="studio-link">+41 77 406 52 30</a> &middot; <a href="mailto:lucrezia@belude.ch" class="studio-link">lucrezia@belude.ch</a></div>
+    <div class="studio-contact"><a href="https://belude.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 77 406 52 30" class="canton-contact-link">+41 77 406 52 30</a> &middot; <a href="mailto:lucrezia@belude.ch" class="canton-contact-link">lucrezia@belude.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Klangarbeit</span><span class="feature-badge">Klangreisen</span><span class="feature-badge">Aerial Yoga</span><span class="feature-badge">Seminarraumvermietung</span></div>
 </div>
@@ -1754,7 +1761,7 @@
     <p class="studio-address">Bankstrasse 8, 7000 Chur <span class="addr-label">(RAW Station)</span></p>
     <p class="studio-desc">RAW Yoga im Herzen der Altstadt Chur, im neuen urbanen Treffpunkt RAW Station. Tägliche Yoga-Angebote in einer Oase für Gemeinschaft und achtsame Begegnung. Kein Abo oder Voranmeldung nötig für die erste Klasse.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span></div>
-    <div class="studio-contact"><a href="https://rawstation.ch/yoga-by-raw-station/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a></div>
+    <div class="studio-contact"><a href="https://rawstation.ch/yoga-by-raw-station/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Drop-in ohne Anmeldung</span><span class="feature-badge">Spontan buchbar</span><span class="feature-badge">Urban Community Space</span></div>
 </div>
@@ -1765,7 +1772,7 @@
     <p class="studio-address">Mattastrasse 6, 7270 Davos Platz</p>
     <p class="studio-desc">Yogaplaza in Davos Platz bietet Klassen für Einsteiger und Erfahrene. Es gibt eine passende Klasse für jeden. Erreichbar auch via WhatsApp.</p>
     <div class="studio-styles"><span class="style-badge">Yoga</span></div>
-    <div class="studio-contact"><a href="https://www.yogaplazadavos.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 81 415 21 88" class="studio-link">+41 81 415 21 88</a></div>
+    <div class="studio-contact"><a href="https://www.yogaplazadavos.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 81 415 21 88" class="canton-contact-link">+41 81 415 21 88</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">WhatsApp Kontakt</span></div>
 </div>
@@ -1776,7 +1783,7 @@
     <p class="studio-address">Cho d&#x27;Punt 10, 7503 Samedan</p>
     <p class="studio-desc">Holistisches Yoga-Studio in Samedan im Engadin. Bietet fachkundigen Yogaunterricht in Ashtanga, Hatha und Vinyasa sowie Astrologie-Sessions, Reiki, Tarot und Sound Baths.</p>
     <div class="studio-styles"><span class="style-badge">Ashtanga Yoga</span><span class="style-badge">Hatha Yoga</span><span class="style-badge">Vinyasa</span></div>
-    <div class="studio-contact"><a href="https://yogaloftengadin.ch/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="tel:+41 76 501 43 42" class="studio-link">+41 76 501 43 42</a> &middot; <a href="mailto:sol@yogastrologa.com" class="studio-link">sol@yogastrologa.com</a></div>
+    <div class="studio-contact"><a href="https://yogaloftengadin.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 501 43 42" class="canton-contact-link">+41 76 501 43 42</a> &middot; <a href="mailto:sol@yogastrologa.com" class="canton-contact-link">sol@yogastrologa.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Sound Baths</span><span class="feature-badge">Reiki</span><span class="feature-badge">Astrologie</span><span class="feature-badge">Tarot</span></div>
 </div>
@@ -1787,7 +1794,7 @@
     <p class="studio-address">Masanserstrasse 223, 7000 Chur <span class="addr-label">(Turnhalle Masans (Montag))</span></p>
     <p class="studio-desc">Acroyoga und Partnerakrobatik in Chur und Samedan. Montags in der Turnhalle Masans und Donnerstags in der Turnhalle Montalin 2. Im Sommer auch draussen. Auch Sessions in Samedan (Montags 19:30).</p>
     <div class="studio-styles"><span class="style-badge">Acroyoga</span><span class="style-badge">Partnerakrobatik</span><span class="style-badge">Luftakrobatik</span></div>
-    <div class="studio-contact"><a href="https://acroyoga.group/" target="_blank" rel="nofollow noopener noreferrer" class="studio-link">Website</a> &middot; <a href="mailto:info@acroyoga.group" class="studio-link">info@acroyoga.group</a></div>
+    <div class="studio-contact"><a href="https://acroyoga.group/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:info@acroyoga.group" class="canton-contact-link">info@acroyoga.group</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Acroyoga</span><span class="feature-badge">Partnerakrobatik</span><span class="feature-badge">Outdoor Training im Sommer</span></div>
 </div>
