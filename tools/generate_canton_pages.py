@@ -477,8 +477,9 @@ def generate_schema_local_business(studios):
     return businesses
 
 
-def generate_faq_schema(canton_name, canton_abbr, num_studios, num_classes, styles, cities, studios):
-    """Generate FAQPage schema with location-specific Q&A."""
+def build_faqs(canton_name, canton_abbr, num_studios, num_classes, styles, cities, studios):
+    """The canton Q&A. One source for both the visible FAQ section and the
+    FAQPage JSON-LD, so the two can never drift apart."""
     # Compute price range from studios with pricing
     prices = [s["pricing"]["single"] for s in studios
               if isinstance(s.get("pricing"), dict) and s["pricing"].get("single")
@@ -509,6 +510,11 @@ def generate_faq_schema(canton_name, canton_abbr, num_studios, num_classes, styl
         }
     ]
 
+    return faqs
+
+
+def generate_faq_schema(faqs):
+    """FAQPage JSON-LD built from the same list the page renders."""
     schema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -686,15 +692,296 @@ APP_SCRIPT = """
   }
   chips.forEach(function (chip) {
     chip.addEventListener('click', function () {
-      chips.forEach(function (c) { c.classList.remove('active'); });
-      chip.classList.add('active');
-      style = chip.getAttribute('data-filter');
-      apply();
+      setStyle(chip.getAttribute('data-filter'));
     });
   });
+
+  function setStyle(value) {
+    style = value;
+    chips.forEach(function (c) {
+      c.classList.toggle('active', c.getAttribute('data-filter') === value);
+    });
+    apply();
+  }
+
+  // A style card is a shortcut to the matching chip.
+  document.querySelectorAll('.style-card').forEach(function (card) {
+    function go() {
+      setStyle(card.getAttribute('data-style'));
+      var studios = document.getElementById('studios');
+      if (studios) studios.scrollIntoView({ behavior: 'smooth' });
+    }
+    card.addEventListener('click', go);
+    card.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); }
+    });
+  });
+
+  // --- Map: Leaflet is third party and 40 KB, so it is fetched only if the
+  // --- section is actually reached. Coordinates are already in the HTML.
+  var mapEl = document.getElementById('map');
+  if (mapEl && 'IntersectionObserver' in window) {
+    var mapLoaded = false;
+    new IntersectionObserver(function (entries, obs) {
+      if (!entries[0].isIntersecting || mapLoaded) return;
+      mapLoaded = true;
+      obs.disconnect();
+      var css = document.createElement('link');
+      css.rel = 'stylesheet';
+      css.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+      document.head.appendChild(css);
+      var js = document.createElement('script');
+      js.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+      js.onload = function () {
+        var pts;
+        try { pts = JSON.parse(mapEl.getAttribute('data-points') || '[]'); } catch (e) { return; }
+        if (!pts.length || !window.L) return;
+        var map = L.map(mapEl);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; OpenStreetMap', maxZoom: 18
+        }).addTo(map);
+        var group = [];
+        pts.forEach(function (p) {
+          var esc = function (v) { return String(v == null ? '' : v).replace(/[&<>"]/g, function (c) {
+            return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+          var html = '<strong>' + esc(p.n) + '</strong>';
+          if (p.a) html += '<br>' + esc(p.a);
+          if (p.w) html += '<br><a href="' + esc(p.w) + '" target="_blank" rel="nofollow noopener noreferrer">Website</a>';
+          group.push(L.marker([p.lat, p.lng]).addTo(map).bindPopup(html));
+        });
+        map.fitBounds(L.featureGroup(group).getBounds().pad(0.15));
+      };
+      document.head.appendChild(js);
+    }, { rootMargin: '300px' }).observe(mapEl);
+  }
+
+  // --- Feedback: same payload and endpoint as the homepage form.
+  var fb = document.getElementById('feedbackForm');
+  if (fb) {
+    var loadedAt = Date.now(), sent = false;
+    fb.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var hp = document.getElementById('feedbackWebsite');
+      if (hp && hp.value) return;                       // honeypot
+      if (sent || Date.now() - loadedAt < 3000) return; // one per session, not instant
+      var msg = document.getElementById('feedbackMessage').value;
+      if (!msg.trim() || msg.length > 5000) return;
+      var nameEl = document.getElementById('feedbackName');
+      var name = nameEl ? nameEl.value : '';
+      if (name.length > 200) return;
+      sent = true;
+      var btn = fb.querySelector('button[type=submit]'), label = btn ? btn.textContent : '';
+      if (btn) { btn.disabled = true; btn.textContent = '...'; }
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'https://script.google.com/macros/s/AKfycbzUqZRewaeoBMLLQHP5TVfVMr8FrwSO-67p6nC-BXvqg-tS-hUWFH7DY7gsrRUhTD4Eag/exec', true);
+      xhr.setRequestHeader('Content-Type', 'text/plain');
+      xhr.onload = function () {
+        fb.style.display = 'none';
+        var ok = document.getElementById('feedbackSuccess');
+        if (ok) { ok.style.display = ''; ok.setAttribute('role', 'status'); }
+      };
+      xhr.onerror = function () {
+        sent = false;
+        if (btn) { btn.disabled = false; btn.textContent = label; }
+        alert('Fehler beim Senden. Bitte versuche es nochmal.');
+      };
+      xhr.send(JSON.stringify({
+        type: document.getElementById('feedbackType').value,
+        name: name || 'Anonym',
+        message: msg + ' [' + location.pathname + ']'
+      }));
+    });
+  }
 })();
 </script>
 """
+
+
+# --- Sections ported from the JS app -------------------------------------
+# The homepage renders these six sections with JavaScript at #canton/<id>.
+# A #fragment is not a URL — the server never receives it and Google drops it —
+# so that view can never be indexed. These pages are the real URLs, and until
+# now they carried only three of the app's sections. Everything below is written
+# into the HTML at build time, so the pages match the app AND stay crawlable.
+
+# Only these 14 icons exist in img/yoga-styles.svg. The app derives the id from
+# the style name and silently renders nothing for the ~40 styles that have no
+# icon; here anything unknown falls back to yoga-default.
+STYLE_ICONS = {"vinyasa", "hatha", "yin", "ashtanga", "iyengar", "kundalini", "aerial",
+               "bikram", "jivamukti", "restorative", "prenatal", "pilates", "nidra"}
+
+
+def style_icon_key(style):
+    key = "".join(ch for ch in style.lower() if ch.isalpha())
+    key = key.replace("hot", "bikram").replace("yoganidra", "nidra")
+    return key if key in STYLE_ICONS else "default"
+
+
+def generate_styles_section(studios, canton_name):
+    """#stile - one card per yoga style, with how many studios offer it."""
+    counts = {}
+    for st in studios:
+        for style in st.get("styles", []):
+            counts[style] = counts.get(style, 0) + 1
+    if not counts:
+        return ""
+    cards = []
+    for style, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])):
+        word = "Studio" if n == 1 else "Studios"
+        cards.append(
+            f'<div class="style-card" data-style="{escape(style.lower())}" role="button" tabindex="0" '
+            f'aria-label="{escape(style)} \u2014 {n} {word}">'
+            f'<svg class="style-card-icon" width="48" height="48" aria-hidden="true">'
+            f'<use href="../../img/yoga-styles.svg#yoga-{style_icon_key(style)}"></use></svg>'
+            f'<div class="style-card-name">{escape(style)}</div>'
+            f'<div class="style-card-count">{n} {word}</div></div>')
+    return f'''<section class="styles-section" id="stile">
+        <div class="container">
+            <h2 class="section-title">Yoga-Stile in {escape(canton_name)}</h2>
+            <p class="section-subtitle">Entdecke die Vielfalt der Yoga-Stile, die in {escape(canton_name)} angeboten werden</p>
+            <div class="styles-grid">{"".join(cards)}</div>
+        </div>
+    </section>'''
+
+
+def fmt_price(v):
+    if not isinstance(v, (int, float)):
+        return "&mdash;"
+    return f"CHF {int(v)}" if float(v).is_integer() else f"CHF {v}"
+
+
+def generate_price_section(canton_id, canton_name):
+    """#vergleich - price table, restricted to this canton.
+
+    The app shows the whole national index here even on a canton view, which is
+    why its Bern page lists studios from Lausanne and Genève. On a page that is
+    about one canton, only that canton belongs in the table.
+    """
+    index = load_json(os.path.join(DATA_DIR, "prices_all.json"))
+    rows_data = [r for r in index.get("studios", []) if r.get("canton") == canton_id]
+    if not rows_data:
+        return ""
+    rows_data.sort(key=lambda r: (r.get("single") is None, r.get("single") or 0, r.get("name", "")))
+    rows = []
+    for i, r in enumerate(rows_data, 1):
+        styles = ", ".join(r.get("styles", [])[:3])
+        if r.get("styles_more"):
+            styles += f' +{r["styles_more"]}'
+        link = (f'<a href="{escape(r["url"])}" target="_blank" rel="nofollow noopener noreferrer" '
+                f'aria-label="Preise von {escape(r.get("name", ""))}">&#8599;</a>') if r.get("url") else ""
+        rows.append(
+            f'<tr class="comp-row-{"even" if i % 2 else "odd"}">'
+            f'<td class="comp-studio" data-label="#">{i}</td>'
+            f'<td class="comp-name" data-label="Studio"><strong>{escape(r.get("name", ""))}</strong> '
+            f'<span class="comp-city">({escape(r.get("city", ""))})</span></td>'
+            f'<td class="comp-price" data-label="Einzeleintritt"><strong>{fmt_price(r.get("single"))}</strong></td>'
+            f'<td class="comp-price" data-label="10er-Karte">{fmt_price(r.get("card_10"))}</td>'
+            f'<td class="comp-price" data-label="Monatsabo">{fmt_price(r.get("monthly"))}</td>'
+            f'<td class="comp-price" data-label="Probestunde">{fmt_price(r.get("trial"))}</td>'
+            f'<td class="comp-styles" data-label="Stile"><small>{escape(styles)}</small></td>'
+            f'<td class="comp-link">{link}</td></tr>')
+    updated = escape(str(index.get("last_updated", ""))[:10])
+    return f'''<section class="comparison-section" id="vergleich">
+        <div class="container">
+            <h2 class="section-title">Preisvergleich {escape(canton_name)}</h2>
+            <p class="section-subtitle">Preise von den Studio-Websites &mdash; mit Quelle und Datum. Stand: {updated}</p>
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead><tr>
+                        <th scope="col">#</th><th scope="col">Studio</th>
+                        <th scope="col">Einzeleintritt</th><th scope="col">10er-Karte</th>
+                        <th scope="col">Monatsabo</th><th scope="col">Probestunde</th>
+                        <th scope="col">Stile</th><th scope="col"><span class="sr-only">Quelle</span></th>
+                    </tr></thead>
+                    <tbody>{"".join(rows)}</tbody>
+                </table>
+            </div>
+            <p class="comparison-note">Angaben ohne Gew\u00e4hr. Massgebend sind die Preise auf der Website des Studios.</p>
+        </div>
+    </section>'''
+
+
+def generate_map_section(studios, canton_name):
+    """#karte - Leaflet map. Coordinates are baked in, so no geocoding at runtime.
+
+    Leaflet is loaded only when the section actually scrolls into view: it is a
+    third-party script and nothing above it on the page needs it.
+    """
+    points = []
+    for st in studios:
+        lat, lng = st.get("lat"), st.get("lng")
+        if not (isinstance(lat, (int, float)) and isinstance(lng, (int, float))):
+            continue
+        addr = ""
+        for a in st.get("addresses", []):
+            addr = ", ".join(x for x in [a.get("street", ""), f'{a.get("zip", "")} {a.get("city", "")}'.strip()] if x)
+            break
+        points.append({"n": st.get("name", ""), "a": addr, "lat": lat, "lng": lng,
+                       "w": st.get("website", "")})
+    if not points:
+        return ""
+    return f'''<section class="map-section" id="karte">
+        <div class="container">
+            <h2 class="section-title">Studios auf der Karte &mdash; {escape(canton_name)}</h2>
+            <p class="section-subtitle">Alle {len(points)} Standorte auf einen Blick</p>
+            <div class="map-container">
+                <div id="map" class="map" data-points=\'{escape(json.dumps(points, ensure_ascii=False))}\'></div>
+            </div>
+        </div>
+    </section>'''
+
+
+def generate_faq_section(faqs):
+    """#faq - the same Q&A that goes into the FAQPage JSON-LD, but visible.
+
+    Google asks that FAQ rich results correspond to content a visitor can
+    actually read; until now these answers existed only inside the JSON-LD.
+    """
+    items = "".join(
+        f'<details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">'
+        f'<summary itemprop="name">{escape(f["q"])}</summary>'
+        f'<div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">'
+        f'<div itemprop="text">{escape(f["a"])}</div></div></details>'
+        for f in faqs)
+    return f'''<section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title">H\u00e4ufige Fragen</h2>
+            <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">{items}</div>
+        </div>
+    </section>'''
+
+
+FEEDBACK_ENDPOINT = ("https://script.google.com/macros/s/"
+                     "AKfycbzUqZRewaeoBMLLQHP5TVfVMr8FrwSO-67p6nC-BXvqg-tS-hUWFH7DY7gsrRUhTD4Eag/exec")
+
+
+def generate_feedback_section(canton_name):
+    """#feedback - same field ids, same payload and same endpoint as the app,
+    so messages land in the existing Apps Script sheet with nothing new to set up."""
+    return f'''<section class="feedback-section" id="feedback">
+        <div class="container">
+            <h2 class="section-title">Feedback &amp; Vorschl\u00e4ge</h2>
+            <p class="section-subtitle">Hilf uns, diese Seite zu verbessern. Fehlt ein Studio? Stimmt ein Stundenplan nicht? Hast du Ideen?</p>
+            <div class="feedback-form-wrapper">
+                <form class="feedback-form" id="feedbackForm">
+                    <div class="feedback-row">
+                        <select id="feedbackType" name="type" aria-label="Art des Feedbacks">
+                            <option value="Studio fehlt">Studio fehlt</option>
+                            <option value="Falsche Angabe">Falsche Angabe</option>
+                            <option value="Stundenplan">Stundenplan stimmt nicht</option>
+                            <option value="Idee">Idee / Vorschlag</option>
+                            <option value="Anderes">Anderes</option>
+                        </select>
+                        <input type="text" id="feedbackName" name="name" placeholder="Name (optional)" maxlength="200" autocomplete="name">
+                    </div>
+                    <textarea id="feedbackMessage" name="message" rows="4" maxlength="5000" placeholder="Deine Nachricht zu {escape(canton_name)}" required></textarea>
+                    <input type="text" id="feedbackWebsite" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px" hidden>
+                    <button type="submit" class="btn btn-primary">Senden</button>
+                </form>
+                <p id="feedbackSuccess" style="display:none">Danke! Deine Nachricht ist angekommen.</p>
+            </div>
+        </div>
+    </section>'''
 
 
 def generate_page(canton, studios, classes, all_cantons):
@@ -766,7 +1053,15 @@ def generate_page(canton, studios, classes, all_cantons):
     for biz in local_businesses:
         local_biz_scripts += f'\n    <script type="application/ld+json">\n    {json.dumps(biz, ensure_ascii=False, indent=2)}\n    </script>'
 
-    schema_faq = generate_faq_schema(canton_name, canton_abbr, num_studios, num_classes, all_styles, cities, studios)
+    faqs = build_faqs(canton_name, canton_abbr, num_studios, num_classes, all_styles, cities, studios)
+    schema_faq = generate_faq_schema(faqs)
+
+    # The six sections the JS app renders at #canton/<id>, written into the HTML.
+    styles_section = generate_styles_section(studios, canton_name)
+    price_section = generate_price_section(canton_id, canton_name)
+    map_section = generate_map_section(studios, canton_name)
+    faq_section = generate_faq_section(faqs)
+    feedback_section = generate_feedback_section(canton_name)
     event_scripts = generate_event_schema(classes, studios, canton_name)
 
     # Content sections
@@ -1159,9 +1454,10 @@ def generate_page(canton, studios, classes, all_cantons):
                     <li><a href="#studios" class="nav-link">Studios</a></li>
                     <li><a href="#stundenplan" class="nav-link">Stundenplan</a></li>
                     <li><a href="#andere-kantone" class="nav-link">Kantone</a></li>
-                    <li><a href="../../#stile" class="nav-link">Yoga-Stile</a></li>
-                    <li><a href="../../#karte" class="nav-link">Karte</a></li>
-                    <li><a href="../../#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#stile" class="nav-link">Yoga-Stile</a></li>
+                    <li><a href="#vergleich" class="nav-link">Preise</a></li>
+                    <li><a href="#karte" class="nav-link">Karte</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
                     <li><a href="../../blog/" class="nav-link">Blog</a></li>
                 </ul>
             </nav>
@@ -1221,10 +1517,10 @@ def generate_page(canton, studios, classes, all_cantons):
         </nav>
     </div>
 
-    <!-- Description -->
-    <section class="canton-section">
+    <!-- Guide -->
+    <section class="canton-section" id="guide">
         <div class="canton-container canton-description">
-            <h2>Yoga im Kanton {escape(canton_name)}</h2>
+            <h2>Yoga Guide {escape(canton_name)}</h2>
             {desc_html}
         </div>
     </section>
@@ -1237,6 +1533,8 @@ def generate_page(canton, studios, classes, all_cantons):
         </div>
     </section>
 
+    {styles_section}
+
     <!-- Schedule -->
     <section class="canton-section" id="stundenplan">
         <div class="canton-container">
@@ -1245,6 +1543,12 @@ def generate_page(canton, studios, classes, all_cantons):
             {schedule_html}
         </div>
     </section>
+
+    {price_section}
+
+    {map_section}
+
+    {faq_section}
 
     {related_html}
 
@@ -1257,6 +1561,8 @@ def generate_page(canton, studios, classes, all_cantons):
             </div>
         </div>
     </section>
+
+    {feedback_section}
 
     <!-- Footer -->
     <footer class="canton-footer">
