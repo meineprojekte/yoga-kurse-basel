@@ -1593,6 +1593,7 @@ def generate_page(canton, studios, classes, all_cantons):
     <!-- Style filters -->
     <section class="filters-bar">
         <div class="container">
+            <h2 class="sr-only">Filter</h2>
             <div class="filters-quick">
                 {chips_html}
             </div>
