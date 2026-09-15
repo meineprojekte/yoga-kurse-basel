@@ -44,7 +44,7 @@
     "url": "https://meineprojekte.github.io/yoga-kurse-basel/"
   },
   "inLanguage": "de",
-  "dateModified": "2026-09-14",
+  "dateModified": "2026-09-15",
   "about": {
     "@type": "Thing",
     "name": "Yoga",
@@ -1974,55 +1974,23 @@
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="../../css/fonts.css">
 
+    <!-- Applies the saved theme before first paint, so arriving here from the
+         homepage in dark mode does not flash white. Same key as js/app.min.js. -->
+    <script>try{var t=localStorage.getItem('yogabasel-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+
     <!-- Main site CSS -->
     <link rel="stylesheet" href="../../css/style.css">
 
     <!-- Canton page specific styles -->
     <style>
-        .canton-hero {
-            background: linear-gradient(135deg, #6B5B95 0%, #8B7DB5 40%, #D4A373 100%);
-            color: #fff;
-            padding: 80px 0 60px;
-            text-align: center;
-        }
-        .canton-hero h1 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 2.8rem;
-            margin-bottom: 8px;
-            font-weight: 700;
-        }
-        .canton-hero .canton-subtitle {
-            font-size: 1.15rem;
-            opacity: 0.92;
-            margin-bottom: 24px;
-        }
-        .canton-stats {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .stat-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .stat-number {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 2.2rem;
-            font-weight: 700;
-            line-height: 1;
-        }
-        .stat-label {
-            font-size: 0.9rem;
-            opacity: 0.85;
-            margin-top: 4px;
-        }
+        /* Same width as .container in css/style.css, so these sections line up
+           with the app header, hero and studio grid instead of sitting in a
+           narrower column of their own. */
         .canton-container {
-            max-width: 1100px;
+            width: 100%;
+            max-width: var(--container-max, 1280px);
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 var(--spacing-lg, 24px);
         }
         .canton-section {
             padding: 48px 0;
@@ -2041,60 +2009,6 @@
             color: #444;
             margin-bottom: 16px;
             max-width: 800px;
-        }
-        .studio-card {
-            background: #fff;
-            border: 1px solid #E8E8E8;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            transition: box-shadow 0.25s ease, transform 0.25s ease;
-        }
-        .studio-card:hover {
-            box-shadow: 0 6px 20px rgba(107,91,149,0.12);
-            transform: translateY(-2px);
-        }
-        .studio-card-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 10px;
-        }
-        .studio-name {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.3rem;
-            color: #2D2D2D;
-            margin: 0;
-        }
-        .studio-address {
-            font-size: 0.92rem;
-            color: #666;
-            margin-bottom: 4px;
-        }
-        .addr-label {
-            font-size: 0.82rem;
-            color: #999;
-        }
-        .studio-desc {
-            font-size: 0.95rem;
-            color: #555;
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-        .studio-styles {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin: 12px 0;
-        }
-        .style-badge {
-            background: #F3F0F8;
-            color: #6B5B95;
-            padding: 3px 10px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
         }
         .studio-contact {
             margin: 10px 0;
@@ -2135,16 +2049,6 @@
             font-size: 0.78rem;
             font-weight: 500;
             border: 1px solid #E8C9A4;
-        }
-        .dropin-badge {
-            background: #4CAF50;
-            color: #fff;
-            padding: 2px 10px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-left: 10px;
-            vertical-align: middle;
         }
         .no-data {
             color: #999;
@@ -2269,49 +2173,6 @@
         .canton-breadcrumb a:hover {
             text-decoration: underline;
         }
-        .canton-header {
-            background: #fff;
-            border-bottom: 1px solid #E8E8E8;
-            padding: 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .canton-header-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 14px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .canton-logo {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.3rem;
-            color: #6B5B95;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .canton-logo strong {
-            color: #D4A373;
-        }
-        .canton-nav {
-            display: flex;
-            gap: 20px;
-            list-style: none;
-        }
-        .canton-nav a {
-            color: #555;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .canton-nav a:hover {
-            color: #6B5B95;
-        }
         .canton-footer {
             background: #2D2D2D;
             color: #aaa;
@@ -2326,41 +2187,113 @@
         .canton-footer a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 768px) {
-            .canton-hero h1 { font-size: 1.8rem; }
-            .canton-stats { gap: 24px; }
-            .stat-number { font-size: 1.6rem; }
-            .canton-section h2 { font-size: 1.4rem; }
-            .canton-nav { gap: 12px; }
-            .canton-nav a { font-size: 0.8rem; }
-            .studio-card { padding: 16px; }
-            .canton-header-inner { flex-direction: column; gap: 10px; }
+        /* Hero, header, grid and cards are styled by css/style.css, exactly as on
+           the homepage — including their breakpoints. Only what is specific to
+           this page needs a rule here. */
+        .canton-toolbar {
+            margin: 0 0 18px;
         }
-        @media (max-width: 480px) {
-            .canton-hero { padding: 60px 0 40px; }
-            .canton-hero h1 { font-size: 1.5rem; }
-            .canton-stats { flex-direction: column; gap: 16px; }
+        .canton-count {
+            font-size: 0.9rem;
+            color: var(--color-text-light, #777);
+            margin: 0;
+        }
+        .canton-noresult {
+            margin: 24px 0 0;
+            padding: 20px;
+            text-align: center;
+            color: var(--color-text-light, #777);
+            background: var(--color-surface, #F8F8F8);
+            border-radius: 12px;
+        }
+        .studios-grid .studio-contact {
+            margin: 10px 0 0;
+        }
+        @media (max-width: 768px) {
+            .canton-section h2 { font-size: 1.4rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="canton-header">
-        <div class="canton-header-inner">
-            <a href="../../" class="canton-logo">
-                <span>🧘</span>
-                <span>Yoga<strong>Schweiz</strong></span>
+    <!-- Header: same markup and classes as the JS app on the homepage, so the
+         two views look like one site. Section links that exist on this page stay
+         local; app-only features point back to the homepage. -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="../../" class="logo">
+                <span class="logo-icon">🧘</span>
+                <span class="logo-text">Yoga<strong>Schweiz</strong></span>
             </a>
-            <nav>
-                <ul class="canton-nav">
-                    <li><a href="../../">Home</a></li>
-                    <li><a href="#studios">Studios</a></li>
-                    <li><a href="#stundenplan">Stundenplan</a></li>
-                    <li><a href="#andere-kantone">Kantone</a></li>
+            <nav class="nav" id="nav" aria-label="Hauptnavigation">
+                <ul class="nav-list">
+                    <li><a href="#studios" class="nav-link">Studios</a></li>
+                    <li><a href="#stundenplan" class="nav-link">Stundenplan</a></li>
+                    <li><a href="#andere-kantone" class="nav-link">Kantone</a></li>
+                    <li><a href="../../#stile" class="nav-link">Yoga-Stile</a></li>
+                    <li><a href="../../#karte" class="nav-link">Karte</a></li>
+                    <li><a href="../../#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="../../blog/" class="nav-link">Blog</a></li>
                 </ul>
             </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Design wechseln" title="Dark/Light Mode">
+                    <svg class="icon-sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Alle Yoga-Kurse in Basel-Stadt<br><span class="hero-accent">Studios &amp; Stundenplan auf einen Blick</span></h1>
+            <p class="hero-subtitle">Kanton Basel-Stadt (BS) &bull; 32 Studios &bull; Wöchentlich aktualisiert</p>
+
+            <div class="canton-selector">
+                <label class="canton-selector-label" for="cantonSelect">Wähle deinen Kanton:</label>
+                <select id="cantonSelect" class="canton-select" aria-label="Kanton wechseln">
+                    <option value="../aargau/">Aargau</option><option value="../appenzell-ar/">Appenzell A.Rh.</option><option value="../appenzell-ir/">Appenzell I.Rh.</option><option value="../basel-landschaft/">Basel-Landschaft</option><option value="../basel-stadt/" selected>Basel-Stadt</option><option value="../bern/">Bern</option><option value="../fribourg/">Freiburg</option><option value="../geneve/">Genf</option><option value="../glarus/">Glarus</option><option value="../graubuenden/">Graubünden</option><option value="../jura/">Jura</option><option value="../luzern/">Luzern</option><option value="../neuchatel/">Neuenburg</option><option value="../nidwalden/">Nidwalden</option><option value="../obwalden/">Obwalden</option><option value="../schaffhausen/">Schaffhausen</option><option value="../schwyz/">Schwyz</option><option value="../solothurn/">Solothurn</option><option value="../st-gallen/">St. Gallen</option><option value="../ticino/">Tessin</option><option value="../thurgau/">Thurgau</option><option value="../uri/">Uri</option><option value="../vaud/">Waadt</option><option value="../valais/">Wallis</option><option value="../zug/">Zug</option><option value="../zurich/">Zürich</option>
+                </select>
+            </div>
+
+            <div class="hero-search">
+                <div class="search-wrapper">
+                    <svg class="search-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <input type="search" id="studioSearch" class="search-input" placeholder="Studio, Yoga-Stil oder Quartier suchen..." autocomplete="off" aria-label="Yoga-Studio suchen">
+                    <button class="search-clear" id="searchClear" aria-label="Suche löschen" style="display:none">&times;</button>
+                </div>
+            </div>
+
+            <div class="hero-stats">
+    <div class="stat">
+        <span class="stat-number">32</span>
+        <span class="stat-label">Studios</span>
+    </div>
+    <div class="stat">
+        <span class="stat-number">404</span>
+        <span class="stat-label">Kurse/Woche</span>
+    </div>
+    <div class="stat">
+        <span class="stat-number">72</span>
+        <span class="stat-label">Yoga-Stile</span>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Style filters -->
+    <section class="filters-bar">
+        <div class="container">
+            <div class="filters-quick">
+                <button type="button" class="chip active" data-filter="all">Alle</button><button type="button" class="chip" data-filter="vinyasa">Vinyasa</button><button type="button" class="chip" data-filter="hatha">Hatha</button><button type="button" class="chip" data-filter="pilates">Pilates</button><button type="button" class="chip" data-filter="yin">Yin</button><button type="button" class="chip" data-filter="aerial yoga">Aerial Yoga</button><button type="button" class="chip" data-filter="yin yoga">Yin Yoga</button><button type="button" class="chip" data-filter="iyengar yoga">Iyengar Yoga</button><button type="button" class="chip" data-filter="ashtanga mysore">Ashtanga Mysore</button><button type="button" class="chip" data-filter="hatha yoga">Hatha Yoga</button><button type="button" class="chip" data-filter="kids yoga">Kids Yoga</button>
+            </div>
+        </div>
+    </section>
 
     <!-- Breadcrumb -->
     <div class="canton-container">
@@ -2370,28 +2303,6 @@
             <strong>Basel-Stadt (BS)</strong>
         </nav>
     </div>
-
-    <!-- Hero -->
-    <section class="canton-hero">
-        <div class="canton-container">
-            <h1>Yoga in Basel-Stadt</h1>
-            <p class="canton-subtitle">Kanton Basel-Stadt (BS) — Alle Yoga-Studios und Kurse auf einen Blick</p>
-            <div class="canton-stats">
-    <div class="stat-item">
-        <span class="stat-number">32</span>
-        <span class="stat-label">Studios</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-number">404</span>
-        <span class="stat-label">Kurse/Woche</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-number">72</span>
-        <span class="stat-label">Yoga-Stile</span>
-    </div>
-</div>
-        </div>
-    </section>
 
     <!-- Description -->
     <section class="canton-section">
@@ -2411,358 +2322,333 @@
     <section class="canton-section" id="studios">
         <div class="canton-container">
             <h2>Yoga-Studios in Basel-Stadt (32)</h2>
-            <div class="studio-card">
-    <div class="studio-card-header">
-        <h3 class="studio-name">B.Yoga Basel<span class="dropin-badge">Drop-in</span></h3>
+            <div class="canton-toolbar">
+        <p class="canton-count">Zeige <strong id="shownCount">32</strong> von <strong>32</strong> Studios</p>
+        <p class="canton-noresult" id="noResult" hidden>Keine Studios gefunden. Andere Filter versuchen.</p>
     </div>
-    <p class="studio-address">Hutgasse 1, 4001 Basel <span class="addr-label">(Hauptstudio (Marktplatz))</span></p><p class="studio-address">Aeschengraben 29, 4002 Basel <span class="addr-label">(INDIGO Fitness (8./9. OG))</span></p>
-    <p class="studio-desc">Das grösste Yoga-Studio in Basel mit 30-40 Klassen pro Woche in über 12 Stilen. Drop-in willkommen, alle Levels.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Ashtanga</span><span class="style-badge">Hatha</span><span class="style-badge">Jivamukti</span><span class="style-badge">Kundalini</span><span class="style-badge">Flow</span><span class="style-badge">Yin</span><span class="style-badge">Restorative</span><span class="style-badge">Prenatal</span><span class="style-badge">Postnatal</span><span class="style-badge">Kids</span><span class="style-badge">Family</span><span class="style-badge">Dharma Yoga</span><span class="style-badge">Meditation</span></div>
+    <div class="studios-grid" id="studiosGrid">
+<article class="studio-card" data-styles="vinyasa|ashtanga|hatha|jivamukti|kundalini|flow|yin|restorative|prenatal|postnatal|kids|family|dharma yoga|meditation" data-search="b.yoga basel das grösste yoga-studio in basel mit 30-40 klassen pro woche in über 12 stilen. drop-in willkommen, alle levels. hutgasse 1, 4001 basel — hauptstudio (marktplatz) aeschengraben 29, 4002 basel — indigo fitness (8./9. og) vinyasa ashtanga hatha jivamukti kundalini flow yin restorative prenatal postnatal kids family dharma yoga meditation teacher training workshops 2 standorte  deutsch english">
+    <div class="studio-card-header">
+        <h3 class="studio-name">B.Yoga Basel</h3><span class="studio-badge drop-in">Drop-in</span>
+    </div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Hutgasse 1, 4001 Basel — Hauptstudio (Marktplatz)</span></div><div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Aeschengraben 29, 4002 Basel — INDIGO Fitness (8./9. OG)</span></div>
+    <p class="studio-description">Das grösste Yoga-Studio in Basel mit 30-40 Klassen pro Woche in über 12 Stilen. Drop-in willkommen, alle Levels.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa</span><span class="style-tag">Ashtanga</span><span class="style-tag">Hatha</span><span class="style-tag">Jivamukti</span><span class="style-tag">Kundalini</span><span class="style-tag">Flow</span><span class="style-tag">Yin</span><span class="style-tag">Restorative</span><span class="style-tag">Prenatal</span><span class="style-tag">Postnatal</span><span class="style-tag">Kids</span><span class="style-tag">Family</span><span class="style-tag">Dharma Yoga</span><span class="style-tag">Meditation</span></div>
     <div class="studio-contact"><a href="https://www.byoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 61 261 32 64" class="canton-contact-link">+41 61 261 32 64</a> &middot; <a href="mailto:info@byoga.ch" class="canton-contact-link">info@byoga.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Teacher Training</span><span class="feature-badge">Workshops</span><span class="feature-badge">2 Standorte</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa|alignment|ashtanga-inspired|katonah|yin|embodied flow|meditation|kirtan|pilates" data-search="the looking glass basel wunderschönes studio mit blick auf den rhein in kleinbasel. 7 tage die woche geöffnet. feldbergstrasse 1, 4057 basel — kleinbasel (am rhein) vinyasa alignment ashtanga-inspired katonah yin embodied flow meditation kirtan pilates rheinblick teacher training reiki retreats kristen watson silas julia nora yuma margherita rinny biberstein english deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">The Looking Glass Basel<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">The Looking Glass Basel</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Feldbergstrasse 1, 4057 Basel <span class="addr-label">(Kleinbasel (am Rhein))</span></p>
-    <p class="studio-desc">Wunderschönes Studio mit Blick auf den Rhein in Kleinbasel. 7 Tage die Woche geöffnet.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Alignment</span><span class="style-badge">Ashtanga-inspired</span><span class="style-badge">Katonah</span><span class="style-badge">Yin</span><span class="style-badge">Embodied Flow</span><span class="style-badge">Meditation</span><span class="style-badge">Kirtan</span><span class="style-badge">Pilates</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Feldbergstrasse 1, 4057 Basel — Kleinbasel (am Rhein)</span></div>
+    <p class="studio-description">Wunderschönes Studio mit Blick auf den Rhein in Kleinbasel. 7 Tage die Woche geöffnet.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa</span><span class="style-tag">Alignment</span><span class="style-tag">Ashtanga-inspired</span><span class="style-tag">Katonah</span><span class="style-tag">Yin</span><span class="style-tag">Embodied Flow</span><span class="style-tag">Meditation</span><span class="style-tag">Kirtan</span><span class="style-tag">Pilates</span></div>
     <div class="studio-contact"><a href="https://thelookingglassbasel.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: English, Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Rheinblick</span><span class="feature-badge">Teacher Training</span><span class="feature-badge">Reiki</span><span class="feature-badge">Retreats</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa|power yoga|yin yoga|pilates" data-search="niyama studio for yoga &amp; pilates drop-in yoga &amp;amp; pilates im herzen von basel. keine anmeldung nötig. falknerstrasse 35, 4001 basel — zentrum vinyasa power yoga yin yoga pilates drop-in zoom-klassen workshops retreats teacher training regula guldimann martina silas julia deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Niyama Studio for Yoga &amp; Pilates<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Niyama Studio for Yoga &amp; Pilates</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Falknerstrasse 35, 4001 Basel <span class="addr-label">(Zentrum)</span></p>
-    <p class="studio-desc">Drop-in Yoga &amp; Pilates im Herzen von Basel. Keine Anmeldung nötig.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Power Yoga</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Pilates</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Falknerstrasse 35, 4001 Basel — Zentrum</span></div>
+    <p class="studio-description">Drop-in Yoga &amp; Pilates im Herzen von Basel. Keine Anmeldung nötig.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa</span><span class="style-tag">Power Yoga</span><span class="style-tag">Yin Yoga</span><span class="style-tag">Pilates</span></div>
     <div class="studio-contact"><a href="https://www.niyama-yoga.ch/en/start/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Drop-in</span><span class="feature-badge">Zoom-Klassen</span><span class="feature-badge">Workshops</span><span class="feature-badge">Retreats</span><span class="feature-badge">Teacher Training</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yoga|pilates|aerial|meditation|breathwork|sound healing" data-search="anjali yoga &amp; pilates studio yoga, pilates, aerial und mehr. keine anmeldung nötig, auch per livestream verfügbar. spalenvorstadt 11, 4051 basel — hauptstandort stapfelberg 9, 4051 basel — temporär (renovation) yoga pilates aerial meditation breathwork sound healing aerial yoga sound healing breathwork livestream  deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Anjali Yoga &amp; Pilates Studio<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Anjali Yoga &amp; Pilates Studio</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Spalenvorstadt 11, 4051 Basel <span class="addr-label">(Hauptstandort)</span></p><p class="studio-address">Stapfelberg 9, 4051 Basel <span class="addr-label">(Temporär (Renovation))</span></p>
-    <p class="studio-desc">Yoga, Pilates, Aerial und mehr. Keine Anmeldung nötig, auch per Livestream verfügbar.</p>
-    <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Pilates</span><span class="style-badge">Aerial</span><span class="style-badge">Meditation</span><span class="style-badge">Breathwork</span><span class="style-badge">Sound Healing</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Spalenvorstadt 11, 4051 Basel — Hauptstandort</span></div><div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Stapfelberg 9, 4051 Basel — Temporär (Renovation)</span></div>
+    <p class="studio-description">Yoga, Pilates, Aerial und mehr. Keine Anmeldung nötig, auch per Livestream verfügbar.</p>
+    <div class="studio-styles"><span class="style-tag">Yoga</span><span class="style-tag">Pilates</span><span class="style-tag">Aerial</span><span class="style-tag">Meditation</span><span class="style-tag">Breathwork</span><span class="style-tag">Sound Healing</span></div>
     <div class="studio-contact"><a href="https://www.anjali.ch/en" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 722 72 92" class="canton-contact-link">+41 76 722 72 92</a> &middot; <a href="mailto:info@anjali.ch" class="canton-contact-link">info@anjali.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Aerial Yoga</span><span class="feature-badge">Sound Healing</span><span class="feature-badge">Breathwork</span><span class="feature-badge">Livestream</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa flow|ashtanga|jivamukti|slow flow|yin|aerial yoga|family yoga|kids yoga" data-search="yogabloom vielfältiges angebot inkl. aerial und family yoga. neukundenangebot: 14 tage unlimited chf 60. pfluggasslein 1, 4001 basel — altstadt vinyasa flow ashtanga jivamukti slow flow yin aerial yoga family yoga kids yoga aerial yoga family yoga kids yoga teacher training emily sandi kata niels grace deutsch english">
     <div class="studio-card-header">
         <h3 class="studio-name">YOGABLOOM</h3>
     </div>
-    <p class="studio-address">Pfluggasslein 1, 4001 Basel <span class="addr-label">(Altstadt)</span></p>
-    <p class="studio-desc">Vielfältiges Angebot inkl. Aerial und Family Yoga. Neukundenangebot: 14 Tage unlimited CHF 60.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Ashtanga</span><span class="style-badge">Jivamukti</span><span class="style-badge">Slow Flow</span><span class="style-badge">Yin</span><span class="style-badge">Aerial Yoga</span><span class="style-badge">Family Yoga</span><span class="style-badge">Kids Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Pfluggasslein 1, 4001 Basel — Altstadt</span></div>
+    <p class="studio-description">Vielfältiges Angebot inkl. Aerial und Family Yoga. Neukundenangebot: 14 Tage unlimited CHF 60.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa Flow</span><span class="style-tag">Ashtanga</span><span class="style-tag">Jivamukti</span><span class="style-tag">Slow Flow</span><span class="style-tag">Yin</span><span class="style-tag">Aerial Yoga</span><span class="style-tag">Family Yoga</span><span class="style-tag">Kids Yoga</span></div>
     <div class="studio-contact"><a href="https://www.yogabloom.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 650 38 00" class="canton-contact-link">+41 76 650 38 00</a> &middot; <a href="mailto:info@yogabloom.ch" class="canton-contact-link">info@yogabloom.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Aerial Yoga</span><span class="feature-badge">Family Yoga</span><span class="feature-badge">Kids Yoga</span><span class="feature-badge">Teacher Training</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa|hatha|yin|yoga nidra|prenatal" data-search="volta yoga zwei studios in basel, drop-in, keine verpflichtungen. auf deutsch und englisch. prenatal yoga mo 18:30, do 18:00. aeschenvorstadt 57, 4051 basel — studio 1 vinyasa hatha yin yoga nidra prenatal 2 studios prenatal yoga drop-in nico krattli anya hausermann deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Volta Yoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Volta Yoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Aeschenvorstadt 57, 4051 Basel <span class="addr-label">(Studio 1)</span></p>
-    <p class="studio-desc">Zwei Studios in Basel, Drop-in, keine Verpflichtungen. Auf Deutsch und Englisch. Prenatal Yoga Mo 18:30, Do 18:00.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Hatha</span><span class="style-badge">Yin</span><span class="style-badge">Yoga Nidra</span><span class="style-badge">Prenatal</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Aeschenvorstadt 57, 4051 Basel — Studio 1</span></div>
+    <p class="studio-description">Zwei Studios in Basel, Drop-in, keine Verpflichtungen. Auf Deutsch und Englisch. Prenatal Yoga Mo 18:30, Do 18:00.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa</span><span class="style-tag">Hatha</span><span class="style-tag">Yin</span><span class="style-tag">Yoga Nidra</span><span class="style-tag">Prenatal</span></div>
     <div class="studio-contact"><a href="https://en.voltayoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">2 Studios</span><span class="feature-badge">Prenatal Yoga</span><span class="feature-badge">Drop-in</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="bikram hot yoga" data-search="bikram yoga basel das einzige hot-yoga-studio in basel. 26 hatha-posen bei 40°c, 90 minuten. max. 18 teilnehmer. amerbachstrasse 66, 4057 basel — kleinbasel (hinterhof) bikram hot yoga hot yoga 40°c max 18 teilnehmer  english">
     <div class="studio-card-header">
         <h3 class="studio-name">Bikram Yoga Basel</h3>
     </div>
-    <p class="studio-address">Amerbachstrasse 66, 4057 Basel <span class="addr-label">(Kleinbasel (Hinterhof))</span></p>
-    <p class="studio-desc">Das einzige Hot-Yoga-Studio in Basel. 26 Hatha-Posen bei 40°C, 90 Minuten. Max. 18 Teilnehmer.</p>
-    <div class="studio-styles"><span class="style-badge">Bikram Hot Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Amerbachstrasse 66, 4057 Basel — Kleinbasel (Hinterhof)</span></div>
+    <p class="studio-description">Das einzige Hot-Yoga-Studio in Basel. 26 Hatha-Posen bei 40°C, 90 Minuten. Max. 18 Teilnehmer.</p>
+    <div class="studio-styles"><span class="style-tag">Bikram Hot Yoga</span></div>
     <div class="studio-contact"><a href="https://bikramyogabasel.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:hello@bikramyogabasel.ch" class="canton-contact-link">hello@bikramyogabasel.ch</a></div>
     <p class="studio-languages">Sprachen: English</p>
     <div class="studio-features"><span class="feature-badge">Hot Yoga 40°C</span><span class="feature-badge">Max 18 Teilnehmer</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|yin yoga|pilates" data-search="meyo house kleine gruppen für individuelle betreuung. schöner blick auf die altstadt-dächer. auch tcm-praxis (akupunktur, tuina). lindenberg 8, 4058 basel — kleinbasel hatha vinyasa yin yoga pilates kleine gruppen altstadtblick tcm-praxis  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">MEYO HOUSE<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">MEYO HOUSE</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Lindenberg 8, 4058 Basel <span class="addr-label">(Kleinbasel)</span></p>
-    <p class="studio-desc">Kleine Gruppen für individuelle Betreuung. Schöner Blick auf die Altstadt-Dächer. Auch TCM-Praxis (Akupunktur, Tuina).</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Pilates</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Lindenberg 8, 4058 Basel — Kleinbasel</span></div>
+    <p class="studio-description">Kleine Gruppen für individuelle Betreuung. Schöner Blick auf die Altstadt-Dächer. Auch TCM-Praxis (Akupunktur, Tuina).</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Yin Yoga</span><span class="style-tag">Pilates</span></div>
     <div class="studio-contact"><a href="https://www.meyohouse.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:061 556 29 26" class="canton-contact-link">061 556 29 26</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Kleine Gruppen</span><span class="feature-badge">Altstadtblick</span><span class="feature-badge">TCM-Praxis</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|yoga für rücken|schwangerschaftsyoga|postnatal|yoga 60+|qigong" data-search="yoga atelier basel eine oase der stille im herzen der basler altstadt. spezialisiert auf hatha yoga und therapeutisches yoga. petersgasse 32, 4051 basel — altstadt (~2 min. von schifflände) hatha yoga für rücken schwangerschaftsyoga postnatal yoga 60+ qigong yoga 60+ schwangerschaftsyoga rücken-yoga qigong workshops orsina studach deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Atelier Basel<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Atelier Basel</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Petersgasse 32, 4051 Basel <span class="addr-label">(Altstadt (~2 Min. von Schifflände))</span></p>
-    <p class="studio-desc">Eine Oase der Stille im Herzen der Basler Altstadt. Spezialisiert auf Hatha Yoga und therapeutisches Yoga.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Yoga für Rücken</span><span class="style-badge">Schwangerschaftsyoga</span><span class="style-badge">Postnatal</span><span class="style-badge">Yoga 60+</span><span class="style-badge">Qigong</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Petersgasse 32, 4051 Basel — Altstadt (~2 Min. von Schifflände)</span></div>
+    <p class="studio-description">Eine Oase der Stille im Herzen der Basler Altstadt. Spezialisiert auf Hatha Yoga und therapeutisches Yoga.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Yoga für Rücken</span><span class="style-tag">Schwangerschaftsyoga</span><span class="style-tag">Postnatal</span><span class="style-tag">Yoga 60+</span><span class="style-tag">Qigong</span></div>
     <div class="studio-contact"><a href="https://www.yoga-atelier-basel.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 829 47 45" class="canton-contact-link">+41 79 829 47 45</a> &middot; <a href="mailto:orsina@yoga-atelier-basel.ch" class="canton-contact-link">orsina@yoga-atelier-basel.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Yoga 60+</span><span class="feature-badge">Schwangerschaftsyoga</span><span class="feature-badge">Rücken-Yoga</span><span class="feature-badge">Qigong</span><span class="feature-badge">Workshops</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="ashtanga mysore|ashtanga led|hatha|restorative|yoga nidra" data-search="ashtanga yoga basel gemütliche, gut gelegene shala. mysore-stil und geführte klassen für anfänger und fortgeschrittene. spalenring 150, 1. og, 4055 basel ashtanga mysore ashtanga led hatha restorative yoga nidra mysore style weekend workshops  deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Ashtanga Yoga Basel<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Ashtanga Yoga Basel</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Spalenring 150, 1. OG, 4055 Basel</p>
-    <p class="studio-desc">Gemütliche, gut gelegene Shala. Mysore-Stil und geführte Klassen für Anfänger und Fortgeschrittene.</p>
-    <div class="studio-styles"><span class="style-badge">Ashtanga Mysore</span><span class="style-badge">Ashtanga Led</span><span class="style-badge">Hatha</span><span class="style-badge">Restorative</span><span class="style-badge">Yoga Nidra</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Spalenring 150, 1. OG, 4055 Basel</span></div>
+    <p class="studio-description">Gemütliche, gut gelegene Shala. Mysore-Stil und geführte Klassen für Anfänger und Fortgeschrittene.</p>
+    <div class="studio-styles"><span class="style-tag">Ashtanga Mysore</span><span class="style-tag">Ashtanga Led</span><span class="style-tag">Hatha</span><span class="style-tag">Restorative</span><span class="style-tag">Yoga Nidra</span></div>
     <div class="studio-contact"><a href="https://www.ashtanga-basel.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:lladiudelamata@gmail.com" class="canton-contact-link">lladiudelamata@gmail.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Mysore Style</span><span class="feature-badge">Weekend Workshops</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|yin|samara|kundalini|kids yoga|yoga 60+|rücken-yoga|schwangerschaftsyoga|yoga für flüchtlinge|faszien yoga|aerial yoga|yoga therapie" data-search="lotos yoga-zentrum seit 1994 — das älteste yoga-zentrum in basel. zwei räume (himalaya &amp;amp; kerala). teacher training (200h-750h ych). rutimeyerstrasse 40, 4054 basel hatha yin samara kundalini kids yoga yoga 60+ rücken-yoga schwangerschaftsyoga yoga für flüchtlinge faszien yoga aerial yoga yoga therapie seit 1994 teacher training 200-750h 2 yoga-räume aerial yoga rosmarie herczog deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Lotos Yoga-Zentrum<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Lotos Yoga-Zentrum</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rutimeyerstrasse 40, 4054 Basel</p>
-    <p class="studio-desc">Seit 1994 — das älteste Yoga-Zentrum in Basel. Zwei Räume (Himalaya &amp; Kerala). Teacher Training (200h-750h YCH).</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Yin</span><span class="style-badge">Samara</span><span class="style-badge">Kundalini</span><span class="style-badge">Kids Yoga</span><span class="style-badge">Yoga 60+</span><span class="style-badge">Rücken-Yoga</span><span class="style-badge">Schwangerschaftsyoga</span><span class="style-badge">Yoga für Flüchtlinge</span><span class="style-badge">Faszien Yoga</span><span class="style-badge">Aerial Yoga</span><span class="style-badge">Yoga Therapie</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rutimeyerstrasse 40, 4054 Basel</span></div>
+    <p class="studio-description">Seit 1994 — das älteste Yoga-Zentrum in Basel. Zwei Räume (Himalaya &amp; Kerala). Teacher Training (200h-750h YCH).</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Yin</span><span class="style-tag">Samara</span><span class="style-tag">Kundalini</span><span class="style-tag">Kids Yoga</span><span class="style-tag">Yoga 60+</span><span class="style-tag">Rücken-Yoga</span><span class="style-tag">Schwangerschaftsyoga</span><span class="style-tag">Yoga für Flüchtlinge</span><span class="style-tag">Faszien Yoga</span><span class="style-tag">Aerial Yoga</span><span class="style-tag">Yoga Therapie</span></div>
     <div class="studio-contact"><a href="https://lotosyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 61 271 40 86" class="canton-contact-link">+41 61 271 40 86</a> &middot; <a href="mailto:sekretariat@lotosyoga.ch" class="canton-contact-link">sekretariat@lotosyoga.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Seit 1994</span><span class="feature-badge">Teacher Training 200-750h</span><span class="feature-badge">2 Yoga-Räume</span><span class="feature-badge">Aerial Yoga</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yin|vinyasa|kleinkind-yoga|kids yoga" data-search="yoga im gärtnerhuus gemeinschaftsorientiertes studio (verein) im grünen des schwarzparks. sound baths, live-musik-events. gellertstrasse 133, 4052 basel — im schwarzpark yin vinyasa kleinkind-yoga kids yoga im park sound bath yoga &amp; live musik verein  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga im Gärtnerhuus<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga im Gärtnerhuus</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Gellertstrasse 133, 4052 Basel <span class="addr-label">(im Schwarzpark)</span></p>
-    <p class="studio-desc">Gemeinschaftsorientiertes Studio (Verein) im Grünen des Schwarzparks. Sound Baths, Live-Musik-Events.</p>
-    <div class="studio-styles"><span class="style-badge">Yin</span><span class="style-badge">Vinyasa</span><span class="style-badge">Kleinkind-Yoga</span><span class="style-badge">Kids Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Gellertstrasse 133, 4052 Basel — im Schwarzpark</span></div>
+    <p class="studio-description">Gemeinschaftsorientiertes Studio (Verein) im Grünen des Schwarzparks. Sound Baths, Live-Musik-Events.</p>
+    <div class="studio-styles"><span class="style-tag">Yin</span><span class="style-tag">Vinyasa</span><span class="style-tag">Kleinkind-Yoga</span><span class="style-tag">Kids Yoga</span></div>
     <div class="studio-contact"><a href="https://www.yogaimgaertnerhuus.com" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:yogaimgaertnerhuus@gmail.com" class="canton-contact-link">yogaimgaertnerhuus@gmail.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Im Park</span><span class="feature-badge">Sound Bath</span><span class="feature-badge">Yoga &amp; Live Musik</span><span class="feature-badge">Verein</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="aerial yoga|vinyasa|breathwork|sound healing" data-search="secret garden yoga studio eine grüne oase mitten in basel. seit april 2023. erreichbar mit tram 6, 1, 8 oder bus 50. austrasse 112, 4051 basel — nähe schützenmattpark aerial yoga vinyasa breathwork sound healing aerial yoga sound healing breathwork jay nadine deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Secret Garden Yoga Studio<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Secret Garden Yoga Studio</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Austrasse 112, 4051 Basel <span class="addr-label">(Nähe Schützenmattpark)</span></p>
-    <p class="studio-desc">Eine grüne Oase mitten in Basel. Seit April 2023. Erreichbar mit Tram 6, 1, 8 oder Bus 50.</p>
-    <div class="studio-styles"><span class="style-badge">Aerial Yoga</span><span class="style-badge">Vinyasa</span><span class="style-badge">Breathwork</span><span class="style-badge">Sound Healing</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Austrasse 112, 4051 Basel — Nähe Schützenmattpark</span></div>
+    <p class="studio-description">Eine grüne Oase mitten in Basel. Seit April 2023. Erreichbar mit Tram 6, 1, 8 oder Bus 50.</p>
+    <div class="studio-styles"><span class="style-tag">Aerial Yoga</span><span class="style-tag">Vinyasa</span><span class="style-tag">Breathwork</span><span class="style-tag">Sound Healing</span></div>
     <div class="studio-contact"><a href="https://secretgarden-yoga.ch/en/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:hello@secretgarden-yoga.ch" class="canton-contact-link">hello@secretgarden-yoga.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Aerial Yoga</span><span class="feature-badge">Sound Healing</span><span class="feature-badge">Breathwork</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa|gentle flow|yin yoga|aerial yoga|yoga 55+" data-search="mint basel yoga für alle altersgruppen inkl. yoga 55+. sommer-outdoor-klassen im wenkenpark riehen. rebgasse 43, 4058 basel — kleinbasel vinyasa gentle flow yin yoga aerial yoga yoga 55+ yoga 55+ aerial yoga outdoor sommer pilates reformer tanja koechlin deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">mint Basel<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">mint Basel</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rebgasse 43, 4058 Basel <span class="addr-label">(Kleinbasel)</span></p>
-    <p class="studio-desc">Yoga für alle Altersgruppen inkl. Yoga 55+. Sommer-Outdoor-Klassen im Wenkenpark Riehen.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Gentle Flow</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Aerial Yoga</span><span class="style-badge">Yoga 55+</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rebgasse 43, 4058 Basel — Kleinbasel</span></div>
+    <p class="studio-description">Yoga für alle Altersgruppen inkl. Yoga 55+. Sommer-Outdoor-Klassen im Wenkenpark Riehen.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa</span><span class="style-tag">Gentle Flow</span><span class="style-tag">Yin Yoga</span><span class="style-tag">Aerial Yoga</span><span class="style-tag">Yoga 55+</span></div>
     <div class="studio-contact"><a href="https://mint-loft.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 613 47 77" class="canton-contact-link">+41 79 613 47 77</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Yoga 55+</span><span class="feature-badge">Aerial Yoga</span><span class="feature-badge">Outdoor Sommer</span><span class="feature-badge">Pilates Reformer</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yoga training|coaching" data-search="exhale yoga training &amp; coaching 124 m² grosses studio in der altstadt. yoga-training und persönliches coaching. martinskirchplatz 15, 4051 basel — altstadt (bei schifflände) yoga training coaching 124m² studio coaching markus latscha deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Exhale Yoga Training &amp; Coaching<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Exhale Yoga Training &amp; Coaching</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Martinskirchplatz 15, 4051 Basel <span class="addr-label">(Altstadt (bei Schifflände))</span></p>
-    <p class="studio-desc">124 m² grosses Studio in der Altstadt. Yoga-Training und persönliches Coaching.</p>
-    <div class="studio-styles"><span class="style-badge">Yoga Training</span><span class="style-badge">Coaching</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Martinskirchplatz 15, 4051 Basel — Altstadt (bei Schifflände)</span></div>
+    <p class="studio-description">124 m² grosses Studio in der Altstadt. Yoga-Training und persönliches Coaching.</p>
+    <div class="studio-styles"><span class="style-tag">Yoga Training</span><span class="style-tag">Coaching</span></div>
     <div class="studio-contact"><a href="https://exhale.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 627 00 80" class="canton-contact-link">+41 79 627 00 80</a> &middot; <a href="mailto:markus.latscha@exhale.ch" class="canton-contact-link">markus.latscha@exhale.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">124m² Studio</span><span class="feature-badge">Coaching</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="iyengar yoga" data-search="iyengar yoga basel — caroline kreis zertifizierte iyengar-lehrerin seit 2004. anfängerkurse montag morgens 9:15-10:45. güterstrasse 285, 4053 basel — nähe sbb (hinterhof) iyengar yoga iyengar zertifiziert seit 2004 caroline kreis maissen deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Iyengar Yoga Basel — Caroline Kreis<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Iyengar Yoga Basel — Caroline Kreis</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Güterstrasse 285, 4053 Basel <span class="addr-label">(Nähe SBB (Hinterhof))</span></p>
-    <p class="studio-desc">Zertifizierte Iyengar-Lehrerin seit 2004. Anfängerkurse Montag morgens 9:15-10:45.</p>
-    <div class="studio-styles"><span class="style-badge">Iyengar Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Güterstrasse 285, 4053 Basel — Nähe SBB (Hinterhof)</span></div>
+    <p class="studio-description">Zertifizierte Iyengar-Lehrerin seit 2004. Anfängerkurse Montag morgens 9:15-10:45.</p>
+    <div class="studio-styles"><span class="style-tag">Iyengar Yoga</span></div>
     <div class="studio-contact"><a href="https://www.i-yoga-basel.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 754 55 59" class="canton-contact-link">+41 78 754 55 59</a> &middot; <a href="mailto:kontakt@i-yoga-basel.ch" class="canton-contact-link">kontakt@i-yoga-basel.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Iyengar zertifiziert seit 2004</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="iyengar yoga" data-search="iyengar yoga — gerbergässlein iyengar yoga in der altstadt. level i+ii, alle stufen, anfänger. gerbergässlein 23, 4001 basel — altstadt iyengar yoga iyengar zertifiziert sabine skinner-baur deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Iyengar Yoga — Gerbergässlein<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Iyengar Yoga — Gerbergässlein</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Gerbergässlein 23, 4001 Basel <span class="addr-label">(Altstadt)</span></p>
-    <p class="studio-desc">Iyengar Yoga in der Altstadt. Level I+II, alle Stufen, Anfänger.</p>
-    <div class="studio-styles"><span class="style-badge">Iyengar Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Gerbergässlein 23, 4001 Basel — Altstadt</span></div>
+    <p class="studio-description">Iyengar Yoga in der Altstadt. Level I+II, alle Stufen, Anfänger.</p>
+    <div class="studio-styles"><span class="style-tag">Iyengar Yoga</span></div>
     <div class="studio-contact"><a href="https://gerbergaesslein-yoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Iyengar zertifiziert</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="iyengar yoga" data-search="ayalga yoga (iyengar) iyengar yoga mit hilfsmitteln (seile, decken, blöcke, stühle). für alle altersgruppen und mobilitätslevel. basel, basel iyengar yoga props/hilfsmittel alle mobilitätslevel  deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Ayalga Yoga (Iyengar)<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Ayalga Yoga (Iyengar)</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Basel, Basel</p>
-    <p class="studio-desc">Iyengar Yoga mit Hilfsmitteln (Seile, Decken, Blöcke, Stühle). Für alle Altersgruppen und Mobilitätslevel.</p>
-    <div class="studio-styles"><span class="style-badge">Iyengar Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Basel, Basel</span></div>
+    <p class="studio-description">Iyengar Yoga mit Hilfsmitteln (Seile, Decken, Blöcke, Stühle). Für alle Altersgruppen und Mobilitätslevel.</p>
+    <div class="studio-styles"><span class="style-tag">Iyengar Yoga</span></div>
     <div class="studio-contact"><a href="https://ayalgayoga.ch/en/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Props/Hilfsmittel</span><span class="feature-badge">Alle Mobilitätslevel</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="iyengar yoga" data-search="yoga now basel (iyengar) kleines, ruhiges studio mit persönlicher betreuung. klare anleitung und einsatz von hilfsmitteln. basel, basel iyengar yoga persönliche betreuung luis gonzalez deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Now Basel (Iyengar)<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Now Basel (Iyengar)</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Basel, Basel</p>
-    <p class="studio-desc">Kleines, ruhiges Studio mit persönlicher Betreuung. Klare Anleitung und Einsatz von Hilfsmitteln.</p>
-    <div class="studio-styles"><span class="style-badge">Iyengar Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Basel, Basel</span></div>
+    <p class="studio-description">Kleines, ruhiges Studio mit persönlicher Betreuung. Klare Anleitung und Einsatz von Hilfsmitteln.</p>
+    <div class="studio-styles"><span class="style-tag">Iyengar Yoga</span></div>
     <div class="studio-contact"><a href="https://www.yoganow-basel.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Persönliche Betreuung</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="ashtanga mysore" data-search="kathrin mathews yoga ashtanga yoga im mysore-stil. auch retreats und privatstunden. basel, basel ashtanga mysore mysore style retreats privatstunden kathrin mathews deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Kathrin Mathews Yoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Kathrin Mathews Yoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Basel, Basel</p>
-    <p class="studio-desc">Ashtanga Yoga im Mysore-Stil. Auch Retreats und Privatstunden.</p>
-    <div class="studio-styles"><span class="style-badge">Ashtanga Mysore</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Basel, Basel</span></div>
+    <p class="studio-description">Ashtanga Yoga im Mysore-Stil. Auch Retreats und Privatstunden.</p>
+    <div class="studio-styles"><span class="style-tag">Ashtanga Mysore</span></div>
     <div class="studio-contact"><a href="https://www.kathrinmathews.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Mysore Style</span><span class="feature-badge">Retreats</span><span class="feature-badge">Privatstunden</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="ashtanga mysore" data-search="mysore club basel community-orientierte ashtanga-mysore-praxis. frühmorgens-klassen. sonntags bei spirit studio. basel, basel ashtanga mysore community früh-morgen-klassen  deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Mysore Club Basel<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Mysore Club Basel</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Basel, Basel</p>
-    <p class="studio-desc">Community-orientierte Ashtanga-Mysore-Praxis. Frühmorgens-Klassen. Sonntags bei Spirit Studio.</p>
-    <div class="studio-styles"><span class="style-badge">Ashtanga Mysore</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Basel, Basel</span></div>
+    <p class="studio-description">Community-orientierte Ashtanga-Mysore-Praxis. Frühmorgens-Klassen. Sonntags bei Spirit Studio.</p>
+    <div class="studio-styles"><span class="style-tag">Ashtanga Mysore</span></div>
     <div class="studio-contact"><a href="https://www.mysorebasel.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Community</span><span class="feature-badge">Früh-Morgen-Klassen</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="embodied flow|vinyasa|hatha|kundalini" data-search="rin yoga — rinny biberstein max. 10 teilnehmer. gleitende preisgestaltung. auch bei the looking glass. schlüsselberg 10, 4001 basel — raum für mehr embodied flow vinyasa hatha kundalini max 10 personen sliding scale preise rinny biberstein deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Rin Yoga — Rinny Biberstein<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Rin Yoga — Rinny Biberstein</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Schlüsselberg 10, 4001 Basel <span class="addr-label">(Raum für Mehr)</span></p>
-    <p class="studio-desc">Max. 10 Teilnehmer. Gleitende Preisgestaltung. Auch bei The Looking Glass.</p>
-    <div class="studio-styles"><span class="style-badge">Embodied Flow</span><span class="style-badge">Vinyasa</span><span class="style-badge">Hatha</span><span class="style-badge">Kundalini</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Schlüsselberg 10, 4001 Basel — Raum für Mehr</span></div>
+    <p class="studio-description">Max. 10 Teilnehmer. Gleitende Preisgestaltung. Auch bei The Looking Glass.</p>
+    <div class="studio-styles"><span class="style-tag">Embodied Flow</span><span class="style-tag">Vinyasa</span><span class="style-tag">Hatha</span><span class="style-tag">Kundalini</span></div>
     <div class="studio-contact"><a href="https://rin.yoga/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 589 98 29" class="canton-contact-link">+41 76 589 98 29</a> &middot; <a href="mailto:rin@rin.yoga" class="canton-contact-link">rin@rin.yoga</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Max 10 Personen</span><span class="feature-badge">Sliding Scale Preise</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa" data-search="alessia yoga / thrive mind &amp; body begrenzte plätze für individuelle betreuung. erste probestunde gratis. sommer-outdoor-klassen. im westfeld 6, 4055 basel — pro senectute elsässerstrasse 34, 4056 basel — zoespaces vinyasa erste stunde gratis outdoor sommer alessia english deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Alessia Yoga / THRIVE Mind &amp; Body<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Alessia Yoga / THRIVE Mind &amp; Body</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Im Westfeld 6, 4055 Basel <span class="addr-label">(Pro Senectute)</span></p><p class="studio-address">Elsässerstrasse 34, 4056 Basel <span class="addr-label">(ZOESPACES)</span></p>
-    <p class="studio-desc">Begrenzte Plätze für individuelle Betreuung. Erste Probestunde gratis. Sommer-Outdoor-Klassen.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Im Westfeld 6, 4055 Basel — Pro Senectute</span></div><div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Elsässerstrasse 34, 4056 Basel — ZOESPACES</span></div>
+    <p class="studio-description">Begrenzte Plätze für individuelle Betreuung. Erste Probestunde gratis. Sommer-Outdoor-Klassen.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa</span></div>
     <div class="studio-contact"><a href="https://www.alessiayoga.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: English, Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Erste Stunde gratis</span><span class="feature-badge">Outdoor Sommer</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="rest + reset|vinyasa|yoga für verdauung|yoga für menopause" data-search="food changes everything — vanessa gatelein ganzheitlicher ansatz: yoga + ernährungsberatung. in-person und online. frauen-retreats. pfluggasslein 1, 4001 basel — bei yogabloom rest + reset vinyasa yoga für verdauung yoga für menopause ernährungsberatung yoga für verdauung frauen-retreats vanessa gatelein english deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Food Changes Everything — Vanessa Gatelein<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Food Changes Everything — Vanessa Gatelein</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Pfluggasslein 1, 4001 Basel <span class="addr-label">(bei YOGABLOOM)</span></p>
-    <p class="studio-desc">Ganzheitlicher Ansatz: Yoga + Ernährungsberatung. In-Person und Online. Frauen-Retreats.</p>
-    <div class="studio-styles"><span class="style-badge">Rest + Reset</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yoga für Verdauung</span><span class="style-badge">Yoga für Menopause</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Pfluggasslein 1, 4001 Basel — bei YOGABLOOM</span></div>
+    <p class="studio-description">Ganzheitlicher Ansatz: Yoga + Ernährungsberatung. In-Person und Online. Frauen-Retreats.</p>
+    <div class="studio-styles"><span class="style-tag">Rest + Reset</span><span class="style-tag">Vinyasa</span><span class="style-tag">Yoga für Verdauung</span><span class="style-tag">Yoga für Menopause</span></div>
     <div class="studio-contact"><a href="https://www.foodchangeseverything.me/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: English, Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Ernährungsberatung</span><span class="feature-badge">Yoga für Verdauung</span><span class="feature-badge">Frauen-Retreats</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="schwangerschaftsyoga|yoga therapie|rückbildung|beckenboden-yoga" data-search="claudia stamm yoga spezialisiert auf schwangerschafts- und postnatal-yoga. mo 18:00-19:15, chf 25/klasse. gellertstrasse 148, 4052 basel — haus der geburt bethesda schwangerschaftsyoga yoga therapie rückbildung beckenboden-yoga schwangerschaft postnatal beckenboden 1:1 sessions claudia reusch-stamm deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Claudia Stamm Yoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Claudia Stamm Yoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Gellertstrasse 148, 4052 Basel <span class="addr-label">(Haus der Geburt Bethesda)</span></p>
-    <p class="studio-desc">Spezialisiert auf Schwangerschafts- und Postnatal-Yoga. Mo 18:00-19:15, CHF 25/Klasse.</p>
-    <div class="studio-styles"><span class="style-badge">Schwangerschaftsyoga</span><span class="style-badge">Yoga Therapie</span><span class="style-badge">Rückbildung</span><span class="style-badge">Beckenboden-Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Gellertstrasse 148, 4052 Basel — Haus der Geburt Bethesda</span></div>
+    <p class="studio-description">Spezialisiert auf Schwangerschafts- und Postnatal-Yoga. Mo 18:00-19:15, CHF 25/Klasse.</p>
+    <div class="studio-styles"><span class="style-tag">Schwangerschaftsyoga</span><span class="style-tag">Yoga Therapie</span><span class="style-tag">Rückbildung</span><span class="style-tag">Beckenboden-Yoga</span></div>
     <div class="studio-contact"><a href="https://www.claudia-stamm.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Schwangerschaft</span><span class="feature-badge">Postnatal</span><span class="feature-badge">Beckenboden</span><span class="feature-badge">1:1 Sessions</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="prenatal yoga|mama &amp; baby yoga|postnatal yoga" data-search="mignon — birth &amp; parenting support yoga rund um schwangerschaft und geburt, auf englisch. nur für frauen. leimgrubenweg 9/9c, 2. og, 4053 basel — kindermusik studio prenatal yoga mama &amp; baby yoga postnatal yoga prenatal postnatal mama &amp; baby nur frauen  english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Mignon — Birth &amp; Parenting Support<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Mignon — Birth &amp; Parenting Support</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Leimgrubenweg 9/9C, 2. OG, 4053 Basel <span class="addr-label">(Kindermusik Studio)</span></p>
-    <p class="studio-desc">Yoga rund um Schwangerschaft und Geburt, auf Englisch. Nur für Frauen.</p>
-    <div class="studio-styles"><span class="style-badge">Prenatal Yoga</span><span class="style-badge">Mama &amp; Baby Yoga</span><span class="style-badge">Postnatal Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Leimgrubenweg 9/9C, 2. OG, 4053 Basel — Kindermusik Studio</span></div>
+    <p class="studio-description">Yoga rund um Schwangerschaft und Geburt, auf Englisch. Nur für Frauen.</p>
+    <div class="studio-styles"><span class="style-tag">Prenatal Yoga</span><span class="style-tag">Mama &amp; Baby Yoga</span><span class="style-tag">Postnatal Yoga</span></div>
     <div class="studio-contact"><a href="https://www.mignonbaby.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: English</p>
     <div class="studio-features"><span class="feature-badge">Prenatal</span><span class="feature-badge">Postnatal</span><span class="feature-badge">Mama &amp; Baby</span><span class="feature-badge">Nur Frauen</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="therapeutisches yoga|somatische bewegung|chair yoga" data-search="katerina wen — infinite body yoga private therapeutische yoga-sessions, gruppen, corporate yoga. on-demand videothek. basel, basel therapeutisches yoga somatische bewegung chair yoga privat-sessions corporate yoga on-demand videos chair yoga katerina wen english deutsch">
     <div class="studio-card-header">
         <h3 class="studio-name">Katerina Wen — Infinite Body Yoga</h3>
     </div>
-    <p class="studio-address">Basel, Basel</p>
-    <p class="studio-desc">Private therapeutische Yoga-Sessions, Gruppen, Corporate Yoga. On-Demand Videothek.</p>
-    <div class="studio-styles"><span class="style-badge">Therapeutisches Yoga</span><span class="style-badge">Somatische Bewegung</span><span class="style-badge">Chair Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Basel, Basel</span></div>
+    <p class="studio-description">Private therapeutische Yoga-Sessions, Gruppen, Corporate Yoga. On-Demand Videothek.</p>
+    <div class="studio-styles"><span class="style-tag">Therapeutisches Yoga</span><span class="style-tag">Somatische Bewegung</span><span class="style-tag">Chair Yoga</span></div>
     <div class="studio-contact"><a href="https://www.katerinawen.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:KaterinaWen@fastmail.com" class="canton-contact-link">KaterinaWen@fastmail.com</a></div>
     <p class="studio-languages">Sprachen: English, Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Privat-Sessions</span><span class="feature-badge">Corporate Yoga</span><span class="feature-badge">On-Demand Videos</span><span class="feature-badge">Chair Yoga</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yin yoga|therapeutisches yoga|craniosacral|yin yang yoga|hormonyoga|mbsr|mbsr/msc|yoga|hatha yoga|hatha flow" data-search="bethsabé yoga (bottmingen) yoga, therapie und achtsamkeitskurse in bottmingen bei basel. baslerstrasse 8, 4103 bottmingen — nahe basel yin yoga therapeutisches yoga craniosacral yin yang yoga hormonyoga mbsr mbsr/msc yoga hatha yoga hatha flow mbsr/msc craniosacral physiotherapie celine vanessa tatiana ilonka manuela ilo claude sara gunter deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Bethsabé Yoga (Bottmingen)<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Bethsabé Yoga (Bottmingen)</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Baslerstrasse 8, 4103 Bottmingen <span class="addr-label">(Nahe Basel)</span></p>
-    <p class="studio-desc">Yoga, Therapie und Achtsamkeitskurse in Bottmingen bei Basel.</p>
-    <div class="studio-styles"><span class="style-badge">Yin Yoga</span><span class="style-badge">Therapeutisches Yoga</span><span class="style-badge">Craniosacral</span><span class="style-badge">Yin Yang Yoga</span><span class="style-badge">Hormonyoga</span><span class="style-badge">MBSR</span><span class="style-badge">MBSR/MSC</span><span class="style-badge">Yoga</span><span class="style-badge">Hatha Yoga</span><span class="style-badge">Hatha Flow</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Baslerstrasse 8, 4103 Bottmingen — Nahe Basel</span></div>
+    <p class="studio-description">Yoga, Therapie und Achtsamkeitskurse in Bottmingen bei Basel.</p>
+    <div class="studio-styles"><span class="style-tag">Yin Yoga</span><span class="style-tag">Therapeutisches Yoga</span><span class="style-tag">Craniosacral</span><span class="style-tag">Yin Yang Yoga</span><span class="style-tag">Hormonyoga</span><span class="style-tag">MBSR</span><span class="style-tag">MBSR/MSC</span><span class="style-tag">Yoga</span><span class="style-tag">Hatha Yoga</span><span class="style-tag">Hatha Flow</span></div>
     <div class="studio-contact"><a href="https://www.bethsabe.ch" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 61 421 54 54" class="canton-contact-link">+41 61 421 54 54</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">MBSR/MSC</span><span class="feature-badge">Craniosacral</span><span class="feature-badge">Physiotherapie</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yoga|kundalini yoga|pilates|hatha yoga|power yoga" data-search="fitnesspark basel heuwaage (migros) drei-stöckiges fitnesscenter mit yoga-klassen, wellness, 5 saunen und relaxpool. steinentorstrasse, 4051 basel — nähe sbb yoga kundalini yoga pilates hatha yoga power yoga wellness sauna pool migros-kette  deutsch">
     <div class="studio-card-header">
         <h3 class="studio-name">Fitnesspark Basel Heuwaage (Migros)</h3>
     </div>
-    <p class="studio-address">Steinentorstrasse, 4051 Basel <span class="addr-label">(Nähe SBB)</span></p>
-    <p class="studio-desc">Drei-stöckiges Fitnesscenter mit Yoga-Klassen, Wellness, 5 Saunen und Relaxpool.</p>
-    <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Kundalini Yoga</span><span class="style-badge">Pilates</span><span class="style-badge">Hatha Yoga</span><span class="style-badge">Power Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Steinentorstrasse, 4051 Basel — Nähe SBB</span></div>
+    <p class="studio-description">Drei-stöckiges Fitnesscenter mit Yoga-Klassen, Wellness, 5 Saunen und Relaxpool.</p>
+    <div class="studio-styles"><span class="style-tag">Yoga</span><span class="style-tag">Kundalini Yoga</span><span class="style-tag">Pilates</span><span class="style-tag">Hatha Yoga</span><span class="style-tag">Power Yoga</span></div>
     <div class="studio-contact"><a href="https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Wellness</span><span class="feature-badge">Sauna</span><span class="feature-badge">Pool</span><span class="feature-badge">Migros-Kette</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yoga|pilates|body balance" data-search="gyym health &amp; fitness über 300 gruppenkurse inkl. yoga. community-orientiertes fitnesscenter. stucki park, 4057 basel yoga pilates body balance 300+ gruppenkurse  deutsch">
     <div class="studio-card-header">
         <h3 class="studio-name">GYYM Health &amp; Fitness</h3>
     </div>
-    <p class="studio-address">Stucki Park, 4057 Basel</p>
-    <p class="studio-desc">Über 300 Gruppenkurse inkl. Yoga. Community-orientiertes Fitnesscenter.</p>
-    <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Pilates</span><span class="style-badge">Body Balance</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Stucki Park, 4057 Basel</span></div>
+    <p class="studio-description">Über 300 Gruppenkurse inkl. Yoga. Community-orientiertes Fitnesscenter.</p>
+    <div class="studio-styles"><span class="style-tag">Yoga</span><span class="style-tag">Pilates</span><span class="style-tag">Body Balance</span></div>
     <div class="studio-contact"><a href="https://gyym.ch/en/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">300+ Gruppenkurse</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="postnatal yoga|senior yoga|vinyasa|yoga nidra|yin yoga|power yoga|hatha yoga|faszien yoga|prenatal yoga|vinyasa flow|aerial yoga" data-search="klubschule migros basel die grösste yogaschule der schweiz. kurse über abo-modell buchbar via klubschule.ch. basel, basel postnatal yoga senior yoga vinyasa yoga nidra yin yoga power yoga hatha yoga faszien yoga prenatal yoga vinyasa flow aerial yoga wertabo-system migros-netzwerk  deutsch">
     <div class="studio-card-header">
         <h3 class="studio-name">Klubschule Migros Basel</h3>
     </div>
-    <p class="studio-address">Basel, Basel</p>
-    <p class="studio-desc">Die grösste Yogaschule der Schweiz. Kurse über Abo-Modell buchbar via klubschule.ch.</p>
-    <div class="studio-styles"><span class="style-badge">Postnatal Yoga</span><span class="style-badge">Senior Yoga</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yoga Nidra</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Power Yoga</span><span class="style-badge">Hatha Yoga</span><span class="style-badge">Faszien Yoga</span><span class="style-badge">Prenatal Yoga</span><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Aerial Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Basel, Basel</span></div>
+    <p class="studio-description">Die grösste Yogaschule der Schweiz. Kurse über Abo-Modell buchbar via klubschule.ch.</p>
+    <div class="studio-styles"><span class="style-tag">Postnatal Yoga</span><span class="style-tag">Senior Yoga</span><span class="style-tag">Vinyasa</span><span class="style-tag">Yoga Nidra</span><span class="style-tag">Yin Yoga</span><span class="style-tag">Power Yoga</span><span class="style-tag">Hatha Yoga</span><span class="style-tag">Faszien Yoga</span><span class="style-tag">Prenatal Yoga</span><span class="style-tag">Vinyasa Flow</span><span class="style-tag">Aerial Yoga</span></div>
     <div class="studio-contact"><a href="https://www.klubschule.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Wertabo-System</span><span class="feature-badge">Migros-Netzwerk</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yoga retreats" data-search="sutra house (riehen) retreat venue in riehen hosting visiting yoga teachers. events and multi-day retreats, not regular weekly classes. rütiring 36/36a, 4125 riehen — bewaldeter hang am rhein yoga retreats architektur events-only retreat-venue retreats sauna pool  deutsch english">
     <div class="studio-card-header">
         <h3 class="studio-name">Sutra House (Riehen)</h3>
     </div>
-    <p class="studio-address">Rütiring 36/36a, 4125 Riehen <span class="addr-label">(Bewaldeter Hang am Rhein)</span></p>
-    <p class="studio-desc">Retreat venue in Riehen hosting visiting yoga teachers. Events and multi-day retreats, not regular weekly classes.</p>
-    <div class="studio-styles"><span class="style-badge">Yoga Retreats</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rütiring 36/36a, 4125 Riehen — Bewaldeter Hang am Rhein</span></div>
+    <p class="studio-description">Retreat venue in Riehen hosting visiting yoga teachers. Events and multi-day retreats, not regular weekly classes.</p>
+    <div class="studio-styles"><span class="style-tag">Yoga Retreats</span></div>
     <div class="studio-contact"><a href="https://www.sutra-house.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Architektur</span><span class="feature-badge">events-only</span><span class="feature-badge">retreat-venue</span><span class="feature-badge">Retreats</span><span class="feature-badge">Sauna</span><span class="feature-badge">Pool</span></div>
-</div>
+</article>
+    </div>
         </div>
     </section>
 
@@ -5680,5 +5566,86 @@
             </p>
         </div>
     </footer>
+
+<script>
+(function () {
+  'use strict';
+  var root = document.documentElement;
+
+  // --- Theme, shared with the homepage -----------------------------------
+  var themeBtn = document.getElementById('themeToggle');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('yogabasel-theme', next); } catch (e) {}
+    });
+  }
+
+  // --- Canton switcher ----------------------------------------------------
+  var sel = document.getElementById('cantonSelect');
+  if (sel) {
+    sel.addEventListener('change', function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+  }
+
+  // --- Menu (mobile) ------------------------------------------------------
+  var menuBtn = document.getElementById('menuToggle'), nav = document.getElementById('nav');
+  if (menuBtn && nav) {
+    menuBtn.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  // --- Filtering ----------------------------------------------------------
+  var grid = document.getElementById('studiosGrid');
+  if (!grid) return;
+  var cards = [].slice.call(grid.querySelectorAll('.studio-card'));
+  var search = document.getElementById('studioSearch');
+  var clearBtn = document.getElementById('searchClear');
+  var shown = document.getElementById('shownCount');
+  var noResult = document.getElementById('noResult');
+  var chips = [].slice.call(document.querySelectorAll('.filters-quick .chip'));
+  var style = 'all', query = '';
+
+  function apply() {
+    var n = 0;
+    for (var i = 0; i < cards.length; i++) {
+      var c = cards[i];
+      var okStyle = style === 'all' || (c.getAttribute('data-styles') || '').indexOf(style) !== -1;
+      var okText = !query || (c.getAttribute('data-search') || '').indexOf(query) !== -1;
+      var visible = okStyle && okText;
+      c.hidden = !visible;
+      if (visible) n++;
+    }
+    if (shown) shown.textContent = n;
+    if (noResult) noResult.hidden = n !== 0;
+    if (clearBtn) clearBtn.style.display = query ? '' : 'none';
+  }
+
+  if (search) {
+    search.addEventListener('input', function () {
+      query = search.value.trim().toLowerCase();
+      apply();
+    });
+  }
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function () {
+      search.value = ''; query = ''; apply(); search.focus();
+    });
+  }
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      chips.forEach(function (c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      style = chip.getAttribute('data-filter');
+      apply();
+    });
+  });
+})();
+</script>
+
 </body>
 </html>

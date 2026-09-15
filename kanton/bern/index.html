@@ -44,7 +44,7 @@
     "url": "https://meineprojekte.github.io/yoga-kurse-basel/"
   },
   "inLanguage": "de",
-  "dateModified": "2026-09-14",
+  "dateModified": "2026-09-15",
   "about": {
     "@type": "Thing",
     "name": "Yoga",
@@ -1827,55 +1827,23 @@
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="../../css/fonts.css">
 
+    <!-- Applies the saved theme before first paint, so arriving here from the
+         homepage in dark mode does not flash white. Same key as js/app.min.js. -->
+    <script>try{var t=localStorage.getItem('yogabasel-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+
     <!-- Main site CSS -->
     <link rel="stylesheet" href="../../css/style.css">
 
     <!-- Canton page specific styles -->
     <style>
-        .canton-hero {
-            background: linear-gradient(135deg, #6B5B95 0%, #8B7DB5 40%, #D4A373 100%);
-            color: #fff;
-            padding: 80px 0 60px;
-            text-align: center;
-        }
-        .canton-hero h1 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 2.8rem;
-            margin-bottom: 8px;
-            font-weight: 700;
-        }
-        .canton-hero .canton-subtitle {
-            font-size: 1.15rem;
-            opacity: 0.92;
-            margin-bottom: 24px;
-        }
-        .canton-stats {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .stat-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .stat-number {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 2.2rem;
-            font-weight: 700;
-            line-height: 1;
-        }
-        .stat-label {
-            font-size: 0.9rem;
-            opacity: 0.85;
-            margin-top: 4px;
-        }
+        /* Same width as .container in css/style.css, so these sections line up
+           with the app header, hero and studio grid instead of sitting in a
+           narrower column of their own. */
         .canton-container {
-            max-width: 1100px;
+            width: 100%;
+            max-width: var(--container-max, 1280px);
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 var(--spacing-lg, 24px);
         }
         .canton-section {
             padding: 48px 0;
@@ -1894,60 +1862,6 @@
             color: #444;
             margin-bottom: 16px;
             max-width: 800px;
-        }
-        .studio-card {
-            background: #fff;
-            border: 1px solid #E8E8E8;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            transition: box-shadow 0.25s ease, transform 0.25s ease;
-        }
-        .studio-card:hover {
-            box-shadow: 0 6px 20px rgba(107,91,149,0.12);
-            transform: translateY(-2px);
-        }
-        .studio-card-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 10px;
-        }
-        .studio-name {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.3rem;
-            color: #2D2D2D;
-            margin: 0;
-        }
-        .studio-address {
-            font-size: 0.92rem;
-            color: #666;
-            margin-bottom: 4px;
-        }
-        .addr-label {
-            font-size: 0.82rem;
-            color: #999;
-        }
-        .studio-desc {
-            font-size: 0.95rem;
-            color: #555;
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-        .studio-styles {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin: 12px 0;
-        }
-        .style-badge {
-            background: #F3F0F8;
-            color: #6B5B95;
-            padding: 3px 10px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
         }
         .studio-contact {
             margin: 10px 0;
@@ -1988,16 +1902,6 @@
             font-size: 0.78rem;
             font-weight: 500;
             border: 1px solid #E8C9A4;
-        }
-        .dropin-badge {
-            background: #4CAF50;
-            color: #fff;
-            padding: 2px 10px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-left: 10px;
-            vertical-align: middle;
         }
         .no-data {
             color: #999;
@@ -2122,49 +2026,6 @@
         .canton-breadcrumb a:hover {
             text-decoration: underline;
         }
-        .canton-header {
-            background: #fff;
-            border-bottom: 1px solid #E8E8E8;
-            padding: 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .canton-header-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 14px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .canton-logo {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.3rem;
-            color: #6B5B95;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .canton-logo strong {
-            color: #D4A373;
-        }
-        .canton-nav {
-            display: flex;
-            gap: 20px;
-            list-style: none;
-        }
-        .canton-nav a {
-            color: #555;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .canton-nav a:hover {
-            color: #6B5B95;
-        }
         .canton-footer {
             background: #2D2D2D;
             color: #aaa;
@@ -2179,41 +2040,113 @@
         .canton-footer a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 768px) {
-            .canton-hero h1 { font-size: 1.8rem; }
-            .canton-stats { gap: 24px; }
-            .stat-number { font-size: 1.6rem; }
-            .canton-section h2 { font-size: 1.4rem; }
-            .canton-nav { gap: 12px; }
-            .canton-nav a { font-size: 0.8rem; }
-            .studio-card { padding: 16px; }
-            .canton-header-inner { flex-direction: column; gap: 10px; }
+        /* Hero, header, grid and cards are styled by css/style.css, exactly as on
+           the homepage — including their breakpoints. Only what is specific to
+           this page needs a rule here. */
+        .canton-toolbar {
+            margin: 0 0 18px;
         }
-        @media (max-width: 480px) {
-            .canton-hero { padding: 60px 0 40px; }
-            .canton-hero h1 { font-size: 1.5rem; }
-            .canton-stats { flex-direction: column; gap: 16px; }
+        .canton-count {
+            font-size: 0.9rem;
+            color: var(--color-text-light, #777);
+            margin: 0;
+        }
+        .canton-noresult {
+            margin: 24px 0 0;
+            padding: 20px;
+            text-align: center;
+            color: var(--color-text-light, #777);
+            background: var(--color-surface, #F8F8F8);
+            border-radius: 12px;
+        }
+        .studios-grid .studio-contact {
+            margin: 10px 0 0;
+        }
+        @media (max-width: 768px) {
+            .canton-section h2 { font-size: 1.4rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="canton-header">
-        <div class="canton-header-inner">
-            <a href="../../" class="canton-logo">
-                <span>🧘</span>
-                <span>Yoga<strong>Schweiz</strong></span>
+    <!-- Header: same markup and classes as the JS app on the homepage, so the
+         two views look like one site. Section links that exist on this page stay
+         local; app-only features point back to the homepage. -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="../../" class="logo">
+                <span class="logo-icon">🧘</span>
+                <span class="logo-text">Yoga<strong>Schweiz</strong></span>
             </a>
-            <nav>
-                <ul class="canton-nav">
-                    <li><a href="../../">Home</a></li>
-                    <li><a href="#studios">Studios</a></li>
-                    <li><a href="#stundenplan">Stundenplan</a></li>
-                    <li><a href="#andere-kantone">Kantone</a></li>
+            <nav class="nav" id="nav" aria-label="Hauptnavigation">
+                <ul class="nav-list">
+                    <li><a href="#studios" class="nav-link">Studios</a></li>
+                    <li><a href="#stundenplan" class="nav-link">Stundenplan</a></li>
+                    <li><a href="#andere-kantone" class="nav-link">Kantone</a></li>
+                    <li><a href="../../#stile" class="nav-link">Yoga-Stile</a></li>
+                    <li><a href="../../#karte" class="nav-link">Karte</a></li>
+                    <li><a href="../../#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="../../blog/" class="nav-link">Blog</a></li>
                 </ul>
             </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Design wechseln" title="Dark/Light Mode">
+                    <svg class="icon-sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Alle Yoga-Kurse in Bern<br><span class="hero-accent">Studios &amp; Stundenplan auf einen Blick</span></h1>
+            <p class="hero-subtitle">Kanton Bern (BE) &bull; 26 Studios &bull; Wöchentlich aktualisiert</p>
+
+            <div class="canton-selector">
+                <label class="canton-selector-label" for="cantonSelect">Wähle deinen Kanton:</label>
+                <select id="cantonSelect" class="canton-select" aria-label="Kanton wechseln">
+                    <option value="../aargau/">Aargau</option><option value="../appenzell-ar/">Appenzell A.Rh.</option><option value="../appenzell-ir/">Appenzell I.Rh.</option><option value="../basel-landschaft/">Basel-Landschaft</option><option value="../basel-stadt/">Basel-Stadt</option><option value="../bern/" selected>Bern</option><option value="../fribourg/">Freiburg</option><option value="../geneve/">Genf</option><option value="../glarus/">Glarus</option><option value="../graubuenden/">Graubünden</option><option value="../jura/">Jura</option><option value="../luzern/">Luzern</option><option value="../neuchatel/">Neuenburg</option><option value="../nidwalden/">Nidwalden</option><option value="../obwalden/">Obwalden</option><option value="../schaffhausen/">Schaffhausen</option><option value="../schwyz/">Schwyz</option><option value="../solothurn/">Solothurn</option><option value="../st-gallen/">St. Gallen</option><option value="../ticino/">Tessin</option><option value="../thurgau/">Thurgau</option><option value="../uri/">Uri</option><option value="../vaud/">Waadt</option><option value="../valais/">Wallis</option><option value="../zug/">Zug</option><option value="../zurich/">Zürich</option>
+                </select>
+            </div>
+
+            <div class="hero-search">
+                <div class="search-wrapper">
+                    <svg class="search-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <input type="search" id="studioSearch" class="search-input" placeholder="Studio, Yoga-Stil oder Quartier suchen..." autocomplete="off" aria-label="Yoga-Studio suchen">
+                    <button class="search-clear" id="searchClear" aria-label="Suche löschen" style="display:none">&times;</button>
+                </div>
+            </div>
+
+            <div class="hero-stats">
+    <div class="stat">
+        <span class="stat-number">26</span>
+        <span class="stat-label">Studios</span>
+    </div>
+    <div class="stat">
+        <span class="stat-number">285</span>
+        <span class="stat-label">Kurse/Woche</span>
+    </div>
+    <div class="stat">
+        <span class="stat-number">56</span>
+        <span class="stat-label">Yoga-Stile</span>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Style filters -->
+    <section class="filters-bar">
+        <div class="container">
+            <div class="filters-quick">
+                <button type="button" class="chip active" data-filter="all">Alle</button><button type="button" class="chip" data-filter="hatha">Hatha</button><button type="button" class="chip" data-filter="vinyasa">Vinyasa</button><button type="button" class="chip" data-filter="yin yoga">Yin Yoga</button><button type="button" class="chip" data-filter="schwangerschaftsyoga">Schwangerschaftsyoga</button><button type="button" class="chip" data-filter="meditation">Meditation</button><button type="button" class="chip" data-filter="pilates">Pilates</button><button type="button" class="chip" data-filter="iyengar yoga">Iyengar Yoga</button><button type="button" class="chip" data-filter="ashtanga">Ashtanga</button><button type="button" class="chip" data-filter="ashtanga yoga">Ashtanga Yoga</button><button type="button" class="chip" data-filter="functional training">Functional Training</button>
+            </div>
+        </div>
+    </section>
 
     <!-- Breadcrumb -->
     <div class="canton-container">
@@ -2223,28 +2156,6 @@
             <strong>Bern (BE)</strong>
         </nav>
     </div>
-
-    <!-- Hero -->
-    <section class="canton-hero">
-        <div class="canton-container">
-            <h1>Yoga in Bern</h1>
-            <p class="canton-subtitle">Kanton Bern (BE) — Alle Yoga-Studios und Kurse auf einen Blick</p>
-            <div class="canton-stats">
-    <div class="stat-item">
-        <span class="stat-number">26</span>
-        <span class="stat-label">Studios</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-number">285</span>
-        <span class="stat-label">Kurse/Woche</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-number">56</span>
-        <span class="stat-label">Yoga-Stile</span>
-    </div>
-</div>
-        </div>
-    </section>
 
     <!-- Description -->
     <section class="canton-section">
@@ -2262,292 +2173,273 @@
     <section class="canton-section" id="studios">
         <div class="canton-container">
             <h2>Yoga-Studios in Bern (26)</h2>
-            <div class="studio-card">
-    <div class="studio-card-header">
-        <h3 class="studio-name">YAMA Yoga &amp; Co<span class="dropin-badge">Drop-in</span></h3>
+            <div class="canton-toolbar">
+        <p class="canton-count">Zeige <strong id="shownCount">26</strong> von <strong>26</strong> Studios</p>
+        <p class="canton-noresult" id="noResult" hidden>Keine Studios gefunden. Andere Filter versuchen.</p>
     </div>
-    <p class="studio-address">Postgasse 37, 3011 Bern <span class="addr-label">(Altstadt)</span></p>
-    <p class="studio-desc">Ruhige Oase in der UNESCO-geschützten Altstadt für Yoga, Meditation und moderne Spiritualität. Co-Working-Space für Therapeuten und Yogalehrende.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Schwangerschaftsyoga</span><span class="style-badge">Beckenboden Yoga</span></div>
+    <div class="studios-grid" id="studiosGrid">
+<article class="studio-card" data-styles="hatha|vinyasa|schwangerschaftsyoga|beckenboden yoga" data-search="yama yoga &amp; co ruhige oase in der unesco-geschützten altstadt für yoga, meditation und moderne spiritualität. co-working-space für therapeuten und yogalehrende. postgasse 37, 3011 bern — altstadt hatha vinyasa schwangerschaftsyoga beckenboden yoga workshops teacher training outdoor yoga yoga &amp; brunch linda eden deutsch">
+    <div class="studio-card-header">
+        <h3 class="studio-name">YAMA Yoga &amp; Co</h3><span class="studio-badge drop-in">Drop-in</span>
+    </div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Postgasse 37, 3011 Bern — Altstadt</span></div>
+    <p class="studio-description">Ruhige Oase in der UNESCO-geschützten Altstadt für Yoga, Meditation und moderne Spiritualität. Co-Working-Space für Therapeuten und Yogalehrende.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Schwangerschaftsyoga</span><span class="style-tag">Beckenboden Yoga</span></div>
     <div class="studio-contact"><a href="https://www.yamabern.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 594 77 51" class="canton-contact-link">+41 79 594 77 51</a> &middot; <a href="mailto:yoga@yamabern.ch" class="canton-contact-link">yoga@yamabern.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Workshops</span><span class="feature-badge">Teacher Training</span><span class="feature-badge">Outdoor Yoga</span><span class="feature-badge">Yoga &amp; Brunch</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|yin yoga|yoga dance|kinderyoga|familienyoga|senioren yoga" data-search="yoga carmen yogaschule direkt am berner bahnhof mit breitem angebot an yogakursen, coaching, workshops und retreats. aarbergergasse 46, 3011 bern — beim bahnhof hatha vinyasa yin yoga yoga dance kinderyoga familienyoga senioren yoga 200h teacher training yoga therapie ausbildung retreats workshops carmen stefanie weyrauch corina dettling sabine wolters deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Carmen<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Carmen</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Aarbergergasse 46, 3011 Bern <span class="addr-label">(beim Bahnhof)</span></p>
-    <p class="studio-desc">Yogaschule direkt am Berner Bahnhof mit breitem Angebot an Yogakursen, Coaching, Workshops und Retreats.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Yoga Dance</span><span class="style-badge">Kinderyoga</span><span class="style-badge">Familienyoga</span><span class="style-badge">Senioren Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Aarbergergasse 46, 3011 Bern — beim Bahnhof</span></div>
+    <p class="studio-description">Yogaschule direkt am Berner Bahnhof mit breitem Angebot an Yogakursen, Coaching, Workshops und Retreats.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Yin Yoga</span><span class="style-tag">Yoga Dance</span><span class="style-tag">Kinderyoga</span><span class="style-tag">Familienyoga</span><span class="style-tag">Senioren Yoga</span></div>
     <div class="studio-contact"><a href="https://www.yoga-carmen.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 31 371 14 81" class="canton-contact-link">+41 31 371 14 81</a> &middot; <a href="mailto:info@yoga-carmen.ch" class="canton-contact-link">info@yoga-carmen.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">200h Teacher Training</span><span class="feature-badge">Yoga Therapie Ausbildung</span><span class="feature-badge">Retreats</span><span class="feature-badge">Workshops</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa|hatha|yin yoga|functional training" data-search="yoga luna yogastudio im herzen von bern am münsterplatz, offen für anfänger und fortgeschrittene. münstergasse 30, 3011 bern — münsterplatz vinyasa hatha yin yoga functional training workshops 200h teacher training annina voegeli andrea schneider lena deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Luna<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Luna</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Münstergasse 30, 3011 Bern <span class="addr-label">(Münsterplatz)</span></p>
-    <p class="studio-desc">Yogastudio im Herzen von Bern am Münsterplatz, offen für Anfänger und Fortgeschrittene.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Hatha</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Functional Training</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Münstergasse 30, 3011 Bern — Münsterplatz</span></div>
+    <p class="studio-description">Yogastudio im Herzen von Bern am Münsterplatz, offen für Anfänger und Fortgeschrittene.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa</span><span class="style-tag">Hatha</span><span class="style-tag">Yin Yoga</span><span class="style-tag">Functional Training</span></div>
     <div class="studio-contact"><a href="https://www.yogaluna.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:hello@yogaluna.ch" class="canton-contact-link">hello@yogaluna.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Workshops</span><span class="feature-badge">200h Teacher Training</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="jivamukti|vinyasa|hatha|yin yoga|pranayama|meditation" data-search="svarupa yoga bern zwei einzigartige yogastudios im herzen von bern. lorraine-studio über der aare mit blick auf den botanischen garten. cave-studio im historischen gewölbekeller. seelandweg 7, 3013 bern — lorraine postgasse 44, 3011 bern — cave (altstadt) jivamukti vinyasa hatha yin yoga pranayama meditation 200h teacher training online content 2 standorte breath trainings stephen celine brigi deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">svarupa yoga bern<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">svarupa yoga bern</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Seelandweg 7, 3013 Bern <span class="addr-label">(Lorraine)</span></p><p class="studio-address">Postgasse 44, 3011 Bern <span class="addr-label">(Cave (Altstadt))</span></p>
-    <p class="studio-desc">Zwei einzigartige Yogastudios im Herzen von Bern. Lorraine-Studio über der Aare mit Blick auf den Botanischen Garten. Cave-Studio im historischen Gewölbekeller.</p>
-    <div class="studio-styles"><span class="style-badge">Jivamukti</span><span class="style-badge">Vinyasa</span><span class="style-badge">Hatha</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Pranayama</span><span class="style-badge">Meditation</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Seelandweg 7, 3013 Bern — Lorraine</span></div><div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Postgasse 44, 3011 Bern — Cave (Altstadt)</span></div>
+    <p class="studio-description">Zwei einzigartige Yogastudios im Herzen von Bern. Lorraine-Studio über der Aare mit Blick auf den Botanischen Garten. Cave-Studio im historischen Gewölbekeller.</p>
+    <div class="studio-styles"><span class="style-tag">Jivamukti</span><span class="style-tag">Vinyasa</span><span class="style-tag">Hatha</span><span class="style-tag">Yin Yoga</span><span class="style-tag">Pranayama</span><span class="style-tag">Meditation</span></div>
     <div class="studio-contact"><a href="https://svarupa.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:om@svarupa.com" class="canton-contact-link">om@svarupa.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">200h Teacher Training</span><span class="feature-badge">Online Content</span><span class="feature-badge">2 Standorte</span><span class="feature-badge">Breath Trainings</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="ashtanga|hatha|yogveda method|meditation|kriya" data-search="yogveda yoga authentische und moderne interpretation von klassischem ashtanga yoga seit 2006. geführt von yoga-meister shahid khan. kramgasse 78, 3011 bern — altstadt ashtanga hatha yogveda method meditation kriya 200h teacher training workshops chakra workshops shahid khan deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yogveda Yoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yogveda Yoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Kramgasse 78, 3011 Bern <span class="addr-label">(Altstadt)</span></p>
-    <p class="studio-desc">Authentische und moderne Interpretation von klassischem Ashtanga Yoga seit 2006. Geführt von Yoga-Meister Shahid Khan.</p>
-    <div class="studio-styles"><span class="style-badge">Ashtanga</span><span class="style-badge">Hatha</span><span class="style-badge">Yogveda Method</span><span class="style-badge">Meditation</span><span class="style-badge">Kriya</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Kramgasse 78, 3011 Bern — Altstadt</span></div>
+    <p class="studio-description">Authentische und moderne Interpretation von klassischem Ashtanga Yoga seit 2006. Geführt von Yoga-Meister Shahid Khan.</p>
+    <div class="studio-styles"><span class="style-tag">Ashtanga</span><span class="style-tag">Hatha</span><span class="style-tag">Yogveda Method</span><span class="style-tag">Meditation</span><span class="style-tag">Kriya</span></div>
     <div class="studio-contact"><a href="https://www.yogveda.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 31 311 50 88" class="canton-contact-link">+41 31 311 50 88</a> &middot; <a href="mailto:info@yogveda.ch" class="canton-contact-link">info@yogveda.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">200h Teacher Training</span><span class="feature-badge">Workshops</span><span class="feature-badge">Chakra Workshops</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="iyengar yoga" data-search="iyengar yoga bern älteste iyengar-yoga-schule der schweiz, gegründet 1989. klassen für alle stufen von anfänger bis fortgeschrittene. schänzlihalde 23, 3013 bern iyengar yoga workshops retreats intensivkurse judith adank deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Iyengar Yoga Bern<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Iyengar Yoga Bern</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Schänzlihalde 23, 3013 Bern</p>
-    <p class="studio-desc">Älteste Iyengar-Yoga-Schule der Schweiz, gegründet 1989. Klassen für alle Stufen von Anfänger bis Fortgeschrittene.</p>
-    <div class="studio-styles"><span class="style-badge">Iyengar Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Schänzlihalde 23, 3013 Bern</span></div>
+    <p class="studio-description">Älteste Iyengar-Yoga-Schule der Schweiz, gegründet 1989. Klassen für alle Stufen von Anfänger bis Fortgeschrittene.</p>
+    <div class="studio-styles"><span class="style-tag">Iyengar Yoga</span></div>
     <div class="studio-contact"><a href="https://www.iyengar-yoga-bern.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 31 333 42 00" class="canton-contact-link">+41 31 333 42 00</a> &middot; <a href="mailto:info@iyengar-yoga-bern.ch" class="canton-contact-link">info@iyengar-yoga-bern.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Workshops</span><span class="feature-badge">Retreats</span><span class="feature-badge">Intensivkurse</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="meditation|mantra yoga|yoga therapy|pranayama|kundalini yoga|traditional indian yoga|hatha yoga|kriya yoga" data-search="yogaalaya bern traditionelles indisches yoga und therapie in bern seit 2001. unterricht auf englisch. schlösslistrasse 15, 3008 bern meditation mantra yoga yoga therapy pranayama kundalini yoga traditional indian yoga hatha yoga kriya yoga yoga therapy traditional indian yoga suresh kumar english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yogaalaya Bern<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yogaalaya Bern</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Schlösslistrasse 15, 3008 Bern</p>
-    <p class="studio-desc">Traditionelles indisches Yoga und Therapie in Bern seit 2001. Unterricht auf Englisch.</p>
-    <div class="studio-styles"><span class="style-badge">Meditation</span><span class="style-badge">Mantra Yoga</span><span class="style-badge">Yoga Therapy</span><span class="style-badge">Pranayama</span><span class="style-badge">Kundalini Yoga</span><span class="style-badge">Traditional Indian Yoga</span><span class="style-badge">Hatha Yoga</span><span class="style-badge">Kriya Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Schlösslistrasse 15, 3008 Bern</span></div>
+    <p class="studio-description">Traditionelles indisches Yoga und Therapie in Bern seit 2001. Unterricht auf Englisch.</p>
+    <div class="studio-styles"><span class="style-tag">Meditation</span><span class="style-tag">Mantra Yoga</span><span class="style-tag">Yoga Therapy</span><span class="style-tag">Pranayama</span><span class="style-tag">Kundalini Yoga</span><span class="style-tag">Traditional Indian Yoga</span><span class="style-tag">Hatha Yoga</span><span class="style-tag">Kriya Yoga</span></div>
     <div class="studio-contact"><a href="https://www.yoga-bern.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 122 50 40" class="canton-contact-link">+41 79 122 50 40</a> &middot; <a href="mailto:suresh.kumar@yoga-bern.ch" class="canton-contact-link">suresh.kumar@yoga-bern.ch</a></div>
     <p class="studio-languages">Sprachen: English</p>
     <div class="studio-features"><span class="feature-badge">Yoga Therapy</span><span class="feature-badge">Traditional Indian Yoga</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hot yoga" data-search="hot yoga christoph herren hot yoga studio mit fast täglichen klassen. wärme durch infrarotstrahlen. funkerstrasse 23, 3013 bern hot yoga infrarot-wärme tägliche klassen christoph herren deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Hot Yoga Christoph Herren<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Hot Yoga Christoph Herren</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Funkerstrasse 23, 3013 Bern</p>
-    <p class="studio-desc">Hot Yoga Studio mit fast täglichen Klassen. Wärme durch Infrarotstrahlen.</p>
-    <div class="studio-styles"><span class="style-badge">Hot Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Funkerstrasse 23, 3013 Bern</span></div>
+    <p class="studio-description">Hot Yoga Studio mit fast täglichen Klassen. Wärme durch Infrarotstrahlen.</p>
+    <div class="studio-styles"><span class="style-tag">Hot Yoga</span></div>
     <div class="studio-contact"><a href="https://www.hotyogachristophherren.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 31 331 20 00" class="canton-contact-link">+41 31 331 20 00</a> &middot; <a href="mailto:info@hotyogachristophherren.ch" class="canton-contact-link">info@hotyogachristophherren.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Infrarot-Wärme</span><span class="feature-badge">Tägliche Klassen</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hot yoga|vinyasa flow|restorative yoga" data-search="hothaus hot yoga &amp; movement bern geräumiges, zentral gelegenes hot yoga studio. mitgliedschaften gelten auch für den standort in zug. bubenbergplatz 8, 3011 bern — beim bahnhof hot yoga vinyasa flow restorative yoga 2 standorte (bern &amp; zug)  deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">HOTHAUS Hot Yoga &amp; Movement Bern<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">HOTHAUS Hot Yoga &amp; Movement Bern</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Bubenbergplatz 8, 3011 Bern <span class="addr-label">(beim Bahnhof)</span></p>
-    <p class="studio-desc">Geräumiges, zentral gelegenes Hot Yoga Studio. Mitgliedschaften gelten auch für den Standort in Zug.</p>
-    <div class="studio-styles"><span class="style-badge">Hot Yoga</span><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Restorative Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Bubenbergplatz 8, 3011 Bern — beim Bahnhof</span></div>
+    <p class="studio-description">Geräumiges, zentral gelegenes Hot Yoga Studio. Mitgliedschaften gelten auch für den Standort in Zug.</p>
+    <div class="studio-styles"><span class="style-tag">Hot Yoga</span><span class="style-tag">Vinyasa Flow</span><span class="style-tag">Restorative Yoga</span></div>
     <div class="studio-contact"><a href="https://www.hothausyoga.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 693 02 39" class="canton-contact-link">+41 79 693 02 39</a> &middot; <a href="mailto:info@hothausyoga.com" class="canton-contact-link">info@hothausyoga.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">2 Standorte (Bern &amp; Zug)</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa|gentle flow|hatha" data-search="yogamarket feste oase im herzen der berner altstadt seit 2010. täglich mehrere yogaklassen in kleinem yogaraum und grossem shala. münstergasse 70, 2. &amp; 3. og, 3011 bern — altstadt vinyasa gentle flow hatha grosser shala seit 2010  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">yogamarket<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">yogamarket</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Münstergasse 70, 2. &amp; 3. OG, 3011 Bern <span class="addr-label">(Altstadt)</span></p>
-    <p class="studio-desc">Feste Oase im Herzen der Berner Altstadt seit 2010. Täglich mehrere Yogaklassen in kleinem Yogaraum und grossem Shala.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Gentle Flow</span><span class="style-badge">Hatha</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Münstergasse 70, 2. &amp; 3. OG, 3011 Bern — Altstadt</span></div>
+    <p class="studio-description">Feste Oase im Herzen der Berner Altstadt seit 2010. Täglich mehrere Yogaklassen in kleinem Yogaraum und grossem Shala.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa</span><span class="style-tag">Gentle Flow</span><span class="style-tag">Hatha</span></div>
     <div class="studio-contact"><a href="https://yogamarket.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:info@yogamarket.ch" class="canton-contact-link">info@yogamarket.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Grosser Shala</span><span class="feature-badge">Seit 2010</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yin yoga|jivamukti|iyengar|jivamukti yoga|yoga nidra" data-search="hrdayam - jivamukti yoga bern non-profit jivamukti yoga studio in der altstadt. alle klassen mit &amp;#x27;pay what you can&amp;#x27;-option. gerechtigkeitsgasse 77, 3011 bern — altstadt yin yoga jivamukti iyengar jivamukti yoga yoga nidra pay what you can non-profit community-basiert bobesh dhuri binh tschan clare nicholls carole schaer pavlo bublyk nadine guldimann tina scaringi deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Hrdayam - Jivamukti Yoga Bern<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Hrdayam - Jivamukti Yoga Bern</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Gerechtigkeitsgasse 77, 3011 Bern <span class="addr-label">(Altstadt)</span></p>
-    <p class="studio-desc">Non-Profit Jivamukti Yoga Studio in der Altstadt. Alle Klassen mit &#x27;Pay what you can&#x27;-Option.</p>
-    <div class="studio-styles"><span class="style-badge">Yin Yoga</span><span class="style-badge">Jivamukti</span><span class="style-badge">Iyengar</span><span class="style-badge">Jivamukti Yoga</span><span class="style-badge">Yoga Nidra</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Gerechtigkeitsgasse 77, 3011 Bern — Altstadt</span></div>
+    <p class="studio-description">Non-Profit Jivamukti Yoga Studio in der Altstadt. Alle Klassen mit &#x27;Pay what you can&#x27;-Option.</p>
+    <div class="studio-styles"><span class="style-tag">Yin Yoga</span><span class="style-tag">Jivamukti</span><span class="style-tag">Iyengar</span><span class="style-tag">Jivamukti Yoga</span><span class="style-tag">Yoga Nidra</span></div>
     <div class="studio-contact"><a href="https://hrdayam.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:info@hrdayam.ch" class="canton-contact-link">info@hrdayam.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Pay what you can</span><span class="feature-badge">Non-Profit</span><span class="feature-badge">Community-basiert</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yoga|pilates|schwangerschaftsyoga|postnatal yoga" data-search="inside outside yoga, pilates &amp; more lichtdurchflutetes yoga- und pilates-studio im herzen von bern mit vielfältigem angebot inkl. schwangerschaftsyoga. waaghausgasse 3, 3011 bern — altstadt yoga pilates schwangerschaftsyoga postnatal yoga massagen schwangerschaftsmassage  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Inside Outside yoga, pilates &amp; more<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Inside Outside yoga, pilates &amp; more</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Waaghausgasse 3, 3011 Bern <span class="addr-label">(Altstadt)</span></p>
-    <p class="studio-desc">Lichtdurchflutetes Yoga- und Pilates-Studio im Herzen von Bern mit vielfältigem Angebot inkl. Schwangerschaftsyoga.</p>
-    <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Pilates</span><span class="style-badge">Schwangerschaftsyoga</span><span class="style-badge">Postnatal Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Waaghausgasse 3, 3011 Bern — Altstadt</span></div>
+    <p class="studio-description">Lichtdurchflutetes Yoga- und Pilates-Studio im Herzen von Bern mit vielfältigem Angebot inkl. Schwangerschaftsyoga.</p>
+    <div class="studio-styles"><span class="style-tag">Yoga</span><span class="style-tag">Pilates</span><span class="style-tag">Schwangerschaftsyoga</span><span class="style-tag">Postnatal Yoga</span></div>
     <div class="studio-contact"><a href="https://www.insideoutside.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 31 311 00 33" class="canton-contact-link">+41 31 311 00 33</a> &middot; <a href="mailto:info@insideoutside.ch" class="canton-contact-link">info@insideoutside.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Massagen</span><span class="feature-badge">Schwangerschaftsmassage</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yin yoga|hatha|ashtanga|yin &amp; yoga nidra|athletic yoga|schwangerschaftsyoga|yoga|ashtanga mysore|vinyasa" data-search="openyoga yogastudio im zentrum von bern seit 2013 mit zwei standorten in der altstadt. kramgasse 68, 3011 bern — studio 1 münzgraben 4, 3011 bern — studio 2 yin yoga hatha ashtanga yin &amp; yoga nidra athletic yoga schwangerschaftsyoga yoga ashtanga mysore vinyasa 2 standorte alle levels elisa dominic antonia christina e. marco sabine-maria dominic abplanalp niamh nastassja katrin martina adriana nicole micha myrta jessica christina w. deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">OpenYoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">OpenYoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Kramgasse 68, 3011 Bern <span class="addr-label">(Studio 1)</span></p><p class="studio-address">Münzgraben 4, 3011 Bern <span class="addr-label">(Studio 2)</span></p>
-    <p class="studio-desc">Yogastudio im Zentrum von Bern seit 2013 mit zwei Standorten in der Altstadt.</p>
-    <div class="studio-styles"><span class="style-badge">Yin Yoga</span><span class="style-badge">Hatha</span><span class="style-badge">Ashtanga</span><span class="style-badge">Yin &amp; Yoga Nidra</span><span class="style-badge">Athletic Yoga</span><span class="style-badge">Schwangerschaftsyoga</span><span class="style-badge">Yoga</span><span class="style-badge">Ashtanga Mysore</span><span class="style-badge">Vinyasa</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Kramgasse 68, 3011 Bern — Studio 1</span></div><div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Münzgraben 4, 3011 Bern — Studio 2</span></div>
+    <p class="studio-description">Yogastudio im Zentrum von Bern seit 2013 mit zwei Standorten in der Altstadt.</p>
+    <div class="studio-styles"><span class="style-tag">Yin Yoga</span><span class="style-tag">Hatha</span><span class="style-tag">Ashtanga</span><span class="style-tag">Yin &amp; Yoga Nidra</span><span class="style-tag">Athletic Yoga</span><span class="style-tag">Schwangerschaftsyoga</span><span class="style-tag">Yoga</span><span class="style-tag">Ashtanga Mysore</span><span class="style-tag">Vinyasa</span></div>
     <div class="studio-contact"><a href="https://www.open-yoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 699 70 15" class="canton-contact-link">+41 78 699 70 15</a> &middot; <a href="mailto:info@open-yoga.ch" class="canton-contact-link">info@open-yoga.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">2 Standorte</span><span class="feature-badge">Alle Levels</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="ashtanga yoga|vinyasa flow|yin &amp; yang yoga|pilates|slings myofascial training" data-search="origin8 - yoga, pilates &amp; more studio currently on pause (origin8 macht pause). ashtanga, vinyasa, yin &amp;amp; yang. sickingerstrasse 6, 3014 bern ashtanga yoga vinyasa flow yin &amp; yang yoga pilates slings myofascial training myofascial training pilates  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">origin8 - yoga, pilates &amp; more<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">origin8 - yoga, pilates &amp; more</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Sickingerstrasse 6, 3014 Bern</p>
-    <p class="studio-desc">Studio currently on pause (origin8 macht pause). Ashtanga, Vinyasa, Yin &amp; Yang.</p>
-    <div class="studio-styles"><span class="style-badge">Ashtanga Yoga</span><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Yin &amp; Yang Yoga</span><span class="style-badge">Pilates</span><span class="style-badge">Slings Myofascial Training</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Sickingerstrasse 6, 3014 Bern</span></div>
+    <p class="studio-description">Studio currently on pause (origin8 macht pause). Ashtanga, Vinyasa, Yin &amp; Yang.</p>
+    <div class="studio-styles"><span class="style-tag">Ashtanga Yoga</span><span class="style-tag">Vinyasa Flow</span><span class="style-tag">Yin &amp; Yang Yoga</span><span class="style-tag">Pilates</span><span class="style-tag">Slings Myofascial Training</span></div>
     <div class="studio-contact"><a href="https://origin8.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 649 24 44" class="canton-contact-link">+41 78 649 24 44</a> &middot; <a href="mailto:info@origin8.ch" class="canton-contact-link">info@origin8.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Myofascial Training</span><span class="feature-badge">Pilates</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|esalen bodywork" data-search="grey rebel yoga &amp; kinesiologie kleines studio in der altstadt für yoga und kinesiologie. rathausgasse 55, 2. og, 3011 bern — altstadt hatha vinyasa esalen bodywork kinesiologie esalen bodywork maja traber-watters deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Grey Rebel Yoga &amp; Kinesiologie<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Grey Rebel Yoga &amp; Kinesiologie</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rathausgasse 55, 2. OG, 3011 Bern <span class="addr-label">(Altstadt)</span></p>
-    <p class="studio-desc">Kleines Studio in der Altstadt für Yoga und Kinesiologie.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Esalen Bodywork</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rathausgasse 55, 2. OG, 3011 Bern — Altstadt</span></div>
+    <p class="studio-description">Kleines Studio in der Altstadt für Yoga und Kinesiologie.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Esalen Bodywork</span></div>
     <div class="studio-contact"><a href="https://www.grey-rebel.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:hello@grey-rebel.com" class="canton-contact-link">hello@grey-rebel.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Kinesiologie</span><span class="feature-badge">Esalen Bodywork</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha yoga (kashmir)|vinyasa krama|restorative yoga|schwangerschaftsyoga" data-search="natha yoga schweiz effektives und reines yoga aus kashmir, nordindien. studio an der aare mit lehrerausbildung. uferweg 7a, 3013 bern — an der aare hatha yoga (kashmir) vinyasa krama restorative yoga schwangerschaftsyoga yoga teacher training kashmir yoga tradition lage an der aare zahra boutaleb heidi alice andrea deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Natha Yoga Schweiz<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Natha Yoga Schweiz</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Uferweg 7a, 3013 Bern <span class="addr-label">(an der Aare)</span></p>
-    <p class="studio-desc">Effektives und reines Yoga aus Kashmir, Nordindien. Studio an der Aare mit Lehrerausbildung.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha Yoga (Kashmir)</span><span class="style-badge">Vinyasa Krama</span><span class="style-badge">Restorative Yoga</span><span class="style-badge">Schwangerschaftsyoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Uferweg 7a, 3013 Bern — an der Aare</span></div>
+    <p class="studio-description">Effektives und reines Yoga aus Kashmir, Nordindien. Studio an der Aare mit Lehrerausbildung.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha Yoga (Kashmir)</span><span class="style-tag">Vinyasa Krama</span><span class="style-tag">Restorative Yoga</span><span class="style-tag">Schwangerschaftsyoga</span></div>
     <div class="studio-contact"><a href="https://www.natha-yoga-schweiz.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 358 38 45" class="canton-contact-link">+41 79 358 38 45</a> &middot; <a href="mailto:info@natha-yoga-schweiz.ch" class="canton-contact-link">info@natha-yoga-schweiz.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Yoga Teacher Training</span><span class="feature-badge">Kashmir Yoga Tradition</span><span class="feature-badge">Lage an der Aare</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="iyengar yoga" data-search="yogabern iyengar-yoga-schule iyengar-yoga-schule mit täglichen klassen auf verschiedenen stufen. einstieg jederzeit möglich. hallwylstrasse 21, 3005 bern iyengar yoga alle levels tägliche klassen  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">YOGABERN Iyengar-Yoga-Schule<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">YOGABERN Iyengar-Yoga-Schule</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Hallwylstrasse 21, 3005 Bern</p>
-    <p class="studio-desc">Iyengar-Yoga-Schule mit täglichen Klassen auf verschiedenen Stufen. Einstieg jederzeit möglich.</p>
-    <div class="studio-styles"><span class="style-badge">Iyengar Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Hallwylstrasse 21, 3005 Bern</span></div>
+    <p class="studio-description">Iyengar-Yoga-Schule mit täglichen Klassen auf verschiedenen Stufen. Einstieg jederzeit möglich.</p>
+    <div class="studio-styles"><span class="style-tag">Iyengar Yoga</span></div>
     <div class="studio-contact"><a href="https://yogabern.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 784 76 67" class="canton-contact-link">+41 79 784 76 67</a> &middot; <a href="mailto:info@yogabern.ch" class="canton-contact-link">info@yogabern.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Alle Levels</span><span class="feature-badge">Tägliche Klassen</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="iyengar yoga" data-search="vayam yoga iyengar yoga studio direkt beim bahnhof sbb bern. klassen für alle levels in einladendem raum. bubenbergplatz 8, 3011 bern — beim bahnhof iyengar yoga zentrale lage alle levels  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">vayam yoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">vayam yoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Bubenbergplatz 8, 3011 Bern <span class="addr-label">(beim Bahnhof)</span></p>
-    <p class="studio-desc">Iyengar Yoga Studio direkt beim Bahnhof SBB Bern. Klassen für alle Levels in einladendem Raum.</p>
-    <div class="studio-styles"><span class="style-badge">Iyengar Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Bubenbergplatz 8, 3011 Bern — beim Bahnhof</span></div>
+    <p class="studio-description">Iyengar Yoga Studio direkt beim Bahnhof SBB Bern. Klassen für alle Levels in einladendem Raum.</p>
+    <div class="studio-styles"><span class="style-tag">Iyengar Yoga</span></div>
     <div class="studio-contact"><a href="https://www.vayamyoga.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:info@vayamyoga.com" class="canton-contact-link">info@vayamyoga.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Zentrale Lage</span><span class="feature-badge">Alle Levels</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yoga|schwangerschaftsyoga|yoga nidra|atemtherapie" data-search="devi yoga atem therapie spezialisiertes studio für familien, schwangere und frauen mit kinderwunsch. yoga, atem, hypnobirthing. beaumontweg 12, 3007 bern yoga schwangerschaftsyoga yoga nidra atemtherapie hypnobirthing atemtherapie nach middendorf krankenkassen-anerkannt (emr) melanie nohr deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">DEVI Yoga Atem Therapie<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">DEVI Yoga Atem Therapie</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Beaumontweg 12, 3007 Bern</p>
-    <p class="studio-desc">Spezialisiertes Studio für Familien, Schwangere und Frauen mit Kinderwunsch. Yoga, Atem, Hypnobirthing.</p>
-    <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Schwangerschaftsyoga</span><span class="style-badge">Yoga Nidra</span><span class="style-badge">Atemtherapie</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Beaumontweg 12, 3007 Bern</span></div>
+    <p class="studio-description">Spezialisiertes Studio für Familien, Schwangere und Frauen mit Kinderwunsch. Yoga, Atem, Hypnobirthing.</p>
+    <div class="studio-styles"><span class="style-tag">Yoga</span><span class="style-tag">Schwangerschaftsyoga</span><span class="style-tag">Yoga Nidra</span><span class="style-tag">Atemtherapie</span></div>
     <div class="studio-contact"><a href="https://www.devi-yoga-health.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 468 91 45" class="canton-contact-link">+41 79 468 91 45</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Hypnobirthing</span><span class="feature-badge">Atemtherapie nach Middendorf</span><span class="feature-badge">Krankenkassen-anerkannt (EMR)</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="ashtanga yoga|alignment|movement culture|yoga philosophy" data-search="yogakaleidoskop traditionelles ashtanga yoga, innovative therapie, alignment, bewegungskultur und inspirierende philosophie. belpstrasse 16, 3007 bern ashtanga yoga alignment movement culture yoga philosophy therapy movement culture sabine wolters deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yogakaleidoskop<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yogakaleidoskop</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Belpstrasse 16, 3007 Bern</p>
-    <p class="studio-desc">Traditionelles Ashtanga Yoga, innovative Therapie, Alignment, Bewegungskultur und inspirierende Philosophie.</p>
-    <div class="studio-styles"><span class="style-badge">Ashtanga Yoga</span><span class="style-badge">Alignment</span><span class="style-badge">Movement Culture</span><span class="style-badge">Yoga Philosophy</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Belpstrasse 16, 3007 Bern</span></div>
+    <p class="studio-description">Traditionelles Ashtanga Yoga, innovative Therapie, Alignment, Bewegungskultur und inspirierende Philosophie.</p>
+    <div class="studio-styles"><span class="style-tag">Ashtanga Yoga</span><span class="style-tag">Alignment</span><span class="style-tag">Movement Culture</span><span class="style-tag">Yoga Philosophy</span></div>
     <div class="studio-contact"><a href="https://www.innerlightacademy.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:zenter@kaleidoskop.org" class="canton-contact-link">zenter@kaleidoskop.org</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Therapy</span><span class="feature-badge">Movement Culture</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa|hatha|yin yoga" data-search="yoga &amp; more yogastudio im schönen länggasse-quartier, 10 minuten zu fuss vom bahnhof. ahornweg 11, 3012 bern — länggasse vinyasa hatha yin yoga schnupperklasse gratis studentenrabatt  deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga &amp; more<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga &amp; more</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Ahornweg 11, 3012 Bern <span class="addr-label">(Länggasse)</span></p>
-    <p class="studio-desc">Yogastudio im schönen Länggasse-Quartier, 10 Minuten zu Fuss vom Bahnhof.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Hatha</span><span class="style-badge">Yin Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Ahornweg 11, 3012 Bern — Länggasse</span></div>
+    <p class="studio-description">Yogastudio im schönen Länggasse-Quartier, 10 Minuten zu Fuss vom Bahnhof.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa</span><span class="style-tag">Hatha</span><span class="style-tag">Yin Yoga</span></div>
     <div class="studio-contact"><a href="https://www.yoga-and-more.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 490 81 11" class="canton-contact-link">+41 76 490 81 11</a> &middot; <a href="mailto:info@yoga-and-more.ch" class="canton-contact-link">info@yoga-and-more.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Schnupperklasse gratis</span><span class="feature-badge">Studentenrabatt</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="energie yoga|desk yoga" data-search="energie yoga yoga-kurse in steffisburg und desk yoga für nacken, schulter und wirbelsäule in bern. scheidgasse 19, 3612 steffisburg — hauptstudio schwarztorstrasse 25, 3007 bern — desk yoga energie yoga desk yoga desk yoga büro-yoga  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Energie Yoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Energie Yoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Scheidgasse 19, 3612 Steffisburg <span class="addr-label">(Hauptstudio)</span></p><p class="studio-address">Schwarztorstrasse 25, 3007 Bern <span class="addr-label">(Desk Yoga)</span></p>
-    <p class="studio-desc">Yoga-Kurse in Steffisburg und Desk Yoga für Nacken, Schulter und Wirbelsäule in Bern.</p>
-    <div class="studio-styles"><span class="style-badge">Energie Yoga</span><span class="style-badge">Desk Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Scheidgasse 19, 3612 Steffisburg — Hauptstudio</span></div><div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Schwarztorstrasse 25, 3007 Bern — Desk Yoga</span></div>
+    <p class="studio-description">Yoga-Kurse in Steffisburg und Desk Yoga für Nacken, Schulter und Wirbelsäule in Bern.</p>
+    <div class="studio-styles"><span class="style-tag">Energie Yoga</span><span class="style-tag">Desk Yoga</span></div>
     <div class="studio-contact"><a href="https://energieyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 791 75 68" class="canton-contact-link">+41 78 791 75 68</a> &middot; <a href="mailto:fb-kontakt@energieyoga.ch" class="canton-contact-link">fb-kontakt@energieyoga.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Desk Yoga</span><span class="feature-badge">Büro-Yoga</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|slow vinyasa|inside flow|surfyoga|athleticflow|functional training" data-search="soulspace köniz ort der community, inspiration und persönlichen entfaltung in köniz bei bern. von sanft bis kraftvoll. schlossstrasse 3, 3098 köniz hatha vinyasa slow vinyasa inside flow surfyoga athleticflow functional training workshops sound events holistic health tamara parham deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Soulspace Köniz<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Soulspace Köniz</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Schlossstrasse 3, 3098 Köniz</p>
-    <p class="studio-desc">Ort der Community, Inspiration und persönlichen Entfaltung in Köniz bei Bern. Von sanft bis kraftvoll.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Slow Vinyasa</span><span class="style-badge">Inside Flow</span><span class="style-badge">Surfyoga</span><span class="style-badge">Athleticflow</span><span class="style-badge">Functional Training</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Schlossstrasse 3, 3098 Köniz</span></div>
+    <p class="studio-description">Ort der Community, Inspiration und persönlichen Entfaltung in Köniz bei Bern. Von sanft bis kraftvoll.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Slow Vinyasa</span><span class="style-tag">Inside Flow</span><span class="style-tag">Surfyoga</span><span class="style-tag">Athleticflow</span><span class="style-tag">Functional Training</span></div>
     <div class="studio-contact"><a href="https://soulspace-koeniz.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 392 13 27" class="canton-contact-link">+41 76 392 13 27</a> &middot; <a href="mailto:tamara@soulspace-koeniz.ch" class="canton-contact-link">tamara@soulspace-koeniz.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Workshops</span><span class="feature-badge">Sound Events</span><span class="feature-badge">Holistic Health</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|yin yoga|meditation" data-search="yoga room ganzheitliches gesundheitszentrum für yoga, ayurveda und psychologie mit standorten in köniz und thun. schulhausgässli 4, 3098 köniz — köniz seestrasse 2, 3600 thun — thun hatha vinyasa yin yoga meditation ayurveda psychologie 2 standorte  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">yoga room<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">yoga room</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Schulhausgässli 4, 3098 Köniz <span class="addr-label">(Köniz)</span></p><p class="studio-address">Seestrasse 2, 3600 Thun <span class="addr-label">(Thun)</span></p>
-    <p class="studio-desc">Ganzheitliches Gesundheitszentrum für Yoga, Ayurveda und Psychologie mit Standorten in Köniz und Thun.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Meditation</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Schulhausgässli 4, 3098 Köniz — Köniz</span></div><div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Seestrasse 2, 3600 Thun — Thun</span></div>
+    <p class="studio-description">Ganzheitliches Gesundheitszentrum für Yoga, Ayurveda und Psychologie mit Standorten in Köniz und Thun.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Yin Yoga</span><span class="style-tag">Meditation</span></div>
     <div class="studio-contact"><a href="https://www.yoga-room.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:info@yoga-room.ch" class="canton-contact-link">info@yoga-room.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Ayurveda</span><span class="feature-badge">Psychologie</span><span class="feature-badge">2 Standorte</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yoga flow|yin yoga|jivamukti yoga|power yoga|schwangerschaftsyoga|50+ yoga|pilates" data-search="yoga bude yogastudio in der thuner altstadt mit breitem angebot für alle altersgruppen inkl. outdoor yoga im sommer. obere hauptgasse 60, 3600 thun — altstadt yoga flow yin yoga jivamukti yoga power yoga schwangerschaftsyoga 50+ yoga pilates outdoor yoga schnupperabo rückbildung 50+ yoga karin zeller-germann deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Bude<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Bude</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Obere Hauptgasse 60, 3600 Thun <span class="addr-label">(Altstadt)</span></p>
-    <p class="studio-desc">Yogastudio in der Thuner Altstadt mit breitem Angebot für alle Altersgruppen inkl. Outdoor Yoga im Sommer.</p>
-    <div class="studio-styles"><span class="style-badge">Yoga Flow</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Jivamukti Yoga</span><span class="style-badge">Power Yoga</span><span class="style-badge">Schwangerschaftsyoga</span><span class="style-badge">50+ Yoga</span><span class="style-badge">Pilates</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Obere Hauptgasse 60, 3600 Thun — Altstadt</span></div>
+    <p class="studio-description">Yogastudio in der Thuner Altstadt mit breitem Angebot für alle Altersgruppen inkl. Outdoor Yoga im Sommer.</p>
+    <div class="studio-styles"><span class="style-tag">Yoga Flow</span><span class="style-tag">Yin Yoga</span><span class="style-tag">Jivamukti Yoga</span><span class="style-tag">Power Yoga</span><span class="style-tag">Schwangerschaftsyoga</span><span class="style-tag">50+ Yoga</span><span class="style-tag">Pilates</span></div>
     <div class="studio-contact"><a href="https://www.yogabude.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 619 10 60" class="canton-contact-link">+41 79 619 10 60</a> &middot; <a href="mailto:yogabude@bluewin.ch" class="canton-contact-link">yogabude@bluewin.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Outdoor Yoga</span><span class="feature-badge">Schnupperabo</span><span class="feature-badge">Rückbildung</span><span class="feature-badge">50+ Yoga</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yang yoga|yin yoga|meditation|pilates" data-search="yoga club biel-bienne community-orientiertes yogastudio in biel/bienne mit yin, yang yoga, meditation und pilates. rue de la gurzelen 31, 2502 biel/bienne yang yoga yin yoga meditation pilates ernährungsberatung workshops bilingue de/fr jonathan boder deutsch francais">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Club Biel-Bienne<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Club Biel-Bienne</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rue de la Gurzelen 31, 2502 Biel/Bienne</p>
-    <p class="studio-desc">Community-orientiertes Yogastudio in Biel/Bienne mit Yin, Yang Yoga, Meditation und Pilates.</p>
-    <div class="studio-styles"><span class="style-badge">Yang Yoga</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Meditation</span><span class="style-badge">Pilates</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue de la Gurzelen 31, 2502 Biel/Bienne</span></div>
+    <p class="studio-description">Community-orientiertes Yogastudio in Biel/Bienne mit Yin, Yang Yoga, Meditation und Pilates.</p>
+    <div class="studio-styles"><span class="style-tag">Yang Yoga</span><span class="style-tag">Yin Yoga</span><span class="style-tag">Meditation</span><span class="style-tag">Pilates</span></div>
     <div class="studio-contact"><a href="https://www.yoga-club.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 292 22 54" class="canton-contact-link">+41 79 292 22 54</a> &middot; <a href="mailto:info@yoga-club.ch" class="canton-contact-link">info@yoga-club.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch, Francais</p>
     <div class="studio-features"><span class="feature-badge">Ernährungsberatung</span><span class="feature-badge">Workshops</span><span class="feature-badge">Bilingue DE/FR</span></div>
-</div>
+</article>
+    </div>
         </div>
     </section>
 
@@ -4630,5 +4522,86 @@
             </p>
         </div>
     </footer>
+
+<script>
+(function () {
+  'use strict';
+  var root = document.documentElement;
+
+  // --- Theme, shared with the homepage -----------------------------------
+  var themeBtn = document.getElementById('themeToggle');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('yogabasel-theme', next); } catch (e) {}
+    });
+  }
+
+  // --- Canton switcher ----------------------------------------------------
+  var sel = document.getElementById('cantonSelect');
+  if (sel) {
+    sel.addEventListener('change', function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+  }
+
+  // --- Menu (mobile) ------------------------------------------------------
+  var menuBtn = document.getElementById('menuToggle'), nav = document.getElementById('nav');
+  if (menuBtn && nav) {
+    menuBtn.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  // --- Filtering ----------------------------------------------------------
+  var grid = document.getElementById('studiosGrid');
+  if (!grid) return;
+  var cards = [].slice.call(grid.querySelectorAll('.studio-card'));
+  var search = document.getElementById('studioSearch');
+  var clearBtn = document.getElementById('searchClear');
+  var shown = document.getElementById('shownCount');
+  var noResult = document.getElementById('noResult');
+  var chips = [].slice.call(document.querySelectorAll('.filters-quick .chip'));
+  var style = 'all', query = '';
+
+  function apply() {
+    var n = 0;
+    for (var i = 0; i < cards.length; i++) {
+      var c = cards[i];
+      var okStyle = style === 'all' || (c.getAttribute('data-styles') || '').indexOf(style) !== -1;
+      var okText = !query || (c.getAttribute('data-search') || '').indexOf(query) !== -1;
+      var visible = okStyle && okText;
+      c.hidden = !visible;
+      if (visible) n++;
+    }
+    if (shown) shown.textContent = n;
+    if (noResult) noResult.hidden = n !== 0;
+    if (clearBtn) clearBtn.style.display = query ? '' : 'none';
+  }
+
+  if (search) {
+    search.addEventListener('input', function () {
+      query = search.value.trim().toLowerCase();
+      apply();
+    });
+  }
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function () {
+      search.value = ''; query = ''; apply(); search.focus();
+    });
+  }
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      chips.forEach(function (c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      style = chip.getAttribute('data-filter');
+      apply();
+    });
+  });
+})();
+</script>
+
 </body>
 </html>

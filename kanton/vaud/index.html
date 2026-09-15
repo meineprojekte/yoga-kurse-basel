@@ -44,7 +44,7 @@
     "url": "https://meineprojekte.github.io/yoga-kurse-basel/"
   },
   "inLanguage": "de",
-  "dateModified": "2026-09-14",
+  "dateModified": "2026-09-15",
   "about": {
     "@type": "Thing",
     "name": "Yoga",
@@ -1579,55 +1579,23 @@
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="../../css/fonts.css">
 
+    <!-- Applies the saved theme before first paint, so arriving here from the
+         homepage in dark mode does not flash white. Same key as js/app.min.js. -->
+    <script>try{var t=localStorage.getItem('yogabasel-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+
     <!-- Main site CSS -->
     <link rel="stylesheet" href="../../css/style.css">
 
     <!-- Canton page specific styles -->
     <style>
-        .canton-hero {
-            background: linear-gradient(135deg, #6B5B95 0%, #8B7DB5 40%, #D4A373 100%);
-            color: #fff;
-            padding: 80px 0 60px;
-            text-align: center;
-        }
-        .canton-hero h1 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 2.8rem;
-            margin-bottom: 8px;
-            font-weight: 700;
-        }
-        .canton-hero .canton-subtitle {
-            font-size: 1.15rem;
-            opacity: 0.92;
-            margin-bottom: 24px;
-        }
-        .canton-stats {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .stat-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .stat-number {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 2.2rem;
-            font-weight: 700;
-            line-height: 1;
-        }
-        .stat-label {
-            font-size: 0.9rem;
-            opacity: 0.85;
-            margin-top: 4px;
-        }
+        /* Same width as .container in css/style.css, so these sections line up
+           with the app header, hero and studio grid instead of sitting in a
+           narrower column of their own. */
         .canton-container {
-            max-width: 1100px;
+            width: 100%;
+            max-width: var(--container-max, 1280px);
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 var(--spacing-lg, 24px);
         }
         .canton-section {
             padding: 48px 0;
@@ -1646,60 +1614,6 @@
             color: #444;
             margin-bottom: 16px;
             max-width: 800px;
-        }
-        .studio-card {
-            background: #fff;
-            border: 1px solid #E8E8E8;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            transition: box-shadow 0.25s ease, transform 0.25s ease;
-        }
-        .studio-card:hover {
-            box-shadow: 0 6px 20px rgba(107,91,149,0.12);
-            transform: translateY(-2px);
-        }
-        .studio-card-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 10px;
-        }
-        .studio-name {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.3rem;
-            color: #2D2D2D;
-            margin: 0;
-        }
-        .studio-address {
-            font-size: 0.92rem;
-            color: #666;
-            margin-bottom: 4px;
-        }
-        .addr-label {
-            font-size: 0.82rem;
-            color: #999;
-        }
-        .studio-desc {
-            font-size: 0.95rem;
-            color: #555;
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-        .studio-styles {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin: 12px 0;
-        }
-        .style-badge {
-            background: #F3F0F8;
-            color: #6B5B95;
-            padding: 3px 10px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
         }
         .studio-contact {
             margin: 10px 0;
@@ -1740,16 +1654,6 @@
             font-size: 0.78rem;
             font-weight: 500;
             border: 1px solid #E8C9A4;
-        }
-        .dropin-badge {
-            background: #4CAF50;
-            color: #fff;
-            padding: 2px 10px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-left: 10px;
-            vertical-align: middle;
         }
         .no-data {
             color: #999;
@@ -1874,49 +1778,6 @@
         .canton-breadcrumb a:hover {
             text-decoration: underline;
         }
-        .canton-header {
-            background: #fff;
-            border-bottom: 1px solid #E8E8E8;
-            padding: 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .canton-header-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 14px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .canton-logo {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.3rem;
-            color: #6B5B95;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .canton-logo strong {
-            color: #D4A373;
-        }
-        .canton-nav {
-            display: flex;
-            gap: 20px;
-            list-style: none;
-        }
-        .canton-nav a {
-            color: #555;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .canton-nav a:hover {
-            color: #6B5B95;
-        }
         .canton-footer {
             background: #2D2D2D;
             color: #aaa;
@@ -1931,41 +1792,113 @@
         .canton-footer a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 768px) {
-            .canton-hero h1 { font-size: 1.8rem; }
-            .canton-stats { gap: 24px; }
-            .stat-number { font-size: 1.6rem; }
-            .canton-section h2 { font-size: 1.4rem; }
-            .canton-nav { gap: 12px; }
-            .canton-nav a { font-size: 0.8rem; }
-            .studio-card { padding: 16px; }
-            .canton-header-inner { flex-direction: column; gap: 10px; }
+        /* Hero, header, grid and cards are styled by css/style.css, exactly as on
+           the homepage — including their breakpoints. Only what is specific to
+           this page needs a rule here. */
+        .canton-toolbar {
+            margin: 0 0 18px;
         }
-        @media (max-width: 480px) {
-            .canton-hero { padding: 60px 0 40px; }
-            .canton-hero h1 { font-size: 1.5rem; }
-            .canton-stats { flex-direction: column; gap: 16px; }
+        .canton-count {
+            font-size: 0.9rem;
+            color: var(--color-text-light, #777);
+            margin: 0;
+        }
+        .canton-noresult {
+            margin: 24px 0 0;
+            padding: 20px;
+            text-align: center;
+            color: var(--color-text-light, #777);
+            background: var(--color-surface, #F8F8F8);
+            border-radius: 12px;
+        }
+        .studios-grid .studio-contact {
+            margin: 10px 0 0;
+        }
+        @media (max-width: 768px) {
+            .canton-section h2 { font-size: 1.4rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="canton-header">
-        <div class="canton-header-inner">
-            <a href="../../" class="canton-logo">
-                <span>🧘</span>
-                <span>Yoga<strong>Schweiz</strong></span>
+    <!-- Header: same markup and classes as the JS app on the homepage, so the
+         two views look like one site. Section links that exist on this page stay
+         local; app-only features point back to the homepage. -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="../../" class="logo">
+                <span class="logo-icon">🧘</span>
+                <span class="logo-text">Yoga<strong>Schweiz</strong></span>
             </a>
-            <nav>
-                <ul class="canton-nav">
-                    <li><a href="../../">Home</a></li>
-                    <li><a href="#studios">Studios</a></li>
-                    <li><a href="#stundenplan">Stundenplan</a></li>
-                    <li><a href="#andere-kantone">Kantone</a></li>
+            <nav class="nav" id="nav" aria-label="Hauptnavigation">
+                <ul class="nav-list">
+                    <li><a href="#studios" class="nav-link">Studios</a></li>
+                    <li><a href="#stundenplan" class="nav-link">Stundenplan</a></li>
+                    <li><a href="#andere-kantone" class="nav-link">Kantone</a></li>
+                    <li><a href="../../#stile" class="nav-link">Yoga-Stile</a></li>
+                    <li><a href="../../#karte" class="nav-link">Karte</a></li>
+                    <li><a href="../../#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="../../blog/" class="nav-link">Blog</a></li>
                 </ul>
             </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Design wechseln" title="Dark/Light Mode">
+                    <svg class="icon-sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Alle Yoga-Kurse in Waadt<br><span class="hero-accent">Studios &amp; Stundenplan auf einen Blick</span></h1>
+            <p class="hero-subtitle">Kanton Waadt (VD) &bull; 14 Studios &bull; Wöchentlich aktualisiert</p>
+
+            <div class="canton-selector">
+                <label class="canton-selector-label" for="cantonSelect">Wähle deinen Kanton:</label>
+                <select id="cantonSelect" class="canton-select" aria-label="Kanton wechseln">
+                    <option value="../aargau/">Aargau</option><option value="../appenzell-ar/">Appenzell A.Rh.</option><option value="../appenzell-ir/">Appenzell I.Rh.</option><option value="../basel-landschaft/">Basel-Landschaft</option><option value="../basel-stadt/">Basel-Stadt</option><option value="../bern/">Bern</option><option value="../fribourg/">Freiburg</option><option value="../geneve/">Genf</option><option value="../glarus/">Glarus</option><option value="../graubuenden/">Graubünden</option><option value="../jura/">Jura</option><option value="../luzern/">Luzern</option><option value="../neuchatel/">Neuenburg</option><option value="../nidwalden/">Nidwalden</option><option value="../obwalden/">Obwalden</option><option value="../schaffhausen/">Schaffhausen</option><option value="../schwyz/">Schwyz</option><option value="../solothurn/">Solothurn</option><option value="../st-gallen/">St. Gallen</option><option value="../ticino/">Tessin</option><option value="../thurgau/">Thurgau</option><option value="../uri/">Uri</option><option value="../vaud/" selected>Waadt</option><option value="../valais/">Wallis</option><option value="../zug/">Zug</option><option value="../zurich/">Zürich</option>
+                </select>
+            </div>
+
+            <div class="hero-search">
+                <div class="search-wrapper">
+                    <svg class="search-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <input type="search" id="studioSearch" class="search-input" placeholder="Studio, Yoga-Stil oder Quartier suchen..." autocomplete="off" aria-label="Yoga-Studio suchen">
+                    <button class="search-clear" id="searchClear" aria-label="Suche löschen" style="display:none">&times;</button>
+                </div>
+            </div>
+
+            <div class="hero-stats">
+    <div class="stat">
+        <span class="stat-number">14</span>
+        <span class="stat-label">Studios</span>
+    </div>
+    <div class="stat">
+        <span class="stat-number">67</span>
+        <span class="stat-label">Kurse/Woche</span>
+    </div>
+    <div class="stat">
+        <span class="stat-number">56</span>
+        <span class="stat-label">Yoga-Stile</span>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Style filters -->
+    <section class="filters-bar">
+        <div class="container">
+            <div class="filters-quick">
+                <button type="button" class="chip active" data-filter="all">Alle</button><button type="button" class="chip" data-filter="hatha">Hatha</button><button type="button" class="chip" data-filter="vinyasa flow">Vinyasa Flow</button><button type="button" class="chip" data-filter="vinyasa">Vinyasa</button><button type="button" class="chip" data-filter="yin">Yin</button><button type="button" class="chip" data-filter="meditation">Meditation</button><button type="button" class="chip" data-filter="pilates">Pilates</button><button type="button" class="chip" data-filter="prenatal">Prenatal</button><button type="button" class="chip" data-filter="power vinyasa">Power Vinyasa</button><button type="button" class="chip" data-filter="restorative">Restorative</button><button type="button" class="chip" data-filter="yoga nidra">Yoga Nidra</button>
+            </div>
+        </div>
+    </section>
 
     <!-- Breadcrumb -->
     <div class="canton-container">
@@ -1975,28 +1908,6 @@
             <strong>Waadt (VD)</strong>
         </nav>
     </div>
-
-    <!-- Hero -->
-    <section class="canton-hero">
-        <div class="canton-container">
-            <h1>Yoga in Waadt</h1>
-            <p class="canton-subtitle">Kanton Waadt (VD) — Alle Yoga-Studios und Kurse auf einen Blick</p>
-            <div class="canton-stats">
-    <div class="stat-item">
-        <span class="stat-number">14</span>
-        <span class="stat-label">Studios</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-number">67</span>
-        <span class="stat-label">Kurse/Woche</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-number">56</span>
-        <span class="stat-label">Yoga-Stile</span>
-    </div>
-</div>
-        </div>
-    </section>
 
     <!-- Description -->
     <section class="canton-section">
@@ -2015,160 +1926,153 @@
     <section class="canton-section" id="studios">
         <div class="canton-container">
             <h2>Yoga-Studios in Waadt (14)</h2>
-            <div class="studio-card">
-    <div class="studio-card-header">
-        <h3 class="studio-name">oOom - Yoga &amp; thérapie<span class="dropin-badge">Drop-in</span></h3>
+            <div class="canton-toolbar">
+        <p class="canton-count">Zeige <strong id="shownCount">14</strong> von <strong>14</strong> Studios</p>
+        <p class="canton-noresult" id="noResult" hidden>Keine Studios gefunden. Andere Filter versuchen.</p>
     </div>
-    <p class="studio-address">Rue de Bourg 20A, 1003 Lausanne <span class="addr-label">(Centre-ville)</span></p>
-    <p class="studio-desc">Depuis 2010 au centre de Lausanne, oOom propose des cours privés et collectifs dans une grande variété de styles. Thérapie yoga et approche holistique.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Restorative</span><span class="style-badge">Fascia Yoga</span><span class="style-badge">Pilates</span><span class="style-badge">Kundalini</span><span class="style-badge">Prenatal</span></div>
+    <div class="studios-grid" id="studiosGrid">
+<article class="studio-card" data-styles="hatha|vinyasa flow|restorative|fascia yoga|pilates|kundalini|prenatal" data-search="ooom - yoga &amp; thérapie depuis 2010 au centre de lausanne, ooom propose des cours privés et collectifs dans une grande variété de styles. thérapie yoga et approche holistique. rue de bourg 20a, 1003 lausanne — centre-ville hatha vinyasa flow restorative fascia yoga pilates kundalini prenatal thérapie yoga depuis 2010 cours privés  français english">
+    <div class="studio-card-header">
+        <h3 class="studio-name">oOom - Yoga &amp; thérapie</h3><span class="studio-badge drop-in">Drop-in</span>
+    </div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue de Bourg 20A, 1003 Lausanne — Centre-ville</span></div>
+    <p class="studio-description">Depuis 2010 au centre de Lausanne, oOom propose des cours privés et collectifs dans une grande variété de styles. Thérapie yoga et approche holistique.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa Flow</span><span class="style-tag">Restorative</span><span class="style-tag">Fascia Yoga</span><span class="style-tag">Pilates</span><span class="style-tag">Kundalini</span><span class="style-tag">Prenatal</span></div>
     <div class="studio-contact"><a href="https://ooom.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 408 43 50" class="canton-contact-link">+41 79 408 43 50</a> &middot; <a href="mailto:selma@ooom.ch" class="canton-contact-link">selma@ooom.ch</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">Thérapie yoga</span><span class="feature-badge">Depuis 2010</span><span class="feature-badge">Cours privés</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yin yoga|hatha|prenatal yoga|pilates|trauma-informed yoga|vinyasa flow|restorative|sculpt|yin yang|power vinyasa|slow vinyasa|sound bath|yin|vinyasa|yoga nidra" data-search="nueva luna yoga plus qu&amp;#x27;un studio, une communauté en mouvement ! 30+ cours par semaine dans 12 styles, workshops, retreats et bains sonores. passage saint-françois 6, 1003 lausanne yin yoga hatha prenatal yoga pilates trauma-informed yoga vinyasa flow restorative sculpt yin yang power vinyasa slow vinyasa sound bath yin vinyasa yoga nidra 30+ cours/semaine 12 styles trauma-informed sound baths retreats sofia dubois nadine blanc français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Nueva Luna Yoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Nueva Luna Yoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Passage Saint-François 6, 1003 Lausanne</p>
-    <p class="studio-desc">Plus qu&#x27;un studio, une communauté en mouvement ! 30+ cours par semaine dans 12 styles, workshops, retreats et bains sonores.</p>
-    <div class="studio-styles"><span class="style-badge">Yin Yoga</span><span class="style-badge">Hatha</span><span class="style-badge">Prenatal Yoga</span><span class="style-badge">Pilates</span><span class="style-badge">Trauma-informed Yoga</span><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Restorative</span><span class="style-badge">Sculpt</span><span class="style-badge">Yin Yang</span><span class="style-badge">Power Vinyasa</span><span class="style-badge">Slow Vinyasa</span><span class="style-badge">Sound Bath</span><span class="style-badge">Yin</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yoga Nidra</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Passage Saint-François 6, 1003 Lausanne</span></div>
+    <p class="studio-description">Plus qu&#x27;un studio, une communauté en mouvement ! 30+ cours par semaine dans 12 styles, workshops, retreats et bains sonores.</p>
+    <div class="studio-styles"><span class="style-tag">Yin Yoga</span><span class="style-tag">Hatha</span><span class="style-tag">Prenatal Yoga</span><span class="style-tag">Pilates</span><span class="style-tag">Trauma-informed Yoga</span><span class="style-tag">Vinyasa Flow</span><span class="style-tag">Restorative</span><span class="style-tag">Sculpt</span><span class="style-tag">Yin Yang</span><span class="style-tag">Power Vinyasa</span><span class="style-tag">Slow Vinyasa</span><span class="style-tag">Sound Bath</span><span class="style-tag">Yin</span><span class="style-tag">Vinyasa</span><span class="style-tag">Yoga Nidra</span></div>
     <div class="studio-contact"><a href="https://www.nuevalunayoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 737 73 05" class="canton-contact-link">+41 78 737 73 05</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">30+ cours/semaine</span><span class="feature-badge">12 styles</span><span class="feature-badge">Trauma-informed</span><span class="feature-badge">Sound baths</span><span class="feature-badge">Retreats</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yoga therapy|postnatal yoga|yogatherapy|vinyasa|postnatal|qi gong|bols chantants|prenatal|prenatal yoga|kundalini|hatha" data-search="the yogarden yoga studio at rue de l&amp;#x27;ale 25, lausanne. vinyasa, hatha, kundalini, pre/postnatal. multiple independent teachers. rue de l&#x27;ale 25, 1003 lausanne — 4ème étage, entre riponne et chauderon yoga therapy postnatal yoga yogatherapy vinyasa postnatal qi gong bols chantants prenatal prenatal yoga kundalini hatha qi gong bols chantants yoga thérapeutique location de salle lionel fantine roxane français">
     <div class="studio-card-header">
-        <h3 class="studio-name">The Yogarden<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">The Yogarden</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rue de l&#x27;Ale 25, 1003 Lausanne <span class="addr-label">(4ème étage, entre Riponne et Chauderon)</span></p>
-    <p class="studio-desc">Yoga studio at Rue de l&#x27;Ale 25, Lausanne. Vinyasa, Hatha, Kundalini, Pre/Postnatal. Multiple independent teachers.</p>
-    <div class="studio-styles"><span class="style-badge">Yoga Therapy</span><span class="style-badge">Postnatal Yoga</span><span class="style-badge">Yogatherapy</span><span class="style-badge">Vinyasa</span><span class="style-badge">Postnatal</span><span class="style-badge">Qi Gong</span><span class="style-badge">Bols chantants</span><span class="style-badge">Prenatal</span><span class="style-badge">Prenatal Yoga</span><span class="style-badge">Kundalini</span><span class="style-badge">Hatha</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue de l&#x27;Ale 25, 1003 Lausanne — 4ème étage, entre Riponne et Chauderon</span></div>
+    <p class="studio-description">Yoga studio at Rue de l&#x27;Ale 25, Lausanne. Vinyasa, Hatha, Kundalini, Pre/Postnatal. Multiple independent teachers.</p>
+    <div class="studio-styles"><span class="style-tag">Yoga Therapy</span><span class="style-tag">Postnatal Yoga</span><span class="style-tag">Yogatherapy</span><span class="style-tag">Vinyasa</span><span class="style-tag">Postnatal</span><span class="style-tag">Qi Gong</span><span class="style-tag">Bols chantants</span><span class="style-tag">Prenatal</span><span class="style-tag">Prenatal Yoga</span><span class="style-tag">Kundalini</span><span class="style-tag">Hatha</span></div>
     <div class="studio-contact"><a href="https://www.theyogarden.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 77 915 77 64" class="canton-contact-link">+41 77 915 77 64</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     <div class="studio-features"><span class="feature-badge">Qi Gong</span><span class="feature-badge">Bols chantants</span><span class="feature-badge">Yoga thérapeutique</span><span class="feature-badge">Location de salle</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|power vinyasa|ashtanga mysore" data-search="yogaworks fondé en 2003, yogaworks propose des cours de hatha et vinyasa yoga pour tous niveaux, 7j/7, toute l&amp;#x27;année. sans inscription préalable. rue chaucrau 3-5, 1003 lausanne — immeuble coop st-laurent, 2ème étage hatha power vinyasa ashtanga mysore sans inscription depuis 2003 7j/7 drop-in bienvenu  français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yogaworks<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yogaworks</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rue Chaucrau 3-5, 1003 Lausanne <span class="addr-label">(Immeuble Coop St-Laurent, 2ème étage)</span></p>
-    <p class="studio-desc">Fondé en 2003, Yogaworks propose des cours de hatha et vinyasa yoga pour tous niveaux, 7j/7, toute l&#x27;année. Sans inscription préalable.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Power Vinyasa</span><span class="style-badge">Ashtanga Mysore</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue Chaucrau 3-5, 1003 Lausanne — Immeuble Coop St-Laurent, 2ème étage</span></div>
+    <p class="studio-description">Fondé en 2003, Yogaworks propose des cours de hatha et vinyasa yoga pour tous niveaux, 7j/7, toute l&#x27;année. Sans inscription préalable.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Power Vinyasa</span><span class="style-tag">Ashtanga Mysore</span></div>
     <div class="studio-contact"><a href="https://yogaworks-lausanne.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 21 312 49 53" class="canton-contact-link">+41 21 312 49 53</a> &middot; <a href="mailto:info@yogaworks-lausanne.ch" class="canton-contact-link">info@yogaworks-lausanne.ch</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">Sans inscription</span><span class="feature-badge">Depuis 2003</span><span class="feature-badge">7j/7</span><span class="feature-badge">Drop-in bienvenu</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hot pilates|forrest yoga|barkan flow|barre|yoga nidra|power flow|ashtanga|vinyasa flow|yoga sculpt|yin|bikram|hot yoga|rocket" data-search="yoga flame lausanne hot yoga studio in lausanne (grancy) and geneva. bikram, ashtanga, vinyasa, hot pilates. 25+ classes/week. boulevard de grancy 1, 1006 lausanne — sous-sol, face au coop grancy hot pilates forrest yoga barkan flow barre yoga nidra power flow ashtanga vinyasa flow yoga sculpt yin bikram hot yoga rocket hot yoga hot pilates 5 min de la gare studios lausanne &amp; genève  français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Flame Lausanne<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Flame Lausanne</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Boulevard de Grancy 1, 1006 Lausanne <span class="addr-label">(Sous-sol, face au Coop Grancy)</span></p>
-    <p class="studio-desc">Hot Yoga Studio in Lausanne (Grancy) and Geneva. Bikram, Ashtanga, Vinyasa, Hot Pilates. 25+ classes/week.</p>
-    <div class="studio-styles"><span class="style-badge">Hot Pilates</span><span class="style-badge">Forrest Yoga</span><span class="style-badge">Barkan Flow</span><span class="style-badge">Barre</span><span class="style-badge">Yoga Nidra</span><span class="style-badge">Power Flow</span><span class="style-badge">Ashtanga</span><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Yoga Sculpt</span><span class="style-badge">Yin</span><span class="style-badge">Bikram</span><span class="style-badge">Hot Yoga</span><span class="style-badge">Rocket</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Boulevard de Grancy 1, 1006 Lausanne — Sous-sol, face au Coop Grancy</span></div>
+    <p class="studio-description">Hot Yoga Studio in Lausanne (Grancy) and Geneva. Bikram, Ashtanga, Vinyasa, Hot Pilates. 25+ classes/week.</p>
+    <div class="studio-styles"><span class="style-tag">Hot Pilates</span><span class="style-tag">Forrest Yoga</span><span class="style-tag">Barkan Flow</span><span class="style-tag">Barre</span><span class="style-tag">Yoga Nidra</span><span class="style-tag">Power Flow</span><span class="style-tag">Ashtanga</span><span class="style-tag">Vinyasa Flow</span><span class="style-tag">Yoga Sculpt</span><span class="style-tag">Yin</span><span class="style-tag">Bikram</span><span class="style-tag">Hot Yoga</span><span class="style-tag">Rocket</span></div>
     <div class="studio-contact"><a href="https://yogaflame.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:lausanne@yogaflame.ch" class="canton-contact-link">lausanne@yogaflame.ch</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">Hot Yoga</span><span class="feature-badge">Hot Pilates</span><span class="feature-badge">5 min de la gare</span><span class="feature-badge">Studios Lausanne &amp; Genève</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="ashtanga|power yoga|vinyasa flow|yin|barkan method hot yoga" data-search="myoga studio studio proposant des cours combinant postures d&amp;#x27;ashtanga et power yoga en flow. cours privés, retreats en espagne et suisse, yoga corporate. avenue de l&#x27;université 24, 1005 lausanne ashtanga power yoga vinyasa flow yin barkan method hot yoga sup yoga retreats corporate yoga hot yoga barkan method  english français">
     <div class="studio-card-header">
-        <h3 class="studio-name">Myoga Studio<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Myoga Studio</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Avenue de l&#x27;Université 24, 1005 Lausanne</p>
-    <p class="studio-desc">Studio proposant des cours combinant postures d&#x27;Ashtanga et Power Yoga en flow. Cours privés, retreats en Espagne et Suisse, yoga corporate.</p>
-    <div class="studio-styles"><span class="style-badge">Ashtanga</span><span class="style-badge">Power Yoga</span><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Yin</span><span class="style-badge">Barkan Method Hot Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Avenue de l&#x27;Université 24, 1005 Lausanne</span></div>
+    <p class="studio-description">Studio proposant des cours combinant postures d&#x27;Ashtanga et Power Yoga en flow. Cours privés, retreats en Espagne et Suisse, yoga corporate.</p>
+    <div class="studio-styles"><span class="style-tag">Ashtanga</span><span class="style-tag">Power Yoga</span><span class="style-tag">Vinyasa Flow</span><span class="style-tag">Yin</span><span class="style-tag">Barkan Method Hot Yoga</span></div>
     <div class="studio-contact"><a href="https://myogastudio.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:info@myogastudio.ch" class="canton-contact-link">info@myogastudio.ch</a></div>
     <p class="studio-languages">Sprachen: English, Français</p>
     <div class="studio-features"><span class="feature-badge">SUP Yoga</span><span class="feature-badge">Retreats</span><span class="feature-badge">Corporate Yoga</span><span class="feature-badge">Hot Yoga Barkan Method</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="meditation|mysore|ashtanga mysore|ashtanga vinyasa|ashtanga led|vinyasa krama|pranayama" data-search="ashtanga yoga lausanne ashtanga yoga studio since 2014. mysore style mon-fri 6-9 am, led classes, pranayama. rue chaucrau 3, lausanne. rue chaucrau 3-5, 1003 lausanne — studio yogaworks avenue du tribunal fédéral 38, 1005 lausanne meditation mysore ashtanga mysore ashtanga vinyasa ashtanga led vinyasa krama pranayama cours matinaux dès 6h 2 lieux ateliers yoga &amp; ayurveda  français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Ashtanga Yoga Lausanne<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Ashtanga Yoga Lausanne</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rue Chaucrau 3-5, 1003 Lausanne <span class="addr-label">(Studio Yogaworks)</span></p><p class="studio-address">Avenue du Tribunal Fédéral 38, 1005 Lausanne</p>
-    <p class="studio-desc">Ashtanga yoga studio since 2014. Mysore style Mon-Fri 6-9 AM, led classes, pranayama. Rue Chaucrau 3, Lausanne.</p>
-    <div class="studio-styles"><span class="style-badge">Meditation</span><span class="style-badge">Mysore</span><span class="style-badge">Ashtanga Mysore</span><span class="style-badge">Ashtanga Vinyasa</span><span class="style-badge">Ashtanga Led</span><span class="style-badge">Vinyasa Krama</span><span class="style-badge">Pranayama</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue Chaucrau 3-5, 1003 Lausanne — Studio Yogaworks</span></div><div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Avenue du Tribunal Fédéral 38, 1005 Lausanne</span></div>
+    <p class="studio-description">Ashtanga yoga studio since 2014. Mysore style Mon-Fri 6-9 AM, led classes, pranayama. Rue Chaucrau 3, Lausanne.</p>
+    <div class="studio-styles"><span class="style-tag">Meditation</span><span class="style-tag">Mysore</span><span class="style-tag">Ashtanga Mysore</span><span class="style-tag">Ashtanga Vinyasa</span><span class="style-tag">Ashtanga Led</span><span class="style-tag">Vinyasa Krama</span><span class="style-tag">Pranayama</span></div>
     <div class="studio-contact"><a href="https://www.ashtanga-yoga-lausanne.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 378 76 81" class="canton-contact-link">+41 76 378 76 81</a> &middot; <a href="mailto:contact@ashtanga-yoga-lausanne.com" class="canton-contact-link">contact@ashtanga-yoga-lausanne.com</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">Cours matinaux dès 6h</span><span class="feature-badge">2 lieux</span><span class="feature-badge">Ateliers Yoga &amp; Ayurveda</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa yoga|hatha|yin yoga nidra|hiit|pilates|sivananda|vinyasa" data-search="imyoga lausanne studio de yoga situé dans le prestigieux hôtel royal savoy de lausanne. cours collectifs de vinyasa adaptés à tous, cours privés disponibles. avenue d&#x27;ouchy 40, 1006 lausanne — hôtel royal savoy vinyasa yoga hatha yin yoga nidra hiit pilates sivananda vinyasa cadre hôtel royal savoy cours privés zoom disponible  english français">
     <div class="studio-card-header">
-        <h3 class="studio-name">IMYOGA Lausanne<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">IMYOGA Lausanne</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Avenue d&#x27;Ouchy 40, 1006 Lausanne <span class="addr-label">(Hôtel Royal Savoy)</span></p>
-    <p class="studio-desc">Studio de yoga situé dans le prestigieux Hôtel Royal Savoy de Lausanne. Cours collectifs de Vinyasa adaptés à tous, cours privés disponibles.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa Yoga</span><span class="style-badge">Hatha</span><span class="style-badge">Yin Yoga Nidra</span><span class="style-badge">HIIT</span><span class="style-badge">Pilates</span><span class="style-badge">Sivananda</span><span class="style-badge">Vinyasa</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Avenue d&#x27;Ouchy 40, 1006 Lausanne — Hôtel Royal Savoy</span></div>
+    <p class="studio-description">Studio de yoga situé dans le prestigieux Hôtel Royal Savoy de Lausanne. Cours collectifs de Vinyasa adaptés à tous, cours privés disponibles.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa Yoga</span><span class="style-tag">Hatha</span><span class="style-tag">Yin Yoga Nidra</span><span class="style-tag">HIIT</span><span class="style-tag">Pilates</span><span class="style-tag">Sivananda</span><span class="style-tag">Vinyasa</span></div>
     <div class="studio-contact"><a href="https://imyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 691 26 58" class="canton-contact-link">+41 79 691 26 58</a> &middot; <a href="mailto:info@imyoga.ch" class="canton-contact-link">info@imyoga.ch</a></div>
     <p class="studio-languages">Sprachen: English, Français</p>
     <div class="studio-features"><span class="feature-badge">Cadre Hôtel Royal Savoy</span><span class="feature-badge">Cours privés</span><span class="feature-badge">Zoom disponible</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yogatherapy|hatha|hatha yoga|meditation" data-search="atelier de yoga sadhana atelier de yoga au coeur du quartier de malley à lausanne. large gamme de cours et d&amp;#x27;horaires pour la pratique du hatha yoga. chemin de malley 12, 1007 lausanne — quartier malley yogatherapy hatha hatha yoga meditation bien desservi par transports publics m1 provence maria rosaria spano maria rosaria français">
     <div class="studio-card-header">
-        <h3 class="studio-name">Atelier de Yoga Sadhana<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Atelier de Yoga Sadhana</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Chemin de Malley 12, 1007 Lausanne <span class="addr-label">(Quartier Malley)</span></p>
-    <p class="studio-desc">Atelier de yoga au coeur du quartier de Malley à Lausanne. Large gamme de cours et d&#x27;horaires pour la pratique du hatha yoga.</p>
-    <div class="studio-styles"><span class="style-badge">Yogatherapy</span><span class="style-badge">Hatha</span><span class="style-badge">Hatha Yoga</span><span class="style-badge">Meditation</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Chemin de Malley 12, 1007 Lausanne — Quartier Malley</span></div>
+    <p class="studio-description">Atelier de yoga au coeur du quartier de Malley à Lausanne. Large gamme de cours et d&#x27;horaires pour la pratique du hatha yoga.</p>
+    <div class="studio-styles"><span class="style-tag">Yogatherapy</span><span class="style-tag">Hatha</span><span class="style-tag">Hatha Yoga</span><span class="style-tag">Meditation</span></div>
     <div class="studio-contact"><a href="https://vivre-le-yoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 584 92 51" class="canton-contact-link">+41 76 584 92 51</a> &middot; <a href="mailto:info@vivre-le-yoga.ch" class="canton-contact-link">info@vivre-le-yoga.ch</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     <div class="studio-features"><span class="feature-badge">Bien desservi par transports publics</span><span class="feature-badge">M1 Provence</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hot yoga|warm yoga|hatha|vinyasa flow|hot flow|yin|restorative|pilates|prenatal|postnatal|séniors|slow flow|meditation" data-search="yoga moves nyon au coeur de nyon depuis 2012. plus de 20 cours par semaine incluant hot yoga, hatha, vinyasa, yin, pilates et cours spécialisés pour tous âges. rue du marché 10, 1260 nyon — centre-ville hot yoga warm yoga hatha vinyasa flow hot flow yin restorative pilates prenatal postnatal séniors slow flow meditation hot yoga warm yoga 20+ cours/semaine tous âges depuis 2012  français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Moves Nyon<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Moves Nyon</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rue du Marché 10, 1260 Nyon <span class="addr-label">(Centre-ville)</span></p>
-    <p class="studio-desc">Au coeur de Nyon depuis 2012. Plus de 20 cours par semaine incluant Hot Yoga, Hatha, Vinyasa, Yin, Pilates et cours spécialisés pour tous âges.</p>
-    <div class="studio-styles"><span class="style-badge">Hot Yoga</span><span class="style-badge">Warm Yoga</span><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Hot Flow</span><span class="style-badge">Yin</span><span class="style-badge">Restorative</span><span class="style-badge">Pilates</span><span class="style-badge">Prenatal</span><span class="style-badge">Postnatal</span><span class="style-badge">Séniors</span><span class="style-badge">Slow Flow</span><span class="style-badge">Meditation</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue du Marché 10, 1260 Nyon — Centre-ville</span></div>
+    <p class="studio-description">Au coeur de Nyon depuis 2012. Plus de 20 cours par semaine incluant Hot Yoga, Hatha, Vinyasa, Yin, Pilates et cours spécialisés pour tous âges.</p>
+    <div class="studio-styles"><span class="style-tag">Hot Yoga</span><span class="style-tag">Warm Yoga</span><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa Flow</span><span class="style-tag">Hot Flow</span><span class="style-tag">Yin</span><span class="style-tag">Restorative</span><span class="style-tag">Pilates</span><span class="style-tag">Prenatal</span><span class="style-tag">Postnatal</span><span class="style-tag">Séniors</span><span class="style-tag">Slow Flow</span><span class="style-tag">Meditation</span></div>
     <div class="studio-contact"><a href="https://www.yogamovesnyon.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 22 362 13 13" class="canton-contact-link">+41 22 362 13 13</a> &middot; <a href="mailto:contact@yogamovesnyon.ch" class="canton-contact-link">contact@yogamovesnyon.ch</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">Hot Yoga</span><span class="feature-badge">Warm Yoga</span><span class="feature-badge">20+ cours/semaine</span><span class="feature-badge">Tous âges</span><span class="feature-badge">Depuis 2012</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|meditation|hatha yoga|acro yoga|vinyasa|yoga nidra" data-search="yogacenter by patrick nolfo première école de yoga de la riviera suisse depuis 2001. affiliée fédération suisse yoga et yoga alliance usa. studios à montreux et vevey. avenue du casino 48, 1820 montreux — studio principal ruelle des anciens fossés 8, 1800 vevey — nouveau studio hatha meditation hatha yoga acro yoga vinyasa yoga nidra depuis 2001 acro yoga 2 studios (montreux &amp; vevey) formation d&#x27;enseignants didier aigroz patrick nolfo français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">YogaCenter by Patrick Nolfo<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">YogaCenter by Patrick Nolfo</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Avenue du Casino 48, 1820 Montreux <span class="addr-label">(Studio principal)</span></p><p class="studio-address">Ruelle des Anciens Fossés 8, 1800 Vevey <span class="addr-label">(Nouveau studio)</span></p>
-    <p class="studio-desc">Première école de yoga de la Riviera Suisse depuis 2001. Affiliée Fédération Suisse Yoga et Yoga Alliance USA. Studios à Montreux et Vevey.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Meditation</span><span class="style-badge">Hatha Yoga</span><span class="style-badge">Acro Yoga</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yoga Nidra</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Avenue du Casino 48, 1820 Montreux — Studio principal</span></div><div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Ruelle des Anciens Fossés 8, 1800 Vevey — Nouveau studio</span></div>
+    <p class="studio-description">Première école de yoga de la Riviera Suisse depuis 2001. Affiliée Fédération Suisse Yoga et Yoga Alliance USA. Studios à Montreux et Vevey.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Meditation</span><span class="style-tag">Hatha Yoga</span><span class="style-tag">Acro Yoga</span><span class="style-tag">Vinyasa</span><span class="style-tag">Yoga Nidra</span></div>
     <div class="studio-contact"><a href="https://yogacenter.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 219 52 00" class="canton-contact-link">+41 79 219 52 00</a> &middot; <a href="mailto:info@yogacenter.ch" class="canton-contact-link">info@yogacenter.ch</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">Depuis 2001</span><span class="feature-badge">Acro Yoga</span><span class="feature-badge">2 studios (Montreux &amp; Vevey)</span><span class="feature-badge">Formation d&#x27;enseignants</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|yin" data-search="terre du yoga cours de yoga, voyages et boutique à vevey et la tour-de-peilz. retraites et ateliers thématiques. avenue de corsier 6, 1800 vevey place des anciens-fossés 4, 1814 la tour-de-peilz — centre avigal, 1er étage hatha vinyasa yin boutique yoga voyages yoga 2 lieux  français">
     <div class="studio-card-header">
-        <h3 class="studio-name">Terre du Yoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Terre du Yoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Avenue de Corsier 6, 1800 Vevey</p><p class="studio-address">Place des Anciens-Fossés 4, 1814 La Tour-de-Peilz <span class="addr-label">(Centre Avigal, 1er étage)</span></p>
-    <p class="studio-desc">Cours de yoga, voyages et boutique à Vevey et La Tour-de-Peilz. Retraites et ateliers thématiques.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yin</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Avenue de Corsier 6, 1800 Vevey</span></div><div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Place des Anciens-Fossés 4, 1814 La Tour-de-Peilz — Centre Avigal, 1er étage</span></div>
+    <p class="studio-description">Cours de yoga, voyages et boutique à Vevey et La Tour-de-Peilz. Retraites et ateliers thématiques.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Yin</span></div>
     <div class="studio-contact"><a href="https://www.caroledalmas.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 21 566 16 55" class="canton-contact-link">+41 21 566 16 55</a> &middot; <a href="mailto:terreduyoga@gmail.com" class="canton-contact-link">terreduyoga@gmail.com</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     <div class="studio-features"><span class="feature-badge">Boutique yoga</span><span class="feature-badge">Voyages yoga</span><span class="feature-badge">2 lieux</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yin yoga|hatha|power vinyasa|vinyasa flow" data-search="sundora shala studio de qualité à pully spécialisé dans les petits groupes. yoga, mouvement et bien-être dans un cadre intime. chemin de villardiez 24, 1009 pully yin yoga hatha power vinyasa vinyasa flow petits groupes yoga-movement-wellbeing dorota marine brustlein laurent pamela ranieri john wolstenholme nathalie baudin français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">SunDora Shala<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">SunDora Shala</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Chemin de Villardiez 24, 1009 Pully</p>
-    <p class="studio-desc">Studio de qualité à Pully spécialisé dans les petits groupes. Yoga, mouvement et bien-être dans un cadre intime.</p>
-    <div class="studio-styles"><span class="style-badge">Yin Yoga</span><span class="style-badge">Hatha</span><span class="style-badge">Power Vinyasa</span><span class="style-badge">Vinyasa Flow</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Chemin de Villardiez 24, 1009 Pully</span></div>
+    <p class="studio-description">Studio de qualité à Pully spécialisé dans les petits groupes. Yoga, mouvement et bien-être dans un cadre intime.</p>
+    <div class="studio-styles"><span class="style-tag">Yin Yoga</span><span class="style-tag">Hatha</span><span class="style-tag">Power Vinyasa</span><span class="style-tag">Vinyasa Flow</span></div>
     <div class="studio-contact"><a href="https://www.sundorashala.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 310 68 36" class="canton-contact-link">+41 76 310 68 36</a> &middot; <a href="mailto:info@sundorashala.com" class="canton-contact-link">info@sundorashala.com</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">Petits groupes</span><span class="feature-badge">Yoga-movement-wellbeing</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha traditionnel|yoga doux|yoga séniors|prenatal" data-search="yoga pour tous nyon hatha yoga traditionnel pour tous niveaux à nyon. cours collectifs, cours en ligne, ateliers mensuels et cours privés sur demande. rue de rive 22b, 1260 nyon hatha traditionnel yoga doux yoga séniors prenatal cours en ligne ateliers mensuels stages été juillet-août  français">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Pour Tous Nyon<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Pour Tous Nyon</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rue de Rive 22B, 1260 Nyon</p>
-    <p class="studio-desc">Hatha yoga traditionnel pour tous niveaux à Nyon. Cours collectifs, cours en ligne, ateliers mensuels et cours privés sur demande.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha traditionnel</span><span class="style-badge">Yoga doux</span><span class="style-badge">Yoga Séniors</span><span class="style-badge">Prenatal</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue de Rive 22B, 1260 Nyon</span></div>
+    <p class="studio-description">Hatha yoga traditionnel pour tous niveaux à Nyon. Cours collectifs, cours en ligne, ateliers mensuels et cours privés sur demande.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha traditionnel</span><span class="style-tag">Yoga doux</span><span class="style-tag">Yoga Séniors</span><span class="style-tag">Prenatal</span></div>
     <div class="studio-contact"><a href="https://www.yogapourtous-nyon.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     <div class="studio-features"><span class="feature-badge">Cours en ligne</span><span class="feature-badge">Ateliers mensuels</span><span class="feature-badge">Stages été juillet-août</span></div>
-</div>
+</article>
+    </div>
         </div>
     </section>
 
@@ -2724,5 +2628,86 @@
             </p>
         </div>
     </footer>
+
+<script>
+(function () {
+  'use strict';
+  var root = document.documentElement;
+
+  // --- Theme, shared with the homepage -----------------------------------
+  var themeBtn = document.getElementById('themeToggle');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('yogabasel-theme', next); } catch (e) {}
+    });
+  }
+
+  // --- Canton switcher ----------------------------------------------------
+  var sel = document.getElementById('cantonSelect');
+  if (sel) {
+    sel.addEventListener('change', function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+  }
+
+  // --- Menu (mobile) ------------------------------------------------------
+  var menuBtn = document.getElementById('menuToggle'), nav = document.getElementById('nav');
+  if (menuBtn && nav) {
+    menuBtn.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  // --- Filtering ----------------------------------------------------------
+  var grid = document.getElementById('studiosGrid');
+  if (!grid) return;
+  var cards = [].slice.call(grid.querySelectorAll('.studio-card'));
+  var search = document.getElementById('studioSearch');
+  var clearBtn = document.getElementById('searchClear');
+  var shown = document.getElementById('shownCount');
+  var noResult = document.getElementById('noResult');
+  var chips = [].slice.call(document.querySelectorAll('.filters-quick .chip'));
+  var style = 'all', query = '';
+
+  function apply() {
+    var n = 0;
+    for (var i = 0; i < cards.length; i++) {
+      var c = cards[i];
+      var okStyle = style === 'all' || (c.getAttribute('data-styles') || '').indexOf(style) !== -1;
+      var okText = !query || (c.getAttribute('data-search') || '').indexOf(query) !== -1;
+      var visible = okStyle && okText;
+      c.hidden = !visible;
+      if (visible) n++;
+    }
+    if (shown) shown.textContent = n;
+    if (noResult) noResult.hidden = n !== 0;
+    if (clearBtn) clearBtn.style.display = query ? '' : 'none';
+  }
+
+  if (search) {
+    search.addEventListener('input', function () {
+      query = search.value.trim().toLowerCase();
+      apply();
+    });
+  }
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function () {
+      search.value = ''; query = ''; apply(); search.focus();
+    });
+  }
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      chips.forEach(function (c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      style = chip.getAttribute('data-filter');
+      apply();
+    });
+  });
+})();
+</script>
+
 </body>
 </html>

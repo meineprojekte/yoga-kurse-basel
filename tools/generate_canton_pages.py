@@ -230,8 +230,19 @@ def collect_cities(studios):
     return sorted(cities)
 
 
+PIN_SVG = ('<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+           'stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>'
+           '<circle cx="12" cy="10" r="3"/></svg>')
+
+
 def generate_studio_cards(studios):
-    """Generate HTML cards for studios."""
+    """Studio cards in the same markup the JS app renders on the homepage.
+
+    The point of these pages is that they are real, crawlable URLs (a #fragment
+    never is), so every card is written into the HTML here rather than built by
+    JavaScript. The filtering script only hides and shows what is already on the
+    page: with JS off, all studios stay visible and indexable.
+    """
     if not studios:
         return '<p class="no-data">Keine Studios gefunden. Daten werden laufend aktualisiert.</p>'
 
@@ -245,73 +256,108 @@ def generate_studio_cards(studios):
         styles = studio.get("styles", [])
         languages = studio.get("languages", [])
         features = studio.get("special_features", [])
+        teachers = studio.get("teachers", []) or []
         drop_in = studio.get("drop_in", False)
         addresses = studio.get("addresses", [])
 
-        # Build address HTML
-        addr_html = ""
+        addr_html, addr_plain = "", []
         for addr in addresses:
             parts = []
             street = addr.get("street", "").strip()
             if street:
-                parts.append(escape(street))
+                parts.append(street)
             zip_code = addr.get("zip", "").strip()
             city = addr.get("city", "").strip()
             if zip_code or city:
-                parts.append(f"{escape(zip_code)} {escape(city)}".strip())
+                parts.append(f"{zip_code} {city}".strip())
+            if not parts:
+                continue
+            line = ", ".join(parts)
             label = addr.get("label", "").strip()
-            if parts:
-                label_html = f' <span class="addr-label">({escape(label)})</span>' if label else ""
-                addr_html += f'<p class="studio-address">{", ".join(parts)}{label_html}</p>'
+            if label:
+                line += f" \u2014 {label}"
+            addr_plain.append(line)
+            addr_html += f'<div class="studio-address">{PIN_SVG}<span>{escape(line)}</span></div>'
 
-        # Styles badges
         styles_html = ""
         if styles:
-            badges = "".join(f'<span class="style-badge">{escape(s)}</span>' for s in styles)
-            styles_html = f'<div class="studio-styles">{badges}</div>'
+            tags = "".join(f'<span class="style-tag">{escape(st)}</span>' for st in styles)
+            styles_html = f'<div class="studio-styles">{tags}</div>'
 
-        # Contact links
-        contact_html = ""
         contact_parts = []
         if website:
             booking_platforms = ['eversports.', 'classpass.', 'mindbody', 'momoyoga.', 'fitogram.']
-            rel_val = 'sponsored noopener noreferrer' if any(bp in website for bp in booking_platforms) else 'nofollow noopener noreferrer'
+            rel_val = ('sponsored noopener noreferrer'
+                       if any(bp in website for bp in booking_platforms)
+                       else 'nofollow noopener noreferrer')
             contact_parts.append(f'<a href="{escape(website)}" target="_blank" rel="{rel_val}" class="canton-contact-link">Website</a>')
         if phone:
             contact_parts.append(f'<a href="tel:{escape(phone)}" class="canton-contact-link">{escape(phone)}</a>')
         if email:
             contact_parts.append(f'<a href="mailto:{escape(email)}" class="canton-contact-link">{escape(email)}</a>')
-        if contact_parts:
-            contact_html = f'<div class="studio-contact">{" &middot; ".join(contact_parts)}</div>'
+        contact_html = (f'<div class="studio-contact">{" &middot; ".join(contact_parts)}</div>'
+                        if contact_parts else "")
 
-        # Languages
-        lang_html = ""
-        if languages:
-            lang_html = f'<p class="studio-languages">Sprachen: {", ".join(escape(l) for l in languages)}</p>'
-
-        # Features
+        lang_html = (f'<p class="studio-languages">Sprachen: {", ".join(escape(l) for l in languages)}</p>'
+                     if languages else "")
         features_html = ""
         if features:
-            feat_badges = "".join(f'<span class="feature-badge">{escape(f)}</span>' for f in features)
-            features_html = f'<div class="studio-features">{feat_badges}</div>'
+            feat = "".join(f'<span class="feature-badge">{escape(f)}</span>' for f in features)
+            features_html = f'<div class="studio-features">{feat}</div>'
+        dropin_html = '<span class="studio-badge drop-in">Drop-in</span>' if drop_in else ""
 
-        # Drop-in badge
-        dropin_html = '<span class="dropin-badge">Drop-in</span>' if drop_in else ""
+        # Filter keys, read by the inline script. Lower-cased here so the script
+        # never has to normalise on every keystroke.
+        style_key = "|".join(st.lower() for st in styles)
+        haystack = " ".join([studio.get("name", ""), description, " ".join(addr_plain),
+                             " ".join(styles), " ".join(features), " ".join(teachers),
+                             " ".join(languages)]).lower()
 
-        card = f'''<div class="studio-card">
+        cards.append(f'''<article class="studio-card" data-styles="{escape(style_key)}" data-search="{escape(haystack)}">
     <div class="studio-card-header">
-        <h3 class="studio-name">{name}{dropin_html}</h3>
+        <h3 class="studio-name">{name}</h3>{dropin_html}
     </div>
     {addr_html}
-    {description and f'<p class="studio-desc">{description}</p>' or ''}
+    {description and f'<p class="studio-description">{description}</p>' or ''}
     {styles_html}
     {contact_html}
     {lang_html}
     {features_html}
-</div>'''
-        cards.append(card)
+</article>''')
 
-    return "\n".join(cards)
+    return f'''<div class="canton-toolbar">
+        <p class="canton-count">Zeige <strong id="shownCount">{len(studios)}</strong> von <strong>{len(studios)}</strong> Studios</p>
+        <p class="canton-noresult" id="noResult" hidden>Keine Studios gefunden. Andere Filter versuchen.</p>
+    </div>
+    <div class="studios-grid" id="studiosGrid">
+{"".join(cards)}
+    </div>'''
+
+
+def generate_filter_chips(studios):
+    """Style chips, ordered by how many studios in THIS canton offer each style."""
+    counts = {}
+    for st in studios:
+        for style in st.get("styles", []):
+            counts[style] = counts.get(style, 0) + 1
+    # "Yoga" on its own is useless as a chip: the script matches styles by
+    # substring, so it would select nearly every studio and filter nothing.
+    counts.pop("Yoga", None)
+    top = sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))[:10]
+    chips = ['<button type="button" class="chip active" data-filter="all">Alle</button>']
+    for style, n in top:
+        chips.append(f'<button type="button" class="chip" data-filter="{escape(style.lower())}">{escape(style)}</button>')
+    return "".join(chips)
+
+
+def generate_canton_select(all_cantons, current_id):
+    """The hero dropdown. It is a real <select> of real page URLs, so it still
+    works as a plain list of links for anything that does not run JS."""
+    opts = []
+    for c in sorted(all_cantons, key=lambda c: c["name"]["de"]):
+        sel = ' selected' if c["id"] == current_id else ''
+        opts.append(f'<option value="../{c["id"]}/"{sel}>{escape(c["name"]["de"])}</option>')
+    return "".join(opts)
 
 
 def generate_schedule_table(classes):
@@ -564,6 +610,93 @@ def generate_event_schema(classes, studios, canton_name):
     return scripts
 
 
+# Inline, and deliberately small: these pages must stay useful with JavaScript
+# switched off, so the script only hides and shows cards that are already in the
+# HTML. It never fetches, never renders a studio. Theme key and data-theme target
+# match js/app.min.js, so the choice made on the homepage carries over here.
+APP_SCRIPT = """
+<script>
+(function () {
+  'use strict';
+  var root = document.documentElement;
+
+  // --- Theme, shared with the homepage -----------------------------------
+  var themeBtn = document.getElementById('themeToggle');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('yogabasel-theme', next); } catch (e) {}
+    });
+  }
+
+  // --- Canton switcher ----------------------------------------------------
+  var sel = document.getElementById('cantonSelect');
+  if (sel) {
+    sel.addEventListener('change', function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+  }
+
+  // --- Menu (mobile) ------------------------------------------------------
+  var menuBtn = document.getElementById('menuToggle'), nav = document.getElementById('nav');
+  if (menuBtn && nav) {
+    menuBtn.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  // --- Filtering ----------------------------------------------------------
+  var grid = document.getElementById('studiosGrid');
+  if (!grid) return;
+  var cards = [].slice.call(grid.querySelectorAll('.studio-card'));
+  var search = document.getElementById('studioSearch');
+  var clearBtn = document.getElementById('searchClear');
+  var shown = document.getElementById('shownCount');
+  var noResult = document.getElementById('noResult');
+  var chips = [].slice.call(document.querySelectorAll('.filters-quick .chip'));
+  var style = 'all', query = '';
+
+  function apply() {
+    var n = 0;
+    for (var i = 0; i < cards.length; i++) {
+      var c = cards[i];
+      var okStyle = style === 'all' || (c.getAttribute('data-styles') || '').indexOf(style) !== -1;
+      var okText = !query || (c.getAttribute('data-search') || '').indexOf(query) !== -1;
+      var visible = okStyle && okText;
+      c.hidden = !visible;
+      if (visible) n++;
+    }
+    if (shown) shown.textContent = n;
+    if (noResult) noResult.hidden = n !== 0;
+    if (clearBtn) clearBtn.style.display = query ? '' : 'none';
+  }
+
+  if (search) {
+    search.addEventListener('input', function () {
+      query = search.value.trim().toLowerCase();
+      apply();
+    });
+  }
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function () {
+      search.value = ''; query = ''; apply(); search.focus();
+    });
+  }
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      chips.forEach(function (c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      style = chip.getAttribute('data-filter');
+      apply();
+    });
+  });
+})();
+</script>
+"""
+
+
 def generate_page(canton, studios, classes, all_cantons):
     """Generate the full HTML page for a canton."""
     canton_id = canton["id"]
@@ -688,20 +821,22 @@ def generate_page(canton, studios, classes, all_cantons):
     desc_html = "\n".join(f'<p>{escape(p)}</p>' for p in desc_paragraphs)
 
     # Stats section
-    stats_html = f'''<div class="canton-stats">
-    <div class="stat-item">
+    stats_html = f'''<div class="hero-stats">
+    <div class="stat">
         <span class="stat-number">{num_studios}</span>
         <span class="stat-label">Studios</span>
     </div>
-    <div class="stat-item">
+    <div class="stat">
         <span class="stat-number">{num_classes}</span>
         <span class="stat-label">Kurse/Woche</span>
     </div>
-    <div class="stat-item">
+    <div class="stat">
         <span class="stat-number">{num_styles}</span>
         <span class="stat-label">Yoga-Stile</span>
     </div>
 </div>'''
+    chips_html = generate_filter_chips(studios)
+    canton_options = generate_canton_select(all_cantons, canton_id)
 
     meta_desc_full = f"Yoga im Kanton {canton_name} ({canton_abbr}): {num_studios} Studios, {num_classes} Kurse pro Woche. {cities_str}. Stile: {styles_str}. Stundenplan & Kontaktdaten."
     # Limit meta description to 150 chars (pre-escape) to stay under 160 after HTML escaping
@@ -769,55 +904,23 @@ def generate_page(canton, studios, classes, all_cantons):
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="../../css/fonts.css">
 
+    <!-- Applies the saved theme before first paint, so arriving here from the
+         homepage in dark mode does not flash white. Same key as js/app.min.js. -->
+    <script>try{{var t=localStorage.getItem('yogabasel-theme');if(t)document.documentElement.setAttribute('data-theme',t);}}catch(e){{}}</script>
+
     <!-- Main site CSS -->
     <link rel="stylesheet" href="../../css/style.css">
 
     <!-- Canton page specific styles -->
     <style>
-        .canton-hero {{
-            background: linear-gradient(135deg, #6B5B95 0%, #8B7DB5 40%, #D4A373 100%);
-            color: #fff;
-            padding: 80px 0 60px;
-            text-align: center;
-        }}
-        .canton-hero h1 {{
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 2.8rem;
-            margin-bottom: 8px;
-            font-weight: 700;
-        }}
-        .canton-hero .canton-subtitle {{
-            font-size: 1.15rem;
-            opacity: 0.92;
-            margin-bottom: 24px;
-        }}
-        .canton-stats {{
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }}
-        .stat-item {{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }}
-        .stat-number {{
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 2.2rem;
-            font-weight: 700;
-            line-height: 1;
-        }}
-        .stat-label {{
-            font-size: 0.9rem;
-            opacity: 0.85;
-            margin-top: 4px;
-        }}
+        /* Same width as .container in css/style.css, so these sections line up
+           with the app header, hero and studio grid instead of sitting in a
+           narrower column of their own. */
         .canton-container {{
-            max-width: 1100px;
+            width: 100%;
+            max-width: var(--container-max, 1280px);
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 var(--spacing-lg, 24px);
         }}
         .canton-section {{
             padding: 48px 0;
@@ -836,60 +939,6 @@ def generate_page(canton, studios, classes, all_cantons):
             color: #444;
             margin-bottom: 16px;
             max-width: 800px;
-        }}
-        .studio-card {{
-            background: #fff;
-            border: 1px solid #E8E8E8;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            transition: box-shadow 0.25s ease, transform 0.25s ease;
-        }}
-        .studio-card:hover {{
-            box-shadow: 0 6px 20px rgba(107,91,149,0.12);
-            transform: translateY(-2px);
-        }}
-        .studio-card-header {{
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 10px;
-        }}
-        .studio-name {{
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.3rem;
-            color: #2D2D2D;
-            margin: 0;
-        }}
-        .studio-address {{
-            font-size: 0.92rem;
-            color: #666;
-            margin-bottom: 4px;
-        }}
-        .addr-label {{
-            font-size: 0.82rem;
-            color: #999;
-        }}
-        .studio-desc {{
-            font-size: 0.95rem;
-            color: #555;
-            margin: 10px 0;
-            line-height: 1.6;
-        }}
-        .studio-styles {{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin: 12px 0;
-        }}
-        .style-badge {{
-            background: #F3F0F8;
-            color: #6B5B95;
-            padding: 3px 10px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
         }}
         .studio-contact {{
             margin: 10px 0;
@@ -930,16 +979,6 @@ def generate_page(canton, studios, classes, all_cantons):
             font-size: 0.78rem;
             font-weight: 500;
             border: 1px solid #E8C9A4;
-        }}
-        .dropin-badge {{
-            background: #4CAF50;
-            color: #fff;
-            padding: 2px 10px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-left: 10px;
-            vertical-align: middle;
         }}
         .no-data {{
             color: #999;
@@ -1064,49 +1103,6 @@ def generate_page(canton, studios, classes, all_cantons):
         .canton-breadcrumb a:hover {{
             text-decoration: underline;
         }}
-        .canton-header {{
-            background: #fff;
-            border-bottom: 1px solid #E8E8E8;
-            padding: 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }}
-        .canton-header-inner {{
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 14px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }}
-        .canton-logo {{
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.3rem;
-            color: #6B5B95;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }}
-        .canton-logo strong {{
-            color: #D4A373;
-        }}
-        .canton-nav {{
-            display: flex;
-            gap: 20px;
-            list-style: none;
-        }}
-        .canton-nav a {{
-            color: #555;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.2s;
-        }}
-        .canton-nav a:hover {{
-            color: #6B5B95;
-        }}
         .canton-footer {{
             background: #2D2D2D;
             color: #aaa;
@@ -1121,41 +1117,100 @@ def generate_page(canton, studios, classes, all_cantons):
         .canton-footer a:hover {{
             text-decoration: underline;
         }}
-        @media (max-width: 768px) {{
-            .canton-hero h1 {{ font-size: 1.8rem; }}
-            .canton-stats {{ gap: 24px; }}
-            .stat-number {{ font-size: 1.6rem; }}
-            .canton-section h2 {{ font-size: 1.4rem; }}
-            .canton-nav {{ gap: 12px; }}
-            .canton-nav a {{ font-size: 0.8rem; }}
-            .studio-card {{ padding: 16px; }}
-            .canton-header-inner {{ flex-direction: column; gap: 10px; }}
+        /* Hero, header, grid and cards are styled by css/style.css, exactly as on
+           the homepage — including their breakpoints. Only what is specific to
+           this page needs a rule here. */
+        .canton-toolbar {{
+            margin: 0 0 18px;
         }}
-        @media (max-width: 480px) {{
-            .canton-hero {{ padding: 60px 0 40px; }}
-            .canton-hero h1 {{ font-size: 1.5rem; }}
-            .canton-stats {{ flex-direction: column; gap: 16px; }}
+        .canton-count {{
+            font-size: 0.9rem;
+            color: var(--color-text-light, #777);
+            margin: 0;
+        }}
+        .canton-noresult {{
+            margin: 24px 0 0;
+            padding: 20px;
+            text-align: center;
+            color: var(--color-text-light, #777);
+            background: var(--color-surface, #F8F8F8);
+            border-radius: 12px;
+        }}
+        .studios-grid .studio-contact {{
+            margin: 10px 0 0;
+        }}
+        @media (max-width: 768px) {{
+            .canton-section h2 {{ font-size: 1.4rem; }}
         }}
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="canton-header">
-        <div class="canton-header-inner">
-            <a href="../../" class="canton-logo">
-                <span>🧘</span>
-                <span>Yoga<strong>Schweiz</strong></span>
+    <!-- Header: same markup and classes as the JS app on the homepage, so the
+         two views look like one site. Section links that exist on this page stay
+         local; app-only features point back to the homepage. -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="../../" class="logo">
+                <span class="logo-icon">🧘</span>
+                <span class="logo-text">Yoga<strong>Schweiz</strong></span>
             </a>
-            <nav>
-                <ul class="canton-nav">
-                    <li><a href="../../">Home</a></li>
-                    <li><a href="#studios">Studios</a></li>
-                    <li><a href="#stundenplan">Stundenplan</a></li>
-                    <li><a href="#andere-kantone">Kantone</a></li>
+            <nav class="nav" id="nav" aria-label="Hauptnavigation">
+                <ul class="nav-list">
+                    <li><a href="#studios" class="nav-link">Studios</a></li>
+                    <li><a href="#stundenplan" class="nav-link">Stundenplan</a></li>
+                    <li><a href="#andere-kantone" class="nav-link">Kantone</a></li>
+                    <li><a href="../../#stile" class="nav-link">Yoga-Stile</a></li>
+                    <li><a href="../../#karte" class="nav-link">Karte</a></li>
+                    <li><a href="../../#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="../../blog/" class="nav-link">Blog</a></li>
                 </ul>
             </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Design wechseln" title="Dark/Light Mode">
+                    <svg class="icon-sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Alle Yoga-Kurse in {escape(canton_name)}<br><span class="hero-accent">Studios &amp; Stundenplan auf einen Blick</span></h1>
+            <p class="hero-subtitle">Kanton {escape(canton_name)} ({escape(canton_abbr)}) &bull; {num_studios} Studios &bull; Wöchentlich aktualisiert</p>
+
+            <div class="canton-selector">
+                <label class="canton-selector-label" for="cantonSelect">Wähle deinen Kanton:</label>
+                <select id="cantonSelect" class="canton-select" aria-label="Kanton wechseln">
+                    {canton_options}
+                </select>
+            </div>
+
+            <div class="hero-search">
+                <div class="search-wrapper">
+                    <svg class="search-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <input type="search" id="studioSearch" class="search-input" placeholder="Studio, Yoga-Stil oder Quartier suchen..." autocomplete="off" aria-label="Yoga-Studio suchen">
+                    <button class="search-clear" id="searchClear" aria-label="Suche löschen" style="display:none">&times;</button>
+                </div>
+            </div>
+
+            {stats_html}
+        </div>
+    </section>
+
+    <!-- Style filters -->
+    <section class="filters-bar">
+        <div class="container">
+            <div class="filters-quick">
+                {chips_html}
+            </div>
+        </div>
+    </section>
 
     <!-- Breadcrumb -->
     <div class="canton-container">
@@ -1165,15 +1220,6 @@ def generate_page(canton, studios, classes, all_cantons):
             <strong>{escape(canton_name)} ({escape(canton_abbr)})</strong>
         </nav>
     </div>
-
-    <!-- Hero -->
-    <section class="canton-hero">
-        <div class="canton-container">
-            <h1>Yoga in {escape(canton_name)}</h1>
-            <p class="canton-subtitle">Kanton {escape(canton_name)} ({escape(canton_abbr)}) — Alle Yoga-Studios und Kurse auf einen Blick</p>
-            {stats_html}
-        </div>
-    </section>
 
     <!-- Description -->
     <section class="canton-section">
@@ -1226,6 +1272,7 @@ def generate_page(canton, studios, classes, all_cantons):
             </p>
         </div>
     </footer>
+{APP_SCRIPT}
 </body>
 </html>'''
     return page

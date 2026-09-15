@@ -44,7 +44,7 @@
     "url": "https://meineprojekte.github.io/yoga-kurse-basel/"
   },
   "inLanguage": "de",
-  "dateModified": "2026-09-14",
+  "dateModified": "2026-09-15",
   "about": {
     "@type": "Thing",
     "name": "Yoga",
@@ -209,55 +209,23 @@
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="../../css/fonts.css">
 
+    <!-- Applies the saved theme before first paint, so arriving here from the
+         homepage in dark mode does not flash white. Same key as js/app.min.js. -->
+    <script>try{var t=localStorage.getItem('yogabasel-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+
     <!-- Main site CSS -->
     <link rel="stylesheet" href="../../css/style.css">
 
     <!-- Canton page specific styles -->
     <style>
-        .canton-hero {
-            background: linear-gradient(135deg, #6B5B95 0%, #8B7DB5 40%, #D4A373 100%);
-            color: #fff;
-            padding: 80px 0 60px;
-            text-align: center;
-        }
-        .canton-hero h1 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 2.8rem;
-            margin-bottom: 8px;
-            font-weight: 700;
-        }
-        .canton-hero .canton-subtitle {
-            font-size: 1.15rem;
-            opacity: 0.92;
-            margin-bottom: 24px;
-        }
-        .canton-stats {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .stat-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .stat-number {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 2.2rem;
-            font-weight: 700;
-            line-height: 1;
-        }
-        .stat-label {
-            font-size: 0.9rem;
-            opacity: 0.85;
-            margin-top: 4px;
-        }
+        /* Same width as .container in css/style.css, so these sections line up
+           with the app header, hero and studio grid instead of sitting in a
+           narrower column of their own. */
         .canton-container {
-            max-width: 1100px;
+            width: 100%;
+            max-width: var(--container-max, 1280px);
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 var(--spacing-lg, 24px);
         }
         .canton-section {
             padding: 48px 0;
@@ -276,60 +244,6 @@
             color: #444;
             margin-bottom: 16px;
             max-width: 800px;
-        }
-        .studio-card {
-            background: #fff;
-            border: 1px solid #E8E8E8;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            transition: box-shadow 0.25s ease, transform 0.25s ease;
-        }
-        .studio-card:hover {
-            box-shadow: 0 6px 20px rgba(107,91,149,0.12);
-            transform: translateY(-2px);
-        }
-        .studio-card-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 10px;
-        }
-        .studio-name {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.3rem;
-            color: #2D2D2D;
-            margin: 0;
-        }
-        .studio-address {
-            font-size: 0.92rem;
-            color: #666;
-            margin-bottom: 4px;
-        }
-        .addr-label {
-            font-size: 0.82rem;
-            color: #999;
-        }
-        .studio-desc {
-            font-size: 0.95rem;
-            color: #555;
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-        .studio-styles {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin: 12px 0;
-        }
-        .style-badge {
-            background: #F3F0F8;
-            color: #6B5B95;
-            padding: 3px 10px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
         }
         .studio-contact {
             margin: 10px 0;
@@ -370,16 +284,6 @@
             font-size: 0.78rem;
             font-weight: 500;
             border: 1px solid #E8C9A4;
-        }
-        .dropin-badge {
-            background: #4CAF50;
-            color: #fff;
-            padding: 2px 10px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-left: 10px;
-            vertical-align: middle;
         }
         .no-data {
             color: #999;
@@ -504,49 +408,6 @@
         .canton-breadcrumb a:hover {
             text-decoration: underline;
         }
-        .canton-header {
-            background: #fff;
-            border-bottom: 1px solid #E8E8E8;
-            padding: 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .canton-header-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 14px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .canton-logo {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.3rem;
-            color: #6B5B95;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .canton-logo strong {
-            color: #D4A373;
-        }
-        .canton-nav {
-            display: flex;
-            gap: 20px;
-            list-style: none;
-        }
-        .canton-nav a {
-            color: #555;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .canton-nav a:hover {
-            color: #6B5B95;
-        }
         .canton-footer {
             background: #2D2D2D;
             color: #aaa;
@@ -561,41 +422,113 @@
         .canton-footer a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 768px) {
-            .canton-hero h1 { font-size: 1.8rem; }
-            .canton-stats { gap: 24px; }
-            .stat-number { font-size: 1.6rem; }
-            .canton-section h2 { font-size: 1.4rem; }
-            .canton-nav { gap: 12px; }
-            .canton-nav a { font-size: 0.8rem; }
-            .studio-card { padding: 16px; }
-            .canton-header-inner { flex-direction: column; gap: 10px; }
+        /* Hero, header, grid and cards are styled by css/style.css, exactly as on
+           the homepage — including their breakpoints. Only what is specific to
+           this page needs a rule here. */
+        .canton-toolbar {
+            margin: 0 0 18px;
         }
-        @media (max-width: 480px) {
-            .canton-hero { padding: 60px 0 40px; }
-            .canton-hero h1 { font-size: 1.5rem; }
-            .canton-stats { flex-direction: column; gap: 16px; }
+        .canton-count {
+            font-size: 0.9rem;
+            color: var(--color-text-light, #777);
+            margin: 0;
+        }
+        .canton-noresult {
+            margin: 24px 0 0;
+            padding: 20px;
+            text-align: center;
+            color: var(--color-text-light, #777);
+            background: var(--color-surface, #F8F8F8);
+            border-radius: 12px;
+        }
+        .studios-grid .studio-contact {
+            margin: 10px 0 0;
+        }
+        @media (max-width: 768px) {
+            .canton-section h2 { font-size: 1.4rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="canton-header">
-        <div class="canton-header-inner">
-            <a href="../../" class="canton-logo">
-                <span>🧘</span>
-                <span>Yoga<strong>Schweiz</strong></span>
+    <!-- Header: same markup and classes as the JS app on the homepage, so the
+         two views look like one site. Section links that exist on this page stay
+         local; app-only features point back to the homepage. -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="../../" class="logo">
+                <span class="logo-icon">🧘</span>
+                <span class="logo-text">Yoga<strong>Schweiz</strong></span>
             </a>
-            <nav>
-                <ul class="canton-nav">
-                    <li><a href="../../">Home</a></li>
-                    <li><a href="#studios">Studios</a></li>
-                    <li><a href="#stundenplan">Stundenplan</a></li>
-                    <li><a href="#andere-kantone">Kantone</a></li>
+            <nav class="nav" id="nav" aria-label="Hauptnavigation">
+                <ul class="nav-list">
+                    <li><a href="#studios" class="nav-link">Studios</a></li>
+                    <li><a href="#stundenplan" class="nav-link">Stundenplan</a></li>
+                    <li><a href="#andere-kantone" class="nav-link">Kantone</a></li>
+                    <li><a href="../../#stile" class="nav-link">Yoga-Stile</a></li>
+                    <li><a href="../../#karte" class="nav-link">Karte</a></li>
+                    <li><a href="../../#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="../../blog/" class="nav-link">Blog</a></li>
                 </ul>
             </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Design wechseln" title="Dark/Light Mode">
+                    <svg class="icon-sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Alle Yoga-Kurse in Appenzell A.Rh.<br><span class="hero-accent">Studios &amp; Stundenplan auf einen Blick</span></h1>
+            <p class="hero-subtitle">Kanton Appenzell A.Rh. (AR) &bull; 1 Studios &bull; Wöchentlich aktualisiert</p>
+
+            <div class="canton-selector">
+                <label class="canton-selector-label" for="cantonSelect">Wähle deinen Kanton:</label>
+                <select id="cantonSelect" class="canton-select" aria-label="Kanton wechseln">
+                    <option value="../aargau/">Aargau</option><option value="../appenzell-ar/" selected>Appenzell A.Rh.</option><option value="../appenzell-ir/">Appenzell I.Rh.</option><option value="../basel-landschaft/">Basel-Landschaft</option><option value="../basel-stadt/">Basel-Stadt</option><option value="../bern/">Bern</option><option value="../fribourg/">Freiburg</option><option value="../geneve/">Genf</option><option value="../glarus/">Glarus</option><option value="../graubuenden/">Graubünden</option><option value="../jura/">Jura</option><option value="../luzern/">Luzern</option><option value="../neuchatel/">Neuenburg</option><option value="../nidwalden/">Nidwalden</option><option value="../obwalden/">Obwalden</option><option value="../schaffhausen/">Schaffhausen</option><option value="../schwyz/">Schwyz</option><option value="../solothurn/">Solothurn</option><option value="../st-gallen/">St. Gallen</option><option value="../ticino/">Tessin</option><option value="../thurgau/">Thurgau</option><option value="../uri/">Uri</option><option value="../vaud/">Waadt</option><option value="../valais/">Wallis</option><option value="../zug/">Zug</option><option value="../zurich/">Zürich</option>
+                </select>
+            </div>
+
+            <div class="hero-search">
+                <div class="search-wrapper">
+                    <svg class="search-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <input type="search" id="studioSearch" class="search-input" placeholder="Studio, Yoga-Stil oder Quartier suchen..." autocomplete="off" aria-label="Yoga-Studio suchen">
+                    <button class="search-clear" id="searchClear" aria-label="Suche löschen" style="display:none">&times;</button>
+                </div>
+            </div>
+
+            <div class="hero-stats">
+    <div class="stat">
+        <span class="stat-number">1</span>
+        <span class="stat-label">Studios</span>
+    </div>
+    <div class="stat">
+        <span class="stat-number">1</span>
+        <span class="stat-label">Kurse/Woche</span>
+    </div>
+    <div class="stat">
+        <span class="stat-number">2</span>
+        <span class="stat-label">Yoga-Stile</span>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Style filters -->
+    <section class="filters-bar">
+        <div class="container">
+            <div class="filters-quick">
+                <button type="button" class="chip active" data-filter="all">Alle</button><button type="button" class="chip" data-filter="hatha">Hatha</button><button type="button" class="chip" data-filter="vinyasa">Vinyasa</button>
+            </div>
+        </div>
+    </section>
 
     <!-- Breadcrumb -->
     <div class="canton-container">
@@ -605,28 +538,6 @@
             <strong>Appenzell A.Rh. (AR)</strong>
         </nav>
     </div>
-
-    <!-- Hero -->
-    <section class="canton-hero">
-        <div class="canton-container">
-            <h1>Yoga in Appenzell A.Rh.</h1>
-            <p class="canton-subtitle">Kanton Appenzell A.Rh. (AR) — Alle Yoga-Studios und Kurse auf einen Blick</p>
-            <div class="canton-stats">
-    <div class="stat-item">
-        <span class="stat-number">1</span>
-        <span class="stat-label">Studios</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-number">1</span>
-        <span class="stat-label">Kurse/Woche</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-number">2</span>
-        <span class="stat-label">Yoga-Stile</span>
-    </div>
-</div>
-        </div>
-    </section>
 
     <!-- Description -->
     <section class="canton-section">
@@ -641,17 +552,23 @@
     <section class="canton-section" id="studios">
         <div class="canton-container">
             <h2>Yoga-Studios in Appenzell A.Rh. (1)</h2>
-            <div class="studio-card">
-    <div class="studio-card-header">
-        <h3 class="studio-name">YOGAAR<span class="dropin-badge">Drop-in</span></h3>
+            <div class="canton-toolbar">
+        <p class="canton-count">Zeige <strong id="shownCount">1</strong> von <strong>1</strong> Studios</p>
+        <p class="canton-noresult" id="noResult" hidden>Keine Studios gefunden. Andere Filter versuchen.</p>
     </div>
-    <p class="studio-address">Schwänberg 2676, 9100 Herisau</p>
-    <p class="studio-desc">Authentisches, ehrliches Yoga in Herisau und St. Gallen mit Roberta Alder (geb. 1985 in Appenzell). Atmung steht im Zentrum der Praxis.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span></div>
+    <div class="studios-grid" id="studiosGrid">
+<article class="studio-card" data-styles="hatha|vinyasa" data-search="yogaar authentisches, ehrliches yoga in herisau und st. gallen mit roberta alder (geb. 1985 in appenzell). atmung steht im zentrum der praxis. schwänberg 2676, 9100 herisau hatha vinyasa auch studio in st. gallen  deutsch">
+    <div class="studio-card-header">
+        <h3 class="studio-name">YOGAAR</h3><span class="studio-badge drop-in">Drop-in</span>
+    </div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Schwänberg 2676, 9100 Herisau</span></div>
+    <p class="studio-description">Authentisches, ehrliches Yoga in Herisau und St. Gallen mit Roberta Alder (geb. 1985 in Appenzell). Atmung steht im Zentrum der Praxis.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span></div>
     <div class="studio-contact"><a href="https://www.yogaar.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 634 80 89" class="canton-contact-link">+41 78 634 80 89</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Auch Studio in St. Gallen</span></div>
-</div>
+</article>
+    </div>
         </div>
     </section>
 
@@ -745,5 +662,86 @@
             </p>
         </div>
     </footer>
+
+<script>
+(function () {
+  'use strict';
+  var root = document.documentElement;
+
+  // --- Theme, shared with the homepage -----------------------------------
+  var themeBtn = document.getElementById('themeToggle');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('yogabasel-theme', next); } catch (e) {}
+    });
+  }
+
+  // --- Canton switcher ----------------------------------------------------
+  var sel = document.getElementById('cantonSelect');
+  if (sel) {
+    sel.addEventListener('change', function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+  }
+
+  // --- Menu (mobile) ------------------------------------------------------
+  var menuBtn = document.getElementById('menuToggle'), nav = document.getElementById('nav');
+  if (menuBtn && nav) {
+    menuBtn.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  // --- Filtering ----------------------------------------------------------
+  var grid = document.getElementById('studiosGrid');
+  if (!grid) return;
+  var cards = [].slice.call(grid.querySelectorAll('.studio-card'));
+  var search = document.getElementById('studioSearch');
+  var clearBtn = document.getElementById('searchClear');
+  var shown = document.getElementById('shownCount');
+  var noResult = document.getElementById('noResult');
+  var chips = [].slice.call(document.querySelectorAll('.filters-quick .chip'));
+  var style = 'all', query = '';
+
+  function apply() {
+    var n = 0;
+    for (var i = 0; i < cards.length; i++) {
+      var c = cards[i];
+      var okStyle = style === 'all' || (c.getAttribute('data-styles') || '').indexOf(style) !== -1;
+      var okText = !query || (c.getAttribute('data-search') || '').indexOf(query) !== -1;
+      var visible = okStyle && okText;
+      c.hidden = !visible;
+      if (visible) n++;
+    }
+    if (shown) shown.textContent = n;
+    if (noResult) noResult.hidden = n !== 0;
+    if (clearBtn) clearBtn.style.display = query ? '' : 'none';
+  }
+
+  if (search) {
+    search.addEventListener('input', function () {
+      query = search.value.trim().toLowerCase();
+      apply();
+    });
+  }
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function () {
+      search.value = ''; query = ''; apply(); search.focus();
+    });
+  }
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      chips.forEach(function (c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      style = chip.getAttribute('data-filter');
+      apply();
+    });
+  });
+})();
+</script>
+
 </body>
 </html>

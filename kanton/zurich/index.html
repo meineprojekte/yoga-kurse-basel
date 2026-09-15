@@ -44,7 +44,7 @@
     "url": "https://meineprojekte.github.io/yoga-kurse-basel/"
   },
   "inLanguage": "de",
-  "dateModified": "2026-09-14",
+  "dateModified": "2026-09-15",
   "about": {
     "@type": "Thing",
     "name": "Yoga",
@@ -2410,55 +2410,23 @@
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="../../css/fonts.css">
 
+    <!-- Applies the saved theme before first paint, so arriving here from the
+         homepage in dark mode does not flash white. Same key as js/app.min.js. -->
+    <script>try{var t=localStorage.getItem('yogabasel-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+
     <!-- Main site CSS -->
     <link rel="stylesheet" href="../../css/style.css">
 
     <!-- Canton page specific styles -->
     <style>
-        .canton-hero {
-            background: linear-gradient(135deg, #6B5B95 0%, #8B7DB5 40%, #D4A373 100%);
-            color: #fff;
-            padding: 80px 0 60px;
-            text-align: center;
-        }
-        .canton-hero h1 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 2.8rem;
-            margin-bottom: 8px;
-            font-weight: 700;
-        }
-        .canton-hero .canton-subtitle {
-            font-size: 1.15rem;
-            opacity: 0.92;
-            margin-bottom: 24px;
-        }
-        .canton-stats {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .stat-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .stat-number {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 2.2rem;
-            font-weight: 700;
-            line-height: 1;
-        }
-        .stat-label {
-            font-size: 0.9rem;
-            opacity: 0.85;
-            margin-top: 4px;
-        }
+        /* Same width as .container in css/style.css, so these sections line up
+           with the app header, hero and studio grid instead of sitting in a
+           narrower column of their own. */
         .canton-container {
-            max-width: 1100px;
+            width: 100%;
+            max-width: var(--container-max, 1280px);
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 var(--spacing-lg, 24px);
         }
         .canton-section {
             padding: 48px 0;
@@ -2477,60 +2445,6 @@
             color: #444;
             margin-bottom: 16px;
             max-width: 800px;
-        }
-        .studio-card {
-            background: #fff;
-            border: 1px solid #E8E8E8;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            transition: box-shadow 0.25s ease, transform 0.25s ease;
-        }
-        .studio-card:hover {
-            box-shadow: 0 6px 20px rgba(107,91,149,0.12);
-            transform: translateY(-2px);
-        }
-        .studio-card-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 10px;
-        }
-        .studio-name {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.3rem;
-            color: #2D2D2D;
-            margin: 0;
-        }
-        .studio-address {
-            font-size: 0.92rem;
-            color: #666;
-            margin-bottom: 4px;
-        }
-        .addr-label {
-            font-size: 0.82rem;
-            color: #999;
-        }
-        .studio-desc {
-            font-size: 0.95rem;
-            color: #555;
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-        .studio-styles {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin: 12px 0;
-        }
-        .style-badge {
-            background: #F3F0F8;
-            color: #6B5B95;
-            padding: 3px 10px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
         }
         .studio-contact {
             margin: 10px 0;
@@ -2571,16 +2485,6 @@
             font-size: 0.78rem;
             font-weight: 500;
             border: 1px solid #E8C9A4;
-        }
-        .dropin-badge {
-            background: #4CAF50;
-            color: #fff;
-            padding: 2px 10px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-left: 10px;
-            vertical-align: middle;
         }
         .no-data {
             color: #999;
@@ -2705,49 +2609,6 @@
         .canton-breadcrumb a:hover {
             text-decoration: underline;
         }
-        .canton-header {
-            background: #fff;
-            border-bottom: 1px solid #E8E8E8;
-            padding: 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .canton-header-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 14px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .canton-logo {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.3rem;
-            color: #6B5B95;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .canton-logo strong {
-            color: #D4A373;
-        }
-        .canton-nav {
-            display: flex;
-            gap: 20px;
-            list-style: none;
-        }
-        .canton-nav a {
-            color: #555;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .canton-nav a:hover {
-            color: #6B5B95;
-        }
         .canton-footer {
             background: #2D2D2D;
             color: #aaa;
@@ -2762,41 +2623,113 @@
         .canton-footer a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 768px) {
-            .canton-hero h1 { font-size: 1.8rem; }
-            .canton-stats { gap: 24px; }
-            .stat-number { font-size: 1.6rem; }
-            .canton-section h2 { font-size: 1.4rem; }
-            .canton-nav { gap: 12px; }
-            .canton-nav a { font-size: 0.8rem; }
-            .studio-card { padding: 16px; }
-            .canton-header-inner { flex-direction: column; gap: 10px; }
+        /* Hero, header, grid and cards are styled by css/style.css, exactly as on
+           the homepage — including their breakpoints. Only what is specific to
+           this page needs a rule here. */
+        .canton-toolbar {
+            margin: 0 0 18px;
         }
-        @media (max-width: 480px) {
-            .canton-hero { padding: 60px 0 40px; }
-            .canton-hero h1 { font-size: 1.5rem; }
-            .canton-stats { flex-direction: column; gap: 16px; }
+        .canton-count {
+            font-size: 0.9rem;
+            color: var(--color-text-light, #777);
+            margin: 0;
+        }
+        .canton-noresult {
+            margin: 24px 0 0;
+            padding: 20px;
+            text-align: center;
+            color: var(--color-text-light, #777);
+            background: var(--color-surface, #F8F8F8);
+            border-radius: 12px;
+        }
+        .studios-grid .studio-contact {
+            margin: 10px 0 0;
+        }
+        @media (max-width: 768px) {
+            .canton-section h2 { font-size: 1.4rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="canton-header">
-        <div class="canton-header-inner">
-            <a href="../../" class="canton-logo">
-                <span>🧘</span>
-                <span>Yoga<strong>Schweiz</strong></span>
+    <!-- Header: same markup and classes as the JS app on the homepage, so the
+         two views look like one site. Section links that exist on this page stay
+         local; app-only features point back to the homepage. -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="../../" class="logo">
+                <span class="logo-icon">🧘</span>
+                <span class="logo-text">Yoga<strong>Schweiz</strong></span>
             </a>
-            <nav>
-                <ul class="canton-nav">
-                    <li><a href="../../">Home</a></li>
-                    <li><a href="#studios">Studios</a></li>
-                    <li><a href="#stundenplan">Stundenplan</a></li>
-                    <li><a href="#andere-kantone">Kantone</a></li>
+            <nav class="nav" id="nav" aria-label="Hauptnavigation">
+                <ul class="nav-list">
+                    <li><a href="#studios" class="nav-link">Studios</a></li>
+                    <li><a href="#stundenplan" class="nav-link">Stundenplan</a></li>
+                    <li><a href="#andere-kantone" class="nav-link">Kantone</a></li>
+                    <li><a href="../../#stile" class="nav-link">Yoga-Stile</a></li>
+                    <li><a href="../../#karte" class="nav-link">Karte</a></li>
+                    <li><a href="../../#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="../../blog/" class="nav-link">Blog</a></li>
                 </ul>
             </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Design wechseln" title="Dark/Light Mode">
+                    <svg class="icon-sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Alle Yoga-Kurse in Zürich<br><span class="hero-accent">Studios &amp; Stundenplan auf einen Blick</span></h1>
+            <p class="hero-subtitle">Kanton Zürich (ZH) &bull; 44 Studios &bull; Wöchentlich aktualisiert</p>
+
+            <div class="canton-selector">
+                <label class="canton-selector-label" for="cantonSelect">Wähle deinen Kanton:</label>
+                <select id="cantonSelect" class="canton-select" aria-label="Kanton wechseln">
+                    <option value="../aargau/">Aargau</option><option value="../appenzell-ar/">Appenzell A.Rh.</option><option value="../appenzell-ir/">Appenzell I.Rh.</option><option value="../basel-landschaft/">Basel-Landschaft</option><option value="../basel-stadt/">Basel-Stadt</option><option value="../bern/">Bern</option><option value="../fribourg/">Freiburg</option><option value="../geneve/">Genf</option><option value="../glarus/">Glarus</option><option value="../graubuenden/">Graubünden</option><option value="../jura/">Jura</option><option value="../luzern/">Luzern</option><option value="../neuchatel/">Neuenburg</option><option value="../nidwalden/">Nidwalden</option><option value="../obwalden/">Obwalden</option><option value="../schaffhausen/">Schaffhausen</option><option value="../schwyz/">Schwyz</option><option value="../solothurn/">Solothurn</option><option value="../st-gallen/">St. Gallen</option><option value="../ticino/">Tessin</option><option value="../thurgau/">Thurgau</option><option value="../uri/">Uri</option><option value="../vaud/">Waadt</option><option value="../valais/">Wallis</option><option value="../zug/">Zug</option><option value="../zurich/" selected>Zürich</option>
+                </select>
+            </div>
+
+            <div class="hero-search">
+                <div class="search-wrapper">
+                    <svg class="search-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <input type="search" id="studioSearch" class="search-input" placeholder="Studio, Yoga-Stil oder Quartier suchen..." autocomplete="off" aria-label="Yoga-Studio suchen">
+                    <button class="search-clear" id="searchClear" aria-label="Suche löschen" style="display:none">&times;</button>
+                </div>
+            </div>
+
+            <div class="hero-stats">
+    <div class="stat">
+        <span class="stat-number">44</span>
+        <span class="stat-label">Studios</span>
+    </div>
+    <div class="stat">
+        <span class="stat-number">757</span>
+        <span class="stat-label">Kurse/Woche</span>
+    </div>
+    <div class="stat">
+        <span class="stat-number">69</span>
+        <span class="stat-label">Yoga-Stile</span>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Style filters -->
+    <section class="filters-bar">
+        <div class="container">
+            <div class="filters-quick">
+                <button type="button" class="chip active" data-filter="all">Alle</button><button type="button" class="chip" data-filter="hatha">Hatha</button><button type="button" class="chip" data-filter="vinyasa">Vinyasa</button><button type="button" class="chip" data-filter="yin">Yin</button><button type="button" class="chip" data-filter="meditation">Meditation</button><button type="button" class="chip" data-filter="kundalini">Kundalini</button><button type="button" class="chip" data-filter="pilates">Pilates</button><button type="button" class="chip" data-filter="breathwork">Breathwork</button><button type="button" class="chip" data-filter="prenatal">Prenatal</button><button type="button" class="chip" data-filter="yoga nidra">Yoga Nidra</button><button type="button" class="chip" data-filter="ashtanga">Ashtanga</button>
+            </div>
+        </div>
+    </section>
 
     <!-- Breadcrumb -->
     <div class="canton-container">
@@ -2806,28 +2739,6 @@
             <strong>Zürich (ZH)</strong>
         </nav>
     </div>
-
-    <!-- Hero -->
-    <section class="canton-hero">
-        <div class="canton-container">
-            <h1>Yoga in Zürich</h1>
-            <p class="canton-subtitle">Kanton Zürich (ZH) — Alle Yoga-Studios und Kurse auf einen Blick</p>
-            <div class="canton-stats">
-    <div class="stat-item">
-        <span class="stat-number">44</span>
-        <span class="stat-label">Studios</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-number">757</span>
-        <span class="stat-label">Kurse/Woche</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-number">69</span>
-        <span class="stat-label">Yoga-Stile</span>
-    </div>
-</div>
-        </div>
-    </section>
 
     <!-- Description -->
     <section class="canton-section">
@@ -2847,490 +2758,453 @@
     <section class="canton-section" id="studios">
         <div class="canton-container">
             <h2>Yoga-Studios in Zürich (44)</h2>
-            <div class="studio-card">
-    <div class="studio-card-header">
-        <h3 class="studio-name">AIRYOGA<span class="dropin-badge">Drop-in</span></h3>
+            <div class="canton-toolbar">
+        <p class="canton-count">Zeige <strong id="shownCount">44</strong> von <strong>44</strong> Studios</p>
+        <p class="canton-noresult" id="noResult" hidden>Keine Studios gefunden. Andere Filter versuchen.</p>
     </div>
-    <p class="studio-address">Fabrikstrasse 10, 8005 Zürich <span class="addr-label">(Pop-Up Location ab Jan 2026 (neue Adresse wird bekannt gegeben))</span></p>
-    <p class="studio-desc">Seit über 20 Jahren eines der führenden Yogastudios der Schweiz. Über 45 Klassen pro Woche für alle Levels. Yoga Alliance registrierte Schule seit 2005.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yin</span><span class="style-badge">Ashtanga</span><span class="style-badge">Restorative</span><span class="style-badge">Prenatal</span><span class="style-badge">Meditation</span></div>
+    <div class="studios-grid" id="studiosGrid">
+<article class="studio-card" data-styles="hatha|vinyasa|yin|ashtanga|restorative|prenatal|meditation" data-search="airyoga seit über 20 jahren eines der führenden yogastudios der schweiz. über 45 klassen pro woche für alle levels. yoga alliance registrierte schule seit 2005. fabrikstrasse 10, 8005 zürich — pop-up location ab jan 2026 (neue adresse wird bekannt gegeben) hatha vinyasa yin ashtanga restorative prenatal meditation teacher training 200h teacher training 300h yoga alliance rys workshops brett porzio karl straub deutsch english">
+    <div class="studio-card-header">
+        <h3 class="studio-name">AIRYOGA</h3><span class="studio-badge drop-in">Drop-in</span>
+    </div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Fabrikstrasse 10, 8005 Zürich — Pop-Up Location ab Jan 2026 (neue Adresse wird bekannt gegeben)</span></div>
+    <p class="studio-description">Seit über 20 Jahren eines der führenden Yogastudios der Schweiz. Über 45 Klassen pro Woche für alle Levels. Yoga Alliance registrierte Schule seit 2005.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Yin</span><span class="style-tag">Ashtanga</span><span class="style-tag">Restorative</span><span class="style-tag">Prenatal</span><span class="style-tag">Meditation</span></div>
     <div class="studio-contact"><a href="https://www.airyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:zuerich@airyoga.com" class="canton-contact-link">zuerich@airyoga.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Teacher Training 200h</span><span class="feature-badge">Teacher Training 300h</span><span class="feature-badge">Yoga Alliance RYS</span><span class="feature-badge">Workshops</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|yin|yoga nidra|aerial yoga|hot let it flow" data-search="sanapurna yoga &amp; ayurveda centre ganzheitliches yoga- und ayurveda-zentrum mit über 25 jahren erfahrung. ayurveda-klinik, massagen und yoga teacher trainings. militärstrasse 115, 8004 zürich — kreis 4 hatha vinyasa yin yoga nidra aerial yoga hot let it flow teacher training 200h teacher training 300h ayurveda klinik aerial yoga massagen  deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Sanapurna Yoga &amp; Ayurveda Centre<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Sanapurna Yoga &amp; Ayurveda Centre</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Militärstrasse 115, 8004 Zürich <span class="addr-label">(Kreis 4)</span></p>
-    <p class="studio-desc">Ganzheitliches Yoga- und Ayurveda-Zentrum mit über 25 Jahren Erfahrung. Ayurveda-Klinik, Massagen und Yoga Teacher Trainings.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yin</span><span class="style-badge">Yoga Nidra</span><span class="style-badge">Aerial Yoga</span><span class="style-badge">Hot Let It Flow</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Militärstrasse 115, 8004 Zürich — Kreis 4</span></div>
+    <p class="studio-description">Ganzheitliches Yoga- und Ayurveda-Zentrum mit über 25 Jahren Erfahrung. Ayurveda-Klinik, Massagen und Yoga Teacher Trainings.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Yin</span><span class="style-tag">Yoga Nidra</span><span class="style-tag">Aerial Yoga</span><span class="style-tag">Hot Let It Flow</span></div>
     <div class="studio-contact"><a href="https://www.sanapurna.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 44 240 50 20" class="canton-contact-link">+41 44 240 50 20</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Teacher Training 200h</span><span class="feature-badge">Teacher Training 300h</span><span class="feature-badge">Ayurveda Klinik</span><span class="feature-badge">Aerial Yoga</span><span class="feature-badge">Massagen</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="restorative flow|slow flow|dynamic flow|power flow|energy flow|yoga nidra|prenatal|jivamukti|ashtanga" data-search="athayoga über 60 wöchentliche klassen an zwei standorten. ausbildungen, workshops, personal yoga, corporate yoga und retreats. gartenstrasse 14, 8002 zürich — zürich seestrasse 53, 8702 zollikon — zollikon restorative flow slow flow dynamic flow power flow energy flow yoga nidra prenatal jivamukti ashtanga teacher training 300h corporate yoga retreats 2 standorte nora kersten deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">ATHAYOGA<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">ATHAYOGA</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Gartenstrasse 14, 8002 Zürich <span class="addr-label">(Zürich)</span></p><p class="studio-address">Seestrasse 53, 8702 Zollikon <span class="addr-label">(Zollikon)</span></p>
-    <p class="studio-desc">Über 60 wöchentliche Klassen an zwei Standorten. Ausbildungen, Workshops, Personal Yoga, Corporate Yoga und Retreats.</p>
-    <div class="studio-styles"><span class="style-badge">Restorative Flow</span><span class="style-badge">Slow Flow</span><span class="style-badge">Dynamic Flow</span><span class="style-badge">Power Flow</span><span class="style-badge">Energy Flow</span><span class="style-badge">Yoga Nidra</span><span class="style-badge">Prenatal</span><span class="style-badge">Jivamukti</span><span class="style-badge">Ashtanga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Gartenstrasse 14, 8002 Zürich — Zürich</span></div><div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Seestrasse 53, 8702 Zollikon — Zollikon</span></div>
+    <p class="studio-description">Über 60 wöchentliche Klassen an zwei Standorten. Ausbildungen, Workshops, Personal Yoga, Corporate Yoga und Retreats.</p>
+    <div class="studio-styles"><span class="style-tag">Restorative Flow</span><span class="style-tag">Slow Flow</span><span class="style-tag">Dynamic Flow</span><span class="style-tag">Power Flow</span><span class="style-tag">Energy Flow</span><span class="style-tag">Yoga Nidra</span><span class="style-tag">Prenatal</span><span class="style-tag">Jivamukti</span><span class="style-tag">Ashtanga</span></div>
     <div class="studio-contact"><a href="https://www.athayoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 43 557 22 12" class="canton-contact-link">+41 43 557 22 12</a> &middot; <a href="mailto:info@athayoga.ch" class="canton-contact-link">info@athayoga.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Teacher Training 300h</span><span class="feature-badge">Corporate Yoga</span><span class="feature-badge">Retreats</span><span class="feature-badge">2 Standorte</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|yoga nidra|kundalini|meditation|prenatal|postnatal|reformer pilates" data-search="yoga studio zürich vielseitiges yogastudio im kreis 4 mit hatha, vinyasa, kundalini und schwangerschaftsyoga. einzelklassen ab chf 29. zwinglistrasse 8, 8004 zürich — kreis 4 hatha vinyasa yoga nidra kundalini meditation prenatal postnatal reformer pilates reformer pilates schwangerschaftsyoga  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Studio Zürich<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Studio Zürich</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Zwinglistrasse 8, 8004 Zürich <span class="addr-label">(Kreis 4)</span></p>
-    <p class="studio-desc">Vielseitiges Yogastudio im Kreis 4 mit Hatha, Vinyasa, Kundalini und Schwangerschaftsyoga. Einzelklassen ab CHF 29.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yoga Nidra</span><span class="style-badge">Kundalini</span><span class="style-badge">Meditation</span><span class="style-badge">Prenatal</span><span class="style-badge">Postnatal</span><span class="style-badge">Reformer Pilates</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Zwinglistrasse 8, 8004 Zürich — Kreis 4</span></div>
+    <p class="studio-description">Vielseitiges Yogastudio im Kreis 4 mit Hatha, Vinyasa, Kundalini und Schwangerschaftsyoga. Einzelklassen ab CHF 29.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Yoga Nidra</span><span class="style-tag">Kundalini</span><span class="style-tag">Meditation</span><span class="style-tag">Prenatal</span><span class="style-tag">Postnatal</span><span class="style-tag">Reformer Pilates</span></div>
     <div class="studio-contact"><a href="https://www.yogastudiozuerich.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Reformer Pilates</span><span class="feature-badge">Schwangerschaftsyoga</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa|hatha|ashtanga-inspired|restorative|yin|power|prenatal|postnatal|meditation" data-search="soasana yoga boutique-studio im herzen von wiedikon mit natürlichem design. kleine klassen mit persönlicher betreuung und zehn erfahrenen lehrern. schweighofstrasse 360, 8055 zürich — wiedikon vinyasa hatha ashtanga-inspired restorative yin power prenatal postnatal meditation corporate yoga private yoga sophie diana alexandra anastassia borja carolina andrei federica daniel deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Soasana Yoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Soasana Yoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Schweighofstrasse 360, 8055 Zürich <span class="addr-label">(Wiedikon)</span></p>
-    <p class="studio-desc">Boutique-Studio im Herzen von Wiedikon mit natürlichem Design. Kleine Klassen mit persönlicher Betreuung und zehn erfahrenen Lehrern.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Hatha</span><span class="style-badge">Ashtanga-inspired</span><span class="style-badge">Restorative</span><span class="style-badge">Yin</span><span class="style-badge">Power</span><span class="style-badge">Prenatal</span><span class="style-badge">Postnatal</span><span class="style-badge">Meditation</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Schweighofstrasse 360, 8055 Zürich — Wiedikon</span></div>
+    <p class="studio-description">Boutique-Studio im Herzen von Wiedikon mit natürlichem Design. Kleine Klassen mit persönlicher Betreuung und zehn erfahrenen Lehrern.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa</span><span class="style-tag">Hatha</span><span class="style-tag">Ashtanga-inspired</span><span class="style-tag">Restorative</span><span class="style-tag">Yin</span><span class="style-tag">Power</span><span class="style-tag">Prenatal</span><span class="style-tag">Postnatal</span><span class="style-tag">Meditation</span></div>
     <div class="studio-contact"><a href="https://soasana.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 812 12 14" class="canton-contact-link">+41 78 812 12 14</a> &middot; <a href="mailto:yoga@soasana.com" class="canton-contact-link">yoga@soasana.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Corporate Yoga</span><span class="feature-badge">Private Yoga</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa flow|hatha|forrest yoga|yin|restorative|tantra hatha|creative vinyasa|yoga nidra|sound bath" data-search="the soulspace yogastudio in seefeld und wiedikon. rund 24 klassen pro woche. krankenkassen-anerkannt. teacher training und retreats. zurlindenstrasse 134, 8003 zürich — wiedikon holbeinstrasse 35, 8008 zürich — seefeld vinyasa flow hatha forrest yoga yin restorative tantra hatha creative vinyasa yoga nidra sound bath teacher training 200h retreats krankenkassen-anerkannt 2 standorte vera ndeka nina fabienne keur deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">the SOULSPACE<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">the SOULSPACE</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Zurlindenstrasse 134, 8003 Zürich <span class="addr-label">(Wiedikon)</span></p><p class="studio-address">Holbeinstrasse 35, 8008 Zürich <span class="addr-label">(Seefeld)</span></p>
-    <p class="studio-desc">Yogastudio in Seefeld und Wiedikon. Rund 24 Klassen pro Woche. Krankenkassen-anerkannt. Teacher Training und Retreats.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Hatha</span><span class="style-badge">Forrest Yoga</span><span class="style-badge">Yin</span><span class="style-badge">Restorative</span><span class="style-badge">Tantra Hatha</span><span class="style-badge">Creative Vinyasa</span><span class="style-badge">Yoga Nidra</span><span class="style-badge">Sound Bath</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Zurlindenstrasse 134, 8003 Zürich — Wiedikon</span></div><div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Holbeinstrasse 35, 8008 Zürich — Seefeld</span></div>
+    <p class="studio-description">Yogastudio in Seefeld und Wiedikon. Rund 24 Klassen pro Woche. Krankenkassen-anerkannt. Teacher Training und Retreats.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa Flow</span><span class="style-tag">Hatha</span><span class="style-tag">Forrest Yoga</span><span class="style-tag">Yin</span><span class="style-tag">Restorative</span><span class="style-tag">Tantra Hatha</span><span class="style-tag">Creative Vinyasa</span><span class="style-tag">Yoga Nidra</span><span class="style-tag">Sound Bath</span></div>
     <div class="studio-contact"><a href="https://www.thesoulspace.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Teacher Training 200h</span><span class="feature-badge">Retreats</span><span class="feature-badge">Krankenkassen-anerkannt</span><span class="feature-badge">2 Standorte</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="bikram yoga" data-search="bikram yoga college of india zürich erstes bikram yoga studio der schweiz, gegründet 2004. 26 posen in 90 minuten bei 40°c und 40% luftfeuchtigkeit. stauffacherstrasse 37, 8004 zürich — helvetiaplatz bikram yoga hot yoga 40°c stefan tanner deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Bikram Yoga College of India Zürich<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Bikram Yoga College of India Zürich</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Stauffacherstrasse 37, 8004 Zürich <span class="addr-label">(Helvetiaplatz)</span></p>
-    <p class="studio-desc">Erstes Bikram Yoga Studio der Schweiz, gegründet 2004. 26 Posen in 90 Minuten bei 40°C und 40% Luftfeuchtigkeit.</p>
-    <div class="studio-styles"><span class="style-badge">Bikram Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Stauffacherstrasse 37, 8004 Zürich — Helvetiaplatz</span></div>
+    <p class="studio-description">Erstes Bikram Yoga Studio der Schweiz, gegründet 2004. 26 Posen in 90 Minuten bei 40°C und 40% Luftfeuchtigkeit.</p>
+    <div class="studio-styles"><span class="style-tag">Bikram Yoga</span></div>
     <div class="studio-contact"><a href="https://www.bikramyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Hot Yoga 40°C</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="bikram|hot vinyasa|kundalini|inferno hot pilates" data-search="yogaholics united eines der grössten und modernsten studios in zürich-west. traditionelles bikram, dynamisches hot vinyasa und kundalini bei verschiedenen temperaturen. heinrichstrasse 267a, 8005 zürich — zürich-west bikram hot vinyasa kundalini inferno hot pilates hot yoga verschiedene temperaturstufen  deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yogaholics United<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yogaholics United</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Heinrichstrasse 267A, 8005 Zürich <span class="addr-label">(Zürich-West)</span></p>
-    <p class="studio-desc">Eines der grössten und modernsten Studios in Zürich-West. Traditionelles Bikram, dynamisches Hot Vinyasa und Kundalini bei verschiedenen Temperaturen.</p>
-    <div class="studio-styles"><span class="style-badge">Bikram</span><span class="style-badge">Hot Vinyasa</span><span class="style-badge">Kundalini</span><span class="style-badge">Inferno Hot Pilates</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Heinrichstrasse 267A, 8005 Zürich — Zürich-West</span></div>
+    <p class="studio-description">Eines der grössten und modernsten Studios in Zürich-West. Traditionelles Bikram, dynamisches Hot Vinyasa und Kundalini bei verschiedenen Temperaturen.</p>
+    <div class="studio-styles"><span class="style-tag">Bikram</span><span class="style-tag">Hot Vinyasa</span><span class="style-tag">Kundalini</span><span class="style-tag">Inferno Hot Pilates</span></div>
     <div class="studio-contact"><a href="https://yogaholicsunited.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Hot Yoga</span><span class="feature-badge">Verschiedene Temperaturstufen</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="ashtanga|mysore" data-search="ashtanga yoga zurich traditionelles ashtanga yoga studio geführt von nassera guerroumi, autorisierte ashtanga-lehrerin. mysore und geführte klassen, mo-sa. olivengasse 8, 8032 zürich — hottingen ashtanga mysore autorisierte ashtanga-lehrerin nassera guerroumi deutsch english français">
     <div class="studio-card-header">
-        <h3 class="studio-name">Ashtanga Yoga Zurich<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Ashtanga Yoga Zurich</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Olivengasse 8, 8032 Zürich <span class="addr-label">(Hottingen)</span></p>
-    <p class="studio-desc">Traditionelles Ashtanga Yoga Studio geführt von Nassera Guerroumi, autorisierte Ashtanga-Lehrerin. Mysore und geführte Klassen, Mo-Sa.</p>
-    <div class="studio-styles"><span class="style-badge">Ashtanga</span><span class="style-badge">Mysore</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Olivengasse 8, 8032 Zürich — Hottingen</span></div>
+    <p class="studio-description">Traditionelles Ashtanga Yoga Studio geführt von Nassera Guerroumi, autorisierte Ashtanga-Lehrerin. Mysore und geführte Klassen, Mo-Sa.</p>
+    <div class="studio-styles"><span class="style-tag">Ashtanga</span><span class="style-tag">Mysore</span></div>
     <div class="studio-contact"><a href="https://www.ashtanga-yoga-zurich.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English, Français</p>
     <div class="studio-features"><span class="feature-badge">Autorisierte Ashtanga-Lehrerin</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="ashtanga|mysore" data-search="patanjali yoga shala authentische tägliche mysore-ashtanga yoga klassen im herzen von zürich. brett porzio ist syc level 2 autorisierter lehrer. zwinglistrasse 40, 8004 zürich — kreis 4 ashtanga mysore syc level 2 autorisierung tägliche mysore klassen brett porzio kamil milczarek english deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Patanjali Yoga Shala<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Patanjali Yoga Shala</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Zwinglistrasse 40, 8004 Zürich <span class="addr-label">(Kreis 4)</span></p>
-    <p class="studio-desc">Authentische tägliche Mysore-Ashtanga Yoga Klassen im Herzen von Zürich. Brett Porzio ist SYC Level 2 autorisierter Lehrer.</p>
-    <div class="studio-styles"><span class="style-badge">Ashtanga</span><span class="style-badge">Mysore</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Zwinglistrasse 40, 8004 Zürich — Kreis 4</span></div>
+    <p class="studio-description">Authentische tägliche Mysore-Ashtanga Yoga Klassen im Herzen von Zürich. Brett Porzio ist SYC Level 2 autorisierter Lehrer.</p>
+    <div class="studio-styles"><span class="style-tag">Ashtanga</span><span class="style-tag">Mysore</span></div>
     <div class="studio-contact"><a href="https://www.patanjaliyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: English, Deutsch</p>
     <div class="studio-features"><span class="feature-badge">SYC Level 2 Autorisierung</span><span class="feature-badge">Tägliche Mysore Klassen</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa|hatha|hatha flow|hatha raja|pilates|hiit|deepwork|bootcamp" data-search="bodyart studio zürich studio direkt neben dem grossmünster. yoga, fitness und pilates mit zugang zu panorama-sauna und dampfbad durch partnerschaft mit indigo fitness. münstergasse 4, 8001 zürich — altstadt, beim grossmünster vinyasa hatha hatha flow hatha raja pilates hiit deepwork bootcamp sauna &amp; spa zugang zentrale altstadtlage  deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">BODYART Studio Zürich<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">BODYART Studio Zürich</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Münstergasse 4, 8001 Zürich <span class="addr-label">(Altstadt, beim Grossmünster)</span></p>
-    <p class="studio-desc">Studio direkt neben dem Grossmünster. Yoga, Fitness und Pilates mit Zugang zu Panorama-Sauna und Dampfbad durch Partnerschaft mit INDIGO Fitness.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Hatha</span><span class="style-badge">Hatha Flow</span><span class="style-badge">Hatha Raja</span><span class="style-badge">Pilates</span><span class="style-badge">HIIT</span><span class="style-badge">DEEPWORK</span><span class="style-badge">Bootcamp</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Münstergasse 4, 8001 Zürich — Altstadt, beim Grossmünster</span></div>
+    <p class="studio-description">Studio direkt neben dem Grossmünster. Yoga, Fitness und Pilates mit Zugang zu Panorama-Sauna und Dampfbad durch Partnerschaft mit INDIGO Fitness.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa</span><span class="style-tag">Hatha</span><span class="style-tag">Hatha Flow</span><span class="style-tag">Hatha Raja</span><span class="style-tag">Pilates</span><span class="style-tag">HIIT</span><span class="style-tag">DEEPWORK</span><span class="style-tag">Bootcamp</span></div>
     <div class="studio-contact"><a href="https://bodyart.studio/en/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 606 60 48" class="canton-contact-link">+41 78 606 60 48</a> &middot; <a href="mailto:zuerich@bodyart.studio" class="canton-contact-link">zuerich@bodyart.studio</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Sauna &amp; Spa Zugang</span><span class="feature-badge">Zentrale Altstadtlage</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|yin" data-search="das yoga haus gemütliches yogastudio auf zwei etagen im kreis 4. klassen für alle levels in hatha, vinyasa und yin yoga. freyastrasse 6a, 8004 zürich — kreis 4 hatha vinyasa yin  angela boscardini deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Das Yoga Haus<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Das Yoga Haus</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Freyastrasse 6a, 8004 Zürich <span class="addr-label">(Kreis 4)</span></p>
-    <p class="studio-desc">Gemütliches Yogastudio auf zwei Etagen im Kreis 4. Klassen für alle Levels in Hatha, Vinyasa und Yin Yoga.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yin</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Freyastrasse 6a, 8004 Zürich — Kreis 4</span></div>
+    <p class="studio-description">Gemütliches Yogastudio auf zwei Etagen im Kreis 4. Klassen für alle Levels in Hatha, Vinyasa und Yin Yoga.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Yin</span></div>
     <div class="studio-contact"><a href="https://dasyogahaus.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:info@dasyogahaus.ch" class="canton-contact-link">info@dasyogahaus.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|yin|sound meditation|breathwork" data-search="das yoga haus dubs stilvolle yogaschule in idyllischem hinterhof in wiedikon seit 2015. yoga alliance zertifizierte 200h ausbildung, retreats und workshops. malzstrasse 19a, 8045 zürich — wiedikon, beim manesseplatz hatha vinyasa yin sound meditation breathwork teacher training 200h retreats workshops livestream maya varenka kovats deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Das Yoga Haus Dubs<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Das Yoga Haus Dubs</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Malzstrasse 19a, 8045 Zürich <span class="addr-label">(Wiedikon, beim Manesseplatz)</span></p>
-    <p class="studio-desc">Stilvolle Yogaschule in idyllischem Hinterhof in Wiedikon seit 2015. Yoga Alliance zertifizierte 200h Ausbildung, Retreats und Workshops.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yin</span><span class="style-badge">Sound Meditation</span><span class="style-badge">Breathwork</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Malzstrasse 19a, 8045 Zürich — Wiedikon, beim Manesseplatz</span></div>
+    <p class="studio-description">Stilvolle Yogaschule in idyllischem Hinterhof in Wiedikon seit 2015. Yoga Alliance zertifizierte 200h Ausbildung, Retreats und Workshops.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Yin</span><span class="style-tag">Sound Meditation</span><span class="style-tag">Breathwork</span></div>
     <div class="studio-contact"><a href="https://www.dasyogahaus-dubs.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Teacher Training 200h</span><span class="feature-badge">Retreats</span><span class="feature-badge">Workshops</span><span class="feature-badge">Livestream</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|meditation" data-search="yoga spirit yoga- und meditationsschule mit indischen wurzeln. zwei standorte beim bellevue und in wollishofen. probelektion verfügbar. steinwiesstrasse 9, 8032 zürich — yoga-spirit-house (beim bellevue) kilchbergstrasse 1, 8038 zürich — st. franziskus kirchgemeindezentrum, wollishofen hatha vinyasa meditation 2 standorte probelektion sabina asnani dominique carly deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Spirit<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Spirit</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Steinwiesstrasse 9, 8032 Zürich <span class="addr-label">(Yoga-Spirit-House (beim Bellevue))</span></p><p class="studio-address">Kilchbergstrasse 1, 8038 Zürich <span class="addr-label">(St. Franziskus Kirchgemeindezentrum, Wollishofen)</span></p>
-    <p class="studio-desc">Yoga- und Meditationsschule mit indischen Wurzeln. Zwei Standorte beim Bellevue und in Wollishofen. Probelektion verfügbar.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Meditation</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Steinwiesstrasse 9, 8032 Zürich — Yoga-Spirit-House (beim Bellevue)</span></div><div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Kilchbergstrasse 1, 8038 Zürich — St. Franziskus Kirchgemeindezentrum, Wollishofen</span></div>
+    <p class="studio-description">Yoga- und Meditationsschule mit indischen Wurzeln. Zwei Standorte beim Bellevue und in Wollishofen. Probelektion verfügbar.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Meditation</span></div>
     <div class="studio-contact"><a href="https://yoga-spirit.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 607 38 58" class="canton-contact-link">+41 78 607 38 58</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">2 Standorte</span><span class="feature-badge">Probelektion</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|katonah|alignment|restorative|sound bath|breathwork" data-search="vvoo yoga studio &amp; wellness shop 100m2 helles studio im seefeld mit holzboden und lounge. yoga, treatments und wellness shop. bis zu 30 teilnehmer. dufourstrasse 90, 8008 zürich — seefeld, über dem café monocle hatha katonah alignment restorative sound bath breathwork wellness shop treatments acupressure  deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">VVOO Yoga Studio &amp; Wellness Shop<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">VVOO Yoga Studio &amp; Wellness Shop</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Dufourstrasse 90, 8008 Zürich <span class="addr-label">(Seefeld, über dem Café Monocle)</span></p>
-    <p class="studio-desc">100m2 helles Studio im Seefeld mit Holzboden und Lounge. Yoga, Treatments und Wellness Shop. Bis zu 30 Teilnehmer.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Katonah</span><span class="style-badge">Alignment</span><span class="style-badge">Restorative</span><span class="style-badge">Sound Bath</span><span class="style-badge">Breathwork</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Dufourstrasse 90, 8008 Zürich — Seefeld, über dem Café Monocle</span></div>
+    <p class="studio-description">100m2 helles Studio im Seefeld mit Holzboden und Lounge. Yoga, Treatments und Wellness Shop. Bis zu 30 Teilnehmer.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Katonah</span><span class="style-tag">Alignment</span><span class="style-tag">Restorative</span><span class="style-tag">Sound Bath</span><span class="style-tag">Breathwork</span></div>
     <div class="studio-contact"><a href="https://vvoo.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Wellness Shop</span><span class="feature-badge">Treatments</span><span class="feature-badge">Acupressure</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|yin" data-search="yoga am zürichberg persönliches yogastudio im quartier fluntern. erfahrene lehrer, kleine gruppen, hohe qualität. kinderyoga und workshops verfügbar. mommsenstrasse 2, 8044 zürich — fluntern hatha vinyasa yin teacher training 200h kinderyoga workshops kleine gruppen  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga am Zürichberg<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga am Zürichberg</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Mommsenstrasse 2, 8044 Zürich <span class="addr-label">(Fluntern)</span></p>
-    <p class="studio-desc">Persönliches Yogastudio im Quartier Fluntern. Erfahrene Lehrer, kleine Gruppen, hohe Qualität. Kinderyoga und Workshops verfügbar.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yin</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Mommsenstrasse 2, 8044 Zürich — Fluntern</span></div>
+    <p class="studio-description">Persönliches Yogastudio im Quartier Fluntern. Erfahrene Lehrer, kleine Gruppen, hohe Qualität. Kinderyoga und Workshops verfügbar.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Yin</span></div>
     <div class="studio-contact"><a href="https://www.xn--yoga-zrichberg-lsb.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 629 92 69" class="canton-contact-link">+41 79 629 92 69</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Teacher Training 200h</span><span class="feature-badge">Kinderyoga</span><span class="feature-badge">Workshops</span><span class="feature-badge">Kleine Gruppen</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|iyengar" data-search="yoga am fluss yogaschule im kreis 5 mit kleinen gruppen. kurse für morgen, abend, rücken, schwangere und fortgeschrittene. einstieg jederzeit möglich. hardturmstrasse 68a, 8005 zürich — kreis 5 hatha iyengar personal training yoga-ferien in brasilien/marokko kleine gruppen susan connor marianne celine deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga am Fluss<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga am Fluss</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Hardturmstrasse 68a, 8005 Zürich <span class="addr-label">(Kreis 5)</span></p>
-    <p class="studio-desc">Yogaschule im Kreis 5 mit kleinen Gruppen. Kurse für Morgen, Abend, Rücken, Schwangere und Fortgeschrittene. Einstieg jederzeit möglich.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Iyengar</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Hardturmstrasse 68a, 8005 Zürich — Kreis 5</span></div>
+    <p class="studio-description">Yogaschule im Kreis 5 mit kleinen Gruppen. Kurse für Morgen, Abend, Rücken, Schwangere und Fortgeschrittene. Einstieg jederzeit möglich.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Iyengar</span></div>
     <div class="studio-contact"><a href="https://www.yogaamfluss.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Personal Training</span><span class="feature-badge">Yoga-Ferien in Brasilien/Marokko</span><span class="feature-badge">Kleine Gruppen</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="iyengar" data-search="iyengar yoga zürich älteste iyengar-yogaschule in zürich, gegründet 1996 und von b.k.s. iyengar persönlich eingeweiht. systematischer unterricht für alle stufen. quellenstrasse 2, 8005 zürich — kreis 5 iyengar von b.k.s. iyengar eingeweiht workshops  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Iyengar Yoga Zürich<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Iyengar Yoga Zürich</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Quellenstrasse 2, 8005 Zürich <span class="addr-label">(Kreis 5)</span></p>
-    <p class="studio-desc">Älteste Iyengar-Yogaschule in Zürich, gegründet 1996 und von B.K.S. Iyengar persönlich eingeweiht. Systematischer Unterricht für alle Stufen.</p>
-    <div class="studio-styles"><span class="style-badge">Iyengar</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Quellenstrasse 2, 8005 Zürich — Kreis 5</span></div>
+    <p class="studio-description">Älteste Iyengar-Yogaschule in Zürich, gegründet 1996 und von B.K.S. Iyengar persönlich eingeweiht. Systematischer Unterricht für alle Stufen.</p>
+    <div class="studio-styles"><span class="style-tag">Iyengar</span></div>
     <div class="studio-contact"><a href="https://www.iyengar-yoga-zurich.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Von B.K.S. Iyengar eingeweiht</span><span class="feature-badge">Workshops</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="iyengar" data-search="yoga city iyengar yogaschule seit über 20 jahren im herzen von zürich. alle lehrer mit diplomierter iyengar-ausbildung. bäckerstrasse 40, 8004 zürich — kreis 4, langstrasse iyengar workshops retreats mindfulness pius meier carlos de azevedo correia deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga City<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga City</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Bäckerstrasse 40, 8004 Zürich <span class="addr-label">(Kreis 4, Langstrasse)</span></p>
-    <p class="studio-desc">Iyengar Yogaschule seit über 20 Jahren im Herzen von Zürich. Alle Lehrer mit diplomierter Iyengar-Ausbildung.</p>
-    <div class="studio-styles"><span class="style-badge">Iyengar</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Bäckerstrasse 40, 8004 Zürich — Kreis 4, Langstrasse</span></div>
+    <p class="studio-description">Iyengar Yogaschule seit über 20 Jahren im Herzen von Zürich. Alle Lehrer mit diplomierter Iyengar-Ausbildung.</p>
+    <div class="studio-styles"><span class="style-tag">Iyengar</span></div>
     <div class="studio-contact"><a href="https://www.yogacity.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 44 463 42 62" class="canton-contact-link">+41 44 463 42 62</a> &middot; <a href="mailto:info@yogacity.ch" class="canton-contact-link">info@yogacity.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Workshops</span><span class="feature-badge">Retreats</span><span class="feature-badge">Mindfulness</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha flow|vinyasa|meditation|hatha tantra|tantra hatha|katonah|somatic movement|hatha|breathwork|yin|sound bath" data-search="soul city yoga studio at dienerstrasse 10, zurich. hatha, vinyasa, yin &amp;amp; meditation, breathwork. bsport booking. dienerstrasse 10, 8004 zürich — kreis 4, langstrasse hatha flow vinyasa meditation hatha tantra tantra hatha katonah somatic movement hatha breathwork yin sound bath café co-working yoga &amp; brunch events duschen sinah erica renata deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Soul City<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Soul City</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Dienerstrasse 10, 8004 Zürich <span class="addr-label">(Kreis 4, Langstrasse)</span></p>
-    <p class="studio-desc">Yoga studio at Dienerstrasse 10, Zurich. Hatha, Vinyasa, Yin &amp; Meditation, Breathwork. Bsport booking.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha Flow</span><span class="style-badge">Vinyasa</span><span class="style-badge">Meditation</span><span class="style-badge">Hatha Tantra</span><span class="style-badge">Tantra Hatha</span><span class="style-badge">Katonah</span><span class="style-badge">Somatic Movement</span><span class="style-badge">Hatha</span><span class="style-badge">Breathwork</span><span class="style-badge">Yin</span><span class="style-badge">Sound Bath</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Dienerstrasse 10, 8004 Zürich — Kreis 4, Langstrasse</span></div>
+    <p class="studio-description">Yoga studio at Dienerstrasse 10, Zurich. Hatha, Vinyasa, Yin &amp; Meditation, Breathwork. Bsport booking.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha Flow</span><span class="style-tag">Vinyasa</span><span class="style-tag">Meditation</span><span class="style-tag">Hatha Tantra</span><span class="style-tag">Tantra Hatha</span><span class="style-tag">Katonah</span><span class="style-tag">Somatic Movement</span><span class="style-tag">Hatha</span><span class="style-tag">Breathwork</span><span class="style-tag">Yin</span><span class="style-tag">Sound Bath</span></div>
     <div class="studio-contact"><a href="https://soulcity-zurich.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 104 28 28" class="canton-contact-link">+41 79 104 28 28</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Café</span><span class="feature-badge">Co-Working</span><span class="feature-badge">Yoga &amp; Brunch Events</span><span class="feature-badge">Duschen</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa|hatha|aerial|yin|sound bath|meditation" data-search="yoga nest einladendes studio mit zwei standorten in oerlikon und im zentrum (niederdorf). vinyasa, aerial yoga und teacher trainings. wattstrasse 3, 8050 zürich — oerlikon 8001 zürich — zentrum/niederdorf vinyasa hatha aerial yin sound bath meditation teacher training 200h aerial yoga sound baths retreats 2 standorte  english deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Nest<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Nest</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Wattstrasse 3, 8050 Zürich <span class="addr-label">(Oerlikon)</span></p><p class="studio-address">8001 Zürich <span class="addr-label">(Zentrum/Niederdorf)</span></p>
-    <p class="studio-desc">Einladendes Studio mit zwei Standorten in Oerlikon und im Zentrum (Niederdorf). Vinyasa, Aerial Yoga und Teacher Trainings.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Hatha</span><span class="style-badge">Aerial</span><span class="style-badge">Yin</span><span class="style-badge">Sound Bath</span><span class="style-badge">Meditation</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Wattstrasse 3, 8050 Zürich — Oerlikon</span></div><div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>8001 Zürich — Zentrum/Niederdorf</span></div>
+    <p class="studio-description">Einladendes Studio mit zwei Standorten in Oerlikon und im Zentrum (Niederdorf). Vinyasa, Aerial Yoga und Teacher Trainings.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa</span><span class="style-tag">Hatha</span><span class="style-tag">Aerial</span><span class="style-tag">Yin</span><span class="style-tag">Sound Bath</span><span class="style-tag">Meditation</span></div>
     <div class="studio-contact"><a href="https://www.theyoganest.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:info@theyoganest.ch" class="canton-contact-link">info@theyoganest.ch</a></div>
     <p class="studio-languages">Sprachen: English, Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Teacher Training 200h</span><span class="feature-badge">Aerial Yoga</span><span class="feature-badge">Sound Baths</span><span class="feature-badge">Retreats</span><span class="feature-badge">2 Standorte</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa|hatha|yin|prenatal|meditation" data-search="yoga culture helles studio mit eichenparkett an zwei standorten in oerlikon und hottingen. early bird, morning flow, lunch flow und gentle klassen. tramstrasse 2, 8050 zürich — oerlikon, beim sternen hottingerstrasse 35, 8032 zürich — hottingen vinyasa hatha yin prenatal meditation 2 standorte qualitop zertifiziert vivianne deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Culture<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Culture</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Tramstrasse 2, 8050 Zürich <span class="addr-label">(Oerlikon, beim Sternen)</span></p><p class="studio-address">Hottingerstrasse 35, 8032 Zürich <span class="addr-label">(Hottingen)</span></p>
-    <p class="studio-desc">Helles Studio mit Eichenparkett an zwei Standorten in Oerlikon und Hottingen. Early Bird, Morning Flow, Lunch Flow und Gentle Klassen.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Hatha</span><span class="style-badge">Yin</span><span class="style-badge">Prenatal</span><span class="style-badge">Meditation</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Tramstrasse 2, 8050 Zürich — Oerlikon, beim Sternen</span></div><div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Hottingerstrasse 35, 8032 Zürich — Hottingen</span></div>
+    <p class="studio-description">Helles Studio mit Eichenparkett an zwei Standorten in Oerlikon und Hottingen. Early Bird, Morning Flow, Lunch Flow und Gentle Klassen.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa</span><span class="style-tag">Hatha</span><span class="style-tag">Yin</span><span class="style-tag">Prenatal</span><span class="style-tag">Meditation</span></div>
     <div class="studio-contact"><a href="https://www.yogaculture.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">2 Standorte</span><span class="feature-badge">Qualitop zertifiziert</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="alignment hatha|prenatal" data-search="the yoga place alignment-basiertes hatha yoga studio. individuelle anatomie berücksichtigt, verletzungen vermeiden. teacher training und yoga-ferien. turbinenstrasse 40, 8005 zürich — 3 min. von hardbrücke alignment hatha prenatal teacher training 200h yoga-ferien schwangerschaftsyoga private yoga tanja joey deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">The Yoga Place<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">The Yoga Place</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Turbinenstrasse 40, 8005 Zürich <span class="addr-label">(3 Min. von Hardbrücke)</span></p>
-    <p class="studio-desc">Alignment-basiertes Hatha Yoga Studio. Individuelle Anatomie berücksichtigt, Verletzungen vermeiden. Teacher Training und Yoga-Ferien.</p>
-    <div class="studio-styles"><span class="style-badge">Alignment Hatha</span><span class="style-badge">Prenatal</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Turbinenstrasse 40, 8005 Zürich — 3 Min. von Hardbrücke</span></div>
+    <p class="studio-description">Alignment-basiertes Hatha Yoga Studio. Individuelle Anatomie berücksichtigt, Verletzungen vermeiden. Teacher Training und Yoga-Ferien.</p>
+    <div class="studio-styles"><span class="style-tag">Alignment Hatha</span><span class="style-tag">Prenatal</span></div>
     <div class="studio-contact"><a href="https://www.theyogaplace.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 423 21 91" class="canton-contact-link">+41 79 423 21 91</a> &middot; <a href="mailto:info@theyogaplace.ch" class="canton-contact-link">info@theyogaplace.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Teacher Training 200h</span><span class="feature-badge">Yoga-Ferien</span><span class="feature-badge">Schwangerschaftsyoga</span><span class="feature-badge">Private Yoga</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa|yin|yin &amp; yang|hatha" data-search="planet yoga seit 2004 von bettina walter geführt. yoga im kreis 3 mit vinyasa, yin und hatha. workshops und teacher training. rüdigerstrasse 15, 8045 zürich — kreis 3 vinyasa yin yin &amp; yang hatha teacher training workshops bettina walter deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Planet Yoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Planet Yoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rüdigerstrasse 15, 8045 Zürich <span class="addr-label">(Kreis 3)</span></p>
-    <p class="studio-desc">Seit 2004 von Bettina Walter geführt. Yoga im Kreis 3 mit Vinyasa, Yin und Hatha. Workshops und Teacher Training.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Yin</span><span class="style-badge">Yin &amp; Yang</span><span class="style-badge">Hatha</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rüdigerstrasse 15, 8045 Zürich — Kreis 3</span></div>
+    <p class="studio-description">Seit 2004 von Bettina Walter geführt. Yoga im Kreis 3 mit Vinyasa, Yin und Hatha. Workshops und Teacher Training.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa</span><span class="style-tag">Yin</span><span class="style-tag">Yin &amp; Yang</span><span class="style-tag">Hatha</span></div>
     <div class="studio-contact"><a href="https://www.planetyoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Teacher Training</span><span class="feature-badge">Workshops</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|ashtanga|yin|flow" data-search="yogalives seit 2008 körper und geist in einklang. grösster yogaraum in zürich. yoga alliance zertifizierte teacher trainings seit 2011. giesshübelstrasse 62b, 8045 zürich — grösstes yoga-zimmer in zürich hatha vinyasa ashtanga yin flow teacher training yoga alliance zertifiziert grösster yogaraum olive ssembuze melanie deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yogalives<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yogalives</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Giesshübelstrasse 62B, 8045 Zürich <span class="addr-label">(Grösstes Yoga-Zimmer in Zürich)</span></p>
-    <p class="studio-desc">Seit 2008 Körper und Geist in Einklang. Grösster Yogaraum in Zürich. Yoga Alliance zertifizierte Teacher Trainings seit 2011.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Ashtanga</span><span class="style-badge">Yin</span><span class="style-badge">Flow</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Giesshübelstrasse 62B, 8045 Zürich — Grösstes Yoga-Zimmer in Zürich</span></div>
+    <p class="studio-description">Seit 2008 Körper und Geist in Einklang. Grösster Yogaraum in Zürich. Yoga Alliance zertifizierte Teacher Trainings seit 2011.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Ashtanga</span><span class="style-tag">Yin</span><span class="style-tag">Flow</span></div>
     <div class="studio-contact"><a href="https://www.yogalives.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Teacher Training</span><span class="feature-badge">Yoga Alliance zertifiziert</span><span class="feature-badge">Grösster Yogaraum</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa" data-search="nandalayoga yogaoase in zürich. wohlfühl-yoga mit daniela in persönlicher atmosphäre im kreis 5. klingenstrasse 42, 8005 zürich — kreis 5 hatha vinyasa  daniela deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">nandalayoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">nandalayoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Klingenstrasse 42, 8005 Zürich <span class="addr-label">(Kreis 5)</span></p>
-    <p class="studio-desc">Yogaoase in Zürich. Wohlfühl-Yoga mit Daniela in persönlicher Atmosphäre im Kreis 5.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Klingenstrasse 42, 8005 Zürich — Kreis 5</span></div>
+    <p class="studio-description">Yogaoase in Zürich. Wohlfühl-Yoga mit Daniela in persönlicher Atmosphäre im Kreis 5.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span></div>
     <div class="studio-contact"><a href="https://www.nandalayoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 224 52 70" class="canton-contact-link">+41 79 224 52 70</a> &middot; <a href="mailto:daniela@nandalayoga.ch" class="canton-contact-link">daniela@nandalayoga.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|kundalini|yin|pilates" data-search="yoga in a bag (altstetten) teil der yoga in a bag kette mit studios in altstetten, albisrieden, dietikon und winterthur. dynamische und sanfte klassen für jede lebenslage. hohlstrasse 481, 8048 zürich — altstetten hatha vinyasa kundalini yin pilates retreats workshops mehrere standorte  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga in a Bag (Altstetten)<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga in a Bag (Altstetten)</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Hohlstrasse 481, 8048 Zürich <span class="addr-label">(Altstetten)</span></p>
-    <p class="studio-desc">Teil der Yoga in a Bag Kette mit Studios in Altstetten, Albisrieden, Dietikon und Winterthur. Dynamische und sanfte Klassen für jede Lebenslage.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Kundalini</span><span class="style-badge">Yin</span><span class="style-badge">Pilates</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Hohlstrasse 481, 8048 Zürich — Altstetten</span></div>
+    <p class="studio-description">Teil der Yoga in a Bag Kette mit Studios in Altstetten, Albisrieden, Dietikon und Winterthur. Dynamische und sanfte Klassen für jede Lebenslage.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Kundalini</span><span class="style-tag">Yin</span><span class="style-tag">Pilates</span></div>
     <div class="studio-contact"><a href="https://yogainabag.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 686 23 23" class="canton-contact-link">+41 78 686 23 23</a> &middot; <a href="mailto:altstetten@yogainabag.com" class="canton-contact-link">altstetten@yogainabag.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Retreats</span><span class="feature-badge">Workshops</span><span class="feature-badge">Mehrere Standorte</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|kundalini|yin|pilates" data-search="yoga in a bag (albisrieden) yoga in a bag standort in albisrieden. familiäre atmosphäre mit abwechslungsreichem programm. albisriederstrasse 361, 8047 zürich — albisrieden hatha vinyasa kundalini yin pilates retreats workshops  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga in a Bag (Albisrieden)<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga in a Bag (Albisrieden)</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Albisriederstrasse 361, 8047 Zürich <span class="addr-label">(Albisrieden)</span></p>
-    <p class="studio-desc">Yoga in a Bag Standort in Albisrieden. Familiäre Atmosphäre mit abwechslungsreichem Programm.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Kundalini</span><span class="style-badge">Yin</span><span class="style-badge">Pilates</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Albisriederstrasse 361, 8047 Zürich — Albisrieden</span></div>
+    <p class="studio-description">Yoga in a Bag Standort in Albisrieden. Familiäre Atmosphäre mit abwechslungsreichem Programm.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Kundalini</span><span class="style-tag">Yin</span><span class="style-tag">Pilates</span></div>
     <div class="studio-contact"><a href="https://yogainabag.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 44 203 66 96" class="canton-contact-link">+41 44 203 66 96</a> &middot; <a href="mailto:albisrieden@yogainabag.com" class="canton-contact-link">albisrieden@yogainabag.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Retreats</span><span class="feature-badge">Workshops</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|yin|pilates|senioren-yoga" data-search="aranya studio zentral gelegen in seefeld. yoga, pilates, personal training, massage und sound treatment. gruppenkurse für 10-15 teilnehmer. hammerstrasse 7, 8008 zürich — seefeld hatha vinyasa yin pilates senioren-yoga personal training massage sound treatment fascia workshops cacao ceremonies retreats  deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">ARANYA Studio<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">ARANYA Studio</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Hammerstrasse 7, 8008 Zürich <span class="addr-label">(Seefeld)</span></p>
-    <p class="studio-desc">Zentral gelegen in Seefeld. Yoga, Pilates, Personal Training, Massage und Sound Treatment. Gruppenkurse für 10-15 Teilnehmer.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yin</span><span class="style-badge">Pilates</span><span class="style-badge">Senioren-Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Hammerstrasse 7, 8008 Zürich — Seefeld</span></div>
+    <p class="studio-description">Zentral gelegen in Seefeld. Yoga, Pilates, Personal Training, Massage und Sound Treatment. Gruppenkurse für 10-15 Teilnehmer.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Yin</span><span class="style-tag">Pilates</span><span class="style-tag">Senioren-Yoga</span></div>
     <div class="studio-contact"><a href="https://www.aranya-studio.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Personal Training</span><span class="feature-badge">Massage</span><span class="feature-badge">Sound Treatment</span><span class="feature-badge">Fascia Workshops</span><span class="feature-badge">Cacao Ceremonies</span><span class="feature-badge">Retreats</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="neo kundalini|hatha|vinyasa|yin|yoga nidra|meditation|breathwork|sound bath" data-search="elevate studio neues studio im herzen von zürich mit neo kundalini yoga - eine frische, offene perspektive auf die alte kundalini-tradition. wyssgasse 2, 8004 zürich — kreis 4 neo kundalini hatha vinyasa yin yoga nidra meditation breathwork sound bath neo kundalini yoga cacao ceremony women health stress detox  deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Elevate Studio<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Elevate Studio</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Wyssgasse 2, 8004 Zürich <span class="addr-label">(Kreis 4)</span></p>
-    <p class="studio-desc">Neues Studio im Herzen von Zürich mit Neo Kundalini Yoga - eine frische, offene Perspektive auf die alte Kundalini-Tradition.</p>
-    <div class="studio-styles"><span class="style-badge">Neo Kundalini</span><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yin</span><span class="style-badge">Yoga Nidra</span><span class="style-badge">Meditation</span><span class="style-badge">Breathwork</span><span class="style-badge">Sound Bath</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Wyssgasse 2, 8004 Zürich — Kreis 4</span></div>
+    <p class="studio-description">Neues Studio im Herzen von Zürich mit Neo Kundalini Yoga - eine frische, offene Perspektive auf die alte Kundalini-Tradition.</p>
+    <div class="studio-styles"><span class="style-tag">Neo Kundalini</span><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Yin</span><span class="style-tag">Yoga Nidra</span><span class="style-tag">Meditation</span><span class="style-tag">Breathwork</span><span class="style-tag">Sound Bath</span></div>
     <div class="studio-contact"><a href="https://www.elevate-studio.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:hello@elevate-studio.ch" class="canton-contact-link">hello@elevate-studio.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Neo Kundalini Yoga</span><span class="feature-badge">Cacao Ceremony</span><span class="feature-badge">Women Health</span><span class="feature-badge">Stress Detox</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yoga|meditation" data-search="radiant heart studio studio für yoga, kunst und community im herzen von kreis 3. eröffnet oktober 2023. raum auch zur miete verfügbar. rüdigerstrasse 17, 8045 zürich — kreis 3, wiedikon, 5 min. von sihlcity yoga meditation community space raum mieten  deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Radiant Heart Studio<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Radiant Heart Studio</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rüdigerstrasse 17, 8045 Zürich <span class="addr-label">(Kreis 3, Wiedikon, 5 Min. von Sihlcity)</span></p>
-    <p class="studio-desc">Studio für Yoga, Kunst und Community im Herzen von Kreis 3. Eröffnet Oktober 2023. Raum auch zur Miete verfügbar.</p>
-    <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Meditation</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rüdigerstrasse 17, 8045 Zürich — Kreis 3, Wiedikon, 5 Min. von Sihlcity</span></div>
+    <p class="studio-description">Studio für Yoga, Kunst und Community im Herzen von Kreis 3. Eröffnet Oktober 2023. Raum auch zur Miete verfügbar.</p>
+    <div class="studio-styles"><span class="style-tag">Yoga</span><span class="style-tag">Meditation</span></div>
     <div class="studio-contact"><a href="https://www.radiantheartstudio.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Community Space</span><span class="feature-badge">Raum mieten</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yinyasa|sweat yoga|breathwork|yoga nidra|yin yoga|prenatal|prenatal yoga|ashtanga vinyasa|vinyasa flow|cecilia jane method|kundalini|barre|yin" data-search="studio y3 boutique yoga studio at weststrasse 138, zurich. signature cecilia jane method plus vinyasa, ashtanga, yin, breathwork. weststrasse 138, 8003 zürich — kreis 3 yinyasa sweat yoga breathwork yoga nidra yin yoga prenatal prenatal yoga ashtanga vinyasa vinyasa flow cecilia jane method kundalini barre yin cecilia jane method sweat yoga musik-begleitete klassen jill cecilia stephanie vanessa yaiza jenny yannick vanessa salome lea noemi adriana carla cecilia jane english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Studio Y3<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Studio Y3</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Weststrasse 138, 8003 Zürich <span class="addr-label">(Kreis 3)</span></p>
-    <p class="studio-desc">Boutique yoga studio at Weststrasse 138, Zurich. Signature Cecilia Jane Method plus Vinyasa, Ashtanga, Yin, Breathwork.</p>
-    <div class="studio-styles"><span class="style-badge">Yinyasa</span><span class="style-badge">SWEAT Yoga</span><span class="style-badge">Breathwork</span><span class="style-badge">Yoga Nidra</span><span class="style-badge">Yin Yoga</span><span class="style-badge">Prenatal</span><span class="style-badge">Prenatal Yoga</span><span class="style-badge">Ashtanga Vinyasa</span><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Cecilia Jane Method</span><span class="style-badge">Kundalini</span><span class="style-badge">Barre</span><span class="style-badge">Yin</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Weststrasse 138, 8003 Zürich — Kreis 3</span></div>
+    <p class="studio-description">Boutique yoga studio at Weststrasse 138, Zurich. Signature Cecilia Jane Method plus Vinyasa, Ashtanga, Yin, Breathwork.</p>
+    <div class="studio-styles"><span class="style-tag">Yinyasa</span><span class="style-tag">SWEAT Yoga</span><span class="style-tag">Breathwork</span><span class="style-tag">Yoga Nidra</span><span class="style-tag">Yin Yoga</span><span class="style-tag">Prenatal</span><span class="style-tag">Prenatal Yoga</span><span class="style-tag">Ashtanga Vinyasa</span><span class="style-tag">Vinyasa Flow</span><span class="style-tag">Cecilia Jane Method</span><span class="style-tag">Kundalini</span><span class="style-tag">Barre</span><span class="style-tag">Yin</span></div>
     <div class="studio-contact"><a href="https://www.studioy3.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: English</p>
     <div class="studio-features"><span class="feature-badge">Cecilia Jane Method</span><span class="feature-badge">Sweat Yoga</span><span class="feature-badge">Musik-begleitete Klassen</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="iyengar" data-search="yoga by nora + mikkel kleines iyengar-yoga-studio in zürich enge. gruppenlektionen mit max. 9 teilnehmern und privatlektionen. einzelklasse ab chf 20. weltistrasse 5, 8002 zürich — enge, kreis 2 iyengar max. 9 teilnehmer privatlektionen rolfing nora deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">YOGA by Nora + Mikkel<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">YOGA by Nora + Mikkel</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Weltistrasse 5, 8002 Zürich <span class="addr-label">(Enge, Kreis 2)</span></p>
-    <p class="studio-desc">Kleines Iyengar-Yoga-Studio in Zürich Enge. Gruppenlektionen mit max. 9 Teilnehmern und Privatlektionen. Einzelklasse ab CHF 20.</p>
-    <div class="studio-styles"><span class="style-badge">Iyengar</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Weltistrasse 5, 8002 Zürich — Enge, Kreis 2</span></div>
+    <p class="studio-description">Kleines Iyengar-Yoga-Studio in Zürich Enge. Gruppenlektionen mit max. 9 Teilnehmern und Privatlektionen. Einzelklasse ab CHF 20.</p>
+    <div class="studio-styles"><span class="style-tag">Iyengar</span></div>
     <div class="studio-contact"><a href="https://yogabynora.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 720 44 25" class="canton-contact-link">+41 79 720 44 25</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Max. 9 Teilnehmer</span><span class="feature-badge">Privatlektionen</span><span class="feature-badge">Rolfing</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="kundalini|meditation|breathwork" data-search="jio kundalini yoga seit 2009 pionier für kundalini yoga in zürich. morning sadhana, abendklassen, teacher trainings und retreats. kernstrasse 25, 8004 zürich — gobinde yoga studio, kreis 4 kundalini meditation breathwork teacher training 200h teacher training 300h morning sadhana retreats  deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Jio Kundalini Yoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Jio Kundalini Yoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Kernstrasse 25, 8004 Zürich <span class="addr-label">(Gobinde Yoga Studio, Kreis 4)</span></p>
-    <p class="studio-desc">Seit 2009 Pionier für Kundalini Yoga in Zürich. Morning Sadhana, Abendklassen, Teacher Trainings und Retreats.</p>
-    <div class="studio-styles"><span class="style-badge">Kundalini</span><span class="style-badge">Meditation</span><span class="style-badge">Breathwork</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Kernstrasse 25, 8004 Zürich — Gobinde Yoga Studio, Kreis 4</span></div>
+    <p class="studio-description">Seit 2009 Pionier für Kundalini Yoga in Zürich. Morning Sadhana, Abendklassen, Teacher Trainings und Retreats.</p>
+    <div class="studio-styles"><span class="style-tag">Kundalini</span><span class="style-tag">Meditation</span><span class="style-tag">Breathwork</span></div>
     <div class="studio-contact"><a href="https://www.jiokundaliniyoga.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Teacher Training 200h</span><span class="feature-badge">Teacher Training 300h</span><span class="feature-badge">Morning Sadhana</span><span class="feature-badge">Retreats</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="pilates|vinyasa|handstand|bootcamp|hiit|power yoga|hatha yoga|vinyasa flow|hatha|breathwork" data-search="templeshape health temple in wiedikon &amp;amp; airport. yoga, pilates, hiit, breathwork, cold plunge. small groups 6-12. manessestrasse 120, 8045 zürich — wiedikon, kreis 3 pilates vinyasa handstand bootcamp hiit power yoga hatha yoga vinyasa flow hatha breathwork boutique studio nadine lena michelle deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Templeshape<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Templeshape</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Manessestrasse 120, 8045 Zürich <span class="addr-label">(Wiedikon, Kreis 3)</span></p>
-    <p class="studio-desc">Health Temple in Wiedikon &amp; Airport. Yoga, Pilates, HIIT, Breathwork, Cold Plunge. Small groups 6-12.</p>
-    <div class="studio-styles"><span class="style-badge">Pilates</span><span class="style-badge">Vinyasa</span><span class="style-badge">Handstand</span><span class="style-badge">Bootcamp</span><span class="style-badge">HIIT</span><span class="style-badge">Power Yoga</span><span class="style-badge">Hatha Yoga</span><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Hatha</span><span class="style-badge">Breathwork</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Manessestrasse 120, 8045 Zürich — Wiedikon, Kreis 3</span></div>
+    <p class="studio-description">Health Temple in Wiedikon &amp; Airport. Yoga, Pilates, HIIT, Breathwork, Cold Plunge. Small groups 6-12.</p>
+    <div class="studio-styles"><span class="style-tag">Pilates</span><span class="style-tag">Vinyasa</span><span class="style-tag">Handstand</span><span class="style-tag">Bootcamp</span><span class="style-tag">HIIT</span><span class="style-tag">Power Yoga</span><span class="style-tag">Hatha Yoga</span><span class="style-tag">Vinyasa Flow</span><span class="style-tag">Hatha</span><span class="style-tag">Breathwork</span></div>
     <div class="studio-contact"><a href="https://templeshape.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Boutique Studio</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|yin|meditation" data-search="yoga2day zwei studios in zürich oerlikon seit 2009. yoga kurse auch für senioren. teacher training zertifiziert nach yoga alliance (rys200, rys300). 8050 zürich — oerlikon, beim bahnhof hatha vinyasa yin meditation teacher training 200h teacher training 300h yoga alliance rys senioren-yoga anna morf deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga2day<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga2day</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">8050 Zürich <span class="addr-label">(Oerlikon, beim Bahnhof)</span></p>
-    <p class="studio-desc">Zwei Studios in Zürich Oerlikon seit 2009. Yoga Kurse auch für Senioren. Teacher Training zertifiziert nach Yoga Alliance (RYS200, RYS300).</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yin</span><span class="style-badge">Meditation</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>8050 Zürich — Oerlikon, beim Bahnhof</span></div>
+    <p class="studio-description">Zwei Studios in Zürich Oerlikon seit 2009. Yoga Kurse auch für Senioren. Teacher Training zertifiziert nach Yoga Alliance (RYS200, RYS300).</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Yin</span><span class="style-tag">Meditation</span></div>
     <div class="studio-contact"><a href="https://www.yoga2day.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Teacher Training 200h</span><span class="feature-badge">Teacher Training 300h</span><span class="feature-badge">Yoga Alliance RYS</span><span class="feature-badge">Senioren-Yoga</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|jivamukti|yin|kundalini|lach-yoga" data-search="yogagold jivamukti, kundalini und kreative yoga-workshops. corporate yoga und online-klassen weltweit. klassen im adc gallery und bei yogalives. giesshübelstrasse 62b, 8045 zürich — bei yogalives hatha vinyasa jivamukti yin kundalini lach-yoga lach-yoga corporate yoga online live klassen workshops susen veronica deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yogagold<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yogagold</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Giesshübelstrasse 62b, 8045 Zürich <span class="addr-label">(bei Yogalives)</span></p>
-    <p class="studio-desc">Jivamukti, Kundalini und kreative Yoga-Workshops. Corporate Yoga und Online-Klassen weltweit. Klassen im ADC Gallery und bei Yogalives.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Jivamukti</span><span class="style-badge">Yin</span><span class="style-badge">Kundalini</span><span class="style-badge">Lach-Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Giesshübelstrasse 62b, 8045 Zürich — bei Yogalives</span></div>
+    <p class="studio-description">Jivamukti, Kundalini und kreative Yoga-Workshops. Corporate Yoga und Online-Klassen weltweit. Klassen im ADC Gallery und bei Yogalives.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Jivamukti</span><span class="style-tag">Yin</span><span class="style-tag">Kundalini</span><span class="style-tag">Lach-Yoga</span></div>
     <div class="studio-contact"><a href="https://www.yogagold.net/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Lach-Yoga</span><span class="feature-badge">Corporate Yoga</span><span class="feature-badge">Online Live Klassen</span><span class="feature-badge">Workshops</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="jivamukti" data-search="project peace (jivamukti yoga) jivamukti yoga in zürich seefeld. inneren und äusseren frieden durch die jivamukti-methode, emotional healing und community. 8008 zürich — seefeld jivamukti jivamukti method trauma informed yoga intuitive bodywork yoga for surfers laurina waltersperger deutsch english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Project Peace (Jivamukti Yoga)<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Project Peace (Jivamukti Yoga)</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">8008 Zürich <span class="addr-label">(Seefeld)</span></p>
-    <p class="studio-desc">Jivamukti Yoga in Zürich Seefeld. Inneren und äusseren Frieden durch die Jivamukti-Methode, Emotional Healing und Community.</p>
-    <div class="studio-styles"><span class="style-badge">Jivamukti</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>8008 Zürich — Seefeld</span></div>
+    <p class="studio-description">Jivamukti Yoga in Zürich Seefeld. Inneren und äusseren Frieden durch die Jivamukti-Methode, Emotional Healing und Community.</p>
+    <div class="studio-styles"><span class="style-tag">Jivamukti</span></div>
     <div class="studio-contact"><a href="https://projectpeace.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch, English</p>
     <div class="studio-features"><span class="feature-badge">Jivamukti Method</span><span class="feature-badge">Trauma Informed Yoga</span><span class="feature-badge">Intuitive Bodywork</span><span class="feature-badge">Yoga for Surfers</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="ashtanga|vinyasa|hatha|yin" data-search="yogamoves yogastudio in der altstadt von winterthur. vielfältige yoga-stile von energetischem ashtanga bis sanftem yin. alle lehrer yoga alliance diplomiert. steinberggasse 61, 8400 winterthur — altstadt, 5 min. vom hb ashtanga vinyasa hatha yin workshops teacher training  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">yogamoves<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">yogamoves</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Steinberggasse 61, 8400 Winterthur <span class="addr-label">(Altstadt, 5 Min. vom HB)</span></p>
-    <p class="studio-desc">Yogastudio in der Altstadt von Winterthur. Vielfältige Yoga-Stile von energetischem Ashtanga bis sanftem Yin. Alle Lehrer Yoga Alliance diplomiert.</p>
-    <div class="studio-styles"><span class="style-badge">Ashtanga</span><span class="style-badge">Vinyasa</span><span class="style-badge">Hatha</span><span class="style-badge">Yin</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Steinberggasse 61, 8400 Winterthur — Altstadt, 5 Min. vom HB</span></div>
+    <p class="studio-description">Yogastudio in der Altstadt von Winterthur. Vielfältige Yoga-Stile von energetischem Ashtanga bis sanftem Yin. Alle Lehrer Yoga Alliance diplomiert.</p>
+    <div class="studio-styles"><span class="style-tag">Ashtanga</span><span class="style-tag">Vinyasa</span><span class="style-tag">Hatha</span><span class="style-tag">Yin</span></div>
     <div class="studio-contact"><a href="https://www.yoga-moves.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 307 48 28" class="canton-contact-link">+41 79 307 48 28</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Workshops</span><span class="feature-badge">Teacher Training</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yoga|aerial yoga|barre|pilates|hiit|trx|schwangerschaftsyoga|kinderyoga|meditation" data-search="flowfabrik yoga &amp;amp; movement studio in veltheim, winterthur. raum für achtsamkeit, verbindung und persönliche entwicklung. qualitop-label, krankenkassen-anerkannt. wartstrasse 19, 8400 winterthur — veltheim yoga aerial yoga barre pilates hiit trx schwangerschaftsyoga kinderyoga meditation aerial yoga qualitop zertifiziert krankenkassen-anerkannt kinderyoga schwangerschaftsyoga rückbildungskurse  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">FlowFabrik<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">FlowFabrik</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Wartstrasse 19, 8400 Winterthur <span class="addr-label">(Veltheim)</span></p>
-    <p class="studio-desc">Yoga &amp; Movement Studio in Veltheim, Winterthur. Raum für Achtsamkeit, Verbindung und persönliche Entwicklung. Qualitop-Label, Krankenkassen-anerkannt.</p>
-    <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Aerial Yoga</span><span class="style-badge">Barre</span><span class="style-badge">Pilates</span><span class="style-badge">HIIT</span><span class="style-badge">TRX</span><span class="style-badge">Schwangerschaftsyoga</span><span class="style-badge">Kinderyoga</span><span class="style-badge">Meditation</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Wartstrasse 19, 8400 Winterthur — Veltheim</span></div>
+    <p class="studio-description">Yoga &amp; Movement Studio in Veltheim, Winterthur. Raum für Achtsamkeit, Verbindung und persönliche Entwicklung. Qualitop-Label, Krankenkassen-anerkannt.</p>
+    <div class="studio-styles"><span class="style-tag">Yoga</span><span class="style-tag">Aerial Yoga</span><span class="style-tag">Barre</span><span class="style-tag">Pilates</span><span class="style-tag">HIIT</span><span class="style-tag">TRX</span><span class="style-tag">Schwangerschaftsyoga</span><span class="style-tag">Kinderyoga</span><span class="style-tag">Meditation</span></div>
     <div class="studio-contact"><a href="https://www.flowfabrik.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Aerial Yoga</span><span class="feature-badge">Qualitop zertifiziert</span><span class="feature-badge">Krankenkassen-anerkannt</span><span class="feature-badge">Kinderyoga</span><span class="feature-badge">Schwangerschaftsyoga</span><span class="feature-badge">Rückbildungskurse</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa flow|ashtanga-vinyasa|power yoga|gentle yoga|yoga nidra|anusara|bhakti|iyengar|jivamukti|kundalini|pilates|meditation" data-search="zanana living yoga modernes fabrikambiente in winterthur mit lichtdurchfluteten räumen. breites angebot von hatha bis jivamukti. krankenkassen-anerkannt. rychenbergstrasse 67, 8400 winterthur — haldengutareal hatha vinyasa flow ashtanga-vinyasa power yoga gentle yoga yoga nidra anusara bhakti iyengar jivamukti kundalini pilates meditation teacher training retreats workshops outdoor yoga krankenkassen-anerkannt  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Zanana Living Yoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Zanana Living Yoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rychenbergstrasse 67, 8400 Winterthur <span class="addr-label">(Haldengutareal)</span></p>
-    <p class="studio-desc">Modernes Fabrikambiente in Winterthur mit lichtdurchfluteten Räumen. Breites Angebot von Hatha bis Jivamukti. Krankenkassen-anerkannt.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Ashtanga-Vinyasa</span><span class="style-badge">Power Yoga</span><span class="style-badge">Gentle Yoga</span><span class="style-badge">Yoga Nidra</span><span class="style-badge">Anusara</span><span class="style-badge">Bhakti</span><span class="style-badge">Iyengar</span><span class="style-badge">Jivamukti</span><span class="style-badge">Kundalini</span><span class="style-badge">Pilates</span><span class="style-badge">Meditation</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rychenbergstrasse 67, 8400 Winterthur — Haldengutareal</span></div>
+    <p class="studio-description">Modernes Fabrikambiente in Winterthur mit lichtdurchfluteten Räumen. Breites Angebot von Hatha bis Jivamukti. Krankenkassen-anerkannt.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa Flow</span><span class="style-tag">Ashtanga-Vinyasa</span><span class="style-tag">Power Yoga</span><span class="style-tag">Gentle Yoga</span><span class="style-tag">Yoga Nidra</span><span class="style-tag">Anusara</span><span class="style-tag">Bhakti</span><span class="style-tag">Iyengar</span><span class="style-tag">Jivamukti</span><span class="style-tag">Kundalini</span><span class="style-tag">Pilates</span><span class="style-tag">Meditation</span></div>
     <div class="studio-contact"><a href="https://zanana-living.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 886 03 32" class="canton-contact-link">+41 78 886 03 32</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Teacher Training</span><span class="feature-badge">Retreats</span><span class="feature-badge">Workshops</span><span class="feature-badge">Outdoor Yoga</span><span class="feature-badge">Krankenkassen-anerkannt</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yoga" data-search="yoga.in yoga studio im zentrum von winterthur. präsenzkurse und online-lektionen (60 min., chf 25) via zoom. 8400 winterthur — zentrum yoga online klassen via zoom  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">YOGA.IN<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">YOGA.IN</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">8400 Winterthur <span class="addr-label">(Zentrum)</span></p>
-    <p class="studio-desc">Yoga Studio im Zentrum von Winterthur. Präsenzkurse und Online-Lektionen (60 Min., CHF 25) via Zoom.</p>
-    <div class="studio-styles"><span class="style-badge">Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>8400 Winterthur — Zentrum</span></div>
+    <p class="studio-description">Yoga Studio im Zentrum von Winterthur. Präsenzkurse und Online-Lektionen (60 Min., CHF 25) via Zoom.</p>
+    <div class="studio-styles"><span class="style-tag">Yoga</span></div>
     <div class="studio-contact"><a href="https://www.yoga-in.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:info@yoga-in.ch" class="canton-contact-link">info@yoga-in.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Online Klassen via Zoom</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yoga|meditation|kinderyoga" data-search="yoga academy winterthur yoga academy im modernen big boy gebäude im lokwerk-areal. kurse, workshops und events für alle levels. auch kinderyoga. dialogplatz 10, 8400 winterthur — 1. og, lokwerk-areal, gebäude big boy yoga meditation kinderyoga kinderyoga workshops events  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Academy Winterthur<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Academy Winterthur</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Dialogplatz 10, 8400 Winterthur <span class="addr-label">(1. OG, Lokwerk-Areal, Gebäude Big Boy)</span></p>
-    <p class="studio-desc">Yoga Academy im modernen Big Boy Gebäude im Lokwerk-Areal. Kurse, Workshops und Events für alle Levels. Auch Kinderyoga.</p>
-    <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Meditation</span><span class="style-badge">Kinderyoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Dialogplatz 10, 8400 Winterthur — 1. OG, Lokwerk-Areal, Gebäude Big Boy</span></div>
+    <p class="studio-description">Yoga Academy im modernen Big Boy Gebäude im Lokwerk-Areal. Kurse, Workshops und Events für alle Levels. Auch Kinderyoga.</p>
+    <div class="studio-styles"><span class="style-tag">Yoga</span><span class="style-tag">Meditation</span><span class="style-tag">Kinderyoga</span></div>
     <div class="studio-contact"><a href="https://yoga-academy-winterthur.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 263 32 18" class="canton-contact-link">+41 79 263 32 18</a> &middot; <a href="mailto:behappy@yoga-academy-winterthur.ch" class="canton-contact-link">behappy@yoga-academy-winterthur.ch</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Kinderyoga</span><span class="feature-badge">Workshops</span><span class="feature-badge">Events</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|vinyasa|kundalini|yin|pilates" data-search="yoga in a bag (winterthur) yoga in a bag standort in winterthur. dynamische und sanfte klassen, klassisch oder modern, für individuen und familien. stadthausstrasse 24, 8400 winterthur — zentrum hatha vinyasa kundalini yin pilates workshops retreats  deutsch">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga in a Bag (Winterthur)<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga in a Bag (Winterthur)</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Stadthausstrasse 24, 8400 Winterthur <span class="addr-label">(Zentrum)</span></p>
-    <p class="studio-desc">Yoga in a Bag Standort in Winterthur. Dynamische und sanfte Klassen, klassisch oder modern, für Individuen und Familien.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Vinyasa</span><span class="style-badge">Kundalini</span><span class="style-badge">Yin</span><span class="style-badge">Pilates</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Stadthausstrasse 24, 8400 Winterthur — Zentrum</span></div>
+    <p class="studio-description">Yoga in a Bag Standort in Winterthur. Dynamische und sanfte Klassen, klassisch oder modern, für Individuen und Familien.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Vinyasa</span><span class="style-tag">Kundalini</span><span class="style-tag">Yin</span><span class="style-tag">Pilates</span></div>
     <div class="studio-contact"><a href="https://yogainabag.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 44 203 66 96" class="canton-contact-link">+41 44 203 66 96</a> &middot; <a href="mailto:winterthur@yogainabag.com" class="canton-contact-link">winterthur@yogainabag.com</a></div>
     <p class="studio-languages">Sprachen: Deutsch</p>
     <div class="studio-features"><span class="feature-badge">Workshops</span><span class="feature-badge">Retreats</span></div>
-</div>
+</article>
+    </div>
         </div>
     </section>
 
@@ -8719,5 +8593,86 @@
             </p>
         </div>
     </footer>
+
+<script>
+(function () {
+  'use strict';
+  var root = document.documentElement;
+
+  // --- Theme, shared with the homepage -----------------------------------
+  var themeBtn = document.getElementById('themeToggle');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('yogabasel-theme', next); } catch (e) {}
+    });
+  }
+
+  // --- Canton switcher ----------------------------------------------------
+  var sel = document.getElementById('cantonSelect');
+  if (sel) {
+    sel.addEventListener('change', function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+  }
+
+  // --- Menu (mobile) ------------------------------------------------------
+  var menuBtn = document.getElementById('menuToggle'), nav = document.getElementById('nav');
+  if (menuBtn && nav) {
+    menuBtn.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  // --- Filtering ----------------------------------------------------------
+  var grid = document.getElementById('studiosGrid');
+  if (!grid) return;
+  var cards = [].slice.call(grid.querySelectorAll('.studio-card'));
+  var search = document.getElementById('studioSearch');
+  var clearBtn = document.getElementById('searchClear');
+  var shown = document.getElementById('shownCount');
+  var noResult = document.getElementById('noResult');
+  var chips = [].slice.call(document.querySelectorAll('.filters-quick .chip'));
+  var style = 'all', query = '';
+
+  function apply() {
+    var n = 0;
+    for (var i = 0; i < cards.length; i++) {
+      var c = cards[i];
+      var okStyle = style === 'all' || (c.getAttribute('data-styles') || '').indexOf(style) !== -1;
+      var okText = !query || (c.getAttribute('data-search') || '').indexOf(query) !== -1;
+      var visible = okStyle && okText;
+      c.hidden = !visible;
+      if (visible) n++;
+    }
+    if (shown) shown.textContent = n;
+    if (noResult) noResult.hidden = n !== 0;
+    if (clearBtn) clearBtn.style.display = query ? '' : 'none';
+  }
+
+  if (search) {
+    search.addEventListener('input', function () {
+      query = search.value.trim().toLowerCase();
+      apply();
+    });
+  }
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function () {
+      search.value = ''; query = ''; apply(); search.focus();
+    });
+  }
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      chips.forEach(function (c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      style = chip.getAttribute('data-filter');
+      apply();
+    });
+  });
+})();
+</script>
+
 </body>
 </html>

@@ -44,7 +44,7 @@
     "url": "https://meineprojekte.github.io/yoga-kurse-basel/"
   },
   "inLanguage": "de",
-  "dateModified": "2026-09-14",
+  "dateModified": "2026-09-15",
   "about": {
     "@type": "Thing",
     "name": "Yoga",
@@ -1531,55 +1531,23 @@
     <!-- Fonts (self-hosted) -->
     <link rel="stylesheet" href="../../css/fonts.css">
 
+    <!-- Applies the saved theme before first paint, so arriving here from the
+         homepage in dark mode does not flash white. Same key as js/app.min.js. -->
+    <script>try{var t=localStorage.getItem('yogabasel-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+
     <!-- Main site CSS -->
     <link rel="stylesheet" href="../../css/style.css">
 
     <!-- Canton page specific styles -->
     <style>
-        .canton-hero {
-            background: linear-gradient(135deg, #6B5B95 0%, #8B7DB5 40%, #D4A373 100%);
-            color: #fff;
-            padding: 80px 0 60px;
-            text-align: center;
-        }
-        .canton-hero h1 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 2.8rem;
-            margin-bottom: 8px;
-            font-weight: 700;
-        }
-        .canton-hero .canton-subtitle {
-            font-size: 1.15rem;
-            opacity: 0.92;
-            margin-bottom: 24px;
-        }
-        .canton-stats {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .stat-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .stat-number {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 2.2rem;
-            font-weight: 700;
-            line-height: 1;
-        }
-        .stat-label {
-            font-size: 0.9rem;
-            opacity: 0.85;
-            margin-top: 4px;
-        }
+        /* Same width as .container in css/style.css, so these sections line up
+           with the app header, hero and studio grid instead of sitting in a
+           narrower column of their own. */
         .canton-container {
-            max-width: 1100px;
+            width: 100%;
+            max-width: var(--container-max, 1280px);
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 var(--spacing-lg, 24px);
         }
         .canton-section {
             padding: 48px 0;
@@ -1598,60 +1566,6 @@
             color: #444;
             margin-bottom: 16px;
             max-width: 800px;
-        }
-        .studio-card {
-            background: #fff;
-            border: 1px solid #E8E8E8;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            transition: box-shadow 0.25s ease, transform 0.25s ease;
-        }
-        .studio-card:hover {
-            box-shadow: 0 6px 20px rgba(107,91,149,0.12);
-            transform: translateY(-2px);
-        }
-        .studio-card-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 10px;
-        }
-        .studio-name {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.3rem;
-            color: #2D2D2D;
-            margin: 0;
-        }
-        .studio-address {
-            font-size: 0.92rem;
-            color: #666;
-            margin-bottom: 4px;
-        }
-        .addr-label {
-            font-size: 0.82rem;
-            color: #999;
-        }
-        .studio-desc {
-            font-size: 0.95rem;
-            color: #555;
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-        .studio-styles {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin: 12px 0;
-        }
-        .style-badge {
-            background: #F3F0F8;
-            color: #6B5B95;
-            padding: 3px 10px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
         }
         .studio-contact {
             margin: 10px 0;
@@ -1692,16 +1606,6 @@
             font-size: 0.78rem;
             font-weight: 500;
             border: 1px solid #E8C9A4;
-        }
-        .dropin-badge {
-            background: #4CAF50;
-            color: #fff;
-            padding: 2px 10px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-left: 10px;
-            vertical-align: middle;
         }
         .no-data {
             color: #999;
@@ -1826,49 +1730,6 @@
         .canton-breadcrumb a:hover {
             text-decoration: underline;
         }
-        .canton-header {
-            background: #fff;
-            border-bottom: 1px solid #E8E8E8;
-            padding: 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .canton-header-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 14px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .canton-logo {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.3rem;
-            color: #6B5B95;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .canton-logo strong {
-            color: #D4A373;
-        }
-        .canton-nav {
-            display: flex;
-            gap: 20px;
-            list-style: none;
-        }
-        .canton-nav a {
-            color: #555;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .canton-nav a:hover {
-            color: #6B5B95;
-        }
         .canton-footer {
             background: #2D2D2D;
             color: #aaa;
@@ -1883,41 +1744,113 @@
         .canton-footer a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 768px) {
-            .canton-hero h1 { font-size: 1.8rem; }
-            .canton-stats { gap: 24px; }
-            .stat-number { font-size: 1.6rem; }
-            .canton-section h2 { font-size: 1.4rem; }
-            .canton-nav { gap: 12px; }
-            .canton-nav a { font-size: 0.8rem; }
-            .studio-card { padding: 16px; }
-            .canton-header-inner { flex-direction: column; gap: 10px; }
+        /* Hero, header, grid and cards are styled by css/style.css, exactly as on
+           the homepage — including their breakpoints. Only what is specific to
+           this page needs a rule here. */
+        .canton-toolbar {
+            margin: 0 0 18px;
         }
-        @media (max-width: 480px) {
-            .canton-hero { padding: 60px 0 40px; }
-            .canton-hero h1 { font-size: 1.5rem; }
-            .canton-stats { flex-direction: column; gap: 16px; }
+        .canton-count {
+            font-size: 0.9rem;
+            color: var(--color-text-light, #777);
+            margin: 0;
+        }
+        .canton-noresult {
+            margin: 24px 0 0;
+            padding: 20px;
+            text-align: center;
+            color: var(--color-text-light, #777);
+            background: var(--color-surface, #F8F8F8);
+            border-radius: 12px;
+        }
+        .studios-grid .studio-contact {
+            margin: 10px 0 0;
+        }
+        @media (max-width: 768px) {
+            .canton-section h2 { font-size: 1.4rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="canton-header">
-        <div class="canton-header-inner">
-            <a href="../../" class="canton-logo">
-                <span>🧘</span>
-                <span>Yoga<strong>Schweiz</strong></span>
+    <!-- Header: same markup and classes as the JS app on the homepage, so the
+         two views look like one site. Section links that exist on this page stay
+         local; app-only features point back to the homepage. -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="../../" class="logo">
+                <span class="logo-icon">🧘</span>
+                <span class="logo-text">Yoga<strong>Schweiz</strong></span>
             </a>
-            <nav>
-                <ul class="canton-nav">
-                    <li><a href="../../">Home</a></li>
-                    <li><a href="#studios">Studios</a></li>
-                    <li><a href="#stundenplan">Stundenplan</a></li>
-                    <li><a href="#andere-kantone">Kantone</a></li>
+            <nav class="nav" id="nav" aria-label="Hauptnavigation">
+                <ul class="nav-list">
+                    <li><a href="#studios" class="nav-link">Studios</a></li>
+                    <li><a href="#stundenplan" class="nav-link">Stundenplan</a></li>
+                    <li><a href="#andere-kantone" class="nav-link">Kantone</a></li>
+                    <li><a href="../../#stile" class="nav-link">Yoga-Stile</a></li>
+                    <li><a href="../../#karte" class="nav-link">Karte</a></li>
+                    <li><a href="../../#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="../../blog/" class="nav-link">Blog</a></li>
                 </ul>
             </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Design wechseln" title="Dark/Light Mode">
+                    <svg class="icon-sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Alle Yoga-Kurse in Genf<br><span class="hero-accent">Studios &amp; Stundenplan auf einen Blick</span></h1>
+            <p class="hero-subtitle">Kanton Genf (GE) &bull; 18 Studios &bull; Wöchentlich aktualisiert</p>
+
+            <div class="canton-selector">
+                <label class="canton-selector-label" for="cantonSelect">Wähle deinen Kanton:</label>
+                <select id="cantonSelect" class="canton-select" aria-label="Kanton wechseln">
+                    <option value="../aargau/">Aargau</option><option value="../appenzell-ar/">Appenzell A.Rh.</option><option value="../appenzell-ir/">Appenzell I.Rh.</option><option value="../basel-landschaft/">Basel-Landschaft</option><option value="../basel-stadt/">Basel-Stadt</option><option value="../bern/">Bern</option><option value="../fribourg/">Freiburg</option><option value="../geneve/" selected>Genf</option><option value="../glarus/">Glarus</option><option value="../graubuenden/">Graubünden</option><option value="../jura/">Jura</option><option value="../luzern/">Luzern</option><option value="../neuchatel/">Neuenburg</option><option value="../nidwalden/">Nidwalden</option><option value="../obwalden/">Obwalden</option><option value="../schaffhausen/">Schaffhausen</option><option value="../schwyz/">Schwyz</option><option value="../solothurn/">Solothurn</option><option value="../st-gallen/">St. Gallen</option><option value="../ticino/">Tessin</option><option value="../thurgau/">Thurgau</option><option value="../uri/">Uri</option><option value="../vaud/">Waadt</option><option value="../valais/">Wallis</option><option value="../zug/">Zug</option><option value="../zurich/">Zürich</option>
+                </select>
+            </div>
+
+            <div class="hero-search">
+                <div class="search-wrapper">
+                    <svg class="search-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <input type="search" id="studioSearch" class="search-input" placeholder="Studio, Yoga-Stil oder Quartier suchen..." autocomplete="off" aria-label="Yoga-Studio suchen">
+                    <button class="search-clear" id="searchClear" aria-label="Suche löschen" style="display:none">&times;</button>
+                </div>
+            </div>
+
+            <div class="hero-stats">
+    <div class="stat">
+        <span class="stat-number">18</span>
+        <span class="stat-label">Studios</span>
+    </div>
+    <div class="stat">
+        <span class="stat-number">78</span>
+        <span class="stat-label">Kurse/Woche</span>
+    </div>
+    <div class="stat">
+        <span class="stat-number">47</span>
+        <span class="stat-label">Yoga-Stile</span>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Style filters -->
+    <section class="filters-bar">
+        <div class="container">
+            <div class="filters-quick">
+                <button type="button" class="chip active" data-filter="all">Alle</button><button type="button" class="chip" data-filter="hatha">Hatha</button><button type="button" class="chip" data-filter="vinyasa">Vinyasa</button><button type="button" class="chip" data-filter="yin">Yin</button><button type="button" class="chip" data-filter="kundalini">Kundalini</button><button type="button" class="chip" data-filter="ashtanga">Ashtanga</button><button type="button" class="chip" data-filter="meditation">Meditation</button><button type="button" class="chip" data-filter="pilates">Pilates</button><button type="button" class="chip" data-filter="prenatal">Prenatal</button><button type="button" class="chip" data-filter="yoga nidra">Yoga Nidra</button><button type="button" class="chip" data-filter="integral yoga">Integral Yoga</button>
+            </div>
+        </div>
+    </section>
 
     <!-- Breadcrumb -->
     <div class="canton-container">
@@ -1927,28 +1860,6 @@
             <strong>Genf (GE)</strong>
         </nav>
     </div>
-
-    <!-- Hero -->
-    <section class="canton-hero">
-        <div class="canton-container">
-            <h1>Yoga in Genf</h1>
-            <p class="canton-subtitle">Kanton Genf (GE) — Alle Yoga-Studios und Kurse auf einen Blick</p>
-            <div class="canton-stats">
-    <div class="stat-item">
-        <span class="stat-number">18</span>
-        <span class="stat-label">Studios</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-number">78</span>
-        <span class="stat-label">Kurse/Woche</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-number">47</span>
-        <span class="stat-label">Yoga-Stile</span>
-    </div>
-</div>
-        </div>
-    </section>
 
     <!-- Description -->
     <section class="canton-section">
@@ -1967,204 +1878,193 @@
     <section class="canton-section" id="studios">
         <div class="canton-container">
             <h2>Yoga-Studios in Genf (18)</h2>
-            <div class="studio-card">
-    <div class="studio-card-header">
-        <h3 class="studio-name">Yoga7<span class="dropin-badge">Drop-in</span></h3>
+            <div class="canton-toolbar">
+        <p class="canton-count">Zeige <strong id="shownCount">18</strong> von <strong>18</strong> Studios</p>
+        <p class="canton-noresult" id="noResult" hidden>Keine Studios gefunden. Andere Filter versuchen.</p>
     </div>
-    <p class="studio-address">Cours de Rive 20, 1207 Genève <span class="addr-label">(Angle Glacis-de-Rive)</span></p>
-    <p class="studio-desc">Le plus ancien centre de yoga en Suisse romande, fondé en 1957. Un collège de professeurs certifiés propose une riche variété de cours quotidiens et des ateliers thématiques le week-end.</p>
-    <div class="studio-styles"><span class="style-badge">Yoga Séniors</span><span class="style-badge">Hatha</span><span class="style-badge">Yoga Santé du Dos</span><span class="style-badge">Meditation</span><span class="style-badge">Yoga sur chaise</span><span class="style-badge">Yoga sur Chaise</span><span class="style-badge">Hatha avancé</span><span class="style-badge">Hatha Yoga</span></div>
+    <div class="studios-grid" id="studiosGrid">
+<article class="studio-card" data-styles="yoga séniors|hatha|yoga santé du dos|meditation|yoga sur chaise|yoga sur chaise|hatha avancé|hatha yoga" data-search="yoga7 le plus ancien centre de yoga en suisse romande, fondé en 1957. un collège de professeurs certifiés propose une riche variété de cours quotidiens et des ateliers thématiques le week-end. cours de rive 20, 1207 genève — angle glacis-de-rive yoga séniors hatha yoga santé du dos meditation yoga sur chaise yoga sur chaise hatha avancé hatha yoga plus ancien centre en suisse romande formation d&#x27;enseignants 4 ans (yoga suisse) depuis 1957 elodie carine carole severine français">
+    <div class="studio-card-header">
+        <h3 class="studio-name">Yoga7</h3><span class="studio-badge drop-in">Drop-in</span>
+    </div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Cours de Rive 20, 1207 Genève — Angle Glacis-de-Rive</span></div>
+    <p class="studio-description">Le plus ancien centre de yoga en Suisse romande, fondé en 1957. Un collège de professeurs certifiés propose une riche variété de cours quotidiens et des ateliers thématiques le week-end.</p>
+    <div class="studio-styles"><span class="style-tag">Yoga Séniors</span><span class="style-tag">Hatha</span><span class="style-tag">Yoga Santé du Dos</span><span class="style-tag">Meditation</span><span class="style-tag">Yoga sur chaise</span><span class="style-tag">Yoga sur Chaise</span><span class="style-tag">Hatha avancé</span><span class="style-tag">Hatha Yoga</span></div>
     <div class="studio-contact"><a href="https://yoga7.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     <div class="studio-features"><span class="feature-badge">Plus ancien centre en Suisse romande</span><span class="feature-badge">Formation d&#x27;enseignants 4 ans (Yoga Suisse)</span><span class="feature-badge">Depuis 1957</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hot yoga|bikram|ashtanga|vinyasa flow|yin|hot pilates|forrest yoga|yoga nidra" data-search="yoga flame genève studio de hot yoga au coeur de genève, ouvert depuis 2019. espace chaleureux proposant bikram, ashtanga, vinyasa, yin et hot pilates. galerie jean-malbuisson 15, 1204 genève — 1er étage hot yoga bikram ashtanga vinyasa flow yin hot pilates forrest yoga yoga nidra hot yoga hot pilates studios à genève et lausanne  français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Flame Genève<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Flame Genève</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Galerie Jean-Malbuisson 15, 1204 Genève <span class="addr-label">(1er étage)</span></p>
-    <p class="studio-desc">Studio de Hot Yoga au coeur de Genève, ouvert depuis 2019. Espace chaleureux proposant Bikram, Ashtanga, Vinyasa, Yin et Hot Pilates.</p>
-    <div class="studio-styles"><span class="style-badge">Hot Yoga</span><span class="style-badge">Bikram</span><span class="style-badge">Ashtanga</span><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Yin</span><span class="style-badge">Hot Pilates</span><span class="style-badge">Forrest Yoga</span><span class="style-badge">Yoga Nidra</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Galerie Jean-Malbuisson 15, 1204 Genève — 1er étage</span></div>
+    <p class="studio-description">Studio de Hot Yoga au coeur de Genève, ouvert depuis 2019. Espace chaleureux proposant Bikram, Ashtanga, Vinyasa, Yin et Hot Pilates.</p>
+    <div class="studio-styles"><span class="style-tag">Hot Yoga</span><span class="style-tag">Bikram</span><span class="style-tag">Ashtanga</span><span class="style-tag">Vinyasa Flow</span><span class="style-tag">Yin</span><span class="style-tag">Hot Pilates</span><span class="style-tag">Forrest Yoga</span><span class="style-tag">Yoga Nidra</span></div>
     <div class="studio-contact"><a href="https://yogaflame.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 76 425 83 13" class="canton-contact-link">+41 76 425 83 13</a> &middot; <a href="mailto:geneve@yogaflame.ch" class="canton-contact-link">geneve@yogaflame.ch</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">Hot Yoga</span><span class="feature-badge">Hot Pilates</span><span class="feature-badge">Studios à Genève et Lausanne</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa|prenatal|postnatal|mama &amp; baby" data-search="yoga lab studio de vinyasa yoga au coeur de plainpalais. lieu de rencontres, d&amp;#x27;échanges et de partage. cours pour tous niveaux et pratiques dédiées aux mamans. rue charles-humbert 10, 1205 genève — plainpalais, quartier des bains vinyasa prenatal postnatal mama &amp; baby spécialisation maternité quartier des bains  français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Lab<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Lab</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rue Charles-Humbert 10, 1205 Genève <span class="addr-label">(Plainpalais, quartier des Bains)</span></p>
-    <p class="studio-desc">Studio de vinyasa yoga au coeur de Plainpalais. Lieu de rencontres, d&#x27;échanges et de partage. Cours pour tous niveaux et pratiques dédiées aux mamans.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Prenatal</span><span class="style-badge">Postnatal</span><span class="style-badge">Mama &amp; Baby</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue Charles-Humbert 10, 1205 Genève — Plainpalais, quartier des Bains</span></div>
+    <p class="studio-description">Studio de vinyasa yoga au coeur de Plainpalais. Lieu de rencontres, d&#x27;échanges et de partage. Cours pour tous niveaux et pratiques dédiées aux mamans.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa</span><span class="style-tag">Prenatal</span><span class="style-tag">Postnatal</span><span class="style-tag">Mama &amp; Baby</span></div>
     <div class="studio-contact"><a href="https://www.lab.yoga/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:info@lab.yoga" class="canton-contact-link">info@lab.yoga</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">Spécialisation maternité</span><span class="feature-badge">Quartier des Bains</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yin yoga|hatha|pilates|boxing workout|kundalini|yin|barre|vinyasa" data-search="fancy yoga studio de yoga et pilates dans la vieille-ville de genève. cours collectifs et privés, massages disponibles. rue des chaudronniers 8, 1204 genève — vieille-ville yin yoga hatha pilates boxing workout kundalini yin barre vinyasa vieille-ville cours privés massages location du studio  français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Fancy Yoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Fancy Yoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rue des Chaudronniers 8, 1204 Genève <span class="addr-label">(Vieille-Ville)</span></p>
-    <p class="studio-desc">Studio de yoga et Pilates dans la Vieille-Ville de Genève. Cours collectifs et privés, massages disponibles.</p>
-    <div class="studio-styles"><span class="style-badge">Yin Yoga</span><span class="style-badge">Hatha</span><span class="style-badge">Pilates</span><span class="style-badge">Boxing Workout</span><span class="style-badge">Kundalini</span><span class="style-badge">Yin</span><span class="style-badge">Barre</span><span class="style-badge">Vinyasa</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue des Chaudronniers 8, 1204 Genève — Vieille-Ville</span></div>
+    <p class="studio-description">Studio de yoga et Pilates dans la Vieille-Ville de Genève. Cours collectifs et privés, massages disponibles.</p>
+    <div class="studio-styles"><span class="style-tag">Yin Yoga</span><span class="style-tag">Hatha</span><span class="style-tag">Pilates</span><span class="style-tag">Boxing Workout</span><span class="style-tag">Kundalini</span><span class="style-tag">Yin</span><span class="style-tag">Barre</span><span class="style-tag">Vinyasa</span></div>
     <div class="studio-contact"><a href="https://www.fancy.yoga/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 524 68 63" class="canton-contact-link">+41 79 524 68 63</a> &middot; <a href="mailto:iris@fancy.yoga" class="canton-contact-link">iris@fancy.yoga</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">Vieille-Ville</span><span class="feature-badge">Cours privés</span><span class="feature-badge">Massages</span><span class="feature-badge">Location du studio</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa|restorative|prenatal" data-search="the sakura yoga studio de yoga aux eaux-vives proposant des cours collectifs de vinyasa, restorative et prénatal. cours privés pour gestion du stress et équilibre hormonal. rue viollier 2, 1207 genève — centre de santé, eaux-vives vinyasa restorative prenatal yoga thérapeutique cours en ligne ateliers  français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">The Sakura Yoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">The Sakura Yoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rue Viollier 2, 1207 Genève <span class="addr-label">(Centre de Santé, Eaux-Vives)</span></p>
-    <p class="studio-desc">Studio de yoga aux Eaux-Vives proposant des cours collectifs de vinyasa, restorative et prénatal. Cours privés pour gestion du stress et équilibre hormonal.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Restorative</span><span class="style-badge">Prenatal</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue Viollier 2, 1207 Genève — Centre de Santé, Eaux-Vives</span></div>
+    <p class="studio-description">Studio de yoga aux Eaux-Vives proposant des cours collectifs de vinyasa, restorative et prénatal. Cours privés pour gestion du stress et équilibre hormonal.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa</span><span class="style-tag">Restorative</span><span class="style-tag">Prenatal</span></div>
     <div class="studio-contact"><a href="https://www.thesakurayoga.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">Yoga thérapeutique</span><span class="feature-badge">Cours en ligne</span><span class="feature-badge">Ateliers</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|meditation|ashtanga|yin yang|kundalini|pilates|yin|vinyasa|yoga nidra" data-search="colife 2 studios à genève avec une quinzaine de professeurs. ouvert 7/7 toute l&amp;#x27;année, cours dès 6h30. formations de yoga disponibles. chemin des colombettes 6, 1202 genève — nations (cour intérieure) rue du dr alfred-vincent 5, 1201 genève — pâquis hatha meditation ashtanga yin yang kundalini pilates yin vinyasa yoga nidra 2 studios cours dès 6h30 7j/7 formation yoga nidra inscription en ligne obligatoire  français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">COLIFE<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">COLIFE</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Chemin des Colombettes 6, 1202 Genève <span class="addr-label">(Nations (cour intérieure))</span></p><p class="studio-address">Rue du Dr Alfred-Vincent 5, 1201 Genève <span class="addr-label">(Pâquis)</span></p>
-    <p class="studio-desc">2 studios à Genève avec une quinzaine de professeurs. Ouvert 7/7 toute l&#x27;année, cours dès 6h30. Formations de yoga disponibles.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Meditation</span><span class="style-badge">Ashtanga</span><span class="style-badge">Yin Yang</span><span class="style-badge">Kundalini</span><span class="style-badge">Pilates</span><span class="style-badge">Yin</span><span class="style-badge">Vinyasa</span><span class="style-badge">Yoga Nidra</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Chemin des Colombettes 6, 1202 Genève — Nations (cour intérieure)</span></div><div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue du Dr Alfred-Vincent 5, 1201 Genève — Pâquis</span></div>
+    <p class="studio-description">2 studios à Genève avec une quinzaine de professeurs. Ouvert 7/7 toute l&#x27;année, cours dès 6h30. Formations de yoga disponibles.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Meditation</span><span class="style-tag">Ashtanga</span><span class="style-tag">Yin Yang</span><span class="style-tag">Kundalini</span><span class="style-tag">Pilates</span><span class="style-tag">Yin</span><span class="style-tag">Vinyasa</span><span class="style-tag">Yoga Nidra</span></div>
     <div class="studio-contact"><a href="https://colife.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 721 10 10" class="canton-contact-link">+41 79 721 10 10</a> &middot; <a href="mailto:contact@colife.ch" class="canton-contact-link">contact@colife.ch</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">2 studios</span><span class="feature-badge">Cours dès 6h30</span><span class="feature-badge">7j/7</span><span class="feature-badge">Formation Yoga Nidra</span><span class="feature-badge">Inscription en ligne obligatoire</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yin yoga|sol former|hatha|ashtanga|yoga sculpt|prenatal|pilates|vinyasa" data-search="sol studio espace holistique au centre de genève dédié à la communauté. sol yoga, sol former (reformer pilates), thérapies renata frança et sol café. rue maunoir 14, 1207 genève — eaux-vives yin yoga sol former hatha ashtanga yoga sculpt prenatal pilates vinyasa sol café reformer pilates renata frança method 7j/7 olesya eric lyly emma ornella dounia français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Sol Studio<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Sol Studio</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rue Maunoir 14, 1207 Genève <span class="addr-label">(Eaux-Vives)</span></p>
-    <p class="studio-desc">Espace holistique au centre de Genève dédié à la communauté. Sol Yoga, Sol Former (reformer Pilates), thérapies Renata França et Sol Café.</p>
-    <div class="studio-styles"><span class="style-badge">Yin Yoga</span><span class="style-badge">Sol Former</span><span class="style-badge">Hatha</span><span class="style-badge">Ashtanga</span><span class="style-badge">Yoga Sculpt</span><span class="style-badge">Prenatal</span><span class="style-badge">Pilates</span><span class="style-badge">Vinyasa</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue Maunoir 14, 1207 Genève — Eaux-Vives</span></div>
+    <p class="studio-description">Espace holistique au centre de Genève dédié à la communauté. Sol Yoga, Sol Former (reformer Pilates), thérapies Renata França et Sol Café.</p>
+    <div class="studio-styles"><span class="style-tag">Yin Yoga</span><span class="style-tag">Sol Former</span><span class="style-tag">Hatha</span><span class="style-tag">Ashtanga</span><span class="style-tag">Yoga Sculpt</span><span class="style-tag">Prenatal</span><span class="style-tag">Pilates</span><span class="style-tag">Vinyasa</span></div>
     <div class="studio-contact"><a href="https://solstudio.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">Sol Café</span><span class="feature-badge">Reformer Pilates</span><span class="feature-badge">Renata França Method</span><span class="feature-badge">7j/7</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|reformer pilates|yoga|pilates|vinyasa" data-search="swiss pilates and yoga référence incontournable en matière d&amp;#x27;expertise et d&amp;#x27;excellence depuis 2005. deux studios au centre de genève, ouverts 7j/7 de 8h à 20h. rue de l&#x27;est 4, 1207 genève hatha reformer pilates yoga pilates vinyasa 2 studios depuis 2005 cours privés  français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Swiss Pilates and Yoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Swiss Pilates and Yoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rue de l&#x27;Est 4, 1207 Genève</p>
-    <p class="studio-desc">Référence incontournable en matière d&#x27;expertise et d&#x27;excellence depuis 2005. Deux studios au centre de Genève, ouverts 7j/7 de 8h à 20h.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Reformer Pilates</span><span class="style-badge">Yoga</span><span class="style-badge">Pilates</span><span class="style-badge">Vinyasa</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue de l&#x27;Est 4, 1207 Genève</span></div>
+    <p class="studio-description">Référence incontournable en matière d&#x27;expertise et d&#x27;excellence depuis 2005. Deux studios au centre de Genève, ouverts 7j/7 de 8h à 20h.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Reformer Pilates</span><span class="style-tag">Yoga</span><span class="style-tag">Pilates</span><span class="style-tag">Vinyasa</span></div>
     <div class="studio-contact"><a href="https://swisspilatesandyoga.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 22 700 41 20" class="canton-contact-link">+41 22 700 41 20</a> &middot; <a href="mailto:info@swisspilatesandyoga.com" class="canton-contact-link">info@swisspilatesandyoga.com</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">2 studios</span><span class="feature-badge">Depuis 2005</span><span class="feature-badge">Cours privés</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|ashtanga|vinyasa|kundalini|yin|fascia yoga|yin &amp; yang|bols tibétains" data-search="akta yoga centre holistique de 250 m² aux eaux-vives proposant des activités pour le corps et l&amp;#x27;esprit. cours 7/7, matin, midi et soir, tous niveaux. rue de l&#x27;avenir 16, 1207 genève — eaux-vives (250 m², à 2 min du lac) hatha ashtanga vinyasa kundalini yin fascia yoga yin &amp; yang bols tibétains 250 m² centre holistique bols tibétains 7j/7  français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Akta Yoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Akta Yoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rue de l&#x27;Avenir 16, 1207 Genève <span class="addr-label">(Eaux-Vives (250 m², à 2 min du lac))</span></p>
-    <p class="studio-desc">Centre holistique de 250 m² aux Eaux-Vives proposant des activités pour le corps et l&#x27;esprit. Cours 7/7, matin, midi et soir, tous niveaux.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Ashtanga</span><span class="style-badge">Vinyasa</span><span class="style-badge">Kundalini</span><span class="style-badge">Yin</span><span class="style-badge">Fascia Yoga</span><span class="style-badge">Yin &amp; Yang</span><span class="style-badge">Bols tibétains</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue de l&#x27;Avenir 16, 1207 Genève — Eaux-Vives (250 m², à 2 min du lac)</span></div>
+    <p class="studio-description">Centre holistique de 250 m² aux Eaux-Vives proposant des activités pour le corps et l&#x27;esprit. Cours 7/7, matin, midi et soir, tous niveaux.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Ashtanga</span><span class="style-tag">Vinyasa</span><span class="style-tag">Kundalini</span><span class="style-tag">Yin</span><span class="style-tag">Fascia Yoga</span><span class="style-tag">Yin &amp; Yang</span><span class="style-tag">Bols tibétains</span></div>
     <div class="studio-contact"><a href="https://www.aktayoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 22 525 21 65" class="canton-contact-link">+41 22 525 21 65</a> &middot; <a href="mailto:contact@aktayoga.ch" class="canton-contact-link">contact@aktayoga.ch</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">250 m²</span><span class="feature-badge">Centre holistique</span><span class="feature-badge">Bols tibétains</span><span class="feature-badge">7j/7</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="integral yoga|hatha|pranayama|meditation" data-search="centre de yoga shambala centre de yoga authentique à carouge proposant le yoga intégral : synthèse des principales méthodes traditionnelles avec asanas, pranayama et méditation. rue caroline 44, 1227 carouge integral yoga hatha pranayama meditation yoga intégral approche traditionnelle  français">
     <div class="studio-card-header">
-        <h3 class="studio-name">Centre de Yoga Shambala<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Centre de Yoga Shambala</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rue Caroline 44, 1227 Carouge</p>
-    <p class="studio-desc">Centre de yoga authentique à Carouge proposant le Yoga Intégral : synthèse des principales méthodes traditionnelles avec asanas, pranayama et méditation.</p>
-    <div class="studio-styles"><span class="style-badge">Integral Yoga</span><span class="style-badge">Hatha</span><span class="style-badge">Pranayama</span><span class="style-badge">Meditation</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue Caroline 44, 1227 Carouge</span></div>
+    <p class="studio-description">Centre de yoga authentique à Carouge proposant le Yoga Intégral : synthèse des principales méthodes traditionnelles avec asanas, pranayama et méditation.</p>
+    <div class="studio-styles"><span class="style-tag">Integral Yoga</span><span class="style-tag">Hatha</span><span class="style-tag">Pranayama</span><span class="style-tag">Meditation</span></div>
     <div class="studio-contact"><a href="https://www.yoga-shambala.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 817 11 55" class="canton-contact-link">+41 79 817 11 55</a> &middot; <a href="mailto:info@yoga-shambala.ch" class="canton-contact-link">info@yoga-shambala.ch</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     <div class="studio-features"><span class="feature-badge">Yoga Intégral</span><span class="feature-badge">Approche traditionnelle</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa|hatha|yin|meditation|breath-based yoga" data-search="deva yoga studio de yoga basé sur le souffle à carouge. importance de la communauté et du mouvement dans un espace bienveillant. avenue industrielle 1, 1227 carouge vinyasa hatha yin meditation breath-based yoga breath-based approach communauté  français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">DEVA Yoga<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">DEVA Yoga</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Avenue Industrielle 1, 1227 Carouge</p>
-    <p class="studio-desc">Studio de yoga basé sur le souffle à Carouge. Importance de la communauté et du mouvement dans un espace bienveillant.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa</span><span class="style-badge">Hatha</span><span class="style-badge">Yin</span><span class="style-badge">Meditation</span><span class="style-badge">Breath-based Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Avenue Industrielle 1, 1227 Carouge</span></div>
+    <p class="studio-description">Studio de yoga basé sur le souffle à Carouge. Importance de la communauté et du mouvement dans un espace bienveillant.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa</span><span class="style-tag">Hatha</span><span class="style-tag">Yin</span><span class="style-tag">Meditation</span><span class="style-tag">Breath-based Yoga</span></div>
     <div class="studio-contact"><a href="https://deva-yoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 22 556 31 01" class="canton-contact-link">+41 22 556 31 01</a> &middot; <a href="mailto:hello@deva-yoga.ch" class="canton-contact-link">hello@deva-yoga.ch</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">Breath-based approach</span><span class="feature-badge">Communauté</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yin|restorative|yoga nidra|sound bath|automassage" data-search="yoga nest studio spécialisé en yin yoga et pratiques douces à carouge. boutique yoga, sound healing individuel et cours collectifs/privés. rue du trusquin 1, 1227 carouge — espace léopard yin restorative yoga nidra sound bath automassage boutique yoga sound healing spécialisation yin garden nest laurence français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Nest<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Nest</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rue du Trusquin 1, 1227 Carouge <span class="addr-label">(Espace Léopard)</span></p>
-    <p class="studio-desc">Studio spécialisé en Yin yoga et pratiques douces à Carouge. Boutique yoga, sound healing individuel et cours collectifs/privés.</p>
-    <div class="studio-styles"><span class="style-badge">Yin</span><span class="style-badge">Restorative</span><span class="style-badge">Yoga Nidra</span><span class="style-badge">Sound Bath</span><span class="style-badge">Automassage</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue du Trusquin 1, 1227 Carouge — Espace Léopard</span></div>
+    <p class="studio-description">Studio spécialisé en Yin yoga et pratiques douces à Carouge. Boutique yoga, sound healing individuel et cours collectifs/privés.</p>
+    <div class="studio-styles"><span class="style-tag">Yin</span><span class="style-tag">Restorative</span><span class="style-tag">Yoga Nidra</span><span class="style-tag">Sound Bath</span><span class="style-tag">Automassage</span></div>
     <div class="studio-contact"><a href="https://yoga-nest.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">Boutique yoga</span><span class="feature-badge">Sound healing</span><span class="feature-badge">Spécialisation Yin</span><span class="feature-badge">Garden Nest</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|integral yoga|yoga enfants|yoga séniors|prenatal|postnatal maman-bébé" data-search="yoginimage 20 cours de yoga par semaine à lancy. pratique accessible et introspective. cours enfants, adultes, seniors, prénatal et postnatal maman-bébé. route de saint-julien 80, 1212 grand-lancy hatha integral yoga yoga enfants yoga séniors prenatal postnatal maman-bébé yoga enfants yoga séniors sur chaise ateliers week-end retraites montagne orthobionomy  français">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoginimage<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoginimage</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Route de Saint-Julien 80, 1212 Grand-Lancy</p>
-    <p class="studio-desc">20 cours de yoga par semaine à Lancy. Pratique accessible et introspective. Cours enfants, adultes, seniors, prénatal et postnatal maman-bébé.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Integral Yoga</span><span class="style-badge">Yoga Enfants</span><span class="style-badge">Yoga Séniors</span><span class="style-badge">Prenatal</span><span class="style-badge">Postnatal Maman-Bébé</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Route de Saint-Julien 80, 1212 Grand-Lancy</span></div>
+    <p class="studio-description">20 cours de yoga par semaine à Lancy. Pratique accessible et introspective. Cours enfants, adultes, seniors, prénatal et postnatal maman-bébé.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Integral Yoga</span><span class="style-tag">Yoga Enfants</span><span class="style-tag">Yoga Séniors</span><span class="style-tag">Prenatal</span><span class="style-tag">Postnatal Maman-Bébé</span></div>
     <div class="studio-contact"><a href="https://www.yoginimage.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 78 854 44 83" class="canton-contact-link">+41 78 854 44 83</a> &middot; <a href="mailto:contact@yoginimage.ch" class="canton-contact-link">contact@yoginimage.ch</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     <div class="studio-features"><span class="feature-badge">Yoga enfants</span><span class="feature-badge">Yoga séniors sur chaise</span><span class="feature-badge">Ateliers week-end</span><span class="feature-badge">Retraites montagne</span><span class="feature-badge">Orthobionomy</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="reformer pilates|pilates reformer|yoga" data-search="ka studio studio moderne aux eaux-vives proposant yoga, pilates reformer, sauna, bain froid et services de récupération. ouvert 7j/7 de 7h à 20h. rue du xxxi-décembre 32, 1207 genève — eaux-vives reformer pilates pilates reformer yoga pilates reformer sauna bain froid récupération 7j/7  français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">ka studio<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">ka studio</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rue du XXXI-Décembre 32, 1207 Genève <span class="addr-label">(Eaux-Vives)</span></p>
-    <p class="studio-desc">Studio moderne aux Eaux-Vives proposant yoga, Pilates reformer, sauna, bain froid et services de récupération. Ouvert 7j/7 de 7h à 20h.</p>
-    <div class="studio-styles"><span class="style-badge">Reformer Pilates</span><span class="style-badge">Pilates Reformer</span><span class="style-badge">Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue du XXXI-Décembre 32, 1207 Genève — Eaux-Vives</span></div>
+    <p class="studio-description">Studio moderne aux Eaux-Vives proposant yoga, Pilates reformer, sauna, bain froid et services de récupération. Ouvert 7j/7 de 7h à 20h.</p>
+    <div class="studio-styles"><span class="style-tag">Reformer Pilates</span><span class="style-tag">Pilates Reformer</span><span class="style-tag">Yoga</span></div>
     <div class="studio-contact"><a href="https://www.kastudio.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="tel:+41 79 688 31 32" class="canton-contact-link">+41 79 688 31 32</a> &middot; <a href="mailto:bonjour@kastudio.ch" class="canton-contact-link">bonjour@kastudio.ch</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">Pilates Reformer</span><span class="feature-badge">Sauna</span><span class="feature-badge">Bain froid</span><span class="feature-badge">Récupération</span><span class="feature-badge">7j/7</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hatha|yin|yoga du dos|pranayama|yoga nidra" data-search="ar&#x27;yoga genève cours doux de hatha yoga flow avec éléments de yin, yoga du dos et pranayama. diplôme 4 ans de la fondation suisse hatha yoga. rue du pré-naville 4, 1207 genève — eaux-vives hatha yin yoga du dos pranayama yoga nidra yoga thérapeutique dos cours en parc zoom disponible petra français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">ar&#x27;Yoga Genève<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">ar&#x27;Yoga Genève</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rue du Pré-Naville 4, 1207 Genève <span class="addr-label">(Eaux-Vives)</span></p>
-    <p class="studio-desc">Cours doux de Hatha yoga flow avec éléments de Yin, yoga du dos et pranayama. Diplôme 4 ans de la Fondation Suisse Hatha Yoga.</p>
-    <div class="studio-styles"><span class="style-badge">Hatha</span><span class="style-badge">Yin</span><span class="style-badge">Yoga du dos</span><span class="style-badge">Pranayama</span><span class="style-badge">Yoga Nidra</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue du Pré-Naville 4, 1207 Genève — Eaux-Vives</span></div>
+    <p class="studio-description">Cours doux de Hatha yoga flow avec éléments de Yin, yoga du dos et pranayama. Diplôme 4 ans de la Fondation Suisse Hatha Yoga.</p>
+    <div class="studio-styles"><span class="style-tag">Hatha</span><span class="style-tag">Yin</span><span class="style-tag">Yoga du dos</span><span class="style-tag">Pranayama</span><span class="style-tag">Yoga Nidra</span></div>
     <div class="studio-contact"><a href="https://aryoga.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:petra@aryoga.ch" class="canton-contact-link">petra@aryoga.ch</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">Yoga thérapeutique dos</span><span class="feature-badge">Cours en parc</span><span class="feature-badge">Zoom disponible</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="hot yoga 26/2|kundalini|inferno hot pilates" data-search="yoga genève studio studio proposant bikram hot yoga (26 postures en salle chauffée), kundalini yoga et inferno hot pilates à vésenaz. chemin de mancy 40, 1222 vésenaz — studio kalapa hot yoga 26/2 kundalini inferno hot pilates hot yoga bikram salle chauffée  français english">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Genève Studio<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Genève Studio</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Chemin de Mancy 40, 1222 Vésenaz <span class="addr-label">(Studio Kalapa)</span></p>
-    <p class="studio-desc">Studio proposant Bikram Hot Yoga (26 postures en salle chauffée), Kundalini Yoga et Inferno Hot Pilates à Vésenaz.</p>
-    <div class="studio-styles"><span class="style-badge">Hot Yoga 26/2</span><span class="style-badge">Kundalini</span><span class="style-badge">Inferno Hot Pilates</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Chemin de Mancy 40, 1222 Vésenaz — Studio Kalapa</span></div>
+    <p class="studio-description">Studio proposant Bikram Hot Yoga (26 postures en salle chauffée), Kundalini Yoga et Inferno Hot Pilates à Vésenaz.</p>
+    <div class="studio-styles"><span class="style-tag">Hot Yoga 26/2</span><span class="style-tag">Kundalini</span><span class="style-tag">Inferno Hot Pilates</span></div>
     <div class="studio-contact"><a href="https://yogageneve.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:info@yogageneve.com" class="canton-contact-link">info@yogageneve.com</a></div>
     <p class="studio-languages">Sprachen: Français, English</p>
     <div class="studio-features"><span class="feature-badge">Hot Yoga</span><span class="feature-badge">Bikram</span><span class="feature-badge">Salle chauffée</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="vinyasa flow|kundalini|kundalini yoga" data-search="yoga sha cours de kundalini et vinyasa flow avec shahrazad chida, certifiée 500h kundalini yoga alliance. cours dans plusieurs studios de genève. rue louis-de-montfalcon 6, 1227 carouge — espace colibri (vinyasa) rue des gares 11, 1201 genève — my brilliant place (kundalini) vinyasa flow kundalini kundalini yoga multi-lieu cours au bord du lac en été shahrazad chida français">
     <div class="studio-card-header">
-        <h3 class="studio-name">Yoga Sha<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">Yoga Sha</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">Rue Louis-de-Montfalcon 6, 1227 Carouge <span class="addr-label">(Espace Colibri (Vinyasa))</span></p><p class="studio-address">Rue des Gares 11, 1201 Genève <span class="addr-label">(My Brilliant Place (Kundalini))</span></p>
-    <p class="studio-desc">Cours de Kundalini et Vinyasa flow avec Shahrazad Chida, certifiée 500h Kundalini Yoga Alliance. Cours dans plusieurs studios de Genève.</p>
-    <div class="studio-styles"><span class="style-badge">Vinyasa Flow</span><span class="style-badge">Kundalini</span><span class="style-badge">Kundalini Yoga</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue Louis-de-Montfalcon 6, 1227 Carouge — Espace Colibri (Vinyasa)</span></div><div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rue des Gares 11, 1201 Genève — My Brilliant Place (Kundalini)</span></div>
+    <p class="studio-description">Cours de Kundalini et Vinyasa flow avec Shahrazad Chida, certifiée 500h Kundalini Yoga Alliance. Cours dans plusieurs studios de Genève.</p>
+    <div class="studio-styles"><span class="style-tag">Vinyasa Flow</span><span class="style-tag">Kundalini</span><span class="style-tag">Kundalini Yoga</span></div>
     <div class="studio-contact"><a href="https://yogasha.ch/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a> &middot; <a href="mailto:shahrazad_chida@yahoo.com" class="canton-contact-link">shahrazad_chida@yahoo.com</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     <div class="studio-features"><span class="feature-badge">Multi-lieu</span><span class="feature-badge">Cours au bord du lac en été</span></div>
-</div>
-<div class="studio-card">
+</article><article class="studio-card" data-styles="yoga|massage" data-search="la perle de l&#x27;être espace dédié au yoga et aux massages à genève. 1200 genève yoga massage massages  français">
     <div class="studio-card-header">
-        <h3 class="studio-name">La Perle de l&#x27;Être<span class="dropin-badge">Drop-in</span></h3>
+        <h3 class="studio-name">La Perle de l&#x27;Être</h3><span class="studio-badge drop-in">Drop-in</span>
     </div>
-    <p class="studio-address">1200 Genève</p>
-    <p class="studio-desc">Espace dédié au yoga et aux massages à Genève.</p>
-    <div class="studio-styles"><span class="style-badge">Yoga</span><span class="style-badge">Massage</span></div>
+    <div class="studio-address"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>1200 Genève</span></div>
+    <p class="studio-description">Espace dédié au yoga et aux massages à Genève.</p>
+    <div class="studio-styles"><span class="style-tag">Yoga</span><span class="style-tag">Massage</span></div>
     <div class="studio-contact"><a href="https://www.laperledeletre.com/" target="_blank" rel="nofollow noopener noreferrer" class="canton-contact-link">Website</a></div>
     <p class="studio-languages">Sprachen: Français</p>
     <div class="studio-features"><span class="feature-badge">Massages</span></div>
-</div>
+</article>
+    </div>
         </div>
     </section>
 
@@ -2797,5 +2697,86 @@
             </p>
         </div>
     </footer>
+
+<script>
+(function () {
+  'use strict';
+  var root = document.documentElement;
+
+  // --- Theme, shared with the homepage -----------------------------------
+  var themeBtn = document.getElementById('themeToggle');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('yogabasel-theme', next); } catch (e) {}
+    });
+  }
+
+  // --- Canton switcher ----------------------------------------------------
+  var sel = document.getElementById('cantonSelect');
+  if (sel) {
+    sel.addEventListener('change', function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+  }
+
+  // --- Menu (mobile) ------------------------------------------------------
+  var menuBtn = document.getElementById('menuToggle'), nav = document.getElementById('nav');
+  if (menuBtn && nav) {
+    menuBtn.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  // --- Filtering ----------------------------------------------------------
+  var grid = document.getElementById('studiosGrid');
+  if (!grid) return;
+  var cards = [].slice.call(grid.querySelectorAll('.studio-card'));
+  var search = document.getElementById('studioSearch');
+  var clearBtn = document.getElementById('searchClear');
+  var shown = document.getElementById('shownCount');
+  var noResult = document.getElementById('noResult');
+  var chips = [].slice.call(document.querySelectorAll('.filters-quick .chip'));
+  var style = 'all', query = '';
+
+  function apply() {
+    var n = 0;
+    for (var i = 0; i < cards.length; i++) {
+      var c = cards[i];
+      var okStyle = style === 'all' || (c.getAttribute('data-styles') || '').indexOf(style) !== -1;
+      var okText = !query || (c.getAttribute('data-search') || '').indexOf(query) !== -1;
+      var visible = okStyle && okText;
+      c.hidden = !visible;
+      if (visible) n++;
+    }
+    if (shown) shown.textContent = n;
+    if (noResult) noResult.hidden = n !== 0;
+    if (clearBtn) clearBtn.style.display = query ? '' : 'none';
+  }
+
+  if (search) {
+    search.addEventListener('input', function () {
+      query = search.value.trim().toLowerCase();
+      apply();
+    });
+  }
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function () {
+      search.value = ''; query = ''; apply(); search.focus();
+    });
+  }
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      chips.forEach(function (c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      style = chip.getAttribute('data-filter');
+      apply();
+    });
+  });
+})();
+</script>
+
 </body>
 </html>
