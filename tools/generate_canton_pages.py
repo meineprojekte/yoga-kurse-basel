@@ -984,6 +984,96 @@ def generate_feedback_section(canton_name):
     </section>'''
 
 
+# Style landing pages are named <style>-yoga-<city>; only these cantons have one.
+CANTON_CITY_SLUG = {"basel-stadt": "basel", "bern": "bern", "zurich": "zuerich",
+                    "luzern": "luzern", "geneve": "genf", "vaud": "lausanne"}
+
+
+_STUDIO_COUNTS = {}
+
+
+def studio_counts_by_canton(all_cantons):
+    """How many studios each canton has, for the Top-Kantone column. Loaded once
+    for the whole run rather than per page (26 pages x 26 files otherwise)."""
+    if not _STUDIO_COUNTS:
+        for c in all_cantons:
+            _STUDIO_COUNTS[c["id"]] = len(load_studios(get_file_key(c["id"])))
+    return _STUDIO_COUNTS
+
+
+def generate_footer(canton_id, all_cantons):
+    """The app footer, with ./ paths rewritten for kanton/<id>/ and the style
+    column pointed at this canton's own landing pages where they exist (they do
+    for six cantons); elsewhere it keeps the Basel ones, as the homepage does."""
+    studio_counts = studio_counts_by_canton(all_cantons)
+    slug = CANTON_CITY_SLUG.get(canton_id, "basel")
+    style_links = []
+    for style in ["vinyasa", "hatha", "yin", "ashtanga", "aerial", "hot", "kundalini"]:
+        for candidate in (f"{style}-yoga-{slug}", f"{style}-yoga-basel"):
+            if os.path.isdir(os.path.join(BASE_DIR, "yoga", candidate)):
+                label = candidate.replace("-", " ").title().replace("Yoga ", "Yoga ")
+                style_links.append(f'<li><a href="../../yoga/{candidate}/">{escape(label)}</a></li>')
+                break
+    top = sorted(all_cantons, key=lambda c: -studio_counts.get(c["id"], 0))[:7]
+    canton_links = "".join(
+        f'<li><a href="../{c["id"]}/">Yoga Kurse {escape(c["name"]["de"])} '
+        f'({studio_counts.get(c["id"], 0)})</a></li>' for c in top)
+    return f'''<footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo"><span class="logo-icon">\U0001f9d8</span>
+                        <span class="logo-text">Yoga<strong>Schweiz</strong></span></span>
+                    <p class="footer-desc">Die vollst\u00e4ndige, unabh\u00e4ngige \u00dcbersicht aller Yoga-Kurse und Studios in der Schweiz \u2014 alle 26 Kantone.</p>
+                </div>
+                <div class="footer-links">
+                    <h2 class="footer-heading">Schnellzugriff</h2>
+                    <ul>
+                        <li><a href="#studios">Studios</a></li>
+                        <li><a href="#stile">Yoga-Stile</a></li>
+                        <li><a href="#vergleich">Preise</a></li>
+                        <li><a href="#karte">Karte</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="../../about/">\u00dcber uns</a></li>
+                        <li><a href="../../datenschutz/">Datenschutz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h2 class="footer-heading">Beliebte Stile</h2>
+                    <ul>{"".join(style_links)}</ul>
+                </div>
+                <div class="footer-links">
+                    <h2 class="footer-heading">Blog</h2>
+                    <ul>
+                        <li><a href="../../blog/beste-yoga-studios-basel-2026/">Beste Studios Basel</a></li>
+                        <li><a href="../../blog/yoga-preise-schweiz-2026/">Yoga Preise Schweiz</a></li>
+                        <li><a href="../../blog/yoga-fuer-anfaenger/">Yoga f\u00fcr Anf\u00e4nger</a></li>
+                        <li><a href="../../blog/yoga-stile-vergleich/">Yoga-Stile Vergleich</a></li>
+                        <li><a href="../../blog/yoga-in-der-schweiz/">Yoga in der Schweiz</a></li>
+                        <li><a href="../../blog/beste-yoga-studios-zuerich-2026/">Beste Studios Z\u00fcrich</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h2 class="footer-heading">Top-Kantone</h2>
+                    <ul>{canton_links}</ul>
+                </div>
+                <div class="footer-links">
+                    <h2 class="footer-heading">Buchungsplattformen</h2>
+                    <ul>
+                        <li><a href="https://www.eversports.ch/l/yoga/basel" target="_blank" rel="sponsored noopener noreferrer">Eversports</a></li>
+                        <li><a href="https://classpass.com/search/switzerland/yoga" target="_blank" rel="sponsored noopener noreferrer">ClassPass</a></li>
+                        <li><a href="https://www.mindbodyonline.com/explore/fitness/yoga-studios-basel-bs-ch" target="_blank" rel="sponsored noopener noreferrer">MindBody</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-disclaimer">Diese Website ist ein unabh\u00e4ngiges Informationsportal und steht in keiner gesch\u00e4ftlichen Verbindung zu den aufgef\u00fchrten Studios. Alle Informationen stammen aus \u00f6ffentlich zug\u00e4nglichen Quellen. F\u00fcr aktuelle Preise und Stundenpl\u00e4ne besuche bitte die jeweilige Studio-Website.</p>
+                <p class="footer-copyright">&copy; 2026 YogaSchweiz \u2014 Alle Angaben ohne Gew\u00e4hr.</p>
+            </div>
+        </div>
+    </footer>'''
+
+
 def generate_page(canton, studios, classes, all_cantons):
     """Generate the full HTML page for a canton."""
     canton_id = canton["id"]
@@ -1062,6 +1152,7 @@ def generate_page(canton, studios, classes, all_cantons):
     map_section = generate_map_section(studios, canton_name)
     faq_section = generate_faq_section(faqs)
     feedback_section = generate_feedback_section(canton_name)
+    footer_section = generate_footer(canton_id, all_cantons)
     event_scripts = generate_event_schema(classes, studios, canton_name)
 
     # Content sections
@@ -1564,20 +1655,7 @@ def generate_page(canton, studios, classes, all_cantons):
 
     {feedback_section}
 
-    <!-- Footer -->
-    <footer class="canton-footer">
-        <div class="canton-container">
-            <p>
-                <a href="../../">Yoga Schweiz</a> — Alle Yoga-Studios und Kurse der Schweiz
-            </p>
-            <p style="margin-top:8px;">
-                &copy; 2026 YogaSchweiz. Alle Angaben ohne Gewähr. Daten werden regelmässig aktualisiert.
-            </p>
-            <p style="margin-top:8px;font-size:0.8rem;color:#777;">
-                Für aktuelle Kurszeiten und Preise bitte direkt die Studio-Websites besuchen.
-            </p>
-        </div>
-    </footer>
+    {footer_section}
 {APP_SCRIPT}
 </body>
 </html>'''
