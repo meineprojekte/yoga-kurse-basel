@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-14T11:34:53.297901+00:00",
+  "last_updated": "2026-09-17T10:57:15.652384+00:00",
   "studios": [
     {
       "id": "yoga7-geneve",
@@ -49,7 +49,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-09-14T11:31:06.057235+00:00",
+        "last_scraped": "2026-09-17T10:52:46.291478+00:00",
         "last_price_check": "2026-03-27T17:24:02.467209+00:00",
         "scrape_status": "no_data",
         "booking_links": [],
@@ -68,7 +68,7 @@
         "drop_in": 35,
         "verified": true,
         "source": "https://yoga7.com",
-        "last_checked": "2026-09-14T11:31:06.057215+00:00",
+        "last_checked": "2026-09-17T10:52:46.291459+00:00",
         "notes": "Online single CHF 20. 5-pack CHF 175. Reduced 10-pack CHF 320."
       },
       "last_scraped": "2026-04-07T01:13:15.000839+00:00"
@@ -160,7 +160,7 @@
       "classes": [],
       "scrape_status": "no_data",
       "_meta": {
-        "last_scraped": "2026-09-14T11:31:08.769338+00:00",
+        "last_scraped": "2026-09-17T10:52:49.633160+00:00",
         "last_price_check": "2026-03-27T17:24:57.187616+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -176,7 +176,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://yogaflame.ch/classes/private-sessions/",
-        "last_checked": "2026-09-14T11:31:08.769325+00:00"
+        "last_checked": "2026-09-17T10:52:49.633145+00:00"
       },
       "last_scraped": "2026-04-06T07:47:28.550259+00:00"
     },
@@ -224,10 +224,10 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.lab.yoga/cours",
-        "last_checked": "2026-09-14T11:31:12.949519+00:00"
+        "last_checked": "2026-09-17T10:52:54.788102+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-09-14T11:31:09.077205+00:00",
+      "last_scraped": "2026-09-17T10:52:50.536148+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -235,7 +235,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-09-14T11:31:12.949538+00:00",
+        "last_scraped": "2026-09-17T10:52:54.788121+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -294,10 +294,10 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-09-14T11:31:15.407246+00:00",
+      "last_scraped": "2026-09-17T10:52:57.228183+00:00",
       "_meta": {
-        "last_scraped": "2026-09-14T11:31:23.496138+00:00",
-        "last_price_check": "2026-09-14T11:31:23.496138+00:00",
+        "last_scraped": "2026-09-17T10:53:07.238012+00:00",
+        "last_price_check": "2026-09-17T10:53:07.238012+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -313,7 +313,7 @@
         "drop_in": 40,
         "verified": true,
         "source": "https://www.fancy.yoga",
-        "last_checked": "2026-09-14T11:31:23.496047+00:00",
+        "last_checked": "2026-09-17T10:53:07.237900+00:00",
         "card_10": null
       }
     },
@@ -361,13 +361,13 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.thesakurayoga.com/prix",
-        "last_checked": "2026-09-14T11:31:27.335866+00:00"
+        "last_checked": "2026-09-17T10:53:12.105860+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-09-14T11:31:23.682994+00:00",
+      "last_scraped": "2026-09-17T10:53:07.623927+00:00",
       "_meta": {
-        "last_scraped": "2026-09-14T11:31:27.335948+00:00",
-        "last_price_check": "2026-09-14T11:31:27.335948+00:00",
+        "last_scraped": "2026-09-17T10:53:12.105933+00:00",
+        "last_price_check": "2026-09-17T10:53:12.105933+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -429,10 +429,10 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-09-14T11:31:30.303116+00:00",
+      "last_scraped": "2026-09-17T10:53:15.085565+00:00",
       "_meta": {
-        "last_scraped": "2026-09-14T11:31:53.806282+00:00",
-        "last_price_check": "2026-09-14T11:31:53.806282+00:00",
+        "last_scraped": "2026-09-17T10:53:39.659753+00:00",
+        "last_price_check": "2026-09-17T10:53:39.659753+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -446,7 +446,7 @@
         "trial": 45,
         "verified": true,
         "source": "https://colife.ch",
-        "last_checked": "2026-09-14T11:31:53.806184+00:00",
+        "last_checked": "2026-09-17T10:53:39.659654+00:00",
         "notes": "3 trial classes CHF 45. A la carte, ~CHF 25-27/class in bulk. 35+ classes/week.",
         "abo": 45.0
       }
@@ -509,13 +509,13 @@
         "drop_in": 35,
         "verified": true,
         "source": "https://solstudio.ch",
-        "last_checked": "2026-09-14T11:32:12.173145+00:00",
+        "last_checked": "2026-09-17T10:54:00.189207+00:00",
         "notes": "5-pack CHF 165, 10-pack CHF 310, 15-pack CHF 445, 20-pack CHF 540."
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-09-14T11:31:55.635715+00:00",
+      "last_scraped": "2026-09-17T10:53:43.509902+00:00",
       "_meta": {
-        "last_scraped": "2026-09-14T11:32:12.173167+00:00",
+        "last_scraped": "2026-09-17T10:54:00.189223+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -571,13 +571,13 @@
         "drop_in": 38,
         "verified": true,
         "source": "https://swisspilatesandyoga.com",
-        "last_checked": "2026-09-14T11:32:36.371729+00:00",
+        "last_checked": "2026-09-17T10:54:32.741563+00:00",
         "notes": "Monthly 1x/wk CHF 140 (annual). Unlimited CHF 299/mo. 12-pass CHF 360."
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-09-14T11:32:14.929240+00:00",
+      "last_scraped": "2026-09-17T10:54:03.405126+00:00",
       "_meta": {
-        "last_scraped": "2026-09-14T11:32:36.371745+00:00",
+        "last_scraped": "2026-09-17T10:54:32.741584+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -657,12 +657,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.aktayoga.ch/fr/subscriptions/",
-        "last_checked": "2026-09-14T11:32:46.441198+00:00"
+        "last_checked": "2026-09-17T10:54:43.901541+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-09-14T11:32:37.108826+00:00",
+      "last_scraped": "2026-09-17T10:54:33.665851+00:00",
       "_meta": {
-        "last_scraped": "2026-09-14T11:32:46.441213+00:00",
+        "last_scraped": "2026-09-17T10:54:43.901556+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -715,12 +715,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yoga-shambala.ch/horaires-tarifs.html",
-        "last_checked": "2026-09-14T11:32:56.291478+00:00"
+        "last_checked": "2026-09-17T10:54:59.014771+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-09-14T11:32:47.931011+00:00",
+      "last_scraped": "2026-09-17T10:54:46.774407+00:00",
       "_meta": {
-        "last_scraped": "2026-09-14T11:32:56.291497+00:00",
+        "last_scraped": "2026-09-17T10:54:59.014792+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -769,9 +769,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-09-14T11:32:57.086275+00:00",
+      "last_scraped": "2026-09-17T10:54:59.827752+00:00",
       "_meta": {
-        "last_scraped": "2026-09-14T11:33:14.693326+00:00",
+        "last_scraped": "2026-09-17T10:55:18.553373+00:00",
         "last_price_check": "2026-03-26T22:18:59.238457+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -786,7 +786,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://deva-yoga.ch/tarifs/",
-        "last_checked": "2026-09-14T11:33:14.693306+00:00"
+        "last_checked": "2026-09-17T10:55:18.553354+00:00"
       }
     },
     {
@@ -834,7 +834,7 @@
       "scrape_status": "no_data",
       "last_scraped": "2026-07-16T08:12:38.633316+00:00",
       "_meta": {
-        "last_scraped": "2026-09-14T11:33:17.667223+00:00",
+        "last_scraped": "2026-09-17T10:55:22.640327+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -848,7 +848,7 @@
         "single": 100,
         "verified": true,
         "source": "https://yoga-nest.com",
-        "last_checked": "2026-09-14T11:33:17.667210+00:00",
+        "last_checked": "2026-09-17T10:55:22.640315+00:00",
         "notes": "Private 75min CHF 100. Semi-private 2p CHF 60/each. Sound healing CHF 115. 6-pack sound CHF 575."
       }
     },
@@ -894,9 +894,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-09-14T11:33:18.317555+00:00",
+      "last_scraped": "2026-09-17T10:55:23.190657+00:00",
       "_meta": {
-        "last_scraped": "2026-09-14T11:33:21.478470+00:00",
+        "last_scraped": "2026-09-17T10:55:27.658318+00:00",
         "last_price_check": "2026-03-27T17:26:00.801921+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -912,7 +912,7 @@
         "annual": 1190,
         "verified": true,
         "source": "https://yoginimage.ch",
-        "last_checked": "2026-09-14T11:33:21.478453+00:00",
+        "last_checked": "2026-09-17T10:55:27.658304+00:00",
         "notes": "Trial 60/75min CHF 20, 120min CHF 30. Annual 1-2x/wk CHF 1190. Reduced CHF 1015. Senior CHF 884."
       }
     },
@@ -956,9 +956,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-09-14T11:33:21.834679+00:00",
+      "last_scraped": "2026-09-17T10:55:27.943096+00:00",
       "_meta": {
-        "last_scraped": "2026-09-14T11:33:25.043845+00:00",
+        "last_scraped": "2026-09-17T10:55:32.189012+00:00",
         "last_price_check": "2026-03-27T17:26:15.016803+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -975,7 +975,7 @@
         "drop_in": null,
         "verified": true,
         "source": "https://kastudio.ch",
-        "last_checked": "2026-09-14T11:33:25.043828+00:00",
+        "last_checked": "2026-09-17T10:55:32.188993+00:00",
         "notes": "Discovery pass CHF 450/mo one-time. Annual prepaid CHF 5400/yr (CHF 450/mo). Monthly CHF 490/mo."
       }
     },
@@ -1021,17 +1021,17 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-09-14T11:33:29.073500+00:00",
+      "last_scraped": "2026-09-17T10:55:35.919772+00:00",
       "pricing": {
         "single": 25,
         "currency": "CHF",
         "verified": true,
         "source": "https://aryoga.ch",
-        "last_checked": "2026-09-14T11:34:09.844717+00:00",
+        "last_checked": "2026-09-17T10:56:21.983203+00:00",
         "monthly": null
       },
       "_meta": {
-        "last_scraped": "2026-09-14T11:34:09.844736+00:00",
+        "last_scraped": "2026-09-17T10:56:21.983223+00:00",
         "last_price_check": "2026-06-18T10:20:17.897963+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -1085,13 +1085,13 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://yogageneve.com/pricing",
-        "last_checked": "2026-09-14T11:34:17.559005+00:00"
+        "last_checked": "2026-09-17T10:56:30.766552+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-09-14T11:34:10.734309+00:00",
+      "last_scraped": "2026-09-17T10:56:23.055067+00:00",
       "_meta": {
-        "last_scraped": "2026-09-14T11:34:17.559086+00:00",
-        "last_price_check": "2026-09-14T11:34:17.559086+00:00",
+        "last_scraped": "2026-09-17T10:56:30.766613+00:00",
+        "last_price_check": "2026-09-17T10:56:30.766613+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -1145,9 +1145,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-09-14T11:34:22.021165+00:00",
+      "last_scraped": "2026-09-17T10:56:36.467105+00:00",
       "_meta": {
-        "last_scraped": "2026-09-14T11:34:50.333849+00:00",
+        "last_scraped": "2026-09-17T10:57:11.879460+00:00",
         "last_price_check": "2026-03-27T17:27:06.582795+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -1163,7 +1163,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://yogasha.ch/",
-        "last_checked": "2026-09-14T11:34:50.333834+00:00"
+        "last_checked": "2026-09-17T10:57:11.879445+00:00"
       }
     },
     {
@@ -1200,9 +1200,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-09-14T11:34:50.622940+00:00",
+      "last_scraped": "2026-09-17T10:57:12.328147+00:00",
       "_meta": {
-        "last_scraped": "2026-09-14T11:34:53.297890+00:00",
+        "last_scraped": "2026-09-17T10:57:15.652373+00:00",
         "last_price_check": "2026-03-27T17:27:19.641178+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -1218,7 +1218,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.laperledeletre.com/page-vierge-1",
-        "last_checked": "2026-09-14T11:34:53.297870+00:00"
+        "last_checked": "2026-09-17T10:57:15.652353+00:00"
       }
     }
   ]
