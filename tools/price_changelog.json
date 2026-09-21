@@ -970,5 +970,14 @@
     "old_value": 170.0,
     "new_value": 60.0,
     "source": "https://www.my-yoga-garden.ch/preise"
+  },
+  {
+    "timestamp": "2026-09-21T11:30:30.996259+00:00",
+    "studio_id": "my-yoga-garden-suhr",
+    "canton": "aargau",
+    "field": "pricing.abo",
+    "old_value": 60.0,
+    "new_value": 65.0,
+    "source": "https://www.my-yoga-garden.ch/preise"
   }
 ]
