@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-21T11:59:18.531013+00:00",
+  "last_updated": "2026-09-24T11:26:19.406380+00:00",
   "studios": [
     {
       "id": "heyoga-schwyz",
@@ -48,11 +48,11 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.heyoga.ch/preise",
-        "last_checked": "2026-09-21T11:58:59.724741+00:00",
+        "last_checked": "2026-09-24T11:26:03.780829+00:00",
         "abo": 140.0
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-09-21T11:58:51.690121+00:00",
+      "last_scraped": "2026-09-24T11:25:57.005096+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -68,8 +68,8 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-09-21T11:58:59.724819+00:00",
-        "last_price_check": "2026-09-21T11:58:59.724819+00:00",
+        "last_scraped": "2026-09-24T11:26:03.780900+00:00",
+        "last_price_check": "2026-09-24T11:26:03.780900+00:00",
         "scrape_status": "scraped",
         "booking_links": [
           {
@@ -132,10 +132,10 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-09-21T11:59:00.566054+00:00",
+      "last_scraped": "2026-09-24T11:26:04.399845+00:00",
       "_meta": {
-        "last_scraped": "2026-09-21T11:59:09.260952+00:00",
-        "last_price_check": "2026-09-21T11:59:09.260952+00:00",
+        "last_scraped": "2026-09-24T11:26:12.157860+00:00",
+        "last_price_check": "2026-09-24T11:26:12.157860+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -147,7 +147,7 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://ganesha-yoga.ch/preise",
-        "last_checked": "2026-09-21T11:59:09.260879+00:00",
+        "last_checked": "2026-09-24T11:26:12.157791+00:00",
         "single": 40.0,
         "abo": 40.0,
         "card_10": 350.0,
@@ -194,15 +194,15 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yoga8.ch",
-        "last_checked": "2026-09-21T11:59:18.530861+00:00",
+        "last_checked": "2026-09-24T11:26:19.406226+00:00",
         "trial": 30.0,
         "monthly": null
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-09-21T11:59:10.183704+00:00",
+      "last_scraped": "2026-09-24T11:26:12.944693+00:00",
       "_meta": {
-        "last_scraped": "2026-09-21T11:59:18.530999+00:00",
-        "last_price_check": "2026-09-21T11:59:18.530999+00:00",
+        "last_scraped": "2026-09-24T11:26:19.406367+00:00",
+        "last_price_check": "2026-09-24T11:26:19.406367+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
