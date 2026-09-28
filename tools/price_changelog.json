@@ -988,5 +988,32 @@
     "old_value": 5,
     "new_value": 30.0,
     "source": "https://www.elevate-studio.ch/prices"
+  },
+  {
+    "timestamp": "2026-09-28T12:38:06.424767+00:00",
+    "studio_id": "happinez-yoga-fribourg",
+    "canton": "fribourg",
+    "field": "pricing.trial",
+    "old_value": 5,
+    "new_value": 25.0,
+    "source": "https://www.happinez.ch/prix"
+  },
+  {
+    "timestamp": "2026-09-28T12:57:56.949971+00:00",
+    "studio_id": "yogaworks-lausanne",
+    "canton": "vaud",
+    "field": "pricing.trial",
+    "old_value": 30,
+    "new_value": 80.0,
+    "source": "https://yogaworks-lausanne.ch"
+  },
+  {
+    "timestamp": "2026-09-28T13:00:24.083852+00:00",
+    "studio_id": "yogaflowzug",
+    "canton": "zug",
+    "field": "pricing.single",
+    "old_value": 25.0,
+    "new_value": 35.0,
+    "source": "https://www.yogaflowzug.ch/preise"
   }
 ]
