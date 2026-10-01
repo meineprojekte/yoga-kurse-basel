@@ -1015,5 +1015,14 @@
     "old_value": 25.0,
     "new_value": 35.0,
     "source": "https://www.yogaflowzug.ch/preise"
+  },
+  {
+    "timestamp": "2026-10-01T12:12:07.184494+00:00",
+    "studio_id": "fitnesspark",
+    "canton": "basel",
+    "field": "pricing.monthly",
+    "old_value": 70.0,
+    "new_value": 123.0,
+    "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/preise"
   }
 ]
