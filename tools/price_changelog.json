@@ -1024,5 +1024,32 @@
     "old_value": 70.0,
     "new_value": 123.0,
     "source": "https://www.fitnesspark.ch/en/fitnessparks/basel-heuwaage/preise"
+  },
+  {
+    "timestamp": "2026-10-05T13:05:54.276395+00:00",
+    "studio_id": "my-yoga-garden-suhr",
+    "canton": "aargau",
+    "field": "pricing.trial",
+    "old_value": 25.0,
+    "new_value": 30.0,
+    "source": "https://www.my-yoga-garden.ch/preise"
+  },
+  {
+    "timestamp": "2026-10-05T13:18:05.997765+00:00",
+    "studio_id": "vayam-yoga-bern",
+    "canton": "bern",
+    "field": "pricing.single",
+    "old_value": 37.0,
+    "new_value": 35.0,
+    "source": "https://www.vayamyoga.com/preise"
+  },
+  {
+    "timestamp": "2026-10-05T13:18:05.997812+00:00",
+    "studio_id": "vayam-yoga-bern",
+    "canton": "bern",
+    "field": "pricing.monthly",
+    "old_value": 250.0,
+    "new_value": 220.0,
+    "source": "https://www.vayamyoga.com/preise"
   }
 ]
