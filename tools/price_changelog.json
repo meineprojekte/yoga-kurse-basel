@@ -1060,5 +1060,14 @@
     "old_value": 270,
     "new_value": 290.0,
     "source": "https://www.vayamyoga.com/preise"
+  },
+  {
+    "timestamp": "2026-10-15T11:13:49.166907+00:00",
+    "studio_id": "yoga-flame-lausanne",
+    "canton": "vaud",
+    "field": "pricing.monthly",
+    "old_value": 320,
+    "new_value": 200.0,
+    "source": "https://yogaflame.ch/prices"
   }
 ]
