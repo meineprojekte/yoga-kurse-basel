@@ -1069,5 +1069,14 @@
     "old_value": 320,
     "new_value": 200.0,
     "source": "https://yogaflame.ch/prices"
+  },
+  {
+    "timestamp": "2026-10-22T11:01:42.623520+00:00",
+    "studio_id": "yogiface-fribourg",
+    "canton": "fribourg",
+    "field": "pricing.abo",
+    "old_value": 500.0,
+    "new_value": 350.0,
+    "source": "https://www.yogiface.ch/prix"
   }
 ]
