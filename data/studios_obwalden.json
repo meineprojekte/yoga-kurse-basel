@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-26T12:23:23.431462+00:00",
+  "last_updated": "2026-10-29T12:22:28.286521+00:00",
   "studios": [
     {
       "id": "goyoga-sarnen",
@@ -43,12 +43,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://goyoga.ch/stundenplan-2.html",
-        "last_checked": "2026-10-26T12:23:16.966993+00:00"
+        "last_checked": "2026-10-29T12:22:20.095717+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-10-26T12:23:09.624587+00:00",
+      "last_scraped": "2026-10-29T12:22:13.771014+00:00",
       "_meta": {
-        "last_scraped": "2026-10-26T12:23:16.967010+00:00",
+        "last_scraped": "2026-10-29T12:22:20.095732+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -97,8 +97,8 @@
       "classes": [],
       "scrape_status": "scraped",
       "_meta": {
-        "last_scraped": "2026-10-26T12:23:23.431452+00:00",
-        "last_price_check": "2026-10-26T12:23:23.431452+00:00",
+        "last_scraped": "2026-10-29T12:22:28.286508+00:00",
+        "last_price_check": "2026-10-29T12:22:28.286508+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -114,10 +114,10 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yoga-ishwari.ch/preise",
-        "last_checked": "2026-10-26T12:23:23.431388+00:00",
+        "last_checked": "2026-10-29T12:22:28.286448+00:00",
         "abo": 220.0
       },
-      "last_scraped": "2026-10-26T12:23:17.498923+00:00"
+      "last_scraped": "2026-10-29T12:22:20.513617+00:00"
     }
   ]
 }
