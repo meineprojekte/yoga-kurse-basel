@@ -1105,5 +1105,32 @@
     "old_value": 80.0,
     "new_value": 159.0,
     "source": "https://www.planetyoga.ch/preise"
+  },
+  {
+    "timestamp": "2026-11-02T14:16:34.671488+00:00",
+    "studio_id": "my-yoga-garden-suhr",
+    "canton": "aargau",
+    "field": "pricing.abo",
+    "old_value": 65.0,
+    "new_value": 30.0,
+    "source": "https://www.my-yoga-garden.ch/preise"
+  },
+  {
+    "timestamp": "2026-11-02T14:21:25.258733+00:00",
+    "studio_id": "koerpergeheimnis-pratteln",
+    "canton": "basel-landschaft",
+    "field": "pricing.single",
+    "old_value": 25.0,
+    "new_value": 20.0,
+    "source": "https://koerpergeheimnis.ch/angebot"
+  },
+  {
+    "timestamp": "2026-11-02T14:25:57.273337+00:00",
+    "studio_id": "yoga-carmen-bern",
+    "canton": "bern",
+    "field": "pricing.single",
+    "old_value": 30,
+    "new_value": 15.0,
+    "source": "https://www.yoga-carmen.ch"
   }
 ]
