@@ -1132,5 +1132,14 @@
     "old_value": 30,
     "new_value": 15.0,
     "source": "https://www.yoga-carmen.ch"
+  },
+  {
+    "timestamp": "2026-11-05T14:11:25.987171+00:00",
+    "studio_id": "yogalicht-schaffhausen",
+    "canton": "schaffhausen",
+    "field": "pricing.abo",
+    "old_value": 300.0,
+    "new_value": 350.0,
+    "source": "https://yogalicht.ch/preise"
   }
 ]
