@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-05T14:26:10.461983+00:00",
+  "last_updated": "2026-11-09T15:27:35.396278+00:00",
   "studios": [
     {
       "id": "yogaflowzug",
@@ -40,21 +40,21 @@
       "active": true,
       "classes": [],
       "pricing": {
-        "single": 35.0,
-        "card_10": 200.0,
-        "monthly": 250,
-        "trial": 20.0,
+        "single": 30.0,
+        "card_10": null,
+        "monthly": 250.0,
+        "trial": null,
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogaflowzug.ch/preise",
-        "last_checked": "2026-11-05T14:25:16.933904+00:00",
+        "last_checked": "2026-11-09T15:26:42.943733+00:00",
         "abo": 75.0
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-11-05T14:25:11.081392+00:00",
+      "last_scraped": "2026-11-09T15:26:36.492614+00:00",
       "_meta": {
-        "last_scraped": "2026-11-05T14:25:16.933948+00:00",
-        "last_price_check": "2026-11-05T14:25:16.933948+00:00",
+        "last_scraped": "2026-11-09T15:26:42.943849+00:00",
+        "last_price_check": "2026-11-09T15:26:42.943849+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -174,9 +174,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-11-05T14:25:18.221339+00:00",
+      "last_scraped": "2026-11-09T15:26:44.333686+00:00",
       "_meta": {
-        "last_scraped": "2026-11-05T14:25:47.111861+00:00",
+        "last_scraped": "2026-11-09T15:27:12.262840+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -222,7 +222,7 @@
       "scrape_status": "blocked",
       "last_scraped": null,
       "_meta": {
-        "last_scraped": "2026-11-05T14:26:10.461967+00:00",
+        "last_scraped": "2026-11-09T15:27:35.396254+00:00",
         "last_price_check": null,
         "scrape_status": "blocked",
         "booking_links": [],
