@@ -1168,5 +1168,23 @@
     "old_value": 20.0,
     "new_value": 350.0,
     "source": "https://www.yogaflowzug.ch/preise"
+  },
+  {
+    "timestamp": "2026-11-12T14:12:54.964867+00:00",
+    "studio_id": "my-yoga-garden-suhr",
+    "canton": "aargau",
+    "field": "pricing.abo",
+    "old_value": 30.0,
+    "new_value": 395.0,
+    "source": "https://www.my-yoga-garden.ch/preise"
+  },
+  {
+    "timestamp": "2026-11-12T14:18:58.468357+00:00",
+    "studio_id": "anjali",
+    "canton": "basel",
+    "field": "pricing.monthly",
+    "old_value": 50.0,
+    "new_value": 65.0,
+    "source": "https://www.anjali.ch/en"
   }
 ]
