@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-19T15:22:46.378057+00:00",
+  "last_updated": "2026-11-23T17:23:21.223176+00:00",
   "studios": [
     {
       "id": "yoga-ayurveda-zentrum-stans",
@@ -37,10 +37,10 @@
       "lng": 8.366,
       "active": true,
       "classes": [],
-      "scrape_status": "no_data",
-      "last_scraped": "2026-11-12T14:39:44.066329+00:00",
+      "scrape_status": "scraped",
+      "last_scraped": "2026-11-23T17:22:53.042528+00:00",
       "_meta": {
-        "last_scraped": "2026-11-19T15:22:30.481787+00:00",
+        "last_scraped": "2026-11-23T17:23:09.243166+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -86,9 +86,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-11-19T15:22:30.897016+00:00",
+      "last_scraped": "2026-11-23T17:23:09.509139+00:00",
       "_meta": {
-        "last_scraped": "2026-11-19T15:22:38.448838+00:00",
+        "last_scraped": "2026-11-23T17:23:14.569467+00:00",
         "last_price_check": "2026-03-26T22:00:01.608167+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -99,7 +99,7 @@
       "pricing": {
         "verified": false,
         "currency": "CHF",
-        "last_checked": "2026-11-19T15:22:38.448821+00:00"
+        "last_checked": "2026-11-23T17:23:14.569451+00:00"
       }
     },
     {
@@ -138,9 +138,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-11-19T15:22:38.829552+00:00",
+      "last_scraped": "2026-11-23T17:23:14.862195+00:00",
       "_meta": {
-        "last_scraped": "2026-11-19T15:22:46.378048+00:00",
+        "last_scraped": "2026-11-23T17:23:21.223165+00:00",
         "last_price_check": "2026-03-26T22:00:04.148068+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
@@ -155,7 +155,7 @@
         "annual": 750,
         "verified": true,
         "source": "https://sevencolors.ch",
-        "last_checked": "2026-11-19T15:22:46.378035+00:00",
+        "last_checked": "2026-11-23T17:23:21.223145+00:00",
         "notes": "Online rental CHF 10. Monthly CHF 75. Annual CHF 750."
       }
     }
