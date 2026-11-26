@@ -1204,5 +1204,14 @@
     "old_value": 395.0,
     "new_value": 170.0,
     "source": "https://www.my-yoga-garden.ch/preise"
+  },
+  {
+    "timestamp": "2026-11-26T16:02:57.994471+00:00",
+    "studio_id": "jyoti-yoga-liestal",
+    "canton": "basel-landschaft",
+    "field": "pricing.single",
+    "old_value": 10,
+    "new_value": 30.0,
+    "source": "https://www.jyotiyoga.ch"
   }
 ]

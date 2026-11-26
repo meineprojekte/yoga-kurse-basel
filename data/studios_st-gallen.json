@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-23T17:26:58.703318+00:00",
+  "last_updated": "2026-11-26T16:33:35.506775+00:00",
   "studios": [
     {
       "id": "yoga-in-der-altstadt-st-gallen",
@@ -41,8 +41,8 @@
       "classes": [],
       "scrape_status": "scraped",
       "_meta": {
-        "last_scraped": "2026-11-23T17:25:54.254932+00:00",
-        "last_price_check": "2026-11-23T17:25:54.254932+00:00",
+        "last_scraped": "2026-11-26T16:32:11.052266+00:00",
+        "last_price_check": "2026-11-26T16:32:11.052266+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -55,11 +55,11 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yoga-in-der-altstadt.ch",
-        "last_checked": "2026-11-23T17:25:54.254835+00:00",
+        "last_checked": "2026-11-26T16:32:11.052160+00:00",
         "abo": 50.0
       },
       "sportsnow_slug": "yoga-in-der-altstadt-gmbh",
-      "last_scraped": "2026-11-23T17:25:49.417487+00:00"
+      "last_scraped": "2026-11-26T16:32:05.429685+00:00"
     },
     {
       "id": "studio-8-st-gallen",
@@ -101,9 +101,9 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-11-23T17:25:54.951799+00:00",
+      "last_scraped": "2026-11-26T16:32:12.117305+00:00",
       "_meta": {
-        "last_scraped": "2026-11-23T17:25:58.275810+00:00",
+        "last_scraped": "2026-11-26T16:32:15.828921+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -118,7 +118,7 @@
         "annual": 960,
         "verified": true,
         "source": "https://studio-8.ch",
-        "last_checked": "2026-11-23T17:25:58.275792+00:00",
+        "last_checked": "2026-11-26T16:32:15.828906+00:00",
         "notes": "60min CHF 22, 75min CHF 25. Trimester CHF 335. Annual CHF 960. Trial free."
       }
     },
@@ -163,7 +163,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-11-23T17:25:59.706584+00:00",
+      "last_scraped": "2026-11-26T16:32:17.767826+00:00",
       "detected_booking_links": [
         {
           "platform": "eversports",
@@ -179,7 +179,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-11-23T17:26:11.119534+00:00",
+        "last_scraped": "2026-11-26T16:32:30.925439+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -208,7 +208,7 @@
         "drop_in": 28,
         "verified": true,
         "source": "https://bubbleyoga.ch",
-        "last_checked": "2026-11-23T17:26:11.119515+00:00",
+        "last_checked": "2026-11-26T16:32:30.925419+00:00",
         "notes": "Welcome 2-for-1 CHF 35. Intro 1mo unlimited CHF 85."
       }
     },
@@ -253,7 +253,7 @@
       "active": true,
       "classes": [],
       "scrape_status": "scraped",
-      "last_scraped": "2026-11-23T17:26:11.768830+00:00",
+      "last_scraped": "2026-11-26T16:32:31.888921+00:00",
       "detected_booking_links": [
         {
           "platform": "momoyoga",
@@ -477,7 +477,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-11-23T17:26:20.215233+00:00",
+        "last_scraped": "2026-11-26T16:32:43.435547+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -716,7 +716,7 @@
         "drop_in": 35,
         "verified": true,
         "source": "https://rach-yoga.com",
-        "last_checked": "2026-11-23T17:26:20.215215+00:00",
+        "last_checked": "2026-11-26T16:32:43.435529+00:00",
         "notes": "5er group CHF 130. Online single CHF 17. Private CHF 120."
       }
     },
@@ -761,12 +761,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.lineupyoga.ch/yoga-preise-abos",
-        "last_checked": "2026-11-23T17:26:26.350903+00:00"
+        "last_checked": "2026-11-26T16:32:51.433767+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-11-23T17:26:21.638149+00:00",
+      "last_scraped": "2026-11-26T16:32:44.180437+00:00",
       "_meta": {
-        "last_scraped": "2026-11-23T17:26:26.350921+00:00",
+        "last_scraped": "2026-11-26T16:32:51.433786+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -813,10 +813,10 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://123yoga.ch/courses/",
-        "last_checked": "2026-11-23T17:26:34.480013+00:00"
+        "last_checked": "2026-11-26T16:33:00.996663+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-11-23T17:26:27.560814+00:00",
+      "last_scraped": "2026-11-26T16:32:52.736027+00:00",
       "detected_booking_links": [
         {
           "platform": "fitogram",
@@ -824,7 +824,7 @@
         }
       ],
       "_meta": {
-        "last_scraped": "2026-11-23T17:26:34.480031+00:00",
+        "last_scraped": "2026-11-26T16:33:00.996684+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [
@@ -877,8 +877,8 @@
       "classes": [],
       "scrape_status": "scraped",
       "_meta": {
-        "last_scraped": "2026-11-23T17:26:40.325007+00:00",
-        "last_price_check": "2026-11-23T17:26:40.325007+00:00",
+        "last_scraped": "2026-11-26T16:33:09.844517+00:00",
+        "last_price_check": "2026-11-26T16:33:09.844517+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
@@ -893,10 +893,10 @@
         "drop_in": 30,
         "verified": true,
         "source": "https://www.poweryogastgallen.com",
-        "last_checked": "2026-11-23T17:26:40.324915+00:00",
+        "last_checked": "2026-11-26T16:33:09.844454+00:00",
         "monthly": 350.0
       },
-      "last_scraped": "2026-11-23T17:26:34.873293+00:00"
+      "last_scraped": "2026-11-26T16:33:01.540513+00:00"
     },
     {
       "id": "yogaloft-rapperswil-jona",
@@ -942,12 +942,12 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://www.yogaloft.ch/angebot2.php",
-        "last_checked": "2026-11-23T17:26:48.921507+00:00"
+        "last_checked": "2026-11-26T16:33:20.436531+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-11-23T17:26:41.086165+00:00",
+      "last_scraped": "2026-11-26T16:33:10.864218+00:00",
       "_meta": {
-        "last_scraped": "2026-11-23T17:26:48.921524+00:00",
+        "last_scraped": "2026-11-26T16:33:20.436546+00:00",
         "last_price_check": null,
         "scrape_status": "scraped",
         "booking_links": [],
@@ -999,13 +999,13 @@
         "currency": "CHF",
         "verified": true,
         "source": "https://hotyoga4u.ch",
-        "last_checked": "2026-11-23T17:26:58.703211+00:00"
+        "last_checked": "2026-11-26T16:33:35.506702+00:00"
       },
       "scrape_status": "scraped",
-      "last_scraped": "2026-11-23T17:26:49.705986+00:00",
+      "last_scraped": "2026-11-26T16:33:21.907268+00:00",
       "_meta": {
-        "last_scraped": "2026-11-23T17:26:58.703308+00:00",
-        "last_price_check": "2026-11-23T17:26:58.703308+00:00",
+        "last_scraped": "2026-11-26T16:33:35.506768+00:00",
+        "last_price_check": "2026-11-26T16:33:35.506768+00:00",
         "scrape_status": "scraped",
         "booking_links": [],
         "source_urls": {
